@@ -9,13 +9,13 @@ importers:
   .:
     devDependencies:
       eslint:
-        specifier: ^8.57.0
+        specifier: ^8.57.1
         version: 8.57.1
       prettier:
-        specifier: ^3.8.1
+        specifier: ^3.8.3
         version: 3.8.3
       typescript:
-        specifier: ~5.8.2
+        specifier: ~5.8.3
         version: 5.8.3
 
   scratch:
@@ -24,7 +24,7 @@ importers:
         specifier: 27.0.5
         version: 27.0.5
       typescript:
-        specifier: ~5.8.2
+        specifier: ~5.8.3
         version: 5.8.3
 
 packages:

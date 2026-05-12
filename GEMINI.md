@@ -116,6 +116,10 @@ node scripts/deploy.js --dry-run         # preview without deploying
 ### GitHub Secrets Required
 - `SN_INSTANCE`, `SN_USER`, `SN_PASSWORD`
 
+## Doc Sync
+
+`CLAUDE.md` and `GEMINI.md` are kept identical for cross-tool compatibility (Claude Code, Gemini CLI). Edit either one — `scripts/sync-docs.js` mirrors the newer file to the other. Sync runs automatically via the git pre-commit hook (`.githooks/pre-commit`); manual run: `pnpm run sync-docs`.
+
 ## Keeping Things Current
 
 ```bash

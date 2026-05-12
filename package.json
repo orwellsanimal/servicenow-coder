@@ -12,6 +12,7 @@
         "format": "prettier --check \"**/*.{ts,js,json}\"",
         "pack:apps": "pnpm --filter './apps/*' run pack",
         "deploy": "node scripts/deploy.js",
+        "sync-docs": "node scripts/sync-docs.js",
         "ci": "pnpm run lint && pnpm run check && pnpm run build"
     },
     "engines": {
@@ -19,8 +20,8 @@
         "pnpm": ">=10"
     },
     "devDependencies": {
-        "typescript": "~5.8.2",
-        "prettier": "^3.8.1",
-        "eslint": "^8.57.0"
+        "eslint": "^8.57.1",
+        "prettier": "^3.8.3",
+        "typescript": "~5.8.3"
     }
 }
