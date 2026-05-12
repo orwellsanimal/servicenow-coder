@@ -1,0 +1,5 @@
+{
+  "enabledPlugins": {
+    "fluent@servicenow": true
+  }
+}

@@ -1,20 +1,54 @@
 ---
 name: now-scaffold
-description: Scaffold a new ServiceNow Fluent app or generate artifact code from templates. Use when the user wants to create a new project, table, business rule, script include, client script, REST API, ACL, flow, UI action, catalog item, or any other ServiceNow artifact.
+description: Scaffold a new ServiceNow Fluent app (delegates to now-sdk init) or generate individual artifact code from local templates. Use when the user wants to create a new project, table, business rule, script include, client script, REST API, ACL, flow, UI action, catalog item, or other ServiceNow artifact.
 argument-hint: "<type> <name> [options]"
 ---
 
 ## Purpose
 
-Generate ServiceNow code from project templates. Supports both **Fluent SDK** (TypeScript `.now.ts`) and **vanilla GlideScript** (classic `.js`) modes.
+Generate ServiceNow code in two modes:
+- **Project creation** — delegates to the official `now-sdk init` so we don't reinvent the wheel
+- **Artifact generation** — uses local templates in `templates/` for individual files within an existing project
 
-## Available Templates
+Supports both **Fluent SDK** (TypeScript `.now.ts`) and **vanilla GlideScript** (classic `.js`).
 
-### Fluent SDK (TypeScript)
+## Project Creation
+
+For new Fluent apps, **always use `now-sdk init`** instead of copying templates manually. The SDK generates correct scope IDs, registers the app properly, and stays in sync with platform conventions.
+
+### Workflow
+
+1. Determine target directory — default is `apps/<app-name>/`
+2. Run init from the apps directory:
+   ```bash
+   cd apps/
+   npx @servicenow/sdk init \
+       --appName "{{App Display Name}}" \
+       --packageName {{package-name}} \
+       --scopeName x_{{scope}} \
+       --template base \
+       --auth dev
+   ```
+3. Template options: `base`, `javascript.basic`, `javascript.react`, `typescript.basic`, `typescript.react`, `typescript.vue`
+   - Use `base` for most server-side apps
+   - Use `typescript.react` for apps with custom UI pages
+4. Run `pnpm install` in the new app directory
+5. Verify with `pnpm run build`
+
+### Alternative: Build Agent (in-platform AI)
+
+For brand-new apps where the user has a rough idea, mention they can also use the ServiceNow Build Agent (in-platform AI scaffolder, free allowance ~100 calls customer / 25 PDI), then pull the result to local for iteration here.
+
+## Artifact Generation (within an existing app)
+
+The SDK doesn't ship per-artifact code templates, so we use local templates for individual files added to a project.
+
+### Available Artifact Templates
+
+#### Fluent SDK (TypeScript)
 
 | Type | Template | Generates |
 |------|----------|-----------|
-| `project` | `templates/fluent/project/` | Full app scaffold: now.config.json, package.json, src/ dirs |
 | `table` | `templates/fluent/artifacts/table.now.ts` | Table definition with schema |
 | `business-rule` | `templates/fluent/artifacts/business-rule.now.ts` + `.server.ts` | Business rule + server module |
 | `script-include` | `templates/fluent/artifacts/script-include.now.ts` + `.server.ts` | Script include + server module |
@@ -27,7 +61,7 @@ Generate ServiceNow code from project templates. Supports both **Fluent SDK** (T
 | `record` | `templates/fluent/artifacts/record.now.ts` | Seed data record |
 | `catalog-item` | `templates/fluent/artifacts/catalog-item.now.ts` | Service catalog item |
 
-### Vanilla GlideScript
+#### Vanilla GlideScript
 
 | Type | Template | Generates |
 |------|----------|-----------|
@@ -40,72 +74,42 @@ Generate ServiceNow code from project templates. Supports both **Fluent SDK** (T
 | `gs-ui-action` | `templates/glidescript/ui-action.js` | Classic UI action |
 | `gs-fix-script` | `templates/glidescript/fix-script.js` | Fix script with dry-run safety |
 
-## How to Scaffold
+### Artifact Workflow
 
-### Step 1: Determine what the user wants
-
-Parse `$ARGUMENTS` to identify:
-- **Type**: Which template to use (from the tables above)
-- **Name**: The artifact/project name
-- **Target table** (if applicable): Which ServiceNow table the artifact targets
-- **Scope**: Application scope (defaults to project scope from now.config.json if in a Fluent project)
-- **Mode**: Fluent or GlideScript (infer from context — if inside a Fluent project, use Fluent; if in `scratch/`, use GlideScript; otherwise ask)
-
-### Step 2: Read the template
-
-Read the appropriate template file from `templates/`. Templates use `{{placeholder}}` syntax for values that need substitution.
-
-### Step 3: Check instance config (if populated)
-
-Before generating, verify against `instance-config/` if available:
-- For tables: check `instance-config/schema/tables.json` to confirm the target table exists
-- For fields: check `instance-config/schema/columns.json` for valid field names
-- For choices: check `instance-config/schema/choices.json` for valid choice values
-- For roles: check `instance-config/security/roles.json` for valid role names
-- For plugins: check `instance-config/platform/plugins.json` if the artifact depends on a plugin
-
-If the config files are empty, skip validation and note it to the user.
-
-### Step 4: Generate the code
-
-Replace all `{{placeholder}}` values with actual values derived from the user's request.
-
-**Naming conventions:**
-- Scope: `x_<scopename>` (all lowercase, no hyphens)
-- Table names: `x_<scope>_<name>` (lowercase, underscores)
-- Variable identifiers: camelCase for JS vars, snake_case for table/field names
-- Class names: PascalCase for Script Includes
-- File names: kebab-case for `.now.ts` files, PascalCase for server modules
-- IDs: `Now.ID['kebab-case-descriptive-id']`
-
-**For Fluent `project` type:**
-1. Copy the full `templates/fluent/project/` structure to the target directory
-2. Generate a unique `scopeId` (UUID v4)
-3. Replace placeholders in now.config.json and package.json
-4. Run `pnpm install` if in the workspace
-
-**For artifact types:**
-1. Read the template and replace placeholders
-2. Write to the appropriate location:
-   - Fluent: `src/fluent/<artifact-name>.now.ts` (and `src/server/<module>.ts` for server code)
+1. **Determine type and mode** — Fluent if inside an `apps/<name>/` project, GlideScript if in `scratch/`
+2. **Check instance config** — verify referenced tables, fields, choices, roles exist in `instance-config/`
+3. **Read the template** — templates use `{{placeholder}}` syntax
+4. **Generate the code** — substitute placeholders, uncomment relevant sections, remove unused ones
+5. **Write to project**:
+   - Fluent: `apps/<app>/src/fluent/<artifact-name>.now.ts` (and `src/server/<module>.ts` for server code)
    - GlideScript: `scratch/<artifact-name>.js`
-3. Uncomment relevant optional sections based on user requirements
-4. Remove sections that don't apply
+6. **Verify** — for Fluent, run `pnpm run build` in the app directory
 
-### Step 5: Verify
+### Naming Conventions
 
-For Fluent artifacts in an existing project, run `pnpm run build` to verify the generated code compiles.
+- Scope: `x_<scopename>` (lowercase, no hyphens, ≤18 chars)
+- Table names: `x_<scope>_<name>` (lowercase, underscores)
+- Variable identifiers: camelCase for JS, snake_case for tables/fields
+- Class names: PascalCase for Script Includes
+- File names: kebab-case for `.now.ts`, PascalCase for server modules
+- IDs: `Now.ID['kebab-case-descriptive-id']`
 
 ## Examples
 
-User says: "scaffold a new fluent app called incident-helper"
-→ Generate full project at `incident-helper/` from `templates/fluent/project/`
+**User:** "scaffold a new fluent app called incident-helper"
+→ `cd apps && npx @servicenow/sdk init --appName "Incident Helper" --packageName incident-helper --scopeName x_inchelper --template base --auth dev`
 
-User says: "create a business rule on incident table"
-→ Read `templates/fluent/artifacts/business-rule.now.ts`, fill in incident table details
+**User:** "create a business rule on incident table"
+→ Inside an existing `apps/<app>/` project, read `templates/fluent/artifacts/business-rule.now.ts`, fill in incident-specific logic, write to `src/fluent/`
 
-User says: "I need a script include to look up user departments"
-→ Read template, generate `UserDepartmentLookup` script include with appropriate methods
+**User:** "I need a script include to look up user departments"
+→ Read template, generate `UserDepartmentLookup` class with appropriate methods
 
-User says: "write a fix script to update all inactive incidents"
-→ Read `templates/glidescript/fix-script.js`, fill in incident table with inactive query
+**User:** "write a fix script to update all inactive incidents"
+→ Read `templates/glidescript/fix-script.js`, fill in incident table with inactive query, save to `scratch/`
+
+## When to Refer to Other Skills
+
+- **SDK API details** — use `/fluent:now-sdk-explain` (or `/now-sdk-explain` if installed locally) for type definitions, conventions
+- **Instance metadata** — use `/now-instance-config` to verify tables, fields, choices, roles, scopes exist
+- **Environment errors** — use `/fluent:now-sdk-setup` if `now-sdk` commands fail with environment issues
