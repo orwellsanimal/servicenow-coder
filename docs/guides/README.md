@@ -7,5 +7,6 @@ Operational guides for working with this workspace. Separate from `docs/apps/` a
 | [`troubleshooting.md`](./troubleshooting.md) | Something broke. Look here first. |
 | [`ci-cd.md`](./ci-cd.md) | Setting up the GitHub Actions pipeline, or it's failing |
 | [`ai-tools.md`](./ai-tools.md) | Wiring up Claude Code / Gemini CLI / Cursor / etc., or comparing them |
+| [`pysnc.md`](./pysnc.md) | When and how to use PySNC (Python utilities) for cross-cutting ops against the instance |
 
 For initial setup, see [`SETUP.md`](../../SETUP.md) at the repo root.

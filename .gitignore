@@ -17,3 +17,8 @@ Thumbs.db
 
 # Google Drive sync temp artifacts
 .tmp.driveupload/
+
+# Python virtual environment (PySNC utilities)
+.venv/
+__pycache__/
+*.pyc

@@ -1,0 +1,6 @@
+# Python dependencies for scripts/python/ utilities.
+# Install:  pip install -r requirements.txt
+# Recommended: use a virtualenv at .venv/ (already gitignored)
+
+pysnc>=1.1.0
+python-dotenv>=1.0.0

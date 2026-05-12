@@ -282,6 +282,28 @@ async function step6_harvest() {
         : { status: 'fail', note: 'harvest failed' };
 }
 
+// ── Future: Step 8 — Python venv for PySNC utilities (stub, not active) ──
+// When PySNC use grows beyond ad-hoc scripts, activate this:
+//   - Detect Python 3.10+
+//   - Offer to create .venv/ and pip install -r requirements.txt
+//   - Skip if requirements.txt doesn't exist or user opts out
+// See docs/guides/pysnc.md and scripts/python/README.md.
+//
+// async function step8_python() {
+//     heading(8, 'Set up Python venv for PySNC utilities (optional)');
+//     const reqPath = path.join(ROOT, 'requirements.txt');
+//     if (!fs.existsSync(reqPath)) {
+//         console.log(`  ${icon.skip} no requirements.txt — skipping`);
+//         return { status: 'skip', note: 'no requirements.txt' };
+//     }
+//     const python = tryExec('python --version') || tryExec('python3 --version');
+//     if (!python) {
+//         console.log(`  ${icon.skip} Python not found — install Python 3.10+ if you need PySNC utilities`);
+//         return { status: 'skip', note: 'Python missing' };
+//     }
+//     // ... venv create + pip install
+// }
+
 async function step7_verify() {
     heading(7, 'Verify install (optional)');
     const ok = await confirm('Run `pnpm run ci` to verify?', false);

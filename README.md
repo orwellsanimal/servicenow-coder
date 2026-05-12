@@ -6,6 +6,7 @@ An AI-assisted ServiceNow development workspace. Combines the official ServiceNo
 
 - **Fluent SDK app development** — `.now.ts` projects scaffolded via the official `now-sdk init`, living under `apps/`
 - **Vanilla GlideScript prototyping** — classic server-side scripts under `scratch/`
+- **PySNC utilities** — Python scripts under `scripts/python/` for cross-cutting ops (data seeding, bulk fixes, migrations, ATF fixtures)
 - **Instance grounding layer** — `instance-config/` holds schema/plugins/roles/properties exported from your instance so AI tools never hallucinate references
 - **CI/CD pipeline** — GitHub Actions (validate → build → pack → deploy → test) with a Harness reference spec for future migration
 - **ATF testing plumbing** — templates + runner + CI stage so AI-generated features can ship paired tests
@@ -81,6 +82,7 @@ This workspace is tool-agnostic. Tool-specific guidance:
 - **[docs/guides/troubleshooting.md](./docs/guides/troubleshooting.md)** — when something breaks
 - **[docs/guides/ci-cd.md](./docs/guides/ci-cd.md)** — CI/CD pipeline bootstrap and operation
 - **[docs/guides/ai-tools.md](./docs/guides/ai-tools.md)** — wiring up Claude Code / Gemini CLI / Cursor / etc.
+- **[docs/guides/pysnc.md](./docs/guides/pysnc.md)** — Python utilities for ops against the instance (data seeding, bulk fixes, migrations)
 - **[instance-config/README.md](./instance-config/README.md)** — the grounding layer
 - **[servicenow-sdk-examples/](./servicenow-sdk-examples/)** — official patterns for tables, REST APIs, UI pages, ATF, etc.
 
