@@ -78,6 +78,9 @@ This workspace is tool-agnostic. Tool-specific guidance:
 
 - **[SETUP.md](./SETUP.md)** — full setup walkthrough
 - **[CLAUDE.md](./CLAUDE.md)** / **[GEMINI.md](./GEMINI.md)** — tool-specific guidance, conventions, CI/CD details
+- **[docs/guides/troubleshooting.md](./docs/guides/troubleshooting.md)** — when something breaks
+- **[docs/guides/ci-cd.md](./docs/guides/ci-cd.md)** — CI/CD pipeline bootstrap and operation
+- **[docs/guides/ai-tools.md](./docs/guides/ai-tools.md)** — wiring up Claude Code / Gemini CLI / Cursor / etc.
 - **[instance-config/README.md](./instance-config/README.md)** — the grounding layer
 - **[servicenow-sdk-examples/](./servicenow-sdk-examples/)** — official patterns for tables, REST APIs, UI pages, ATF, etc.
 

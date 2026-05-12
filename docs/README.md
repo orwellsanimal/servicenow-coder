@@ -11,6 +11,7 @@ When asking an AI to build something non-trivial, a clear written specification 
 - `templates/` — reusable templates for product/feature documentation
 - `apps/<app-name>.md` — per-app PRDs (one file per Fluent app)
 - `features/<feature-name>.md` — feature-level specs that span multiple apps
+- `guides/` — operational guides (troubleshooting, CI/CD, AI tools). Separate from product specs.
 
 ## Workflow
 

@@ -274,15 +274,15 @@ The Claude Code skill `/now-scaffold atf-test <name>` and `/now-scaffold atf-tes
 
 ## Troubleshooting
 
+Quick reference table for the most common issues. For the full list, see [`docs/guides/troubleshooting.md`](./docs/guides/troubleshooting.md).
+
 | Symptom | Likely cause | Fix |
 |---------|--------------|-----|
-| `now-sdk install` returns 401 / 403 | Wrong credentials, wrong roles, or expired token | Re-run `now-sdk auth --add ... --alias dev`. Verify user has admin on the instance. |
-| `now-sdk` connection errors on a PDI | Instance hibernated | Wake it via the Developer Site, then retry |
-| ATF test API returns 403 | Deploy user lacks `sn_cicd.sys_ci_automation` | Grant the role, or use an admin user |
-| `pnpm install` fails with ERR_PNPM_OUTDATED_LOCKFILE | pnpm-lock.yaml out of date | Run `pnpm install` again, or `pnpm install --no-frozen-lockfile` |
-| Git status flags `servicenow-docs` as modified on Windows | Upstream has two files differing only in case | Cosmetic — only commits track the submodule SHA. Ignore. |
-| LF/CRLF warnings on commit | Git autocrlf on Windows | Cosmetic. Optionally `git config core.autocrlf input` |
-| `now-sdk` command not found | Not on PATH, or you skipped global install | Use `npx @servicenow/sdk <cmd>` instead |
+| `now-sdk install` returns 401 / 403 | Wrong credentials or roles | Re-run `now-sdk auth --add ... --alias dev`. User needs admin. |
+| `now-sdk` connection errors on a PDI | Instance hibernated | Wake at developer.servicenow.com |
+| ATF test API returns 403 | Missing `sn_cicd.sys_ci_automation` | Grant the role or use admin |
+| `servicenow-docs` shows modified on Windows | Upstream case collision | Cosmetic — ignore |
+| LF/CRLF warnings | Git autocrlf | Cosmetic — `git config core.autocrlf input` if it bothers you |
 
 ---
 
