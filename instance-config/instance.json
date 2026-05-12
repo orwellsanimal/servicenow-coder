@@ -1,11 +1,10 @@
 {
     "$schema": "./schemas/instance.schema.json",
-    "_description": "Instance identity and version. Update after export or when targeting a different instance.",
-    "instance_url": "",
+    "instance_url": "https://dev392282.service-now.com",
     "instance_id": "",
     "family": "australia",
     "build": "",
     "build_date": "",
-    "exported_at": "",
-    "profile": "ootb"
+    "exported_at": "2026-05-12T07:29:26.396Z",
+    "profile": "exported"
 }

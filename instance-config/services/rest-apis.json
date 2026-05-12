@@ -1,6 +1,2277 @@
 {
     "$schema": "../schemas/rest-apis.schema.json",
     "_source": "sys_ws_definition",
-    "_description": "Scripted REST APIs registered on the instance.",
-    "rest_apis": []
+    "_description": "Scripted REST APIs.",
+    "rest_apis": [
+        {
+            "sys_id": "0400215843e4121068e8a7ec6bb8f257",
+            "name": "Get Applications",
+            "api_id": "",
+            "namespace": "sn_glider",
+            "base_uri": "/api/sn_glider/applications",
+            "active": true,
+            "scope": "ServiceNow IDE",
+            "resources": []
+        },
+        {
+            "sys_id": "0456ae8567300300a0228c7942415a7c",
+            "name": "Conversation Server Preview",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/cs_preview",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "0472746e0b2332005775aabcb4673a25",
+            "name": "Change Request Calendar (Internal API)",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/change_request_calendar",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "06033ca11bf07510cb682f092a4bcb70",
+            "name": "ServiceNow Studio Applications API",
+            "api_id": "",
+            "namespace": "sn_sns",
+            "base_uri": "/api/sn_sns/applications",
+            "active": true,
+            "scope": "ServiceNow Studio",
+            "resources": []
+        },
+        {
+            "sys_id": "0618fe68a38912106cdec213d51e6137",
+            "name": "Collaboration Slack Event Processor",
+            "api_id": "",
+            "namespace": "sn_oe_sfs",
+            "base_uri": "/api/sn_oe_sfs/collaboration_slack_event_processor",
+            "active": true,
+            "scope": "Omni-Experience Standard Feature Set",
+            "resources": []
+        },
+        {
+            "sys_id": "07c887f1b78f4376aa9a4dbf682fa74e",
+            "name": "Build Agent Keyword Search",
+            "api_id": "",
+            "namespace": "sn_build_agent",
+            "base_uri": "/api/sn_build_agent/build_agent_keyword_search",
+            "active": true,
+            "scope": "Build Agent (Trial)",
+            "resources": []
+        },
+        {
+            "sys_id": "090c5ee353721110c733ddeeff7b1299",
+            "name": "ACE Contents",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/ace",
+            "active": true,
+            "scope": "Admin Experience Framework",
+            "resources": []
+        },
+        {
+            "sys_id": "0a068ab59320121018353b1c7489183b",
+            "name": "Model Explainability",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/model_explainability",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "0a6e31f2b72030100290b9708e11a980",
+            "name": "Pipeline API",
+            "api_id": "",
+            "namespace": "sn_pipeline",
+            "base_uri": "/api/sn_pipeline/pipeline",
+            "active": true,
+            "scope": "Pipeline",
+            "resources": []
+        },
+        {
+            "sys_id": "0b60fc3b77342110fe35665d6a5a99ea",
+            "name": "PAR Migrate Classic Dashboard Layout",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/par_migrate_classic_dashboard_layout",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "0bcf29a4536c2210ec8385f230e5e688",
+            "name": "Clone Auth API",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/clone_auth",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "10e70b4a372322101a31930ff2924b70",
+            "name": "PA Indicator Breakdowns",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/pa_indicator_breakdowns",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "113686d951da9210f877f46ad9114045",
+            "name": "VerifyAccess",
+            "api_id": "",
+            "namespace": "sn_sns",
+            "base_uri": "/api/sn_sns/verifyaccess",
+            "active": true,
+            "scope": "ServiceNow Studio",
+            "resources": []
+        },
+        {
+            "sys_id": "11920c063b1003001298874064efc45a",
+            "name": "CMDB UI API (Internal API)",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/cmdb_ui_api",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "126d91aa53923010fe92ddeeff7b126f",
+            "name": "AES Role Builder Application API",
+            "api_id": "",
+            "namespace": "sn_role_builder",
+            "base_uri": "/api/sn_role_builder/application",
+            "active": true,
+            "scope": "AES Role Builder",
+            "resources": []
+        },
+        {
+            "sys_id": "1275e141dd763010f87742fe561ce935",
+            "name": "Flow Diagramming API(Internal only)",
+            "api_id": "",
+            "namespace": "sn_flow_diagram",
+            "base_uri": "/api/sn_flow_diagram/flow_diagramming_api",
+            "active": true,
+            "scope": "Flow Diagramming",
+            "resources": []
+        },
+        {
+            "sys_id": "133272235bd22110e4334bbca881c7e7",
+            "name": "Sidebar Teams Permission API",
+            "api_id": "",
+            "namespace": "sn_oe_sfs",
+            "base_uri": "/api/sn_oe_sfs/sidebar_teams_permission_api",
+            "active": true,
+            "scope": "Omni-Experience Standard Feature Set",
+            "resources": []
+        },
+        {
+            "sys_id": "142ab96953f211104c19ddeeff7b124c",
+            "name": "Encode/Decode Base64",
+            "api_id": "",
+            "namespace": "sn_oe_sfs",
+            "base_uri": "/api/sn_oe_sfs/encode_decode_base64",
+            "active": true,
+            "scope": "Omni-Experience Standard Feature Set",
+            "resources": []
+        },
+        {
+            "sys_id": "14649660ffe0b210460dffffffffff42",
+            "name": "Overview Page",
+            "api_id": "",
+            "namespace": "sn_analytics_cen",
+            "base_uri": "/api/sn_analytics_cen/overview_page",
+            "active": true,
+            "scope": "sn-app-analytics-center",
+            "resources": []
+        },
+        {
+            "sys_id": "1604561aa3021210f1bb87c2441e6178",
+            "name": "Sidebar External Integrations",
+            "api_id": "",
+            "namespace": "sn_oe_sfs",
+            "base_uri": "/api/sn_oe_sfs/sidebar_external_integrations",
+            "active": true,
+            "scope": "Omni-Experience Standard Feature Set",
+            "resources": []
+        },
+        {
+            "sys_id": "160c0193a3b3021083259788341e61cd",
+            "name": "MIFVTable",
+            "api_id": "",
+            "namespace": "sn_mif",
+            "base_uri": "/api/sn_mif/vtable",
+            "active": true,
+            "scope": "MIF Customer Instance",
+            "resources": []
+        },
+        {
+            "sys_id": "16652f5b97e415108843f73ef053af22",
+            "name": "PDF to Table API",
+            "api_id": "",
+            "namespace": "sn_pdf_table_bldr",
+            "base_uri": "/api/sn_pdf_table_bldr/app",
+            "active": true,
+            "scope": "PDF Extractor",
+            "resources": []
+        },
+        {
+            "sys_id": "184a0d329fb222002920bde8132e7062",
+            "name": "SLA (Internal API)",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/sla",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "1941d0b377a40210b595aeb4bb5a99f4",
+            "name": "SOW Interceptor Utils",
+            "api_id": "",
+            "namespace": "sn_sow_interceptor",
+            "base_uri": "/api/sn_sow_interceptor/interceptor_utils",
+            "active": true,
+            "scope": "Interceptor UI for Service Operations Workspace",
+            "resources": []
+        },
+        {
+            "sys_id": "1ac417fe1bfcf0103cbb8404604bcb95",
+            "name": "Docker Webhook",
+            "api_id": "",
+            "namespace": "sn_docker_spoke",
+            "base_uri": "/api/sn_docker_spoke/docker_webhook_test",
+            "active": true,
+            "scope": "Docker Spoke",
+            "resources": []
+        },
+        {
+            "sys_id": "1cbdb77143f7b1106c8f33674bb8f2c4",
+            "name": "Activity Picker Usage Monitoring",
+            "api_id": "",
+            "namespace": "sn_pa_designer",
+            "base_uri": "/api/sn_pa_designer/activity_picker_usage_monitoring",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "1e8a07b05b03020009b8c7ad31f91a84",
+            "name": "Service Portal Designer",
+            "api_id": "",
+            "namespace": "global",
+            "base_uri": "/api/global/spd",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "1e8e17b0b7032300ee0d3177ee11a9d1",
+            "name": "Export Query",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/querybuilder",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "1fecd1c1c71131106766a7ea1dc2603d",
+            "name": "Check Plugin Installation",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/check_plugin_installation",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "2151a99e5bb12010fb2a210bb881c723",
+            "name": "Portal Starter Experience",
+            "api_id": "",
+            "namespace": "sn_portal_starte_0",
+            "base_uri": "/api/sn_portal_starte_0/portal_starter_experience",
+            "active": true,
+            "scope": "AES Portal UI Template",
+            "resources": []
+        },
+        {
+            "sys_id": "238532c0c3832010ce53bb62ef40dd05",
+            "name": "SG Custom Map",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/sg_custom_map",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "2405194d87e73200b38c0f4c59cb0b6f",
+            "name": "Guided Tours",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/guided_tours",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "2858d88653b712106183ddeeff7b12f9",
+            "name": "VA Web Client Settings",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/va_web_client_settings",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "28659acd3cd84e2f90c3ac4844f8bd78",
+            "name": "Build Agent API",
+            "api_id": "",
+            "namespace": "sn_build_agent",
+            "base_uri": "/api/sn_build_agent/build_agent_api",
+            "active": true,
+            "scope": "Build Agent (Trial)",
+            "resources": []
+        },
+        {
+            "sys_id": "2b03f84e5f1323006e619c4f2f73137f",
+            "name": "Slack team name",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/slack_team_name",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "2b59398967100300a52d79b457415a62",
+            "name": "Global FIle Management",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/global_file_management",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "2ef399829f523200db315ecec32e7009",
+            "name": "sncEntryPointSelector",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/snc_entry_point_selector",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "2f6afb17a3b9f1104dfdc213d51e6109",
+            "name": "Sidebar Suggestions Permission",
+            "api_id": "",
+            "namespace": "sn_oe_sfs",
+            "base_uri": "/api/sn_oe_sfs/sidebar_suggestions_permission_api",
+            "active": true,
+            "scope": "Omni-Experience Standard Feature Set",
+            "resources": []
+        },
+        {
+            "sys_id": "2f79bc10ff62021024f4c2da03cb1404",
+            "name": "UXA Filters",
+            "api_id": "",
+            "namespace": "sn_uxa_commons",
+            "base_uri": "/api/sn_uxa_commons/uxa_filters",
+            "active": true,
+            "scope": "Usage Insights Commons",
+            "resources": []
+        },
+        {
+            "sys_id": "30d8fea3eb0102102b5091b05952288f",
+            "name": "Documents Generation API",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/documents_generation_api",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "3115d45f67020300b410afa00585ef87",
+            "name": "Change Schedule (Internal)",
+            "api_id": "",
+            "namespace": "sn_chg_soc",
+            "base_uri": "/api/sn_chg_soc/soc",
+            "active": true,
+            "scope": "Change Management - Change Schedule",
+            "resources": []
+        },
+        {
+            "sys_id": "313640c4b73100108e2aee90ee11a9b5",
+            "name": "Reporting Alias API",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/reporting_alias",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "32b0494077e6811031e3b3c64b5a9989",
+            "name": "Table Builder Flows integration",
+            "api_id": "",
+            "namespace": "sn_table_builder",
+            "base_uri": "/api/sn_table_builder/flows",
+            "active": true,
+            "scope": "Table Builder",
+            "resources": []
+        },
+        {
+            "sys_id": "3418e25f7f120300995cbaf8befa912e",
+            "name": "Application Service Internal API",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/it_service",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "3510f477430146104733a7ec6bb8f2cf",
+            "name": "Sync Service",
+            "api_id": "",
+            "namespace": "sn_glider",
+            "base_uri": "/api/sn_glider/sync",
+            "active": true,
+            "scope": "ServiceNow IDE",
+            "resources": []
+        },
+        {
+            "sys_id": "3512bd93c7c12010100f2f3bf4c26049",
+            "name": "Mobile App Builder API",
+            "api_id": "",
+            "namespace": "sn_mab_api",
+            "base_uri": "/api/sn_mab_api/mab_api",
+            "active": true,
+            "scope": "Mobile App Builder API",
+            "resources": []
+        },
+        {
+            "sys_id": "354d4837c7223200b0ea8b3c5c976356",
+            "name": "Interactive Analysis (Internal API)",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/interactive_analysis",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "37a0c0b1ff45f2107942ffffffffffb7",
+            "name": "OG Conversational Cache Service",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/og_cs_cache_service",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "37cc9e39c3202010a9f5e548fa40ddef",
+            "name": "Generic API",
+            "api_id": "",
+            "namespace": "sn_app_eng_studio",
+            "base_uri": "/api/sn_app_eng_studio/generic",
+            "active": true,
+            "scope": "App Engine Studio",
+            "resources": []
+        },
+        {
+            "sys_id": "37e28cc1e7e3330078d86188d2f6a976",
+            "name": "Map Page Rest",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/sn_map",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "3902b84453b360100f29ddeeff7b125e",
+            "name": "Collab Request Permissions API",
+            "api_id": "",
+            "namespace": "sn_collab_request",
+            "base_uri": "/api/sn_collab_request/descriptors",
+            "active": true,
+            "scope": "Collaboration Request",
+            "resources": []
+        },
+        {
+            "sys_id": "3a7fbd63ff0932101b4bffffffffffc4",
+            "name": "Create Change Landing (Internal)",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/sn_chg_create_landing",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "3bcffc6677c81010d7159b71a91061df",
+            "name": "Guided Decisions Guidance API",
+            "api_id": "",
+            "namespace": "sn_gd_guidance",
+            "base_uri": "/api/sn_gd_guidance/guided_decisions_guidance_api",
+            "active": true,
+            "scope": "Guided Decisions - Guidance",
+            "resources": []
+        },
+        {
+            "sys_id": "3ce43d1bff220200b18affffffffff55",
+            "name": "Guided Setup API (Internal API)",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/guided_setup",
+            "active": true,
+            "scope": "Guided Setup - Legacy",
+            "resources": []
+        },
+        {
+            "sys_id": "3d4fe0bf0b323200c7ecc71437673a4e",
+            "name": "Predictive Intelligence",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/agent_intelligence",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "3daab4b5532320100f29ddeeff7b128a",
+            "name": "Collab Request Users and Groups API",
+            "api_id": "",
+            "namespace": "sn_collab_request",
+            "base_uri": "/api/sn_collab_request/users_groups",
+            "active": true,
+            "scope": "Collaboration Request",
+            "resources": []
+        },
+        {
+            "sys_id": "3ff417b78f3f2010960c53ac37bdeefb",
+            "name": "CMDB Workspace API (scoped)",
+            "api_id": "",
+            "namespace": "sn_cmdb_ws",
+            "base_uri": "/api/sn_cmdb_ws/cmdb_workspace_api_scoped",
+            "active": true,
+            "scope": "CMDB Workspace",
+            "resources": []
+        },
+        {
+            "sys_id": "40f39122c30222002841b63b12d3ae4f",
+            "name": "Triggers",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/trigger",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "415749bdff843210eba0ffffffffff7c",
+            "name": "experiments",
+            "api_id": "",
+            "namespace": "sn_experiment_core",
+            "base_uri": "/api/sn_experiment_core/experiments",
+            "active": true,
+            "scope": "Experimentation Framework Core",
+            "resources": []
+        },
+        {
+            "sys_id": "41f1ff6dc2314b11b5cd717bf16412be",
+            "name": "Build Agent Health",
+            "api_id": "",
+            "namespace": "sn_build_agent",
+            "base_uri": "/api/sn_build_agent/build_agent_health",
+            "active": true,
+            "scope": "Build Agent (Trial)",
+            "resources": []
+        },
+        {
+            "sys_id": "42600a21ff913210f465ffffffffff2f",
+            "name": "Tool Execution",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/tool_execution",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "45d58e77775d0110e6330ea24b5a9904",
+            "name": "Collaboration Chat Teams Processor",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/collaboration_chat_event_processor",
+            "active": true,
+            "scope": "Omni-Experience Standard Feature Set",
+            "resources": []
+        },
+        {
+            "sys_id": "46b47a07530150100f29ddeeff7b12e8",
+            "name": "App Engine Studio Template Category API",
+            "api_id": "",
+            "namespace": "sn_app_eng_studio",
+            "base_uri": "/api/sn_app_eng_studio/object_template_category",
+            "active": true,
+            "scope": "App Engine Studio",
+            "resources": []
+        },
+        {
+            "sys_id": "4724340e878732006db5f127b7cb0b7a",
+            "name": "Application service utils API",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/service_mapping",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "474b404710361110f87795d93c60dd8e",
+            "name": "BuilderToolkit",
+            "api_id": "",
+            "namespace": "sn_uibtk_api",
+            "base_uri": "/api/sn_uibtk_api/buildertoolkit",
+            "active": true,
+            "scope": "@devsnc/uibtk-api",
+            "resources": []
+        },
+        {
+            "sys_id": "47ad9384c7231010408bc8d6f2c260ef",
+            "name": "App Engine Studio Resources Content API",
+            "api_id": "",
+            "namespace": "sn_app_eng_studio",
+            "base_uri": "/api/sn_app_eng_studio/resources_content",
+            "active": true,
+            "scope": "App Engine Studio",
+            "resources": []
+        },
+        {
+            "sys_id": "47c15a95432931101188f114cfb8f2cd",
+            "name": "Workflow Studio API",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/sn_app_wfstudio",
+            "active": true,
+            "scope": "Workflow Studio",
+            "resources": []
+        },
+        {
+            "sys_id": "47dc3947b760101042a9ef54ce11a989",
+            "name": "Initiate Message",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/initiate_message",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "49ee39187d5bd300964f9e5f1b7cbbad",
+            "name": "ContextDocURLService",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/context_doc_url",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "4ab4da0643520210fbb28b11afb8f20d",
+            "name": "WWNA",
+            "api_id": "",
+            "namespace": "sn_wwna",
+            "base_uri": "/api/sn_wwna/wwna",
+            "active": true,
+            "scope": "Now Assist context menu",
+            "resources": []
+        },
+        {
+            "sys_id": "4c41d3287700001001fb4311a81061ae",
+            "name": "App Engine Studio Applications API",
+            "api_id": "",
+            "namespace": "sn_app_eng_studio",
+            "base_uri": "/api/sn_app_eng_studio/applications",
+            "active": true,
+            "scope": "App Engine Studio",
+            "resources": []
+        },
+        {
+            "sys_id": "4c4caafa8f2cb410960c53ac37bdee8e",
+            "name": "CMDB Workspace API",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/cmdb_workspace_api",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "4d0b8b6593445210e7959b94818918a9",
+            "name": "IDE Credential",
+            "api_id": "",
+            "namespace": "sn_glider",
+            "base_uri": "/api/sn_glider/ide_credential",
+            "active": true,
+            "scope": "ServiceNow IDE",
+            "resources": []
+        },
+        {
+            "sys_id": "4f5a9c0a53221010b2caddeeff7b12b9",
+            "name": "TimeAgo",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/timeago",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "4f798e1e9f110210c4191b2a1b0a1c2f",
+            "name": "Application Intake Provision",
+            "api_id": "",
+            "namespace": "sn_app_intake",
+            "base_uri": "/api/sn_app_intake/provision",
+            "active": true,
+            "scope": "Application Intake",
+            "resources": []
+        },
+        {
+            "sys_id": "52287426ff110210771bffffffffff8f",
+            "name": "IDE Build Service",
+            "api_id": "",
+            "namespace": "sn_glider",
+            "base_uri": "/api/sn_glider/build",
+            "active": true,
+            "scope": "ServiceNow IDE",
+            "resources": []
+        },
+        {
+            "sys_id": "527de2e3532111106e33ddeeff7b12e9",
+            "name": "ML Instance Validation",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/ml_instance_validation",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "53e717b343f802105947644c7ab8f221",
+            "name": "diagnose",
+            "api_id": "",
+            "namespace": "sn_nowassist_diagn",
+            "base_uri": "/api/sn_nowassist_diagn/diagnose",
+            "active": true,
+            "scope": "Now Assist Troubleshooting",
+            "resources": []
+        },
+        {
+            "sys_id": "54bdb9a37732230001fb4311a8106127",
+            "name": "Guided App Creator API",
+            "api_id": "",
+            "namespace": "sn_g_app_creator",
+            "base_uri": "/api/sn_g_app_creator/guided_app_creator_api",
+            "active": true,
+            "scope": "Guided Application Creator",
+            "resources": []
+        },
+        {
+            "sys_id": "55672c9a7333230021a044764df6a706",
+            "name": "NLU (Internal API)",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/nlu",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "565abf20c39413003e76741e81d3ae48",
+            "name": "Application Service",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/cmdb",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "572fa9d4a31531108d80ad2f241e6172",
+            "name": "PAR CoreUI Migration",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/par_coreui_migration",
+            "active": true,
+            "scope": "sn-app-par-coreui-migration-center",
+            "resources": []
+        },
+        {
+            "sys_id": "57ac99e85b462010fb2a210bb881c7df",
+            "name": "Workspace Starter Experience",
+            "api_id": "",
+            "namespace": "sn_workspace_sta_0",
+            "base_uri": "/api/sn_workspace_sta_0/workspace_starter_experience",
+            "active": true,
+            "scope": "AES Workspace UI Template",
+            "resources": []
+        },
+        {
+            "sys_id": "5af68855535f10100999ddeeff7b1288",
+            "name": "Change Models Landing (Internal)",
+            "api_id": "",
+            "namespace": "sn_chg_model_ui",
+            "base_uri": "/api/sn_chg_model_ui/landing",
+            "active": true,
+            "scope": "Change Management - Change Models Landing",
+            "resources": []
+        },
+        {
+            "sys_id": "5b18e8b2c3022110bf30c265cb40ddc8",
+            "name": "Install Bot",
+            "api_id": "",
+            "namespace": "sn_oe_sfs",
+            "base_uri": "/api/sn_oe_sfs/bot_install",
+            "active": true,
+            "scope": "Omni-Experience Standard Feature Set",
+            "resources": []
+        },
+        {
+            "sys_id": "5d37b050b7620010afd28c41de11a9e6",
+            "name": "Reporting Table Description API",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/reporting_table_description",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "5dbc8bd75303130096c3ddeeff7b12e4",
+            "name": "Change Management",
+            "api_id": "",
+            "namespace": "sn_chg_rest",
+            "base_uri": "/api/sn_chg_rest/change",
+            "active": true,
+            "scope": "Change Management - REST API",
+            "resources": []
+        },
+        {
+            "sys_id": "5dc7c96c376826107955c96823924bd7",
+            "name": "Generic API",
+            "api_id": "",
+            "namespace": "sn_studio_commons",
+            "base_uri": "/api/sn_studio_commons/generic_api",
+            "active": true,
+            "scope": "App Studio Commons",
+            "resources": []
+        },
+        {
+            "sys_id": "5e1a59a171dc4b7693c2ce61425f2018",
+            "name": "Conversation Change Log API",
+            "api_id": "",
+            "namespace": "sn_build_agent",
+            "base_uri": "/api/sn_build_agent/conversation_change_log_api",
+            "active": true,
+            "scope": "Build Agent (Trial)",
+            "resources": []
+        },
+        {
+            "sys_id": "5e4b9521f391021000baad941484caf7",
+            "name": "Collection API",
+            "api_id": "",
+            "namespace": "sn_udc",
+            "base_uri": "/api/sn_udc/collection",
+            "active": true,
+            "scope": "Unified Developer Core",
+            "resources": []
+        },
+        {
+            "sys_id": "5f387aa0b32023002bf182c136a8dc1c",
+            "name": "Contextual Search Actions (Internal API)",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/cxs_actions",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "60350c229f1210100d74d46d842e709d",
+            "name": "branding",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/branding",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "60c171d973c30010ee4dd3c72bf6a716",
+            "name": "CSDM Application Service (Internal API)",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/csdm_app_service",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "60ca3e1dff332210a6fdffffffffffec",
+            "name": "Telemetry Data",
+            "api_id": "",
+            "namespace": "sn_telemetry_data",
+            "base_uri": "/api/sn_telemetry_data/telemetry",
+            "active": true,
+            "scope": "telemetry-data-connector",
+            "resources": []
+        },
+        {
+            "sys_id": "6160afa3438c5210602c2fb948b8f25a",
+            "name": "Email Skill Config",
+            "api_id": "",
+            "namespace": "now_email_client",
+            "base_uri": "/api/now_email_client/email_skill_config",
+            "active": true,
+            "scope": "@servicenow/now-email-client",
+            "resources": []
+        },
+        {
+            "sys_id": "61dbc5bf87e30300d99a8467a7cb0b85",
+            "name": "Recipients list REST API",
+            "api_id": "",
+            "namespace": "sn_publications",
+            "base_uri": "/api/sn_publications/recipients_list_rest_api",
+            "active": true,
+            "scope": "Targeted Communications",
+            "resources": []
+        },
+        {
+            "sys_id": "63d8b7c573c51010a59b4c5353f6a737",
+            "name": "Mobile Card Builder API",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/mcb",
+            "active": true,
+            "scope": "Mobile Card Builder",
+            "resources": []
+        },
+        {
+            "sys_id": "64c5c738c7ba3010408bc8d6f2c2609d",
+            "name": "Authorization",
+            "api_id": "",
+            "namespace": "sn_pipeline",
+            "base_uri": "/api/sn_pipeline/authorization",
+            "active": true,
+            "scope": "Pipeline",
+            "resources": []
+        },
+        {
+            "sys_id": "6518cdb6535100101dccddeeff7b1214",
+            "name": "WizardIntercept",
+            "api_id": "",
+            "namespace": "sn_devstudio",
+            "base_uri": "/api/sn_devstudio/wizard_intercept",
+            "active": true,
+            "scope": "Studio",
+            "resources": []
+        },
+        {
+            "sys_id": "676c785c7703330065117206d81061cc",
+            "name": "Workspace Administration",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/workspace_administration",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "68745f245c3c48818f91f6102b2d0de1",
+            "name": "Source Code",
+            "api_id": "",
+            "namespace": "sn_glider",
+            "base_uri": "/api/sn_glider/source_code",
+            "active": true,
+            "scope": "ServiceNow IDE",
+            "resources": []
+        },
+        {
+            "sys_id": "68ec639187132200b5bea18dd0e3ec51",
+            "name": "Tracked Config Files",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/tracked_config_files",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "69e513cb431131106e3f864e3ab8f2f2",
+            "name": "PAR CoreUI Migration Utils",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/par_coreui_migration_utils",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "6a5a74871b760110382c43b8b04bcb66",
+            "name": "Slack Bots Config",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/slack_bots_config",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "6adeae39c3013010a9f5e548fa40dd4e",
+            "name": "Collaboration Tasks API",
+            "api_id": "",
+            "namespace": "sn_collab_request",
+            "base_uri": "/api/sn_collab_request/collaboration_tasks_api",
+            "active": true,
+            "scope": "Collaboration Request",
+            "resources": []
+        },
+        {
+            "sys_id": "6bf1ee2cff7322109eccffffffffff01",
+            "name": "SygraWorkflow",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/sygra_workflow",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "6c1011d3ff3022109371ffffffffffcc",
+            "name": "AI Data Explorer feature metadata",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/ai_canvas_feature_metadata",
+            "active": true,
+            "scope": "sn-par-analytics-list",
+            "resources": []
+        },
+        {
+            "sys_id": "6db6b2ab53444110f54fddeeff7b1232",
+            "name": "SNHelpSetupBuilderService",
+            "api_id": "",
+            "namespace": "sn_ads_setup",
+            "base_uri": "/api/sn_ads_setup/build",
+            "active": true,
+            "scope": "Guided Setup",
+            "resources": []
+        },
+        {
+            "sys_id": "6de18e62c3429110be13544c1840dd4c",
+            "name": "Clone Request Calendar",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/clone_request_calendar",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "6ec81f8677d801105d57a2059f5a9936",
+            "name": "Get Core UI logo source",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/get_core_ui_logo_source",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "6f6715b3771111102db61558ca5a996c",
+            "name": "FollowNotifications",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/follow_notifications",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "70eecc29a3233110c4383702f31e6112",
+            "name": "Glider Relay",
+            "api_id": "",
+            "namespace": "sn_glider",
+            "base_uri": "/api/sn_glider/relay",
+            "active": true,
+            "scope": "ServiceNow IDE",
+            "resources": []
+        },
+        {
+            "sys_id": "71a1f45647080a504af56848946d43c0",
+            "name": "App Studio Common Template API",
+            "api_id": "",
+            "namespace": "sn_studio_commons",
+            "base_uri": "/api/sn_studio_commons/catalog_templates",
+            "active": true,
+            "scope": "App Studio Commons",
+            "resources": []
+        },
+        {
+            "sys_id": "72cd338e73f110107419c907fbf6a730",
+            "name": "Table Builder Application",
+            "api_id": "",
+            "namespace": "sn_table_builder",
+            "base_uri": "/api/sn_table_builder/app",
+            "active": true,
+            "scope": "Table Builder",
+            "resources": []
+        },
+        {
+            "sys_id": "75543606935e02108dbf85abd1891879",
+            "name": "VA Designer Config",
+            "api_id": "",
+            "namespace": "sn_cs_builder",
+            "base_uri": "/api/sn_cs_builder/va_designer_config",
+            "active": true,
+            "scope": "Conversation Builder",
+            "resources": []
+        },
+        {
+            "sys_id": "77487c31ff4222106d54ffffffffff80",
+            "name": "Data Pattern",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/data_pattern",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "791e5897ff1632103851ffffffffff1b",
+            "name": "CIMD",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/cimd",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "792a06b2ffe53210c3e6ffffffffff0d",
+            "name": "GetAIListRecordActivityData",
+            "api_id": "",
+            "namespace": "sn_now_list_common",
+            "base_uri": "/api/sn_now_list_common/getailistrecordactivitydata",
+            "active": true,
+            "scope": "now-list-commons",
+            "resources": []
+        },
+        {
+            "sys_id": "7a088303770d011066cfa9ff9a5a99b2",
+            "name": "Table Wizard",
+            "api_id": "",
+            "namespace": "sn_table_bldr_wzd",
+            "base_uri": "/api/sn_table_bldr_wzd/app",
+            "active": true,
+            "scope": "AES Table Builder Wizard",
+            "resources": []
+        },
+        {
+            "sys_id": "7b27f0e453da20100f29ddeeff7b12bc",
+            "name": "App Engine Studio Templates API",
+            "api_id": "",
+            "namespace": "sn_app_eng_studio",
+            "base_uri": "/api/sn_app_eng_studio/templates",
+            "active": true,
+            "scope": "App Engine Studio",
+            "resources": []
+        },
+        {
+            "sys_id": "7c4614e4737d301045216238edf6a755",
+            "name": "SOW Record",
+            "api_id": "",
+            "namespace": "sn_sow_itsm_common",
+            "base_uri": "/api/sn_sow_itsm_common/sow_record",
+            "active": true,
+            "scope": "Service Operations Workspace ITSM Common",
+            "resources": []
+        },
+        {
+            "sys_id": "7e534526d722220034d145bcce6103fa",
+            "name": "Contextual Search (Internal API)",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/cxs",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "7ea1fc5f9770d1104b593f0e6253af99",
+            "name": "AppManager(Internal API)",
+            "api_id": "",
+            "namespace": "sn_appclient",
+            "base_uri": "/api/sn_appclient/appmanager",
+            "active": true,
+            "scope": "Scoped App Client",
+            "resources": []
+        },
+        {
+            "sys_id": "813f3ca2ff103210cf03ffffffffff68",
+            "name": "Oauth JWKS API",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/oauth",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "81e45c800b833200ecfd818393673a2e",
+            "name": "Schedule Page API",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/schedule_page",
+            "active": true,
+            "scope": "Schedule Pages",
+            "resources": []
+        },
+        {
+            "sys_id": "8245cad20f001010dff70c3635767eca",
+            "name": "Response templates",
+            "api_id": "",
+            "namespace": "sn_templated_snip",
+            "base_uri": "/api/sn_templated_snip/response_templates",
+            "active": true,
+            "scope": "Templated Snippets",
+            "resources": []
+        },
+        {
+            "sys_id": "82a90c87c7102010408bc8d6f2c260b3",
+            "name": "Template Spokes Details",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/template_spokes_details",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "82c969fba3bdb11018d4189b66fcdaf4",
+            "name": "Developer History API",
+            "api_id": "",
+            "namespace": "sn_udc",
+            "base_uri": "/api/sn_udc/developer_history",
+            "active": true,
+            "scope": "Unified Developer Core",
+            "resources": []
+        },
+        {
+            "sys_id": "842e289137031200612747efbe41f1ce",
+            "name": "Users",
+            "api_id": "",
+            "namespace": "sn_devstudio",
+            "base_uri": "/api/sn_devstudio/users",
+            "active": true,
+            "scope": "Studio",
+            "resources": []
+        },
+        {
+            "sys_id": "84da5f9743c62110fcbf9bf6cab8f2da",
+            "name": "Scheduled Deployment",
+            "api_id": "",
+            "namespace": "sn_deploy_pipeline",
+            "base_uri": "/api/sn_deploy_pipeline/scheduled_deployment",
+            "active": true,
+            "scope": "Deployment Pipeline",
+            "resources": []
+        },
+        {
+            "sys_id": "86719a5dc7e220105a06145bf4c26006",
+            "name": "Virtual Agent Design",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/virtual_agent_design",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "87045d89770230106407f0ec8e5a9974",
+            "name": "passwordexclusionlist",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/passwordexclusionlist",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "87df203bff277610a6c4ffffffffff03",
+            "name": "Workflow Automation Fluent APIs",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/wfa_fluent",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "88921d9ba3060210281012af141e61ee",
+            "name": "Fluent Applications List",
+            "api_id": "",
+            "namespace": "sn_glider",
+            "base_uri": "/api/sn_glider/fluent_applications_list",
+            "active": true,
+            "scope": "ServiceNow IDE",
+            "resources": []
+        },
+        {
+            "sys_id": "8abb03b7435f1210748a6692e9b8f202",
+            "name": "MID Telemetry API",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/mid_telemetry",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "8ac50768bd590e10f877b7c0f70fea90",
+            "name": "Applications API",
+            "api_id": "",
+            "namespace": "sn_udc",
+            "base_uri": "/api/sn_udc/applications",
+            "active": true,
+            "scope": "Unified Developer Core",
+            "resources": []
+        },
+        {
+            "sys_id": "8ad394c8db03220099f93691f0b8f584",
+            "name": "Knowledge",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/knowledge",
+            "active": true,
+            "scope": "Knowledge Management - Service Portal",
+            "resources": []
+        },
+        {
+            "sys_id": "8f25234477703110878cd30e5b5a994c",
+            "name": "Whats New",
+            "api_id": "",
+            "namespace": "sn_wn",
+            "base_uri": "/api/sn_wn/whats_new",
+            "active": true,
+            "scope": "Whats New Framework Core",
+            "resources": []
+        },
+        {
+            "sys_id": "90b9010773761010ae8dd21efaf6a745",
+            "name": "Data Classification",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/data_classification",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "90e42b1deb2975507f419f6713522812",
+            "name": "Action",
+            "api_id": "",
+            "namespace": "sn_ex_sp",
+            "base_uri": "/api/sn_ex_sp/action",
+            "active": true,
+            "scope": "Employee Center",
+            "resources": []
+        },
+        {
+            "sys_id": "93683ba5b71701109cfe23508e11a91f",
+            "name": "Admin Center API",
+            "api_id": "",
+            "namespace": "sn_admin_center",
+            "base_uri": "/api/sn_admin_center/adminx",
+            "active": true,
+            "scope": "Admin Center",
+            "resources": []
+        },
+        {
+            "sys_id": "939d2ac3d7220200b6bddb0c82520377",
+            "name": "Code Search",
+            "api_id": "",
+            "namespace": "sn_codesearch",
+            "base_uri": "/api/sn_codesearch/code_search",
+            "active": true,
+            "scope": "Code Search",
+            "resources": []
+        },
+        {
+            "sys_id": "94bafda6cb602300edc0fcd5634c9c2e",
+            "name": "Page Inspector",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/page_inspector",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "95609ba00b73230033cdcdd425673a8b",
+            "name": "Stream Attachment Utils API",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/as_attachment",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "95beed2cc7c71010763e343703c2608d",
+            "name": "Recommended Action",
+            "api_id": "",
+            "namespace": "sn_nb_action",
+            "base_uri": "/api/sn_nb_action/next_best_action",
+            "active": true,
+            "scope": "Recommended Actions",
+            "resources": []
+        },
+        {
+            "sys_id": "986214c16710320097eeff5557415a89",
+            "name": "Benchmark Client API",
+            "api_id": "",
+            "namespace": "sn_bm_client",
+            "base_uri": "/api/sn_bm_client/benchmark_client_api",
+            "active": true,
+            "scope": "Benchmark Client",
+            "resources": []
+        },
+        {
+            "sys_id": "98e7e660c3a02110cf33ad413b40dda8",
+            "name": "Geomap Rest API",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/geomap",
+            "active": true,
+            "scope": "now-visualization-extensions",
+            "resources": []
+        },
+        {
+            "sys_id": "9b6e202b53503110c673ddeeff7b1225",
+            "name": "Reminders",
+            "api_id": "",
+            "namespace": "sn_employee",
+            "base_uri": "/api/sn_employee/reminders",
+            "active": true,
+            "scope": "Employee Profile",
+            "resources": []
+        },
+        {
+            "sys_id": "9c2e6de02d5c8a10f877dc620187db18",
+            "name": "Usage Insights Funnel ",
+            "api_id": "",
+            "namespace": "sn_uxa_funnel",
+            "base_uri": "/api/sn_uxa_funnel/user_experience_analytics_funnel",
+            "active": true,
+            "scope": "Usage Insights Funnel",
+            "resources": []
+        },
+        {
+            "sys_id": "9c43f242c7310110f376a0736cc26073",
+            "name": "NLQ Api",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/nlq",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "9ce14a843bc300106501cea234efc4fd",
+            "name": "Conversation Message Resource",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/cs_message",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "9d52207653223010b846ddeeff7b12f3",
+            "name": "Deployment Pipeline API",
+            "api_id": "",
+            "namespace": "sn_deploy_pipeline",
+            "base_uri": "/api/sn_deploy_pipeline/deployment_pipeline_api",
+            "active": true,
+            "scope": "Deployment Pipeline",
+            "resources": []
+        },
+        {
+            "sys_id": "9d863822ff4b6210b8b7ffffffffff64",
+            "name": "Skill Capability API",
+            "api_id": "",
+            "namespace": "sn_flow_designer",
+            "base_uri": "/api/sn_flow_designer/skill_capability_api",
+            "active": true,
+            "scope": "Flow Designer - Designer",
+            "resources": []
+        },
+        {
+            "sys_id": "9ef80ef0672203004286c3105685efd8",
+            "name": "Copy Assessments",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/copy_assessments",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "9fb44064773230106ee492b01e5a9991",
+            "name": "SNHelpSetupPlayerService",
+            "api_id": "",
+            "namespace": "sn_ads_setup",
+            "base_uri": "/api/sn_ads_setup/play",
+            "active": true,
+            "scope": "Guided Setup",
+            "resources": []
+        },
+        {
+            "sys_id": "a2347dc25f212110f082532aca73132e",
+            "name": "Deployment Pipeline Admin API",
+            "api_id": "",
+            "namespace": "sn_deploy_pipeline",
+            "base_uri": "/api/sn_deploy_pipeline/admin",
+            "active": true,
+            "scope": "Deployment Pipeline",
+            "resources": []
+        },
+        {
+            "sys_id": "a3d5e8ba57530010a3933da73d94f9e3",
+            "name": "SLA Timer Config API",
+            "api_id": "",
+            "namespace": "sn_slm_timer",
+            "base_uri": "/api/sn_slm_timer/sla",
+            "active": true,
+            "scope": "Service Level Management - SLA Timer Config API",
+            "resources": []
+        },
+        {
+            "sys_id": "a5ea2ec8ffec5a10ac42fbd38c4fd9fb",
+            "name": "Notification Dashboard",
+            "api_id": "",
+            "namespace": "snc",
+            "base_uri": "/api/snc/notification_dashboard",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "a756df55b7a5c1100290b5208e11a9d3",
+            "name": "Notification Builder Recipients API",
+            "api_id": "",
+            "namespace": "sn_aes_notificatio",
+            "base_uri": "/api/sn_aes_notificatio/recipients",
+            "active": true,
+            "scope": "AES Notification Builder Component",
+            "resources": []
+        },
+        {
+            "sys_id": "a8a3845253f10110b846ddeeff7b1216",
+            "name": "Notification Builder Tables API",
+            "api_id": "",
+            "namespace": "sn_aes_notificatio",
+            "base_uri": "/api/sn_aes_notificatio/tables",
+            "active": true,
+            "scope": "AES Notification Builder Component",
+            "resources": []
+        },
+        {
+            "sys_id": "aabc7e6853003200fa9bd7b08cc5870f",
+            "name": "ActivitySubscriptions",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/actsub",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "ab75f5a8ffa0a21079deffffffffff52",
+            "name": "Performance Analyzer Page",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/sn_perf_page",
+            "active": true,
+            "scope": "Performance Analyzer Page",
+            "resources": []
+        },
+        {
+            "sys_id": "ad1762623bb033007fef460044efc468",
+            "name": "UAAppEngineLicensingService",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/uaappenginelicensingservice",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "ad9ebe127322101045cadfcd3bf6a735",
+            "name": "CI Lifecycle Manager",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/ci_lifecycle_manager",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "adf99ef153202110c271ddeeff7b12ff",
+            "name": "OneExtend",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/oneextend",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "af97fa0d432031106b5f90cfd7b8f2dd",
+            "name": "Now Assist Admin Console API",
+            "api_id": "",
+            "namespace": "sn_nowassist_admin",
+            "base_uri": "/api/sn_nowassist_admin/now_assist_admin_console_api",
+            "active": true,
+            "scope": "Now Assist Admin Console",
+            "resources": []
+        },
+        {
+            "sys_id": "afc92814c300301085c091294440ddf2",
+            "name": "Application Permissions API",
+            "api_id": "",
+            "namespace": "sn_collab_request",
+            "base_uri": "/api/sn_collab_request/application_permissions",
+            "active": true,
+            "scope": "Collaboration Request",
+            "resources": []
+        },
+        {
+            "sys_id": "b00bbe1bb72911107fc19e68ee11a91f",
+            "name": "Advance Chat Settings",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/advance_chat_settings",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "b14d651e77a2511031e3b3c64b5a99f8",
+            "name": "Preferred Tables API",
+            "api_id": "",
+            "namespace": "sn_prfrd_tables",
+            "base_uri": "/api/sn_prfrd_tables/tables",
+            "active": true,
+            "scope": "Preferred tables",
+            "resources": []
+        },
+        {
+            "sys_id": "b1edafaf37131200612747efbe41f104",
+            "name": "System",
+            "api_id": "",
+            "namespace": "sn_devstudio",
+            "base_uri": "/api/sn_devstudio/system",
+            "active": true,
+            "scope": "Studio",
+            "resources": []
+        },
+        {
+            "sys_id": "b4558e83c3a302006f333b0ac3d3ae8e",
+            "name": "Service Catalog API",
+            "api_id": "",
+            "namespace": "sn_sc",
+            "base_uri": "/api/sn_sc/servicecatalog",
+            "active": true,
+            "scope": "Service Catalog REST API",
+            "resources": []
+        },
+        {
+            "sys_id": "b5617ef2b7620010ee0d3177ee11a9cc",
+            "name": "Life Cycle API",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/life_cycle_api",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "b67298c94f601210354a631ba1ce0b39",
+            "name": "Splunk Token",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/splunk_token",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "bd93a9195300501065f2ddeeff7b1297",
+            "name": "SNHelpService",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/help",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "be2cb28393a23200443674aff67ffba6",
+            "name": "Manual_CI",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/manual_ci",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "c06bcdd2b7243210601223508e11a9e6",
+            "name": "IDE Auth Service",
+            "api_id": "",
+            "namespace": "sn_glider",
+            "base_uri": "/api/sn_glider/auth",
+            "active": true,
+            "scope": "ServiceNow IDE",
+            "resources": []
+        },
+        {
+            "sys_id": "c3faf7c8536a11107c19ddeeff7b124d",
+            "name": "PAR Scheduled Export",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/par_scheduled_export",
+            "active": true,
+            "scope": "sn-app-par-components-scheduled-export",
+            "resources": []
+        },
+        {
+            "sys_id": "c540a8a0777f2110fedf8bb7cb5a9990",
+            "name": "Recent Favorites API",
+            "api_id": "",
+            "namespace": "sn_ex_sp",
+            "base_uri": "/api/sn_ex_sp/recent_favorites_api",
+            "active": true,
+            "scope": "Employee Center",
+            "resources": []
+        },
+        {
+            "sys_id": "c6facb4553103300d1dcddeeff7b1287",
+            "name": "ML UI",
+            "api_id": "",
+            "namespace": "sn_ml_ui",
+            "base_uri": "/api/sn_ml_ui/ml_ui",
+            "active": true,
+            "scope": "ML UI",
+            "resources": []
+        },
+        {
+            "sys_id": "c87046e8b71909100290b5208e11a95f",
+            "name": "Notification Builder Notifications API",
+            "api_id": "",
+            "namespace": "sn_aes_notificatio",
+            "base_uri": "/api/sn_aes_notificatio/notifications",
+            "active": true,
+            "scope": "AES Notification Builder Component",
+            "resources": []
+        },
+        {
+            "sys_id": "c97c4963c33022003b935ad551d3ae00",
+            "name": "List Query",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/list_query",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "cac9a47253221010af5addeeff7b122a",
+            "name": "Guided Setup Config API ",
+            "api_id": "",
+            "namespace": "sn_ci_gs_content",
+            "base_uri": "/api/sn_ci_gs_content/guided_setup_config_api",
+            "active": true,
+            "scope": "CI Guided Setup",
+            "resources": []
+        },
+        {
+            "sys_id": "cb32e0d39eae4bbd99d9c35a1efa3c8e",
+            "name": "Checkpoints API",
+            "api_id": "",
+            "namespace": "sn_build_agent",
+            "base_uri": "/api/sn_build_agent/checkpoints_api",
+            "active": true,
+            "scope": "Build Agent (Trial)",
+            "resources": []
+        },
+        {
+            "sys_id": "cb5244e94f16021028106c01b1ce0b79",
+            "name": "IDE Basic Applications",
+            "api_id": "",
+            "namespace": "sn_glider",
+            "base_uri": "/api/sn_glider/ide_basic_applications",
+            "active": true,
+            "scope": "ServiceNow IDE",
+            "resources": []
+        },
+        {
+            "sys_id": "cd3df0155f1323006e619c4f2f731367",
+            "name": "VA bot uninstall",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/va_bot_uninstall",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "cf65d305eb10220034d1eeea1206fe55",
+            "name": "CAB Workbench (Internal API)",
+            "api_id": "",
+            "namespace": "sn_change_cab",
+            "base_uri": "/api/sn_change_cab/cab",
+            "active": true,
+            "scope": "Change Management - CAB Workbench",
+            "resources": []
+        },
+        {
+            "sys_id": "cf65e25d43a79210ed3931d1ffb8f2b1",
+            "name": "Table Batch API",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/table_batch_api",
+            "active": true,
+            "scope": "sn-app-analytics-center",
+            "resources": []
+        },
+        {
+            "sys_id": "d15daae30f33001058e6ac5397767efd",
+            "name": "UA GCF",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/ua_gcf",
+            "active": true,
+            "scope": "Generic Collection Framework",
+            "resources": []
+        },
+        {
+            "sys_id": "d1d2b3f1ff3032101a31ffffffffff86",
+            "name": "Favorite CoreUI Reports",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/favorite_coreui_report",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "d2e3f42f9f1102003d5c77a0942e7084",
+            "name": "user_role_inheritance",
+            "api_id": "",
+            "namespace": "global",
+            "base_uri": "/api/global/user_role_inheritance",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "d357798053444a107072ddeeff7b1246",
+            "name": "Generic API",
+            "api_id": "",
+            "namespace": "sn_udc",
+            "base_uri": "/api/sn_udc/generic",
+            "active": true,
+            "scope": "Unified Developer Core",
+            "resources": []
+        },
+        {
+            "sys_id": "d4f4e39e73013010b4766a0c4cf6a774",
+            "name": "ImportProgressChecker",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/importprogresschecker",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "d5498f77c3633010d4437f9ec840dd67",
+            "name": "Generic API",
+            "api_id": "",
+            "namespace": "sn_decision_table",
+            "base_uri": "/api/sn_decision_table/generic",
+            "active": true,
+            "scope": "Decision Table Builder",
+            "resources": []
+        },
+        {
+            "sys_id": "d65a7fa97908ea10f87767a3751ca0e7",
+            "name": "Email Client Config",
+            "api_id": "",
+            "namespace": "now_email_client",
+            "base_uri": "/api/now_email_client/email_client_config",
+            "active": true,
+            "scope": "@servicenow/now-email-client",
+            "resources": []
+        },
+        {
+            "sys_id": "d68a7cb5eb9221109cfedf3c03522847",
+            "name": "Configuration Hub API",
+            "api_id": "",
+            "namespace": "sn_config_hub",
+            "base_uri": "/api/sn_config_hub/configuration_hub_api",
+            "active": true,
+            "scope": "Configuration Hub",
+            "resources": []
+        },
+        {
+            "sys_id": "d71efe5aff132210849affffffffffa7",
+            "name": "Metadata",
+            "api_id": "",
+            "namespace": "sn_glider",
+            "base_uri": "/api/sn_glider/metadata",
+            "active": true,
+            "scope": "ServiceNow IDE",
+            "resources": []
+        },
+        {
+            "sys_id": "d7650925432112106244703a2cb8f201",
+            "name": "Workspace CAB meeting (Internal API)",
+            "api_id": "",
+            "namespace": "sn_mtg_cab",
+            "base_uri": "/api/sn_mtg_cab/workspace_cab_meeting",
+            "active": true,
+            "scope": "Meeting CAB",
+            "resources": []
+        },
+        {
+            "sys_id": "d8b7652f537211104c19ddeeff7b1221",
+            "name": "bot_override",
+            "api_id": "",
+            "namespace": "sn_oe_sfs",
+            "base_uri": "/api/sn_oe_sfs/bot_override",
+            "active": true,
+            "scope": "Omni-Experience Standard Feature Set",
+            "resources": []
+        },
+        {
+            "sys_id": "da39bfc3c7300110408bc8d6f2c2606a",
+            "name": "App Engine Studio User Intake",
+            "api_id": "",
+            "namespace": "sn_app_eng_studio",
+            "base_uri": "/api/sn_app_eng_studio/app_engine_studio_user_intake",
+            "active": true,
+            "scope": "App Engine Studio",
+            "resources": []
+        },
+        {
+            "sys_id": "dc4bc0e37303230010d533083cf6a7ed",
+            "name": "Syntax Editor",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/syntax_editor",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "dc9d12f289644eaeb51bdf4b1ec5c681",
+            "name": "Activity Timer",
+            "api_id": "",
+            "namespace": "sn_at",
+            "base_uri": "/api/sn_at/timer",
+            "active": true,
+            "scope": "Activity Timer",
+            "resources": []
+        },
+        {
+            "sys_id": "dca6ed0648f444319035b45f5e23696d",
+            "name": "Update Sets API",
+            "api_id": "",
+            "namespace": "sn_build_agent",
+            "base_uri": "/api/sn_build_agent/update_sets_api",
+            "active": true,
+            "scope": "Build Agent (Trial)",
+            "resources": []
+        },
+        {
+            "sys_id": "dd098a86c7432010580d45ece8c26094",
+            "name": "ATF Agent",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/atf_agent",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "e04ab482a3313110c38e8b61341e612f",
+            "name": "Generative AI Feedback",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/feedback",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "e36b1b75538223004205ddeeff7b123c",
+            "name": "Mobile Studio",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/mobile_studio",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "e5089b8b7707330022f7f4d268106184",
+            "name": "Related List Item Filter",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/related_list_item_filter",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "e5187e2f53333010532cddeeff7b1283",
+            "name": "Task CMDB (Internal API)",
+            "api_id": "",
+            "namespace": "sn_sow_itsm_common",
+            "base_uri": "/api/sn_sow_itsm_common/task",
+            "active": true,
+            "scope": "Service Operations Workspace ITSM Common",
+            "resources": []
+        },
+        {
+            "sys_id": "e523bcddffd57610f8ecffffffffffea",
+            "name": "OG Conversational RAG Service",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/og_conversational_rag_service",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "e5587697ebfc6110da1861c59c522838",
+            "name": "Instance Clone API",
+            "api_id": "",
+            "namespace": "sn_instance_clone",
+            "base_uri": "/api/sn_instance_clone/clone",
+            "active": true,
+            "scope": "Clone Admin Console",
+            "resources": []
+        },
+        {
+            "sys_id": "e68a5fcb7707330022f7f4d2681061a2",
+            "name": "Related List Edit",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/related_list_edit",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "e70cb20807312110fda37a76fed3002b",
+            "name": "Profile Config Count API",
+            "api_id": "",
+            "namespace": "sn_instance_clone",
+            "base_uri": "/api/sn_instance_clone/profile_config_count_api",
+            "active": true,
+            "scope": "Clone Admin Console",
+            "resources": []
+        },
+        {
+            "sys_id": "e88a305b53302210c7dce1b130e5e646",
+            "name": "sn_exp_framework",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/sn_exp_framework",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "e9f5c0d20b620210e8a937009777b2d7",
+            "name": "UXA Data",
+            "api_id": "",
+            "namespace": "sn_uxa_req_manager",
+            "base_uri": "/api/sn_uxa_req_manager/uxa_data",
+            "active": true,
+            "scope": "Usage Insights Request Manager",
+            "resources": []
+        },
+        {
+            "sys_id": "ea82488673402010e6b632e954f6a7ca",
+            "name": "NLU Advanced (Internal API)",
+            "api_id": "",
+            "namespace": "sn_nlu_workbench",
+            "base_uri": "/api/sn_nlu_workbench/nlu_advanced",
+            "active": true,
+            "scope": "NLU Workbench - Advanced Features",
+            "resources": []
+        },
+        {
+            "sys_id": "ea927d7237930200612747efbe41f13a",
+            "name": "VCS",
+            "api_id": "",
+            "namespace": "sn_devstudio",
+            "base_uri": "/api/sn_devstudio/vcs",
+            "active": true,
+            "scope": "Studio",
+            "resources": []
+        },
+        {
+            "sys_id": "ebf096a05bdc31109cf872c60a81c769",
+            "name": "UDC File Taxonomy",
+            "api_id": "",
+            "namespace": "sn_udc",
+            "base_uri": "/api/sn_udc/file_taxonomy",
+            "active": true,
+            "scope": "Unified Developer Core",
+            "resources": []
+        },
+        {
+            "sys_id": "efdf7c4567b21010b3d782f45685ef1a",
+            "name": "AI Search Assist Action (Internal API)",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/aisa_action",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "f079d07aff54221020efffffffffff2f",
+            "name": "Fluent Support",
+            "api_id": "",
+            "namespace": "sn_glider",
+            "base_uri": "/api/sn_glider/fluent_support",
+            "active": true,
+            "scope": "ServiceNow IDE",
+            "resources": []
+        },
+        {
+            "sys_id": "f51bc3875375101085ecddeeff7b1204",
+            "name": "Agent Initiated Message",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/agent_initiated_message",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "f532f2b7c78610105b31824d5ec2600a",
+            "name": "MID Rest Insert API",
+            "api_id": "",
+            "namespace": "global",
+            "base_uri": "/api/global/mid",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "f58184d777333110398eb3c64b5a99b1",
+            "name": "UDC Search",
+            "api_id": "",
+            "namespace": "sn_udc",
+            "base_uri": "/api/sn_udc/search",
+            "active": true,
+            "scope": "Unified Developer Core",
+            "resources": []
+        },
+        {
+            "sys_id": "f68f36d03d3302107fa47b9a1f00ad45",
+            "name": "Mobile GenAI API",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/generative",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "f8437635ff002210a57b015c793bf1fe",
+            "name": "List Google Sheets Export API",
+            "api_id": "",
+            "namespace": "sn_now_list_common",
+            "base_uri": "/api/sn_now_list_common/list_google_sheets_export_api",
+            "active": true,
+            "scope": "now-list-commons",
+            "resources": []
+        },
+        {
+            "sys_id": "f8f0abda9f0232004db75ecec32e7027",
+            "name": "SaBusinessService",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/sa_business_service",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "f9f715260f7f1010f23ff722ff767e29",
+            "name": "App Engine Studio Plugin Activations",
+            "api_id": "",
+            "namespace": "sn_app_eng_studio",
+            "base_uri": "/api/sn_app_eng_studio/plugin_activations",
+            "active": true,
+            "scope": "App Engine Studio",
+            "resources": []
+        },
+        {
+            "sys_id": "fa58ef11eb50fd507f419f671352282e",
+            "name": "Approvals",
+            "api_id": "",
+            "namespace": "sn_ex_sp",
+            "base_uri": "/api/sn_ex_sp/approvals",
+            "active": true,
+            "scope": "Employee Center",
+            "resources": []
+        },
+        {
+            "sys_id": "ff484d407733101044703036971061d3",
+            "name": "AI Search Assist (Internal API)",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/aisa",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        }
+    ]
 }

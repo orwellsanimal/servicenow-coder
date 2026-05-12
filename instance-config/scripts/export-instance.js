@@ -41,7 +41,7 @@ function shouldExport(category) {
 /**
  * Query the ServiceNow Table API with pagination.
  */
-async function tableApiQuery(table, query = '', fields = [], limit = 10000) {
+async function tableApiQuery(table, query = '', fields = [], limit = 10000, displayValue = 'true') {
     const records = [];
     let offset = 0;
     const batchSize = Math.min(limit, 1000);
@@ -52,7 +52,7 @@ async function tableApiQuery(table, query = '', fields = [], limit = 10000) {
             sysparm_fields: fields.join(','),
             sysparm_limit: String(batchSize),
             sysparm_offset: String(offset),
-            sysparm_display_value: 'false',
+            sysparm_display_value: displayValue,
         });
 
         const url = `${INSTANCE}/api/now/table/${table}?${params}`;
@@ -60,12 +60,31 @@ async function tableApiQuery(table, query = '', fields = [], limit = 10000) {
 
         if (!batch.result || batch.result.length === 0) break;
         records.push(...batch.result);
+        if (records.length % 5000 === 0 || batch.result.length < batchSize) {
+            process.stdout.write(`    (${records.length} records so far...)\r`);
+        }
 
-        if (batch.result.length < batchSize) break;
+        // ServiceNow instances may cap results slightly below the requested limit
+        // (e.g. 999 when you ask for 1000). Only stop if we got significantly fewer.
+        if (batch.result.length < batchSize * 0.9) break;
         offset += batchSize;
     }
 
-    return records;
+    // Normalize: ServiceNow API returns reference/choice fields as objects:
+    //   display_value=true:  { display_value: "...", link: "..." }
+    //   display_value=false: { value: "...", link: "..." }
+    // Flatten to just the string value.
+    return records.map((r) => {
+        const normalized = {};
+        for (const [k, v] of Object.entries(r)) {
+            if (v && typeof v === 'object' && ('display_value' in v || 'value' in v)) {
+                normalized[k] = v.display_value ?? v.value ?? '';
+            } else {
+                normalized[k] = v;
+            }
+        }
+        return normalized;
+    });
 }
 
 function fetchJson(url) {
@@ -139,12 +158,14 @@ async function exportSchema() {
     if (!shouldExport('schema')) return;
     console.log('Exporting schema...');
 
-    // Tables
+    // Tables — use display_value=false so 'name' returns raw table names (e.g. sys_user, not User)
     console.log('  Querying sys_db_object...');
     const tableRecords = await tableApiQuery(
         'sys_db_object',
-        'sys_update_nameISNOTEMPTY',
+        'ORDERBYname',
         ['sys_id', 'name', 'label', 'super_class', 'sys_scope', 'is_extendable', 'number_ref', 'access'],
+        20000,
+        'false',
     );
     const tables = {};
     for (const r of tableRecords) {
@@ -165,7 +186,7 @@ async function exportSchema() {
         tables,
     });
 
-    // Columns — only for tables that have records (limit to common/custom tables)
+    // Columns — use display_value=false so reference returns raw table names
     console.log('  Querying sys_dictionary...');
     const colRecords = await tableApiQuery(
         'sys_dictionary',
@@ -175,6 +196,7 @@ async function exportSchema() {
             'mandatory', 'read_only', 'active', 'default_value', 'reference', 'sys_scope',
         ],
         50000,
+        'false',
     );
     const columns = {};
     for (const r of colRecords) {
@@ -228,15 +250,24 @@ async function exportSchema() {
 
     // Relationships (reference fields)
     console.log('  Building relationships from columns...');
+    // Build a label→name lookup so we can resolve display values to table names
+    const labelToName = {};
+    for (const [name, meta] of Object.entries(tables)) {
+        if (meta.label) labelToName[meta.label] = name;
+    }
+    const refTypes = ['reference', 'glide_list', 'document_id'];
     const relationships = [];
     for (const [table, cols] of Object.entries(columns)) {
         for (const col of cols) {
-            if (col.reference && ['reference', 'glide_list', 'document_id'].includes(col.internal_type)) {
+            const normalizedType = col.internal_type.toLowerCase().replace(/ /g, '_');
+            if (col.reference && refTypes.includes(normalizedType)) {
+                const targetTable = tables[col.reference] ? col.reference : (labelToName[col.reference] || col.reference);
+                const colType = normalizedType;
                 relationships.push({
                     source_table: table,
                     source_field: col.element,
-                    target_table: col.reference,
-                    type: col.internal_type,
+                    target_table: targetTable,
+                    type: colType,
                 });
             }
         }
@@ -249,83 +280,97 @@ async function exportSchema() {
     });
 }
 
+async function safeQuery(label, fn) {
+    try {
+        await fn();
+    } catch (err) {
+        console.error(`    [SKIP] ${label}: ${err.message}`);
+    }
+}
+
 async function exportPlatform() {
     if (!shouldExport('platform')) return;
     console.log('Exporting platform config...');
 
     // Plugins
-    console.log('  Querying sys_plugins...');
-    const pluginRecords = await tableApiQuery(
-        'sys_plugins',
-        'active=active',
-        ['sys_id', 'source', 'name', 'version', 'active', 'scope'],
-    );
-    const plugins = {};
-    for (const r of pluginRecords) {
-        plugins[r.source || r.sys_id] = {
-            sys_id: r.sys_id,
-            name: r.name,
-            version: r.version || '',
-            active: r.active === 'active',
-            scope: r.scope || '',
-        };
-    }
-    writeJson('platform/plugins.json', {
-        $schema: '../schemas/plugins.schema.json',
-        _source: 'sys_plugins',
-        _description: 'Activated plugins on the instance.',
-        plugins,
+    await safeQuery('sys_plugins', async () => {
+        console.log('  Querying sys_plugins...');
+        const pluginRecords = await tableApiQuery(
+            'sys_plugins',
+            'active=active',
+            ['sys_id', 'source', 'name', 'version', 'active', 'scope'],
+        );
+        const plugins = {};
+        for (const r of pluginRecords) {
+            plugins[r.source || r.sys_id] = {
+                sys_id: r.sys_id,
+                name: r.name,
+                version: r.version || '',
+                active: r.active === 'active',
+                scope: r.scope || '',
+            };
+        }
+        writeJson('platform/plugins.json', {
+            $schema: '../schemas/plugins.schema.json',
+            _source: 'sys_plugins',
+            _description: 'Activated plugins on the instance.',
+            plugins,
+        });
     });
 
     // Properties
-    console.log('  Querying sys_properties...');
-    const propRecords = await tableApiQuery(
-        'sys_properties',
-        '',
-        ['sys_id', 'name', 'value', 'description', 'type', 'sys_scope'],
-        20000,
-    );
-    const properties = {};
-    for (const r of propRecords) {
-        if (!r.name) continue;
-        properties[r.name] = {
-            sys_id: r.sys_id,
-            value: r.value || '',
-            description: r.description || '',
-            type: r.type || 'string',
-            scope: r.sys_scope || '',
-        };
-    }
-    writeJson('platform/properties.json', {
-        $schema: '../schemas/properties.schema.json',
-        _source: 'sys_properties',
-        _description: 'System properties.',
-        properties,
+    await safeQuery('sys_properties', async () => {
+        console.log('  Querying sys_properties...');
+        const propRecords = await tableApiQuery(
+            'sys_properties',
+            '',
+            ['sys_id', 'name', 'value', 'description', 'type', 'sys_scope'],
+            20000,
+        );
+        const properties = {};
+        for (const r of propRecords) {
+            if (!r.name) continue;
+            properties[r.name] = {
+                sys_id: r.sys_id,
+                value: r.value || '',
+                description: r.description || '',
+                type: r.type || 'string',
+                scope: r.sys_scope || '',
+            };
+        }
+        writeJson('platform/properties.json', {
+            $schema: '../schemas/properties.schema.json',
+            _source: 'sys_properties',
+            _description: 'System properties.',
+            properties,
+        });
     });
 
     // Scopes
-    console.log('  Querying sys_scope...');
-    const scopeRecords = await tableApiQuery(
-        'sys_scope',
-        '',
-        ['sys_id', 'name', 'scope', 'version', 'vendor', 'active'],
-    );
-    const scopes = {};
-    for (const r of scopeRecords) {
-        scopes[r.scope || r.name] = {
-            sys_id: r.sys_id,
-            name: r.name,
-            scope: r.scope || '',
-            version: r.version || '',
-            vendor: r.vendor || '',
-            active: r.active !== 'false',
-        };
-    }
-    writeJson('platform/scopes.json', {
-        $schema: '../schemas/scopes.schema.json',
-        _source: 'sys_scope',
-        _description: 'Application scopes on the instance.',
-        scopes,
+    await safeQuery('sys_scope', async () => {
+        console.log('  Querying sys_scope...');
+        const scopeRecords = await tableApiQuery(
+            'sys_scope',
+            '',
+            ['sys_id', 'name', 'scope', 'version', 'vendor', 'active'],
+        );
+        const scopes = {};
+        for (const r of scopeRecords) {
+            scopes[r.scope || r.name] = {
+                sys_id: r.sys_id,
+                name: r.name,
+                scope: r.scope || '',
+                version: r.version || '',
+                vendor: r.vendor || '',
+                active: r.active !== 'false',
+            };
+        }
+        writeJson('platform/scopes.json', {
+            $schema: '../schemas/scopes.schema.json',
+            _source: 'sys_scope',
+            _description: 'Application scopes on the instance.',
+            scopes,
+        });
     });
 }
 
@@ -333,59 +378,61 @@ async function exportSecurity() {
     if (!shouldExport('security')) return;
     console.log('Exporting security config...');
 
-    // Roles
-    console.log('  Querying sys_user_role...');
-    const roleRecords = await tableApiQuery(
-        'sys_user_role',
-        '',
-        ['sys_id', 'name', 'description', 'elevated_privilege', 'sys_scope'],
-    );
-    const roles = {};
-    for (const r of roleRecords) {
-        if (!r.name) continue;
-        roles[r.name] = {
-            sys_id: r.sys_id,
-            name: r.name,
-            description: r.description || '',
-            elevated_privilege: r.elevated_privilege === 'true',
-            scope: r.sys_scope || '',
-        };
-    }
-    writeJson('security/roles.json', {
-        $schema: '../schemas/roles.schema.json',
-        _source: 'sys_user_role',
-        _description: 'Roles defined on the instance.',
-        roles,
+    await safeQuery('sys_user_role', async () => {
+        console.log('  Querying sys_user_role...');
+        const roleRecords = await tableApiQuery(
+            'sys_user_role',
+            '',
+            ['sys_id', 'name', 'description', 'elevated_privilege', 'sys_scope'],
+        );
+        const roles = {};
+        for (const r of roleRecords) {
+            if (!r.name) continue;
+            roles[r.name] = {
+                sys_id: r.sys_id,
+                name: r.name,
+                description: r.description || '',
+                elevated_privilege: r.elevated_privilege === 'true',
+                scope: r.sys_scope || '',
+            };
+        }
+        writeJson('security/roles.json', {
+            $schema: '../schemas/roles.schema.json',
+            _source: 'sys_user_role',
+            _description: 'Roles defined on the instance.',
+            roles,
+        });
     });
 
-    // ACL Policies — summarized
-    console.log('  Querying sys_security_acl...');
-    const aclRecords = await tableApiQuery(
-        'sys_security_acl',
-        'active=true',
-        ['sys_id', 'name', 'operation', 'type', 'condition', 'active', 'sys_scope'],
-        20000,
-    );
-    const aclPolicies = {};
-    for (const r of aclRecords) {
-        const key = r.name || 'unknown';
-        if (!aclPolicies[key]) aclPolicies[key] = [];
-        aclPolicies[key].push({
-            sys_id: r.sys_id,
-            name: r.name,
-            operation: r.operation || '',
-            type: r.type || '',
-            roles: [],
-            condition: r.condition || '',
-            active: r.active !== 'false',
-            scope: r.sys_scope || '',
+    await safeQuery('sys_security_acl', async () => {
+        console.log('  Querying sys_security_acl...');
+        const aclRecords = await tableApiQuery(
+            'sys_security_acl',
+            'active=true',
+            ['sys_id', 'name', 'operation', 'type', 'condition', 'active', 'sys_scope'],
+            20000,
+        );
+        const aclPolicies = {};
+        for (const r of aclRecords) {
+            const key = r.name || 'unknown';
+            if (!aclPolicies[key]) aclPolicies[key] = [];
+            aclPolicies[key].push({
+                sys_id: r.sys_id,
+                name: r.name,
+                operation: r.operation || '',
+                type: r.type || '',
+                roles: [],
+                condition: r.condition || '',
+                active: r.active !== 'false',
+                scope: r.sys_scope || '',
+            });
+        }
+        writeJson('security/acl-policies.json', {
+            $schema: '../schemas/acl-policies.schema.json',
+            _source: 'sys_security_acl',
+            _description: 'ACL policy summaries.',
+            acl_policies: aclPolicies,
         });
-    }
-    writeJson('security/acl-policies.json', {
-        $schema: '../schemas/acl-policies.schema.json',
-        _source: 'sys_security_acl',
-        _description: 'ACL policy summaries.',
-        acl_policies: aclPolicies,
     });
 }
 
@@ -452,12 +499,30 @@ async function main() {
     console.log(`Categories: ${onlyCategories ? onlyCategories.join(', ') : 'all'}\n`);
 
     await exportInstanceInfo();
-    await exportSchema();
-    await exportPlatform();
-    await exportSecurity();
-    await exportServices();
+
+    const categories = [
+        ['schema', exportSchema],
+        ['platform', exportPlatform],
+        ['security', exportSecurity],
+        ['services', exportServices],
+    ];
+
+    const failures = [];
+    for (const [name, fn] of categories) {
+        try {
+            await fn();
+        } catch (err) {
+            console.error(`\n  [WARN] ${name} export failed: ${err.message}`);
+            console.error(`  Continuing with remaining categories...\n`);
+            failures.push(name);
+        }
+    }
 
     console.log('\nExport complete.');
+    if (failures.length > 0) {
+        console.log(`Partial failures (likely ACL restrictions): ${failures.join(', ')}`);
+        console.log('Grant the export user admin or appropriate roles to access these tables.');
+    }
 }
 
 main().catch((err) => {

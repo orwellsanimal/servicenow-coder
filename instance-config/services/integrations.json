@@ -1,6 +1,71 @@
 {
     "$schema": "../schemas/integrations.schema.json",
-    "_source": "sys_remote_instance / sys_alias",
-    "_description": "Outbound integration endpoints and connection aliases.",
-    "integrations": []
+    "_source": "sys_alias",
+    "_description": "Outbound integration endpoints.",
+    "integrations": [
+        {
+            "sys_id": "378f762743eb31108df207dcc4b8f2af",
+            "name": "RemoteSchemaRegistry",
+            "type": "connection_alias",
+            "target_url": "",
+            "active": true,
+            "scope": "Global"
+        },
+        {
+            "sys_id": "752a91887740001038e286a2681061fb",
+            "name": "CICD",
+            "type": "connection_alias",
+            "target_url": "",
+            "active": true,
+            "scope": "Continuous Integration and Continuous Delivery (CICD) Spoke"
+        },
+        {
+            "sys_id": "adf80925db0bd300dd14596e5e96198c",
+            "name": "Docker",
+            "type": "connection_alias",
+            "target_url": "",
+            "active": true,
+            "scope": "Docker Spoke"
+        },
+        {
+            "sys_id": "b77d765953721110c271ddeeff7b1273",
+            "name": "MicrosoftReceiptScanner",
+            "type": "connection_alias",
+            "target_url": "",
+            "active": true,
+            "scope": "Global"
+        },
+        {
+            "sys_id": "c657645ac35a11103f4fcd7b7940ddc2",
+            "name": "Sidebar Teams Graph Credentials",
+            "type": "connection_alias",
+            "target_url": "",
+            "active": true,
+            "scope": "Omni-Experience Standard Feature Set"
+        },
+        {
+            "sys_id": "cafe3515a3f382106cdec213d51e61bf",
+            "name": "Sidebar Slack Credentials",
+            "type": "connection_alias",
+            "target_url": "",
+            "active": true,
+            "scope": "Omni-Experience Standard Feature Set"
+        },
+        {
+            "sys_id": "d4c6bce753702110c271ddeeff7b1206",
+            "name": "MicrosoftSensitiveDataMasking",
+            "type": "connection_alias",
+            "target_url": "",
+            "active": true,
+            "scope": "Global"
+        },
+        {
+            "sys_id": "e729df5153761110c271ddeeff7b124d",
+            "name": "MicrosoftImageAnalysis",
+            "type": "connection_alias",
+            "target_url": "",
+            "active": true,
+            "scope": "Global"
+        }
+    ]
 }
