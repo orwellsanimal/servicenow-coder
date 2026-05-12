@@ -116,9 +116,9 @@ node scripts/deploy.js --dry-run         # preview without deploying
 ### GitHub Secrets Required
 - `SN_INSTANCE`, `SN_USER`, `SN_PASSWORD`
 
-## Doc Sync
+## Cross-Tool Docs
 
-`CLAUDE.md` and `GEMINI.md` are kept identical for cross-tool compatibility (Claude Code, Gemini CLI). Edit either one — `scripts/sync-docs.js` mirrors the newer file to the other. Sync runs automatically via the git pre-commit hook (`.githooks/pre-commit`); manual run: `pnpm run sync-docs`.
+`CLAUDE.md` and `GEMINI.md` are intentionally **independent** files — each tool may need its own tool-specific guidance (skills, slash commands, plugin install steps). When updating shared content (project structure, conventions, CI/CD), copy the relevant changes between the two files manually.
 
 ## Keeping Things Current
 

@@ -12,7 +12,6 @@
         "format": "prettier --check \"**/*.{ts,js,json}\"",
         "pack:apps": "pnpm --filter './apps/*' run pack",
         "deploy": "node scripts/deploy.js",
-        "sync-docs": "node scripts/sync-docs.js",
         "ci": "pnpm run lint && pnpm run check && pnpm run build"
     },
     "engines": {

@@ -28,42 +28,34 @@
 - Types from `@servicenow/glide` package
 - Use `scratch/` folder for prototyping and one-off scripts
 
-## Skills (Slash Commands)
+## Context Integration (Gemini CLI)
 
-The official ServiceNow Fluent plugin provides core SDK skills under the `/fluent:` namespace:
+Unlike traditional agents that rely on external plugins, the Gemini CLI leverages a massive context window to ingest your local architecture directly. Use the `@` symbol in your prompts to feed specific workspace context to the model.
 
-| Command | Source | When to Use |
-|---------|--------|-------------|
-| `/fluent:now-sdk-explain [topic]` | Official plugin (auto-updates) | Fluent SDK docs — API types, conventions, project structure. Always peek first. |
-| `/fluent:now-sdk-setup` | Official plugin (auto-updates) | Environment errors (Node version, SDK not found). |
-| `/now-instance-config [table-or-topic]` | Project-local | Verify instance metadata (tables, fields, choices, plugins, roles) before generating code. |
-| `/now-scaffold <type> <name>` | Project-local | Create new app (via `now-sdk init`) or generate artifact code from local templates. |
+| Context Target | How to Reference | When to Use |
+|----------------|------------------|-------------|
+| **SDK API Docs** | `@servicenow-docs/markdown/api-reference/` | Need exact syntax for the Fluent SDK or GlideRecord APIs. |
+| **Instance Metadata** | `@instance-config/schema/[file].json` | Verify table schemas, column names, choices, and ACL patterns before generating code. |
+| **Example Code** | `@servicenow-sdk-examples/` | Ground the model in official, working SDK examples for complex patterns. |
+| **Local Templates** | `@templates/` | Instruct the model to scaffold a new artifact matching your custom organizational standards. |
 
-### Plugin Installation (one-time)
-
-```
-/plugin marketplace add servicenow/sdk
-/plugin install fluent
-/reload-plugins
-```
-
-Project-local skills in `.claude/skills/` load automatically in this workspace.
+### Tool Execution
+To allow Gemini CLI to run local build scripts or scaffold projects automatically, ensure your local `~/.gemini/settings.json` has tool execution permissions enabled for this workspace.
 
 ## Project Initialization Paths
 
 When starting a new app, choose one:
 
 1. **Local SDK init** (preferred for code-first work):
+   Instruct the Gemini CLI to execute the following (if shell execution is enabled), or run it manually:
    ```bash
    cd apps/
    npx @servicenow/sdk init --appName "My App" --packageName my-app --scopeName x_myapp --template base --auth dev
    ```
-2. **ServiceNow Build Agent** (in-platform AI scaffolder): generate from a natural-language prompt in the instance, then pull to `apps/` for iteration. Free allowance: ~100 calls (customer) / ~25 calls (PDI).
-3. **`/now-scaffold project`** — wraps the SDK init for convenience.
 
 ## Instance Configuration (Grounding Layer)
 
-`instance-config/` provides snapshot metadata from the dev instance for grounding:
+`instance-config/` provides snapshot metadata from the dev instance for grounding. Always `@` mention the relevant JSON file when asking Gemini to write table-specific logic:
 
 | File | Source Table | Use For |
 |------|-------------|---------|
@@ -85,18 +77,20 @@ SN_INSTANCE=https://dev392282.service-now.com SN_USER=Jody.Whitlow SN_PASSWORD=�
 
 ## Documentation Sources
 
-- **SDK API docs:** `/fluent:now-sdk-explain` or `npx @servicenow/sdk explain <topic> --format=raw`
-- **Platform docs:** `servicenow-docs/markdown/` (branch: australia for latest)
-  - API reference: `servicenow-docs/markdown/api-reference/index.md`
-  - App development: `servicenow-docs/markdown/application-development/index.md`
-- **Do NOT fetch from servicenow.com/docs** — it's a JS SPA, returns no useful content to LLMs
+**Platform docs**: Always reference `servicenow-docs/markdown/` (branch: australia for latest) via the CLI context tag.
+- **API reference**: `@servicenow-docs/markdown/api-reference/index.md`
+- **App development**: `@servicenow-docs/markdown/application-development/index.md`
+
+**CLI Fallback**: If the local markdown doesn't have what you need, use `npx @servicenow/sdk explain <topic> --format=raw`.
+
+Do NOT fetch from servicenow.com/docs — it's a JS SPA and returns no useful content to LLMs. Rely on your local git submodule.
 
 ## CI/CD Pipeline
 
 ### Strategy
-- **No update sets.** Application Repository model via the SDK.
-- **Single dev instance** for now. Pipeline stages map 1:1 to multi-instance Harness later.
-- Git is the source of truth. SDK build → XML metadata → `install` → instance.
+- No update sets. Application Repository model via the SDK.
+- Single dev instance for now. Pipeline stages map 1:1 to multi-instance Harness later.
+- Git is the source of truth. SDK build → XML metadata → install → instance.
 
 ### Stages (GitHub Actions → future Harness)
 1. **Validate** — lint, type-check
@@ -114,11 +108,7 @@ node scripts/deploy.js --dry-run         # preview without deploying
 ```
 
 ### GitHub Secrets Required
-- `SN_INSTANCE`, `SN_USER`, `SN_PASSWORD`
-
-## Doc Sync
-
-`CLAUDE.md` and `GEMINI.md` are kept identical for cross-tool compatibility (Claude Code, Gemini CLI). Edit either one — `scripts/sync-docs.js` mirrors the newer file to the other. Sync runs automatically via the git pre-commit hook (`.githooks/pre-commit`); manual run: `pnpm run sync-docs`.
+`SN_INSTANCE`, `SN_USER`, `SN_PASSWORD`
 
 ## Keeping Things Current
 
@@ -137,7 +127,7 @@ node instance-config/scripts/export-instance.js
 
 - **Branch management from external tools is limited** for SDK projects. For complex branching workflows, use Source Control inside ServiceNow Studio or manage branches via GitHub directly.
 - **Production deploy not supported by the SDK.** `now-sdk install` is for non-prod only. Production deploys require the Application Repository (publish → approve → deploy) or update sets (legacy). We've chosen Application Repository.
-- **`sys_plugins` table not readable** without admin role — instance-config skips it. Grant admin to the export user if plugin metadata is needed.
+- **sys_plugins table not readable** without admin role — instance-config skips it. Grant admin to the export user if plugin metadata is needed.
 
 ## Conventions
 
