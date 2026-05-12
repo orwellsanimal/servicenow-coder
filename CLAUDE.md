@@ -1,5 +1,7 @@
 # ServiceNow Coder Workspace
 
+> **New here?** Start with [README.md](./README.md) for the overview, then [SETUP.md](./SETUP.md) for step-by-step install. This file is for Claude Code–specific conventions and slash commands once you're set up.
+
 ## Project Structure
 
 - **apps/** — Fluent SDK application projects (each subfolder is a deployable app, created via `now-sdk init`)
