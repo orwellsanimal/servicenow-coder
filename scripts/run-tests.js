@@ -11,7 +11,7 @@
  *   node scripts/run-tests.js --dry-run                 Print what would run, don't call the API
  *
  * Environment:
- *   SN_INSTANCE   Instance URL (e.g. https://dev392282.service-now.com) — required
+ *   SN_INSTANCE   Instance URL (e.g. https://dev123456.service-now.com) — required
  *   SN_USER       Username — required
  *   SN_PASSWORD   Password — required
  *

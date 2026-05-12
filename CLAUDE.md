@@ -81,7 +81,7 @@ When starting a new app, choose one:
 
 Re-export anytime:
 ```bash
-SN_INSTANCE=https://dev392282.service-now.com SN_USER=Jody.Whitlow SN_PASSWORD=… \
+SN_INSTANCE=https://dev123456.service-now.com SN_USER=admin SN_PASSWORD=… \
   node instance-config/scripts/export-instance.js
 ```
 
@@ -130,7 +130,7 @@ When generating a feature with AI assistance, **pair it with an ATF test**. The 
 - **Grouping** — one suite per app, named `<scope>-suite` (e.g. `x_inchelper-suite`). Scaffold once via `/now-scaffold atf-test-suite`. Each test joins via a `sys_atf_test_suite_test` Record block.
 - **Execution** — `scripts/run-tests.js` calls `POST /api/sn_cicd/testsuite/run`, polls `/api/sn_cicd/progress/{id}` until done, then fetches `/api/sn_cicd/testsuite/results/{id}`. Exits non-zero on any failure.
 - **CI** — runs after `deploy` on push to `main`.
-- **Role requirement** — the deploy user (`Jody.Whitlow`) needs `sn_cicd.sys_ci_automation` or admin. Without it the test API returns 403.
+- **Role requirement** — the deploy user needs `sn_cicd.sys_ci_automation` or admin. Without it the test API returns 403.
 
 ## Cross-Tool Docs
 
