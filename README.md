@@ -27,28 +27,16 @@ Optional but recommended:
 ## Quickstart
 
 ```bash
-# 1. Clone with submodules
 git clone --recursive <your-fork-or-this-repo>.git
 cd servicenow-coder
-
-# 2. Install dependencies
-pnpm install
-
-# 3. Configure your instance
-cp .env.example .env
-# edit .env: SN_INSTANCE, SN_USER, SN_PASSWORD
-
-# 4. Register the SDK auth alias
-npx @servicenow/sdk auth --add "$SN_INSTANCE" --type basic --alias dev
-
-# 5. Harvest your instance's config (one-time, re-run anytime)
-node instance-config/scripts/export-instance.js
-
-# 6. Verify
-pnpm run ci    # lint + type-check + build
+node scripts/setup.js          # interactive walkthrough — handles everything below
 ```
 
-For step-by-step setup (PDI signup, AI tool wiring, CI bootstrap), see **[SETUP.md](./SETUP.md)**.
+The walkthrough validates Node/pnpm versions, initializes submodules, runs `pnpm install`, prompts for instance credentials, registers the SDK auth alias, optionally harvests instance config for AI grounding, and runs a verify step. Idempotent — safe to re-run anytime.
+
+For non-interactive automation (CI, AI agents): `node scripts/setup.js -y` with `SN_INSTANCE`, `SN_USER`, `SN_PASSWORD` in the environment.
+
+For the manual step-by-step (and what each step does), see **[SETUP.md](./SETUP.md)**.
 
 ## Common commands
 

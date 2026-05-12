@@ -6,6 +6,22 @@ Tool-agnostic. Claude Code, Gemini CLI, Cursor, and others all work — the AI-t
 
 ---
 
+## Fast path: `scripts/setup.js`
+
+After cloning, run the interactive walkthrough — it automates steps 2 through 8 below:
+
+```bash
+node scripts/setup.js          # interactive
+node scripts/setup.js -y       # non-interactive (uses SN_* env vars)
+node scripts/setup.js --help
+```
+
+The script is idempotent — re-run anytime to fill in missing pieces. It has zero npm dependencies (pure Node built-ins) so it works on a fresh clone before `pnpm install` ever runs.
+
+The rest of this doc explains each step so you can do it manually or troubleshoot what the script did.
+
+---
+
 ## 1. Prerequisites
 
 Install these on your machine. Versions matter — the SDK is strict.
