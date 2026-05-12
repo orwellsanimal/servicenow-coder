@@ -103,6 +103,7 @@ SN_INSTANCE=https://dev392282.service-now.com SN_USER=Jody.Whitlow SN_PASSWORD=�
 2. **Build** — `now-sdk build` all apps
 3. **Pack** — `now-sdk pack` artifacts (main only)
 4. **Deploy** — `now-sdk install` to dev instance (main only)
+5. **Test** — `scripts/run-tests.js --all` runs ATF suites on the instance (main only)
 
 ### Local Commands
 ```bash
@@ -111,10 +112,23 @@ pnpm run build:apps                      # build all Fluent apps
 node scripts/deploy.js --auth dev        # deploy all apps
 node scripts/deploy.js --app my-app      # deploy a single app
 node scripts/deploy.js --dry-run         # preview without deploying
+node scripts/run-tests.js --all          # run every app's ATF suite
+node scripts/run-tests.js --app my-app   # run one app's suite
+node scripts/run-tests.js --suite name   # run a specific suite by name
 ```
 
 ### GitHub Secrets Required
 - `SN_INSTANCE`, `SN_USER`, `SN_PASSWORD`
+
+## ATF Testing
+
+When generating a feature with AI assistance, **pair it with an ATF test**. The plumbing:
+
+- **Authoring** — `/now-scaffold atf-test <name>` writes `apps/<app>/src/tests/<test-id>.now.ts` using `Test()` from `@servicenow/sdk/core`. Step namespaces: `atf.server.*`, `atf.form.*`, `atf.rest.*` (see `servicenow-sdk-examples/test-atf-sample/`).
+- **Grouping** — one suite per app, named `<scope>-suite` (e.g. `x_inchelper-suite`). Scaffold once via `/now-scaffold atf-test-suite`. Each test joins via a `sys_atf_test_suite_test` Record block.
+- **Execution** — `scripts/run-tests.js` calls `POST /api/sn_cicd/testsuite/run`, polls `/api/sn_cicd/progress/{id}` until done, then fetches `/api/sn_cicd/testsuite/results/{id}`. Exits non-zero on any failure.
+- **CI** — runs after `deploy` on push to `main`.
+- **Role requirement** — the deploy user (`Jody.Whitlow`) needs `sn_cicd.sys_ci_automation` or admin. Without it the test API returns 403.
 
 ## Cross-Tool Docs
 

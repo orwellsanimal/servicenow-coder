@@ -60,6 +60,8 @@ The SDK doesn't ship per-artifact code templates, so we use local templates for 
 | `flow` | `templates/fluent/artifacts/flow.now.ts` | Flow Designer automation |
 | `record` | `templates/fluent/artifacts/record.now.ts` | Seed data record |
 | `catalog-item` | `templates/fluent/artifacts/catalog-item.now.ts` | Service catalog item |
+| `atf-test` | `templates/fluent/artifacts/atf-test.now.ts` | ATF Test (`Test()`) — pair with the feature it validates |
+| `atf-test-suite` | `templates/fluent/artifacts/atf-test-suite.now.ts` | ATF Test Suite — one per app, named `<scope>-suite` |
 
 #### Vanilla GlideScript
 
@@ -107,6 +109,18 @@ The SDK doesn't ship per-artifact code templates, so we use local templates for 
 
 **User:** "write a fix script to update all inactive incidents"
 → Read `templates/glidescript/fix-script.js`, fill in incident table with inactive query, save to `scratch/`
+
+**User:** "add an ATF test for the new approval business rule"
+→ Read `templates/fluent/artifacts/atf-test.now.ts`, write to `apps/<app>/src/tests/<test-id>.now.ts`. If no suite exists for the app, also scaffold `atf-test-suite` (one-time per app) and add a `sys_atf_test_suite_test` membership Record entry referencing the new test.
+
+## ATF Testing Convention
+
+When generating a feature with AI assistance, pair it with an ATF test:
+- **Test location:** `apps/<app>/src/tests/<test-id>.now.ts`
+- **Suite per app:** named `<scope>-suite` (e.g. `x_inchelper-suite`). Created once per app via the `atf-test-suite` template.
+- **Membership:** each test joins the suite via a `Record({ table: 'sys_atf_test_suite_test', ... })` block in the suite file.
+- **CI:** `scripts/run-tests.js --all` runs every app's suite via `POST /api/sn_cicd/testsuite/run` and polls for results.
+- **Role:** the deploy user needs `sn_cicd.sys_ci_automation` (or admin) for the CI/CD test API.
 
 ## When to Refer to Other Skills
 

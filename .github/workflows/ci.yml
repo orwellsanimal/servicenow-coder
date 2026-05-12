@@ -222,9 +222,40 @@ jobs:
       - name: Deploy all apps
         run: node scripts/deploy.js --auth dev
 
-      # ── Future: Harness promotion ──
-      # In a multi-instance Harness pipeline, this stage would be replaced by:
-      #   1. Harness "Deploy to Dev" stage (auto, this equivalent)
-      #   2. Harness "Deploy to Test" stage (approval gate)
-      #   3. Harness "Deploy to Prod" stage (approval gate + change ticket)
-      # Each stage uses a different --auth alias and SN_INSTANCE secret.
+  # ─── Stage 5: Test (ATF) ─────────────────────────────────────────────
+  # Run Automated Test Framework suites on the instance after deploy.
+  # Maps to: Harness Verify stage (post-deploy validation gate).
+  #
+  # Convention: one suite per app, named `<scope>-suite` (e.g. x_inchelper-suite).
+  # Suite membership is defined in code (Record() against sys_atf_test_suite_test).
+  #
+  # Requires the deploy user to have `sn_cicd.sys_ci_automation` (or admin) on the instance.
+  test:
+    name: Run ATF Tests
+    runs-on: ubuntu-latest
+    needs: deploy
+    if: github.ref == 'refs/heads/main'
+    environment: dev
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: false
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Run ATF suites for all apps
+        env:
+          SN_INSTANCE: ${{ secrets.SN_INSTANCE }}
+          SN_USER: ${{ secrets.SN_USER }}
+          SN_PASSWORD: ${{ secrets.SN_PASSWORD }}
+        run: node scripts/run-tests.js --all
+
+# ── Future: Harness promotion ──
+# In a multi-instance Harness pipeline, the deploy stage would be replaced by:
+#   1. Harness "Deploy to Dev" stage (auto, this equivalent)
+#   2. Harness "Deploy to Test" stage (approval gate)
+#   3. Harness "Deploy to Prod" stage (approval gate + change ticket)
+# Each stage uses a different --auth alias and SN_INSTANCE secret.
+# The ATF test stage runs after each deploy and gates promotion.
