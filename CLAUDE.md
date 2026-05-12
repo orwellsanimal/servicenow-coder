@@ -9,7 +9,7 @@
 - **scratch/** — Ad-hoc development for vanilla GlideScript and experiments
 - **instance-config/** — Instance-specific metadata (tables, fields, plugins, scopes) for grounding code generation
 - **templates/** — Per-artifact templates (the SDK doesn't ship these; project-level `now-sdk init` handles full app scaffolding)
-- **scripts/** — Build and deployment scripts
+- **scripts/** — Build, deploy, test, setup runners (Node) + `scripts/python/` (PySNC utilities)
 - **servicenow-sdk/** — Official SDK as a git submodule (auto-updates with `git submodule update --remote`)
 - **servicenow-sdk-examples/** — Official SDK samples as a git submodule
 - **servicenow-docs/** — Official ServiceNow docs as a git submodule (branch: australia = latest)
@@ -29,6 +29,14 @@
 - Traditional server-side scripting (Business Rules, Script Includes, Fix Scripts, etc.)
 - Types from `@servicenow/glide` package
 - Use `scratch/` folder for prototyping and one-off scripts
+
+### 3. PySNC (Python utilities)
+- Cross-cutting ops *against* the instance from outside (vs. Fluent/GlideScript which run *on* it)
+- Use cases: data seeding for ATF, bulk fixes, cross-instance migrations, reporting/extraction
+- Scripts live in `scripts/python/`; templates (future) in `templates/pysnc/`
+- Reads same `.env` at repo root as Node scripts (`SN_INSTANCE`, `SN_USER`, `SN_PASSWORD`)
+- Setup: `python -m venv .venv && source .venv/bin/activate && pip install -r requirements.txt`
+- Full guide: `docs/guides/pysnc.md`
 
 ## Skills (Slash Commands)
 

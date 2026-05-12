@@ -20,6 +20,7 @@ An AI-assisted ServiceNow development workspace. Combines the official ServiceNo
 | pnpm | 10+ | `npm install -g pnpm` |
 | Git | recent | https://git-scm.com |
 | ServiceNow instance | any modern release | Free PDI at https://developer.servicenow.com |
+| Python | 3.10+ (optional) | https://python.org — only needed for PySNC utilities under `scripts/python/` |
 
 Optional but recommended:
 - GitHub account (for CI/CD)
@@ -48,23 +49,26 @@ node scripts/deploy.js --app my-app       # deploy a single app
 node scripts/run-tests.js --all           # run all app ATF suites
 pnpm run test:atf                         # same as above
 node instance-config/scripts/export-instance.js   # refresh grounding data
+python scripts/python/seed-data.py        # PySNC: seed sample records (see docs/guides/pysnc.md)
 ```
 
 ## Project structure
 
 ```
 apps/                  # Fluent SDK apps (one folder per app, created via now-sdk init)
-docs/                  # PRDs, GDDs, architecture notes
+docs/                  # PRDs, GDDs, architecture notes, guides
 scratch/               # Vanilla GlideScript prototyping
 instance-config/       # Instance metadata for grounding (tables, plugins, roles, ...)
-templates/             # Per-artifact code templates (Fluent + GlideScript)
-scripts/               # Build, deploy, test runners
+templates/             # Per-artifact code templates (Fluent + GlideScript + PySNC stubs)
+scripts/               # Node runners: build, deploy, test, setup
+scripts/python/        # Python utilities: PySNC scripts for data seeding, bulk ops, migrations
 servicenow-sdk/        # Official SDK (submodule)
 servicenow-sdk-examples/   # Official SDK samples (submodule)
 servicenow-docs/       # Official platform docs (submodule, australia branch)
 .github/workflows/     # CI pipeline
 .harness/              # Harness pipeline reference spec (future)
 .claude/               # Claude Code skills + settings
+requirements.txt       # Python deps for scripts/python/ (PySNC, python-dotenv)
 ```
 
 ## AI tool support

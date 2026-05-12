@@ -32,12 +32,14 @@ Install these on your machine. Versions matter — the SDK is strict.
 | **pnpm** | 10+ | Workspace package manager | `npm install -g pnpm` |
 | **Git** | recent | Version control, submodules | https://git-scm.com |
 | **ServiceNow instance** | any modern release | Deploy target | See step 3 |
+| **Python** | 3.10+ (optional) | PySNC utilities under `scripts/python/` | https://python.org — skip if you don't need data seeding / bulk ops |
 
 Verify:
 ```bash
 node --version    # v20.x or higher
 pnpm --version    # 10.x or higher
 git --version
+python --version  # 3.10+ (optional)
 ```
 
 Optional:
@@ -258,7 +260,33 @@ Push to `main`. The pipeline runs validate → build → pack → deploy → tes
 
 ---
 
-## 10. ATF testing (paired with feature development)
+## 10. Python venv for PySNC (optional)
+
+Skip this step if you only need Fluent SDK + GlideScript. PySNC is for cross-cutting Python utilities — data seeding, bulk fixes, cross-instance migrations, ATF fixture setup.
+
+```bash
+python -m venv .venv
+# Windows
+.venv\Scripts\activate
+# macOS/Linux
+source .venv/bin/activate
+
+pip install -r requirements.txt
+```
+
+`.venv/` is gitignored. PySNC scripts read the same `.env` at the repo root used by Node scripts — no separate credentials.
+
+Verify:
+```bash
+python -c "import pysnc; print(pysnc.__version__)"
+python scripts/python/seed-data.py --dry-run
+```
+
+See [`docs/guides/pysnc.md`](./docs/guides/pysnc.md) for when to use PySNC and common patterns.
+
+---
+
+## 11. ATF testing (paired with feature development)
 
 When you generate a feature with AI assistance, pair it with an ATF test:
 
