@@ -1,0 +1,6 @@
+{
+    "$schema": "../schemas/integrations.schema.json",
+    "_source": "sys_remote_instance / sys_alias",
+    "_description": "Outbound integration endpoints and connection aliases.",
+    "integrations": []
+}

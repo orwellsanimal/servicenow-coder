@@ -1,0 +1,6 @@
+{
+    "$schema": "../schemas/scopes.schema.json",
+    "_source": "sys_scope",
+    "_description": "Application scopes on the instance. Keyed by scope name.",
+    "scopes": {}
+}

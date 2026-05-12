@@ -1,0 +1,9 @@
+[submodule "servicenow-sdk"]
+	path = servicenow-sdk
+	url = https://github.com/ServiceNow/sdk.git
+[submodule "servicenow-sdk-examples"]
+	path = servicenow-sdk-examples
+	url = https://github.com/ServiceNow/sdk-examples.git
+[submodule "servicenow-docs"]
+	path = servicenow-docs
+	url = https://github.com/ServiceNow/ServiceNowDocs.git

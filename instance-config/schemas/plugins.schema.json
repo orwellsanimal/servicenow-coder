@@ -1,0 +1,22 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "ServiceNow Plugins (sys_plugins)",
+    "type": "object",
+    "properties": {
+        "plugins": {
+            "type": "object",
+            "description": "Keyed by plugin ID",
+            "additionalProperties": {
+                "type": "object",
+                "properties": {
+                    "sys_id": { "type": "string" },
+                    "name": { "type": "string" },
+                    "version": { "type": "string" },
+                    "active": { "type": "boolean" },
+                    "scope": { "type": "string" }
+                },
+                "required": ["name", "active"]
+            }
+        }
+    }
+}

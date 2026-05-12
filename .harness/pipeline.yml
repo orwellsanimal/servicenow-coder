@@ -1,0 +1,184 @@
+# Harness CI/CD Pipeline Reference
+#
+# This is the target pipeline spec for when this project moves to Harness.
+# It mirrors the GitHub Actions workflow but uses Harness-native constructs:
+#   - Approval gates between environments
+#   - ServiceNow change management integration (Harness has a native SN provider)
+#   - Artifact promotion across stages
+#
+# NOT ACTIVE — reference only. The GitHub Actions workflow is the current CI.
+
+pipeline:
+  name: ServiceNow App Pipeline
+  identifier: servicenow_app_pipeline
+  projectIdentifier: servicenow_coder
+  orgIdentifier: default
+  tags: {}
+
+  properties:
+    ci:
+      codebase:
+        connectorRef: account.github
+        repoName: ServiceNow_Coder
+        build: <+input>
+
+  stages:
+    # ─── Stage 1: Build & Validate ─────────────────────────────────
+    - stage:
+        name: Build
+        identifier: build
+        type: CI
+        spec:
+          cloneCodebase: true
+          infrastructure:
+            type: KubernetesDirect  # or Cloud
+            spec:
+              connectorRef: <+input>
+              namespace: harness-builds
+          execution:
+            steps:
+              - step:
+                  name: Install
+                  identifier: install
+                  type: Run
+                  spec:
+                    shell: Bash
+                    command: |
+                      npm install -g pnpm@latest @servicenow/sdk@latest
+                      pnpm install --frozen-lockfile
+                      pnpm install --frozen-lockfile --filter './apps/*'
+
+              - step:
+                  name: Validate
+                  identifier: validate
+                  type: Run
+                  spec:
+                    shell: Bash
+                    command: |
+                      pnpm run check
+                      pnpm run lint -- --max-warnings 0
+
+              - step:
+                  name: Build Apps
+                  identifier: build_apps
+                  type: Run
+                  spec:
+                    shell: Bash
+                    command: pnpm run build:apps
+
+              - step:
+                  name: Pack Artifacts
+                  identifier: pack
+                  type: Run
+                  spec:
+                    shell: Bash
+                    command: |
+                      for dir in apps/*/; do
+                        if [ -f "$dir/now.config.json" ]; then
+                          npx @servicenow/sdk pack --source "$dir"
+                        fi
+                      done
+
+              # Upload packed artifacts to Harness artifact store
+              # - step:
+              #     name: Upload Artifacts
+              #     identifier: upload
+              #     type: ArtifactUpload
+              #     spec: ...
+
+    # ─── Stage 2: Deploy to Dev ────────────────────────────────────
+    - stage:
+        name: Deploy Dev
+        identifier: deploy_dev
+        type: Deployment
+        spec:
+          deploymentType: Custom
+          environment:
+            environmentRef: dev
+            infrastructureDefinitions:
+              - identifier: servicenow_dev
+          execution:
+            steps:
+              - step:
+                  name: Deploy Apps
+                  identifier: deploy
+                  type: Run
+                  spec:
+                    shell: Bash
+                    command: node scripts/deploy.js --auth dev
+                    envVariables:
+                      SN_INSTANCE: <+secrets.getValue("sn_dev_instance")>
+                      SN_USER: <+secrets.getValue("sn_dev_user")>
+                      SN_PASSWORD: <+secrets.getValue("sn_dev_password")>
+
+    # ─── Stage 3: Deploy to Test (future) ──────────────────────────
+    # - stage:
+    #     name: Deploy Test
+    #     identifier: deploy_test
+    #     type: Deployment
+    #     spec:
+    #       deploymentType: Custom
+    #       environment:
+    #         environmentRef: test
+    #       execution:
+    #         steps:
+    #           - step:
+    #               name: Approval
+    #               identifier: approval
+    #               type: HarnessApproval
+    #               spec:
+    #                 approvers:
+    #                   userGroups: [qa_leads]
+    #                 approvalMessage: "Approve deployment to TEST?"
+    #           - step:
+    #               name: Deploy Apps
+    #               identifier: deploy
+    #               type: Run
+    #               spec:
+    #                 shell: Bash
+    #                 command: node scripts/deploy.js --auth test
+
+    # ─── Stage 4: Deploy to Prod (future) ──────────────────────────
+    # - stage:
+    #     name: Deploy Prod
+    #     identifier: deploy_prod
+    #     type: Deployment
+    #     spec:
+    #       deploymentType: Custom
+    #       environment:
+    #         environmentRef: prod
+    #       execution:
+    #         steps:
+    #           - step:
+    #               name: ServiceNow Change Request
+    #               identifier: sn_change
+    #               type: ServiceNowCreate
+    #               spec:
+    #                 connectorRef: account.servicenow_prod
+    #                 ticketType: change_request
+    #                 fields:
+    #                   short_description: "Deploy <+pipeline.name> v<+artifact.version>"
+    #                   category: Software
+    #                   priority: "3"
+    #           - step:
+    #               name: Approval
+    #               identifier: approval
+    #               type: ServiceNowApproval
+    #               spec:
+    #                 connectorRef: account.servicenow_prod
+    #                 ticketNumber: <+steps.sn_change.output.ticketNumber>
+    #                 approvalCriteria:
+    #                   type: KeyValues
+    #                   spec:
+    #                     matchAnyCondition: false
+    #                     conditions:
+    #                       - key: state
+    #                         operator: equals
+    #                         value: Implement
+    #           - step:
+    #               name: Deploy Apps
+    #               identifier: deploy
+    #               type: Run
+    #               spec:
+    #                 shell: Bash
+    #                 command: node scripts/deploy.js --auth prod

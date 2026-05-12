@@ -1,0 +1,6 @@
+{
+    "$schema": "../schemas/relationships.schema.json",
+    "_source": "sys_dictionary (type=reference/glide_list)",
+    "_description": "Reference field relationships between tables. Each entry describes a foreign key.",
+    "relationships": []
+}

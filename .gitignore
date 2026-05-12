@@ -1,0 +1,16 @@
+node_modules/
+dist/
+build/
+.now/
+*.log
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+
+# SDK auth credentials (stored by now-sdk auth)
+.servicenow/
+
+# Packed artifacts (generated, not committed)
+*.zip

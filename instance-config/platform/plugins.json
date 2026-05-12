@@ -1,0 +1,6 @@
+{
+    "$schema": "../schemas/plugins.schema.json",
+    "_source": "sys_plugins",
+    "_description": "Activated plugins on the instance. Keyed by plugin ID.",
+    "plugins": {}
+}

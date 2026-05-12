@@ -1,0 +1,23 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "ServiceNow Tables (sys_db_object)",
+    "type": "object",
+    "properties": {
+        "tables": {
+            "type": "object",
+            "additionalProperties": {
+                "type": "object",
+                "properties": {
+                    "sys_id": { "type": "string" },
+                    "label": { "type": "string" },
+                    "super_class": { "type": "string", "description": "Parent table name" },
+                    "scope": { "type": "string", "description": "Application scope" },
+                    "is_extendable": { "type": "boolean" },
+                    "number_prefix": { "type": "string" },
+                    "access": { "type": "string", "description": "Table access level" }
+                },
+                "required": ["sys_id", "label"]
+            }
+        }
+    }
+}

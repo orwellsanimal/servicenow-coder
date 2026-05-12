@@ -1,0 +1,22 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "ServiceNow Integrations",
+    "type": "object",
+    "properties": {
+        "integrations": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "sys_id": { "type": "string" },
+                    "name": { "type": "string" },
+                    "type": { "type": "string", "enum": ["connection_alias", "remote_instance", "rest_message", "soap_message"] },
+                    "target_url": { "type": "string" },
+                    "active": { "type": "boolean" },
+                    "scope": { "type": "string" }
+                },
+                "required": ["name", "type"]
+            }
+        }
+    }
+}

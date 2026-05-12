@@ -1,0 +1,230 @@
+# ServiceNow Coder CI Pipeline
+#
+# Stages are structured to map to Harness pipeline stages:
+#   1. validate  → Harness "Build" stage
+#   2. build     → Harness "Build" stage (artifact generation)
+#   3. pack      → Harness "Build" stage (artifact packaging)
+#   4. deploy    → Harness "Deploy" stage (gated)
+#
+# For single dev instance: deploy runs on push to main.
+# For multi-instance (future): deploy would fan out to dev/test/prod with approvals.
+
+name: CI
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'apps/**'
+      - 'scratch/**'
+      - 'templates/**'
+      - 'scripts/**'
+      - 'package.json'
+      - 'pnpm-workspace.yaml'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'apps/**'
+      - 'scratch/**'
+      - 'templates/**'
+
+env:
+  NODE_VERSION: '20'
+  PNPM_VERSION: '10'
+
+jobs:
+  # ─── Stage 1: Validate ───────────────────────────────────────────
+  # Lint, type-check, and verify code quality.
+  # Maps to: Harness Build → Validate step group
+  validate:
+    name: Validate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: false  # reference repos not needed for validation
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: ${{ env.PNPM_VERSION }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Install app dependencies
+        run: pnpm install --frozen-lockfile --filter './apps/*'
+        if: hashFiles('apps/*/package.json') != ''
+
+      - name: Type-check scratch
+        run: pnpm run check
+
+      - name: Lint
+        run: pnpm run lint -- --max-warnings 0
+        continue-on-error: true  # non-blocking until rules are tuned
+
+      - name: Format check
+        run: pnpm run format
+        continue-on-error: true
+
+  # ─── Stage 2: Build ──────────────────────────────────────────────
+  # Compile all Fluent apps to XML metadata.
+  # Maps to: Harness Build → Compile step group
+  build:
+    name: Build Apps
+    runs-on: ubuntu-latest
+    needs: validate
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: false
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: ${{ env.PNPM_VERSION }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Install app dependencies
+        run: pnpm install --frozen-lockfile --filter './apps/*'
+        if: hashFiles('apps/*/package.json') != ''
+
+      - name: Install ServiceNow SDK
+        run: npm install -g @servicenow/sdk@latest
+
+      - name: Build all apps
+        run: pnpm run build:apps
+
+      - name: Verify build artifacts
+        run: |
+          for dir in apps/*/; do
+            if [ -f "$dir/now.config.json" ]; then
+              app=$(basename "$dir")
+              if [ -d "$dir/dist" ]; then
+                echo "[OK] $app — dist/ generated"
+                find "$dir/dist" -name "*.xml" | wc -l | xargs -I{} echo "     {} XML files"
+              else
+                echo "[WARN] $app — no dist/ output"
+              fi
+            fi
+          done
+
+  # ─── Stage 3: Pack ───────────────────────────────────────────────
+  # Package built apps into installable artifacts.
+  # Maps to: Harness Build → Package step group / Artifact upload
+  pack:
+    name: Package Artifacts
+    runs-on: ubuntu-latest
+    needs: build
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: false
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: ${{ env.PNPM_VERSION }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Install app dependencies
+        run: pnpm install --frozen-lockfile --filter './apps/*'
+        if: hashFiles('apps/*/package.json') != ''
+
+      - name: Install ServiceNow SDK
+        run: npm install -g @servicenow/sdk@latest
+
+      - name: Build and pack all apps
+        run: |
+          pnpm run build:apps
+          for dir in apps/*/; do
+            if [ -f "$dir/now.config.json" ]; then
+              echo "Packing $(basename $dir)..."
+              npx @servicenow/sdk pack --source "$dir" || true
+            fi
+          done
+
+      - name: Upload artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: servicenow-apps-${{ github.sha }}
+          path: apps/*/dist/**/*.zip
+          retention-days: 30
+          if-no-files-found: warn
+
+  # ─── Stage 4: Deploy ─────────────────────────────────────────────
+  # Deploy to the dev instance via now-sdk install.
+  # Maps to: Harness Deploy stage (with approval gates in multi-instance)
+  #
+  # Single instance: auto-deploys on push to main.
+  # Multi-instance (future):
+  #   - This becomes a matrix deploy across environments
+  #   - Each environment has its own auth alias and approval gate
+  #   - Harness would manage the promotion pipeline
+  deploy:
+    name: Deploy to Dev Instance
+    runs-on: ubuntu-latest
+    needs: pack
+    if: github.ref == 'refs/heads/main'
+    environment: dev  # GitHub environment for protection rules / secrets
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: false
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: ${{ env.PNPM_VERSION }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'pnpm'
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Install app dependencies
+        run: pnpm install --frozen-lockfile --filter './apps/*'
+        if: hashFiles('apps/*/package.json') != ''
+
+      - name: Install ServiceNow SDK
+        run: npm install -g @servicenow/sdk@latest
+
+      - name: Configure instance auth
+        run: |
+          npx @servicenow/sdk auth \
+            --add "${{ secrets.SN_INSTANCE }}" \
+            --type basic \
+            --alias dev
+        env:
+          # SDK auth prompts for user/pass; set via env for non-interactive
+          SN_USERNAME: ${{ secrets.SN_USER }}
+          SN_PASSWORD: ${{ secrets.SN_PASSWORD }}
+
+      - name: Deploy all apps
+        run: node scripts/deploy.js --auth dev
+
+      # ── Future: Harness promotion ──
+      # In a multi-instance Harness pipeline, this stage would be replaced by:
+      #   1. Harness "Deploy to Dev" stage (auto, this equivalent)
+      #   2. Harness "Deploy to Test" stage (approval gate)
+      #   3. Harness "Deploy to Prod" stage (approval gate + change ticket)
+      # Each stage uses a different --auth alias and SN_INSTANCE secret.

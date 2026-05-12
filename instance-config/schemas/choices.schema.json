@@ -1,0 +1,24 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "ServiceNow Choices (sys_choice)",
+    "type": "object",
+    "properties": {
+        "choices": {
+            "type": "object",
+            "description": "Keyed by 'table.field_name'",
+            "additionalProperties": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "value": { "type": "string" },
+                        "label": { "type": "string" },
+                        "sequence": { "type": "integer" },
+                        "inactive": { "type": "boolean" }
+                    },
+                    "required": ["value", "label"]
+                }
+            }
+        }
+    }
+}

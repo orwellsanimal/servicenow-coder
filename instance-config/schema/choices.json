@@ -1,0 +1,6 @@
+{
+    "$schema": "../schemas/choices.schema.json",
+    "_source": "sys_choice",
+    "_description": "Choice/dropdown values per table.field. Keyed by 'table.field_name'.",
+    "choices": {}
+}

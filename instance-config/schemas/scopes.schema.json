@@ -1,0 +1,23 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "ServiceNow Application Scopes (sys_scope)",
+    "type": "object",
+    "properties": {
+        "scopes": {
+            "type": "object",
+            "description": "Keyed by scope name (e.g. x_myapp)",
+            "additionalProperties": {
+                "type": "object",
+                "properties": {
+                    "sys_id": { "type": "string" },
+                    "name": { "type": "string", "description": "Display name" },
+                    "scope": { "type": "string", "description": "Scope identifier" },
+                    "version": { "type": "string" },
+                    "vendor": { "type": "string" },
+                    "active": { "type": "boolean" }
+                },
+                "required": ["name", "scope"]
+            }
+        }
+    }
+}

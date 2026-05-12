@@ -1,0 +1,6 @@
+{
+    "$schema": "../schemas/acl-policies.schema.json",
+    "_source": "sys_security_acl",
+    "_description": "ACL policy summaries. Grouped by table and operation.",
+    "acl_policies": {}
+}

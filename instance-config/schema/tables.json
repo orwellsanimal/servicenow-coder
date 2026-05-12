@@ -1,0 +1,6 @@
+{
+    "$schema": "../schemas/tables.schema.json",
+    "_source": "sys_db_object",
+    "_description": "Tables on the instance. Each entry maps table name to its metadata.",
+    "tables": {}
+}

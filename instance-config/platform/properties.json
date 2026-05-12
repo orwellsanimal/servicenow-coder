@@ -1,0 +1,6 @@
+{
+    "$schema": "../schemas/properties.schema.json",
+    "_source": "sys_properties",
+    "_description": "System properties. Keyed by property name.",
+    "properties": {}
+}

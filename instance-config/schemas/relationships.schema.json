@@ -1,0 +1,20 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "ServiceNow Table Relationships",
+    "type": "object",
+    "properties": {
+        "relationships": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "source_table": { "type": "string" },
+                    "source_field": { "type": "string" },
+                    "target_table": { "type": "string" },
+                    "type": { "type": "string", "enum": ["reference", "glide_list", "document_id"] }
+                },
+                "required": ["source_table", "source_field", "target_table", "type"]
+            }
+        }
+    }
+}

@@ -1,0 +1,6 @@
+{
+    "$schema": "../schemas/rest-apis.schema.json",
+    "_source": "sys_ws_definition",
+    "_description": "Scripted REST APIs registered on the instance.",
+    "rest_apis": []
+}

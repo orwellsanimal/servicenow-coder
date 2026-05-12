@@ -1,0 +1,6 @@
+{
+    "$schema": "../schemas/roles.schema.json",
+    "_source": "sys_user_role",
+    "_description": "Roles defined on the instance. Keyed by role name.",
+    "roles": {}
+}

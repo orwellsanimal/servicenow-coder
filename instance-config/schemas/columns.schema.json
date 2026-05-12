@@ -1,0 +1,30 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "ServiceNow Columns (sys_dictionary)",
+    "type": "object",
+    "properties": {
+        "columns": {
+            "type": "object",
+            "description": "Keyed by table name",
+            "additionalProperties": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "element": { "type": "string", "description": "Column/field name" },
+                        "column_label": { "type": "string" },
+                        "internal_type": { "type": "string", "description": "Glide type (string, reference, integer, etc.)" },
+                        "max_length": { "type": "integer" },
+                        "mandatory": { "type": "boolean" },
+                        "read_only": { "type": "boolean" },
+                        "active": { "type": "boolean" },
+                        "default_value": { "type": "string" },
+                        "reference": { "type": "string", "description": "Referenced table name (for reference fields)" },
+                        "scope": { "type": "string" }
+                    },
+                    "required": ["element", "internal_type"]
+                }
+            }
+        }
+    }
+}

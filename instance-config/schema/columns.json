@@ -1,0 +1,6 @@
+{
+    "$schema": "../schemas/columns.schema.json",
+    "_source": "sys_dictionary",
+    "_description": "Columns/fields per table. Keyed by table name, each containing an array of field definitions.",
+    "columns": {}
+}

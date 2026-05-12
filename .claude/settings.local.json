@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pnpm --version)",
+      "Bash(npx @servicenow/sdk --version)",
+      "Bash(git --version)",
+      "Bash(tsc --version)",
+      "Bash(npx tsc:*)",
+      "Bash(npm install:*)",
+      "Bash(npx @servicenow/sdk explain quickstart --list --format=raw)",
+      "Bash(pnpm install:*)",
+      "Bash(pnpm run:*)",
+      "Bash(pnpm config:*)",
+      "Bash(pnpm approve-builds:*)",
+      "Bash(npx:*)",
+      "Bash(node:*)",
+      "Bash(cp \"C:/ServiceNow_Coder/servicenow-sdk/providers/claude/plugin/skills/now-sdk-explain/SKILL.md\" \"C:/ServiceNow_Coder/.claude/skills/now-sdk-explain/SKILL.md\")",
+      "Bash(cp \"C:/ServiceNow_Coder/servicenow-sdk/providers/claude/plugin/skills/now-sdk-setup/SKILL.md\" \"C:/ServiceNow_Coder/.claude/skills/now-sdk-setup/SKILL.md\")",
+      "Bash(find \"C:\\\\ServiceNow_Coder/servicenow-docs/markdown\" -type f -name \"*.md\" -exec grep -l \"update set\\\\|source control\\\\|CI/CD\\\\|git integration\" {} \\\\;)",
+      "Bash(xargs grep:*)",
+      "Bash(grep -v '.git$')"
+    ]
+  }
+}

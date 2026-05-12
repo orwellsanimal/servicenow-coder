@@ -1,0 +1,28 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "ServiceNow ACL Policies (sys_security_acl)",
+    "type": "object",
+    "properties": {
+        "acl_policies": {
+            "type": "object",
+            "description": "Keyed by 'table.operation' (e.g. incident.read)",
+            "additionalProperties": {
+                "type": "array",
+                "items": {
+                    "type": "object",
+                    "properties": {
+                        "sys_id": { "type": "string" },
+                        "name": { "type": "string" },
+                        "operation": { "type": "string", "enum": ["read", "write", "create", "delete"] },
+                        "type": { "type": "string", "enum": ["record", "field", "client_callable_script_include"] },
+                        "roles": { "type": "array", "items": { "type": "string" } },
+                        "condition": { "type": "string" },
+                        "active": { "type": "boolean" },
+                        "scope": { "type": "string" }
+                    },
+                    "required": ["operation", "active"]
+                }
+            }
+        }
+    }
+}

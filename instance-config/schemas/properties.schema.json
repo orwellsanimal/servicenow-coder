@@ -1,0 +1,22 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "ServiceNow System Properties (sys_properties)",
+    "type": "object",
+    "properties": {
+        "properties": {
+            "type": "object",
+            "description": "Keyed by property name",
+            "additionalProperties": {
+                "type": "object",
+                "properties": {
+                    "sys_id": { "type": "string" },
+                    "value": { "type": "string" },
+                    "description": { "type": "string" },
+                    "type": { "type": "string", "enum": ["string", "boolean", "integer", "choicelist"] },
+                    "scope": { "type": "string" }
+                },
+                "required": ["value"]
+            }
+        }
+    }
+}

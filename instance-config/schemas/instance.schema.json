@@ -1,0 +1,15 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "ServiceNow Instance Identity",
+    "type": "object",
+    "required": ["instance_url", "family", "profile"],
+    "properties": {
+        "instance_url": { "type": "string", "description": "Base URL of the ServiceNow instance" },
+        "instance_id": { "type": "string", "description": "sys_id of the instance (from sys_cluster_state)" },
+        "family": { "type": "string", "description": "Release family (e.g. australia, zurich)" },
+        "build": { "type": "string", "description": "Build tag / patch level" },
+        "build_date": { "type": "string", "description": "Build date" },
+        "exported_at": { "type": "string", "format": "date-time", "description": "When this config was exported" },
+        "profile": { "type": "string", "description": "Profile name (ootb, customer-name, etc.)" }
+    }
+}
