@@ -42,7 +42,7 @@ This installs the official ServiceNow Fluent plugin. Project-local skills in `.c
 
 - **Reference docs explicitly:** *"using docs/apps/incident-map.md as the spec, build the table and business rule"*
 - **Cite the grounding layer:** *"verify the table x_incmap_location exists in instance-config/schema/tables.json before referencing it"*
-- **Pair tests with features:** *"after scaffolding the table, generate an ATF test under apps/incident-map/src/tests/"*
+- **Pair tests with features:** *"after scaffolding the table, generate an ATF test under apps/incident-map/src/fluent/tests/"*
 - **Use the official path:** *"use now-sdk init, don't reinvent the scaffolding"*
 
 ### What CLAUDE.md gives Claude Code
@@ -114,7 +114,7 @@ This avoids reinventing scaffolders that the SDK already provides.
 
 ### Pair tests with features
 
-> *"After scaffolding the business rule, generate an ATF test that exercises it, place it under `apps/<app>/src/tests/`, and add it to the app's suite."*
+> *"After scaffolding the business rule, generate an ATF test that exercises it, place it under `apps/<app>/src/fluent/tests/`, and add it to the app's suite."*
 
 Encodes the ATF testing convention from the start.
 

@@ -2,7 +2,8 @@
  * ATF Test: {{testName}}
  * {{description}}
  *
- * Convention: place ATF tests at `apps/<app>/src/tests/<test-id>.now.ts`.
+ * Convention: place ATF tests at `apps/<app>/src/fluent/tests/<test-id>.now.ts`.
+ * The SDK only scans `src/fluent/**/*.now.ts`; files under `src/tests/` are silently skipped.
  * Tests are grouped into a per-app suite (see `atf-test-suite.now.ts`).
  *
  * Step namespaces (see servicenow-sdk-examples/test-atf-sample for full set):

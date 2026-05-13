@@ -1,3 +1,13 @@
 packages:
-    - scratch
-    - 'apps/*'
+  - scratch
+  - 'apps/*'
+allowBuilds:
+  '@parcel/watcher': set this to true or false
+  '@swc/core': set this to true or false
+  libxmljs2: set this to true or false
+# Allowlist native build scripts so pnpm v10 doesn't escalate ERR_PNPM_IGNORED_BUILDS
+# during now-sdk build (which shells out to `pnpm install`).
+onlyBuiltDependencies:
+  - '@parcel/watcher'
+  - '@swc/core'
+  - libxmljs2

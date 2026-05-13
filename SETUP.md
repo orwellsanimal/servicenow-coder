@@ -290,7 +290,7 @@ See [`docs/guides/pysnc.md`](./docs/guides/pysnc.md) for when to use PySNC and c
 
 When you generate a feature with AI assistance, pair it with an ATF test:
 
-- Tests live at `apps/<app>/src/tests/<test-id>.now.ts`
+- Tests live at `apps/<app>/src/fluent/tests/<test-id>.now.ts` (SDK only scans `src/fluent/`)
 - Each app has a suite named `<scope>-suite` (e.g. `x_hello-suite`)
 - Templates: `templates/fluent/artifacts/atf-test.now.ts` and `atf-test-suite.now.ts`
 - Run locally: `node scripts/run-tests.js --app my-app`

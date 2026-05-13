@@ -128,7 +128,7 @@ node scripts/run-tests.js --suite name   # run a specific suite by name
 
 When generating a feature with AI assistance, **pair it with an ATF test**. The plumbing:
 
-- **Authoring** — generate `apps/<app>/src/tests/<test-id>.now.ts` from `templates/fluent/artifacts/atf-test.now.ts` using `Test()` from `@servicenow/sdk/core`. Step namespaces: `atf.server.*`, `atf.form.*`, `atf.rest.*` (see `servicenow-sdk-examples/test-atf-sample/`).
+- **Authoring** — generate `apps/<app>/src/fluent/tests/<test-id>.now.ts` from `templates/fluent/artifacts/atf-test.now.ts` using `Test()` from `@servicenow/sdk/core`. Step namespaces: `atf.server.*`, `atf.form.*`, `atf.rest.*` (see `servicenow-sdk-examples/test-atf-sample/`). **Tests must live under `src/fluent/`** — the SDK only scans `src/fluent/**/*.now.ts`; files under `src/tests/` are silently skipped.
 - **Grouping** — one suite per app, named `<scope>-suite` (e.g. `x_inchelper-suite`). Scaffold once from `templates/fluent/artifacts/atf-test-suite.now.ts`. Each test joins via a `sys_atf_test_suite_test` Record block.
 - **Execution** — `scripts/run-tests.js` calls `POST /api/sn_cicd/testsuite/run`, polls `/api/sn_cicd/progress/{id}` until done, then fetches `/api/sn_cicd/testsuite/results/{id}`. Exits non-zero on any failure.
 - **CI** — runs after `deploy` on push to `main`.
