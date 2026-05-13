@@ -21,8 +21,10 @@ on:
       - 'scripts/**'
       - 'package.json'
       - 'pnpm-workspace.yaml'
+      - '.github/workflows/**'
   pull_request:
     branches: [main]
+  workflow_dispatch:
     paths:
       - 'apps/**'
       - 'scratch/**'
