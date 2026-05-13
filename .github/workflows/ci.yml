@@ -211,14 +211,30 @@ jobs:
         run: npm install -g @servicenow/sdk@latest
 
       - name: Configure instance auth
-        # `now-sdk auth --add` has no --user/--password flags; it prompts
-        # interactively. CI has no TTY, so pipe username and password on stdin.
+        # `now-sdk auth --add` only takes --add/--type/--alias as flags; user
+        # and password are prompted interactively. Piping into stdin works for
+        # the username but fails on the password prompt (SDK switches to TTY
+        # raw mode for masked input). Use `expect` to allocate a real PTY.
+        env:
+          SN_INSTANCE: ${{ secrets.SN_INSTANCE }}
+          SN_USER: ${{ secrets.SN_USER }}
+          SN_PASSWORD: ${{ secrets.SN_PASSWORD }}
         run: |
-          printf '%s\n%s\n' "${{ secrets.SN_USER }}" "${{ secrets.SN_PASSWORD }}" \
-            | npx @servicenow/sdk auth \
-                --add "${{ secrets.SN_INSTANCE }}" \
-                --type basic \
-                --alias dev
+          sudo apt-get update -qq && sudo apt-get install -y -qq expect
+          expect <<'EOF'
+            set timeout 60
+            set inst $env(SN_INSTANCE)
+            set user $env(SN_USER)
+            set pass $env(SN_PASSWORD)
+            spawn npx @servicenow/sdk auth --add $inst --type basic --alias dev
+            expect -re "username.*:"
+            send -- "$user\r"
+            expect -re "password.*:"
+            send -- "$pass\r"
+            expect eof
+            catch wait result
+            exit [lindex $result 3]
+          EOF
 
       - name: Deploy all apps
         run: node scripts/deploy.js --auth dev
