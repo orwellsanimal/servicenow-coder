@@ -161,3 +161,7 @@ node instance-config/scripts/export-instance.js
 - Apps live in `apps/`, each created via `now-sdk init` (not custom templates)
 - No update sets — Application Repository only
 - Git branch strategy: `main` deployable, feature branches for development
+- App scopes must be **vendor-prefixed** (`x_<company_code>_<≤9-char suffix>`, ≤19 chars total) — bare scopes like `x_myapp` fail install with `application was null`
+- `.now.ts` files only get picked up under `src/fluent/` — `src/tests/` is silently skipped
+- `ScheduledScript` has a sharp-edged API: `executionTime` must be `Time(...)` (not a bare object), `executionStart` is required, and `runAs` by username doesn't work. Use `templates/fluent/artifacts/scheduled-script.now.ts` as the canonical starting point — its comments encode the trap
+- After any non-trivial build, verify the generated XML in `apps/<app>/dist/app/update/` matches expectations (especially for any field set via SDK helpers like `Time()`, `Duration()`, `Record()` references) — silent serialization quirks have bitten us

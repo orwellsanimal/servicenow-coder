@@ -57,6 +57,7 @@ The SDK doesn't ship per-artifact code templates, so we use local templates for 
 | `acl` | `templates/fluent/artifacts/acl.now.ts` | ACL rules with roles |
 | `ui-action` | `templates/fluent/artifacts/ui-action.now.ts` | UI action (form/list button) |
 | `script-action` | `templates/fluent/artifacts/script-action.now.ts` | Script action (event handler) |
+| `scheduled-script` | `templates/fluent/artifacts/scheduled-script.now.ts` + `.server.ts` | Scheduled script execution. **Template has critical comments about `Time()`, `executionStart`, and `runAs` — keep them.** |
 | `flow` | `templates/fluent/artifacts/flow.now.ts` | Flow Designer automation |
 | `record` | `templates/fluent/artifacts/record.now.ts` | Seed data record |
 | `catalog-item` | `templates/fluent/artifacts/catalog-item.now.ts` | Service catalog item |
