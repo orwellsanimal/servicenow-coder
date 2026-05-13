@@ -91,6 +91,25 @@ Already have a corporate dev instance? Use that. Just make sure your user has th
 | `sn_cicd.sys_ci_automation` | ATF test execution via REST API (covered by admin) |
 | Read access to `sys_*` tables you want to grounding-export | `instance-config` harvest (covered by admin) |
 
+### One-time instance configuration
+
+A few things have to be set on the instance itself before the SDK and CI will work. Skip these and you'll hit `application was null` install errors or HTTP 400 from the ATF runner. **Open the instance, go to System Definition → Scripts - Background, run this once:**
+
+```javascript
+// Discover your vendor/company code — note this value, you need it for scope names below
+gs.print('vendor code: ' + gs.getProperty('glide.appcreator.company.code'));
+
+// Enable ATF runner + scheduled execution (order matters — runner must be first)
+gs.setProperty('sn_atf.runner.enabled', 'true');
+gs.setProperty('sn_atf.schedule.enabled', 'true');
+gs.print('runner.enabled:   ' + gs.getProperty('sn_atf.runner.enabled'));
+gs.print('schedule.enabled: ' + gs.getProperty('sn_atf.schedule.enabled'));
+```
+
+**Note the vendor code** — every Fluent app scope on this instance must start with `x_<vendor_code>_` (e.g. `x_1234567_myapp`). Total scope length is capped at 19 characters, leaving ~9 for the suffix.
+
+If you've never used Studio on this instance, open `/$studio.do` once and let it initialize — it bootstraps user-level metadata the SDK install processor depends on. You don't have to create anything, just open it.
+
 ---
 
 ## 4. Install workspace dependencies
@@ -307,6 +326,11 @@ Quick reference table for the most common issues. For the full list, see [`docs/
 | Symptom | Likely cause | Fix |
 |---------|--------------|-----|
 | `now-sdk install` returns 401 / 403 | Wrong credentials or roles | Re-run `now-sdk auth --add ... --alias dev`. User needs admin. |
+| `now-sdk install` errors `application was null` | Scope is not vendor-prefixed | Re-init with `--scopeName x_<vendor>_<suffix>`. See step 3 to find the vendor code. |
+| `now-sdk init` errors `Invalid scope: must be less than 19 characters` | Scope too long | Shorten the suffix — total must be ≤19 chars |
+| ATF API returns HTTP 400 "Scheduled test/suite execution is disabled" | `sn_atf.*` properties not set | Run the Scripts - Background snippet in step 3 |
+| `.now.ts` file builds OK but artifact never appears in `dist/` | File is outside `src/fluent/` | Move to `src/fluent/` — SDK only scans there |
+| `now-sdk build` errors `ERR_PNPM_IGNORED_BUILDS` | New native-build dep | Add to `onlyBuiltDependencies` in `pnpm-workspace.yaml` |
 | `now-sdk` connection errors on a PDI | Instance hibernated | Wake at developer.servicenow.com |
 | ATF test API returns 403 | Missing `sn_cicd.sys_ci_automation` | Grant the role or use admin |
 | `servicenow-docs` shows modified on Windows | Upstream case collision | Cosmetic — ignore |

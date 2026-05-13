@@ -36,6 +36,31 @@ Even some admins hit this. `sys_plugins` requires elevated reads. Either grant `
 node instance-config/scripts/export-instance.js --only schema,security,services,platform
 ```
 
+## Scaffolding issues
+
+### `now-sdk init` doesn't create a subfolder for the new app
+
+`now-sdk init` writes its scaffold into the **current directory**, not into a folder named after `--packageName`. So running it directly from `apps/` will dump files into `apps/` itself and collide with other apps. Always make the target folder first:
+
+```bash
+cd apps && mkdir my-app && cd my-app
+npx @servicenow/sdk init --appName "My App" --packageName my-app --scopeName x_<vendor>_<suffix> --template base --auth dev
+```
+
+### `now-sdk init` errors with `Invalid scope: must be less than 19 characters`
+
+Scope names are capped at 19 characters total. Since scopes must include the vendor prefix on a PDI (see below), you only have ~9 characters for the suffix after `x_<7-digit-vendor>_`.
+
+### Install fails with `Unable to install application as application was null`
+
+Server-side error from `com.sn_appclient_bootstrap.ScopedAppUploadProcessor`. Almost always means **the scope is not vendor-prefixed**. On a PDI, scopes must start with `x_<your_company_code>_`. Discover the code on the target instance via Scripts - Background:
+
+```javascript
+gs.print(gs.getProperty('glide.appcreator.company.code'));
+```
+
+Then re-init with `--scopeName x_<code>_<suffix>` (total ≤19 chars). To confirm the diagnosis before re-initing, check `/syslog_list.do` filtered to "appclient" — the Java stack trace from `ScopedAppUploadProcessor.uploadAndInstallApp` will be there.
+
 ## Build issues
 
 ### `now-sdk: command not found`
@@ -49,6 +74,46 @@ Install: `npm install -g pnpm`. Verify `pnpm --version` returns 10+.
 ### Node version error from the SDK
 
 The SDK is strict. `node --version` must be 20+. Use `nvm` (Linux/macOS) or `nvm-windows` to switch.
+
+### `now-sdk build` fails with `ERR_PNPM_IGNORED_BUILDS`
+
+`now-sdk build` shells out to `pnpm install` internally, and pnpm v10 escalates ignored native-build scripts to errors. The fix is to allowlist them in `pnpm-workspace.yaml` under `onlyBuiltDependencies:`:
+
+```yaml
+onlyBuiltDependencies:
+  - '@parcel/watcher'
+  - '@swc/core'
+  - libxmljs2
+```
+
+Add any new native-build dep here as soon as you install it.
+
+### `.now.ts` test files build successfully but never deploy
+
+The SDK only scans **`src/fluent/**/*.now.ts`**. Files under `src/tests/`, `src/atf/`, or other top-level src subfolders are silently skipped — build succeeds, `dist/` is missing them. Move them under `src/fluent/`:
+
+```
+src/fluent/tests/<test-id>.now.ts          ← correct
+src/tests/<test-id>.now.ts                 ← silently skipped
+```
+
+### `.now.ts` file fails to build with TS244 or TS277
+
+The Fluent DSL is stricter than TypeScript. These patterns are rejected:
+
+- `export default Test(...)` — must be a bare `Test(...)` statement (TS277).
+- Top-level `const FOO = '...'` referenced inside a DSL call, especially in string concatenation like `'sys_id=' + FOO + '^EQ'` (TS244). Inline string literals instead.
+- Any module-level statement other than imports and DSL factory calls.
+
+Put logic and constants in `src/server/*.ts` modules and import them as functions. Local `const` inside an arrow callback body (e.g. capturing step output) is allowed.
+
+### `gs` is undefined in a `src/server/*.ts` module
+
+`gs` isn't a built-in global in this typing model. Import it alongside `GlideRecord`:
+
+```typescript
+import { gs, GlideRecord } from '@servicenow/glide'
+```
 
 ### `pnpm install` fails with `ERR_PNPM_OUTDATED_LOCKFILE`
 
@@ -75,13 +140,24 @@ The install endpoint streams progress. If it appears stuck, the instance may be 
 
 ## Test issues
 
+### ATF API returns HTTP 400 "Scheduled test/suite execution is disabled"
+
+ServiceNow disables REST-triggered ATF runs by default. Two system properties must be `true` (and in this order — a business rule rejects setting `schedule` without `runner`):
+
+```javascript
+gs.setProperty('sn_atf.runner.enabled', 'true');     // global ATF gate
+gs.setProperty('sn_atf.schedule.enabled', 'true');   // REST/scheduled gate
+```
+
+Run this once per instance in Scripts - Background, or set them via `/sys_properties_list.do`. Without them, the Test stage of CI fails on every run.
+
 ### ATF test API returns 403
 
 The deploy user lacks `sn_cicd.sys_ci_automation`. Either grant the role on the instance (System Security → Users → Roles) or use an admin user.
 
 ### `scripts/run-tests.js --suite <name>` says "suite not found"
 
-The suite hasn't been deployed yet, or the name is wrong. Suites are named `<scope>-suite` by convention. Check `sys_atf_test_suite` on the instance for the actual name.
+The suite hasn't been deployed yet, or the name is wrong. Suites are named `<scope>-suite` by convention. Check `sys_atf_test_suite` on the instance for the actual name. **If you renamed the scope** (e.g. to add a vendor prefix), make sure the suite's `Record({ data: { name: '<scope>-suite' } })` was updated too — the runner derives the lookup name from `now.config.json` but the platform record carries the literal name from your source.
 
 ### ATF test times out without completing
 
@@ -108,6 +184,22 @@ Usually environment artifacts (line endings, pnpm 10's `allowBuilds:` auto-edits
 ```bash
 git submodule foreach --recursive 'git checkout -- .'
 ```
+
+## CI / GitHub Actions
+
+### Editing a workflow file alone doesn't trigger a CI run
+
+The `paths:` filter on `push:` excludes `.github/workflows/**` by default. Workflow-only changes won't trigger anything. The current workflow includes `.github/workflows/**` in its paths and also declares `workflow_dispatch:`, so you can also manually rerun via:
+
+```bash
+gh workflow run CI --ref main
+```
+
+### CI's auth step exits with `User force closed the prompt`
+
+`now-sdk auth --add` is interactive — it has no `--user`/`--password` flags and doesn't read `SN_USERNAME`/`SN_PASSWORD` env vars. Piping a printf into stdin gets the username through, but the password prompt switches to TTY raw mode and stdin EOF arrives early.
+
+The workflow uses `expect` to allocate a real PTY (see `.github/workflows/ci.yml` "Configure instance auth" step). If you swap to a different runner OS, make sure `expect` is available (it's preinstalled on `ubuntu-latest`, but the workflow `apt-get install`s it anyway as a safety net).
 
 ## Git on Windows
 
