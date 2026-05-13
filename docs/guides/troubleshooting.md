@@ -107,6 +107,28 @@ The Fluent DSL is stricter than TypeScript. These patterns are rejected:
 
 Put logic and constants in `src/server/*.ts` modules and import them as functions. Local `const` inside an arrow callback body (e.g. capturing step output) is allowed.
 
+### `ScheduledScript` deploys but `next_action` is set to year 2082 (or similar far-future)
+
+The schedule's `run_time` ended up as garbage because of a silent SDK serialization issue. Check the generated XML:
+
+```bash
+grep run_time apps/<app>/dist/app/update/sysauto_script_*.xml
+```
+
+If you see `<run_time>[object Object]</run_time>`, the `executionTime` field needs to be wrapped in `Time(...)`:
+
+```typescript
+// WRONG — silently produces [object Object] in the XML
+executionTime: { hours: 2, minutes: 0, seconds: 0 },
+
+// RIGHT — Time() is a Fluent global, no import needed
+executionTime: Time({ hours: 2, minutes: 0, seconds: 0 }, 'UTC'),
+```
+
+Two other landmines on the same factory:
+- Omitting `executionStart` lets `run_start` default to install time and `next_action` overflows to a sentinel ~56 years out. Anchor it: `executionStart: '2026-01-01 02:00:00'`.
+- `runAs: 'admin'` (username) gets stored literally as a broken sys_user reference because the SDK doesn't translate usernames to sys_ids. Omit `runAs` (script runs as install context) or pass the actual sys_user sys_id.
+
 ### `gs` is undefined in a `src/server/*.ts` module
 
 `gs` isn't a built-in global in this typing model. Import it alongside `GlideRecord`:
