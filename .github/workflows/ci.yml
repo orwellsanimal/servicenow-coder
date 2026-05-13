@@ -209,15 +209,14 @@ jobs:
         run: npm install -g @servicenow/sdk@latest
 
       - name: Configure instance auth
+        # `now-sdk auth --add` has no --user/--password flags; it prompts
+        # interactively. CI has no TTY, so pipe username and password on stdin.
         run: |
-          npx @servicenow/sdk auth \
-            --add "${{ secrets.SN_INSTANCE }}" \
-            --type basic \
-            --alias dev
-        env:
-          # SDK auth prompts for user/pass; set via env for non-interactive
-          SN_USERNAME: ${{ secrets.SN_USER }}
-          SN_PASSWORD: ${{ secrets.SN_PASSWORD }}
+          printf '%s\n%s\n' "${{ secrets.SN_USER }}" "${{ secrets.SN_PASSWORD }}" \
+            | npx @servicenow/sdk auth \
+                --add "${{ secrets.SN_INSTANCE }}" \
+                --type basic \
+                --alias dev
 
       - name: Deploy all apps
         run: node scripts/deploy.js --auth dev
