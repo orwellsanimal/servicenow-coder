@@ -1,0 +1,33 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Asset Distribution Summary (alm_asset aggregate)",
+    "type": "object",
+    "properties": {
+        "total_assets": { "type": "integer" },
+        "by_model_category": {
+            "type": "object",
+            "description": "Keyed by model_category sys_id",
+            "additionalProperties": {
+                "type": "object",
+                "properties": {
+                    "name": { "type": "string" },
+                    "count": { "type": "integer" }
+                },
+                "required": ["count"]
+            }
+        },
+        "by_install_status": {
+            "type": "object",
+            "description": "Keyed by install_status value",
+            "additionalProperties": {
+                "type": "object",
+                "properties": {
+                    "label": { "type": "string" },
+                    "count": { "type": "integer" }
+                },
+                "required": ["count"]
+            }
+        }
+    },
+    "required": ["total_assets"]
+}

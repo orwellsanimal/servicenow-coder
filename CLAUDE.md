@@ -86,11 +86,20 @@ When starting a new app, choose one:
 | `security/roles.json` | sys_user_role | Valid role names |
 | `security/acl-policies.json` | sys_security_acl | ACL patterns |
 | `services/rest-apis.json` | sys_ws_definition | Existing REST endpoints |
+| `catalog/items.json` | sc_cat_item | Validate catalog item GUIDs and active status |
+| `catalog/model-categories.json` | cmdb_model_category | Validate model_category GUIDs |
+| `automation/scheduled-jobs.json` | sysauto_script | Verify scheduled job deployment |
+| `users/distribution.json` | sys_user | User identity_type counts (no PII) |
+| `assets/summary.json` | alm_asset | Asset distribution by category/status |
 
 Re-export anytime:
 ```bash
+# Node export (schema, platform, security, services)
 SN_INSTANCE=https://dev123456.service-now.com SN_USER=admin SN_PASSWORD=… \
   node instance-config/scripts/export-instance.js
+
+# PySNC runtime export (catalog, automation, users, assets)
+python scripts/python/export-runtime.py
 ```
 
 ## Documentation Sources

@@ -1,0 +1,24 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Scheduled Script Jobs (sysauto_script)",
+    "type": "object",
+    "properties": {
+        "jobs": {
+            "type": "object",
+            "description": "Keyed by sys_id",
+            "additionalProperties": {
+                "type": "object",
+                "properties": {
+                    "name": { "type": "string" },
+                    "active": { "type": "boolean" },
+                    "run_type": { "type": "string" },
+                    "run_start": { "type": "string" },
+                    "run_time": { "type": "string" },
+                    "time_zone": { "type": "string" },
+                    "scope": { "type": "string" }
+                },
+                "required": ["name", "active"]
+            }
+        }
+    }
+}

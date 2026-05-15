@@ -1,0 +1,23 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "Service Catalog Items (sc_cat_item)",
+    "type": "object",
+    "properties": {
+        "items": {
+            "type": "object",
+            "description": "Keyed by sys_id",
+            "additionalProperties": {
+                "type": "object",
+                "properties": {
+                    "name": { "type": "string" },
+                    "short_description": { "type": "string" },
+                    "active": { "type": "boolean" },
+                    "category": { "type": "string" },
+                    "price": { "type": "string" },
+                    "recurring_price": { "type": "string" }
+                },
+                "required": ["name", "active"]
+            }
+        }
+    }
+}

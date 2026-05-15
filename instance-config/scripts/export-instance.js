@@ -518,6 +518,28 @@ async function main() {
         }
     }
 
+    // Optionally run PySNC runtime export
+    if (shouldExport('runtime')) {
+        console.log('\nRunning PySNC runtime export...');
+        const { execSync } = require('child_process');
+        try {
+            const pyCategories = onlyCategories
+                ? onlyCategories.filter(c => ['catalog', 'automation', 'users', 'assets'].includes(c))
+                : null;
+            const pyArgs = pyCategories && pyCategories.length > 0
+                ? `--only ${pyCategories.join(',')}`
+                : '';
+            execSync(
+                `python scripts/python/export-runtime.py ${pyArgs}`.trim(),
+                { cwd: path.resolve(__dirname, '..', '..'), stdio: 'inherit', env: process.env }
+            );
+        } catch (e) {
+            console.log('  [WARN] PySNC runtime export failed (Python/PySNC not installed?)');
+            console.log(`  ${e.message}`);
+            failures.push('runtime');
+        }
+    }
+
     console.log('\nExport complete.');
     if (failures.length > 0) {
         console.log(`Partial failures (likely ACL restrictions): ${failures.join(', ')}`);

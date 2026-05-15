@@ -108,11 +108,26 @@ PySNC wraps the Table API with a GlideRecord-like interface, but some method nam
 |--------------------------|-------|-------|
 | `gr.setLimit(n)` | `gr.limit = n` | Property, not method |
 | `gr.addQuery('f', 'IN', '1,2,3')` | `gr.add_query('f', 'IN', '1,2,3')` | Same semantics, snake_case |
-| `GlideAggregate` | *(not supported)* | Use client-side `Counter`/loops instead |
+| `GlideAggregate` | See `scripts/python/aggregate.py` | Companion module — `sn_count`, `sn_aggregate` via Stats API |
 | `gr.getRowCount()` | `gr.get_row_count()` | Works but requires full query first |
 | `gr.getValue('field')` | `gr.get_value('field')` | Snake_case |
 
-PySNC only supports Table API operations (CRUD). Server-side APIs like `GlideAggregate`, `GlideEvaluator`, and `sn_sc.CartJS` are not available — those run on the platform, not via REST.
+PySNC only supports Table API operations (CRUD). Server-side APIs like `GlideEvaluator` and `sn_sc.CartJS` are not available via REST — those run on the platform. For aggregation, see `scripts/python/aggregate.py` (a PySNC companion module that uses the `/api/now/stats/{table}` Stats API to provide `sn_count` and `sn_aggregate` operations equivalent to GlideAggregate). Example:
+
+```python
+from pysnc import ServiceNowClient
+from aggregate import sn_count
+
+client = ServiceNowClient(instance, (user, pw))
+n = sn_count(client, 'incident', query='active=true^priority=1')
+by_priority = sn_count(client, 'incident', query='active=true', group_by='priority')
+```
+
+The module can also be run as a CLI for ad-hoc queries:
+```bash
+python scripts/python/aggregate.py incident --query "active=true" --group-by priority
+python scripts/python/aggregate.py sys_user --group-by identity_type --raw
+```
 
 Some system tables (`sys_plugins`, `sys_package_dependency_m2m`) are ACL-protected and will return 403 even with admin credentials.
 

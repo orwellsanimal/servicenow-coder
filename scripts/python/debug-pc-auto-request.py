@@ -9,7 +9,6 @@ Usage:
 
 import os
 import sys
-from collections import Counter
 from pathlib import Path
 
 from dotenv import load_dotenv
@@ -18,10 +17,15 @@ from pysnc import ServiceNowClient
 REPO_ROOT = Path(__file__).resolve().parents[2]
 load_dotenv(REPO_ROOT / ".env")
 
-# Constants from the app (nightly-pc-request.ts)
+# Local PySNC companion for server-side aggregation
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from aggregate import sn_count  # noqa: E402
+
+# Constants from the app (nightly-pc-request.ts) — keep in sync with the
+# scoped app at apps/pc-auto-request/src/server/nightly-pc-request.ts
 HARDWARE_MODEL_CATEGORY = "81feb9c137101000deeabfc8bcbe5dc4"
 PC_CATALOG_ITEM = "2ab7077237153000158bbfc8bcbe5da9"
-ACTIVE_INSTALL_STATUSES = ["1", "2", "6", "9"]  # as coded today
+ACTIVE_INSTALL_STATUSES = ["1", "2", "6", "10"]  # 1=In use, 2=On order, 6=In stock, 10=Consumed
 
 
 def main() -> int:
@@ -38,22 +42,18 @@ def main() -> int:
     print("pc-auto-request debug")
     print("=" * 60)
 
-    # ── Check 1: identity_type distribution ──────────────────────
+    # ── Check 1: identity_type distribution (server-side aggregate) ──
     print("\n-- 1. sys_user identity_type distribution --")
-    gr = client.GlideRecord("sys_user")
-    gr.add_query("active", "true")
-    gr.fields = ["user_name", "identity_type"]
-    gr.query()
-
-    type_counts: Counter = Counter()
-    total_active = 0
-    while gr.next():
-        total_active += 1
-        val = gr.get_value("identity_type") or "(empty/null)"
-        type_counts[val] += 1
+    total_active = sn_count(client, "sys_user", query="active=true")
+    type_counts = sn_count(
+        client, "sys_user",
+        query="active=true",
+        group_by="identity_type",
+        display_value=False,  # raw choice values for direct comparison
+    )
 
     print(f"  Total active users: {total_active}")
-    for k, v in type_counts.most_common():
+    for k, v in sorted(type_counts.items(), key=lambda x: -x[1]):
         print(f"    identity_type={k!r}: {v}")
 
     human_count = type_counts.get("human", 0)

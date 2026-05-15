@@ -1,0 +1,15 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "User Distribution (sys_user aggregate)",
+    "type": "object",
+    "properties": {
+        "total_active": { "type": "integer" },
+        "total_inactive": { "type": "integer" },
+        "identity_type_distribution": {
+            "type": "object",
+            "description": "Count of active users per identity_type value",
+            "additionalProperties": { "type": "integer" }
+        }
+    },
+    "required": ["total_active", "total_inactive", "identity_type_distribution"]
+}
