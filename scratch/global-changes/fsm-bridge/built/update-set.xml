@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unload unload_date="2026-05-15 19:35:56">
+  <sys_remote_update_set action="INSERT_OR_UPDATE">
+    <sys_id>929e344f9fa47f1db802df7f299b8fa0</sys_id>
+    <name>FSM Bridge — incident_task field + dispatch BR</name>
+    <description>Adds u_needs_field_service field to incident_task plus the Business Rule
+that dispatches to the FSM bridge scoped app when the field flips true.
+Required for the FSM &lt;-&gt; ITSM integration demo (Monday 2026-05-19).
+</description>
+    <state>loaded</state>
+    <application>global</application>
+    <release_date>2026-05-15 19:35:56</release_date>
+    <inserted>2026-05-15 19:35:56</inserted>
+  </sys_remote_update_set>
+  <sys_update_xml action="INSERT_OR_UPDATE">
+    <action>INSERT_OR_UPDATE</action>
+    <name>sys_dictionary_incident_task_u_needs_field_service</name>
+    <target_name>incident_task.u_needs_field_service</target_name>
+    <type>Dictionary</type>
+    <category>customer</category>
+    <update_domain>global</update_domain>
+    <replace_on_upgrade>false</replace_on_upgrade>
+    <payload_hash>99519eae417839cd5d51947443e2f8e03a414c5046d23f5d8a35ffdcf70e5002</payload_hash>
+    <remote_update_set>929e344f9fa47f1db802df7f299b8fa0</remote_update_set>
+    <payload>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;record_update table=&quot;sys_dictionary&quot;&gt;
+  &lt;sys_dictionary action=&quot;INSERT_OR_UPDATE&quot;&gt;
+    &lt;sys_id&gt;3991b7f96ee821698843dc4ccea5f591&lt;/sys_id&gt;
+    &lt;name&gt;incident_task&lt;/name&gt;
+    &lt;element&gt;u_needs_field_service&lt;/element&gt;
+    &lt;column_label&gt;Needs Field Service&lt;/column_label&gt;
+    &lt;internal_type&gt;boolean&lt;/internal_type&gt;
+    &lt;default_value&gt;false&lt;/default_value&gt;
+    &lt;active&gt;true&lt;/active&gt;
+    &lt;mandatory&gt;false&lt;/mandatory&gt;
+    &lt;read_only&gt;false&lt;/read_only&gt;
+    &lt;comments&gt;When checked, triggers the FSM dispatch Business Rule. Set by
+incident analysts manually or by automation. Default false.
+&lt;/comments&gt;
+    &lt;sys_update_name&gt;sys_dictionary_incident_task_u_needs_field_service&lt;/sys_update_name&gt;
+  &lt;/sys_dictionary&gt;
+&lt;/record_update&gt;</payload>
+  </sys_update_xml>
+  <sys_update_xml action="INSERT_OR_UPDATE">
+    <action>INSERT_OR_UPDATE</action>
+    <name>sys_script_543bc1bcc933b2d92d8ba9b8f20d17d1</name>
+    <target_name>FSM Bridge - Dispatch on Flag</target_name>
+    <type>Business Rule</type>
+    <category>customer</category>
+    <update_domain>global</update_domain>
+    <replace_on_upgrade>false</replace_on_upgrade>
+    <payload_hash>94d2074a811fdd2081f0b3b1e9581fd6b061319c945c220196036a8d7bc390e0</payload_hash>
+    <remote_update_set>929e344f9fa47f1db802df7f299b8fa0</remote_update_set>
+    <payload>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;record_update table=&quot;sys_script&quot;&gt;
+  &lt;sys_script action=&quot;INSERT_OR_UPDATE&quot;&gt;
+    &lt;sys_id&gt;543bc1bcc933b2d92d8ba9b8f20d17d1&lt;/sys_id&gt;
+    &lt;name&gt;FSM Bridge - Dispatch on Flag&lt;/name&gt;
+    &lt;collection&gt;incident_task&lt;/collection&gt;
+    &lt;description&gt;Calls FieldServiceDispatcher in x_1111454_fsmbridge when
+u_needs_field_service flips to true. Fires after insert/update.
+&lt;/description&gt;
+    &lt;when&gt;after&lt;/when&gt;
+    &lt;order&gt;100&lt;/order&gt;
+    &lt;active&gt;true&lt;/active&gt;
+    &lt;advanced&gt;true&lt;/advanced&gt;
+    &lt;action_insert&gt;true&lt;/action_insert&gt;
+    &lt;action_update&gt;true&lt;/action_update&gt;
+    &lt;action_query&gt;false&lt;/action_query&gt;
+    &lt;action_delete&gt;false&lt;/action_delete&gt;
+    &lt;condition&gt;current.u_needs_field_service == true &amp;amp;&amp;amp; (current.isNewRecord() || current.u_needs_field_service.changes())&lt;/condition&gt;
+    &lt;script&gt;&lt;![CDATA[(function executeRule(current, previous /*null when async*/) {
+    try {
+        var dispatcher = new x_1111454_fsmbridge.FieldServiceDispatcher();
+        var wmOrderSysId = dispatcher.handleIncidentTask(current.sys_id.toString());
+        if (wmOrderSysId) {
+            gs.info(
+                &apos;[fsm-bridge] incident_task &apos; + current.number +
+                &apos; dispatched -&gt; wm_order &apos; + wmOrderSysId
+            );
+        } else {
+            gs.warn(
+                &apos;[fsm-bridge] dispatcher returned null for incident_task &apos; + current.number
+            );
+        }
+    } catch (e) {
+        gs.error(
+            &apos;[fsm-bridge] dispatch failed for incident_task &apos; + current.number + &apos;: &apos; + e
+        );
+    }
+})(current, previous);
+]]&gt;&lt;/script&gt;
+    &lt;sys_update_name&gt;sys_script_543bc1bcc933b2d92d8ba9b8f20d17d1&lt;/sys_update_name&gt;
+  &lt;/sys_script&gt;
+&lt;/record_update&gt;</payload>
+  </sys_update_xml>
+</unload>

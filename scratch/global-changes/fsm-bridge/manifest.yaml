@@ -1,0 +1,64 @@
+# Global-scope changes required to support the FSM Bridge demo.
+# Pairs with the scoped app x_1111454_fsmbridge (CI/CD'd separately).
+#
+# Generate the update set XML:
+#   node scripts/build-update-set.js scratch/global-changes/fsm-bridge/
+#
+# Output appears at dist/update-sets/fsm-bridge/
+
+name: FSM Bridge — incident_task field + dispatch BR
+description: |
+    Adds u_needs_field_service field to incident_task plus the Business Rule
+    that dispatches to the FSM bridge scoped app when the field flips true.
+    Required for the FSM <-> ITSM integration demo (Monday 2026-05-19).
+
+application: global
+target_release: 2026-Q2
+
+intent: |
+    Enable incident analysts to flag an incident task as needing field service.
+    When the flag is set, a Business Rule calls FieldServiceDispatcher in the
+    x_1111454_fsmbridge scoped app, which creates a wm_order in Field Service
+    Management and records the linkage in a custom audit table.
+
+artifacts:
+    - type: dictionary_entry
+      table: incident_task
+      element: u_needs_field_service
+      column_label: Needs Field Service
+      internal_type: boolean
+      default_value: 'false'
+      mandatory: false
+      read_only: false
+      active: true
+      description: |
+          When checked, triggers the FSM dispatch Business Rule. Set by
+          incident analysts manually or by automation. Default false.
+
+    - type: business_rule
+      table: incident_task
+      name: FSM Bridge - Dispatch on Flag
+      description: |
+          Calls FieldServiceDispatcher in x_1111454_fsmbridge when
+          u_needs_field_service flips to true. Fires after insert/update.
+      when: after
+      action_insert: true
+      action_update: true
+      action_query: false
+      action_delete: false
+      condition: current.u_needs_field_service == true && (current.isNewRecord() || current.u_needs_field_service.changes())
+      script_file: source/dispatch-br.js
+      order: 100
+      active: true
+      advanced: true
+
+estimated_impact:
+    tables_modified:
+        - incident_task
+    bulk_data_changes: false
+    rollback_complexity: low
+    notes: |
+        - New field is nullable with default 'false' — no data backfill needed
+        - BR only fires when flag changes — no retroactive execution on existing records
+        - Rollback path: deactivate BR, then drop field (no data loss since default 'false')
+        - No impact on existing incident_task workflows when field is left default
