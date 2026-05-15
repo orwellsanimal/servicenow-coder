@@ -444,11 +444,25 @@
             "type": "string",
             "scope": "Global"
         },
+        "glide.security.exclusive_explicit_roles": {
+            "sys_id": "04b7644173230010bf3cc7a18af6a740",
+            "value": "true",
+            "description": "Enables checking for collisions between the two explicit roles, snc_external and snc_internal.  Any action which would cause a direct or indirect collision of these roles for any user, group, or other role, will be aborted.\n",
+            "type": "true | false",
+            "scope": "Global"
+        },
         "promin.auto_retire_days": {
             "sys_id": "04c2b978a3d0311011ecb18c26fcda62",
             "value": "90",
             "description": "Define the number of days to retire projects due to inactivity",
             "type": "integer",
+            "scope": "Global"
+        },
+        "sn_agent_workspace.chat.enabled": {
+            "sys_id": "04d92f0bddd00010fa9bda34533bce52",
+            "value": "true",
+            "description": "Show chat panel in interaction tabs of type chat",
+            "type": "true | false",
             "scope": "Global"
         },
         "glide_encryption.nonpassword2_migration.executed": {
@@ -731,6 +745,13 @@
             "type": "string",
             "scope": "Global"
         },
+        "sn_eaai_csm.create_interaction_for_non_matched_user": {
+            "sys_id": "07115b681b86d210f39764e5604bcb32",
+            "value": "true",
+            "description": "This property enables/disables creating Email interactions for unmatched users",
+            "type": "true | false",
+            "scope": "Email Interaction for CSM"
+        },
         "glide.ui.cmdb_ci_app_server_activity.fields": {
             "sys_id": "0738412c0700201017b703767cd30097",
             "value": "skip_sync,operational_status,sys_updated_on,discovery_source,first_discovered,sys_updated_by,due_in,sys_created_on,sys_domain,install_date,invoice_number,gl_account,sys_created_by,warranty_expiration,asset_tag,fqdn,change_control,owned_by,checked_out,sys_domain_path,delivery_date,maintenance_schedule,install_status,cost_center,supported_by,dns_domain,name,assigned,purchase_date,subcategory,short_description,assignment_group,managed_by,last_discovered,can_print,sys_class_name,manufacturer,po_number,checked_in,sys_class_path,vendor,mac_address,company,model_number,justification,department,assigned_to,start_date,cost,comments,serial_number,monitor,model_id,ip_address,sys_tags,cost_cc,support_group,order_date,schedule,due,unverified,correlation_id,attributes,location,asset,category,fault_count,lease_id,attestation_status,attested,attested_by,attested_date",
@@ -941,6 +962,13 @@
             "type": "string",
             "scope": "Global"
         },
+        "glide.awa.default_logging_duration": {
+            "sys_id": "0914560d734020104a905ee515f6a7d1",
+            "value": "30",
+            "description": "When logging is enabled for an AWA Service Channel, the logging will stop after this many minutes by default.",
+            "type": "integer",
+            "scope": "Global"
+        },
         "com.glide.sys.fencing.rca.source_handler.jelly_phase2_ui_macro_detection": {
             "sys_id": "0926658bdb764c10ccb6df6b5e9619c3",
             "value": "true",
@@ -1032,6 +1060,13 @@
             "type": "true | false",
             "scope": "Global"
         },
+        "sn_customerservice.parent_child_case_sla_async": {
+            "sys_id": "09ff41bab74633002bc49a91ee11a99d",
+            "value": "true",
+            "description": "Processes SLA asynchronously during parent to child case creation and synchronization.",
+            "type": "true | false",
+            "scope": "Customer Service"
+        },
         "sn_kmf.resolution_framework.audit_source": {
             "sys_id": "0a0aca8643821110110905c02bb8f2e4",
             "value": "BOTH",
@@ -1045,6 +1080,13 @@
             "description": "PLEASE CONTACT CS-PT TEAM BEFORE CHANGING\r\nThis property blocks falling to in-app clone engine which is no longer used.Default value is false for all instances.",
             "type": "true | false",
             "scope": "Global"
+        },
+        "sn_customerservice.consumer_max_new_cases_daily": {
+            "sys_id": "0a28e625c3112200b12d9f2974d3ae15",
+            "value": "10",
+            "description": "Maximum new cases per consumer per day",
+            "type": "integer",
+            "scope": "Customer Service"
         },
         "glide.platform_ml.artifact.cache_size": {
             "sys_id": "0a34f0dd3b323200956c47b334efc452",
@@ -1269,6 +1311,13 @@
             "description": "",
             "type": "string",
             "scope": "Global"
+        },
+        "sn_sensitive_data.com.glide.cs.sensitive_data.regex_timeout": {
+            "sys_id": "0c8c9ba653f73010b6e8ddeeff7b12d4",
+            "value": "1000",
+            "description": "Specifies the timeout (in msecs) of a regular expression matching operation. Range 0 to 10000 msecs.",
+            "type": "integer",
+            "scope": "Sensitive Data Handling"
         },
         "auxdb.db.user": {
             "sys_id": "0ca92a4507331000be32a04ff1021ee1",
@@ -1515,6 +1564,13 @@
             "type": "color",
             "scope": "Global"
         },
+        "sn_customerservice.consumer.allowed_user_types": {
+            "sys_id": "0fe05d7bff9722105c56ffffffffff06",
+            "value": "csm_consumer_user",
+            "description": "List of user types (classes) that are permitted to be associated with a Consumer.",
+            "type": "string",
+            "scope": "Customer Service"
+        },
         "glide.bsm.min_to_collapse": {
             "sys_id": "0fe531b1c0a8016400df1139144a6a32",
             "value": "0",
@@ -1550,6 +1606,13 @@
             "type": "integer",
             "scope": "Global"
         },
+        "glide.security.explicit_roles.enable_internal_user_blacklist": {
+            "sys_id": "101f432c6002408bbc1261ee7e92f3f7",
+            "value": "true",
+            "description": "Enables the glide.security.explicit_roles.internal_user_blacklist property. Default value is true.",
+            "type": "true | false",
+            "scope": "Global"
+        },
         "glide.cmdb.qb.suggestedRelations.fullRefresh.interval": {
             "sys_id": "102d2f7ad750430039b8ef44de6103fa",
             "value": "14",
@@ -1577,6 +1640,13 @@
             "description": "These plugin options are for Seismic Email Client. Plugins CAN BE added/or used (spaced delimited). Removing plugins could cause undesirable side effects.",
             "type": "string",
             "scope": "@servicenow/now-email-client"
+        },
+        "csm_cmdb_model.customer_visible_flag": {
+            "sys_id": "107ec736eb133200a51a63fba206fea1",
+            "value": "true",
+            "description": "When enabled, it considers customer_visible column on cmdb_model acl",
+            "type": "true | false",
+            "scope": "Global"
         },
         "css.table.column.head.background.color": {
             "sys_id": "10873c4ec611228e0065282c1a40f43f",
@@ -1606,6 +1676,13 @@
             "type": "true | false",
             "scope": "Global"
         },
+        "sn_customerservice.captchaEnabled": {
+            "sys_id": "10c007b6c30222003a657bfaa2d3ae46",
+            "value": "true",
+            "description": "Skip captcha on Jenkins",
+            "type": "true | false",
+            "scope": "Global"
+        },
         "standard_portfolio_construct.turn_on": {
             "sys_id": "10c83d23c386d1101ad0b0b78640dd25",
             "value": "true",
@@ -1620,12 +1697,26 @@
             "type": "string",
             "scope": "Global"
         },
+        "sn_customerservice.create_case.description.enable_html_editor": {
+            "sys_id": "10f7b3a453d210100f16ddeeff7b127e",
+            "value": "true",
+            "description": "Enable the flag to add description using the HTML editor on the Create Case form page.",
+            "type": "true | false",
+            "scope": "Customer Service"
+        },
         "glide.ui.cmdb_ci_vmware_instance_activity.fields": {
             "sys_id": "10f8c5ec0700201017b703767cd3000a",
             "value": "vm_instance_uuid,vm_inst_id,state,bios_uuid,vcenter_uuid,terminated_on,object_id,vcenter_ref,guest_reconciled,template,server,memory,disks,guest_id,termination_protection,nics,cpus,image_path,disks_size,skip_sync,operational_status,sys_updated_on,discovery_source,first_discovered,sys_updated_by,due_in,sys_created_on,sys_domain,install_date,invoice_number,gl_account,sys_created_by,warranty_expiration,asset_tag,fqdn,change_control,owned_by,checked_out,sys_domain_path,delivery_date,maintenance_schedule,install_status,cost_center,supported_by,dns_domain,name,assigned,purchase_date,subcategory,short_description,assignment_group,managed_by,last_discovered,can_print,sys_class_name,manufacturer,po_number,checked_in,sys_class_path,vendor,mac_address,company,model_number,justification,department,assigned_to,start_date,cost,comments,serial_number,monitor,model_id,ip_address,sys_tags,cost_cc,support_group,order_date,schedule,due,unverified,correlation_id,attributes,location,asset,category,fault_count,lease_id,attestation_status,attested,attested_by,attested_date",
             "description": "",
             "type": "string",
             "scope": "Global"
+        },
+        "com.glide.cs.oneextend.sensitive_data_handling.capability_id": {
+            "sys_id": "1108dc47b77121100d74eb43ae11a902",
+            "value": "c64da86353302110c271ddeeff7b12bb",
+            "description": "OneExtend sensitive data handling capability Id to detect and mask sensitive data shared by users of conversational channels.",
+            "type": "string",
+            "scope": "Sensitive Data Handling"
         },
         "com.snc.incident.copy.attributes": {
             "sys_id": "110d231a531232000600e26b88dc3474",
@@ -1739,6 +1830,13 @@
             "type": "string",
             "scope": "Global"
         },
+        "com.glide.cs.display_record_based_on_agent_permission": {
+            "sys_id": "124367d90f013010d106ac5397767e28",
+            "value": "false",
+            "description": "When set to \"true\", both guest and authenticated requestors will be able to view a record card only if the agent has sufficient permissions to view that record card.",
+            "type": "true | false",
+            "scope": "Global"
+        },
         "glide.ui.cmdb_ci_app_server_weblogic_activity.fields": {
             "sys_id": "1248452c0700201017b703767cd3007d",
             "value": "skip_sync,operational_status,sys_updated_on,discovery_source,first_discovered,sys_updated_by,due_in,sys_created_on,sys_domain,install_date,invoice_number,gl_account,sys_created_by,warranty_expiration,asset_tag,fqdn,change_control,owned_by,checked_out,sys_domain_path,delivery_date,maintenance_schedule,install_status,cost_center,supported_by,dns_domain,name,assigned,purchase_date,subcategory,short_description,assignment_group,managed_by,last_discovered,can_print,sys_class_name,manufacturer,po_number,checked_in,sys_class_path,vendor,mac_address,company,model_number,justification,department,assigned_to,start_date,cost,comments,serial_number,monitor,model_id,ip_address,sys_tags,cost_cc,support_group,order_date,schedule,due,unverified,correlation_id,attributes,location,asset,category,fault_count,lease_id,attestation_status,attested,attested_by,attested_date",
@@ -1752,6 +1850,13 @@
             "description": "Sets the maximum number of input nodes the Input Collector can accept",
             "type": "integer",
             "scope": "Global"
+        },
+        "sn_customerservice.consumer_max_products": {
+            "sys_id": "12782a25c3112200b12d9f2974d3ae26",
+            "value": "25",
+            "description": "Maximum registered products per consumer",
+            "type": "integer",
+            "scope": "Customer Service"
         },
         "glide.oauth.block_websvc_session_for_ui": {
             "sys_id": "128070efff0322103808ffffffffff25",
@@ -1787,6 +1892,13 @@
             "description": "This will allow the websites listed to be displayed in an iframe",
             "type": "string",
             "scope": "Global"
+        },
+        "glide.ui.sn_customerservice_case_activity.fields": {
+            "sys_id": "12c37637eb123100a618afcef106fe51",
+            "value": "assigned_to,asset,product,state,priority,short_description,comments,entitlement,contract,*EmailAutogenerated*,*EmailCorrespondence*,work_notes,close_notes,follow_the_sun,*Sidebar discussion*,*Sidebar posted message*,*Attachments*",
+            "description": "Case activity formatter fields",
+            "type": "string",
+            "scope": "Customer Service"
         },
         "com.glide.cs.collab.mention.max_search_count": {
             "sys_id": "12cb0652c31111109a481f820c40dd3a",
@@ -1942,6 +2054,13 @@
             "type": "true | false",
             "scope": "Global"
         },
+        "com.glide.cs.portal_url_mapping.csm.sn_publications_publication": {
+            "sys_id": "13cf507b3b2123009cbbcea234efc4b7",
+            "value": "/csm?id=publication&table=sn_publications_publication&sys_id={{data.sys_id}}",
+            "description": "CSM Publications Mapping URL",
+            "type": "string",
+            "scope": "Global"
+        },
         "glide.ui.attachment.download_mime_types": {
             "sys_id": "13d5b60337111000705f80f7bcbe5d1d",
             "value": "text/html,image/svg,image/svg+xml,application/xml,application/xhtml+xml",
@@ -2011,6 +2130,13 @@
             "description": "DEPRECATED - no longer used, Use the sn_cmdb_ws_config_property table to configure this property",
             "type": "integer",
             "scope": "CMDB Workspace"
+        },
+        "CSM_debug_log": {
+            "sys_id": "1494f673c35522001f1a10c422d3ae81",
+            "value": "false",
+            "description": "Use this property to log ",
+            "type": "true | false",
+            "scope": "Global"
         },
         "glide.password_policy.use_excluded_special_char": {
             "sys_id": "14aa082753213010616cddeeff7b12cf",
@@ -2222,6 +2348,13 @@
             "type": "string",
             "scope": "Global"
         },
+        "sn_customerservice.consumer_max_comments_per_case_daily": {
+            "sys_id": "16be62c5c3212200b0449f2974d3ae06",
+            "value": "25",
+            "description": "Maximum consumer comments per case per day",
+            "type": "integer",
+            "scope": "Customer Service"
+        },
         "com.snc.process_flow.reporting.require_flow_access": {
             "sys_id": "16cacc7c53ec71109341ddeeff7b1231",
             "value": "true",
@@ -2397,6 +2530,13 @@
             "type": "true | false",
             "scope": "Global"
         },
+        "sn_customercentral.data.scope.days_limit": {
+            "sys_id": "187219690f370010e6d4fd820b767efd",
+            "value": "30",
+            "description": "Number of days to display data from. For example, if you choose 30, data from the last 30 days will be displayed.\r\nIf a negative number is entered, this will automatically be considered as zero (0) days.",
+            "type": "integer",
+            "scope": "Customer Central"
+        },
         "glide.ts.synonym.enabled": {
             "sys_id": "1885d0625313120025472c39e3dc3406",
             "value": "false",
@@ -2493,6 +2633,13 @@
             "value": "-95.221764",
             "description": "Starting longitude of the map:",
             "type": "string",
+            "scope": "Global"
+        },
+        "sn_shn.popup_width": {
+            "sys_id": "18ec2343c3b0120095ccd02422d3ae01",
+            "value": "500",
+            "description": "Width of the Special Handling Notes pop-up window in pixels.",
+            "type": "integer",
             "scope": "Global"
         },
         "actionutils.insertM2M.secure": {
@@ -2642,6 +2789,13 @@
             "type": "string",
             "scope": "Polaris app shell"
         },
+        "sn_shn.note_preferences": {
+            "sys_id": "1a389c68c301120095ccd02422d3aea6",
+            "value": "true",
+            "description": "Display special handling notes only once per session.",
+            "type": "true | false",
+            "scope": "Global"
+        },
         "glide.report.enable_alias_config": {
             "sys_id": "1a73aca25b2200103c7c0a8a3d81c713",
             "value": "false",
@@ -2651,7 +2805,7 @@
         },
         "com.glide.bot_detection.enabled": {
             "sys_id": "1a8507e187143300bc5020eac5cb0b1d",
-            "value": "false",
+            "value": "true",
             "description": "global property to enable or disable bot detection",
             "type": "true | false",
             "scope": "Global"
@@ -2929,6 +3083,13 @@
             "type": "true | false",
             "scope": "Global"
         },
+        "sn_openframe.cross.origin.access": {
+            "sys_id": "1dad7eb43b151300c68fe9b534efc4e4",
+            "value": "microphone; camera",
+            "description": "In order for a cross-origin frame to use these features, the embedding page must specify a Feature Policy which enables the feature for the frame.\r\nValid values for allowing include:\r\ngeolocation\r\nmicrophone\r\ncamera\r\nmidi\r\nencrypted-media",
+            "type": "string",
+            "scope": "Openframe"
+        },
         "com.glide.hub.flow_engine.allow_noncommitted_gliderecord.tables": {
             "sys_id": "1dbfd8e4f58803100a22c0b3dfa151ff",
             "value": "sc_service_fulfillment_step",
@@ -3012,6 +3173,13 @@
             "description": "Run Data Collector's conditional script inside of a reduced rights \"sandbox\". If enabled, only those business rules and script includes with the \"Client callable\" checkbox set to true are available and certain back-end API calls are disallowed.",
             "type": "true | false",
             "scope": "Global"
+        },
+        "sn_sow_itsm_common.auto_hide_inbox": {
+            "sys_id": "1e83f477b72712105165e3fdde11a934",
+            "value": "true",
+            "description": "Hides the inbox pane when user accepts or rejects a chat.",
+            "type": "true | false",
+            "scope": "Service Operations Workspace ITSM Common"
         },
         "glide.security.glideencrypter.allow": {
             "sys_id": "1e87eca0f50043100a22c0b3dfa15186",
@@ -3174,6 +3342,13 @@
             "type": "true | false",
             "scope": "Global"
         },
+        "glide.cs.company_name": {
+            "sys_id": "1fe8a520c322310087dcd02422d3ae1a",
+            "value": "Service Now",
+            "description": "Your company name",
+            "type": "string",
+            "scope": "Customer Service"
+        },
         "com.glide.oneapi.flow_debug": {
             "sys_id": "200233645330311033aeddeeff7b1229",
             "value": "false",
@@ -3193,6 +3368,13 @@
             "value": "false",
             "description": "Discards record watcher updates to subscribers if the default semaphore queue is full",
             "type": "true | false",
+            "scope": "Global"
+        },
+        "com.snc.skills_management.skill_level_color_map": {
+            "sys_id": "2033829673b02010dd6131ff2ef6a7b3",
+            "value": "{\"#C83C36\": \"critical\", \"#905909\": \"high\", \"#807808\": \"warning\", \"#5456CF\": \"moderate\", \"#25832B\": \"positive\", \"#0E78C4\": \"info\", \"#666666\": \"low\", \"#8E5587\": \"magenta\", \"#8E5564\": \"pink\", \"#975A4A\": \"orange\", \"#A89147\": \"yellow\", \"#6D6153\": \"brown\", \"#677758\": \"green\", \"#6C7942\": \"green-yellow\", \"#547B8F\": \"blue\", \"#616669\": \"gray\", \"#497A72\": \"teal\", \"#7F6D92\": \"purple\"}",
+            "description": "This property defines the color codes for colors defined in cmn_skill_level table.",
+            "type": "string",
             "scope": "Global"
         },
         "sn_atf.schedule.suite_result_email.error_color": {
@@ -3360,6 +3542,13 @@
             "sys_id": "224156364f113110a1e235d991ce0bf1",
             "value": "true",
             "description": "",
+            "type": "true | false",
+            "scope": "Global"
+        },
+        "assignment_workbench.new.window": {
+            "sys_id": "2258d376c30122001c845cb981d3aed9",
+            "value": "false",
+            "description": "When enabled opens the assignment workbench in a new window",
             "type": "true | false",
             "scope": "Global"
         },
@@ -3923,6 +4112,13 @@
             "type": "true | false",
             "scope": "Global"
         },
+        "glide.awa.bypass_max_wait_time.enabled": {
+            "sys_id": "2781b6804f203110b1ce9f1122ce0b97",
+            "value": "true",
+            "description": "Overrides the queue max wait time with the assignment rule time out to prevent work items from disappearing prematurely in an agent's inbox.",
+            "type": "true | false",
+            "scope": "Global"
+        },
         "glide.outbound_http.security.log.allow.all.fields": {
             "sys_id": "27919d465313301086b8ddeeff7b12c5",
             "value": "false",
@@ -4255,6 +4451,13 @@
         "glide.use.sunx509.as.ssl.key.manager.factory.algorithm": {
             "sys_id": "2ad7e424f50043100a22c0b3dfa15104",
             "value": "false",
+            "description": "",
+            "type": "true | false",
+            "scope": "Global"
+        },
+        "glide.awa.enabled": {
+            "sys_id": "2aec594fb33313002e7b6e5f26a8dce1",
+            "value": "true",
             "description": "",
             "type": "true | false",
             "scope": "Global"
@@ -4980,11 +5183,25 @@
             "type": "string",
             "scope": "Global"
         },
+        "com.glide.cs.portal_url_mapping.csm.kb_knowledge": {
+            "sys_id": "32d5d8b73b2123009cbbcea234efc4e8",
+            "value": "/csm?id=kb_article&sys_id={{data.sys_id}}",
+            "description": "CSM Knowledge Base URL Mapping",
+            "type": "string",
+            "scope": "Global"
+        },
         "com.glide.playbook_experience.config.auto_advance_pending_wait_duration": {
             "sys_id": "32e22f37ff5eb210bf83fffffffffff2",
             "value": "10000",
             "description": "Time (in ms) to wait for a pending activity to start before auto-advancing to the next in-progress activity.",
             "type": "integer",
+            "scope": "Global"
+        },
+        "com.snc.cs_base.log.verbosity": {
+            "sys_id": "32eb369653e2030097a2ddeeff7b1299",
+            "value": "1",
+            "description": "Code Search log verbosity for CSM Base project. Set to \"1\" representing info by default. Options are:\r\n0 : Show information that may be useful while debugging the application, like the values of queries run. Also includes info, warn, and error messages.\r\n1 : Show progress messages as the Code Search application searches for results. Also shows warnings and error messages.\r\n2 : Show warning which indicates possible unexpected changes in behavior while searching, in addition to any errors.\r\n3 : Show only critical errors which may prevent the search from completing will be shown.",
+            "type": "choice list",
             "scope": "Global"
         },
         "sn_cmdb_ws.cmdb.dm.policy_types.due_date_notification": {
@@ -5519,6 +5736,13 @@
             "type": "true | false",
             "scope": "Global"
         },
+        "sn_customerservice.enable_knowledge_kcs": {
+            "sys_id": "37b4e00f9fe40300d7cabde8132e7083",
+            "value": "false",
+            "description": "Enable KCS for Customer Services Management",
+            "type": "true | false",
+            "scope": "Customer Service"
+        },
         "com.glide.cs.doc_qna.offglide_attachment.max_attachments_active_conversation": {
             "sys_id": "37b70aeaff8232104b65ffffffffff75",
             "value": "3",
@@ -5904,6 +6128,13 @@
             "type": "true | false",
             "scope": "Global"
         },
+        "com.glide.cs.portal_url_mapping.csm.sn_customerservice_case": {
+            "sys_id": "3ce604f33b2123009cbbcea234efc47a",
+            "value": "/csm?id=csm_ticket&table=sn_customerservice_case&sys_id={{data.sys_id}}&view=csp",
+            "description": "CSM Customer Service Case Record Mapping",
+            "type": "string",
+            "scope": "Global"
+        },
         "com.glide.cs.dialog.boolean_threshold": {
             "sys_id": "3cfc009328350110fa9ba4fe8f34850b",
             "value": "0.9",
@@ -6100,6 +6331,13 @@
             "type": "integer",
             "scope": "Global"
         },
+        "glide.awa.outbound_subflow_interactive_timeout": {
+            "sys_id": "3eb88b5f0fa20110d106ac5397767ef2",
+            "value": "30",
+            "description": "Timeout for the execution of subflows defined on the AWA queues when work items are routed.",
+            "type": "integer",
+            "scope": "Global"
+        },
         "glide.upgrade.impending": {
             "sys_id": "3ee1e0e8f5c803100a22c0b3dfa151bc",
             "value": "false",
@@ -6126,6 +6364,13 @@
             "value": "#213234",
             "description": "Navigation background expanded items",
             "type": "color",
+            "scope": "Global"
+        },
+        "assignment_workbench_no_of_agents": {
+            "sys_id": "3f15fe6bc3d122001f1a10c422d3aece",
+            "value": "30",
+            "description": "Number of Agents per page (To get better performance don't use more than 50 agents/page)",
+            "type": "choice list",
             "scope": "Global"
         },
         "glide.activity.compose.allow_journal_settings_overrides": {
@@ -6443,6 +6688,13 @@
             "type": "true | false",
             "scope": "Global"
         },
+        "sn_eaai_csm.period_for_reminders_to_customers_interaction": {
+            "sys_id": "41d478353b8b2610cac9ee8c24e45a53",
+            "value": "2",
+            "description": "Number of days (integer) after which reminder is sent to customers when an interaction is awaiting their response. The value must be a positive integer. If the value is set to 0 or a negative number, the system will default to 2 days.",
+            "type": "integer",
+            "scope": "Email Interaction for CSM"
+        },
         "password_reset.request.retry_window": {
             "sys_id": "41f8c4e1eb0501006a668c505206fe98",
             "value": "1440",
@@ -6470,6 +6722,13 @@
             "description": "Indicates if offline app installation is enabled",
             "type": "true | false",
             "scope": "Scoped App Client"
+        },
+        "sn_customerservice.case_fields_to_sync": {
+            "sys_id": "428666373b630300b5c42479b3efc409",
+            "value": "priority,state,comments,work_notes, close_notes,resolution_code",
+            "description": "Comma-separated list of fields that synchronize from parent case to child cases",
+            "type": "string",
+            "scope": "Customer Service"
         },
         "com.glide.cs.general.multi_file_try_uploading_again_msg": {
             "sys_id": "4296067453311110657addeeff7b123a",
@@ -6679,6 +6938,13 @@
             "value": "",
             "description": "A comma-separated list of channels which do not support FDIH secure inputs.",
             "type": "string",
+            "scope": "Global"
+        },
+        "glide.service_portal.resize_text.csm.enable_rem_conversion": {
+            "sys_id": "4489a497779620101b6bec672b10612c",
+            "value": "true",
+            "description": "If true, portal css would be in rem units",
+            "type": "true | false",
             "scope": "Global"
         },
         "glide.ui.presence.disabled": {
@@ -6932,6 +7198,13 @@
             "description": "",
             "type": "integer",
             "scope": "Global"
+        },
+        "csm.captcha.google.enabled": {
+            "sys_id": "46be6bcbc363020095ccd02422d3aea6",
+            "value": "true",
+            "description": "Enable the google captcha on the registration form.",
+            "type": "true | false",
+            "scope": "Customer Service"
         },
         "angular.jsonp.inclusion_list.enabled": {
             "sys_id": "46bec3b0c3331010f34a7096e940dd6a",
@@ -7213,6 +7486,13 @@
             "type": "integer",
             "scope": "Global"
         },
+        "sn_cwf_wrkspc.ui.banner.enabled": {
+            "sys_id": "4972034ad9c5b910f8775f84af847a06",
+            "value": "true",
+            "description": "Enable the display of the AI banner on the form.",
+            "type": "true | false",
+            "scope": "CSM and FSM Configurable Workspace Foundation"
+        },
         "glide.ui.sn_vsc_security_task_activity.fields": {
             "sys_id": "4980647a9408a210f8779fe0f5cdc621",
             "value": "assigned_to,assignment_group,state,priority,opened_by,work_notes,*Attachments*,short_description,details,due_date,due_status,type,*EmailAutogenerated*",
@@ -7423,6 +7703,13 @@
             "type": "true | false",
             "scope": "Global"
         },
+        "glide.service_portal.resize_text.business_portal.enable_rem_conversion": {
+            "sys_id": "4bd02af68b021210c8d7ad4fe1239516",
+            "value": "true",
+            "description": "",
+            "type": "true | false",
+            "scope": "Business Portal"
+        },
         "com.glide.http.idle_connection_monitor.async.async.effectively_idle_check.enabled": {
             "sys_id": "4bd53a65ff3922108625ffffffffffd7",
             "value": "true",
@@ -7493,6 +7780,13 @@
             "type": "integer",
             "scope": "Global"
         },
+        "glide.awa.enable_routing_subflow": {
+            "sys_id": "4c9091c0537141106751ddeeff7b1209",
+            "value": "false",
+            "description": "Enables the execution of subflows defined on the AWA queues when work items are routed.",
+            "type": "true | false",
+            "scope": "Global"
+        },
         "sn_kb_social_qa.max_questions_per_user_daily": {
             "sys_id": "4cbc25e5d7212200efc000285e6103e8",
             "value": "500",
@@ -7512,6 +7806,13 @@
             "value": "true",
             "description": "This sys property defines whether the current in progress conversation's requester session language is used when the Virtual Agent Web Client is refreshed.",
             "type": "true | false",
+            "scope": "Global"
+        },
+        "com.glide.event_handler.awa_agent_capacity": {
+            "sys_id": "4ceead32c3f80b10b4e13e1d0501313d",
+            "value": "com.snc.awa.platform.AgentCapacityEventHandler",
+            "description": "",
+            "type": "string",
             "scope": "Global"
         },
         "glide.service_portal.sp_portal.cache_enabled": {
@@ -7590,6 +7891,13 @@
             "description": "Error message displayed to requester for non-image uploads. ",
             "type": "string",
             "scope": "Global"
+        },
+        "glide.cs.email.new_case_prefix": {
+            "sys_id": "4d8ca2f0c322310015519f2974d3ae38",
+            "value": "Case:",
+            "description": "Email subject prefix format for new case ",
+            "type": "string",
+            "scope": "Customer Service"
         },
         "sn_agent_workspace.max_tabs": {
             "sys_id": "4d9f31340b301300c438ee6537673a6d",
@@ -7758,6 +8066,13 @@
             "description": "An integer in seconds with which to wait before refetching HTTP requests",
             "type": "integer",
             "scope": "UI Framework on Next Experience"
+        },
+        "sn_shn.max_num_alerts": {
+            "sys_id": "4f7f9c25c301120095ccd02422d3aecf",
+            "value": "20",
+            "description": "Maximum number of notes displayed in the Special Handling Notes pop-up window",
+            "type": "integer",
+            "scope": "Global"
         },
         "glide.ui.response_time": {
             "sys_id": "4f8fddaa0a0a0b8c005b0b00f424f9ce",
@@ -7948,6 +8263,13 @@
             "type": "integer",
             "scope": "Global"
         },
+        "sn_customerservice.parent_child_ case_sync": {
+            "sys_id": "50d562373b630300b5c42479b3efc4f3",
+            "value": "false",
+            "description": "Synchronize fields from parent to child cases.",
+            "type": "true | false",
+            "scope": "Customer Service"
+        },
         "sn_atf.headless.secret_id": {
             "sys_id": "50dd0b3b776220103fe4b5b2681061f4",
             "value": "",
@@ -7960,6 +8282,13 @@
             "value": "dev392282",
             "description": "",
             "type": "string",
+            "scope": "Global"
+        },
+        "glide.security.explicit_roles.fix_in_memory": {
+            "sys_id": "50e9efe7eb20021008560c73a2522832",
+            "value": "false",
+            "description": "",
+            "type": "true | false",
             "scope": "Global"
         },
         "sn_uib_collab.enable_requester_in_sidebar_discussion": {
@@ -8235,6 +8564,13 @@
             "type": "integer",
             "scope": "Global"
         },
+        "sn_openframe.create_interaction": {
+            "sys_id": "535fec1b3b201300758ce9b534efc4ff",
+            "value": "false",
+            "description": "Create and pass interactions for Click-to-call. This sys_property is not active when the Interaction Controls Component is set to \"true\" in the OpenFrame configuration.",
+            "type": "true | false",
+            "scope": "Openframe"
+        },
         "sa.service.batch_manual_service_population.skip_updating_last_scan_to_now": {
             "sys_id": "5365dcdd77a591105f2ea1b35b5a99ff",
             "value": "true",
@@ -8269,6 +8605,13 @@
             "description": "This error message is displayed if a dynamic translation failure happens in a VA conversation.",
             "type": "string",
             "scope": "Global"
+        },
+        "sn_eaai_csm.email.reroute.enabled": {
+            "sys_id": "53ea548b3b0faa1070381564c3e45acf",
+            "value": "false",
+            "description": "Set to true to reroute automatically when current agent is not available",
+            "type": "true | false",
+            "scope": "Email Interaction for CSM"
         },
         "glide.rollback.expiration_days_app_install": {
             "sys_id": "53fc5f47532003007bb7ddeeff7b12b2",
@@ -8521,6 +8864,13 @@
             "description": "Enables DB atomic sequence counters for number generation for all tables that utilize number counters",
             "type": "true | false",
             "scope": "Global"
+        },
+        "glide.cs.email.case_queue_address": {
+            "sys_id": "55bc6234c322310015519f2974d3ae1d",
+            "value": "",
+            "description": "Case email address",
+            "type": "string",
+            "scope": "Customer Service"
         },
         "glide.ui.sysapproval_approver_activity.fields": {
             "sys_id": "55bd296e0a00070411826faeeebcfc2b",
@@ -8867,7 +9217,7 @@
         },
         "glide.ui.activity.email_roles": {
             "sys_id": "58460547c0a80a6b0004648be1cf5c4a",
-            "value": "itil",
+            "value": "itil,sn_esm_location_agent,sn_esm_agent,sn_csm_ocs.ext_agent,sn_customerservice.case_task_agent,sn_customerservice.relationship_agent,sn_customerservice.case_contributor_creator,sn_customerservice_agent",
             "description": "Roles that can view email in the Activity formatter when including \"Sent/Received Emails\"",
             "type": "string",
             "scope": "Global"
@@ -9361,6 +9711,13 @@
             "description": "",
             "type": "string",
             "scope": "Usage Insights Request Manager"
+        },
+        "include_system_emails_in_notification": {
+            "sys_id": "5e2d06b2ebbc4a10bcf1fbbdbad0cd38",
+            "value": "false",
+            "description": "When this property is false then only emails sent by the user and comments are included in the activity history that is returned from mail script get_emails_comments_activity_history. Emails sent by system are excluded",
+            "type": "true | false",
+            "scope": "Global"
         },
         "glide.report.log.max_user_executions_x_report": {
             "sys_id": "5e37cc73d7202100037a4ebfae610311",
@@ -9943,6 +10300,13 @@
             "type": "true | false",
             "scope": "Global"
         },
+        "number_of_activities_in_reply": {
+            "sys_id": "63935ab08c464a10f8774803f9029665",
+            "value": "2",
+            "description": "Number of Additional comments and Emails included in Reply/Reply-All templates(-1 means all)",
+            "type": "integer",
+            "scope": "Global"
+        },
         "glide.rollback.expiration_days_inst_preview": {
             "sys_id": "639a6b6273000010af8a1fd9fdf6a7e8",
             "value": "1",
@@ -10159,6 +10523,13 @@
             "description": "Default header title for the pinned articles section on knowledge home pages.",
             "type": "string",
             "scope": "Global"
+        },
+        "sn_customerservice.use_asset_contact_relationship": {
+            "sys_id": "658bd25feb1302003e97afcef106feb6",
+            "value": "false",
+            "description": "Restrict Assets based on Contacts assigned to the assets",
+            "type": "true | false",
+            "scope": "Customer Service"
         },
         "com.snc.actsub.activity.stream.cache.enable": {
             "sys_id": "659a25a43baa0300038b266914efc465",
@@ -10391,6 +10762,13 @@
             "type": "choice list",
             "scope": "Global"
         },
+        "com.glide.awa.warn_blocked_audio": {
+            "sys_id": "686d977a6f8d211026b95d3a945b3696",
+            "value": "true",
+            "description": "If an agent loads workspace in a browser tab with the inbox in an available state, and the browser settings block audio from playing sound, show the agent a popup suggesting to change the browser settings to always allow audio for the page.",
+            "type": "true | false",
+            "scope": "Global"
+        },
         "com.glide.event_manager.sn_cmdb_service_queue.claim_limit": {
             "sys_id": "6875c3477303330061b79c0c6df6a722",
             "value": "5",
@@ -10487,6 +10865,13 @@
             "value": "10",
             "description": "The maximum number of seconds that the requestor chat client may rely on a cached agent availability result to enable or disable the \"Contact Live Agent\" support menu option.",
             "type": "integer",
+            "scope": "Global"
+        },
+        "glide.security.use_explicit_roles": {
+            "sys_id": "69d74c52933002009c8579b4f47ffb93",
+            "value": "true",
+            "description": "Enforce explicit role checks. With this property, a user without 'snc_internal' or 'snc_external' roles is considered as ‘employee’ role user. So with this property, they would get an explicit ‘snc_internal’ role. Users without 'snc_internal' or 'snc_external' roles and in a class listed in glide.security.explicit_roles.internal_user_blacklist, or one of its extended class will automatically receive the ‘snc_external’ role.",
+            "type": "true | false",
             "scope": "Global"
         },
         "glide.ui.cmdb_ci_vm_instance_activity.fields": {
@@ -10657,6 +11042,13 @@
             "type": "true | false",
             "scope": "Global"
         },
+        "assignment_workbench.find.agents.title": {
+            "sys_id": "6bd73bbec37022001c845cb981d3ae53",
+            "value": "Find Agents",
+            "description": "Title for the macro button ",
+            "type": "string",
+            "scope": "Global"
+        },
         "glide.ui.next_experience.navigate_without_reload_supported": {
             "sys_id": "6be6ae6143020210ff19a4f8f9b8f2ae",
             "value": "true",
@@ -10782,6 +11174,13 @@
             "description": "Represents the probability for a survey to be displayed to the requester.",
             "type": "string",
             "scope": "Global"
+        },
+        "glide.ais.query.enable_fuzzy_number_match": {
+            "sys_id": "6cffa53ac33c0b10b4e13e1d050131d0",
+            "value": "true",
+            "description": "",
+            "type": "string",
+            "scope": "CSM and FSM Configurable Workspace Foundation"
         },
         "glide.basicauth.required.csv": {
             "sys_id": "6d0a3bcc0a0a0b2b00591b4e8867aa3b",
@@ -11196,6 +11595,13 @@
             "type": "true | false",
             "scope": "Global"
         },
+        "sn_customerservice.contact_relationship.restrict_within_account_hierarchy": {
+            "sys_id": "70f128c274033c10f8772bfdfdc3923e",
+            "value": "true",
+            "description": "When the property is set to false, users are allowed to create contact relationships with any account. When set to true, only contacts within the account hierarchy will be shown.",
+            "type": "true | false",
+            "scope": "Customer Service"
+        },
         "com.glide.communications.personal.auth.usage.collection": {
             "sys_id": "70f210e6772102105ece3f533e5a99e2",
             "value": "true",
@@ -11285,6 +11691,13 @@
             "value": "<style>\r\n\t\t\t.vac-card {\r\n\t\t\twhite-space: normal;\r\n\t\t\t}\r\n\t\t\t\r\n\t\t\t.vac-header {\r\n\t\t\tborder-bottom: solid 1px #c7c7c7;\r\n\t\t\tpadding-bottom: 4px;\r\n\t\t\tmargin-bottom: 8px;\r\n\t\t\t}\r\n\t\t\t.vac-header-title {\r\n\t\t\tdisplay: inline-block;\r\n\t\t\t}\r\n\t\t\t\r\n\t\t\t.vac-header-subtitle {\r\n\t\t\tfloat: right;\r\n\t\t\t}\r\n\t\t\t\r\n\t\t\t.vac-link {\r\n\t\t\tfont: 1.6rem SourceSansProSemibold,Helvetica Neue,Helvetica,Arial,sans-serif;\r\n\t\t\tcolor: #6BA89E;\r\n\t\t\ttext-decoration: none;\r\n\t\t\tfont-weight: bold;\r\n\t\t\t}\r\n\t\t\t\r\n\t\t\t.vac-content {\r\n\t\t\tpadding-bottom: 4px;\r\n\t\t\tdisplay: flex;\r\n\t\t\tfont-size: 12px;\r\n\t\t\t}\r\n\t\t\t\r\n\t\t\t.vac-content-label {\r\n\t\t\twidth: 78px;\r\n\t\t\ttext-align: left;\r\n\t\t\tflex-shrink: 0;\r\n\t\t\tfont: 0.8rem SourceSansProSemibold,Helvetica Neue,Helvetica,Arial,sans-serif;\r\n\t\t\tdisplay: inline-block;\r\n\t\t\t}\r\n\t\t\t\r\n\t\t\t.vac-content-value {\r\n\t\t\tpadding-left: 8px;\r\n\t\t\tjustify-self: left;\r\n\t\t\tdisplay: inline-block;\r\n\t\t\t}\r\n\t\t\t\r\n\t\t\t\r\n\t\t\t</style>\r\n\t\t\t<div class = \"vac-card\">                 \r\n\t\t\t<div class = \"vac-body\">                     \r\n\t\t\t<div class = \"vac-header\">                        \r\n\t\t\t<div class =\"vac-header-title\">{{title}} </div>                       \r\n\t\t\t<div class=\"vac-header-subtitle\"> <a class = \"vac-link\" href=\"{{url}}\">{{subtitle}}</a> </div>   \r\n\t\t\t</div>                                    \r\n\t\t\t<div class = \"vac-content\">              \r\n\t\t\t<div class= \"vac-fields\">   {{fields}} </div>                     \r\n\t\t\t</div>                            \r\n\t\t\t</div>        \r\n\t\t\t</div>    ",
             "description": "",
             "type": "string",
+            "scope": "Global"
+        },
+        "use_accounts_private_cache": {
+            "sys_id": "71bed74953620110d6a0ddeeff7b12bf",
+            "value": "false",
+            "description": "When set to true, cache accounts that login user has access in a private cache instead of session cache which should make the sessions lightweight. When false, session cache will continue to be used for storing accessible accounts. ",
+            "type": "true | false",
             "scope": "Global"
         },
         "glide.restricted_caller_access.requested_rca_feature.enable": {
@@ -11693,6 +12106,13 @@
             "type": "integer",
             "scope": "Global"
         },
+        "glide.awa.assignment.assignment_group_overwrite": {
+            "sys_id": "763252a57f8d5610d5c092a26c8665f1",
+            "value": "true",
+            "description": "Allows document's assignment group to be overwritten when a work item is accepted. Set to false to allow for custom assignment group logic.",
+            "type": "true | false",
+            "scope": "Global"
+        },
         "glide.bsm.map.style.font_family": {
             "sys_id": "7658ae7dd71211005e8da3eb5e6103c3",
             "value": "Arial",
@@ -11910,6 +12330,13 @@
             "type": "integer",
             "scope": "Global"
         },
+        "skills_management.migration": {
+            "sys_id": "78056dec93e7030045a3f5be867ffb0d",
+            "value": "wm_task,sn_customerservice_case,wm_order",
+            "description": "",
+            "type": "choice list",
+            "scope": "Global"
+        },
         "glide.ui.textarea_initial_rows": {
             "sys_id": "7812e2c6c0a86466007247aca1e50e36",
             "value": "0",
@@ -11929,6 +12356,20 @@
             "value": "service-now.com",
             "description": "Domain to use when generating mobile deep links",
             "type": "string",
+            "scope": "Global"
+        },
+        "sn_customerservice.glide.script.block.client.globals": {
+            "sys_id": "789070faeb4331003e97afcef106fea8",
+            "value": "false",
+            "description": "",
+            "type": "true | false",
+            "scope": "Customer Service"
+        },
+        "inactive.interaction.conversation.history.panel.enabled": {
+            "sys_id": "78a696d753120110d3d5ddeeff7b125b",
+            "value": "false",
+            "description": "Display conversation panel on inactive interactions",
+            "type": "true | false",
             "scope": "Global"
         },
         "glide.ui.user_cookie.max_life_span_in_days": {
@@ -12337,6 +12778,13 @@
             "type": "true | false",
             "scope": "Employee Center"
         },
+        "com.glide.cs.portal_url_mapping.csp.kb_knowledge": {
+            "sys_id": "7d56dcb73b2123009cbbcea234efc4d3",
+            "value": "/csp?id=kb_article&sys_id={{data.sys_id}}",
+            "description": "CSP Knowledge Base URL Mapping",
+            "type": "string",
+            "scope": "Global"
+        },
         "glide.authenticate.mutual.enabled": {
             "sys_id": "7d64bceeff311010978acd6bd53bf1b2",
             "value": "true",
@@ -12460,6 +12908,13 @@
             "sys_id": "7e800591c7301010dbf8772bf4c260dd",
             "value": "collection,glide_var",
             "description": "List of unsupported field types (comma-separated)",
+            "type": "string",
+            "scope": "Global"
+        },
+        "glide.security.explicit_roles.internal_user_blacklist": {
+            "sys_id": "7ea8fdf15b130010e49a8e3cbc81c792",
+            "value": "csm_consumer_user,customer_contact,sn_csm_service_organization_external_staff",
+            "description": "A CSV list of classes that extend sys_user. If a user belongs to one of the classes mentioned in this property, then it will always be assigned snc_external role when 'Explicit Roles' plugin is installed. Users of extended classes, for class names mentioned in the property, will also assigned 'snc_external' role.",
             "type": "string",
             "scope": "Global"
         },
@@ -13345,6 +13800,13 @@
             "type": "true | false",
             "scope": "Global"
         },
+        "reverse.matchingrule.entity.limit": {
+            "sys_id": "8893b6ee3b451300c68fe9b534efc43a",
+            "value": "30",
+            "description": "For a reverse matching rule, filter array takes a list of tasks sys_ids on which the user record has to be matched. This property limits the number of tasks to be added to the filter array. if it is more than this limit, reverse matching rule will not run for script and selection criteria type matching rules.",
+            "type": "integer",
+            "scope": "Global"
+        },
         "glide.cs.disable.show_me_everything": {
             "sys_id": "889c49e3b71031103207bc15ae11a9d8",
             "value": "false",
@@ -13436,6 +13898,13 @@
             "type": "string",
             "scope": "Global"
         },
+        "glide.rest.global.honor_snc_internal_flag": {
+            "sys_id": "89577c945323030073da6dbda11c0897",
+            "value": "true",
+            "description": "Property to control if REST APIs will enforce the requirement that requestors have the snc_internal role to access REST API resources. Both Scripted REST APIs and Java Implemented REST APIs provide a way to specify that they require the snc_internal role on a per resource level. This property will determine if those per resource settings are enforced. When set to false requestors will not be required to have the snc_internal role regardless of per resource settings. This property is only relevant when the explicit roles plugin is activated.\n    ",
+            "type": "true | false",
+            "scope": "Global"
+        },
         "change.conflict.consolidated_conflicts": {
             "sys_id": "895853b7737200108ef62d2b04f6a7c8",
             "value": "true",
@@ -13454,6 +13923,13 @@
             "sys_id": "8979f6eac611227800b1b290b172960c",
             "value": "160",
             "description": "Default choice list width (pixels):",
+            "type": "string",
+            "scope": "Global"
+        },
+        "com.snc.cs_base.last.generated.code.tree.path": {
+            "sys_id": "897fdf73c3311200e94a9f2974d3aeda",
+            "value": "",
+            "description": "Stores the last used account code, which is used to generate the next one.\n        Note: Account codes can include only the following characters:\n        \"!#$&()*+,-.0123456789:;<?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[]`}|{~\"",
             "type": "string",
             "scope": "Global"
         },
@@ -13778,6 +14254,13 @@
             "description": "Disables topic block logging/validation added in Vancouver",
             "type": "true | false",
             "scope": "Global"
+        },
+        "sn_customerservice.enable_email_as_an_interaction": {
+            "sys_id": "8cca2516a3b9121015bd3e64b51e6133",
+            "value": "true",
+            "description": "",
+            "type": "true | false",
+            "scope": "Customer Service"
         },
         "com.snc.pa.sm.tta": {
             "sys_id": "8ccddc2207ed0210ed46afa086672ba5",
@@ -14353,6 +14836,13 @@
             "type": "string",
             "scope": "Global"
         },
+        "sn_customerservice.rest.api.case_sla_async": {
+            "sys_id": "92ca1e4c0f633010e6d4fd820b767e8d",
+            "value": "false",
+            "description": "Enable asynchronous processing of SLAs while creating a case using REST API",
+            "type": "true | false",
+            "scope": "Customer Service"
+        },
         "com.snc.sla.log.destination": {
             "sys_id": "92e114a7c3523100d602763c64d3ae6c",
             "value": "db",
@@ -14381,10 +14871,24 @@
             "type": "true | false",
             "scope": "Global"
         },
+        "sn_cs_queryrules.use_query_rules": {
+            "sys_id": "931020e1b3521010700b4d43c6a8dcb6",
+            "value": "true",
+            "description": "When set to true, rules/filters from sn_query_rule table will be used to determine read access to customer service management related tables to the logged in user through query business rules and READ ACLs. \nWhen false, rules/filters from the CSMQueryBRUtilOOBConstants and it's extensions will be used.\n\t\t",
+            "type": "true | false",
+            "scope": "CSM Query rules"
+        },
         "com.glide.cs.performance_node_logging_enabled": {
             "sys_id": "932fa2e2533220101fdbddeeff7b123d",
             "value": "true",
             "description": "Write performance analytics to node logs detailing request stage duration times.",
+            "type": "true | false",
+            "scope": "Global"
+        },
+        "glide.awa.openframe.dial_on_accept": {
+            "sys_id": "93596076730301104a905ee515f6a72e",
+            "value": "true",
+            "description": "For work items representing outgoing phone conversations, set true if the number should be dialed automatically on work item acceptance.",
             "type": "true | false",
             "scope": "Global"
         },
@@ -14724,6 +15228,13 @@
             "type": "choice list",
             "scope": "Global"
         },
+        "enable_account_address_sharing": {
+            "sys_id": "968309b0531101108ceeddeeff7b12ef",
+            "value": "true",
+            "description": "Enable an existing address to be associated with multiple accounts. The associations are present in the account_address_relationship table. Setting the property back to false once set to true leads to inappropriate behavior for account address data.",
+            "type": "true | false",
+            "scope": "Global"
+        },
         "glide.ui.tablet.title.ios_webapp": {
             "sys_id": "96a76edb37123000d2d5973ebebe5d55",
             "value": "ServiceNow",
@@ -14843,6 +15354,13 @@
             "type": "integer",
             "scope": "Global"
         },
+        "com.glide.cs.portal_url_mapping.csm._default": {
+            "sys_id": "97c700373b2123009cbbcea234efc49c",
+            "value": "/csm?id=form&table={{data.table_name}}&sys_id={{data.sys_id}}&view=csp",
+            "description": "CSM Default Record Mapping URL",
+            "type": "string",
+            "scope": "Global"
+        },
         "glide.upgrade.preview.duration.multiplier": {
             "sys_id": "97ca6267c70300104e562f53a2c26044",
             "value": "1.1",
@@ -14899,6 +15417,13 @@
             "type": "true | false",
             "scope": "Global"
         },
+        "glide.messaging.awa.enabled": {
+            "sys_id": "981d575b53320010e4deddeeff7b12bc",
+            "value": "true",
+            "description": "",
+            "type": "true | false",
+            "scope": "Global"
+        },
         "com.snc.pa.target_batch_operation_limit": {
             "sys_id": "98361c435b032010c1e73eaa3d81c7a6",
             "value": "100",
@@ -14940,6 +15465,13 @@
             "description": "List of trusted origins we allow to propagate messages (sent via window.postMessage) in the UI. Origins must be separated by a comma, line breaks can negatively affect page rendering.",
             "type": "string",
             "scope": "Global"
+        },
+        "sn_eaai_csm.email_addresses": {
+            "sys_id": "9883b4ef3b8ee210fdd432b693e45a68",
+            "value": "customerservice@example.com",
+            "description": "General email address for email interactions ",
+            "type": "string",
+            "scope": "Email Interaction for CSM"
         },
         "com.snc.sla.workflow.run_for_breached": {
             "sys_id": "98929cf8eb3201003623666cd206fe62",
@@ -15132,7 +15664,7 @@
         },
         "sn_atf.runner.enabled": {
             "sys_id": "99ca5ab55b1022001f80efe5f0f91a05",
-            "value": "false",
+            "value": "true",
             "description": "Enable test/test suite execution. The default value is false so that tests don't accidentally run on production systems. Update the value to 'true' on sub-production instances where you wish to run automated tests. This property is private; changes to its value will not move between instances in update sets or team development.",
             "type": "true | false",
             "scope": "Global"
@@ -15198,6 +15730,13 @@
             "value": "images/icons/edit.gifx",
             "description": "Additional comments icon used in Task Activity formatter.",
             "type": "image",
+            "scope": "Global"
+        },
+        "number_of_activities_in_notification": {
+            "sys_id": "9a904263ebac4610e9bdf58abad0cd6b",
+            "value": "3",
+            "description": "Number of Additional comments and Emails included in email notification template(-1 means all)",
+            "type": "integer",
             "scope": "Global"
         },
         "com.glide.codesigning.tracking.unsupported_script_tracking.enabled": {
@@ -15286,7 +15825,7 @@
         },
         "glide.lastplugin": {
             "sys_id": "9bc3d460f50003100a22c0b3dfa15169",
-            "value": "Sun_Apr_26_22_29_54_PDT_2026",
+            "value": "Fri_May_15_10_13_41_PDT_2026",
             "description": "Date of the last installed plugin, used to rebuild js_includes.  Specific to an instance.",
             "type": "string",
             "scope": "Global"
@@ -15414,6 +15953,13 @@
             "sys_id": "9d0bf07287512100a28cfdbee3e3ec09",
             "value": "",
             "description": "The location of this instance's OAuth certificate (containing its public key)",
+            "type": "string",
+            "scope": "Global"
+        },
+        "com.glide.event_handler.awa": {
+            "sys_id": "9d0cb2700f2100103b68ff5eef767e71",
+            "value": "com.snc.awa.platform.ReevaluationEventHandler",
+            "description": "Handles AWA reevaluation",
             "type": "string",
             "scope": "Global"
         },
@@ -16124,6 +16670,13 @@
             "type": "true | false",
             "scope": "Global"
         },
+        "team_calendar.enable_for_grpmember": {
+            "sys_id": "a3f884330b7003004502ab5c37673adc",
+            "value": "false",
+            "description": "",
+            "type": "true | false",
+            "scope": "Global"
+        },
         "sn_atf.snc_read_only_role_exemptions": {
             "sys_id": "a3fbe166b720230044026848ee11a952",
             "value": "sys_atf_test_result_step, sys_atf_agent",
@@ -16802,6 +17355,13 @@
             "description": "Comma delimited sysIds of sys_packages that should be included in the metadata sync to Mosaic.",
             "type": "string",
             "scope": "Global"
+        },
+        "sn_customerservice.email.create_case_for_non_matched_user": {
+            "sys_id": "abb7e9c5c313310073a67bfaa2d3aea2",
+            "value": "false",
+            "description": "Create case for non matched user",
+            "type": "true | false",
+            "scope": "Customer Service"
         },
         "sn_nlu_workbench.glide.nlu.optimize.min_labeled_data": {
             "sys_id": "abbc0ea507ac411028ef0a701ad300ed",
@@ -17503,6 +18063,13 @@
             "type": "string",
             "scope": "Omni-Experience Standard Feature Set"
         },
+        "sn_openframe.openframe.enabled": {
+            "sys_id": "b129028f4fa75a10501eaa8030ce0b31",
+            "value": "true",
+            "description": "Property which indicates the openframe plugin installation",
+            "type": "true | false",
+            "scope": "Openframe"
+        },
         "sn_cmdb_ws.ci_overview.managed_by_me.enabled": {
             "sys_id": "b12d7440c8dd1110f877e7f67167a3b1",
             "value": "true",
@@ -17916,6 +18483,13 @@
             "type": "integer",
             "scope": "Global"
         },
+        "assignment_workbench.task_skill_limit": {
+            "sys_id": "b4f0a6be9372030045a3f5be867ffb00",
+            "value": "100",
+            "description": "Limit the number of skills a task can have.",
+            "type": "integer",
+            "scope": "Global"
+        },
         "glide.chart.box.color": {
             "sys_id": "b50a9120c3120100517a3b251eba8f59",
             "value": "#FF0000",
@@ -18196,6 +18770,13 @@
             "type": "true | false",
             "scope": "Global"
         },
+        "com.glide.cs.portal_url_mapping.csp.sn_publications_publication": {
+            "sys_id": "b730647b3b2123009cbbcea234efc479",
+            "value": "/csp?id=publication&table=sn_publications_publication&sys_id={{data.sys_id}}",
+            "description": "CSP Publications Mapping URL",
+            "type": "string",
+            "scope": "Global"
+        },
         "glide.reporting.formatting.enabled": {
             "sys_id": "b73655735b131010dc0bfe3dda81c709",
             "value": "true",
@@ -18440,6 +19021,13 @@
             "description": "This property sets a limit for how many files are shown in the list of changed files during a Studio Source Control commit. After the limit is reached, the changed files list will be hidden and the user will see a dialog that allows them to make a commit that will include all changes files as well as changes not tracked by the Customer Update [sys_update_xml] table from all developers for the application. ",
             "type": "integer",
             "scope": "Global"
+        },
+        "sn_eaai_csm.period_of_customer_inactivity_to_close_interactions": {
+            "sys_id": "b93be4aefff3061086f6f3167c4fd912",
+            "value": "5",
+            "description": "Number of days (integer) of inactivity after which interactions will be closed. The value must be a positive integer. If the value is incorrectly set to less than or equal to 0, we will consider a value of 5.",
+            "type": "integer",
+            "scope": "Email Interaction for CSM"
         },
         "glide.sc.delivery_summary.name": {
             "sys_id": "b946e82b0a0a0aa7005fd92d611de246",
@@ -18952,6 +19540,13 @@
             "type": "choice list",
             "scope": "Global"
         },
+        "sn_customerservice.FTS_flag_enabled": {
+            "sys_id": "be416373e793030068da6188d2f6a9e2",
+            "value": "false",
+            "description": "Enable the follow the sun flag on the Customer Service case form.",
+            "type": "true | false",
+            "scope": "Customer Service"
+        },
         "com.glide.cs.guest_session_resumable": {
             "sys_id": "be7c50d93b1000109cbbcea234efc468",
             "value": "false",
@@ -19281,6 +19876,13 @@
             "type": "string",
             "scope": "Global"
         },
+        "glide.awa.after_timeout_presence.enabled": {
+            "sys_id": "c1d021b36f11211026b95d3a945b361a",
+            "value": "true",
+            "description": "This property determines whether the \"After timeout presence\" of the applicable assignment rule will be used to set agent's presence state if it times out before the agent accepts it.\r\n\r\nIf true, the agent will be set to the presence state specified in the assignment rule (if any).\r\n\r\nIf false, the agent's presence state will be left alone regardless of the value in the assignment rule.",
+            "type": "true | false",
+            "scope": "Global"
+        },
         "glide.ui.homepage.enforce_app_menu_roles": {
             "sys_id": "c1d063305f210100a9ad2572f2b4772b",
             "value": "true",
@@ -19304,8 +19906,15 @@
         },
         "sn_atf.schedule.enabled": {
             "sys_id": "c232794153c3220064a5c2e5dec58783",
-            "value": "false",
+            "value": "true",
             "description": "Enable scheduled test suite execution. Update the value of this property to 'true' on sub-production instances where you wish to enable scheduled automated suites. This property is private; changes to its value will not move between instances in update sets or team development. Note: In order to enable scheduled suites, the property for test/test suite execution must also be enabled.",
+            "type": "true | false",
+            "scope": "Global"
+        },
+        "glide.awa.assignment.parallelization": {
+            "sys_id": "c235e442730330104a905ee515f6a7aa",
+            "value": "true",
+            "description": "If true, Advanced Work Assignment will employ all nodes, instead of only the node that matched agents with items, to execute work item offers (update work items to \"Pending Accept\" state and notify the agents).",
             "type": "true | false",
             "scope": "Global"
         },
@@ -19364,6 +19973,13 @@
             "description": "Displays translation prefix on translatable strings.",
             "type": "true | false",
             "scope": "Global"
+        },
+        "sn_openframe.logger.enabled.users": {
+            "sys_id": "c2e420fc7f2112106e882a619c8665c9",
+            "value": "",
+            "description": "Admins can use this property to enable the persistence of Openframe logs on the server side. Enter the list of users as comma-separated sys_ids from the sys_user table.",
+            "type": "string",
+            "scope": "Openframe"
         },
         "glide.sc.checkout.request.number": {
             "sys_id": "c2e5a9b90a0a0a6601572a71c0f3a1df",
@@ -19467,6 +20083,13 @@
             "sys_id": "c3f889ec0700201017b703767cd30033",
             "value": "skip_sync,operational_status,sys_updated_on,discovery_source,first_discovered,sys_updated_by,due_in,sys_created_on,sys_domain,install_date,invoice_number,gl_account,sys_created_by,warranty_expiration,asset_tag,fqdn,change_control,owned_by,checked_out,sys_domain_path,delivery_date,maintenance_schedule,install_status,cost_center,supported_by,dns_domain,name,assigned,purchase_date,subcategory,short_description,assignment_group,managed_by,last_discovered,can_print,sys_class_name,manufacturer,po_number,checked_in,sys_class_path,vendor,mac_address,company,model_number,justification,department,assigned_to,start_date,cost,comments,serial_number,monitor,model_id,ip_address,sys_tags,cost_cc,support_group,order_date,schedule,due,unverified,correlation_id,attributes,location,asset,category,fault_count,lease_id,attestation_status,attested,attested_by,attested_date",
             "description": "",
+            "type": "string",
+            "scope": "Global"
+        },
+        "com.glide.cs.portal_url_mapping.csp.sn_customerservice_case": {
+            "sys_id": "c437c4f33b2123009cbbcea234efc4e5",
+            "value": "/csp?id=csm_ticket&table=sn_customerservice_case&sys_id={{data.sys_id}}&view=css",
+            "description": "CSP Customer Service Case Record Mapping",
             "type": "string",
             "scope": "Global"
         },
@@ -19666,6 +20289,13 @@
             "type": "integer",
             "scope": "Global"
         },
+        "glide.ui.sn_customerservice_escalation_activity.fields": {
+            "sys_id": "c65f4198b3200300ff6e6e5f26a8dc20",
+            "value": "state,trend,escalation_severity,comments,work_notes,assigned_to,assignment_group",
+            "description": "Escalation activity formatter fields",
+            "type": "string",
+            "scope": "Customer Service"
+        },
         "password_reset.softpin.expiration_reminder_time": {
             "sys_id": "c66df75453c1b1109de5ddeeff7b12a0",
             "value": "00:00",
@@ -19748,6 +20378,13 @@
             "value": "0",
             "description": "If \"Log slow queries\" property is true, log queries whose execution takes longer than the following\n\t\t\tnumber of milliseconds (e.g. a value of 1000 = 1 second):\n\t\t",
             "type": "integer",
+            "scope": "Global"
+        },
+        "cmn_skill_category.code.last_generated": {
+            "sys_id": "c75b2339b3632300290ea943c6a8dc67",
+            "value": "",
+            "description": "Last generated unique code for Skill Categories",
+            "type": "string",
             "scope": "Global"
         },
         "glide.ui.cmdb_ci_display_hardware_activity.fields": {
@@ -19925,6 +20562,13 @@
             "type": "string",
             "scope": "Global"
         },
+        "com.snc.skills_management.task_skill_migrated_tables": {
+            "sys_id": "c8c040109337030045a3f5be867ffbeb",
+            "value": "",
+            "description": "This property contains a list of tables whose Skills field has already been migrated to the task_m2m_table. If that table name exists in this property, the migration has already occured and will not happen again.",
+            "type": "choice list",
+            "scope": "Global"
+        },
         "glide.knowman.feedback.display_threshold": {
             "sys_id": "c8c8021f0a0a0b8201d984bd7cbdab7e",
             "value": "5",
@@ -19950,6 +20594,13 @@
             "sys_id": "c8e314a0f50003100a22c0b3dfa1518e",
             "value": "true",
             "description": "",
+            "type": "string",
+            "scope": "Global"
+        },
+        "com.glide.event_handler.awa_manual_assignment": {
+            "sys_id": "c8ecb306b70300100cfbc3d5de11a913",
+            "value": "com.snc.awa.platform.ManualAssignmentEventHandler",
+            "description": "A request for the manual assignment of an AWA work item record",
             "type": "string",
             "scope": "Global"
         },
@@ -20450,6 +21101,13 @@
             "type": "string",
             "scope": "Global"
         },
+        "sn_customerservice.account_relationship_access_roles": {
+            "sys_id": "cddb6281eb9302003e97afcef106fe67",
+            "value": "b3053c24d7700200e5982cf65e61030f, 06d4fc24d7700200e5982cf65e61037e",
+            "description": "Roles which need to be shown in the reference qualifier for sn_customerservice_account_relationship_access table.",
+            "type": "string",
+            "scope": "Customer Service"
+        },
         "glide.war": {
             "sys_id": "cde7508d9ecf46499585f932e8ac9720",
             "value": "glide-australia-02-11-2026__patch1-03-23-2026_03-31-2026_1137.zip",
@@ -20849,6 +21507,13 @@
             "type": "true | false",
             "scope": "Licensing Engine"
         },
+        "sn_customerservice.consumer_max_attachments_per_record": {
+            "sys_id": "d1c5aaa1c3112200b12d9f2974d3ae7c",
+            "value": "5",
+            "description": "Attachment count per record for consumer",
+            "type": "integer",
+            "scope": "Customer Service"
+        },
         "sn_portal_surveys.sp_survey.map_correct_percentage_answered": {
             "sys_id": "d1cc8a0843220210117c797fb9b8f2d9",
             "value": "true",
@@ -21024,6 +21689,13 @@
             "type": "string",
             "scope": "Global"
         },
+        "com.snc.awa.cache.enabled": {
+            "sys_id": "d32b71f067302300a0bd35e643415ad4",
+            "value": "true",
+            "description": "",
+            "type": "true | false",
+            "scope": "Global"
+        },
         "sn_atf.headless.secret_path": {
             "sys_id": "d3515410773620103fe4b5b268106177",
             "value": "",
@@ -21080,6 +21752,13 @@
             "type": "integer",
             "scope": "Global"
         },
+        "sn_customerservice.emails.customportal": {
+            "sys_id": "d48e6f93532120100f16ddeeff7b12e3",
+            "value": "",
+            "description": "Base URL for custom portals",
+            "type": "string",
+            "scope": "Customer Service"
+        },
         "glide.ui.email_client.email_address.disambiguator_search": {
             "sys_id": "d49033047f2003007f005212bdfa9187",
             "value": "false",
@@ -21134,6 +21813,13 @@
             "value": "true",
             "description": "",
             "type": "true | false",
+            "scope": "Global"
+        },
+        "com.glide.quickactions.dispatchaction_whitelist": {
+            "sys_id": "d56c04d367303300a0bd35e643415a14",
+            "value": "CHAT_INPUT#SNIPPET_INVOKED,CHAT_INPUT#TRANSFERRED,CHAT_INPUT#SNIPPET_SELECTED,SN_NACM#INVOKE_ACTION_SUCCESS",
+            "description": "Comma-separated list of action types that can be dispatched by quickactions and their parameters.",
+            "type": "string",
             "scope": "Global"
         },
         "glide.ui.cmdb_ci_esx_server_activity.fields": {
@@ -21997,6 +22683,13 @@
             "type": "integer",
             "scope": "Global"
         },
+        "com.glide.cs.portal_url_mapping.csp._default": {
+            "sys_id": "ddf780373b2123009cbbcea234efc4f9",
+            "value": "/csp?id=form&table={{data.table_name}}&sys_id={{data.sys_id}}&view=css",
+            "description": "CSP Default Record URL Mapping",
+            "type": "string",
+            "scope": "Global"
+        },
         "com.glide.oneextend.batch_result_cancellation_timeout_minutes": {
             "sys_id": "ddfee62cff4572106f9dffffffffff4f",
             "value": "1440",
@@ -22466,6 +23159,13 @@
             "type": "choice list",
             "scope": "Global"
         },
+        "sn_openframe.component_workspace_load_retry_count": {
+            "sys_id": "e2d4400ddbd00010d1209646db9619ec",
+            "value": "3",
+            "description": "Maximum number of retries to check if openframe configuration is part of presource.",
+            "type": "integer",
+            "scope": "Openframe"
+        },
         "glide.bsm.max_to_expand": {
             "sys_id": "e2dfb6550a0a0ba900933a16597dd7e7",
             "value": "100",
@@ -22676,6 +23376,13 @@
             "type": "string",
             "scope": "Global"
         },
+        "sn_customerservice.contact_role_assignment": {
+            "sys_id": "e47f81b4eb2012003e97afcef106fe5c",
+            "value": "sn_customerservice.partner_admin,sn_customerservice.partner,sn_customerservice.customer_admin,sn_customerservice.customer",
+            "description": "External roles that can be assigned to contacts via Customer portal (comma separated role names)",
+            "type": "string",
+            "scope": "Customer Service"
+        },
         "com.glide.codesigning.expanded.tracking.enabled": {
             "sys_id": "e4c3e93043321110cd90ae1c4bb8f239",
             "value": "true",
@@ -22741,7 +23448,7 @@
         },
         "glide.email.reply_subject_prefix": {
             "sys_id": "e5c9157aeb410100469a20425206fe23",
-            "value": "re:,aw:,r:,Accepted:,Tentative:,Declined:",
+            "value": "re:,aw:,r:,Accepted:,Tentative:,Declined:,Case:",
             "description": "Identify email as a reply by these subject prefixes",
             "type": "string",
             "scope": "Global"
@@ -22960,6 +23667,13 @@
             "sys_id": "e7e2c1aab7353300ee0098c1ee11a9bb",
             "value": "3",
             "description": "The minimum number of hits for the CI change flapper detection mechanism percent diff strategy to return success.",
+            "type": "integer",
+            "scope": "Global"
+        },
+        "glide.awa.assignment.parallelization_claim_limit": {
+            "sys_id": "e7eaeb8387000110bd25a1fe37cb0ba9",
+            "value": "100",
+            "description": "Size limit on how many claimed work items can be reserved and subsequently executed by a node - this helps to distribute work items more evenly across cluster therefore betters the overall assignment throughput.",
             "type": "integer",
             "scope": "Global"
         },
@@ -23257,6 +23971,13 @@
             "type": "choice list",
             "scope": "Global"
         },
+        "sn_customerservice.kcs.enable_template_on_case_workspace": {
+            "sys_id": "ebd6327153c0001016e9ddeeff7b1223",
+            "value": "false",
+            "description": "This property enables creation of Knowledge articles in all templates from case in Workspace.",
+            "type": "true | false",
+            "scope": "Customer Service"
+        },
         "com.glide.event_manager.sn_cmdb_service_queue.hard_limit": {
             "sys_id": "ebebbc037343330061b79c0c6df6a7ee",
             "value": "10",
@@ -23352,6 +24073,13 @@
             "sys_id": "ece932606f37701094b40168e25b3631",
             "value": "true",
             "description": "Enable responsive dashboard",
+            "type": "true | false",
+            "scope": "Global"
+        },
+        "glide.messaging.reassign.enabled": {
+            "sys_id": "ed19cdfbb7f3001042a9ef54ce11a936",
+            "value": "false",
+            "description": "Set to true to reassign automatically when current agent is not available",
             "type": "true | false",
             "scope": "Global"
         },
@@ -23529,6 +24257,13 @@
             "description": "Customer provided Google Maps key used for geocoding requests.  To get one - see https://developers.google.com/maps/documentation/geocoding/get-api-key",
             "type": "password2",
             "scope": "Global"
+        },
+        "glide.email.inbound.triggers.skip_read_access_check": {
+            "sys_id": "ef2c6db383a512106d0d23e4822bc0de",
+            "value": "interaction",
+            "description": "List of tables for which read access check will be skipped in Inbound Email triggers",
+            "type": "string",
+            "scope": "Email Interaction for CSM"
         },
         "glide.ais.ha.write_mutex_spin_max": {
             "sys_id": "ef516a70ff002010563e2bff793bf11a",
@@ -23824,6 +24559,13 @@
             "type": "string",
             "scope": "Global"
         },
+        "glide.service_portal.resize_text.business_portal.base_font": {
+            "sys_id": "f0f0e6f68b021210c8d7ad4fe12395df",
+            "value": "16",
+            "description": "",
+            "type": "integer",
+            "scope": "Business Portal"
+        },
         "glide.graphql.performance_validation_whitelist": {
             "sys_id": "f0f1afb1e71203002d2ec91c03f6a948",
             "value": "",
@@ -23983,6 +24725,13 @@
             "value": "7ed0481f3b0b2200c869c2c703efc487",
             "description": "The sys_id of the default Email Template to include on all new notifications (sysevent_email_action). This does not apply to push-only notifications.\r\n\r\nBy setting this value to nothing, there will be no default template on new notifications. ",
             "type": "string",
+            "scope": "Global"
+        },
+        "team_calendar.max_calendar_display": {
+            "sys_id": "f2ccb4ac0b830300f42fab5c37673ad5",
+            "value": "25",
+            "description": "The limit of how many users are displayed per page under team calendar",
+            "type": "integer",
             "scope": "Global"
         },
         "glide.db.passthrough.func.allowlist_default": {
@@ -25152,6 +25901,13 @@
             "value": "true",
             "description": "",
             "type": "string",
+            "scope": "Global"
+        },
+        "glide.awa.filter_by_awa_skill": {
+            "sys_id": "feeaadd17f261210d5c092a26c866551",
+            "value": "false",
+            "description": "Enable use and population of awa_skill table to filter agent skill mapping queries. awa_skill table stores references to cmn_skill table to allow for more efficient queries and caching.",
+            "type": "true | false",
             "scope": "Global"
         },
         "com.glide.par.unified_analytics.enabled": {

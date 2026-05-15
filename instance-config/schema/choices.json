@@ -593,6 +593,68 @@
                 "inactive": false
             }
         ],
+        "sn_lookup_verify_config.max_result_count": [
+            {
+                "value": "3",
+                "label": "3",
+                "sequence": 3,
+                "inactive": false
+            },
+            {
+                "value": "7",
+                "label": "7",
+                "sequence": 7,
+                "inactive": false
+            },
+            {
+                "value": "4",
+                "label": "4",
+                "sequence": 4,
+                "inactive": false
+            },
+            {
+                "value": "8",
+                "label": "8",
+                "sequence": 8,
+                "inactive": false
+            },
+            {
+                "value": "5",
+                "label": "5",
+                "sequence": 5,
+                "inactive": false
+            },
+            {
+                "value": "9",
+                "label": "9",
+                "sequence": 9,
+                "inactive": false
+            },
+            {
+                "value": "1",
+                "label": "1",
+                "sequence": 1,
+                "inactive": false
+            },
+            {
+                "value": "6",
+                "label": "6",
+                "sequence": 6,
+                "inactive": false
+            },
+            {
+                "value": "10",
+                "label": "10",
+                "sequence": 10,
+                "inactive": false
+            },
+            {
+                "value": "2",
+                "label": "2",
+                "sequence": 2,
+                "inactive": false
+            }
+        ],
         "sys_app_application.device_type": [
             {
                 "value": "mobile",
@@ -2941,6 +3003,50 @@
                 "inactive": false
             }
         ],
+        "syslog_awa.type": [
+            {
+                "value": "acceptance",
+                "label": "Acceptance",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "routing",
+                "label": "Routing",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "filter_by_skill",
+                "label": "FilterBySkill",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "assignment",
+                "label": "Assignment",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "build_skill_capacity",
+                "label": "BuildSkillCapacity",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "cancellation",
+                "label": "Cancellation",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "rejection",
+                "label": "Rejection",
+                "sequence": 0,
+                "inactive": false
+            }
+        ],
         "sys_response_header.add_by": [
             {
                 "value": "append",
@@ -3474,6 +3580,50 @@
                 "value": "mention",
                 "label": "Only when mentioned",
                 "sequence": 0,
+                "inactive": false
+            }
+        ],
+        "var__m_sys_hub_action_input_710b3622e741130068da6188d2f6a9b6.ah_channel": [
+            {
+                "value": "community",
+                "label": "Community",
+                "sequence": 7,
+                "inactive": false
+            },
+            {
+                "value": "social",
+                "label": "Social",
+                "sequence": 6,
+                "inactive": false
+            },
+            {
+                "value": "phone",
+                "label": "Phone",
+                "sequence": 3,
+                "inactive": false
+            },
+            {
+                "value": "email",
+                "label": "Email",
+                "sequence": 4,
+                "inactive": false
+            },
+            {
+                "value": "chat",
+                "label": "Chat",
+                "sequence": 5,
+                "inactive": false
+            },
+            {
+                "value": "",
+                "label": "-- None --",
+                "sequence": 1,
+                "inactive": false
+            },
+            {
+                "value": "web",
+                "label": "Web",
+                "sequence": 2,
                 "inactive": false
             }
         ],
@@ -4076,6 +4226,26 @@
                 "value": "30",
                 "label": "Potential Deflection",
                 "sequence": 30,
+                "inactive": false
+            }
+        ],
+        "task_activity.state": [
+            {
+                "value": "ready",
+                "label": "Ready",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "sent",
+                "label": "Sent",
+                "sequence": 1,
+                "inactive": false
+            },
+            {
+                "value": "cancelled",
+                "label": "Cancelled",
+                "sequence": 2,
                 "inactive": false
             }
         ],
@@ -8427,6 +8597,20 @@
                 "inactive": false
             }
         ],
+        "awa_work_item_sizing.condition_mode": [
+            {
+                "value": "advanced",
+                "label": "Advanced",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "simple",
+                "label": "Simple",
+                "sequence": 0,
+                "inactive": false
+            }
+        ],
         "std_change_proposal.state": [
             {
                 "value": "1",
@@ -8585,6 +8769,18 @@
                 "label": "Direct SOAP",
                 "sequence": 0,
                 "inactive": false
+            },
+            {
+                "value": "now/stats",
+                "label": "now/stats",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "now/attachment",
+                "label": "now/attachment",
+                "sequence": 0,
+                "inactive": false
             }
         ],
         "sys_api_stats.api_name": [
@@ -8595,8 +8791,20 @@
                 "inactive": false
             },
             {
+                "value": "now/js",
+                "label": "now/js",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
                 "value": "now/graphql",
                 "label": "now/graphql",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "sn_build_agent/build_agent_api",
+                "label": "sn_build_agent/build_agent_api",
                 "sequence": 0,
                 "inactive": false
             },
@@ -8613,8 +8821,32 @@
                 "inactive": false
             },
             {
+                "value": "sn_sns/applications",
+                "label": "sn_sns/applications",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "sn_udc/developer_history",
+                "label": "sn_udc/developer_history",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
                 "value": "crypto/automation",
                 "label": "crypto/automation",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "sn_udc/applications",
+                "label": "sn_udc/applications",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "now/appcreator",
+                "label": "now/appcreator",
                 "sequence": 0,
                 "inactive": false
             },
@@ -8631,8 +8863,44 @@
                 "inactive": false
             },
             {
+                "value": "sn_build_agent/build_agent_health",
+                "label": "sn_build_agent/build_agent_health",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "sn_deploy_pipeline/deployment_pipeline_api",
+                "label": "sn_deploy_pipeline/deployment_pipeline_api",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "now/attachment",
+                "label": "now/attachment",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "now/syntax_editor",
+                "label": "now/syntax_editor",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
                 "value": "Direct SOAP",
                 "label": "Direct SOAP",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "sn_udc/collection",
+                "label": "sn_udc/collection",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "sn_glider/applications",
+                "label": "sn_glider/applications",
                 "sequence": 0,
                 "inactive": false
             },
@@ -8649,8 +8917,38 @@
                 "inactive": false
             },
             {
+                "value": "sn_ex_sp/recent_favorites_api",
+                "label": "sn_ex_sp/recent_favorites_api",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "sn_udc/file_taxonomy",
+                "label": "sn_udc/file_taxonomy",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "now/analytics",
+                "label": "now/analytics",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "sn_cicd/testsuite",
+                "label": "sn_cicd/testsuite",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
                 "value": "now/get_core_ui_logo_source",
                 "label": "now/get_core_ui_logo_source",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "sn_glider/sync",
+                "label": "sn_glider/sync",
                 "sequence": 0,
                 "inactive": false
             },
@@ -8673,8 +8971,32 @@
                 "inactive": false
             },
             {
+                "value": "now/stats",
+                "label": "now/stats",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "now/wfa_fluent",
+                "label": "now/wfa_fluent",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "now/templates",
+                "label": "now/templates",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
                 "value": "sn_cicd/progress",
                 "label": "sn_cicd/progress",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "now/sp",
+                "label": "now/sp",
                 "sequence": 0,
                 "inactive": false
             },
@@ -12045,6 +12367,20 @@
                 "inactive": false
             }
         ],
+        "task_activity.delivery_option": [
+            {
+                "value": "email",
+                "label": "Send via e-mail",
+                "sequence": 1,
+                "inactive": false
+            },
+            {
+                "value": "none",
+                "label": "Do not send",
+                "sequence": 0,
+                "inactive": false
+            }
+        ],
         "sys_pdf_generation_status.generation_type": [
             {
                 "value": "html_to_pdf",
@@ -14185,6 +14521,32 @@
                 "inactive": false
             }
         ],
+        "csm_consumer.time_zone": [
+            {
+                "value": "NULL_OVERRIDE",
+                "label": "javascript:\"System (\" + gs.getSysTimeZone() + \")\"",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "Canada/Pacific",
+                "label": "Canada/Pacific",
+                "sequence": 2,
+                "inactive": false
+            },
+            {
+                "value": "US/Pacific",
+                "label": "US/Pacific",
+                "sequence": 1,
+                "inactive": false
+            },
+            {
+                "value": "Europe/London",
+                "label": "Europe/London",
+                "sequence": 3,
+                "inactive": false
+            }
+        ],
         "cmdb_ci_service_auto.severity": [
             {
                 "value": "1",
@@ -15862,6 +16224,26 @@
                 "value": "",
                 "label": "-- None --",
                 "sequence": 1,
+                "inactive": false
+            }
+        ],
+        "task_activity.type": [
+            {
+                "value": "appointment",
+                "label": "Appointment",
+                "sequence": 1,
+                "inactive": false
+            },
+            {
+                "value": "phone",
+                "label": "Phone call",
+                "sequence": 2,
+                "inactive": false
+            },
+            {
+                "value": "message",
+                "label": "Message",
+                "sequence": 0,
                 "inactive": false
             }
         ],
@@ -18427,6 +18809,12 @@
                 "inactive": false
             },
             {
+                "value": "consumer_closed",
+                "label": "Consumer Resolved",
+                "sequence": 42,
+                "inactive": false
+            },
+            {
                 "value": "helpful",
                 "label": "Marked Helpful",
                 "sequence": 17,
@@ -18556,6 +18944,12 @@
                 "value": "reply_to_an_answer",
                 "label": "Reply To An Answer",
                 "sequence": 21,
+                "inactive": false
+            },
+            {
+                "value": "contact_closed",
+                "label": "Contact Resolved",
+                "sequence": 35,
                 "inactive": false
             },
             {
@@ -19755,6 +20149,32 @@
                 "inactive": false
             }
         ],
+        "task_activity.reminder": [
+            {
+                "value": "15",
+                "label": "15",
+                "sequence": 1,
+                "inactive": false
+            },
+            {
+                "value": "30",
+                "label": "30",
+                "sequence": 2,
+                "inactive": false
+            },
+            {
+                "value": "60",
+                "label": "60",
+                "sequence": 3,
+                "inactive": false
+            },
+            {
+                "value": "120",
+                "label": "120",
+                "sequence": 4,
+                "inactive": false
+            }
+        ],
         "sys_schema_attribute.applies_to": [
             {
                 "value": "TABLE",
@@ -20575,6 +20995,18 @@
                 "inactive": false
             },
             {
+                "value": "task_created",
+                "label": "Task Created",
+                "sequence": 12,
+                "inactive": false
+            },
+            {
+                "value": "no_response",
+                "label": "No Response",
+                "sequence": 13,
+                "inactive": false
+            },
+            {
                 "value": "left_while_search",
                 "label": "Left While Search",
                 "sequence": 8,
@@ -20590,6 +21022,12 @@
                 "value": "auto_closed",
                 "label": "Auto Closed",
                 "sequence": 10,
+                "inactive": false
+            },
+            {
+                "value": "task_closed",
+                "label": "Task Closed",
+                "sequence": 11,
                 "inactive": false
             },
             {
@@ -20748,6 +21186,38 @@
                 "value": "waiting",
                 "label": "Waiting",
                 "sequence": 1,
+                "inactive": false
+            }
+        ],
+        "sn_customerservice_escalation.state": [
+            {
+                "value": "100",
+                "label": "Requested",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "101",
+                "label": "Escalated",
+                "sequence": 1,
+                "inactive": false
+            },
+            {
+                "value": "102",
+                "label": "Declined",
+                "sequence": 2,
+                "inactive": false
+            },
+            {
+                "value": "103",
+                "label": "Closed",
+                "sequence": 3,
+                "inactive": false
+            },
+            {
+                "value": "104",
+                "label": "De-escalation Requested",
+                "sequence": 4,
                 "inactive": false
             }
         ],
@@ -20966,6 +21436,62 @@
                 "value": "active_directory",
                 "label": "Active Directory",
                 "sequence": 1,
+                "inactive": false
+            }
+        ],
+        "var__m_ga_guidance_input_636ecca277530010d7159b71a9106192.resolution_code": [
+            {
+                "value": "2",
+                "label": "Solved – Fixed by closing related PRB",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "9",
+                "label": "Voided/Canceled",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "3",
+                "label": "Solved – Workaround provided based on open PRB",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "5",
+                "label": "Inconclusive – Out of scope",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "4",
+                "label": "Solved by Customer",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "7",
+                "label": "Inconclusive – No workaround",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "1",
+                "label": "Solved – Fixed by Support/Guidance provided",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "8",
+                "label": "Duplicate Issue",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "6",
+                "label": "Inconclusive – Cannot reproduce",
+                "sequence": 0,
                 "inactive": false
             }
         ],
@@ -23981,6 +24507,20 @@
                 "inactive": false
             }
         ],
+        "csm_consumer.notification": [
+            {
+                "value": "1",
+                "label": "Disable",
+                "sequence": 1,
+                "inactive": false
+            },
+            {
+                "value": "2",
+                "label": "Enable",
+                "sequence": 2,
+                "inactive": false
+            }
+        ],
         "sys_upgrade_history_log.disposition": [
             {
                 "value": "106",
@@ -26225,6 +26765,62 @@
                 "inactive": false
             }
         ],
+        "var__m_sys_hub_flow_input_e936a8d177e22010d7159b71a91061ce.resolution_code": [
+            {
+                "value": "2",
+                "label": "Solved – Fixed by closing related PRB",
+                "sequence": 1,
+                "inactive": false
+            },
+            {
+                "value": "9",
+                "label": "Voided/Canceled",
+                "sequence": 8,
+                "inactive": false
+            },
+            {
+                "value": "6",
+                "label": "Inconclusive – Cannot reproduce",
+                "sequence": 5,
+                "inactive": false
+            },
+            {
+                "value": "1",
+                "label": "Solved – Fixed by Support/Guidance provided",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "5",
+                "label": "Inconclusive – Out of scope",
+                "sequence": 4,
+                "inactive": false
+            },
+            {
+                "value": "8",
+                "label": "Duplicate Issue",
+                "sequence": 7,
+                "inactive": false
+            },
+            {
+                "value": "4",
+                "label": "Solved by Customer",
+                "sequence": 3,
+                "inactive": false
+            },
+            {
+                "value": "7",
+                "label": "Inconclusive – No workaround",
+                "sequence": 6,
+                "inactive": false
+            },
+            {
+                "value": "3",
+                "label": "Solved – Workaround provided based on open PRB",
+                "sequence": 2,
+                "inactive": false
+            }
+        ],
         "scan_result.scan_type": [
             {
                 "value": "full_scan",
@@ -27524,6 +28120,20 @@
                 "value": "self-service",
                 "label": "Self-service",
                 "sequence": 4,
+                "inactive": false
+            }
+        ],
+        "sn_openframe_phone_log.call_type": [
+            {
+                "value": "outgoing",
+                "label": "Outgoing",
+                "sequence": 1,
+                "inactive": false
+            },
+            {
+                "value": "incoming",
+                "label": "Incoming",
+                "sequence": 0,
                 "inactive": false
             }
         ],
@@ -29839,6 +30449,20 @@
             {
                 "value": "popup",
                 "label": "Popup",
+                "sequence": 0,
+                "inactive": false
+            }
+        ],
+        "awa_assignment_rule.assign_by": [
+            {
+                "value": "most_capacity",
+                "label": "Most Capacity",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "last_assigned",
+                "label": "Last Assigned",
                 "sequence": 0,
                 "inactive": false
             }
@@ -32833,6 +33457,62 @@
                 "inactive": false
             }
         ],
+        "var__m_sys_hub_flow_input_8537681577e22010d7159b71a9106127.resolution_code": [
+            {
+                "value": "1",
+                "label": "Solved – Fixed by Support/Guidance provided",
+                "sequence": 1,
+                "inactive": false
+            },
+            {
+                "value": "7",
+                "label": "Inconclusive – No workaround",
+                "sequence": 7,
+                "inactive": false
+            },
+            {
+                "value": "9",
+                "label": "Voided/Canceled",
+                "sequence": 9,
+                "inactive": false
+            },
+            {
+                "value": "3",
+                "label": "Solved – Workaround provided based on open PRB",
+                "sequence": 3,
+                "inactive": false
+            },
+            {
+                "value": "5",
+                "label": "Inconclusive – Out of scope",
+                "sequence": 5,
+                "inactive": false
+            },
+            {
+                "value": "8",
+                "label": "Duplicate Issue",
+                "sequence": 8,
+                "inactive": false
+            },
+            {
+                "value": "2",
+                "label": "Solved – Fixed by closing related PRB",
+                "sequence": 2,
+                "inactive": false
+            },
+            {
+                "value": "4",
+                "label": "Solved by Customer",
+                "sequence": 4,
+                "inactive": false
+            },
+            {
+                "value": "6",
+                "label": "Inconclusive – Cannot reproduce",
+                "sequence": 6,
+                "inactive": false
+            }
+        ],
         "cmdb_ci_comm.type": [
             {
                 "value": "cellphone",
@@ -33021,6 +33701,50 @@
                 "inactive": false
             }
         ],
+        "csm_consumer.nationality": [
+            {
+                "value": "AU",
+                "label": "Australian",
+                "sequence": 100,
+                "inactive": false
+            },
+            {
+                "value": "IN",
+                "label": "Indian",
+                "sequence": 300,
+                "inactive": false
+            },
+            {
+                "value": "GB",
+                "label": "British",
+                "sequence": 150,
+                "inactive": false
+            },
+            {
+                "value": "denied",
+                "label": "I do not wish to provide this information",
+                "sequence": 10,
+                "inactive": false
+            },
+            {
+                "value": "CA",
+                "label": "Canadian",
+                "sequence": 200,
+                "inactive": false
+            },
+            {
+                "value": "US",
+                "label": "American",
+                "sequence": 50,
+                "inactive": false
+            },
+            {
+                "value": "CN",
+                "label": "Chinese",
+                "sequence": 250,
+                "inactive": false
+            }
+        ],
         "sn_bm_common_indicator.release": [
             {
                 "value": "3",
@@ -33184,6 +33908,26 @@
                 "value": "string",
                 "label": "String",
                 "sequence": 3,
+                "inactive": false
+            }
+        ],
+        "sn_customerservice_case_report.is_fcr": [
+            {
+                "value": "0",
+                "label": "None",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "1",
+                "label": "True",
+                "sequence": 1,
+                "inactive": false
+            },
+            {
+                "value": "2",
+                "label": "False",
+                "sequence": 2,
                 "inactive": false
             }
         ],
@@ -35709,6 +36453,62 @@
                 "inactive": false
             }
         ],
+        "sn_customerservice_case.contact_type": [
+            {
+                "value": "email",
+                "label": "Email",
+                "sequence": 2,
+                "inactive": false
+            },
+            {
+                "value": "web",
+                "label": "Web",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "rest_api",
+                "label": "REST API",
+                "sequence": 10,
+                "inactive": false
+            },
+            {
+                "value": "phone",
+                "label": "Phone",
+                "sequence": 1,
+                "inactive": false
+            },
+            {
+                "value": "proactive",
+                "label": "Alert",
+                "sequence": 6,
+                "inactive": false
+            },
+            {
+                "value": "social",
+                "label": "Social",
+                "sequence": 4,
+                "inactive": false
+            },
+            {
+                "value": "community",
+                "label": "Community",
+                "sequence": 5,
+                "inactive": false
+            },
+            {
+                "value": "chat",
+                "label": "Chat",
+                "sequence": 3,
+                "inactive": false
+            },
+            {
+                "value": "virtual_agent",
+                "label": "Virtual Agent",
+                "sequence": 7,
+                "inactive": false
+            }
+        ],
         "iamsync_message.state": [
             {
                 "value": "ack",
@@ -36637,6 +37437,38 @@
                 "inactive": false
             }
         ],
+        "awa_service_channel.type": [
+            {
+                "value": "email",
+                "label": "Email",
+                "sequence": 500,
+                "inactive": false
+            },
+            {
+                "value": "messaging",
+                "label": "Messaging",
+                "sequence": 200,
+                "inactive": false
+            },
+            {
+                "value": "phone",
+                "label": "Phone",
+                "sequence": 300,
+                "inactive": false
+            },
+            {
+                "value": "other",
+                "label": "Other",
+                "sequence": 1,
+                "inactive": false
+            },
+            {
+                "value": "chat",
+                "label": "Chat",
+                "sequence": 100,
+                "inactive": false
+            }
+        ],
         "ip_access.type": [
             {
                 "value": "allow",
@@ -36925,6 +37757,52 @@
             {
                 "value": "list_layout",
                 "label": "List Layout",
+                "sequence": 0,
+                "inactive": false
+            }
+        ],
+        "csm_consumer.gender": [
+            {
+                "value": "Female",
+                "label": "Female",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "Not Specified",
+                "label": "Not Specified",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "Male",
+                "label": "Male",
+                "sequence": 0,
+                "inactive": false
+            }
+        ],
+        "csm_consumer.time_format": [
+            {
+                "value": "hh.mm.ss a",
+                "label": "hh.mm.ss (12 hour)",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "HH:mm:ss",
+                "label": "hh:mm:ss (24 hour)",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "HH.mm.ss",
+                "label": "hh.mm.ss (24 hour)",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "hh:mm:ss a",
+                "label": "hh:mm:ss (12 hour)",
                 "sequence": 0,
                 "inactive": false
             }
@@ -40119,6 +40997,64 @@
                 "inactive": false
             }
         ],
+        "csm_consumer.prefix": [
+            {
+                "value": "Mr.",
+                "label": "Mr.",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "Ms.",
+                "label": "Ms.",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "Mrs.",
+                "label": "Mrs.",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "Dr.",
+                "label": "Dr.",
+                "sequence": 0,
+                "inactive": false
+            }
+        ],
+        "csm_consumer.date_format": [
+            {
+                "value": "dd/MM/yyyy",
+                "label": "dd/mm/yyyy",
+                "sequence": 2,
+                "inactive": false
+            },
+            {
+                "value": "dd-MM-yyyy",
+                "label": "dd-mm-yyyy",
+                "sequence": 3,
+                "inactive": false
+            },
+            {
+                "value": "dd.MM.yyyy",
+                "label": "dd.mm.yyyy",
+                "sequence": 4,
+                "inactive": false
+            },
+            {
+                "value": "MM-dd-yyyy",
+                "label": "mm-dd-yyyy",
+                "sequence": 1,
+                "inactive": false
+            },
+            {
+                "value": "yyyy-MM-dd",
+                "label": "yyyy-mm-dd",
+                "sequence": 5,
+                "inactive": false
+            }
+        ],
         "var__m_sn_ace_variable_38c5e083535101102958ddeeff7b1254.metric_aggregation_function": [
             {
                 "value": "count",
@@ -41351,6 +42287,26 @@
                 "inactive": false
             }
         ],
+        "sn_customerservice_escalation.reason": [
+            {
+                "value": "2",
+                "label": "Customer Imposed Deadline",
+                "sequence": 2,
+                "inactive": false
+            },
+            {
+                "value": "0",
+                "label": "Inactivity",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "1",
+                "label": "Lack of Progress",
+                "sequence": 1,
+                "inactive": false
+            }
+        ],
         "sys_logical_table_stats.sample_period_type": [
             {
                 "value": "week",
@@ -41731,6 +42687,20 @@
             {
                 "value": "virtual_agent",
                 "label": "VA Chat Logs",
+                "sequence": 1,
+                "inactive": false
+            }
+        ],
+        "agent_schedule_task_config.setup_options": [
+            {
+                "value": "simple",
+                "label": "Simple",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "script",
+                "label": "Scripted",
                 "sequence": 1,
                 "inactive": false
             }
@@ -43571,6 +44541,34 @@
                 "inactive": false
             }
         ],
+        "customer_account.rural_based_status": [
+            {
+                "value": "no",
+                "label": "No",
+                "sequence": 20,
+                "inactive": false
+            },
+            {
+                "value": "yes",
+                "label": "Yes",
+                "sequence": 10,
+                "inactive": false
+            }
+        ],
+        "customer_account.women_ownership_status": [
+            {
+                "value": "yes",
+                "label": "Yes",
+                "sequence": 10,
+                "inactive": false
+            },
+            {
+                "value": "no",
+                "label": "No",
+                "sequence": 20,
+                "inactive": false
+            }
+        ],
         "cmdb_ci_printer.print_type": [
             {
                 "value": "Plotter",
@@ -44070,6 +45068,124 @@
                 "value": "enrollment_check",
                 "label": "Enrollment check",
                 "sequence": 0,
+                "inactive": false
+            }
+        ],
+        "sn_customerservice_responsibility_access_config.accessible_entities": [
+            {
+                "value": "customer_account",
+                "label": "Account",
+                "sequence": 10,
+                "inactive": false
+            },
+            {
+                "value": "ast_contract",
+                "label": "Contract",
+                "sequence": 180,
+                "inactive": false
+            },
+            {
+                "value": "sn_customerservice_escalation",
+                "label": "Escalation",
+                "sequence": 200,
+                "inactive": false
+            },
+            {
+                "value": "sn_customerservice_team_member",
+                "label": "Account Team Member",
+                "sequence": 60,
+                "inactive": false
+            },
+            {
+                "value": "sn_customerservice_contact_relationship",
+                "label": "Contact Relationship",
+                "sequence": 170,
+                "inactive": false
+            },
+            {
+                "value": "service_entitlement",
+                "label": "Entitlement",
+                "sequence": 190,
+                "inactive": false
+            },
+            {
+                "value": "task_sla",
+                "label": "Task SLA",
+                "sequence": 310,
+                "inactive": false
+            },
+            {
+                "value": "account_address_relationship",
+                "label": "Account Address",
+                "sequence": 30,
+                "inactive": false
+            },
+            {
+                "value": "account_relationship",
+                "label": "Account Relationship",
+                "sequence": 50,
+                "inactive": false
+            },
+            {
+                "value": "sn_customerservice_m2m_asset_contact",
+                "label": "Asset Contact",
+                "sequence": 90,
+                "inactive": false
+            },
+            {
+                "value": "cmn_location",
+                "label": "Location",
+                "sequence": 250,
+                "inactive": false
+            },
+            {
+                "value": "customer_contact",
+                "label": "Contact",
+                "sequence": 160,
+                "inactive": false
+            },
+            {
+                "value": "csm_consumer",
+                "label": "Consumer",
+                "sequence": 120,
+                "inactive": false
+            },
+            {
+                "value": "sn_customerservice_task",
+                "label": "Case Task",
+                "sequence": 110,
+                "inactive": false
+            },
+            {
+                "value": "sn_customerservice_case",
+                "label": "Case",
+                "sequence": 100,
+                "inactive": false
+            },
+            {
+                "value": "sn_csm_consumer_profile_location",
+                "label": "Consumer Profile Location",
+                "sequence": 130,
+                "inactive": false
+            }
+        ],
+        "sn_customerservice_responsibility_access_config.association_type": [
+            {
+                "value": "SIMPLE",
+                "label": "Simple",
+                "sequence": 10,
+                "inactive": false
+            },
+            {
+                "value": "M2M",
+                "label": "Dependent",
+                "sequence": 20,
+                "inactive": false
+            },
+            {
+                "value": "ADVANCED",
+                "label": "Advanced",
+                "sequence": 30,
                 "inactive": false
             }
         ],
@@ -45919,6 +47035,116 @@
                 "inactive": false
             }
         ],
+        "cmn_skill_level.color": [
+            {
+                "value": "#677758",
+                "label": "green",
+                "sequence": 13,
+                "inactive": false
+            },
+            {
+                "value": "#C83C36",
+                "label": "critical",
+                "sequence": 1,
+                "inactive": false
+            },
+            {
+                "value": "#497A72",
+                "label": "teal",
+                "sequence": 17,
+                "inactive": false
+            },
+            {
+                "value": "#25832B",
+                "label": "positive",
+                "sequence": 5,
+                "inactive": false
+            },
+            {
+                "value": "#8E5564",
+                "label": "pink",
+                "sequence": 9,
+                "inactive": false
+            },
+            {
+                "value": "#6C7942",
+                "label": "green-yellow",
+                "sequence": 14,
+                "inactive": false
+            },
+            {
+                "value": "#905909",
+                "label": "high",
+                "sequence": 2,
+                "inactive": false
+            },
+            {
+                "value": "#7F6D92",
+                "label": "purple",
+                "sequence": 18,
+                "inactive": false
+            },
+            {
+                "value": "#0E78C4",
+                "label": "info",
+                "sequence": 6,
+                "inactive": false
+            },
+            {
+                "value": "#975A4A",
+                "label": "orange",
+                "sequence": 10,
+                "inactive": false
+            },
+            {
+                "value": "#547B8F",
+                "label": "blue",
+                "sequence": 15,
+                "inactive": false
+            },
+            {
+                "value": "#807808",
+                "label": "warning",
+                "sequence": 3,
+                "inactive": false
+            },
+            {
+                "value": "#666666",
+                "label": "low",
+                "sequence": 7,
+                "inactive": false
+            },
+            {
+                "value": "#A89147",
+                "label": "yellow",
+                "sequence": 11,
+                "inactive": false
+            },
+            {
+                "value": "#616669",
+                "label": "gray",
+                "sequence": 16,
+                "inactive": false
+            },
+            {
+                "value": "#5456CF",
+                "label": "moderate",
+                "sequence": 4,
+                "inactive": false
+            },
+            {
+                "value": "#8E5587",
+                "label": "magenta",
+                "sequence": 8,
+                "inactive": false
+            },
+            {
+                "value": "#6D6153",
+                "label": "brown",
+                "sequence": 12,
+                "inactive": false
+            }
+        ],
         "open_nlu_predict_intent_feedback.nlu_discovery_outcome": [
             {
                 "value": "correct",
@@ -47357,6 +48583,50 @@
                 "inactive": false
             }
         ],
+        "var__m_sys_hub_action_input_4e0b7622e741130068da6188d2f6a922.ah_channel": [
+            {
+                "value": "community",
+                "label": "Community",
+                "sequence": 7,
+                "inactive": false
+            },
+            {
+                "value": "social",
+                "label": "Social",
+                "sequence": 6,
+                "inactive": false
+            },
+            {
+                "value": "phone",
+                "label": "Phone",
+                "sequence": 3,
+                "inactive": false
+            },
+            {
+                "value": "email",
+                "label": "Email",
+                "sequence": 4,
+                "inactive": false
+            },
+            {
+                "value": "chat",
+                "label": "Chat",
+                "sequence": 5,
+                "inactive": false
+            },
+            {
+                "value": "",
+                "label": "-- None --",
+                "sequence": 1,
+                "inactive": false
+            },
+            {
+                "value": "web",
+                "label": "Web",
+                "sequence": 2,
+                "inactive": false
+            }
+        ],
         "var__m_3961a1da0a0a0b5c00ecd84822f70d85.modifier": [
             {
                 "value": "percentage",
@@ -47380,6 +48650,62 @@
                 "value": "NULL_OVERRIDE",
                 "label": "The full duration",
                 "sequence": 0,
+                "inactive": false
+            }
+        ],
+        "sn_customerservice_case.resolution_code": [
+            {
+                "value": "2",
+                "label": "Solved – Fixed by closing related PRB",
+                "sequence": 2,
+                "inactive": false
+            },
+            {
+                "value": "6",
+                "label": "Inconclusive – Cannot reproduce",
+                "sequence": 6,
+                "inactive": false
+            },
+            {
+                "value": "3",
+                "label": "Solved – Workaround provided based on open PRB",
+                "sequence": 3,
+                "inactive": false
+            },
+            {
+                "value": "7",
+                "label": "Inconclusive – No workaround",
+                "sequence": 7,
+                "inactive": false
+            },
+            {
+                "value": "4",
+                "label": "Solved by Customer",
+                "sequence": 4,
+                "inactive": false
+            },
+            {
+                "value": "8",
+                "label": "Duplicate Issue",
+                "sequence": 8,
+                "inactive": false
+            },
+            {
+                "value": "5",
+                "label": "Inconclusive – Out of scope",
+                "sequence": 5,
+                "inactive": false
+            },
+            {
+                "value": "9",
+                "label": "Voided/Canceled",
+                "sequence": 9,
+                "inactive": false
+            },
+            {
+                "value": "1",
+                "label": "Solved – Fixed by Support/Guidance provided",
+                "sequence": 1,
                 "inactive": false
             }
         ],
@@ -48280,6 +49606,32 @@
                 "value": "canvas",
                 "label": "Canvas",
                 "sequence": 0,
+                "inactive": false
+            }
+        ],
+        "sn_shn_notes.priority": [
+            {
+                "value": "1",
+                "label": "1 - Critical",
+                "sequence": 1,
+                "inactive": false
+            },
+            {
+                "value": "2",
+                "label": "2 - High",
+                "sequence": 2,
+                "inactive": false
+            },
+            {
+                "value": "3",
+                "label": "3 - Moderate",
+                "sequence": 3,
+                "inactive": false
+            },
+            {
+                "value": "4",
+                "label": "4 - Low",
+                "sequence": 4,
                 "inactive": false
             }
         ],
@@ -49907,6 +51259,26 @@
                 "inactive": false
             }
         ],
+        "matching_dimension_for_assignment.dimension_type": [
+            {
+                "value": "ranking_no_display",
+                "label": "Ranking and No Display",
+                "sequence": 2,
+                "inactive": false
+            },
+            {
+                "value": "ranking",
+                "label": "Ranking and Display",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "display",
+                "label": "Display Only",
+                "sequence": 1,
+                "inactive": false
+            }
+        ],
         "sys_cs_live_agent_setup.hr_fulfiller": [
             {
                 "value": "service_workspace",
@@ -49938,6 +51310,32 @@
                 "value": "BCFKS",
                 "label": "BouncyCastle format (BCFKS)",
                 "sequence": 2,
+                "inactive": false
+            }
+        ],
+        "awa_work_item.state": [
+            {
+                "value": "queued",
+                "label": "Queued",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "pending_accept",
+                "label": "Pending Accept",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "accepted",
+                "label": "Accepted",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "cancelled",
+                "label": "Cancelled",
+                "sequence": 0,
                 "inactive": false
             }
         ],
@@ -51443,6 +52841,56 @@
                 "inactive": false
             }
         ],
+        "customer_account.business_structure": [
+            {
+                "value": "partnerships",
+                "label": "Partnerships",
+                "sequence": 20,
+                "inactive": false
+            },
+            {
+                "value": "corporation_b_corp",
+                "label": "Corporation - B corp",
+                "sequence": 60,
+                "inactive": false
+            },
+            {
+                "value": "corporation_c_corp",
+                "label": "Corporation - C corp",
+                "sequence": 30,
+                "inactive": false
+            },
+            {
+                "value": "corporation_nonprofit",
+                "label": "Corporation – Nonprofit",
+                "sequence": 70,
+                "inactive": false
+            },
+            {
+                "value": "corporation_s_corp",
+                "label": "Corporation - S corp",
+                "sequence": 40,
+                "inactive": false
+            },
+            {
+                "value": "llc",
+                "label": "Limited Liability Company (LLC)",
+                "sequence": 80,
+                "inactive": false
+            },
+            {
+                "value": "sole_proprietorships",
+                "label": "Sole Proprietorships",
+                "sequence": 10,
+                "inactive": false
+            },
+            {
+                "value": "corporation_d_corp",
+                "label": "Corporation - D corp",
+                "sequence": 50,
+                "inactive": false
+            }
+        ],
         "sys_querystat.explain_status": [
             {
                 "value": "cannot",
@@ -51500,6 +52948,26 @@
                 "value": "Plotter (Roll)",
                 "label": "Plotter (Roll)",
                 "sequence": 0,
+                "inactive": false
+            }
+        ],
+        "awa_service_channel.log_level": [
+            {
+                "value": "basic",
+                "label": "Basic",
+                "sequence": 200,
+                "inactive": false
+            },
+            {
+                "value": "verbose",
+                "label": "Verbose",
+                "sequence": 300,
+                "inactive": false
+            },
+            {
+                "value": "none",
+                "label": "None",
+                "sequence": 100,
                 "inactive": false
             }
         ],
@@ -51598,6 +53066,32 @@
                 "value": "Error",
                 "label": "Error",
                 "sequence": 1,
+                "inactive": false
+            }
+        ],
+        "sn_customerservice_responsibility_access_config.access_levels": [
+            {
+                "value": "FULL",
+                "label": "Full",
+                "sequence": 100,
+                "inactive": false
+            },
+            {
+                "value": "READ",
+                "label": "Read",
+                "sequence": 10,
+                "inactive": false
+            },
+            {
+                "value": "WRITE",
+                "label": "Write",
+                "sequence": 20,
+                "inactive": false
+            },
+            {
+                "value": "CREATE",
+                "label": "Create",
+                "sequence": 30,
                 "inactive": false
             }
         ],
@@ -53183,6 +54677,26 @@
                 "inactive": false
             }
         ],
+        "sn_customerservice_case.notify": [
+            {
+                "value": "2",
+                "label": "Send Email",
+                "sequence": 2,
+                "inactive": false
+            },
+            {
+                "value": "3",
+                "label": "Telephone",
+                "sequence": 3,
+                "inactive": false
+            },
+            {
+                "value": "1",
+                "label": "Do Not Notify",
+                "sequence": 1,
+                "inactive": false
+            }
+        ],
         "knowledge_based_question_service_mapping.type": [
             {
                 "value": "authentication",
@@ -53466,6 +54980,44 @@
                 "value": "available",
                 "label": "Available",
                 "sequence": 1,
+                "inactive": false
+            }
+        ],
+        "sn_customerservice_case.state": [
+            {
+                "value": "10",
+                "label": "Open",
+                "sequence": 3,
+                "inactive": false
+            },
+            {
+                "value": "7",
+                "label": "Cancelled",
+                "sequence": 8,
+                "inactive": false
+            },
+            {
+                "value": "18",
+                "label": "Awaiting Info",
+                "sequence": 4,
+                "inactive": false
+            },
+            {
+                "value": "6",
+                "label": "Resolved",
+                "sequence": 5,
+                "inactive": false
+            },
+            {
+                "value": "1",
+                "label": "New",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "3",
+                "label": "Closed",
+                "sequence": 6,
                 "inactive": false
             }
         ],
@@ -54418,6 +55970,20 @@
                 "value": "action",
                 "label": "From License Action",
                 "sequence": 2,
+                "inactive": false
+            }
+        ],
+        "matching_dimension_for_assignment.ranking_method": [
+            {
+                "value": "less is better",
+                "label": "Less is better",
+                "sequence": 1,
+                "inactive": false
+            },
+            {
+                "value": "more is better",
+                "label": "More is better",
+                "sequence": 0,
                 "inactive": false
             }
         ],
@@ -56747,6 +58313,26 @@
                 "inactive": false
             }
         ],
+        "sn_customerservice_case.category": [
+            {
+                "value": "1",
+                "label": "Issue",
+                "sequence": 1,
+                "inactive": false
+            },
+            {
+                "value": "2",
+                "label": "Feature",
+                "sequence": 2,
+                "inactive": false
+            },
+            {
+                "value": "0",
+                "label": "Question",
+                "sequence": 0,
+                "inactive": false
+            }
+        ],
         "sys_notification_property.type": [
             {
                 "value": "string",
@@ -57011,6 +58597,20 @@
                 "inactive": false
             }
         ],
+        "sn_shn_notes.type": [
+            {
+                "value": "2",
+                "label": "2 - Conditional",
+                "sequence": 2,
+                "inactive": false
+            },
+            {
+                "value": "1",
+                "label": "1 - Standard",
+                "sequence": 1,
+                "inactive": false
+            }
+        ],
         "var__m_sys_hub_flow_logic_input_fdb2541473031300b61e66476bf6a70e.duration_type": [
             {
                 "value": "percentage_duration",
@@ -57152,6 +58752,38 @@
                 "value": "LOGIC",
                 "label": "LOGIC",
                 "sequence": 0,
+                "inactive": false
+            }
+        ],
+        "sn_customercentral_cust_info_config.layout": [
+            {
+                "value": "8,4",
+                "label": "Two Column Layout - (8,4)",
+                "sequence": 3,
+                "inactive": false
+            },
+            {
+                "value": "12",
+                "label": "Single Column Layout",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "3,6,3",
+                "label": "Three Column Layout - (3,6,3)",
+                "sequence": 4,
+                "inactive": false
+            },
+            {
+                "value": "6,6",
+                "label": "Two Column Layout - (6,6)",
+                "sequence": 1,
+                "inactive": false
+            },
+            {
+                "value": "4,8",
+                "label": "Two Column Layout - (4,8)",
+                "sequence": 2,
                 "inactive": false
             }
         ],
@@ -57933,6 +59565,32 @@
                 "inactive": false
             }
         ],
+        "awa_work_item.consult_state": [
+            {
+                "value": "transferred",
+                "label": "Transferred",
+                "sequence": 300,
+                "inactive": false
+            },
+            {
+                "value": "ended",
+                "label": "Ended",
+                "sequence": 400,
+                "inactive": false
+            },
+            {
+                "value": "requested",
+                "label": "Requested",
+                "sequence": 100,
+                "inactive": false
+            },
+            {
+                "value": "in_progress",
+                "label": "In Progress",
+                "sequence": 200,
+                "inactive": false
+            }
+        ],
         "var__m_sys_hub_action_input_aba85ea653b23010cc98ddeeff7b12b3.where": [
             {
                 "value": "AFTER",
@@ -58667,6 +60325,52 @@
                 "inactive": false
             }
         ],
+        "customer_account.industry": [
+            {
+                "value": "technology_services",
+                "label": "Technology Services",
+                "sequence": 30,
+                "inactive": false
+            },
+            {
+                "value": "banking",
+                "label": "Banking",
+                "sequence": 40,
+                "inactive": false
+            },
+            {
+                "value": "manufacturing",
+                "label": "Manufacturing",
+                "sequence": 10,
+                "inactive": false
+            },
+            {
+                "value": "bio_technology",
+                "label": "Bio-Technology",
+                "sequence": 50,
+                "inactive": false
+            },
+            {
+                "value": "healthcare",
+                "label": "Healthcare",
+                "sequence": 20,
+                "inactive": false
+            }
+        ],
+        "customer_account.tribal_affiliation_status": [
+            {
+                "value": "yes",
+                "label": "Yes",
+                "sequence": 10,
+                "inactive": false
+            },
+            {
+                "value": "no",
+                "label": "No",
+                "sequence": 20,
+                "inactive": false
+            }
+        ],
         "sys_widgets.renderer_type": [
             {
                 "value": "java",
@@ -58698,6 +60402,20 @@
                 "value": "conditionally_attach_to_target",
                 "label": "Conditionally Attach to Target Record",
                 "sequence": 0,
+                "inactive": false
+            }
+        ],
+        "sn_customerservice_responsibility_access_config.restrict_access_to": [
+            {
+                "value": "CONTACT",
+                "label": "Contact",
+                "sequence": 10,
+                "inactive": false
+            },
+            {
+                "value": "CONSUMER",
+                "label": "Consumer",
+                "sequence": 20,
                 "inactive": false
             }
         ],
@@ -60105,6 +61823,26 @@
                 "inactive": false
             }
         ],
+        "sn_shn_notes.status": [
+            {
+                "value": "2",
+                "label": "2 - Inactive",
+                "sequence": 2,
+                "inactive": false
+            },
+            {
+                "value": "3",
+                "label": "3 - Expired",
+                "sequence": 3,
+                "inactive": false
+            },
+            {
+                "value": "1",
+                "label": "1 - Active",
+                "sequence": 1,
+                "inactive": false
+            }
+        ],
         "var__m_sys_hub_action_output_acb2d9b3db435b00dd14596e5e961947.status": [
             {
                 "value": "Error",
@@ -60743,6 +62481,32 @@
                 "inactive": false
             }
         ],
+        "awa_work_item.cancelled_reason": [
+            {
+                "value": "manually_assigned",
+                "label": "Manually assigned",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "transfer_cancelled",
+                "label": "Transfer was cancelled or rejected",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "timeout",
+                "label": "Time out",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "disqualified",
+                "label": "Disqualified from service channel",
+                "sequence": 0,
+                "inactive": false
+            }
+        ],
         "ais_connection.type": [
             {
                 "value": "0",
@@ -60912,6 +62676,26 @@
                 "value": "phone",
                 "label": "Phone",
                 "sequence": 0,
+                "inactive": false
+            }
+        ],
+        "sn_publications_publication_contact_m2m.type": [
+            {
+                "value": "consumers",
+                "label": "Consumers",
+                "sequence": 2,
+                "inactive": false
+            },
+            {
+                "value": "external",
+                "label": "Contacts",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "internal",
+                "label": "Internal Users",
+                "sequence": 1,
                 "inactive": false
             }
         ],
@@ -62745,6 +64529,26 @@
                 "inactive": false
             }
         ],
+        "var__m_sys_hub_action_input_710b3622e741130068da6188d2f6a9b6.ah_category": [
+            {
+                "value": "1",
+                "label": "Issue",
+                "sequence": 2,
+                "inactive": false
+            },
+            {
+                "value": "0",
+                "label": "Question",
+                "sequence": 1,
+                "inactive": false
+            },
+            {
+                "value": "2",
+                "label": "Feature",
+                "sequence": 3,
+                "inactive": false
+            }
+        ],
         "pa_widget_indicators.chart_type": [
             {
                 "value": "line",
@@ -63554,6 +65358,26 @@
                 "value": "Success",
                 "label": "Success",
                 "sequence": 0,
+                "inactive": false
+            }
+        ],
+        "sn_customerservice_responsibility_def.applicable_to": [
+            {
+                "value": "AGENT",
+                "label": "Agent",
+                "sequence": 20,
+                "inactive": false
+            },
+            {
+                "value": "CUSTOMER",
+                "label": "Customer",
+                "sequence": 10,
+                "inactive": false
+            },
+            {
+                "value": "MANAGER",
+                "label": "Manager",
+                "sequence": 30,
                 "inactive": false
             }
         ],
@@ -65374,6 +67198,20 @@
             }
         ],
         "sys_cs_context_topic.condition_mode": [
+            {
+                "value": "advanced",
+                "label": "Advanced",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "simple",
+                "label": "Simple",
+                "sequence": 0,
+                "inactive": false
+            }
+        ],
+        "awa_queue.condition_mode": [
             {
                 "value": "advanced",
                 "label": "Advanced",
@@ -68119,6 +69957,32 @@
                 "inactive": false
             }
         ],
+        "matching_rule.matching_options": [
+            {
+                "value": "simple",
+                "label": "Simple",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "dynamic",
+                "label": "Advanced",
+                "sequence": 1,
+                "inactive": false
+            },
+            {
+                "value": "script",
+                "label": "Scripted",
+                "sequence": 2,
+                "inactive": false
+            },
+            {
+                "value": "recommendation criteria",
+                "label": "Selection Criteria",
+                "sequence": 3,
+                "inactive": false
+            }
+        ],
         "gsw_task.state": [
             {
                 "value": "4",
@@ -68232,6 +70096,32 @@
                 "value": "processing",
                 "label": "Processing",
                 "sequence": 0,
+                "inactive": false
+            }
+        ],
+        "sys_sensitive_data_handling_regex.masking_symbol": [
+            {
+                "value": "#",
+                "label": "#",
+                "sequence": 4,
+                "inactive": false
+            },
+            {
+                "value": "X",
+                "label": "X",
+                "sequence": 1,
+                "inactive": false
+            },
+            {
+                "value": ".",
+                "label": ".",
+                "sequence": 2,
+                "inactive": false
+            },
+            {
+                "value": "*",
+                "label": "*",
+                "sequence": 3,
                 "inactive": false
             }
         ],
@@ -70041,6 +71931,32 @@
                 "inactive": false
             }
         ],
+        "sn_customerservice_case.priority": [
+            {
+                "value": "4",
+                "label": "4 - Low",
+                "sequence": 4,
+                "inactive": false
+            },
+            {
+                "value": "1",
+                "label": "1 - Critical",
+                "sequence": 1,
+                "inactive": false
+            },
+            {
+                "value": "2",
+                "label": "2 - High",
+                "sequence": 2,
+                "inactive": false
+            },
+            {
+                "value": "3",
+                "label": "3 - Moderate",
+                "sequence": 3,
+                "inactive": false
+            }
+        ],
         "sys_language.text_direction": [
             {
                 "value": "rtl",
@@ -70410,6 +72326,32 @@
                 "value": "event",
                 "label": "Event",
                 "sequence": 2,
+                "inactive": false
+            }
+        ],
+        "sn_customerservice_responsibility_def.type": [
+            {
+                "value": "sys_user",
+                "label": "User",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "customer_contact",
+                "label": "Contact",
+                "sequence": 1,
+                "inactive": false
+            },
+            {
+                "value": "csm_consumer",
+                "label": "Consumer",
+                "sequence": 2,
+                "inactive": false
+            },
+            {
+                "value": "customer_account",
+                "label": "Account",
+                "sequence": 3,
                 "inactive": false
             }
         ],
@@ -73230,6 +75172,12 @@
                 "value": "portal_activity",
                 "label": "Portal activity",
                 "sequence": 1,
+                "inactive": false
+            },
+            {
+                "value": "cases",
+                "label": "Cases",
+                "sequence": 2,
                 "inactive": false
             }
         ],
@@ -77449,6 +79397,20 @@
                 "inactive": false
             }
         ],
+        "awa_queue.evaluation_scope": [
+            {
+                "value": "document",
+                "label": "Document",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "queue",
+                "label": "Queue",
+                "sequence": 0,
+                "inactive": false
+            }
+        ],
         "sys_push_notif_msg_attr_def.type": [
             {
                 "value": "action",
@@ -77598,6 +79560,32 @@
                 "value": "2",
                 "label": "Work in progress",
                 "sequence": 1,
+                "inactive": false
+            }
+        ],
+        "messaging_action.action": [
+            {
+                "value": "reassign",
+                "label": "Reassign",
+                "sequence": 3,
+                "inactive": false
+            },
+            {
+                "value": "set_state",
+                "label": "Set State",
+                "sequence": 4,
+                "inactive": false
+            },
+            {
+                "value": "prompt_agent",
+                "label": "Prompt Agent",
+                "sequence": 1,
+                "inactive": false
+            },
+            {
+                "value": "prompt_requester",
+                "label": "Prompt Requester",
+                "sequence": 2,
                 "inactive": false
             }
         ],
@@ -78176,6 +80164,26 @@
                 "value": "processing",
                 "label": "Processing",
                 "sequence": 2,
+                "inactive": false
+            }
+        ],
+        "matching_dimension.dimension_type": [
+            {
+                "value": "simple",
+                "label": "Simple Match",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "script",
+                "label": "Scripted",
+                "sequence": 2,
+                "inactive": false
+            },
+            {
+                "value": "aggregate",
+                "label": "Aggregate",
+                "sequence": 1,
                 "inactive": false
             }
         ],
@@ -80139,6 +82147,38 @@
                 "inactive": false
             }
         ],
+        "var__m_sys_hub_action_input_710b3622e741130068da6188d2f6a9b6.ah_priority": [
+            {
+                "value": "3",
+                "label": "3 - Moderate",
+                "sequence": 4,
+                "inactive": false
+            },
+            {
+                "value": "2",
+                "label": "2 - High",
+                "sequence": 3,
+                "inactive": false
+            },
+            {
+                "value": "4",
+                "label": "4 - Low",
+                "sequence": 5,
+                "inactive": false
+            },
+            {
+                "value": "",
+                "label": "-- None --",
+                "sequence": 1,
+                "inactive": false
+            },
+            {
+                "value": "1",
+                "label": "1 - Critical",
+                "sequence": 2,
+                "inactive": false
+            }
+        ],
         "asmt_metric.correct_answer_checkbox": [
             {
                 "value": "1",
@@ -81893,6 +83933,20 @@
                 "inactive": false
             }
         ],
+        "messaging_action_timer.state": [
+            {
+                "value": "scheduled",
+                "label": "Scheduled",
+                "sequence": 1,
+                "inactive": false
+            },
+            {
+                "value": "processed",
+                "label": "Processed",
+                "sequence": 2,
+                "inactive": false
+            }
+        ],
         "var__m_354e911f0a0a029a00e6a0e6ad74206f.reject_handling": [
             {
                 "value": "reject",
@@ -82292,6 +84346,58 @@
                 "value": "ANY",
                 "label": "Any",
                 "sequence": 0,
+                "inactive": false
+            }
+        ],
+        "var__m_sys_hub_action_input_4e0b7622e741130068da6188d2f6a922.ah_category": [
+            {
+                "value": "2",
+                "label": "Feature",
+                "sequence": 3,
+                "inactive": false
+            },
+            {
+                "value": "0",
+                "label": "Question",
+                "sequence": 1,
+                "inactive": false
+            },
+            {
+                "value": "1",
+                "label": "Issue",
+                "sequence": 2,
+                "inactive": false
+            }
+        ],
+        "var__m_sys_hub_action_input_4e0b7622e741130068da6188d2f6a922.ah_priority": [
+            {
+                "value": "2",
+                "label": "2 - High",
+                "sequence": 3,
+                "inactive": false
+            },
+            {
+                "value": "3",
+                "label": "3 - Moderate",
+                "sequence": 4,
+                "inactive": false
+            },
+            {
+                "value": "4",
+                "label": "4 - Low",
+                "sequence": 5,
+                "inactive": false
+            },
+            {
+                "value": "",
+                "label": "-- None --",
+                "sequence": 1,
+                "inactive": false
+            },
+            {
+                "value": "1",
+                "label": "1 - Critical",
+                "sequence": 2,
                 "inactive": false
             }
         ],
@@ -82896,6 +85002,26 @@
                 "value": "warning",
                 "label": "Warning",
                 "sequence": 1,
+                "inactive": false
+            }
+        ],
+        "sn_customerservice_registration.state": [
+            {
+                "value": "pending",
+                "label": "Pending",
+                "sequence": 1,
+                "inactive": false
+            },
+            {
+                "value": "processed",
+                "label": "Processed",
+                "sequence": 2,
+                "inactive": false
+            },
+            {
+                "value": "rejected",
+                "label": "Rejected",
+                "sequence": 3,
                 "inactive": false
             }
         ],
@@ -84161,6 +86287,26 @@
                 "inactive": false
             }
         ],
+        "sn_customerservice_escalation.trend": [
+            {
+                "value": "0",
+                "label": "Improving",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "1",
+                "label": "Same",
+                "sequence": 1,
+                "inactive": false
+            },
+            {
+                "value": "2",
+                "label": "Declining",
+                "sequence": 2,
+                "inactive": false
+            }
+        ],
         "var__m_sys_hub_flow_output_84dce777c7010110408bc8d6f2c260d6.approval": [
             {
                 "value": "rejected",
@@ -84240,6 +86386,20 @@
                 "value": "training",
                 "label": "Training",
                 "sequence": 1,
+                "inactive": false
+            }
+        ],
+        "awa_assignment_rule.display_option": [
+            {
+                "value": "card_only",
+                "label": "Inbox card",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "card_and_tab",
+                "label": "Inbox card and workspace tab",
+                "sequence": 0,
                 "inactive": false
             }
         ],
@@ -84579,6 +86739,20 @@
                 "inactive": false
             }
         ],
+        "agent_work_schedule.type": [
+            {
+                "value": "0",
+                "label": "Primary Work",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "1",
+                "label": "Other",
+                "sequence": 1,
+                "inactive": false
+            }
+        ],
         "itil_agreement_ci.type": [
             {
                 "value": "Environment",
@@ -84676,6 +86850,20 @@
                 "value": "file",
                 "label": "File",
                 "sequence": 0,
+                "inactive": false
+            }
+        ],
+        "awa_queue_item_sorting.sort_direction": [
+            {
+                "value": "ascending",
+                "label": "Ascending",
+                "sequence": 1,
+                "inactive": false
+            },
+            {
+                "value": "descending",
+                "label": "Descending",
+                "sequence": 2,
                 "inactive": false
             }
         ],
@@ -85029,6 +87217,28 @@
                 "inactive": false
             }
         ],
+        "sn_customerservice_case.subcategory": [
+            {
+                "value": "0",
+                "label": "Question",
+                "sequence": 0,
+                "inactive": false
+            }
+        ],
+        "sn_customerservice_task.state": [
+            {
+                "value": "1",
+                "label": "Open",
+                "sequence": 1,
+                "inactive": false
+            },
+            {
+                "value": "3",
+                "label": "Closed",
+                "sequence": 3,
+                "inactive": false
+            }
+        ],
         "sys_auth_policy_context.type": [
             {
                 "value": "pre_auth",
@@ -85353,6 +87563,20 @@
                 "inactive": false
             }
         ],
+        "sn_customerservice_account_relationship_type.from": [
+            {
+                "value": "account",
+                "label": "Account",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "partner",
+                "label": "Partner",
+                "sequence": 1,
+                "inactive": false
+            }
+        ],
         "var__m_sys_ux_lib_component_attr_634f9e5267e0330075e8ebc172415abf.type": [
             {
                 "value": "default",
@@ -85534,6 +87758,32 @@
                 "value": "1",
                 "label": "Custom",
                 "sequence": 2,
+                "inactive": false
+            }
+        ],
+        "sn_publications_recipients_list.type": [
+            {
+                "value": "consumers",
+                "label": "Consumers",
+                "sequence": 2,
+                "inactive": false
+            },
+            {
+                "value": "accounts",
+                "label": "Accounts",
+                "sequence": 3,
+                "inactive": false
+            },
+            {
+                "value": "external",
+                "label": "Contacts",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "internal",
+                "label": "Internal Users",
+                "sequence": 1,
                 "inactive": false
             }
         ],
@@ -86771,6 +89021,12 @@
                 "inactive": false
             },
             {
+                "value": "email",
+                "label": "Email",
+                "sequence": 950,
+                "inactive": false
+            },
+            {
                 "value": "chat",
                 "label": "Chat",
                 "sequence": 900,
@@ -87841,6 +90097,20 @@
                 "inactive": false
             }
         ],
+        "sys_sensitive_data_handling_regex.start_masking_from": [
+            {
+                "value": "Left to right",
+                "label": "Left to right",
+                "sequence": 1,
+                "inactive": false
+            },
+            {
+                "value": "Right to left",
+                "label": "Right to left",
+                "sequence": 2,
+                "inactive": false
+            }
+        ],
         "sc_wizard_section.style": [
             {
                 "value": "card",
@@ -88511,6 +90781,26 @@
                 "inactive": false
             }
         ],
+        "sn_customerservice_customer_interaction.category": [
+            {
+                "value": "product",
+                "label": "Product Issue",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "billing",
+                "label": "Billing Issue",
+                "sequence": 1,
+                "inactive": false
+            },
+            {
+                "value": "order",
+                "label": "Order Issue",
+                "sequence": 2,
+                "inactive": false
+            }
+        ],
         "par_coreui_migration_bridge_component.type": [
             {
                 "value": "report",
@@ -88754,6 +91044,20 @@
                 "value": "APJ",
                 "label": "APJ",
                 "sequence": 3,
+                "inactive": false
+            }
+        ],
+        "messaging_action.event": [
+            {
+                "value": "requester_waiting_for_agent",
+                "label": "Requester Message without Agent Response",
+                "sequence": 1,
+                "inactive": false
+            },
+            {
+                "value": "agent_waiting_for_requester",
+                "label": "Agent Message without Requester Response",
+                "sequence": 2,
                 "inactive": false
             }
         ],
@@ -89130,6 +91434,20 @@
                 "value": "test",
                 "label": "Test",
                 "sequence": 2,
+                "inactive": false
+            }
+        ],
+        "sn_customerservice_escalation_template.type": [
+            {
+                "value": "0",
+                "label": "Case Escalation",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "1",
+                "label": "Account Escalation",
+                "sequence": 1,
                 "inactive": false
             }
         ],
@@ -90583,6 +92901,20 @@
                 "inactive": false
             }
         ],
+        "service_entitlement.unit": [
+            {
+                "value": "cases",
+                "label": "Cases",
+                "sequence": 1,
+                "inactive": false
+            },
+            {
+                "value": "hours",
+                "label": "Hours",
+                "sequence": 2,
+                "inactive": false
+            }
+        ],
         "one_api_service_plan_feature_edge.error_policy": [
             {
                 "value": "continue",
@@ -90748,6 +93080,20 @@
                 "value": "RULE_FINDING",
                 "label": "Rule Finding",
                 "sequence": 200,
+                "inactive": false
+            }
+        ],
+        "sn_customerservice_escalation.request_source": [
+            {
+                "value": "0",
+                "label": "Customer",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "1",
+                "label": "Internal",
+                "sequence": 1,
                 "inactive": false
             }
         ],
@@ -91065,6 +93411,20 @@
                 "inactive": false
             }
         ],
+        "awa_queue_trigger.trigger_type": [
+            {
+                "value": "max_wait",
+                "label": "Max Wait",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "wait",
+                "label": "Wait",
+                "sequence": 0,
+                "inactive": false
+            }
+        ],
         "var__m_sn_ace_variable_0a4f2e5a533541102958ddeeff7b12ab.metric_aggregation_function": [
             {
                 "value": "count_distinct",
@@ -91262,6 +93622,14 @@
                 "value": "published",
                 "label": "Published",
                 "sequence": 2,
+                "inactive": false
+            }
+        ],
+        "csm_consumer.preferred_language": [
+            {
+                "value": "en",
+                "label": "English",
+                "sequence": 0,
                 "inactive": false
             }
         ],
@@ -91544,6 +93912,20 @@
                 "value": "data_import",
                 "label": "Data import",
                 "sequence": 10,
+                "inactive": false
+            }
+        ],
+        "customer_account.minority_ownership_status": [
+            {
+                "value": "yes",
+                "label": "Yes",
+                "sequence": 10,
+                "inactive": false
+            },
+            {
+                "value": "no",
+                "label": "No",
+                "sequence": 20,
                 "inactive": false
             }
         ],
@@ -92219,6 +94601,46 @@
                 "inactive": false
             }
         ],
+        "sn_customerservice_account_relationship_type.to": [
+            {
+                "value": "account",
+                "label": "Account",
+                "sequence": 0,
+                "inactive": false
+            },
+            {
+                "value": "partner",
+                "label": "Partner",
+                "sequence": 1,
+                "inactive": false
+            }
+        ],
+        "sn_customerservice_task.priority": [
+            {
+                "value": "1",
+                "label": "1 - Critical",
+                "sequence": 1,
+                "inactive": false
+            },
+            {
+                "value": "2",
+                "label": "2 - High",
+                "sequence": 2,
+                "inactive": false
+            },
+            {
+                "value": "3",
+                "label": "3 - Moderate",
+                "sequence": 3,
+                "inactive": false
+            },
+            {
+                "value": "4",
+                "label": "4 - Low",
+                "sequence": 4,
+                "inactive": false
+            }
+        ],
         "sys_cs_auto_resolution_ai_search_result.status": [
             {
                 "value": "success",
@@ -92286,6 +94708,20 @@
                 "value": "yes",
                 "label": "Yes",
                 "sequence": 0,
+                "inactive": false
+            }
+        ],
+        "sn_shn_configuration.notification_title": [
+            {
+                "value": "special_handling_notes",
+                "label": "Special Handling Notes",
+                "sequence": 1,
+                "inactive": false
+            },
+            {
+                "value": "important_notes",
+                "label": "Important Notes",
+                "sequence": 2,
                 "inactive": false
             }
         ],
@@ -93267,6 +95703,20 @@
                 "inactive": false
             }
         ],
+        "sys_sensitive_data_handling_regex.status": [
+            {
+                "value": "active",
+                "label": "Active",
+                "sequence": 1,
+                "inactive": false
+            },
+            {
+                "value": "inactive",
+                "label": "Inactive",
+                "sequence": 2,
+                "inactive": false
+            }
+        ],
         "cmdb_software_product_model.activation_status": [
             {
                 "value": "activated",
@@ -94112,22 +96562,6 @@
                 "value": "primary",
                 "label": "Primary",
                 "sequence": 0,
-                "inactive": false
-            }
-        ],
-        "sn_publications_publication_contact_m2m.type": [
-            {
-                "value": "internal",
-                "label": "Internal Users",
-                "sequence": 1,
-                "inactive": false
-            }
-        ],
-        "sn_publications_recipients_list.type": [
-            {
-                "value": "internal",
-                "label": "Internal Users",
-                "sequence": 1,
                 "inactive": false
             }
         ],

@@ -3,6 +3,24 @@
     "_source": "sys_db_object",
     "_description": "Tables on the instance.",
     "tables": {
+        "account_address_relationship": {
+            "sys_id": "0d8da976c3780b10b4e13e1d05013164",
+            "label": "Account Address",
+            "super_class": "",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "account_relationship": {
+            "sys_id": "348d6976c3780b10b4e13e1d0501318c",
+            "label": "Account Relationship",
+            "super_class": "",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
         "account_subscription_entitlement": {
             "sys_id": "77236428f50c03100a22c0b3dfa151da",
             "label": "Account Subscription Entitlement",
@@ -30,9 +48,72 @@
             "number_prefix": "",
             "access": ""
         },
+        "agent_daily_schedule": {
+            "sys_id": "077d2176c3780b10b4e13e1d050131cf",
+            "label": "Agent Daily Schedule",
+            "super_class": "",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "agent_events": {
+            "sys_id": "6e7dad36c3780b10b4e13e1d050131d3",
+            "label": "Agent Personal Schedule",
+            "super_class": "",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
         "agent_file": {
             "sys_id": "a26bd0e4f58403100a22c0b3dfa15116",
             "label": "MID Server File",
+            "super_class": "",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "agent_schedule_definition_theme": {
+            "sys_id": "e27ded36c3780b10b4e13e1d0501310a",
+            "label": "Agent Schedule Definition Theme",
+            "super_class": "",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "agent_schedule_task_config": {
+            "sys_id": "977d6176c3780b10b4e13e1d0501319a",
+            "label": "Event Configuration",
+            "super_class": "",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "agent_schedule_task_config_rel_user_pref": {
+            "sys_id": "8b7d2176c3780b10b4e13e1d0501315a",
+            "label": "Agent Schedule Relationship",
+            "super_class": "",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "agent_schedule_user_pref": {
+            "sys_id": "f67ded36c3780b10b4e13e1d0501313b",
+            "label": "Agent Schedule User Config",
+            "super_class": "",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "agent_work_schedule": {
+            "sys_id": "a67dad36c3780b10b4e13e1d05013192",
+            "label": "Agent Work Schedule",
             "super_class": "",
             "scope": "global",
             "is_extendable": false,
@@ -1639,6 +1720,276 @@
             "scope": "global",
             "is_extendable": false,
             "number_prefix": "15d58598c31832007bf1bea192d3ae9a",
+            "access": ""
+        },
+        "awa_agent_assignment": {
+            "sys_id": "ac9d65b6c3780b10b4e13e1d050131ec",
+            "label": "Agent Assignment",
+            "super_class": "",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "awa_agent_capacity": {
+            "sys_id": "879dadb6c3780b10b4e13e1d0501316a",
+            "label": "Agent Capacity",
+            "super_class": "",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "awa_agent_channel_availability": {
+            "sys_id": "f89da5b6c3780b10b4e13e1d050131c7",
+            "label": "Agent channel availability",
+            "super_class": "",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "awa_agent_presence": {
+            "sys_id": "1b9dedb6c3780b10b4e13e1d050131cd",
+            "label": "Agent Presence",
+            "super_class": "",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "awa_agent_presence_history": {
+            "sys_id": "778de1b6c3780b10b4e13e1d0501317b",
+            "label": "Agent presence history",
+            "super_class": "",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "awa_agent_presence_query_history": {
+            "sys_id": "179dedb6c3780b10b4e13e1d05013179",
+            "label": "Agent Presence Query History",
+            "super_class": "",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "awa_agent_universal_capacity": {
+            "sys_id": "5b8d61b6c3780b10b4e13e1d050131bb",
+            "label": "Agent Universal Capacity",
+            "super_class": "",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "awa_assignment_rule": {
+            "sys_id": "838d61b6c3780b10b4e13e1d05013151",
+            "label": "Assignment Rule",
+            "super_class": "4e831020f50003100a22c0b3dfa151a2",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "awa_document_size": {
+            "sys_id": "c09de1b6c3780b10b4e13e1d050131f1",
+            "label": "Awa Document Size",
+            "super_class": "",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "awa_document_type": {
+            "sys_id": "f78de1b6c3780b10b4e13e1d05013141",
+            "label": "Awa Document Type",
+            "super_class": "4e831020f50003100a22c0b3dfa151a2",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "awa_eligibility_pool": {
+            "sys_id": "af9d21f6c3780b10b4e13e1d050131b2",
+            "label": "Assignment Eligibility",
+            "super_class": "",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "awa_group_queue_priority": {
+            "sys_id": "cb8d21b6c3780b10b4e13e1d050131c6",
+            "label": "Group Queue Priority",
+            "super_class": "",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "awa_inbox_layout": {
+            "sys_id": "e49da5b6c3780b10b4e13e1d05013127",
+            "label": "Inbox Layout",
+            "super_class": "4e831020f50003100a22c0b3dfa151a2",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "awa_instance_stats": {
+            "sys_id": "238de1b6c3780b10b4e13e1d0501310b",
+            "label": "AWA Instance Statistics",
+            "super_class": "",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "awa_offer_details": {
+            "sys_id": "149d25b6c3780b10b4e13e1d050131fe",
+            "label": "Offer Details",
+            "super_class": "",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "awa_presence_state": {
+            "sys_id": "979d21f6c3780b10b4e13e1d05013142",
+            "label": "Presence State",
+            "super_class": "4e831020f50003100a22c0b3dfa151a2",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "awa_queue": {
+            "sys_id": "3e8ded76c3780b10b4e13e1d050131e3",
+            "label": "Queue",
+            "super_class": "4e831020f50003100a22c0b3dfa151a2",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "awa_queue_item_sorting": {
+            "sys_id": "6b9d61f6c3780b10b4e13e1d05013122",
+            "label": "Work Item Sort Order",
+            "super_class": "4e831020f50003100a22c0b3dfa151a2",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "awa_queue_metrics": {
+            "sys_id": "8c9d25b6c3780b10b4e13e1d05013147",
+            "label": "Queue Metrics",
+            "super_class": "",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "awa_queue_stats": {
+            "sys_id": "049d25b6c3780b10b4e13e1d0501318d",
+            "label": "AWA Queue Statistics",
+            "super_class": "",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "awa_queue_trigger": {
+            "sys_id": "4b9dadb6c3780b10b4e13e1d050131ea",
+            "label": "Queue Trigger",
+            "super_class": "",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "awa_reject_reason": {
+            "sys_id": "178d61b6c3780b10b4e13e1d050131fe",
+            "label": "Reject Reason",
+            "super_class": "4e831020f50003100a22c0b3dfa151a2",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "awa_service_channel": {
+            "sys_id": "9c9d65b6c3780b10b4e13e1d05013148",
+            "label": "Service Channel",
+            "super_class": "4e831020f50003100a22c0b3dfa151a2",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "awa_service_channel_group": {
+            "sys_id": "b49de5b6c3780b10b4e13e1d05013127",
+            "label": "Service Channel Group",
+            "super_class": "4e831020f50003100a22c0b3dfa151a2",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "awa_service_channel_metrics": {
+            "sys_id": "f78de1b6c3780b10b4e13e1d050131be",
+            "label": "Service Channel Metrics",
+            "super_class": "",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "awa_service_channel_stats": {
+            "sys_id": "cf8d61b6c3780b10b4e13e1d05013109",
+            "label": "AWA Service Channel Statistics",
+            "super_class": "",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "awa_skill": {
+            "sys_id": "749da5b6c3780b10b4e13e1d05013173",
+            "label": "AWA Skills",
+            "super_class": "",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "awa_work_item": {
+            "sys_id": "af8da1b6c3780b10b4e13e1d0501312f",
+            "label": "Work Item",
+            "super_class": "",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "awa_work_item_rejection": {
+            "sys_id": "329dadb6c3780b10b4e13e1d05013102",
+            "label": "Work Item Rejection",
+            "super_class": "",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "awa_work_item_sizing": {
+            "sys_id": "ba8d21b6c3780b10b4e13e1d05013175",
+            "label": "Work Item Sizing",
+            "super_class": "4e831020f50003100a22c0b3dfa151a2",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
             "access": ""
         },
         "aws_credentials": {
@@ -11271,6 +11622,24 @@
             "number_prefix": "",
             "access": ""
         },
+        "cmn_location_type": {
+            "sys_id": "118de976c3780b10b4e13e1d050131d2",
+            "label": "Address Type",
+            "super_class": "",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "cmn_m2m_skill_model": {
+            "sys_id": "927d6d36c3780b10b4e13e1d050131e7",
+            "label": "Skill Required For Model Maintenance",
+            "super_class": "",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
         "cmn_map_coordinate_definition": {
             "sys_id": "0cfa1ca0f58403100a22c0b3dfa1517b",
             "label": "Map Coordinate Definition",
@@ -11487,6 +11856,60 @@
             "number_prefix": "",
             "access": ""
         },
+        "cmn_skill": {
+            "sys_id": "2d7d2d36c3780b10b4e13e1d0501312f",
+            "label": "Skill",
+            "super_class": "4e831020f50003100a22c0b3dfa151a2",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "cmn_skill_category": {
+            "sys_id": "1d7da936c3780b10b4e13e1d050131e3",
+            "label": "Skill Category",
+            "super_class": "",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "cmn_skill_contains": {
+            "sys_id": "0a7d6d36c3780b10b4e13e1d05013104",
+            "label": "Contained Skills",
+            "super_class": "4e831020f50003100a22c0b3dfa151a2",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "cmn_skill_level": {
+            "sys_id": "597de936c3780b10b4e13e1d05013129",
+            "label": "Skill Level",
+            "super_class": "",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "cmn_skill_level_type": {
+            "sys_id": "0a7d6d36c3780b10b4e13e1d05013148",
+            "label": "Skill Level Type",
+            "super_class": "",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "cmn_skill_m2m_category": {
+            "sys_id": "6d7de936c3780b10b4e13e1d0501318a",
+            "label": "Skill Category M2M",
+            "super_class": "",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
         "cmn_timeline_page": {
             "sys_id": "87d9d0e0f54403100a22c0b3dfa151ab",
             "label": "Timeline Page",
@@ -11694,6 +12117,15 @@
             "number_prefix": "",
             "access": ""
         },
+        "contract_rel_contact": {
+            "sys_id": "598de976c3780b10b4e13e1d0501319f",
+            "label": "Contract Contact",
+            "super_class": "",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
         "contract_rel_contract_sla": {
             "sys_id": "c2fbd06cf58403100a22c0b3dfa151d0",
             "label": "Contract SLA",
@@ -11771,7 +12203,7 @@
             "label": "Company",
             "super_class": "",
             "scope": "global",
-            "is_extendable": false,
+            "is_extendable": true,
             "number_prefix": "",
             "access": ""
         },
@@ -11838,10 +12270,37 @@
             "number_prefix": "",
             "access": ""
         },
+        "csm_consumer": {
+            "sys_id": "cd8da976c3780b10b4e13e1d050131aa",
+            "label": "Consumer",
+            "super_class": "",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "1285c49bc303120095ccd02422d3ae5e",
+            "access": ""
+        },
+        "csm_consumer_user": {
+            "sys_id": "f48d6976c3780b10b4e13e1d05013135",
+            "label": "Consumer User",
+            "super_class": "6fa3d820f50003100a22c0b3dfa151d1",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
         "csm_field_map": {
             "sys_id": "beaa9cacf54403100a22c0b3dfa151c7",
             "label": "Csm Field Map",
             "super_class": "4e831020f50003100a22c0b3dfa151a2",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "csm_household": {
+            "sys_id": "908da576c3780b10b4e13e1d05013177",
+            "label": "Household",
+            "super_class": "",
             "scope": "global",
             "is_extendable": false,
             "number_prefix": "",
@@ -11860,6 +12319,24 @@
             "sys_id": "c01b5424f58403100a22c0b3dfa15153",
             "label": "Customer modified or created CCSI",
             "super_class": "",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "customer_account": {
+            "sys_id": "508da576c3780b10b4e13e1d050131c4",
+            "label": "Account",
+            "super_class": "d3a3d820f50003100a22c0b3dfa15122",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "dd566f82c3301200b12d9f2974d3aed4",
+            "access": ""
+        },
+        "customer_contact": {
+            "sys_id": "ec8d2976c3780b10b4e13e1d050131d5",
+            "label": "Contact",
+            "super_class": "6fa3d820f50003100a22c0b3dfa151d1",
             "scope": "global",
             "is_extendable": false,
             "number_prefix": "",
@@ -12769,6 +13246,15 @@
             "sys_id": "170c14acf58403100a22c0b3dfa15146",
             "label": "Priority Data Lookup",
             "super_class": "170c14acf58403100a22c0b3dfa1513b",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "document_m2m_skill": {
+            "sys_id": "c67d6d36c3780b10b4e13e1d05013198",
+            "label": "Document Skill",
+            "super_class": "",
             "scope": "global",
             "is_extendable": false,
             "number_prefix": "",
@@ -15312,6 +15798,15 @@
             "number_prefix": "",
             "access": ""
         },
+        "interaction_m2m_skill": {
+            "sys_id": "1cafa172c33c0b10b4e13e1d050131fc",
+            "label": "Interaction Skill",
+            "super_class": "",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
         "interaction_related_record": {
             "sys_id": "b9ee10e8f54803100a22c0b3dfa1517e",
             "label": "Interaction Related Record",
@@ -17427,6 +17922,33 @@
             "number_prefix": "",
             "access": ""
         },
+        "matching_dimension": {
+            "sys_id": "277de176c3780b10b4e13e1d050131c7",
+            "label": "Matching Criterion",
+            "super_class": "4e831020f50003100a22c0b3dfa151a2",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "matching_dimension_for_assignment": {
+            "sys_id": "ab7de176c3780b10b4e13e1d05013120",
+            "label": "Select Criterion",
+            "super_class": "4e831020f50003100a22c0b3dfa151a2",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "matching_rule": {
+            "sys_id": "337d2576c3780b10b4e13e1d0501315c",
+            "label": "Matching Rule",
+            "super_class": "4e831020f50003100a22c0b3dfa151a2",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
         "mdm_product_data": {
             "sys_id": "8433a428f50c03100a22c0b3dfa15186",
             "label": "Mdm Product Data",
@@ -17440,6 +17962,33 @@
             "sys_id": "c88b5428f58403100a22c0b3dfa1511d",
             "label": "Message Auth",
             "super_class": "ff7b5428f58403100a22c0b3dfa15104",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "messaging_action": {
+            "sys_id": "fead613ac3780b10b4e13e1d05013100",
+            "label": "Messaging Action",
+            "super_class": "4e831020f50003100a22c0b3dfa151a2",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "messaging_action_timer": {
+            "sys_id": "36ad613ac3780b10b4e13e1d0501317a",
+            "label": "Messaging Action Timer",
+            "super_class": "",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "messaging_unread": {
+            "sys_id": "e2ad213ac3780b10b4e13e1d05013165",
+            "label": "Messaging Unread",
+            "super_class": "",
             "scope": "global",
             "is_extendable": false,
             "number_prefix": "",
@@ -23799,6 +24348,15 @@
             "number_prefix": "",
             "access": ""
         },
+        "service_entitlement": {
+            "sys_id": "488d6576c3780b10b4e13e1d050131a5",
+            "label": "Entitlement",
+            "super_class": "",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
         "service_in_scope": {
             "sys_id": "16fb546cf58403100a22c0b3dfa1511f",
             "label": "In Scope",
@@ -23931,6 +24489,15 @@
             "super_class": "",
             "scope": "global",
             "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "sf_state_flow": {
+            "sys_id": "c17d6936c3780b10b4e13e1d050131d5",
+            "label": "State Flow",
+            "super_class": "4e831020f50003100a22c0b3dfa151a2",
+            "scope": "global",
+            "is_extendable": true,
             "number_prefix": "",
             "access": ""
         },
@@ -24761,6 +25328,33 @@
             "is_extendable": false,
             "number_prefix": "",
             "access": ""
+        },
+        "sn_app_cs_social_social_channel": {
+            "sys_id": "9ec66a92d73022004f1e82285e610352",
+            "label": "Social Channel",
+            "super_class": "4e831020f50003100a22c0b3dfa151a2",
+            "scope": "a832f952d73022004f1e82285e610335",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": "public"
+        },
+        "sn_app_cs_social_social_log": {
+            "sys_id": "41820356d73022004f1e82285e61031f",
+            "label": "Social Log",
+            "super_class": "",
+            "scope": "a832f952d73022004f1e82285e610335",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": "public"
+        },
+        "sn_app_cs_social_social_profile": {
+            "sys_id": "9107aa92d73022004f1e82285e61033a",
+            "label": "Social Profile",
+            "super_class": "",
+            "scope": "a832f952d73022004f1e82285e610335",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": "public"
         },
         "sn_app_eng_studio_app_details": {
             "sys_id": "a97879bcc3600310b4e13e1d05013143",
@@ -25842,6 +26436,33 @@
             "number_prefix": "",
             "access": ""
         },
+        "sn_csm_account_access": {
+            "sys_id": "7c8da976c3780b10b4e13e1d0501310c",
+            "label": "Account Access",
+            "super_class": "",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "sn_csm_consumer_profile": {
+            "sys_id": "248d2976c3780b10b4e13e1d05013170",
+            "label": "Consumer Profile",
+            "super_class": "",
+            "scope": "global",
+            "is_extendable": true,
+            "number_prefix": "",
+            "access": ""
+        },
+        "sn_csm_consumer_profile_location": {
+            "sys_id": "608d2976c3780b10b4e13e1d05013101",
+            "label": "Consumer Profile Location",
+            "super_class": "",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
         "sn_cs_api_registry": {
             "sys_id": "2ddf1868f58803100a22c0b3dfa1510c",
             "label": "Code Signing API Registry",
@@ -25865,6 +26486,258 @@
             "label": "Code Signing Telemetry Log",
             "super_class": "",
             "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "sn_customercentral_card_config": {
+            "sys_id": "0aadadf6c3780b10b4e13e1d05013111",
+            "label": "Card Configuration",
+            "super_class": "4e831020f50003100a22c0b3dfa151a2",
+            "scope": "7a9ab70373830010e37d71ef64f6a78b",
+            "is_extendable": true,
+            "number_prefix": "",
+            "access": ""
+        },
+        "sn_customercentral_cust_info_card": {
+            "sys_id": "d2adadf6c3780b10b4e13e1d050131b6",
+            "label": "Customer Information Card",
+            "super_class": "4e831020f50003100a22c0b3dfa151a2",
+            "scope": "7a9ab70373830010e37d71ef64f6a78b",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "sn_customercentral_cust_info_config": {
+            "sys_id": "deadedf6c3780b10b4e13e1d0501317e",
+            "label": "Customer Information Context",
+            "super_class": "4e831020f50003100a22c0b3dfa151a2",
+            "scope": "7a9ab70373830010e37d71ef64f6a78b",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "sn_customercentral_list_config": {
+            "sys_id": "aaadedf6c3780b10b4e13e1d050131e3",
+            "label": "List Configuration",
+            "super_class": "0aadadf6c3780b10b4e13e1d05013111",
+            "scope": "7a9ab70373830010e37d71ef64f6a78b",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "sn_customercentral_record_config": {
+            "sys_id": "16adadf6c3780b10b4e13e1d050131f8",
+            "label": "Record Configuration",
+            "super_class": "0aadadf6c3780b10b4e13e1d05013111",
+            "scope": "7a9ab70373830010e37d71ef64f6a78b",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "sn_customercentral_report_config": {
+            "sys_id": "82adadf6c3780b10b4e13e1d05013161",
+            "label": "Report Configuration",
+            "super_class": "0aadadf6c3780b10b4e13e1d05013111",
+            "scope": "7a9ab70373830010e37d71ef64f6a78b",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "sn_customercentral_report_group_config": {
+            "sys_id": "5aadedf6c3780b10b4e13e1d0501314c",
+            "label": "Report Group Configuration",
+            "super_class": "0aadadf6c3780b10b4e13e1d05013111",
+            "scope": "7a9ab70373830010e37d71ef64f6a78b",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "sn_customerservice_account_relationship_access": {
+            "sys_id": "fdad2df6c3780b10b4e13e1d050131a2",
+            "label": "Account Relationship Access",
+            "super_class": "",
+            "scope": "51d811fad7223100b7490ee60e61034f",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "sn_customerservice_account_relationship_type": {
+            "sys_id": "e5ada9f6c3780b10b4e13e1d050131d3",
+            "label": "Account Relationship Type",
+            "super_class": "",
+            "scope": "51d811fad7223100b7490ee60e61034f",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "sn_customerservice_agent_token": {
+            "sys_id": "49ad69f6c3780b10b4e13e1d05013167",
+            "label": "Agent Token",
+            "super_class": "",
+            "scope": "51d811fad7223100b7490ee60e61034f",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "sn_customerservice_appointment": {
+            "sys_id": "25ade9f6c3780b10b4e13e1d05013196",
+            "label": "Appointment",
+            "super_class": "f18d6d76c3780b10b4e13e1d05013147",
+            "scope": "51d811fad7223100b7490ee60e61034f",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "sn_customerservice_case": {
+            "sys_id": "89ad29f6c3780b10b4e13e1d05013154",
+            "label": "Case",
+            "super_class": "83e4d024f54003100a22c0b3dfa15116",
+            "scope": "51d811fad7223100b7490ee60e61034f",
+            "is_extendable": true,
+            "number_prefix": "3f64b4d2c312310015519f2974d3ae7a",
+            "access": ""
+        },
+        "sn_customerservice_case_report": {
+            "sys_id": "1dad69f6c3780b10b4e13e1d050131d2",
+            "label": "Case Report",
+            "super_class": "",
+            "scope": "51d811fad7223100b7490ee60e61034f",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "sn_customerservice_channel_config": {
+            "sys_id": "40ade1f6c3780b10b4e13e1d050131e4",
+            "label": "Channel Configurations",
+            "super_class": "",
+            "scope": "51d811fad7223100b7490ee60e61034f",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "sn_customerservice_contact_relationship": {
+            "sys_id": "c5ad29f6c3780b10b4e13e1d050131d2",
+            "label": "Contact Relationship",
+            "super_class": "",
+            "scope": "51d811fad7223100b7490ee60e61034f",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "sn_customerservice_customer_interaction": {
+            "sys_id": "f8ada5f6c3780b10b4e13e1d050131e7",
+            "label": "Customer Interaction",
+            "super_class": "",
+            "scope": "51d811fad7223100b7490ee60e61034f",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "sn_customerservice_escalation": {
+            "sys_id": "fdad2df6c3780b10b4e13e1d0501313e",
+            "label": "Escalation",
+            "super_class": "83e4d024f54003100a22c0b3dfa15116",
+            "scope": "51d811fad7223100b7490ee60e61034f",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "sn_customerservice_escalation_severity": {
+            "sys_id": "34ade5f6c3780b10b4e13e1d05013181",
+            "label": "Escalation Severity",
+            "super_class": "4e831020f50003100a22c0b3dfa151a2",
+            "scope": "51d811fad7223100b7490ee60e61034f",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "sn_customerservice_escalation_template": {
+            "sys_id": "79ad6df6c3780b10b4e13e1d0501311e",
+            "label": "Escalation Template",
+            "super_class": "4e831020f50003100a22c0b3dfa151a2",
+            "scope": "51d811fad7223100b7490ee60e61034f",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "sn_customerservice_m2m_asset_contact": {
+            "sys_id": "0aad6df6c3780b10b4e13e1d0501318f",
+            "label": "Asset Contact",
+            "super_class": "",
+            "scope": "51d811fad7223100b7490ee60e61034f",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "sn_customerservice_registration": {
+            "sys_id": "54ad25f6c3780b10b4e13e1d05013163",
+            "label": "Registration Request",
+            "super_class": "",
+            "scope": "51d811fad7223100b7490ee60e61034f",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "sn_customerservice_related_party": {
+            "sys_id": "54ad65f6c3780b10b4e13e1d0501311f",
+            "label": "Related Party",
+            "super_class": "",
+            "scope": "51d811fad7223100b7490ee60e61034f",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "sn_customerservice_related_party_configuration": {
+            "sys_id": "95ada9f6c3780b10b4e13e1d05013150",
+            "label": "Related Party Configuration",
+            "super_class": "4e831020f50003100a22c0b3dfa151a2",
+            "scope": "51d811fad7223100b7490ee60e61034f",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "sn_customerservice_responsibility_access_config": {
+            "sys_id": "6cad65f6c3780b10b4e13e1d050131a6",
+            "label": "Responsibility Access Configuration",
+            "super_class": "4e831020f50003100a22c0b3dfa151a2",
+            "scope": "51d811fad7223100b7490ee60e61034f",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "sn_customerservice_responsibility_def": {
+            "sys_id": "61ade9f6c3780b10b4e13e1d050131d4",
+            "label": "Responsibility Definition",
+            "super_class": "4e831020f50003100a22c0b3dfa151a2",
+            "scope": "51d811fad7223100b7490ee60e61034f",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "sn_customerservice_sf_case": {
+            "sys_id": "68ada5f6c3780b10b4e13e1d050131c5",
+            "label": "Customer Service Case Flow",
+            "super_class": "c17d6936c3780b10b4e13e1d050131d5",
+            "scope": "51d811fad7223100b7490ee60e61034f",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "sn_customerservice_task": {
+            "sys_id": "21ade9f6c3780b10b4e13e1d0501314c",
+            "label": "Task",
+            "super_class": "83e4d024f54003100a22c0b3dfa15116",
+            "scope": "51d811fad7223100b7490ee60e61034f",
+            "is_extendable": true,
+            "number_prefix": "f39f76f4533a23006abaddeeff7b124b",
+            "access": ""
+        },
+        "sn_customerservice_team_member": {
+            "sys_id": "34ade5f6c3780b10b4e13e1d050131cc",
+            "label": "Account Team Member",
+            "super_class": "",
+            "scope": "51d811fad7223100b7490ee60e61034f",
             "is_extendable": false,
             "number_prefix": "",
             "access": ""
@@ -27525,6 +28398,24 @@
             "number_prefix": "",
             "access": ""
         },
+        "sn_lookup_verify_config": {
+            "sys_id": "f39da1f6c3780b10b4e13e1d050131d1",
+            "label": "Lookup and Verify Configuration",
+            "super_class": "4e831020f50003100a22c0b3dfa151a2",
+            "scope": "439a24b4b320230001f34d43c6a8dc6b",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": "public"
+        },
+        "sn_lookup_verify_search_on_table": {
+            "sys_id": "44ade1f6c3780b10b4e13e1d0501316a",
+            "label": "Lookup Table",
+            "super_class": "4e831020f50003100a22c0b3dfa151a2",
+            "scope": "439a24b4b320230001f34d43c6a8dc6b",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
         "sn_m2m_context_related_record_defn": {
             "sys_id": "1147ececf5cc03100a22c0b3dfa15131",
             "label": "Context Related Record Definition",
@@ -28281,6 +29172,33 @@
             "number_prefix": "",
             "access": ""
         },
+        "sn_openframe_agent_presence": {
+            "sys_id": "d68dad76c3780b10b4e13e1d050131df",
+            "label": "Openframe Agent Presence",
+            "super_class": "",
+            "scope": "3d7925f9eb5002003e97afcef106fee6",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "sn_openframe_configuration": {
+            "sys_id": "0a8d6d76c3780b10b4e13e1d050131e1",
+            "label": "OpenFrame Configuration",
+            "super_class": "",
+            "scope": "3d7925f9eb5002003e97afcef106fee6",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "sn_openframe_phone_log": {
+            "sys_id": "d28dad76c3780b10b4e13e1d0501315b",
+            "label": "Phone Log",
+            "super_class": "",
+            "scope": "3d7925f9eb5002003e97afcef106fee6",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
         "sn_pdf_table_bldr_attachment_helper": {
             "sys_id": "487835bcc3600310b4e13e1d050131df",
             "label": "Attachment Helper",
@@ -28398,6 +29316,24 @@
             "number_prefix": "",
             "access": ""
         },
+        "sn_publications_recipientslist_account_m2m": {
+            "sys_id": "f69f6d32c33c0b10b4e13e1d05013175",
+            "label": "Recipients",
+            "super_class": "",
+            "scope": "0fdd6483d72302004f1e82285e61033a",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "sn_publications_recipientslist_consumer_m2m": {
+            "sys_id": "699887ebc300220071d07bfaa2d3ae18",
+            "label": "Recipients",
+            "super_class": "",
+            "scope": "0fdd6483d72302004f1e82285e61033a",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": "public"
+        },
         "sn_publications_recipientslist_user_m2m": {
             "sys_id": "7af9399687001300d99a8467a7cb0b5d",
             "label": "Recipients",
@@ -28430,6 +29366,15 @@
             "label": "Workflow Config",
             "super_class": "",
             "scope": "0fdd6483d72302004f1e82285e61033a",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "sn_query_rule": {
+            "sys_id": "777d6576c3780b10b4e13e1d05013119",
+            "label": "Query rule",
+            "super_class": "4e831020f50003100a22c0b3dfa151a2",
+            "scope": "991f69f1b3221010700b4d43c6a8dc6e",
             "is_extendable": false,
             "number_prefix": "",
             "access": ""
@@ -28502,6 +29447,24 @@
             "label": "Contributing Indicator PO Project",
             "super_class": "",
             "scope": "3cc85c0107303010c7d559bf1ad30022",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "sn_shn_configuration": {
+            "sys_id": "928ded76c3780b10b4e13e1d05013113",
+            "label": "Special Handling Notes Configuration",
+            "super_class": "",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "sn_shn_notes": {
+            "sys_id": "a28ded76c3780b10b4e13e1d05013154",
+            "label": "Special Handling Notes",
+            "super_class": "",
+            "scope": "global",
             "is_extendable": false,
             "number_prefix": "",
             "access": ""
@@ -30558,6 +31521,24 @@
             "number_prefix": "",
             "access": ""
         },
+        "st_agent_personal_events": {
+            "sys_id": "fe7ded36c3780b10b4e13e1d05013171",
+            "label": "Agent Personal Events",
+            "super_class": "",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "st_agent_work_schedule": {
+            "sys_id": "b27ded36c3780b10b4e13e1d050131e8",
+            "label": "Agent Work Schedule",
+            "super_class": "",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
         "st_dfc_performance_metric": {
             "sys_id": "630320e4f50c03100a22c0b3dfa15138",
             "label": "Configuration Hub Performance Metric (Deprecated)",
@@ -31776,6 +32757,87 @@
         "syslog_app_scope0007": {
             "sys_id": "562b5464f58403100a22c0b3dfa1516d",
             "label": "App Log Entry",
+            "super_class": "1a2b5464f58403100a22c0b3dfa15145",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "syslog_awa": {
+            "sys_id": "c59de5b6c3780b10b4e13e1d05013155",
+            "label": "AWA Log",
+            "super_class": "03939420f50003100a22c0b3dfa15189",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "syslog_awa0000": {
+            "sys_id": "8a9d69b6c3780b10b4e13e1d0501318c",
+            "label": "AWA Log",
+            "super_class": "df1b1064f58403100a22c0b3dfa151c6",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "syslog_awa0001": {
+            "sys_id": "4e9da9b6c3780b10b4e13e1d05013112",
+            "label": "AWA Log",
+            "super_class": "731b5064f58403100a22c0b3dfa15180",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "syslog_awa0002": {
+            "sys_id": "d69da9b6c3780b10b4e13e1d050131b1",
+            "label": "AWA Log",
+            "super_class": "c82b9064f58403100a22c0b3dfa15118",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "syslog_awa0003": {
+            "sys_id": "129de9b6c3780b10b4e13e1d0501311e",
+            "label": "AWA Log",
+            "super_class": "642b9064f58403100a22c0b3dfa151b1",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "syslog_awa0004": {
+            "sys_id": "a29de9b6c3780b10b4e13e1d050131b0",
+            "label": "AWA Log",
+            "super_class": "052bd064f58403100a22c0b3dfa1516f",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "syslog_awa0005": {
+            "sys_id": "ea9d2db6c3780b10b4e13e1d0501314e",
+            "label": "AWA Log",
+            "super_class": "152b1464f58403100a22c0b3dfa15114",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "syslog_awa0006": {
+            "sys_id": "b69d2db6c3780b10b4e13e1d050131e0",
+            "label": "AWA Log",
+            "super_class": "bd2b1464f58403100a22c0b3dfa151ac",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "syslog_awa0007": {
+            "sys_id": "369d6db6c3780b10b4e13e1d0501317f",
+            "label": "AWA Log",
             "super_class": "1a2b5464f58403100a22c0b3dfa15145",
             "scope": "global",
             "is_extendable": false,
@@ -39396,6 +40458,15 @@
             "number_prefix": "",
             "access": ""
         },
+        "sys_group_has_skill": {
+            "sys_id": "e17de936c3780b10b4e13e1d050131c3",
+            "label": "Group Skill",
+            "super_class": "",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
         "sys_guided_tour_analytics": {
             "sys_id": "e70e186cf50803100a22c0b3dfa15138",
             "label": "Guided Tour Analytics",
@@ -45525,6 +46596,24 @@
             "number_prefix": "",
             "access": ""
         },
+        "sys_sensitive_data_handling_category": {
+            "sys_id": "f39da1f6c3780b10b4e13e1d05013171",
+            "label": "Sensitive Data Category",
+            "super_class": "4e831020f50003100a22c0b3dfa151a2",
+            "scope": "91c0c191531b3010b6e8ddeeff7b127b",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "sys_sensitive_data_handling_regex": {
+            "sys_id": "af9d61f6c3780b10b4e13e1d0501319a",
+            "label": "Sensitive Data Regex",
+            "super_class": "",
+            "scope": "91c0c191531b3010b6e8ddeeff7b127b",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
         "sys_service": {
             "sys_id": "9215d8e4f54003100a22c0b3dfa15106",
             "label": "Service",
@@ -48869,7 +49958,7 @@
             "label": "User",
             "super_class": "",
             "scope": "global",
-            "is_extendable": false,
+            "is_extendable": true,
             "number_prefix": "",
             "access": ""
         },
@@ -48948,6 +50037,15 @@
         "sys_user_has_role_time_limited": {
             "sys_id": "a3c31860f50003100a22c0b3dfa1514f",
             "label": "Time-Limited User Role",
+            "super_class": "",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "sys_user_has_skill": {
+            "sys_id": "397d2d36c3780b10b4e13e1d05013166",
+            "label": "User Skill",
             "super_class": "",
             "scope": "global",
             "is_extendable": false,
@@ -49137,6 +50235,15 @@
         "sys_user_set_audit_log": {
             "sys_id": "988c5024f5c403100a22c0b3dfa151fd",
             "label": "User Set Audit Log",
+            "super_class": "",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "sys_user_skill_history": {
+            "sys_id": "de7dad36c3780b10b4e13e1d05013137",
+            "label": "User Skill History",
             "super_class": "",
             "scope": "global",
             "is_extendable": false,
@@ -50808,6 +51915,15 @@
             "number_prefix": "",
             "access": ""
         },
+        "task_activity": {
+            "sys_id": "f18d6d76c3780b10b4e13e1d05013147",
+            "label": "Task Activity",
+            "super_class": "",
+            "scope": "global",
+            "is_extendable": true,
+            "number_prefix": "",
+            "access": ""
+        },
         "task_ci": {
             "sys_id": "9d0b876124033100e3ef2ed1ca4913fa",
             "label": "CIs Affected",
@@ -50871,6 +51987,15 @@
             "number_prefix": "",
             "access": ""
         },
+        "task_m2m_skill": {
+            "sys_id": "b57d2d36c3780b10b4e13e1d050131b9",
+            "label": "Task Skill",
+            "super_class": "",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
         "task_outage": {
             "sys_id": "cc6f1c60f58803100a22c0b3dfa15153",
             "label": "Outages Tasks Link",
@@ -50903,6 +52028,51 @@
             "label": "Task Overview Section",
             "super_class": "4e831020f50003100a22c0b3dfa151a2",
             "scope": "0eef12637311301045216238edf6a75e",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "task_rel_allowed": {
+            "sys_id": "a18d2d76c3780b10b4e13e1d05013106",
+            "label": "Task Relationships Allowed",
+            "super_class": "4e831020f50003100a22c0b3dfa151a2",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "task_rel_kb": {
+            "sys_id": "e18d2d76c3780b10b4e13e1d05013197",
+            "label": "Task / KB Relationship",
+            "super_class": "",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "task_rel_kb_type": {
+            "sys_id": "a18d2d76c3780b10b4e13e1d05013134",
+            "label": "Knowledge / Task Relationship",
+            "super_class": "4e831020f50003100a22c0b3dfa151a2",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "task_rel_task": {
+            "sys_id": "f58d2d76c3780b10b4e13e1d050131f4",
+            "label": "Task Relationship",
+            "super_class": "",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "task_rel_type": {
+            "sys_id": "e98d2d76c3780b10b4e13e1d05013161",
+            "label": "Task Relationship Type",
+            "super_class": "4e831020f50003100a22c0b3dfa151a2",
+            "scope": "global",
             "is_extendable": false,
             "number_prefix": "",
             "access": ""
@@ -53355,6 +54525,96 @@
             "number_prefix": "",
             "access": ""
         },
+        "ts_c_36_0": {
+            "sys_id": "258ea57ac3b80b10b4e13e1d05013188",
+            "label": "Text Index for csm_consumer",
+            "super_class": "",
+            "scope": "",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "ts_c_36_1": {
+            "sys_id": "398ee57ac3b80b10b4e13e1d05013113",
+            "label": "Text Index for csm_consumer",
+            "super_class": "",
+            "scope": "",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "ts_c_36_2": {
+            "sys_id": "b98e297ac3b80b10b4e13e1d0501316e",
+            "label": "Text Index for csm_consumer",
+            "super_class": "",
+            "scope": "",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "ts_c_36_3": {
+            "sys_id": "c28e697ac3b80b10b4e13e1d05013172",
+            "label": "Text Index for csm_consumer",
+            "super_class": "",
+            "scope": "",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "ts_c_36_4": {
+            "sys_id": "8e8ea97ac3b80b10b4e13e1d05013175",
+            "label": "Text Index for csm_consumer",
+            "super_class": "",
+            "scope": "",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "ts_c_36_5": {
+            "sys_id": "0e8ee97ac3b80b10b4e13e1d05013148",
+            "label": "Text Index for csm_consumer",
+            "super_class": "",
+            "scope": "",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "ts_c_36_6": {
+            "sys_id": "9a8e2d7ac3b80b10b4e13e1d05013129",
+            "label": "Text Index for csm_consumer",
+            "super_class": "",
+            "scope": "",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "ts_c_36_7": {
+            "sys_id": "ea8e6d7ac3b80b10b4e13e1d05013190",
+            "label": "Text Index for csm_consumer",
+            "super_class": "",
+            "scope": "",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "ts_c_36_8": {
+            "sys_id": "ee8ead7ac3b80b10b4e13e1d05013187",
+            "label": "Text Index for csm_consumer",
+            "super_class": "",
+            "scope": "",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "ts_c_36_9": {
+            "sys_id": "fe8eed7ac3b80b10b4e13e1d05013140",
+            "label": "Text Index for csm_consumer",
+            "super_class": "",
+            "scope": "",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
         "ts_c_3_0": {
             "sys_id": "5ec9e0a4f54043100a22c0b3dfa151c4",
             "label": "Text Index for ast_contract",
@@ -55329,6 +56589,15 @@
         "user_multifactor_auth": {
             "sys_id": "ac161ca4f58003100a22c0b3dfa15184",
             "label": "User Multifactor Authentication",
+            "super_class": "",
+            "scope": "global",
+            "is_extendable": false,
+            "number_prefix": "",
+            "access": ""
+        },
+        "user_task_stats": {
+            "sys_id": "237da176c3780b10b4e13e1d0501319f",
+            "label": "User Task Stats",
             "super_class": "",
             "scope": "global",
             "is_extendable": false,

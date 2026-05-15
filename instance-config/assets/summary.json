@@ -1,0 +1,91 @@
+{
+    "$schema": "../schemas/asset-summary.schema.json",
+    "_source": "alm_asset",
+    "_description": "Asset distribution summary (counts by model_category and install_status).",
+    "_exported_at": "2026-05-15T18:15:56.993173+00:00",
+    "total_assets": 2817,
+    "by_model_category": {
+        "55d57c14c3031000b959fd251eba8fa6": {
+            "name": "AIX Server",
+            "count": 2
+        },
+        "a1d5bc14c3031000b959fd251eba8f5f": {
+            "name": "Business Service",
+            "count": 29
+        },
+        "81feb9c137101000deeabfc8bcbe5dc4": {
+            "name": "Computer",
+            "count": 818
+        },
+        "57d5bc14c3031000b959fd251eba8fd7": {
+            "name": "Computer Peripheral",
+            "count": 2
+        },
+        "218323293743100044e0bfc8bcbe5d61": {
+            "name": "Consumable",
+            "count": 1789
+        },
+        "d1d6fc14c3031000b959fd251eba8fd0": {
+            "name": "Database",
+            "count": 10
+        },
+        "0afc3890c3031000b959fd251eba8f8b": {
+            "name": "Linux Server",
+            "count": 4
+        },
+        "73d479803713100044e0bfc8bcbe5d79": {
+            "name": "Monitor",
+            "count": 2
+        },
+        "8ffdf454c3031000b959fd251eba8f1c": {
+            "name": "Network Gear",
+            "count": 5
+        },
+        "3dfe3854c3031000b959fd251eba8f42": {
+            "name": "Printer",
+            "count": 28
+        },
+        "90fe3854c3031000b959fd251eba8f6f": {
+            "name": "Rack",
+            "count": 5
+        },
+        "c4d4fe4937101000deeabfc8bcbe5d91": {
+            "name": "Server",
+            "count": 19
+        },
+        "35bf2d4137101000deeabfc8bcbe5dbd": {
+            "name": "Software License",
+            "count": 77
+        },
+        "dffe7854c3031000b959fd251eba8f2c": {
+            "name": "Storage Device",
+            "count": 3
+        },
+        "b1ff7854c3031000b959fd251eba8ff5": {
+            "name": "UNIX Server",
+            "count": 7
+        },
+        "84ffb854c3031000b959fd251eba8fe8": {
+            "name": "Web Server",
+            "count": 9
+        },
+        "7900c954c3031000b959fd251eba8f7e": {
+            "name": "Windows Server",
+            "count": 8
+        }
+    },
+    "by_install_status": {
+        "1": {
+            "label": "In use",
+            "count": 943
+        },
+        "6": {
+            "label": "In stock",
+            "count": 100
+        },
+        "10": {
+            "label": "Consumed",
+            "count": 1774
+        }
+    }
+}

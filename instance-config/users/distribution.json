@@ -1,0 +1,14 @@
+{
+    "$schema": "../schemas/user-distribution.schema.json",
+    "_source": "sys_user",
+    "_description": "User distribution statistics (no PII, counts only).",
+    "_exported_at": "2026-05-15T18:15:56.526350+00:00",
+    "total_active": 639,
+    "total_inactive": 1,
+    "identity_type_distribution": {
+        "unclassified": 627,
+        "machine": 10,
+        "ai_agent": 1,
+        "human": 1
+    }
+}

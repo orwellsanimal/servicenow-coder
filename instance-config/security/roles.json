@@ -3,10 +3,31 @@
     "_source": "sys_user_role",
     "_description": "Roles defined on the instance.",
     "roles": {
+        "sn_customerservice.cust_data_resp_granular": {
+            "sys_id": "0071ad4a93649210a1b29bf56489184e",
+            "name": "sn_customerservice.cust_data_resp_granular",
+            "description": "Provides granular access to customer-related foundational entities (including accounts, contacts, consumers, and households) through the responsibility framework. ",
+            "elevated_privilege": false,
+            "scope": "Global"
+        },
         "role_delegator": {
             "sys_id": "011ba5aa0a0a0b3001a439c580549134",
             "name": "role_delegator",
             "description": "Can delegate roles to group members",
+            "elevated_privilege": false,
+            "scope": "Global"
+        },
+        "customer_account_admin": {
+            "sys_id": "0150dee653fa3010ae37ddeeff7b1249",
+            "name": "customer_account_admin",
+            "description": "Admin role that can access all of customer account related sensitive information",
+            "elevated_privilege": false,
+            "scope": "Global"
+        },
+        "sn_crm_customer_access_management_admin": {
+            "sys_id": "017c89e9ff53a610a1b2ffffffffff54",
+            "name": "sn_crm_customer_access_management_admin",
+            "description": "Provides admin access to customer access management configuration tables, including related party configurations, responsibility definitions,  and responsibility access configurations.",
             "elevated_privilege": false,
             "scope": "Global"
         },
@@ -73,6 +94,13 @@
             "elevated_privilege": false,
             "scope": "Global"
         },
+        "sn_crm_foundation_data_manager": {
+            "sys_id": "037286abff572a10a1b2ffffffffff1c",
+            "name": "sn_crm_foundation_data_manager",
+            "description": "Provides admin access to all customer core data and their relationships, such as accounts, contacts, consumers, and households.",
+            "elevated_privilege": false,
+            "scope": "Global"
+        },
         "sn_at.agent": {
             "sys_id": "039db035fff3221079c6ffffffffff6d",
             "name": "sn_at.agent",
@@ -86,6 +114,13 @@
             "description": "App client user",
             "elevated_privilege": false,
             "scope": "Scoped App Client"
+        },
+        "sn_lookup_verify_user": {
+            "sys_id": "040e644db360230001f34d43c6a8dc79",
+            "name": "sn_lookup_verify_user",
+            "description": "Role that provides a user the access to read from configuration tables of 'lookup and verify'",
+            "elevated_privilege": false,
+            "scope": "Lookup Verify"
         },
         "sn_nowassist_diagn.execution_result_message_user": {
             "sys_id": "0437b477433002105947644c7ab8f250",
@@ -129,6 +164,13 @@
             "elevated_privilege": false,
             "scope": "Global"
         },
+        "sn_customerservice.case_contributor_viewer": {
+            "sys_id": "0593296087621010f734a7da0acb0b9b",
+            "name": "sn_customerservice.case_contributor_viewer",
+            "description": "This role grants read access to all of the tables associated with a case.",
+            "elevated_privilege": false,
+            "scope": "Customer Service"
+        },
         "export_set_admin": {
             "sys_id": "05d3da827f02310036bfdd620efa91f0",
             "name": "export_set_admin",
@@ -150,6 +192,20 @@
             "elevated_privilege": false,
             "scope": "Global"
         },
+        "sn_customerservice.unified_consumer": {
+            "sys_id": "06b0057f43303110911baf56aab8f251",
+            "name": "sn_customerservice.unified_consumer",
+            "description": "Consumer role independent of the external role and can be assigned to an internal user to act as an external customer (B2C consumer).",
+            "elevated_privilege": false,
+            "scope": "Customer Service"
+        },
+        "sn_customerservice.partner": {
+            "sys_id": "06d4fc24d7700200e5982cf65e61037e",
+            "name": "sn_customerservice.partner",
+            "description": "Partner who is serving the customer accounts",
+            "elevated_privilege": false,
+            "scope": "Customer Service"
+        },
         "sn_deploy_pipeline.deployment_pipeline_admin": {
             "sys_id": "06f012dcff1f22100347ffffffffffb4",
             "name": "sn_deploy_pipeline.deployment_pipeline_admin",
@@ -170,6 +226,13 @@
             "description": "Allows access to the REST endpoints for Performance Dashboards data. ",
             "elevated_privilege": false,
             "scope": "Global"
+        },
+        "sn_customerservice.case_read_granular": {
+            "sys_id": "09271c2e53323010e37dddeeff7b12f9",
+            "name": "sn_customerservice.case_read_granular",
+            "description": "Provides granular read access to case.",
+            "elevated_privilege": false,
+            "scope": "Customer Service"
         },
         "task_editor": {
             "sys_id": "0956f6390a0a0bc50064623d5d51c556",
@@ -234,10 +297,24 @@
             "elevated_privilege": false,
             "scope": "Global"
         },
+        "sn_customerservice.case_task_viewer": {
+            "sys_id": "0c4587f3874a1010f734a7da0acb0b70",
+            "name": "sn_customerservice.case_task_viewer",
+            "description": "This role grants read access to all case task records.",
+            "elevated_privilege": false,
+            "scope": "Customer Service"
+        },
         "user_criteria_admin": {
             "sys_id": "0c924542c3202100c8b837659bba8ffa",
             "name": "user_criteria_admin",
             "description": "Can manage the User Criteria records.",
+            "elevated_privilege": false,
+            "scope": "Global"
+        },
+        "task_activity_writer": {
+            "sys_id": "0cb98b43eb31310023c7a9bcf106fece",
+            "name": "task_activity_writer",
+            "description": "Allows user to create and modify task activities.",
             "elevated_privilege": false,
             "scope": "Global"
         },
@@ -346,6 +423,13 @@
             "elevated_privilege": false,
             "scope": "Global"
         },
+        "sn_crm_foundation_admin": {
+            "sys_id": "1165c6efff572a10a1b2ffffffffff2e",
+            "name": "sn_crm_foundation_admin",
+            "description": "Provides admin access to CRM configurations, including escalations, query rules, and customer access management. It also contains sn_crm_foundation_data_manager role.",
+            "elevated_privilege": false,
+            "scope": "Global"
+        },
         "localization_fulfiller": {
             "sys_id": "1175b2ca533a101063a2ddeeff7b122a",
             "name": "localization_fulfiller",
@@ -401,6 +485,13 @@
             "description": "",
             "elevated_privilege": false,
             "scope": "Unified Developer Core"
+        },
+        "sn_queryrules.admin": {
+            "sys_id": "13234eebff572a10a1b2fffffffffffb",
+            "name": "sn_queryrules.admin",
+            "description": "Provides admin access to all query rules.",
+            "elevated_privilege": false,
+            "scope": "Query rules"
         },
         "sn_glider.create_app_admin": {
             "sys_id": "13627557ff603210101affffffffffe0",
@@ -486,6 +577,13 @@
             "elevated_privilege": false,
             "scope": "Global"
         },
+        "sn_customerservice.requester": {
+            "sys_id": "1631857f43303110911baf56aab8f23a",
+            "name": "sn_customerservice.requester",
+            "description": "This role serves as a foundation for CSM requester personas, which is independent of the external role, and is inherited by CSM customer roles.",
+            "elevated_privilege": false,
+            "scope": "Customer Service"
+        },
         "platform_analytics_admin": {
             "sys_id": "16741a48072121109fda92c307672bb4",
             "name": "platform_analytics_admin",
@@ -504,6 +602,20 @@
             "sys_id": "17c12191c7dc0110a330231c95c26033",
             "name": "fd_read",
             "description": "Read only role for flow designer.",
+            "elevated_privilege": false,
+            "scope": "Global"
+        },
+        "skill_user": {
+            "sys_id": "181683b137711000deeabfc8bcbe5d45",
+            "name": "skill_user",
+            "description": "Skill User role - used to view skills and relations",
+            "elevated_privilege": false,
+            "scope": "Global"
+        },
+        "assignment_workbench": {
+            "sys_id": "1824a685d700220058c92cf65e6103d1",
+            "name": "assignment_workbench",
+            "description": "To control access for Assignment Workbench.",
             "elevated_privilege": false,
             "scope": "Global"
         },
@@ -598,12 +710,26 @@
             "elevated_privilege": false,
             "scope": "Change Management - Change Schedule"
         },
+        "sn_shn.user": {
+            "sys_id": "1d320f35c303020095ccd02422d3aeb4",
+            "name": "sn_shn.user",
+            "description": "Has rights to read Special Handling Notes.",
+            "elevated_privilege": false,
+            "scope": "Global"
+        },
         "sn_gd_guidance.guidance_manager": {
             "sys_id": "1d63767053ef0010763eddeeff7b12c6",
             "name": "sn_gd_guidance.guidance_manager",
             "description": "Guidance Manager role can read, create, update and delete Guidance, Guidance Input and Guidance Component tables of Guided Decisions - Guidance Application. Contains the guidance_user role. ",
             "elevated_privilege": false,
             "scope": "Guided Decisions - Guidance"
+        },
+        "sn_crm_foundation_admin_read_only": {
+            "sys_id": "1dc48e6fff572a10a1b2ffffffffffc0",
+            "name": "sn_crm_foundation_admin_read_only",
+            "description": "Provides read access to CRM configurations, including escalations, query rules, and customer access management. It also contains sn_crm_foundation_data_viewer role.",
+            "elevated_privilege": false,
+            "scope": "Global"
         },
         "events_dashboard_viewer": {
             "sys_id": "1e1959faff34321018c3ffffffffffcc",
@@ -632,6 +758,13 @@
             "description": "Can configure AI Search Assist",
             "elevated_privilege": false,
             "scope": "Global"
+        },
+        "sn_customerservice.escalation_requester": {
+            "sys_id": "1f2633cc87600300fe4433d4c6cb0b02",
+            "name": "sn_customerservice.escalation_requester",
+            "description": "Allows users to escalate cases which they have access to.",
+            "elevated_privilege": false,
+            "scope": "Customer Service"
         },
         "knowledge": {
             "sys_id": "1f26da36c0a8016b000c7f06a1ce7e14",
@@ -738,6 +871,13 @@
             "elevated_privilege": false,
             "scope": "Global"
         },
+        "sn_crm_escalation_admin": {
+            "sys_id": "23892a3dff93221064eaffffffffffed",
+            "name": "sn_crm_escalation_admin",
+            "description": "Provides admin access to all escalations and related configuration tables.",
+            "elevated_privilege": false,
+            "scope": "Global"
+        },
         "query_no_domain_table_api": {
             "sys_id": "246a29b1e7022300d26dc91c03f6a9fa",
             "name": "query_no_domain_table_api",
@@ -765,6 +905,13 @@
             "description": "Can view physical table storage stats",
             "elevated_privilege": false,
             "scope": "Global"
+        },
+        "sn_customerservice_manager": {
+            "sys_id": "259e90f6c3223100d6d210c422d3aefb",
+            "name": "sn_customerservice_manager",
+            "description": "Customer Service Manager role is customer service agent with additional role of managing agents and override agents actions.",
+            "elevated_privilege": false,
+            "scope": "Customer Service"
         },
         "syslog_viewer": {
             "sys_id": "25c12af8ffb222103b32ffffffffff42",
@@ -801,10 +948,31 @@
             "elevated_privilege": false,
             "scope": "Global"
         },
+        "sn_crm_account_relationship_data_manager": {
+            "sys_id": "26b6d5a5435fa210c71ecaee0ab8f212",
+            "name": "sn_crm_account_relationship_data_manager",
+            "description": "Extends the sn_crm_account_data_manager role by granting additional admin access to account relationships.",
+            "elevated_privilege": false,
+            "scope": "Global"
+        },
         "events_viewer": {
             "sys_id": "26f34464ff20321081caffffffffff1c",
             "name": "events_viewer",
             "description": "Events Viewer role that provides read access to events processing feature related tables",
+            "elevated_privilege": false,
+            "scope": "Global"
+        },
+        "sn_crm_account_data_manager": {
+            "sys_id": "27075da5435fa210c71ecaee0ab8f22f",
+            "name": "sn_crm_account_data_manager",
+            "description": "Provides admin access to all accounts and their associated core data, including related contacts.",
+            "elevated_privilege": false,
+            "scope": "Global"
+        },
+        "skill_model_admin": {
+            "sys_id": "274476bec3632000c111113e5bba8f77",
+            "name": "skill_model_admin",
+            "description": "Can define and administer relationship between skills and models",
             "elevated_privilege": false,
             "scope": "Global"
         },
@@ -857,6 +1025,13 @@
             "elevated_privilege": false,
             "scope": "Global"
         },
+        "sn_customerservice.case_admin": {
+            "sys_id": "284b99e55303e6101b0cddeeff7b12ae",
+            "name": "sn_customerservice.case_admin",
+            "description": "The feature admin role that allows customers to manage Customer Service cases.",
+            "elevated_privilege": false,
+            "scope": "Customer Service"
+        },
         "business_process_admin": {
             "sys_id": "287d0edb73a3201053f9d11ee2f6a7e7",
             "name": "business_process_admin",
@@ -885,6 +1060,13 @@
             "elevated_privilege": false,
             "scope": "Global"
         },
+        "sn_esm_partner_admin": {
+            "sys_id": "29826284d7010200bef20ee60e610388",
+            "name": "sn_esm_partner_admin",
+            "description": "Service Management Partner Admin role",
+            "elevated_privilege": false,
+            "scope": "Global"
+        },
         "va_auth_admin": {
             "sys_id": "2ac813b7373222108527ca1964924b75",
             "name": "va_auth_admin",
@@ -896,6 +1078,13 @@
             "sys_id": "2b118edc87b49250f9d4c99d0ebb35c6",
             "name": "notification_dashboard_admin",
             "description": "Allows user to view notification dashboard page.",
+            "elevated_privilege": false,
+            "scope": "Global"
+        },
+        "sn_esm_user": {
+            "sys_id": "2b2753cbd7300200bef20ee60e61031c",
+            "name": "sn_esm_user",
+            "description": "Service Management User",
             "elevated_privilege": false,
             "scope": "Global"
         },
@@ -933,6 +1122,20 @@
             "description": "Person(s) accountable for managing one or more technical services throughout their entire lifecycle.",
             "elevated_privilege": false,
             "scope": "Global"
+        },
+        "agent_schedule_admin": {
+            "sys_id": "2cfffb8bc3bc2200467f10c422d3ae05",
+            "name": "agent_schedule_admin",
+            "description": "Admin will be able to configure and setup Agent Schedule application",
+            "elevated_privilege": false,
+            "scope": "Global"
+        },
+        "sn_customerservice.case_create_granular": {
+            "sys_id": "2d371c6e53323010e37dddeeff7b1214",
+            "name": "sn_customerservice.case_create_granular",
+            "description": "Provides granular create access to case.",
+            "elevated_privilege": false,
+            "scope": "Customer Service"
         },
         "cmdb_inst_admin": {
             "sys_id": "2d4851c07323330024e5aa114df6a716",
@@ -1060,6 +1263,13 @@
             "elevated_privilege": false,
             "scope": "Global"
         },
+        "entitlement_admin": {
+            "sys_id": "308c4964370932105061880834924bfc",
+            "name": "entitlement_admin",
+            "description": "Provides access to entitlement table",
+            "elevated_privilege": false,
+            "scope": "Global"
+        },
         "sn_creatorstudio.admin": {
             "sys_id": "30c4217683921210a2079836f12bc0f0",
             "name": "sn_creatorstudio.admin",
@@ -1073,6 +1283,20 @@
             "description": "This role allows a user to write the TOC Configuration",
             "elevated_privilege": false,
             "scope": "Global"
+        },
+        "sn_customerservice_agent": {
+            "sys_id": "3120f52cc312310015519f2974d3ae83",
+            "name": "sn_customerservice_agent",
+            "description": "Customer Service Agent role, it is the one who performs the work on the case.",
+            "elevated_privilege": false,
+            "scope": "Customer Service"
+        },
+        "sn_customerservice.contact_manager": {
+            "sys_id": "3165e89053c40010c830ddeeff7b1298",
+            "name": "sn_customerservice.contact_manager",
+            "description": "Role will allow user to manage contacts ",
+            "elevated_privilege": false,
+            "scope": "Customer Service"
         },
         "approval_reporter": {
             "sys_id": "319b4354eb6202108e68271138522815",
@@ -1242,6 +1466,13 @@
             "elevated_privilege": false,
             "scope": "Global"
         },
+        "csm_guided_setup_user": {
+            "sys_id": "370e4a0840f8ba94f877df8d5e28431a",
+            "name": "csm_guided_setup_user",
+            "description": "Provides access to the base Customer Service Management guided setup group.",
+            "elevated_privilege": false,
+            "scope": "Global"
+        },
         "graph_schema_admin": {
             "sys_id": "395698d1ff003210c685ffffffffff27",
             "name": "graph_schema_admin",
@@ -1255,6 +1486,20 @@
             "description": "Can create, delete, and write records to tables related to Data Management Reliability Metrics.",
             "elevated_privilege": false,
             "scope": "Global"
+        },
+        "sn_customerservice.customer": {
+            "sys_id": "3a64fc24d7700200e5982cf65e610357",
+            "name": "sn_customerservice.customer",
+            "description": "Customer role for customer case creation with the implicit external role.",
+            "elevated_privilege": false,
+            "scope": "Customer Service"
+        },
+        "sn_customerservice.case_task_agent": {
+            "sys_id": "3ad0d7fb0f8210105bc5e7b1d4767e6a",
+            "name": "sn_customerservice.case_task_agent",
+            "description": "This role enables users to work on case tasks.",
+            "elevated_privilege": false,
+            "scope": "Customer Service"
         },
         "catalog_channel_analyzer": {
             "sys_id": "3af6bcc253971010bddaddeeff7b120b",
@@ -1494,6 +1739,20 @@
             "elevated_privilege": false,
             "scope": "Global"
         },
+        "task_activity_reader": {
+            "sys_id": "438c0383eb31310023c7a9bcf106feb6",
+            "name": "task_activity_reader",
+            "description": "Allows user to read task activities.",
+            "elevated_privilege": false,
+            "scope": "Global"
+        },
+        "csm_ws_integration": {
+            "sys_id": "44bcefc65362030097a2ddeeff7b124e",
+            "name": "csm_ws_integration",
+            "description": "Role for REST APIs related to CSM web services",
+            "elevated_privilege": false,
+            "scope": "Global"
+        },
         "sn_udc.admin": {
             "sys_id": "44df4a21ff5322100c9fffffffffff14",
             "name": "sn_udc.admin",
@@ -1564,6 +1823,20 @@
             "elevated_privilege": false,
             "scope": "Global"
         },
+        "skill_admin": {
+            "sys_id": "4916437137711000deeabfc8bcbe5df2",
+            "name": "skill_admin",
+            "description": "Skill Admin role - used to administer skills and relations to groups",
+            "elevated_privilege": false,
+            "scope": "Global"
+        },
+        "sn_crm_foundation_data_viewer": {
+            "sys_id": "494c39afff172a10a1b2ffffffffffdb",
+            "name": "sn_crm_foundation_data_viewer",
+            "description": "Provides read access to all customer core data and their relationships, such as accounts, contacts, consumers, and households.",
+            "elevated_privilege": false,
+            "scope": "Global"
+        },
         "sn_gf.goal_admin": {
             "sys_id": "4a1c294077113010e2ab29354f5a997b",
             "name": "sn_gf.goal_admin",
@@ -1626,6 +1899,13 @@
             "description": "",
             "elevated_privilege": false,
             "scope": "Global"
+        },
+        "sn_customerservice.case_authorized_contact": {
+            "sys_id": "4ba574aa53723010e37dddeeff7b124d",
+            "name": "sn_customerservice.case_authorized_contact",
+            "description": "Provide access to add additional comments and attachments, accept or reject a solution, receive notifications on case updates, close a case, and update case tasks.",
+            "elevated_privilege": false,
+            "scope": "Customer Service"
         },
         "update_set_picker": {
             "sys_id": "4c7364aaff20321071c0ffffffffff41",
@@ -1865,6 +2145,13 @@
             "elevated_privilege": false,
             "scope": "Global"
         },
+        "awa_admin": {
+            "sys_id": "58d28df293931300ed3ef5be867ffb7e",
+            "name": "awa_admin",
+            "description": "Admin role for the Advanced Work Assignment feature.",
+            "elevated_privilege": false,
+            "scope": "Global"
+        },
         "adaptive_auth_admin": {
             "sys_id": "58d35154ff1322109e05ffffffffffed",
             "name": "adaptive_auth_admin",
@@ -1885,6 +2172,13 @@
             "description": "Gives adminstrative rights to localization framework",
             "elevated_privilege": false,
             "scope": "Global"
+        },
+        "sn_openframe.admin": {
+            "sys_id": "590ecb25ff8722102d0cffffffffff89",
+            "name": "sn_openframe.admin",
+            "description": "Admin role for OpenFrame application",
+            "elevated_privilege": false,
+            "scope": "Openframe"
         },
         "action_write_enabled": {
             "sys_id": "59671a28430022107aec2cc4bab8f26e",
@@ -1921,6 +2215,13 @@
             "elevated_privilege": false,
             "scope": "MIF Customer Instance"
         },
+        "sn_crm_account_viewer": {
+            "sys_id": "5ab0a2fdff53221064eaffffffffff50",
+            "name": "sn_crm_account_viewer",
+            "description": "Provides read access to all accounts and their associated core data, including related contacts.",
+            "elevated_privilege": false,
+            "scope": "Global"
+        },
         "virtual_agent_admin": {
             "sys_id": "5b38bea3b3333200f7d1a13816a8dc12",
             "name": "virtual_agent_admin",
@@ -1948,6 +2249,13 @@
             "description": "Role to access App Collaboration plugin REST Endpoints.",
             "elevated_privilege": false,
             "scope": "Global"
+        },
+        "sn_customerservice.contract_entitlement_resp_granular": {
+            "sys_id": "60502f3d37389210bafd496c24924ba5",
+            "name": "sn_customerservice.contract_entitlement_resp_granular",
+            "description": "Provides granular access to contracts, entitlements, and related entities through the responsibility framework.",
+            "elevated_privilege": false,
+            "scope": "Customer Service"
         },
         "user_role_history_admin": {
             "sys_id": "606e991aff3322100856ffffffffff71",
@@ -2005,6 +2313,20 @@
             "elevated_privilege": false,
             "scope": "Global"
         },
+        "sn_customerservice.sn_customer_menu_viewer": {
+            "sys_id": "62c01935771001102dbc080c3f5a996e",
+            "name": "sn_customerservice.sn_customer_menu_viewer",
+            "description": "Granular role to give access to B2B Agent in OMS plugin for Application menu as well as individual menu items specific to B2B transactions",
+            "elevated_privilege": false,
+            "scope": "Customer Service"
+        },
+        "sn_app_cs_social_social_profile_user": {
+            "sys_id": "62e7aa92d73022004f1e82285e6103c3",
+            "name": "sn_app_cs_social_social_profile_user",
+            "description": "",
+            "elevated_privilege": false,
+            "scope": "Customer Service integration with Social Media Store"
+        },
         "atf_test_designer": {
             "sys_id": "62ec7c6053131200040729cac2dc34d5",
             "name": "atf_test_designer",
@@ -2025,6 +2347,13 @@
             "description": "This role allows the user to read, write and delete records on the Developer Collaboration Tasks table.",
             "elevated_privilege": false,
             "scope": "Collaboration Request"
+        },
+        "sn_crm_customer_access_management_config_viewer": {
+            "sys_id": "6357f9abff172a10a1b2ffffffffffc2",
+            "name": "sn_crm_customer_access_management_config_viewer",
+            "description": "Provides read access to customer access management configuration tables, including related party configurations, responsibility definitions,  and responsibility access configurations.",
+            "elevated_privilege": false,
+            "scope": "Global"
         },
         "sn_sttrm_attribute_read": {
             "sys_id": "6384d33dff904210bb76ffffffffff5c",
@@ -2180,6 +2509,13 @@
             "elevated_privilege": false,
             "scope": "Global"
         },
+        "sn_crm_consumer_relationship_viewer": {
+            "sys_id": "6cc87d2fff172a10a1b2ffffffffffd9",
+            "name": "sn_crm_consumer_relationship_viewer",
+            "description": "Extends the sn_crm_consumer_viewer role by granting additional read access to consumer relationships.",
+            "elevated_privilege": false,
+            "scope": "Global"
+        },
         "email_client_template_read": {
             "sys_id": "6d3c40d33b981300ad3cc9bb34efc415",
             "name": "email_client_template_read",
@@ -2198,6 +2534,13 @@
             "sys_id": "6ee37313c0a80201008e156771e720e1",
             "name": "discovery_admin",
             "description": "Can access the \"Discovery\" and \"Discovery Definition\" applications to configure, monitor and run Discovery operations",
+            "elevated_privilege": false,
+            "scope": "Global"
+        },
+        "sn_crm_consumer_viewer": {
+            "sys_id": "6f07b5abff172a10a1b2ffffffffff5c",
+            "name": "sn_crm_consumer_viewer",
+            "description": "Provides read access to all consumers.",
             "elevated_privilege": false,
             "scope": "Global"
         },
@@ -2306,6 +2649,13 @@
             "elevated_privilege": false,
             "scope": "Targeted Communications"
         },
+        "sn_esm_user_admin": {
+            "sys_id": "73a26284d7010200bef20ee60e6103ba",
+            "name": "sn_esm_user_admin",
+            "description": "Service  Management User Admin Role",
+            "elevated_privilege": false,
+            "scope": "Global"
+        },
         "kafka_admin": {
             "sys_id": "73ae5e17b7c3301025319481de11a969",
             "name": "kafka_admin",
@@ -2355,6 +2705,13 @@
             "elevated_privilege": false,
             "scope": "Global"
         },
+        "sn_openframe_user": {
+            "sys_id": "7506fe2deb2002003e97afcef106fe87",
+            "name": "sn_openframe_user",
+            "description": "Open Frame user role.",
+            "elevated_privilege": false,
+            "scope": "Openframe"
+        },
         "data_discovery_api_processor": {
             "sys_id": "750c989fcb752210e2b42a54a8076dae",
             "name": "data_discovery_api_processor",
@@ -2373,6 +2730,13 @@
             "sys_id": "75e52cbcc7f31010e6e2153bf4c26040",
             "name": "currency_instance_report_admin",
             "description": "Role for report view ACL on FxCurrency",
+            "elevated_privilege": false,
+            "scope": "Global"
+        },
+        "sn_crm_consumer_data_manager": {
+            "sys_id": "7634e2b1ff93221064eaffffffffff4f",
+            "name": "sn_crm_consumer_data_manager",
+            "description": "Provides admin access to all consumers.",
             "elevated_privilege": false,
             "scope": "Global"
         },
@@ -2523,6 +2887,13 @@
             "elevated_privilege": false,
             "scope": "Studio"
         },
+        "sn_customerservice.case_authorized_consumer": {
+            "sys_id": "7b1670ea53723010e37dddeeff7b121c",
+            "name": "sn_customerservice.case_authorized_consumer",
+            "description": "Provide access to add additional comments and attachments, accept or reject a solution, receive notifications on case updates, close a case, and update case tasks.",
+            "elevated_privilege": false,
+            "scope": "Customer Service"
+        },
         "email_log_viewer": {
             "sys_id": "7b1aa5f0ff63221020c0ffffffffffd4",
             "name": "email_log_viewer",
@@ -2534,6 +2905,13 @@
             "sys_id": "7b3bd1f4c32123002841b63b12d3ae57",
             "name": "personalize_decision_table_input",
             "description": "Gives full access to decision table inputs",
+            "elevated_privilege": false,
+            "scope": "Global"
+        },
+        "sn_crm_customer_access_management_user": {
+            "sys_id": "7b77bdabff172a10a1b2ffffffffffdd",
+            "name": "sn_crm_customer_access_management_user",
+            "description": "Provides read access to related party configurations and responsibility definitions, enabling users to view and understand relationship names and access contexts.",
             "elevated_privilege": false,
             "scope": "Global"
         },
@@ -2572,6 +2950,13 @@
             "elevated_privilege": false,
             "scope": "Global"
         },
+        "sn_esm_partner": {
+            "sys_id": "7d9a5353d7300200bef20ee60e6103d8",
+            "name": "sn_esm_partner",
+            "description": "Service Management Partner Role",
+            "elevated_privilege": false,
+            "scope": "Global"
+        },
         "ecmdb_admin": {
             "sys_id": "7f1eb5d90a0a0b6500e66ba1875fdfb6",
             "name": "ecmdb_admin",
@@ -2579,10 +2964,24 @@
             "elevated_privilege": false,
             "scope": "Global"
         },
+        "sn_crm_escalation_config_viewer": {
+            "sys_id": "7f29356fff172a10a1b2ffffffffff95",
+            "name": "sn_crm_escalation_config_viewer",
+            "description": "Provides read access to all escalations and related configuration tables.",
+            "elevated_privilege": false,
+            "scope": "Global"
+        },
         "chat_admin": {
             "sys_id": "7f67906c0a0a0b05003e2c61186f82fb",
             "name": "chat_admin",
             "description": "Administers chat tables (read/write)",
+            "elevated_privilege": false,
+            "scope": "Global"
+        },
+        "snc_internal": {
+            "sys_id": "7fcaa702933002009c8579b4f47ffbde",
+            "name": "snc_internal",
+            "description": "The base role for all the internal users of the instance.",
             "elevated_privilege": false,
             "scope": "Global"
         },
@@ -2740,6 +3139,13 @@
             "elevated_privilege": false,
             "scope": "Global"
         },
+        "sn_customerservice.case_viewer": {
+            "sys_id": "85a9e8e70f5800105cbf3694ba767ea8",
+            "name": "sn_customerservice.case_viewer",
+            "description": "Grants read access to cases",
+            "elevated_privilege": false,
+            "scope": "Customer Service"
+        },
         "decision_rule_author": {
             "sys_id": "85acd275532011104ab1ddeeff7b12f4",
             "name": "decision_rule_author",
@@ -2761,6 +3167,13 @@
             "elevated_privilege": false,
             "scope": "Interaction Management for Service Operations Workspace"
         },
+        "sn_openframe_api_user": {
+            "sys_id": "874833bd730033006e581f477bf6a753",
+            "name": "sn_openframe_api_user",
+            "description": "This role should be given to user who wants to use openframe tables through REST API.",
+            "elevated_privilege": false,
+            "scope": "Openframe"
+        },
         "agent_role_config_viewer": {
             "sys_id": "8801a265ffb32210a011ffffffffffeb",
             "name": "agent_role_config_viewer",
@@ -2781,6 +3194,13 @@
             "description": "Can access and modify Agent role configurations",
             "elevated_privilege": false,
             "scope": "Global"
+        },
+        "sn_customerservice.customer_case_manager": {
+            "sys_id": "88fbc90b0b430300c9c86c9037673a4e",
+            "name": "sn_customerservice.customer_case_manager",
+            "description": "Case manager role is able to manage all cases from his account (observing usual account hierarchy and account relationship restrictions) with all the privileges of the sn_customerservice.customer role, plus: create a case on behalf of another contact in the account, view a list of cases belonging to the account, and edit cases belonging to the account\r\n",
+            "elevated_privilege": false,
+            "scope": "Customer Service"
         },
         "par_scheduler": {
             "sys_id": "89293e7c5b5320104db40a8a3d81c7c5",
@@ -2915,6 +3335,13 @@
             "elevated_privilege": false,
             "scope": "Global"
         },
+        "sn_customerservice.deescalation_requester": {
+            "sys_id": "8c83805087a00300fe4433d4c6cb0b21",
+            "name": "sn_customerservice.deescalation_requester",
+            "description": "Allows users to escalate and deescalate cases they have access to.",
+            "elevated_privilege": false,
+            "scope": "Customer Service"
+        },
         "web_service_admin": {
             "sys_id": "8ced49cb0a0a0b8f00bd2ecf512c510b",
             "name": "web_service_admin",
@@ -2940,6 +3367,13 @@
             "sys_id": "8d6e4e2ceb826110740b4e06d8522823",
             "name": "workspace.activity_stream_restrict_create_filter_set",
             "description": "",
+            "elevated_privilege": false,
+            "scope": "Global"
+        },
+        "csm_admin": {
+            "sys_id": "8e29d07a4094b614f877df8d5e284338",
+            "name": "csm_admin",
+            "description": "CSM Admin provides full access to CSM features except a few, such as Walk-Up for CSM, Recommended Actions, Guided Decisions, Guided Decisions - Guidance, Engagement Messenger, and Web Embeddables Core. To configure these features, assign the respective granular admin roles.",
             "elevated_privilege": false,
             "scope": "Global"
         },
@@ -3020,6 +3454,13 @@
             "elevated_privilege": false,
             "scope": "Global"
         },
+        "snc_external": {
+            "sys_id": "940ba702933002009c8579b4f47ffbe2",
+            "name": "snc_external",
+            "description": "The base role for all the external users of the instance.",
+            "elevated_privilege": false,
+            "scope": "Global"
+        },
         "notification_admin": {
             "sys_id": "941ce094cb33221020c04e3ae8076d6d",
             "name": "notification_admin",
@@ -3090,6 +3531,13 @@
             "elevated_privilege": false,
             "scope": "Global"
         },
+        "sn_crm_consumer_relationship_data_manager": {
+            "sys_id": "96680a29ffd3221064eaffffffffff21",
+            "name": "sn_crm_consumer_relationship_data_manager",
+            "description": "Extends the sn_crm_consumer_data_manager role by granting additional admin access to consumer relationships.",
+            "elevated_privilege": false,
+            "scope": "Global"
+        },
         "mi_admin": {
             "sys_id": "969773c493331210edf8869e44891855",
             "name": "mi_admin",
@@ -3124,6 +3572,13 @@
             "description": "",
             "elevated_privilege": false,
             "scope": "Global"
+        },
+        "sn_customerservice.customer_data_viewer": {
+            "sys_id": "97b246180fc73300b4ace7b1d4767ef6",
+            "name": "sn_customerservice.customer_data_viewer",
+            "description": "Grants read access to core Customer Service entities.",
+            "elevated_privilege": false,
+            "scope": "Customer Service"
         },
         "sn_app_eng_studio.user": {
             "sys_id": "97f4a0c20f123300e54f3c71df767ea2",
@@ -3188,12 +3643,26 @@
             "elevated_privilege": false,
             "scope": "Global"
         },
+        "sn_customerservice.customer_admin": {
+            "sys_id": "9b94fc24d7700200e5982cf65e610358",
+            "name": "sn_customerservice.customer_admin",
+            "description": "Admin  for the customer account who has access to all the data under the account.",
+            "elevated_privilege": false,
+            "scope": "Customer Service"
+        },
         "sn_creatorstudio.basic_read": {
             "sys_id": "9c94b59b43202110f3c3d1b4bab8f280",
             "name": "sn_creatorstudio.basic_read",
             "description": "Primitive read access to Creator Studio resources",
             "elevated_privilege": false,
             "scope": "Creator Studio"
+        },
+        "sn_esm_admin": {
+            "sys_id": "9cd753cbd7300200bef20ee60e610387",
+            "name": "sn_esm_admin",
+            "description": "Service Management Admin",
+            "elevated_privilege": false,
+            "scope": "Global"
         },
         "localization_requestor": {
             "sys_id": "9db1dc6e53be101063a2ddeeff7b1258",
@@ -3307,6 +3776,20 @@
             "elevated_privilege": false,
             "scope": "Global"
         },
+        "sn_customerservice.consumer": {
+            "sys_id": "a3c20ae3c303120095ccd02422d3ae8f",
+            "name": "sn_customerservice.consumer",
+            "description": "Consumer role for consumer case creation with the implicit external role.",
+            "elevated_privilege": false,
+            "scope": "Customer Service"
+        },
+        "sf_admin": {
+            "sys_id": "a3f17fd3df312100dca6a5f59bf26394",
+            "name": "sf_admin",
+            "description": "Administrator for state flows",
+            "elevated_privilege": false,
+            "scope": "Global"
+        },
         "response_header_admin": {
             "sys_id": "a4781309ff6f621068b9ffffffffff87",
             "name": "response_header_admin",
@@ -3320,6 +3803,13 @@
             "description": "May browse and select from the library of UX Component records, so they can set a Component reference field on any other table they have update access to",
             "elevated_privilege": false,
             "scope": "Global"
+        },
+        "sn_customerservice.proxy_case_creator": {
+            "sys_id": "a48ab634eba003009e6263fba206fe20",
+            "name": "sn_customerservice.proxy_case_creator",
+            "description": "",
+            "elevated_privilege": false,
+            "scope": "Customer Service"
         },
         "pa_admin": {
             "sys_id": "a4cc30b3bf101100b96dac808c073918",
@@ -3362,6 +3852,13 @@
             "description": "Can access to now assist panel.",
             "elevated_privilege": false,
             "scope": "Now Assist Core"
+        },
+        "awa_integration_user": {
+            "sys_id": "a65aa6f5b7592300de5d3add7e11a9c1",
+            "name": "awa_integration_user",
+            "description": "Role for user to be able to access the AWA integration APIs",
+            "elevated_privilege": false,
+            "scope": "Global"
         },
         "playbook.designer_access": {
             "sys_id": "a676cfb1ff202210a8daffffffffff67",
@@ -3454,6 +3951,13 @@
             "elevated_privilege": false,
             "scope": "Global"
         },
+        "agent_schedule_manager": {
+            "sys_id": "ad1ce832c3443200467f10c422d3aea5",
+            "name": "agent_schedule_manager",
+            "description": "Can see Team's Calendar",
+            "elevated_privilege": false,
+            "scope": "Global"
+        },
         "sn_intel_analyzer.similarity_analyzer_admin": {
             "sys_id": "ad3bfc92b7232300e64c9489de11a9d9",
             "name": "sn_intel_analyzer.similarity_analyzer_admin",
@@ -3517,6 +4021,13 @@
             "elevated_privilege": false,
             "scope": "Global"
         },
+        "agent_schedule_user": {
+            "sys_id": "af3964e7c3b312001c845cb981d3ae1f",
+            "name": "agent_schedule_user",
+            "description": "Can manage Personal schedules",
+            "elevated_privilege": false,
+            "scope": "Global"
+        },
         "snc_required_script_writer_permission": {
             "sys_id": "af99d5310be312105bf96e1ef777b2b4",
             "name": "snc_required_script_writer_permission",
@@ -3535,6 +4046,13 @@
             "sys_id": "afd2a6ff0a0a0b58010b2d9ad681250e",
             "name": "form_admin",
             "description": "Can manage Forms, and Form Sections and Section Elements",
+            "elevated_privilege": false,
+            "scope": "Global"
+        },
+        "awa_agent": {
+            "sys_id": "aff2cdf293931300ed3ef5be867ffb76",
+            "name": "awa_agent",
+            "description": "Agent role for the Advanced Work Assignment feature.",
             "elevated_privilege": false,
             "scope": "Global"
         },
@@ -3587,6 +4105,13 @@
             "elevated_privilege": false,
             "scope": "Global"
         },
+        "sn_customerservice.consumer_agent": {
+            "sys_id": "b2638ae3c303120095ccd02422d3ae55",
+            "name": "sn_customerservice.consumer_agent",
+            "description": "Consumer Service Consumer Agent role, it is the one who performs the work on the case.",
+            "elevated_privilege": false,
+            "scope": "Customer Service"
+        },
         "platform_ml_write": {
             "sys_id": "b281110767113200d109199672415a40",
             "name": "platform_ml_write",
@@ -3600,6 +4125,13 @@
             "description": "",
             "elevated_privilege": false,
             "scope": "Global"
+        },
+        "sn_customerservice.partner_admin": {
+            "sys_id": "b3053c24d7700200e5982cf65e61030f",
+            "name": "sn_customerservice.partner_admin",
+            "description": "Partner admin for the partner account serving the customer accounts",
+            "elevated_privilege": false,
+            "scope": "Customer Service"
         },
         "sn_sow_itsm_admin.sow_admin_user": {
             "sys_id": "b312927e47ae311047c43085d36d4382",
@@ -3678,12 +4210,33 @@
             "elevated_privilege": false,
             "scope": "Global"
         },
+        "sn_cwf_wrkspc.frontline_agent": {
+            "sys_id": "b610786cf45c4210f877ab914eb49dc6",
+            "name": "sn_cwf_wrkspc.frontline_agent",
+            "description": "This role grants access to the CSM Front-line Case page.",
+            "elevated_privilege": false,
+            "scope": "CSM and FSM Configurable Workspace Foundation"
+        },
         "core_ui_analytics_viewer": {
             "sys_id": "b6c3367e771211105679bcc8ca5a99f6",
             "name": "core_ui_analytics_viewer",
             "description": "",
             "elevated_privilege": false,
             "scope": "Global"
+        },
+        "sn_customerservice.case_authorized_contributor": {
+            "sys_id": "b8d678ea53723010e37dddeeff7b12fa",
+            "name": "sn_customerservice.case_authorized_contributor",
+            "description": "Provide access to add additional comments and attachments, accept or reject a solution, receive notifications on case updates, close a case, and update case tasks.",
+            "elevated_privilege": false,
+            "scope": "Customer Service"
+        },
+        "sn_queryrules.viewer": {
+            "sys_id": "b947f56bff172a10a1b2ffffffffff32",
+            "name": "sn_queryrules.viewer",
+            "description": "Provides read access to all query rules.",
+            "elevated_privilege": false,
+            "scope": "Query rules"
         },
         "script_fix_admin": {
             "sys_id": "b9655e20bf0320001875647fcf073909",
@@ -3698,6 +4251,13 @@
             "description": "Read all strategies",
             "elevated_privilege": false,
             "scope": "Goal Framework"
+        },
+        "sn_customerservice.case_mgmt_resp_granular": {
+            "sys_id": "b9db762377a8121014a59f6b8d5a992c",
+            "name": "sn_customerservice.case_mgmt_resp_granular",
+            "description": "Provides granular access to case and related entities through the responsibility framework.",
+            "elevated_privilege": false,
+            "scope": "Customer Service"
         },
         "metric_admin": {
             "sys_id": "b9ecaf140a0a0b350140178805dc4775",
@@ -3846,6 +4406,13 @@
             "elevated_privilege": false,
             "scope": "Global"
         },
+        "sn_customerservice.csm_workspace_user": {
+            "sys_id": "bf1b5d2087621010f734a7da0acb0b05",
+            "name": "sn_customerservice.csm_workspace_user",
+            "description": "This role enables users to access Workspace and to perform basic operations in Workspace.",
+            "elevated_privilege": false,
+            "scope": "Customer Service"
+        },
         "asset": {
             "sys_id": "bf7dfe64c0a80169002ee4e83aa20d57",
             "name": "asset",
@@ -3881,6 +4448,20 @@
             "elevated_privilege": false,
             "scope": "Global"
         },
+        "sn_customerservice.case_write_granular": {
+            "sys_id": "c1879c6e53323010e37dddeeff7b12e3",
+            "name": "sn_customerservice.case_write_granular",
+            "description": "Provides granular write access to case.",
+            "elevated_privilege": false,
+            "scope": "Customer Service"
+        },
+        "email_config_admin": {
+            "sys_id": "c1a80820ff703210783fffffffffff57",
+            "name": "email_config_admin",
+            "description": "Allows admins to configure email settings, notifications, and activity history to manage system email behavior.",
+            "elevated_privilege": false,
+            "scope": "Global"
+        },
         "sysevent_script_action_admin": {
             "sys_id": "c1e5210ffff7221050f4ffffffffffef",
             "name": "sysevent_script_action_admin",
@@ -3894,6 +4475,13 @@
             "description": "A convenience role for setting up the ODBC driver. Contains  'itil' and 'soap_query' roles needed to use the ODBC driver.",
             "elevated_privilege": false,
             "scope": "Global"
+        },
+        "sn_customerservice.case_related_party_write_granular": {
+            "sys_id": "c29710ae53323010e37dddeeff7b1229",
+            "name": "sn_customerservice.case_related_party_write_granular",
+            "description": "Provides granular write access to case related parties.",
+            "elevated_privilege": false,
+            "scope": "Customer Service"
         },
         "email_account_admin": {
             "sys_id": "c3364a4453331300eb7c0a1806dc34f9",
@@ -3972,6 +4560,13 @@
             "elevated_privilege": false,
             "scope": "Security Center"
         },
+        "skill_manager": {
+            "sys_id": "c5eb5209b3132300290ea943c6a8dcba",
+            "name": "skill_manager",
+            "description": "Used to build Skill Taxonomy and associate skills to Skill Category.",
+            "elevated_privilege": false,
+            "scope": "Global"
+        },
         "data_manager_user": {
             "sys_id": "c627309e53722010af64ddeeff7b1232",
             "name": "data_manager_user",
@@ -3997,6 +4592,13 @@
             "sys_id": "c7aac545c7662010a6dff2327ec26066",
             "name": "service_author",
             "description": "This role allows users to create services and offerings in any portfolio. This role can only update and delete the services and offerings they created.",
+            "elevated_privilege": false,
+            "scope": "Global"
+        },
+        "skill_model_user": {
+            "sys_id": "c7fac003c3232000c111113e5bba8fe5",
+            "name": "skill_model_user",
+            "description": "Can read relationship between skills and models",
             "elevated_privilege": false,
             "scope": "Global"
         },
@@ -4032,6 +4634,13 @@
             "sys_id": "ca55cd759f2002002920bde8132e70b4",
             "name": "change_manager",
             "description": "Role For Change Manager.",
+            "elevated_privilege": false,
+            "scope": "Global"
+        },
+        "awa_external_user": {
+            "sys_id": "ca8a1cb3432002109808d5198ab8f289",
+            "name": "awa_external_user",
+            "description": "Role for users to work on External Third-party Routed Advanced Work Assignment.",
             "elevated_privilege": false,
             "scope": "Global"
         },
@@ -4126,6 +4735,13 @@
             "elevated_privilege": false,
             "scope": "Global"
         },
+        "sn_shn.editor": {
+            "sys_id": "d06b6b6ac372020095ccd02422d3ae87",
+            "name": "sn_shn.editor",
+            "description": "Has admin rights to read and update  Special Handling Notes.",
+            "elevated_privilege": false,
+            "scope": "Global"
+        },
         "sn_creatorstudio.task_admin": {
             "sys_id": "d0be0394ffbb22103979ffffffffff82",
             "name": "sn_creatorstudio.task_admin",
@@ -4137,6 +4753,13 @@
             "sys_id": "d0d45ba0470002004695d7527c9a71c6",
             "name": "rest_api_explorer",
             "description": "Can access REST API Explorer",
+            "elevated_privilege": false,
+            "scope": "Global"
+        },
+        "sn_shn.admin": {
+            "sys_id": "d13b6b6ac372020095ccd02422d3ae83",
+            "name": "sn_shn.admin",
+            "description": "Has admin rights to create, read,update and delete Special Handling Notes.",
             "elevated_privilege": false,
             "scope": "Global"
         },
@@ -4357,6 +4980,13 @@
             "elevated_privilege": false,
             "scope": "Creator Studio"
         },
+        "sn_app_cs_social_social_channel_user": {
+            "sys_id": "dc962652d73022004f1e82285e6103a0",
+            "name": "sn_app_cs_social_social_channel_user",
+            "description": "",
+            "elevated_privilege": false,
+            "scope": "Customer Service integration with Social Media Store"
+        },
         "sn_publications.author": {
             "sys_id": "dcba4051c37012004bd67bfaa2d3aec1",
             "name": "sn_publications.author",
@@ -4546,6 +5176,13 @@
             "elevated_privilege": false,
             "scope": "Global"
         },
+        "sn_customerservice.sn_consumer_menu_viewer": {
+            "sys_id": "e4811935771001102dbc080c3f5a9993",
+            "name": "sn_customerservice.sn_consumer_menu_viewer",
+            "description": "Granular role to give access to B2C Agent in OMS plugin for Application menu as well as individual menu items specific to B2C transactions\r\n",
+            "elevated_privilege": false,
+            "scope": "Customer Service"
+        },
         "catalog_lookup_admin": {
             "sys_id": "e4c5120a9f1030007bb2ed93ee4bcc3b",
             "name": "catalog_lookup_admin",
@@ -4627,6 +5264,13 @@
             "sys_id": "e84cd5a237332210a33cd99be2924be0",
             "name": "api_service_admin",
             "description": "This role allows to configure and manage Rest API Access Policies, SOAP API Access Policies, API Keys, Authentication Profiles, Processor Access Policy and Rest API Auth Scope.",
+            "elevated_privilege": false,
+            "scope": "Global"
+        },
+        "sn_crm_account_relationship_viewer": {
+            "sys_id": "e8ab79afff172a10a1b2ffffffffff93",
+            "name": "sn_crm_account_relationship_viewer",
+            "description": "Extends the sn_crm_account_viewer role by granting additional read access to account relationships.",
             "elevated_privilege": false,
             "scope": "Global"
         },
@@ -4791,6 +5435,13 @@
             "elevated_privilege": false,
             "scope": "Global"
         },
+        "sn_customerservice.case_contributor_editor": {
+            "sys_id": "ef46da710f5a10105bc5e7b1d4767ec3",
+            "name": "sn_customerservice.case_contributor_editor",
+            "description": "This role grants restrictive write access to the fields on the Case form.",
+            "elevated_privilege": false,
+            "scope": "Customer Service"
+        },
         "analytics_viewer": {
             "sys_id": "ef950962c7230010393d265c95c26014",
             "name": "analytics_viewer",
@@ -4882,6 +5533,13 @@
             "elevated_privilege": false,
             "scope": "Global"
         },
+        "sn_app_cs_social_social_log_user": {
+            "sys_id": "f3a28f16d73022004f1e82285e6103aa",
+            "name": "sn_app_cs_social_social_log_user",
+            "description": "",
+            "elevated_privilege": false,
+            "scope": "Customer Service integration with Social Media Store"
+        },
         "viz_admin": {
             "sys_id": "f3b83a7c5b5320104db40a8a3d81c72f",
             "name": "viz_admin",
@@ -4945,6 +5603,13 @@
             "elevated_privilege": false,
             "scope": "Global"
         },
+        "awa_manager": {
+            "sys_id": "f5f2cdf293931300ed3ef5be867ffb6f",
+            "name": "awa_manager",
+            "description": "Admin role for the Advanced Work Assignment feature.",
+            "elevated_privilege": false,
+            "scope": "Global"
+        },
         "dashboard_admin": {
             "sys_id": "f61bcb46b76413003b67c50eee11a99f",
             "name": "dashboard_admin",
@@ -4994,6 +5659,13 @@
             "elevated_privilege": false,
             "scope": "Global"
         },
+        "sn_app_cs_social.admin": {
+            "sys_id": "f996aa67649db210f877f07c6be78d69",
+            "name": "sn_app_cs_social.admin",
+            "description": "Admin role managing social media communication channels in Customer Service integration with Social Media Store app.",
+            "elevated_privilege": false,
+            "scope": "Customer Service integration with Social Media Store"
+        },
         "pd_restarter": {
             "sys_id": "f9b167d4ff31311029c46b6d253bf119",
             "name": "pd_restarter",
@@ -5015,10 +5687,24 @@
             "elevated_privilege": false,
             "scope": "Global"
         },
+        "sn_customercentral.sn_customer_central_admin": {
+            "sys_id": "faaf5d0a1b54b210b2009712b24bcb99",
+            "name": "sn_customercentral.sn_customer_central_admin",
+            "description": "Granular admin role for Customer Central",
+            "elevated_privilege": false,
+            "scope": "Customer Central"
+        },
         "cmdb_payload_admin": {
             "sys_id": "fba6227b53f821107da2ddeeff7b1292",
             "name": "cmdb_payload_admin",
             "description": "Can administrate CMDB partial payloads",
+            "elevated_privilege": false,
+            "scope": "Global"
+        },
+        "sn_esm_agent": {
+            "sys_id": "fbd70204d7010200bef20ee60e610318",
+            "name": "sn_esm_agent",
+            "description": "Service Management Agent",
             "elevated_privilege": false,
             "scope": "Global"
         },

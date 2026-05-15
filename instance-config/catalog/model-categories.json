@@ -1,0 +1,392 @@
+{
+    "$schema": "../schemas/model-categories.schema.json",
+    "_source": "cmdb_model_category",
+    "_description": "CMDB model categories (for validating model_category GUIDs).",
+    "_exported_at": "2026-05-15T18:15:54.270289+00:00",
+    "model_categories": {
+        "0200c954c3031000b959fd251eba8fb9": {
+            "name": "Zones"
+        },
+        "04e9f054c3031000b959fd251eba8f2f": {
+            "name": "ESX Resource Pool"
+        },
+        "06d6fc14c3031000b959fd251eba8fc9": {
+            "name": "Data Center Zone"
+        },
+        "0afc3890c3031000b959fd251eba8f8b": {
+            "name": "Linux Server"
+        },
+        "0be11f58c7432010f74c784c95c260b7": {
+            "name": "Mobile Device"
+        },
+        "0dfe3890c3031000b959fd251eba8f5c": {
+            "name": "Sybase Catalog"
+        },
+        "18eaf054c3031000b959fd251eba8f9c": {
+            "name": "Hardware"
+        },
+        "18fdf454c3031000b959fd251eba8fc8": {
+            "name": "Oracle Catalog"
+        },
+        "1beb7454c3031000b959fd251eba8f82": {
+            "name": "JBoss"
+        },
+        "218323293743100044e0bfc8bcbe5d61": {
+            "name": "Consumable"
+        },
+        "21e9f054c3031000b959fd251eba8f03": {
+            "name": "Email Server"
+        },
+        "23ff7854c3031000b959fd251eba8fe7": {
+            "name": "Tomcat Connector"
+        },
+        "2dd5bc14c3031000b959fd251eba8f32": {
+            "name": "Business Process"
+        },
+        "32eb7454c3031000b959fd251eba8f35": {
+            "name": "IP Server"
+        },
+        "35bf2d4137101000deeabfc8bcbe5dbd": {
+            "name": "Software License"
+        },
+        "37d57c14c3031000b959fd251eba8fad": {
+            "name": "Application"
+        },
+        "3dfe3854c3031000b959fd251eba8f42": {
+            "name": "Printer"
+        },
+        "42fe3854c3031000b959fd251eba8f76": {
+            "name": "Router Interface"
+        },
+        "43eaf054c3031000b959fd251eba8f82": {
+            "name": "FTP Server"
+        },
+        "46fdb814c3031000b959fd251eba8f5e": {
+            "name": "Next Hop Routing Rule"
+        },
+        "4dfe7854c3031000b959fd251eba8f73": {
+            "name": "Switch Port"
+        },
+        "4dffb854c3031000b959fd251eba8f36": {
+            "name": "UPS Input"
+        },
+        "51fdf454c3031000b959fd251eba8fd4": {
+            "name": "Oracle Instance"
+        },
+        "53e9b054c3031000b959fd251eba8ffc": {
+            "name": "Domino"
+        },
+        "55d57c14c3031000b959fd251eba8fa6": {
+            "name": "AIX Server"
+        },
+        "57d5bc14c3031000b959fd251eba8fd7": {
+            "name": "Computer Peripheral"
+        },
+        "58fdb454c3031000b959fd251eba8ff0": {
+            "name": "Network Adapter"
+        },
+        "5fea3454c3031000b959fd251eba8f3d": {
+            "name": "IP Device"
+        },
+        "5ffcb454c3031000b959fd251eba8f82": {
+            "name": "Microsoft SQL Catalog"
+        },
+        "5ffe7854c3031000b959fd251eba8f4c": {
+            "name": "Switch Forwarding Rule"
+        },
+        "60eaf054c3031000b959fd251eba8fe3": {
+            "name": "IBM Websphere"
+        },
+        "65eaf054c3031000b959fd251eba8f42": {
+            "name": "Exit Interface Routing Rule"
+        },
+        "6800c954c3031000b959fd251eba8f85": {
+            "name": "Windows Service"
+        },
+        "68d5f814c3031000b959fd251eba8f0f": {
+            "name": "Cluster"
+        },
+        "69d57c14c3031000b959fd251eba8fc7": {
+            "name": "Application Software"
+        },
+        "69fdf454c3031000b959fd251eba8fc1": {
+            "name": "NFS File System"
+        },
+        "6ae9b054c3031000b959fd251eba8fe1": {
+            "name": "Disk"
+        },
+        "6ffd3854c3031000b959fd251eba8f3b": {
+            "name": "Print Queue"
+        },
+        "6ffdf454c3031000b959fd251eba8ffa": {
+            "name": "Outlet"
+        },
+        "73d479803713100044e0bfc8bcbe5d79": {
+            "name": "Monitor"
+        },
+        "7900c954c3031000b959fd251eba8f7e": {
+            "name": "Windows Server"
+        },
+        "7a00c954c3031000b959fd251eba8f77": {
+            "name": "Windows Cluster Resource"
+        },
+        "7ad6fc14c3031000b959fd251eba8f90": {
+            "name": "Data Center"
+        },
+        "7efe7854c3031000b959fd251eba8f53": {
+            "name": "Switch Partition"
+        },
+        "7feb7454c3031000b959fd251eba8fb4": {
+            "name": "LDAP Service"
+        },
+        "80d6fc14c3031000b959fd251eba8fd7": {
+            "name": "Database Catalog"
+        },
+        "80ffb854c3031000b959fd251eba8f15": {
+            "name": "UPS"
+        },
+        "81feb9c137101000deeabfc8bcbe5dc4": {
+            "name": "Computer"
+        },
+        "82ff7854c3031000b959fd251eba8fee": {
+            "name": "UNIX Daemon"
+        },
+        "82ffb854c3031000b959fd251eba8f1c": {
+            "name": "UPS Alarm"
+        },
+        "83c92540732623008b516cb63cf6a7b1": {
+            "name": "Application Service"
+        },
+        "84ffb854c3031000b959fd251eba8fe8": {
+            "name": "Web Server"
+        },
+        "85ffb854c3031000b959fd251eba8fe1": {
+            "name": "Web Application"
+        },
+        "88d6fc14c3031000b959fd251eba8f89": {
+            "name": "Computer Room AC"
+        },
+        "88ffb854c3031000b959fd251eba8f93": {
+            "name": "Virtual Machine Instance"
+        },
+        "89d5f814c3031000b959fd251eba8f08": {
+            "name": "Circuit"
+        },
+        "8c4cfdfb77b1a110da1f99f69c5a99d3": {
+            "name": "Communication Hardware"
+        },
+        "8cd5bc14c3031000b959fd251eba8fbc": {
+            "name": "Cluster Virtual IP"
+        },
+        "8cfdf454c3031000b959fd251eba8ff3": {
+            "name": "OS/X Server"
+        },
+        "8ffdf454c3031000b959fd251eba8f1c": {
+            "name": "Network Gear"
+        },
+        "90eaf054c3031000b959fd251eba8f7b": {
+            "name": "File System"
+        },
+        "90fe3854c3031000b959fd251eba8f6f": {
+            "name": "Rack"
+        },
+        "91ff7854c3031000b959fd251eba8fe0": {
+            "name": "Tomcat"
+        },
+        "92fe7854c3031000b959fd251eba8fd9": {
+            "name": "Sybase Instance"
+        },
+        "94028b6a1b5310002502fbcd2c071315": {
+            "name": "Bundle"
+        },
+        "96ffb854c3031000b959fd251eba8fef": {
+            "name": "Web Service"
+        },
+        "98b44470d7311100158ba6859e610353": {
+            "name": "Work Task"
+        },
+        "996b568ec3102000b959fd251eba8f19": {
+            "name": "Contract"
+        },
+        "9bffb854c3031000b959fd251eba8f9a": {
+            "name": "Virtual Private Network"
+        },
+        "9bfff054c3031000b959fd251eba8ff9": {
+            "name": "Virtual Machine"
+        },
+        "9cd8f9b7b94b2300964fbb6da89f2ff3": {
+            "name": "Default"
+        },
+        "9cfcb454c3031000b959fd251eba8f7b": {
+            "name": "Memory Module"
+        },
+        "9dea3454c3031000b959fd251eba8f36": {
+            "name": "IP Address"
+        },
+        "9f00c954c3031000b959fd251eba8fb1": {
+            "name": "Wire"
+        },
+        "a0d5bc14c3031000b959fd251eba8f0d": {
+            "name": "BEA Weblogic"
+        },
+        "a1d5bc14c3031000b959fd251eba8f5f": {
+            "name": "Business Service"
+        },
+        "a4d6fc14c3031000b959fd251eba8fee": {
+            "name": "Database Instance"
+        },
+        "a5d63890c3031000b959fd251eba8f75": {
+            "name": "Computer Room"
+        },
+        "a5ffb854c3031000b959fd251eba8fda": {
+            "name": "VMware vCenter Instance"
+        },
+        "a800c954c3031000b959fd251eba8f70": {
+            "name": "Windows Cluster Node"
+        },
+        "a9fdb454c3031000b959fd251eba8fe9": {
+            "name": "Netware Server"
+        },
+        "aad57c14c3031000b959fd251eba8fc0": {
+            "name": "Application Server"
+        },
+        "aafcb454c3031000b959fd251eba8f96": {
+            "name": "Microsoft SQL Instance"
+        },
+        "abfd3854c3031000b959fd251eba8f08": {
+            "name": "Patch"
+        },
+        "adea3454c3031000b959fd251eba8f44": {
+            "name": "IP Network"
+        },
+        "ae963be4d7311100158ba6859e61030a": {
+            "name": "Work Order"
+        },
+        "b1eaf054c3031000b959fd251eba8fdc": {
+            "name": "IBM Mainframe"
+        },
+        "b1fdf454c3031000b959fd251eba8fcd": {
+            "name": "Oracle Database Listener"
+        },
+        "b1ff7854c3031000b959fd251eba8ff5": {
+            "name": "UNIX Server"
+        },
+        "b2d5bc14c3031000b959fd251eba8f96": {
+            "name": "Cluster Node"
+        },
+        "b7d5bc14c3031000b959fd251eba8fd0": {
+            "name": "Communication Device"
+        },
+        "b9eb7414c3031000b959fd251eba8fe5": {
+            "name": "IP Phone"
+        },
+        "bbe9b054c3031000b959fd251eba8fda": {
+            "name": "Directory Server"
+        },
+        "bbfe3854c3031000b959fd251eba8ff2": {
+            "name": "SNC Component"
+        },
+        "bceb7454c3031000b959fd251eba8f42": {
+            "name": "IP Switch"
+        },
+        "c4d4fe4937101000deeabfc8bcbe5d91": {
+            "name": "Server"
+        },
+        "c5e93890c3031000b959fd251eba8f7d": {
+            "name": "Desktop Software"
+        },
+        "c6eaf054c3031000b959fd251eba8f95": {
+            "name": "Group"
+        },
+        "c7d6fc14c3031000b959fd251eba8ff5": {
+            "name": "DB2 Catalog"
+        },
+        "c7fcb454c3031000b959fd251eba8f9d": {
+            "name": "MySQL Catalog"
+        },
+        "c8eb7454c3031000b959fd251eba8f62": {
+            "name": "Java Server"
+        },
+        "c8ffb854c3031000b959fd251eba8f2f": {
+            "name": "UPS Bypass"
+        },
+        "c9d5bc50c3031000b959fd251eba8fbc": {
+            "name": "Accessory"
+        },
+        "cceb7454c3031000b959fd251eba8f2d": {
+            "name": "IP Router"
+        },
+        "cdfe7854c3031000b959fd251eba8f25": {
+            "name": "Solaris Server"
+        },
+        "ceeab490c3031000b959fd251eba8f52": {
+            "name": "Infrastructure Software"
+        },
+        "d1d6fc14c3031000b959fd251eba8fd0": {
+            "name": "Database"
+        },
+        "d4fe3854c3031000b959fd251eba8f89": {
+            "name": "SMB File System"
+        },
+        "d5fd3854c3031000b959fd251eba8f28": {
+            "name": "PDU"
+        },
+        "d7eaf054c3031000b959fd251eba8fa3": {
+            "name": "HPUX Server"
+        },
+        "d9fd3854c3031000b959fd251eba8f01": {
+            "name": "Parallels"
+        },
+        "d9fdf454c3031000b959fd251eba8f23": {
+            "name": "Network Infrastructure Item"
+        },
+        "dafcb454c3031000b959fd251eba8fe2": {
+            "name": "MySQL Instance"
+        },
+        "dd411ee03734200044e0bfc8bcbe5d50": {
+            "name": "ESX Server"
+        },
+        "ddd5bc14c3031000b959fd251eba8fb5": {
+            "name": "Cluster Resource"
+        },
+        "ddeb7454c3031000b959fd251eba8f3b": {
+            "name": "IP Service Instance"
+        },
+        "df7c5918c3031000b959fd251eba8fa5": {
+            "name": "IBM Mainframe LPAR"
+        },
+        "dffe7854c3031000b959fd251eba8f2c": {
+            "name": "Storage Device"
+        },
+        "e0fdf454c3031000b959fd251eba8f37": {
+            "name": "Network Traffic"
+        },
+        "e1008d14c3031000b959fd251eba8f18": {
+            "name": "Web Site"
+        },
+        "e200c954c3031000b959fd251eba8f5d": {
+            "name": "Windows Cluster"
+        },
+        "e3008d14c3031000b959fd251eba8f1f": {
+            "name": "Websphere Cell"
+        },
+        "e3eaf054c3031000b959fd251eba8f33": {
+            "name": "Infrastructure Service"
+        },
+        "e3ffb854c3031000b959fd251eba8f4a": {
+            "name": "UPS Output"
+        },
+        "ece9b054c3031000b959fd251eba8ff4": {
+            "name": "DNS Name"
+        },
+        "eefe7854c3031000b959fd251eba8f1e": {
+            "name": "Software"
+        },
+        "eeffb854c3031000b959fd251eba8fc6": {
+            "name": "VMware"
+        },
+        "f9d63054c3031000b959fd251eba8f21": {
+            "name": "DB2 Instance"
+        }
+    }
+}

@@ -1,0 +1,5077 @@
+{
+    "_source": "sys_trigger",
+    "_description": "Trigger records (scheduler execution state).",
+    "_exported_at": "2026-05-15T18:15:56.315376+00:00",
+    "triggers": {
+        "0000602cf58803100a22c0b3dfa15195": {
+            "name": "CMDB Data Manager Retire Policy Processor",
+            "next_action": "2026-05-16 10:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "0034a464f54c03100a22c0b3dfa1518b": {
+            "name": "Advanced Portal Navigation : Delete invalid records",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "0035e8f2c3300b10b4e13e1d05013179": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 11:45:09",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "0055e3aac338c710b4e13e1d05013156": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 07:06:05",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "00959cacf54003100a22c0b3dfa151c0": {
+            "name": "Active Learning",
+            "next_action": "2026-05-31 04:03:29",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "0141b2733b22001006f1600713efc43f": {
+            "name": "Streaming Attachment Table Cleaner",
+            "next_action": "2026-05-15 19:00:00",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "01802ce0f5c803100a22c0b3dfa15147": {
+            "name": "ITSM License Control",
+            "next_action": "2026-05-15 22:30:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "01dcd4e8f5c403100a22c0b3dfa151ee": {
+            "name": "Temporary Lists Auto Delete",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "0258e828f50043100a22c0b3dfa151c9": {
+            "name": "Server Minimum Statistics",
+            "next_action": "2026-04-01 05:25:31",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "031792bcc3680310b4e13e1d05013110": {
+            "name": "Playbook Auto Archive Scheduler",
+            "next_action": "2026-05-15 19:00:00",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "0373f2d2b7033300d4260f98ee11a91b": {
+            "name": "Notification to start using ML",
+            "next_action": "2026-06-01 05:30:00",
+            "state": "0",
+            "trigger_type": "4"
+        },
+        "03cf036ec374c710b4e13e1d0501315f": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 05:32:04",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "03daa60d43d12110114b9c0d7ab8f2b1": {
+            "name": "Purge Event Queue Mapping",
+            "next_action": "2026-05-16 08:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "03df34ee53943200ae8dc12b44dc348b": {
+            "name": "Check PA Targets",
+            "next_action": "2026-05-15 22:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "04959cacf54003100a22c0b3dfa151b4": {
+            "name": "ML Clustering Model Update Cleanup",
+            "next_action": "2026-05-18 07:00:00",
+            "state": "0",
+            "trigger_type": "3"
+        },
+        "04ceea910f023010ea45be0a68767e1b": {
+            "name": "GCF Licensing Count Persistor Monthly",
+            "next_action": "2026-06-01 10:36:59",
+            "state": "0",
+            "trigger_type": "4"
+        },
+        "04d40e393780321033183d4174924be1": {
+            "name": "Clean Auth Token mapping records",
+            "next_action": "2026-05-16 04:00:16",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "05c56ca8f58c03100a22c0b3dfa15165": {
+            "name": "Enable search-based suggestions",
+            "next_action": "2026-04-01 05:14:16",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "073f0b6437112000fceabfc8bcbe5d42": {
+            "name": "Stock Rule Runner",
+            "next_action": "2026-05-16 08:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "07610431c3300310b4e13e1d0501316e": {
+            "name": "MI Buffer Drain Job",
+            "next_action": "2026-05-15 18:19:58",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "0761c031c3300310b4e13e1d050131c6": {
+            "name": "UA Platform Analytics Timed Uploader",
+            "next_action": "2026-05-15 20:51:31",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "076d1464f50803100a22c0b3dfa15171": {
+            "name": "Daily job to fetch Email Indicator Data and Email Notifications created",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "08556064f58c03100a22c0b3dfa1511a": {
+            "name": "Collab Chat - Notify Unread Messages",
+            "next_action": "2026-05-16 08:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "088bc96b43400210aaf41347efb8f2d0": {
+            "name": "Process analytics cache prefetch queue",
+            "next_action": "2026-05-15 18:16:02",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "08ef50a8f58803100a22c0b3dfa151ed": {
+            "name": "Notify business process review date",
+            "next_action": "2026-05-16 17:30:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "09169ca4f58003100a22c0b3dfa151cc": {
+            "name": "DeleteUsedAndExpiredSecurityNonce",
+            "next_action": "2026-05-16 05:23:20",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "091ac321d70221004f6a0eca5e6103eb": {
+            "name": "Collect Table Per Hierarchy Stats",
+            "next_action": "2026-04-01 03:55:33",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "099ac764ff0022108d44ffffffffff52": {
+            "name": "Add Users To Conditional Script Writer Group",
+            "next_action": "2026-04-01 07:38:36",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "09e257e00f03101064e96995a4767e66": {
+            "name": "Archive Reference Copy",
+            "next_action": "2026-05-15 18:17:54",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "0a58e828f50043100a22c0b3dfa151cb": {
+            "name": "Unix Server Baseline",
+            "next_action": "2026-04-01 05:25:31",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "0a58e828f50043100a22c0b3dfa151d1": {
+            "name": "Windows Computer Minimum Statistics",
+            "next_action": "2026-04-01 05:25:31",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "0a95cf0557103300491d8f90ac94f92d": {
+            "name": "SLA Async Delegator",
+            "next_action": "2026-05-15 18:15:59",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "0b207e9743213110dc871347efb8f266": {
+            "name": "Clean Analytics Cache",
+            "next_action": "2026-05-15 18:50:32",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "0b3334189b142210ecdb3eda5ef04bbc": {
+            "name": "KMF Diagnostics",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "0b6e6db6c3b80b10b4e13e1d050131c9": {
+            "name": "CSM-Data-Fix - Tag all external users with intentional internal role assignments",
+            "next_action": "2026-05-15 17:05:07",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "0bd73db0d72321005eeaa2eb5e61037c": {
+            "name": "UA Platform Analytics Timed Uploader",
+            "next_action": "2026-04-01 11:00:00",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "0c00602cf58803100a22c0b3dfa151d9": {
+            "name": "CMDB Data Manager Delete Related Entry Policy Processor",
+            "next_action": "2026-05-16 10:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "0c0d448f0a0a0b2d00fcd8da2b4144ae": {
+            "name": "MID Server Monitor",
+            "next_action": "2026-05-15 18:20:10",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "0c60a860f5c803100a22c0b3dfa15198": {
+            "name": "Delete Revoked and Unregistered Device Registration",
+            "next_action": "2026-05-16 17:30:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "0c86b60bc79000103500e1d68dc26056": {
+            "name": "Check Upgrade Script (Does Nothing)",
+            "next_action": "2026-04-01 04:25:03",
+            "state": "0",
+            "trigger_type": ""
+        },
+        "0c9223e2c338c710b4e13e1d0501317b": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 06:54:04",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "0d156020f58c03100a22c0b3dfa15154": {
+            "name": "Expire Actionable Notifications",
+            "next_action": "2026-05-15 18:56:16",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "0d762fcc77123110a69410ed9f5a99e3": {
+            "name": "Affected CI Notifications Event Processor",
+            "next_action": "2026-05-15 18:16:00",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "0e2668ecf58c03100a22c0b3dfa151a3": {
+            "name": "Access Auditor Scheduled Scan",
+            "next_action": "2026-05-16 06:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "0e374f2543212110066b277c5ab8f28b": {
+            "name": "Return Waiting Events Job Trigger",
+            "next_action": "2026-04-01 03:55:33",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "0f3c96648f033300e7e16c7827bdee7d": {
+            "name": "Assessment: Basic flow Assessment Creati",
+            "next_action": "2026-04-01 05:29:10",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "0f610431c3300310b4e13e1d05013177": {
+            "name": "PAF Event Buffer Timed Drain",
+            "next_action": "2026-05-15 18:17:58",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "0fb2c110871321004ebe19fa84e3ecf8": {
+            "name": "report view events process",
+            "next_action": "2026-05-15 18:15:58",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "1098c69ab74da210e2b4d643ce11a9d2": {
+            "name": "Transfer Data Privacy Telemetry to DB",
+            "next_action": "2026-04-01 04:48:20",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "10995284432012108896e1895fb8f2f7": {
+            "name": "Telemetry Trace Context Cleaner",
+            "next_action": "2026-05-15 23:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "114f26c943f111101e355dfc2bb8f240": {
+            "name": "Protected Script Values Migration Job",
+            "next_action": "2026-05-16 06:47:29",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "11c914a0f54403100a22c0b3dfa151a6": {
+            "name": "CMDBGroupEventGenerator",
+            "next_action": "2026-05-15 18:16:23",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "11d4652777323010aae84f20681061d2": {
+            "name": "VPE Cleanup On Instance Start",
+            "next_action": "2026-04-01 04:05:37",
+            "state": "0",
+            "trigger_type": "9"
+        },
+        "11e5dbe5e27a46698daaf5cbd3718cec": {
+            "name": "App Operation Queue Health Monitor",
+            "next_action": "2026-05-15 18:16:10",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "11e705b853012110741dddeeff7b12a0": {
+            "name": "Drop temporary tables",
+            "next_action": "2026-05-15 18:55:33",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "127bdce4f58403100a22c0b3dfa151fe": {
+            "name": "Purge Orphaned Containerized MID Servers",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "129ce0dd4353121032b820376ab8f2ee": {
+            "name": "DMScheduler-Daily",
+            "next_action": "2026-05-16 04:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "13610431c3300310b4e13e1d050131bb": {
+            "name": "Hermes Failover State Refresh Job",
+            "next_action": "2026-05-12 06:34:58",
+            "state": "0",
+            "trigger_type": ""
+        },
+        "13610431c3300310b4e13e1d050131d0": {
+            "name": "VA Event Processor 0",
+            "next_action": "2026-05-15 18:15:59",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "13610431c3300310b4e13e1d050131d2": {
+            "name": "Flow Engine Interactive Event Handler",
+            "next_action": "2026-05-15 18:15:57",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "13610431c3300310b4e13e1d050131f5": {
+            "name": "Drain GCF Sample Queue",
+            "next_action": "2026-05-15 18:19:59",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "140662f443202110adb4a18c4bb8f2a5": {
+            "name": "Instance Stats Aggregator",
+            "next_action": "2026-05-15 18:25:28",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "1464dc68f50003100a22c0b3dfa1510f": {
+            "name": "Import Set Deleter",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "146f5c60f58803100a22c0b3dfa1512c": {
+            "name": "Outage Data Update",
+            "next_action": "2026-04-01 04:46:21",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "147beee3c32311006568506adfba8f26": {
+            "name": "Clean PA collections",
+            "next_action": "2026-05-16 04:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "14a620a4f5cc03100a22c0b3dfa1518e": {
+            "name": "Daily clean up check security area records",
+            "next_action": "2026-05-16 09:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "14a620a4f5cc03100a22c0b3dfa15197": {
+            "name": "SC - Calculate Compliance Monthly",
+            "next_action": "2026-06-01 07:02:00",
+            "state": "0",
+            "trigger_type": "4"
+        },
+        "14a620a4f5cc03100a22c0b3dfa151dd": {
+            "name": "[PA VSC] Real-Time Daily Data Collection",
+            "next_action": "2026-05-16 09:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "14b5f6aac3b0c710b4e13e1d050131c6": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 03:38:01",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "14bdd468f50803100a22c0b3dfa1518a": {
+            "name": "Send password reset process security score notification",
+            "next_action": "2026-05-18 07:00:00",
+            "state": "0",
+            "trigger_type": "3"
+        },
+        "14f90032c37cc710b4e13e1d0501312f": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 09:46:07",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "151e46eec37c8710b4e13e1d05013139": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 00:44:58",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "156d1064f50803100a22c0b3dfa1515f": {
+            "name": "PA HSQLFileTimeStampModifier",
+            "next_action": "2026-05-15 18:30:08",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "15c2ffa877001110b6d21fd89a5a999f": {
+            "name": "DB Compaction",
+            "next_action": "2026-05-16 04:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "167b1028f58403100a22c0b3dfa15189": {
+            "name": "MIDUserConnectivity",
+            "next_action": "2026-05-15 22:05:05",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "1696a024f5cc03100a22c0b3dfa15164": {
+            "name": "Download Hardening Baselines",
+            "next_action": "2026-04-01 05:17:54",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "16a2bcc7c30301109a21ccbfea40dd57": {
+            "name": "Renew expiring vault auth cert",
+            "next_action": "2026-04-27 15:00:00",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "16b8adbac3380b10b4e13e1d050131a0": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 16:40:13",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "1715dce4f54003100a22c0b3dfa1515d": {
+            "name": "NowMQ Archiver",
+            "next_action": "2026-05-15 21:48:06",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "17610431c3300310b4e13e1d050131ff": {
+            "name": "System - reduce resources",
+            "next_action": "2026-05-12 06:34:59",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "17614431c3300310b4e13e1d05013122": {
+            "name": "Process Automation Event Handler",
+            "next_action": "2026-05-15 18:15:57",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "179d1828f50803100a22c0b3dfa151d4": {
+            "name": "Modify ID type to BIGINT for pa_scores_l1 and pa_scores_l2",
+            "next_action": "2026-04-01 04:38:39",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "17dee932c3f80b10b4e13e1d05013143": {
+            "name": "Re-register AWA Record Watcher",
+            "next_action": "2026-05-15 18:16:13",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "18762ca0f5cc03100a22c0b3dfa151a3": {
+            "name": "Generate Employee Profiles from HR Profiles",
+            "next_action": "2026-04-01 05:17:13",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "192a5c554331311010515042e9b8f2bc": {
+            "name": "KPI Signals Analytics Job",
+            "next_action": "2026-05-15 22:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "1a507dbec33c0b10b4e13e1d05013120": {
+            "name": "events process sn_eaai_csm.email_as_an_interaction",
+            "next_action": "2026-05-15 18:16:02",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "1a7764a0f50043100a22c0b3dfa1511d": {
+            "name": "SitemapPurgeScheduler",
+            "next_action": "2026-05-16 06:59:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "1ac1ebc1b70311109fed8481de11a900": {
+            "name": "Hermes Health Status Check",
+            "next_action": "2026-05-15 18:16:16",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "1aca0f643b332200956c47b334efc4ad": {
+            "name": "Index Performance Evaluation",
+            "next_action": "2026-05-15 19:04:05",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "1b614431c3300310b4e13e1d0501311b": {
+            "name": "Clean Temp Files",
+            "next_action": "2026-05-15 18:34:59",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "1b7a902cf54403100a22c0b3dfa15134": {
+            "name": "LDAP Connection Test",
+            "next_action": "2026-05-15 18:19:51",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "1bab14a8f58403100a22c0b3dfa15167": {
+            "name": "Discovery Status Cleanup",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "1ca37eafc0a800060132d36a3bd21e43": {
+            "name": "Init UI Metadata",
+            "next_action": "2026-04-01 03:55:34",
+            "state": "0",
+            "trigger_type": "9"
+        },
+        "1cfa722f43003110416dda04aab8f2f6": {
+            "name": "Disable Splunk Metrics Property",
+            "next_action": "2026-05-16 04:01:14",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "1d462820f5cc03100a22c0b3dfa15142": {
+            "name": "Generate Now Assist Troubleshooting Notifications",
+            "next_action": "2026-05-15 18:20:13",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "1d607b61c6112272006742d03bf3bb63": {
+            "name": "LDAP Notify",
+            "next_action": "2026-04-01 06:13:03",
+            "state": "0",
+            "trigger_type": "9"
+        },
+        "1dbedc28f54803100a22c0b3dfa15131": {
+            "name": "Calculate Change Template metrics",
+            "next_action": "2026-05-16 09:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "1df42600c3103100f4a13b251eba8fe1": {
+            "name": "UA Hourly Analytics Producer",
+            "next_action": "2026-05-15 19:01:53",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "1e2bd7c553302300afffddeeff7b1213": {
+            "name": "AWA Agent Workload Cleanup",
+            "next_action": "2026-05-15 18:16:56",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "1e80e024f5c803100a22c0b3dfa151f6": {
+            "name": "[MFA Dashboard] Daily Data Collection",
+            "next_action": "2026-05-16 17:30:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "1e966424f5cc03100a22c0b3dfa1518e": {
+            "name": "Download Hardening Baseline checks",
+            "next_action": "2026-04-01 05:17:54",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "1ef1ace8f5c803100a22c0b3dfa151b2": {
+            "name": "Flush IP Block Logs",
+            "next_action": "2026-05-15 19:00:00",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "1f610431c3300310b4e13e1d050131c1": {
+            "name": "Flow Engine Event Handler",
+            "next_action": "2026-05-15 18:15:57",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "1f610431c3300310b4e13e1d050131d8": {
+            "name": "TimeLimitedLoggerConfigCleaner",
+            "next_action": "2026-05-15 23:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "1f610431c3300310b4e13e1d050131fb": {
+            "name": "Flow Engine Presumed Interrupted Marker",
+            "next_action": "2026-05-15 18:19:59",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "1fd85ee2c3fc8710b4e13e1d0501311b": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 01:32:04",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "1fdee932c3f80b10b4e13e1d05013119": {
+            "name": "AWA - Trigger Document Re-evaluation For Queued/Pending Accept Work  Items",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "202b0e6ac37c8710b4e13e1d0501317e": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 00:32:04",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "20340733371030007415bfc8bcbe5d4b": {
+            "name": "Contract Compliance Checks",
+            "next_action": "2026-05-16 07:00:05",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "2100a42cf58803100a22c0b3dfa15146": {
+            "name": "ITAM: Important Action Eval - Daily",
+            "next_action": "2026-05-16 17:30:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "211075e3a3010210b4893facd31e6186": {
+            "name": "Reconcile Page Timing Records",
+            "next_action": "2026-05-15 18:16:48",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "21ba18ecf54403100a22c0b3dfa15195": {
+            "name": "Populate View as allowed on Knowledge",
+            "next_action": "2026-04-01 04:25:58",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "22971a8b93132200972c990f867ffbbf": {
+            "name": "UAMonitorPropertyDownloader",
+            "next_action": "2026-05-16 09:41:39",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "22996ce0f54043100a22c0b3dfa1515d": {
+            "name": "events process impex_parallel_job_queue",
+            "next_action": "2026-05-15 18:16:02",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "2319d8a8f50403100a22c0b3dfa15120": {
+            "name": "Stuck Duplicate CI Remediations Cleaner",
+            "next_action": "2026-05-16 08:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "2319d8a8f50403100a22c0b3dfa15125": {
+            "name": "Remove CMDB Roles from ITIL roles and Add CUD access to sn_cmdb_admin/sn_cmdb_ed",
+            "next_action": "2026-04-01 04:19:00",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "231a254b4301311081abab7e2fb8f2bc": {
+            "name": "Trend Insights Job Schedule",
+            "next_action": "2026-05-15 22:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "23261028f58003100a22c0b3dfa151d4": {
+            "name": "[Reporting]  Import Tables expire non-active",
+            "next_action": "2026-05-16 00:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "2367af21c3123010c674dd781840dd9b": {
+            "name": "UsageAnalytics Count Persistor V2",
+            "next_action": "2026-05-15 19:01:53",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "23ef10e8f58803100a22c0b3dfa1510c": {
+            "name": "Surface New Unconnected Content of Categories",
+            "next_action": "2026-05-17 07:00:00",
+            "state": "0",
+            "trigger_type": "3"
+        },
+        "245039bec33c0b10b4e13e1d05013115": {
+            "name": "Close Inactive Email Interactions",
+            "next_action": "2026-05-16 09:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "24c3a0ecf50c03100a22c0b3dfa1519e": {
+            "name": "CMDB Workspace Collection",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "24c3a0ecf50c03100a22c0b3dfa151ce": {
+            "name": "Insight - Non-cloud Servers",
+            "next_action": "2026-05-16 12:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "24c3a0ecf50c03100a22c0b3dfa151d1": {
+            "name": "CMDB Workspace Partial Payload Item Batch Job",
+            "next_action": "2026-05-15 18:15:57",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "24ea87347f13121008564e68bc8665c5": {
+            "name": "MI Buffer Drain Job",
+            "next_action": "2026-04-01 04:51:01",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "257ad8e8f54403100a22c0b3dfa1518f": {
+            "name": "Clear catalog top requested item cache",
+            "next_action": "2026-05-15 18:44:39",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "264c9460f5c403100a22c0b3dfa151de": {
+            "name": "Build Search Suggestions",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "26e07f7bb7231010897725cbde11a957": {
+            "name": "Clean incremental offline  tables",
+            "next_action": "2026-05-15 18:16:22",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "2719d8a8f50403100a22c0b3dfa15145": {
+            "name": "De-duplication: Populate Duplicate Task Data",
+            "next_action": "2026-05-16 07:45:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "27261028f58003100a22c0b3dfa1518b": {
+            "name": "Summary Set Cleanup",
+            "next_action": "2026-05-15 18:34:46",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "27e12deac3388710b4e13e1d05013115": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-15 21:32:04",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "27e4d1995314111031c0ddeeff7b121c": {
+            "name": "Record Total Upgrade Duration",
+            "next_action": "2026-05-15 18:16:14",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "28228dc6c3f48310b4e13e1d05013122": {
+            "name": "CICD adhoc schedule",
+            "next_action": "2026-05-13 05:56:10",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "28272d8477040010bf05d4082b10611f": {
+            "name": "Collect Store Application Information",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "28c3a0ecf50c03100a22c0b3dfa151b8": {
+            "name": "CMDB WS Cert Task To Document Cleanup",
+            "next_action": "2026-05-15 18:19:32",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "28c3a0ecf50c03100a22c0b3dfa151c2": {
+            "name": "Insight - Cloud VM Instances",
+            "next_action": "2026-05-16 13:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "28f8852ec3748710b4e13e1d05013116": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-15 19:42:54",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "2915a020f58c03100a22c0b3dfa151dd": {
+            "name": "VA-Adapter Update Profile",
+            "next_action": "2026-05-16 17:30:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "291d90a0f50803100a22c0b3dfa151ff": {
+            "name": "PADatasnapshotPersonalThresholdCleanup",
+            "next_action": "2026-05-31 17:30:00",
+            "state": "0",
+            "trigger_type": "4"
+        },
+        "2a1614e4f58003100a22c0b3dfa15164": {
+            "name": "QueryCacheMetricsAggregator",
+            "next_action": "2026-05-15 18:31:41",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "2a29b714ff312110de37cd6bd53bf12d": {
+            "name": "IAM Generate Federated ID for Table-sys_user",
+            "next_action": "2026-04-01 06:13:03",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "2a661149c32201106bedccbfea40ddfa": {
+            "name": "Synchronize Password2 Secret Groups",
+            "next_action": "2026-04-01 04:34:37",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "2afa14e0f58403100a22c0b3dfa1511e": {
+            "name": "Item diagnostics job",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "3"
+        },
+        "2b19d8a8f50403100a22c0b3dfa15108": {
+            "name": "CSDM Product Model Assignment",
+            "next_action": "2026-04-01 04:19:00",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "2b19d8a8f50403100a22c0b3dfa15118": {
+            "name": "CMDB Sys Object Source Cleanup",
+            "next_action": "2026-05-15 18:22:56",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "2b19d8a8f50403100a22c0b3dfa15139": {
+            "name": "Get CI Counts and Populate DB",
+            "next_action": "2026-05-16 09:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "2b261028f58003100a22c0b3dfa151a2": {
+            "name": "[Reporting] Clean Invalid tables imported from external sources",
+            "next_action": "2026-05-15 23:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "2c0e9c2cf50803100a22c0b3dfa15158": {
+            "name": "DeleteOrphanFavoritesForPicker",
+            "next_action": "2027-01-01 08:00:00",
+            "state": "0",
+            "trigger_type": "6"
+        },
+        "2c12606cf5c803100a22c0b3dfa1514c": {
+            "name": "Enforce Lifecycle Rules",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "2c12606cf5c803100a22c0b3dfa15160": {
+            "name": "Scheduled scan for Unsafe Certificates",
+            "next_action": "2026-05-23 08:51:28",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "2c16ac6cf58c03100a22c0b3dfa151f2": {
+            "name": "On Demand Job",
+            "next_action": "2026-04-01 05:15:36",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "2c6b26b8ff6922105be0ffffffffff59": {
+            "name": "Sync WDF Configuration",
+            "next_action": "2026-05-16 10:25:12",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "2c70a8a0f5c803100a22c0b3dfa151b0": {
+            "name": "Disable Machine Identity Feature If Threshold Exceeded",
+            "next_action": "2026-05-16 01:51:46",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "2c7e1424f54803100a22c0b3dfa15143": {
+            "name": "Integration Metering Resource Exclusion",
+            "next_action": "2026-05-20 03:55:14",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "2c9fdc64f58803100a22c0b3dfa1516b": {
+            "name": "Schema Validator - On Demand Validator",
+            "next_action": "2026-04-01 04:47:11",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "2cc3a0ecf50c03100a22c0b3dfa1517b": {
+            "name": "Insight - Non-cloud Applications",
+            "next_action": "2026-05-16 08:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "2cc3a0ecf50c03100a22c0b3dfa1517e": {
+            "name": "CMDB Workspace CIs Processed Via IRE On Source Batch Job",
+            "next_action": "2026-05-15 18:15:58",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "2cc3a0ecf50c03100a22c0b3dfa15194": {
+            "name": "CMDB Workspace - Populate aggregates Daily",
+            "next_action": "2026-05-16 08:45:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "2cdc43430a0a0b900017b33f817aebd0": {
+            "name": "Clean Update Diffs",
+            "next_action": "2026-05-16 09:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "2d9fd0a4f58803100a22c0b3dfa15150": {
+            "name": "Calculate App Services Missing Data",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "2dd590e0f58003100a22c0b3dfa151b6": {
+            "name": "Mobile Analytics - Create settings for new NativeClients",
+            "next_action": "2026-05-15 18:46:36",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "2deb942cf58403100a22c0b3dfa1512a": {
+            "name": "SLA async queue health check",
+            "next_action": "2026-05-15 18:20:00",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "2e6730b043032110e24e7075dbb8f2c7": {
+            "name": "Build UXF caches",
+            "next_action": "2026-04-01 05:10:43",
+            "state": "0",
+            "trigger_type": "9"
+        },
+        "2e996ce0f54043100a22c0b3dfa1517e": {
+            "name": "events process mid_telemetry",
+            "next_action": "2026-05-15 18:21:32",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "2f14ddcec3788310b4e13e1d050131de": {
+            "name": "CICD adhoc schedule",
+            "next_action": "2026-05-13 07:14:45",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "2f1998a8f50403100a22c0b3dfa151d2": {
+            "name": "CMDB Update domain_directory Size",
+            "next_action": "2026-04-01 04:19:00",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "2f1998a8f50403100a22c0b3dfa151de": {
+            "name": "CMDB Multisource Query Usage Analytics",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "3"
+        },
+        "2f19d8a8f50403100a22c0b3dfa1512c": {
+            "name": "CMDB Query Builder query results clean up",
+            "next_action": "2026-05-16 07:30:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "2f262cecf58c03100a22c0b3dfa151ca": {
+            "name": "Activity timer heartbeat",
+            "next_action": "2026-05-15 18:16:00",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "2f837a3f37322210aa55a84174924b13": {
+            "name": "DMScheduler-12Hourly",
+            "next_action": "2026-05-16 04:05:40",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "2fbd50a8f50803100a22c0b3dfa151eb": {
+            "name": "Embedded Help Trigger",
+            "next_action": "2026-05-19 23:46:04",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "2ffc6978c3600310b4e13e1d05013165": {
+            "name": "Flow Engine Interactive Event Handler",
+            "next_action": "2026-04-27 01:35:50",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "3016a0acf58c03100a22c0b3dfa1519a": {
+            "name": "Process Mining Data Cleanup",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "305de36ac378c710b4e13e1d05013189": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 07:41:05",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "31b4602cf54c03100a22c0b3dfa15198": {
+            "name": "Timeout For VA Chats Suspended on NLU Prediction",
+            "next_action": "2026-05-15 18:16:01",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "3203eca4f50c03100a22c0b3dfa15198": {
+            "name": "What's new content weekly refresh",
+            "next_action": "2026-05-18 14:54:05",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "32269ce4f58003100a22c0b3dfa1517e": {
+            "name": "SAM - Calculate Asset Refresh Eligibility",
+            "next_action": "2026-05-17 07:00:00",
+            "state": "0",
+            "trigger_type": "3"
+        },
+        "32ef5ca8f58803100a22c0b3dfa15158": {
+            "name": "Generate topic path translations",
+            "next_action": "2026-05-16 17:30:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "33626c1f531120100fb3ddeeff7b1276": {
+            "name": "GCF Download Definition Collections",
+            "next_action": "2026-05-16 06:43:24",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "35b4602cf54c03100a22c0b3dfa151b7": {
+            "name": "Generate Virtual Agent Push Notifications",
+            "next_action": "2026-05-15 18:16:18",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "35da2e3553303110c0d8ddeeff7b12d7": {
+            "name": "Exponential Backoff Email Retry Processor",
+            "next_action": "2026-05-15 18:16:05",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "35efad36ff2121105cf343d0653bf172": {
+            "name": "Import Set Housekeeping Job",
+            "next_action": "2026-05-15 18:59:32",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "361b8f25c0a80a4a00e6300ec39f79bf": {
+            "name": "SLA update (already breached)",
+            "next_action": "2026-05-16 04:31:09",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "37336c28f50c03100a22c0b3dfa151f9": {
+            "name": "MIF Sync Up Job",
+            "next_action": "2026-05-15 22:34:30",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "3816a0acf58c03100a22c0b3dfa15155": {
+            "name": "Change project status to Retired due to inactivity",
+            "next_action": "2026-05-16 07:01:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "382ce0b34f3331102f77853a91ce0b8c": {
+            "name": "PA Indicator Recommendation Calculator Job",
+            "next_action": "2026-05-15 22:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "38502060f5c803100a22c0b3dfa1519d": {
+            "name": "Customer action activation",
+            "next_action": "2026-05-16 09:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "389e58a4f54803100a22c0b3dfa1518f": {
+            "name": "BenchmarkUserPasswordReset",
+            "next_action": "2026-08-01 18:29:17",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "391650e4f58003100a22c0b3dfa15111": {
+            "name": "Inactive User Credential CleanUp",
+            "next_action": "2026-05-16 00:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "39d3b4fec3700b10b4e13e1d0501312b": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 12:49:10",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "3a12a3a2c338c710b4e13e1d050131af": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 06:52:04",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "3a436943b73031104c7d1575de11a991": {
+            "name": "HistoricalUAEnqueueJob",
+            "next_action": "2026-05-15 22:01:53",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "3a43a468f50c03100a22c0b3dfa15178": {
+            "name": "Calculate NowAssists Job",
+            "next_action": "2026-05-16 02:34:02",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "3aae9beac3f4c710b4e13e1d05013185": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 06:37:03",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "3b056cecf54c03100a22c0b3dfa151cc": {
+            "name": "Update One Extend Capability Script Dependency Flag",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "3b056cecf54c03100a22c0b3dfa151f2": {
+            "name": "Check Is Metadata Updated And Push To Mosaic",
+            "next_action": "2026-05-15 18:15:59",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "3b05acecf54c03100a22c0b3dfa15114": {
+            "name": "[GlideOneExtend] Rotate Instance Secrets",
+            "next_action": "2026-05-27 01:00:00",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "3bf1e02cf5c803100a22c0b3dfa151f0": {
+            "name": "Check Scoped App Author Config Changes",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "3c4b6766c378c710b4e13e1d050131d4": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 07:32:05",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "3c52b135c72313005cf3df627a976316": {
+            "name": "Import Set Transformer",
+            "next_action": "2026-04-01 04:59:32",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "3c966121372300008687ddb196733459": {
+            "name": "TS Search Summary",
+            "next_action": "2026-05-15 18:32:04",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "3ce7d2314f742210122c1501b1ce0b8c": {
+            "name": "WDF Token Aggregator",
+            "next_action": "2026-05-16 11:13:27",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "3d6020a0f5c803100a22c0b3dfa151ba": {
+            "name": "SOAP API access policy monthly report",
+            "next_action": "2026-06-01 07:00:00",
+            "state": "0",
+            "trigger_type": "4"
+        },
+        "3dda8c257f2332007f005212bdfa914c": {
+            "name": "Email Digest",
+            "next_action": "2026-05-15 18:21:25",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "3e03ad6ec3388710b4e13e1d05013101": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-15 21:36:56",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "3ec085dac34102002ba7e219cdba8ff8": {
+            "name": "Change Conflict Detection >=1 Month Away",
+            "next_action": "2026-05-20 04:38:17",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "3f57e13ac3380b10b4e13e1d050131bc": {
+            "name": "CICD adhoc schedule",
+            "next_action": "2026-05-15 16:34:19",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "3f7bf6936f120110cc3d2a3a945b36b8": {
+            "name": "PA dangling cached scores cleaner",
+            "next_action": "2026-05-15 23:01:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "3fc7617ac3380b10b4e13e1d05013179": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 16:36:13",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "3fd8e2a2c370c710b4e13e1d0501317d": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 02:42:00",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "4095ece4f58c03100a22c0b3dfa15100": {
+            "name": "Scheduled Download of Offline Payload",
+            "next_action": "2026-05-15 19:00:00",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "40a4ab2ac338c710b4e13e1d05013106": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 07:03:05",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "40c6a8e4f5cc03100a22c0b3dfa151fc": {
+            "name": "KB Open Prompt weekly report",
+            "next_action": "2026-05-17 07:00:00",
+            "state": "0",
+            "trigger_type": "3"
+        },
+        "40eed8a8f54803100a22c0b3dfa151f4": {
+            "name": "Evaluate strategies on CI field changes",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "4221b6a40b3c330024f8ae9b37673a11": {
+            "name": "UA License Compliance Checker",
+            "next_action": "2026-06-02 07:00:00",
+            "state": "0",
+            "trigger_type": "4"
+        },
+        "423b93dd73413010f14a063f34f6a745": {
+            "name": "Process auto resolution events",
+            "next_action": "2026-05-15 18:15:57",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "4400602cf58803100a22c0b3dfa151d8": {
+            "name": "CMDB Data Manager Archive/Delete Policy Processor",
+            "next_action": "2026-05-16 10:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "440e91b2b7300110635f860eee11a943": {
+            "name": "VA Notification Batch Event Handler",
+            "next_action": "2026-04-01 05:11:16",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "441a50a4f54403100a22c0b3dfa15107": {
+            "name": "SAM/CI - Populate Licensing Data",
+            "next_action": "2026-05-16 11:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "444a1910671332003832f1d557415abd": {
+            "name": "PAF Event Buffer Timed Drain",
+            "next_action": "2026-04-01 04:01:53",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "444fd8ecf54803100a22c0b3dfa15147": {
+            "name": "Manage Activity fanouts",
+            "next_action": "2026-06-01 07:00:00",
+            "state": "0",
+            "trigger_type": "4"
+        },
+        "44eed8a8f54803100a22c0b3dfa151c6": {
+            "name": "Update svc_ci_assoc and Error Counters",
+            "next_action": "2026-05-15 18:20:00",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "45b6aca4f5cc03100a22c0b3dfa1517f": {
+            "name": "SC - Calculate SC Notification Stats",
+            "next_action": "2026-05-18 07:00:00",
+            "state": "0",
+            "trigger_type": "3"
+        },
+        "45cfc11ec34102002ba7e219cdba8f8e": {
+            "name": "Change Conflict Detection < 1 Week Away",
+            "next_action": "2026-05-15 23:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "462668ecf58c03100a22c0b3dfa151af": {
+            "name": "Update Finding Status",
+            "next_action": "2026-05-16 12:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "462b353a77500210e6b5a9845a5a99a5": {
+            "name": "Analytics Cache Prefetch Job",
+            "next_action": "2026-05-15 18:20:32",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "471dd85e53a222007e7829cac2dc346e": {
+            "name": "ATF test runner reaper",
+            "next_action": "2026-05-15 18:16:50",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "476eadb6c3b80b10b4e13e1d05013121": {
+            "name": "CSM-Data-Fix - Tag external users with possible non-intentional internal role as",
+            "next_action": "2026-05-15 17:05:07",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "478c69fcc3200310b4e13e1d05013176": {
+            "name": "Service Mapping Recomputation 2",
+            "next_action": "2026-04-27 01:33:23",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "4800602cf58803100a22c0b3dfa151c2": {
+            "name": "CMDB Data Manager - Stale Task Cleaner",
+            "next_action": "2026-05-16 08:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "4812cfa2c334c710b4e13e1d05013187": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 04:32:04",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "481a10a4f54403100a22c0b3dfa151c4": {
+            "name": "Asset - Create asset delayed sync",
+            "next_action": "2026-05-15 18:30:00",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "487cbf66c3f8c710b4e13e1d050131e5": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 08:47:06",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "497e2c13c0a8006f00e41cf250d89505": {
+            "name": "Check certificate expiration",
+            "next_action": "2026-05-16 07:01:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "4980e8e0f5c803100a22c0b3dfa1511e": {
+            "name": "FixIdentityType",
+            "next_action": "2026-05-16 07:05:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "4a76c9e6c3748710b4e13e1d05013189": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-15 19:32:04",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "4b610431c3300310b4e13e1d0501316c": {
+            "name": "Transfer Data Privacy Telemetry to DB",
+            "next_action": "2026-05-15 18:34:58",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "4b6e6db6c3b80b10b4e13e1d050131ff": {
+            "name": "CSM-Data-Fix - Tag all external users with possible intentional internal role as",
+            "next_action": "2026-05-15 17:05:07",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "4bccee1053272110248dddeeff7b12a1": {
+            "name": "ATFPerformancePauseReaper",
+            "next_action": "2026-05-15 18:32:36",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "4c959cacf54003100a22c0b3dfa15161": {
+            "name": "Cleanup attachments created during NowLLM inference",
+            "next_action": "2026-05-16 05:00:36",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "4c959cacf54003100a22c0b3dfa15183": {
+            "name": "Orphan ML Update Set Attachment Cleanup",
+            "next_action": "2026-05-18 17:30:00",
+            "state": "0",
+            "trigger_type": "3"
+        },
+        "4c959cacf54003100a22c0b3dfa151d5": {
+            "name": "Delete inactive prediction feedback records ",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "4ceed8a8f54803100a22c0b3dfa151db": {
+            "name": "sm dedup tracker for specific discovery sources",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "4dcd7ccb530012108157ddeeff7b123c": {
+            "name": "Partner Usage Keys Downloader Job",
+            "next_action": "2026-04-01 04:02:10",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "4e08dcb70a0a0b7900b38f7cb0520e32": {
+            "name": "MID Server Version",
+            "next_action": "2026-04-01 04:29:17",
+            "state": "0",
+            "trigger_type": "9"
+        },
+        "4e4f5020f58803100a22c0b3dfa15104": {
+            "name": "Populate Summary field on Knowledge Use",
+            "next_action": "2026-04-01 04:45:56",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "4eb7ac9243100210026cbbd32fb8f264": {
+            "name": "Hermes Usage Metrics Aggregation and clean up Daily",
+            "next_action": "2026-05-16 04:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "4ed15122ff2331009738ffffffffff06": {
+            "name": "Push",
+            "next_action": "2026-05-15 18:16:05",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "4f58ac28f50043100a22c0b3dfa1511a": {
+            "name": "Server services statistics",
+            "next_action": "2026-04-01 05:25:36",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "4f7c50350a00052611eb06c31db1ca14": {
+            "name": "TS Index Stats",
+            "next_action": "2026-05-16 08:26:44",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "4f9d693c0a000526415fc2d5ce61d9f9": {
+            "name": "TS Search Stats",
+            "next_action": "2026-05-16 09:28:58",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "4fcdadbac3780b10b4e13e1d0501315c": {
+            "name": "Multilingual Skills Sync Job",
+            "next_action": "2026-05-16 17:30:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "5029ceabeb201210a8c99147c15228b7": {
+            "name": "Archive Reparent Run Retry",
+            "next_action": "2026-05-15 18:56:54",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "5084d8ea0f97001064e96995a4767ef6": {
+            "name": "Archive Destroy",
+            "next_action": "2026-05-15 19:10:00",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "50bec11ec34102002ba7e219cdba8f55": {
+            "name": "Change Conflict Detection < 1 Month Away",
+            "next_action": "2026-05-17 04:38:17",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "512eb46cf5c883100a22c0b3dfa15129": {
+            "name": "SC Capture MI data",
+            "next_action": "2026-05-16 17:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "51678d730f313010ea45be0a68767ef1": {
+            "name": "GCF Licensing Count Persistor Daily",
+            "next_action": "2026-05-16 11:34:02",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "519f50a4f58803100a22c0b3dfa15181": {
+            "name": "Clean up converted documents genereated by Document Viewer",
+            "next_action": "2026-05-16 17:30:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "51d41ca0f54003100a22c0b3dfa15177": {
+            "name": "JWT Key Expiry Notification",
+            "next_action": "2026-05-16 17:30:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "52150694ef30321016afc06c7e97d70a": {
+            "name": "Transfer Privacy User Sensitive Data",
+            "next_action": "2026-04-01 04:48:20",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "527764a0f50043100a22c0b3dfa1514c": {
+            "name": "Sitemap Scheduler",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "5296a024f5cc03100a22c0b3dfa15133": {
+            "name": "Download Hardening Baseline configurations",
+            "next_action": "2026-04-01 05:17:54",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "52ca1c20f58403100a22c0b3dfa151b7": {
+            "name": "Activity Stream Weekly Metrics",
+            "next_action": "2026-05-17 08:05:00",
+            "state": "0",
+            "trigger_type": "3"
+        },
+        "52d039bac3604710b4e13e1d05013126": {
+            "name": "Database Audit",
+            "next_action": "2026-06-03 07:00:00",
+            "state": "0",
+            "trigger_type": "4"
+        },
+        "52d6a068f5cc03100a22c0b3dfa15185": {
+            "name": "experiment framework store app",
+            "next_action": "2026-05-16 17:22:41",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "52e49ce0f54003100a22c0b3dfa151cd": {
+            "name": "text index events process",
+            "next_action": "2026-05-15 18:16:00",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "5315dce4f54003100a22c0b3dfa15169": {
+            "name": "NowMQ Archive Reaper",
+            "next_action": "2026-05-15 21:57:57",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "5324b0709ba02210d0baf435fef04b7a": {
+            "name": "Aggregate Scheduler Memory Pressure Job Log",
+            "next_action": "2026-05-16 04:57:39",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "534e9c60f54803100a22c0b3dfa151a1": {
+            "name": "Targeted Communications Recepients Refresh",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "53610431c3300310b4e13e1d050131c0": {
+            "name": "Hermes Flush Expired Idle Consumers",
+            "next_action": "2026-05-15 19:00:44",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "53610431c3300310b4e13e1d050131d7": {
+            "name": "Cleanup stale secret records",
+            "next_action": "2026-05-15 18:16:59",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "53610431c3300310b4e13e1d050131fa": {
+            "name": "Process Automation Event Handler",
+            "next_action": "2026-05-15 18:15:57",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "53d771955b12301005036e8a1d81c713": {
+            "name": "Invalidate down MID Servers",
+            "next_action": "2026-05-15 18:29:17",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "54a620a4f5cc03100a22c0b3dfa151b9": {
+            "name": "[PA VSC] Daily Data Collection",
+            "next_action": "2026-05-16 09:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "554a1068f54403100a22c0b3dfa151c0": {
+            "name": "Update catalog ui policy action names for variables and sets",
+            "next_action": "2026-04-01 04:24:02",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "55dddca8f50803100a22c0b3dfa151d2": {
+            "name": "FlowDesigner : Cleanup Record watcher",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "562e0bc377003300ca3ab5b2681061a9": {
+            "name": "Clean manifests",
+            "next_action": "2026-05-16 16:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "56b80c7353833010b72addeeff7b122e": {
+            "name": "Clean up invalid jobs",
+            "next_action": "2026-04-01 03:55:34",
+            "state": "0",
+            "trigger_type": "9"
+        },
+        "56e97362c3f8c710b4e13e1d05013196": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 08:36:05",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "57610431c3300310b4e13e1d050131b9": {
+            "name": "Transfer Privacy User Sensitive Data",
+            "next_action": "2026-05-15 18:19:58",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "57614431c3300310b4e13e1d05013127": {
+            "name": "Service Mapping Fast Recomputation 1",
+            "next_action": "2026-05-15 18:15:59",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "58a620a4f5cc03100a22c0b3dfa151a1": {
+            "name": "SC Best practices update activation",
+            "next_action": "2026-05-16 09:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "58d4246cf54c03100a22c0b3dfa15129": {
+            "name": "CSRF Violation Cleanup",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "58f3b6164f331210f25f554a21ce0bba": {
+            "name": "TDESKeyRemovalJob",
+            "next_action": "2026-05-17 01:00:00",
+            "state": "0",
+            "trigger_type": "3"
+        },
+        "59dddca8f50803100a22c0b3dfa151ae": {
+            "name": "Process Engine Secure Store Data Cleaner",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "3"
+        },
+        "5abcea83c79000103500e1d68dc26039": {
+            "name": "Upgrade (Does Nothing)",
+            "next_action": "2026-04-01 04:25:03",
+            "state": "0",
+            "trigger_type": ""
+        },
+        "5aea54a0f58403100a22c0b3dfa151b9": {
+            "name": "Docker Service Cleanup Job",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "5af41064f54003100a22c0b3dfa151d6": {
+            "name": "Populate navigator menu secondary caches",
+            "next_action": "2026-05-15 18:17:22",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "5b610431c3300310b4e13e1d050131fd": {
+            "name": "Sidebar notification events process",
+            "next_action": "2026-05-12 06:34:59",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "5b614431c3300310b4e13e1d05013120": {
+            "name": "Hermes Kafka Client Metrics Collection",
+            "next_action": "2026-05-15 18:16:59",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "5bdee932c3f80b10b4e13e1d05013115": {
+            "name": "AWA - Populate AWA Queue Metrics Report Fields",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "5be4562b7332001021a044764df6a7c7": {
+            "name": "Service Portal Usage Persistor",
+            "next_action": "2026-05-15 19:15:00",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "5c1142d073231010a68001d2c4f6a727": {
+            "name": "UA Approval Usage Status Setter",
+            "next_action": "2026-06-03 13:30:00",
+            "state": "0",
+            "trigger_type": "4"
+        },
+        "5ca620a4f5cc03100a22c0b3dfa1518c": {
+            "name": "Security Controls Activation Scheduled Scan",
+            "next_action": "2026-06-23 08:00:00",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "5cc1cf83ff8012103527ffffffffffeb": {
+            "name": "RecordHierarchyTrigger",
+            "next_action": "2026-05-15 18:16:11",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "5ce5242cf58c03100a22c0b3dfa1519c": {
+            "name": "Migrate goal relationships for assigned entities",
+            "next_action": "2026-04-01 05:14:45",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "5ce8ada7ff123210be1bffffffffffe5": {
+            "name": "Drop Online-table-truncate Orphaned Tables",
+            "next_action": "2026-05-15 18:55:34",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "5d6d1064f50803100a22c0b3dfa1511b": {
+            "name": "PA Interactive Analysis usage per application",
+            "next_action": "2026-05-31 23:00:00",
+            "state": "0",
+            "trigger_type": "4"
+        },
+        "5d6d1064f50803100a22c0b3dfa15128": {
+            "name": "PA Breakdown Source usage per application",
+            "next_action": "2026-05-31 22:00:00",
+            "state": "0",
+            "trigger_type": "4"
+        },
+        "5db51860f58003100a22c0b3dfa1512f": {
+            "name": "Purge empty rollback contexts",
+            "next_action": "2026-05-16 03:54:37",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "5e628a74b7022110069c508e1e11a99c": {
+            "name": "Update hung running progress controllers on startup",
+            "next_action": "2026-04-01 03:56:56",
+            "state": "0",
+            "trigger_type": "9"
+        },
+        "5ead70b2c3f00b10b4e13e1d05013133": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 13:32:04",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "5eb264e0f50c03100a22c0b3dfa151dd": {
+            "name": "[ITSM Analytics] Daily Data Collection",
+            "next_action": "2026-05-16 17:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "5ee24f22670102002512156f57415a11": {
+            "name": "UATableStatsDownloader",
+            "next_action": "2026-05-16 06:36:03",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "5f0654a4f58003100a22c0b3dfa151c5": {
+            "name": "Update Currency Conversion Rates",
+            "next_action": "2026-05-16 16:44:55",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "5f40c1137f741210226793db5d866557": {
+            "name": "User Property Config Change Sync Job",
+            "next_action": "2026-05-16 12:00:31",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "5f6f25ee0a0a0b85003f1145beaa6061": {
+            "name": "Recover Stuck Events",
+            "next_action": "2026-04-01 03:55:34",
+            "state": "0",
+            "trigger_type": "9"
+        },
+        "5fb57e66ff2032103ce2ffffffffff95": {
+            "name": "S3StorageInfo",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "5fd44d0e1f4221006d691b220e8b7028": {
+            "name": "UA Monthly Count Persistor",
+            "next_action": "2026-06-01 10:00:00",
+            "state": "0",
+            "trigger_type": "4"
+        },
+        "6016ac6cf58c03100a22c0b3dfa15181": {
+            "name": "Monthly Job",
+            "next_action": "2026-06-01 07:01:00",
+            "state": "0",
+            "trigger_type": "4"
+        },
+        "6051b8bac3700b10b4e13e1d050131b8": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 12:38:09",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "60948be6c334c710b4e13e1d050131b7": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 04:43:01",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "60b51460f58003100a22c0b3dfa151ae": {
+            "name": "Synchronize Extended Statistics",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "60c3a0ecf50c03100a22c0b3dfa151a9": {
+            "name": "Insight - Cloud Applications",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "60c3a0ecf50c03100a22c0b3dfa151b7": {
+            "name": "Insight - Cloud DB Instances",
+            "next_action": "2026-05-16 09:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "6172cc98ff023110eb9cf67d03cb145c": {
+            "name": "Hermes Failover State Refresh Job",
+            "next_action": "2026-04-01 05:10:50",
+            "state": "",
+            "trigger_type": ""
+        },
+        "619fd0a4f58803100a22c0b3dfa15168": {
+            "name": "Calculate Databases not in an application service",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "6216093c473233006b8417366b9a7148": {
+            "name": "UA Scoped App / Admin Logging",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "624c9460f5c403100a22c0b3dfa151a2": {
+            "name": "Build RAG Search Suggestions",
+            "next_action": "2026-05-16 06:59:51",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "6257b9d6ff2222109097ffffffffff7a": {
+            "name": "Physical Table Group Populator Job Monthly",
+            "next_action": "2026-05-15 18:49:36",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "62587d547f330210efafbd473d86654c": {
+            "name": "Generate Auto Key Exchange Templates on Startup",
+            "next_action": "2026-04-01 04:58:06",
+            "state": "0",
+            "trigger_type": "9"
+        },
+        "62d450467f000001691f66450ab4aea7": {
+            "name": "SLA update (breach within 10 min)",
+            "next_action": "2026-05-15 18:16:09",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "62db7ce77f00000131d9b924e4f63578": {
+            "name": "SLA update (breach within 1 hour)",
+            "next_action": "2026-05-15 18:21:09",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "62dcc28b7f0000013eb7f4885a96b758": {
+            "name": "SLA update (breach within 1 day)",
+            "next_action": "2026-05-15 18:31:09",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "62df5f8e7f0000015ee6545a3bb6c58e": {
+            "name": "SLA update (breach within 30 days)",
+            "next_action": "2026-05-16 04:31:09",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "62dfdd477f0000013c1a40db422368e1": {
+            "name": "SLA update (breach after 30 days)",
+            "next_action": "2026-05-16 04:31:09",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "62f91299ff372210add0ffffffffff5b": {
+            "name": "Table Stats Migration Job",
+            "next_action": "2026-04-01 06:19:36",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "6319d8a8f50403100a22c0b3dfa15138": {
+            "name": "CMDB DataSource History Cleanup",
+            "next_action": "2026-05-15 18:22:56",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "63261028f58003100a22c0b3dfa151af": {
+            "name": "[Reporting] Import Tables notification close to expire",
+            "next_action": "2026-05-16 01:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "6338a8a00f333300db5e79a7a4767efa": {
+            "name": "Fix Shadow Table Schema And Indexes",
+            "next_action": "2026-05-16 05:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "6412606cf5c803100a22c0b3dfa15137": {
+            "name": "Regenerate Instance Keys and Certificates",
+            "next_action": "2026-05-16 07:49:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "64c3a0ecf50c03100a22c0b3dfa1517d": {
+            "name": "Insight - Cloud Storage Volume",
+            "next_action": "2026-05-16 16:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "65142424f54c03100a22c0b3dfa151ee": {
+            "name": "Scheduled Deployment",
+            "next_action": "2026-05-15 18:27:00",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "651dd4375be00210fadffb8f9281c7d9": {
+            "name": "Physical Table Monthly Stats Aggregator",
+            "next_action": "2026-06-01 15:50:42",
+            "state": "0",
+            "trigger_type": "4"
+        },
+        "6540ebaec3f4c710b4e13e1d05013140": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 06:44:04",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "657660e0f5cc03100a22c0b3dfa151d9": {
+            "name": "Revoke access for all apps",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "3"
+        },
+        "65994c4743a20210274ba9bb1cb8f2e0": {
+            "name": "ATF Scheduler",
+            "next_action": "2026-05-15 18:26:50",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "65c324ecf50c03100a22c0b3dfa151f1": {
+            "name": "De-duplication: Populate Template Task Run Records (Scoped)",
+            "next_action": "2026-05-15 18:16:00",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "65e10cf5c3300310b4e13e1d05013148": {
+            "name": "Critical Business Services",
+            "next_action": "2026-05-18 07:00:00",
+            "state": "0",
+            "trigger_type": "3"
+        },
+        "67fc2978c3600310b4e13e1d050131cd": {
+            "name": "Flow Engine Event Handler",
+            "next_action": "2026-04-27 01:35:50",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "67fc2978c3600310b4e13e1d050131d1": {
+            "name": "Flow Engine Event Handler",
+            "next_action": "2026-04-27 01:35:50",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "680a250c57f21300913baa65ef94f97a": {
+            "name": "Deactivate Special Handling Notes",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "680e9c2cf50803100a22c0b3dfa15118": {
+            "name": "Flow Designer Popular Actions Weekly",
+            "next_action": "2026-05-18 06:59:50",
+            "state": "0",
+            "trigger_type": "3"
+        },
+        "682c14ecf58403100a22c0b3dfa15152": {
+            "name": "Reconcile All Record Hierarchies",
+            "next_action": "2026-05-16 11:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "683260bec3fcc710b4e13e1d05013148": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 11:32:04",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "6877c23137231100f5bf1f23dfbe5df5": {
+            "name": "Workflow Nudger",
+            "next_action": "2026-05-15 18:17:41",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "68b1796ac3b88710b4e13e1d050131a0": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-15 22:40:56",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "68c3a0ecf50c03100a22c0b3dfa151d8": {
+            "name": "CMDB Workspace Collection On Demand With Lookback",
+            "next_action": "2026-04-01 05:05:29",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "696d7deec3f88710b4e13e1d050131b6": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-15 23:32:04",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "6982677fa3864210ecdb7d69441e61ce": {
+            "name": "KMF Customer Action Cert Scanner",
+            "next_action": "2026-04-01 04:58:08",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "69e8c9b1d7011100ef2281537e610376": {
+            "name": "Check PA Thresholds",
+            "next_action": "2026-05-15 22:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "69f02322c338c710b4e13e1d0501310b": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 06:47:04",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "6a15d8e4f54003100a22c0b3dfa151b3": {
+            "name": "Check Glide Service Status V2",
+            "next_action": "2026-05-15 18:20:54",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "6a8186a4532120100fb3ddeeff7b12a5": {
+            "name": "GCF Download Blacklist and Whitelist",
+            "next_action": "2026-05-16 02:04:56",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "6b1998a8f50403100a22c0b3dfa151e8": {
+            "name": "Compact IRE Mutex table",
+            "next_action": "2026-05-20 05:00:00",
+            "state": "0",
+            "trigger_type": "3"
+        },
+        "6b19d8a8f50403100a22c0b3dfa1515c": {
+            "name": "CMDB MultiSource Recompute Task Processor",
+            "next_action": "2026-05-15 18:15:56",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "6b82184273321300c3b7e6e24ff6a733": {
+            "name": "UACountCfgFixer",
+            "next_action": "2026-05-17 17:00:00",
+            "state": "0",
+            "trigger_type": "3"
+        },
+        "6bbff0b6c3f00b10b4e13e1d05013115": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 13:41:11",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "6bd4ec6cf54c03100a22c0b3dfa15111": {
+            "name": "Analytics - UX Metrics Apps Registration",
+            "next_action": "2026-05-16 17:33:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "6c6fc906c3788310b4e13e1d05013147": {
+            "name": "CICD adhoc schedule",
+            "next_action": "2026-05-13 06:54:04",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "6c7e1424f54803100a22c0b3dfa15112": {
+            "name": "Integration Metering Protected Table",
+            "next_action": "2026-05-15 23:16:42",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "6cc3a0ecf50c03100a22c0b3dfa151cf": {
+            "name": "Insight - Non-cloud VM Instances",
+            "next_action": "2026-05-16 14:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "6cc3a0ecf50c03100a22c0b3dfa151db": {
+            "name": "Insight - Cloud vs Non-cloud Aggregates",
+            "next_action": "2026-05-15 18:29:47",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "6cc3a0ecf50c03100a22c0b3dfa151e7": {
+            "name": "CMDB Data Manager - Cleanup Deleted Polices",
+            "next_action": "2026-05-15 20:16:55",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "6cc4e25743633110bafccd6adab8f24c": {
+            "name": "Hermes Flush Expired Idle Consumers",
+            "next_action": "2026-04-01 05:10:50",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "6d12646cf5c803100a22c0b3dfa1513b": {
+            "name": "Prevent access to  over-permissive KMF Password2 submodule",
+            "next_action": "2026-05-16 07:30:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "6d3b07c453120110dc86ddeeff7b12f1": {
+            "name": "AI Search Auto Provisioning",
+            "next_action": "2026-05-15 19:03:57",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "6de068937343330061b79c0c6df6a784": {
+            "name": "Convert Services",
+            "next_action": "2026-05-15 18:16:09",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "6e4c9460f5c403100a22c0b3dfa151ba": {
+            "name": "Prune Search Suggestions",
+            "next_action": "2026-05-17 07:00:00",
+            "state": "0",
+            "trigger_type": "3"
+        },
+        "6e996ce0f54043100a22c0b3dfa15195": {
+            "name": "Flow Engine Event Handler",
+            "next_action": "2026-04-01 05:31:32",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "6f1998a8f50403100a22c0b3dfa151f5": {
+            "name": "CMDB Query Builder Suggested Relations Computation Job",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "6f33025077323010eb9c08770e5a997d": {
+            "name": "Hermes Topics Util",
+            "next_action": "2026-05-15 18:20:53",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "6f633024f5c483100a22c0b3dfa1511a": {
+            "name": "Migrate homepages",
+            "next_action": "2026-05-15 20:00:00",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "7016a0acf58c03100a22c0b3dfa1518f": {
+            "name": "Process Mining Refresh activity recommendations job",
+            "next_action": "2026-05-16 08:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "702720acf5cc03100a22c0b3dfa15146": {
+            "name": "[SOW PA Incident] Daily Data Collection",
+            "next_action": "2026-05-16 08:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "706ff7eac3f8c710b4e13e1d05013170": {
+            "name": "API Monthly Requestor Stats",
+            "next_action": "2026-05-16 09:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "71ac12e67773111007737e567a5a99e5": {
+            "name": "Purge Draft Email",
+            "next_action": "2026-05-16 03:59:26",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "71b4602cf54c03100a22c0b3dfa151ac": {
+            "name": "Conversation Support Queue Timer Task",
+            "next_action": "2026-05-15 18:16:25",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "7243a468f50c03100a22c0b3dfa151d2": {
+            "name": "Subscription Detail Watcher",
+            "next_action": "2026-05-15 20:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "72853111534002109f43ddeeff7b12ef": {
+            "name": "Update Auto Training Allowed Info",
+            "next_action": "2026-05-17 00:25:18",
+            "state": "0",
+            "trigger_type": "3"
+        },
+        "72ae9beac3f4c710b4e13e1d05013179": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 06:37:03",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "72b0664443303110b7f9fc176ab8f2fc": {
+            "name": "Deferred Responder Handler",
+            "next_action": "2026-05-15 18:16:03",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "72f420ecf54c03100a22c0b3dfa15170": {
+            "name": "Hermes Diagnostics Check",
+            "next_action": "2026-05-15 19:19:27",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "7333ac28f50c03100a22c0b3dfa15191": {
+            "name": "MIF Sync Down Job",
+            "next_action": "2026-05-15 22:17:32",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "736b695a735033008564b17afef6a7b8": {
+            "name": "VA Event Processor 0",
+            "next_action": "2026-04-01 05:09:40",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "7410646cf58803100a22c0b3dfa151fa": {
+            "name": "Run normalization job daily",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "749e58a4f54803100a22c0b3dfa151c6": {
+            "name": "ScheduleBenchmarkDownload",
+            "next_action": "2026-06-09 07:00:00",
+            "state": "0",
+            "trigger_type": "4"
+        },
+        "75b4602cf54c03100a22c0b3dfa15180": {
+            "name": "Timeout For VA-OneExtend Interactive Chats",
+            "next_action": "2026-05-15 18:16:18",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "764dd11e0a0a0b83003cf5fe76f3a5a2": {
+            "name": "StartupLogging",
+            "next_action": "2026-04-01 03:55:34",
+            "state": "0",
+            "trigger_type": "9"
+        },
+        "76996ce0f54043100a22c0b3dfa151af": {
+            "name": "Flow Engine Interactive Event Handler",
+            "next_action": "2026-04-01 05:31:32",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "76ced868f54803100a22c0b3dfa1513b": {
+            "name": "Service Model's Blob Reaper",
+            "next_action": "2026-05-17 08:00:00",
+            "state": "0",
+            "trigger_type": "3"
+        },
+        "7705acecf54c03100a22c0b3dfa15111": {
+            "name": "Push Metadata To Mosaic",
+            "next_action": "2026-05-16 21:27:02",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "776335410a000526204dce2ed3145708": {
+            "name": "TS Index Reaper",
+            "next_action": "2026-05-16 10:24:40",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "78341d62c3f48710b4e13e1d050131d9": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-15 20:32:04",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "785039bec33c0b10b4e13e1d05013119": {
+            "name": "Send email reminder for email interactions on hold",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "7856ac60f5cc03100a22c0b3dfa1510f": {
+            "name": "[GenAI Analytics] Daily Data Collection",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "78976ad2771101108ee182607b5a9941": {
+            "name": "UA Scripted Definitions Sync Job",
+            "next_action": "2026-05-17 07:00:00",
+            "state": "0",
+            "trigger_type": "3"
+        },
+        "789e58a4f54803100a22c0b3dfa15151": {
+            "name": "Copy historical scores from PA to Benchmarks table",
+            "next_action": "2026-04-01 04:42:50",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "789e58a4f54803100a22c0b3dfa15177": {
+            "name": "ScheduleBenchmarkUpload",
+            "next_action": "2026-06-01 07:00:00",
+            "state": "0",
+            "trigger_type": "4"
+        },
+        "78d510e0f58003100a22c0b3dfa151ab": {
+            "name": "Analytics - Generate User Hashes",
+            "next_action": "2026-05-16 17:30:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "78d510e0f58003100a22c0b3dfa151b5": {
+            "name": "UXAAppMigrationJob",
+            "next_action": "2026-05-15 18:59:17",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "79722860f50c03100a22c0b3dfa1512e": {
+            "name": "Verify active instance clone status",
+            "next_action": "2026-05-15 18:34:15",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "79f36f66c338c710b4e13e1d05013160": {
+            "name": "UPS Audit (3 days)",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "7a1a3d630a0a0b6100be7e4f070e6cc3": {
+            "name": "Register Instance",
+            "next_action": "2026-04-01 05:33:59",
+            "state": "0",
+            "trigger_type": "9"
+        },
+        "7a43a468f50c03100a22c0b3dfa151c5": {
+            "name": "Licensing Engine",
+            "next_action": "2026-05-16 08:30:01",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "7a996ce0f54043100a22c0b3dfa151b3": {
+            "name": "events process platform_analytics",
+            "next_action": "2026-05-15 18:16:02",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "7a996ce0f54043100a22c0b3dfa151b9": {
+            "name": "events process uxf_queue",
+            "next_action": "2026-05-15 18:16:02",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "7ac2f11477300010bef6d0adda1061e7": {
+            "name": "Clear expiring KMF cache entries",
+            "next_action": "2026-04-01 04:58:06",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "7aee7f21c333210066523b251eba8fe4": {
+            "name": "UA App Metadata Upload",
+            "next_action": "2026-05-28 07:00:00",
+            "state": "0",
+            "trigger_type": "4"
+        },
+        "7b4e6e50c7030110da58d25827c260dd": {
+            "name": "DelayedRetryEmailProcessorJob",
+            "next_action": "2026-05-15 18:29:28",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "7c63112b5be23300b883a62cf0f91a6c": {
+            "name": "UACountRemoteTables",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "7c635466d7021200a9addd173e24d4b7": {
+            "name": "Init Service Portal SCSS",
+            "next_action": "2026-04-01 04:33:21",
+            "state": "0",
+            "trigger_type": "9"
+        },
+        "7ce9b3121f230000dada97c0ed8b7037": {
+            "name": "TS Chain Summary",
+            "next_action": "2026-05-15 18:32:04",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "7d0ed06cf50803100a22c0b3dfa1511f": {
+            "name": "Populate PAR Required Translations",
+            "next_action": "2026-05-16 13:00:00",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "7d662410bf0021000ba9dc2ecf073995": {
+            "name": "Team Development Review Workflow Resumer",
+            "next_action": "2026-04-01 04:31:54",
+            "state": "0",
+            "trigger_type": "9"
+        },
+        "7d7a62c4db08af841db0fd5e0f96198d": {
+            "name": "LongRunnerPoller",
+            "next_action": "2026-05-15 18:16:00",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "7db49420f54003100a22c0b3dfa151d5": {
+            "name": "Team Development Update Push Status",
+            "next_action": "2026-05-15 18:19:41",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "7dd281b243302110066b277c5ab8f250": {
+            "name": "Event Transfer Job Trigger",
+            "next_action": "2026-05-15 18:19:59",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "7e43a468f50c03100a22c0b3dfa151b9": {
+            "name": "Recommended Subscriptions for Unmapped Custom Apps",
+            "next_action": "2026-05-16 09:30:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "7e4ea201c30231000c8a174292d3aed7": {
+            "name": "Check Active/All Node Jobs",
+            "next_action": "2026-04-01 04:57:39",
+            "state": "0",
+            "trigger_type": "9"
+        },
+        "7ed7642a931032002bc8372e457ffb11": {
+            "name": "PA Forecast Job Schedule",
+            "next_action": "2026-05-15 22:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "7fd24b2e433921102b2c29c28ab8f2b1": {
+            "name": "IH Exclusion Info Download",
+            "next_action": "2026-05-15 20:15:41",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "8000602cf58803100a22c0b3dfa151c1": {
+            "name": "Trigger Notifications for CMDB DM Stale Tasks",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "801b37e2c3f8c710b4e13e1d050131df": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 08:41:06",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "8029d5f6c3b40b10b4e13e1d05013163": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 15:32:04",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "803c5020f5c403100a22c0b3dfa15145": {
+            "name": "Clean Unused ATF Step Snapshots",
+            "next_action": "2026-05-21 07:00:00",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "80556064f58c03100a22c0b3dfa1510e": {
+            "name": "Subscribe Teams App",
+            "next_action": "2026-05-15 18:35:16",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "817b6cacf5c443100a22c0b3dfa151e9": {
+            "name": "Process client push notifications",
+            "next_action": "2026-05-18 23:06:18",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "828d10775be00210fadffb8f9281c796": {
+            "name": "Physical Table Yearly Stats Aggregator",
+            "next_action": "2027-01-01 19:49:42",
+            "state": "0",
+            "trigger_type": "6"
+        },
+        "8302a0eec37230104f5cccbfea40dd41": {
+            "name": "Warm up the Trust Decision cache",
+            "next_action": "2026-04-01 04:58:11",
+            "state": "0",
+            "trigger_type": "9"
+        },
+        "83100dc2c3f48310b4e13e1d050131fa": {
+            "name": "CICD adhoc schedule",
+            "next_action": "2026-05-13 05:47:20",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "83610431c3300310b4e13e1d05013174": {
+            "name": "VA Notification Batch Event Handler",
+            "next_action": "2026-05-15 18:15:58",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "836eadb6c3b80b10b4e13e1d05013104": {
+            "name": "CSM-Data-Fix - Fix external users with possible non-intentional internal role as",
+            "next_action": "2026-05-15 17:05:07",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "844a5c28f54403100a22c0b3dfa151a1": {
+            "name": "CleanupListExportLimitTime",
+            "next_action": "2026-05-15 18:30:00",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "8460a860f5c803100a22c0b3dfa151e5": {
+            "name": "Migrate IP Address Controls to Adaptive Authentication IP Filter",
+            "next_action": "2026-04-01 04:50:43",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "8460a860f5c803100a22c0b3dfa151fd": {
+            "name": "Clear stale MFA set up data and turn on MFA property",
+            "next_action": "2026-04-01 04:50:43",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "84959cacf54003100a22c0b3dfa1516d": {
+            "name": "Populate ML Solution Alert Stats",
+            "next_action": "2026-05-15 22:57:29",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "84959cacf54003100a22c0b3dfa151cb": {
+            "name": "Populate Clustering stats",
+            "next_action": "2026-05-15 18:18:29",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "84c6e8e4f5cc03100a22c0b3dfa15112": {
+            "name": "Article Optimization - Scripted",
+            "next_action": "2026-06-01 09:00:00",
+            "state": "0",
+            "trigger_type": "4"
+        },
+        "84ede53ec3780b10b4e13e1d05013190": {
+            "name": "Remove Agent Work Schedule end date older than a month ",
+            "next_action": "2026-05-16 09:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "84ee1ca8f54803100a22c0b3dfa1510c": {
+            "name": "Service Mapping - check for changes in topologies",
+            "next_action": "2026-05-15 18:15:56",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "84ee1ca8f54803100a22c0b3dfa15118": {
+            "name": "Service Model Auto Remediation",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "84eed8a8f54803100a22c0b3dfa151d0": {
+            "name": "Convert Services Progress Refresher",
+            "next_action": "2026-05-15 18:16:00",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "85606c60f5c803100a22c0b3dfa151fd": {
+            "name": "API Access policy monthly report",
+            "next_action": "2026-06-01 07:00:00",
+            "state": "0",
+            "trigger_type": "4"
+        },
+        "85d582c35b30301025319a011581c792": {
+            "name": "Kafka consumer house keeping job",
+            "next_action": "2026-05-15 18:16:02",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "85faa679ffd012105c32ffffffffff2e": {
+            "name": "UserRoleHistorySyncSchedule",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "87cdadbac3780b10b4e13e1d05013161": {
+            "name": "Reset skill category code and path",
+            "next_action": "2026-05-15 17:02:23",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "87ed51531f2121006d691b220e8b70bd": {
+            "name": "UA License Download",
+            "next_action": "2026-05-16 12:18:42",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "8834a464f54c03100a22c0b3dfa15166": {
+            "name": "Populate Topic Popularity",
+            "next_action": "2026-05-16 08:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "88b49cecf50003100a22c0b3dfa15173": {
+            "name": "Remove old first party scoped application deletes from sys_metadata_delete table",
+            "next_action": "2026-05-16 00:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "88eed8a8f54803100a22c0b3dfa151b0": {
+            "name": "Checkpoint Reaper",
+            "next_action": "2026-05-16 08:00:00",
+            "state": "0",
+            "trigger_type": "3"
+        },
+        "89c6543ac3bcc710b4e13e1d05013157": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 10:42:08",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "8a6ab57553103300d045ddeeff7b1288": {
+            "name": "Expire pending rollback contexts",
+            "next_action": "2026-05-15 19:56:43",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "8b6055ce7f2212104b37cf896d8665dd": {
+            "name": "Hermes IP ACL Publish Job",
+            "next_action": "2026-05-15 18:20:50",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "8b610431c3300310b4e13e1d05013171": {
+            "name": "Import Set Transformer",
+            "next_action": "2026-05-15 18:15:58",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "8b610431c3300310b4e13e1d050131b7": {
+            "name": "Service Mapping Recomputation 2",
+            "next_action": "2026-05-15 18:15:58",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "8babd93ec3b40b10b4e13e1d0501319a": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 15:43:12",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "8c00602cf58803100a22c0b3dfa151cd": {
+            "name": "CMDB DependentCI Policy Processor",
+            "next_action": "2026-05-16 07:30:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "8c556064f58c03100a22c0b3dfa1512f": {
+            "name": "Slack Users Auto Syncing",
+            "next_action": "2026-05-15 22:01:55",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "8c9d5ce4f50803100a22c0b3dfa151bf": {
+            "name": "Calculate Standard Change Template and Template Version statistics",
+            "next_action": "2026-05-16 09:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "8c9d5cfd9f610200736af84bc42e7020": {
+            "name": "NPS Metric Type Assessment Creation",
+            "next_action": "2026-04-01 05:27:00",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "8cbf98e4f58803100a22c0b3dfa151c3": {
+            "name": "Update catalog items conversational render type",
+            "next_action": "2026-05-17 07:00:00",
+            "state": "0",
+            "trigger_type": "3"
+        },
+        "8d51ff719f2312001526317f842e7069": {
+            "name": "UAUploadRetrier",
+            "next_action": "2026-05-16 05:26:53",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "8d54fee6c3b0c710b4e13e1d05013168": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 03:32:04",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "8db6aca4f5cc03100a22c0b3dfa1517d": {
+            "name": "Clear expired client push notifications",
+            "next_action": "2026-05-17 09:00:00",
+            "state": "0",
+            "trigger_type": "3"
+        },
+        "8e3612a70a0a0b9e0049ed54a649db4f": {
+            "name": "Summary Set Cleanup",
+            "next_action": "2026-05-15 18:34:46",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "8f58ac28f50043100a22c0b3dfa1510e": {
+            "name": "Data Center Zone Usage",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "8f6eadb6c3b80b10b4e13e1d05013125": {
+            "name": "CSM-Data-Fix - Fix external users with possible intentional internal role assign",
+            "next_action": "2026-05-15 17:05:07",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "8f8c69fcc3200310b4e13e1d05013174": {
+            "name": "Service Mapping Recomputation 1",
+            "next_action": "2026-04-27 01:33:22",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "8fa0d4ef5b623300b883a62cf0f91a12": {
+            "name": "UARestrictedCallerAccessCount",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "8fb83c6ec3f08710b4e13e1d05013183": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-15 18:32:04",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "9003e4a4f50c03100a22c0b3dfa1513e": {
+            "name": "UXAMigrationJob",
+            "next_action": "2026-05-15 18:29:44",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "9003e4a4f50c03100a22c0b3dfa1516f": {
+            "name": "Usage Insights Event Downloader",
+            "next_action": "2026-05-16 13:20:40",
+            "state": "0",
+            "trigger_type": "3"
+        },
+        "904ad3a3b70230109fed8481de11a99f": {
+            "name": "Hermes Metadata Collection",
+            "next_action": "2026-05-15 18:27:47",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "90e5242cf58c03100a22c0b3dfa1514c": {
+            "name": "Migrate Goal, Strategy, and Work item data to the Goal Framework and related Pla",
+            "next_action": "2026-04-01 05:14:45",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "90f8279c0a0a0b13003af1c380d2cdcb": {
+            "name": "SMS Sender",
+            "next_action": "2026-05-15 18:16:08",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "9135b7a24343b11017b739603ab8f220": {
+            "name": "CSDMLifecycleEventProcessor",
+            "next_action": "2026-05-15 18:19:00",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "91616b03c611227b014e3d95b7f9d1dd": {
+            "name": "Email Reader",
+            "next_action": "2026-05-15 18:16:12",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "916bc93ec3340b10b4e13e1d050131a7": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 14:32:04",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "92802424f5c803100a22c0b3dfa1510e": {
+            "name": "[MFA Dashboard] Metrics Daily Data Collection",
+            "next_action": "2026-05-16 17:30:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "92de6422c3223100f4a13b251eba8ffc": {
+            "name": "UA Table to Package Overrides Download",
+            "next_action": "2026-05-16 07:03:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "92f1ace8f5c803100a22c0b3dfa15190": {
+            "name": "Flush Password In-compliance Logs",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "936659370723011017b703767cd300f8": {
+            "name": "CSDMTSOEventProcessor",
+            "next_action": "2026-05-15 18:16:00",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "93dee932c3f80b10b4e13e1d0501316d": {
+            "name": "Populate AWA  Stats",
+            "next_action": "2026-05-15 18:17:45",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "93fadc576f3171005be8883e6b3ee4d1": {
+            "name": "UA Stream Block Downloader",
+            "next_action": "2026-05-15 19:35:57",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "9405dc64f54003100a22c0b3dfa1515d": {
+            "name": "IAMSync manage the message queue",
+            "next_action": "2026-05-15 18:48:38",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "951d50a0f50803100a22c0b3dfa151c8": {
+            "name": "PADatasnapshotTargetsCleanup",
+            "next_action": "2026-05-31 17:30:00",
+            "state": "0",
+            "trigger_type": "4"
+        },
+        "956d1064f50803100a22c0b3dfa15149": {
+            "name": "PA Indicator usage per application",
+            "next_action": "2026-05-31 22:00:00",
+            "state": "0",
+            "trigger_type": "4"
+        },
+        "956ddc24f50803100a22c0b3dfa151ec": {
+            "name": "Clean PA scores",
+            "next_action": "2026-04-01 04:37:41",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "963f27e67f0112100dcc9ff45d86658f": {
+            "name": "Physical Table Group Populator Job",
+            "next_action": "2026-04-01 06:49:36",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "967b1028f58403100a22c0b3dfa1515d": {
+            "name": "Collect ECC Queue Stats",
+            "next_action": "2026-05-15 18:16:29",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "96e65da6c3f48710b4e13e1d050131d6": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-15 20:43:55",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "97610431c3300310b4e13e1d050131be": {
+            "name": "Flow Engine Event Handler",
+            "next_action": "2026-05-15 18:15:57",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "97610431c3300310b4e13e1d050131d5": {
+            "name": "Service Mapping Recomputation 1",
+            "next_action": "2026-05-15 18:15:59",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "97610431c3300310b4e13e1d050131f8": {
+            "name": "Clean logs",
+            "next_action": "2026-05-16 06:34:59",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "97ab14a8f58403100a22c0b3dfa15139": {
+            "name": "Licensing Hardware Count",
+            "next_action": "2026-05-15 18:54:42",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "98299e7353330010c722ddeeff7b1273": {
+            "name": "Mobile Payload Generation Event",
+            "next_action": "2026-05-15 18:16:02",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "98652405475321007260d8966c9a710f": {
+            "name": "Event Queue Monitor",
+            "next_action": "2026-05-15 18:16:18",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "98a620a4f5cc03100a22c0b3dfa15177": {
+            "name": "[PA SC] Compliance Score Data Collection",
+            "next_action": "2026-04-01 05:18:02",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "98bdd468f50803100a22c0b3dfa151ae": {
+            "name": "Sync Password Reset Soft PIN Expiration Time",
+            "next_action": "2026-04-01 04:38:59",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "98cb327dff300210864dffffffffffb2": {
+            "name": "UX Analytics Config Downloader",
+            "next_action": "2026-05-15 20:45:07",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "999b041ac32021105e1a6333d840ddcb": {
+            "name": "FcmAuthTokenRefresh",
+            "next_action": "2026-05-15 18:19:16",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "99b22ca0f50c03100a22c0b3dfa15167": {
+            "name": "Change velocity historical data collection",
+            "next_action": "2026-04-01 05:00:54",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "99c10860c34201106bedccbfea40dd23": {
+            "name": "Cleanup stale secret records",
+            "next_action": "2026-04-01 04:34:37",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "99d7efaec338c710b4e13e1d05013107": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 07:17:05",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "9a507dbec33c0b10b4e13e1d05013124": {
+            "name": "events process 0",
+            "next_action": "2026-05-15 18:16:02",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "9a67962bff173210a247ffffffffff86": {
+            "name": "OG Cache Invalidation Event Processor",
+            "next_action": "2026-05-15 18:16:00",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "9a7b1028f58403100a22c0b3dfa15124": {
+            "name": "Ecc Queue Usage Analytics - Aggregate all topics from ecc_queue to ecc_queue_usa",
+            "next_action": "2026-05-15 18:30:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "9a96ae6ec330c710b4e13e1d050131bb": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 02:32:04",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "9b614431c3300310b4e13e1d05013125": {
+            "name": "Import Set Transformer",
+            "next_action": "2026-05-15 18:15:59",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "9be36b66c338c710b4e13e1d0501316a": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 07:00:01",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "9bef203ac3700b10b4e13e1d05013165": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 12:32:04",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "9bf5b3510a0a0a6501343116281a04e8": {
+            "name": "Collect Table Stats",
+            "next_action": "2026-05-16 04:25:32",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "9c0a435b43001210636868e8a9b8f28e": {
+            "name": "MIF Consume Message Job",
+            "next_action": "2026-05-15 18:16:16",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "9c762ca0f5cc03100a22c0b3dfa15196": {
+            "name": "Generate Employee Profiles from Users",
+            "next_action": "2026-05-16 17:30:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "9ca620a4f5cc03100a22c0b3dfa151c3": {
+            "name": "Set run as user for SC PA jobs",
+            "next_action": "2026-05-16 06:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "9d35a0a0f58c03100a22c0b3dfa151b0": {
+            "name": "Auto Resolution Scheduled Job",
+            "next_action": "2026-05-15 18:19:52",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "9d57613ac3380b10b4e13e1d050131ca": {
+            "name": "Nightly PC Request",
+            "next_action": "2026-05-16 02:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "9de277550b962200d109061437673a86": {
+            "name": "Clean Progress Worker Pool",
+            "next_action": "2026-05-16 03:55:34",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "9e0967a1c3123010c674dd781840ddac": {
+            "name": "UA Monthly Count Persistor V2",
+            "next_action": "2026-05-16 10:18:25",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "9e66c8e27331301036191f8afaf6a786": {
+            "name": "TimeLimitedLoggerConfigCleaner",
+            "next_action": "2026-04-01 03:55:47",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "9ec33bd37713001033b5270bba1061bf": {
+            "name": "CMDBGroupEventProcessor",
+            "next_action": "2026-05-15 18:16:51",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "9ef36f66c338c710b4e13e1d050131e1": {
+            "name": "UPS Audit (7 days)",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "9f614431c3300310b4e13e1d0501311e": {
+            "name": "Service Mapping Fast Recomputation 2",
+            "next_action": "2026-05-15 18:15:59",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "9f9d1828f50803100a22c0b3dfa151c7": {
+            "name": "Remove scores and snapshots duplicates",
+            "next_action": "2026-04-01 04:38:39",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "9fb626635b2130103a9b51d11581c790": {
+            "name": "KafkaConsumerJob",
+            "next_action": "2026-04-01 05:10:02",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "9fc19c43673032003832f1d557415a54": {
+            "name": "UA DailySummary Analytics Producer",
+            "next_action": "2026-05-16 15:30:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "9fdee932c3f80b10b4e13e1d0501314b": {
+            "name": "AWA - Populate AWA Queue Capacity and Average Wait Time",
+            "next_action": "2026-05-15 18:16:15",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "a012606cf5c803100a22c0b3dfa1512c": {
+            "name": "Update all Instance Root Key (IRK) metadata",
+            "next_action": "2026-04-01 04:58:07",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "a02142a4532120100fb3ddeeff7b12b1": {
+            "name": "Drain GCF Sample Queue",
+            "next_action": "2026-04-01 04:02:10",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "a0be6d8ac0a8006f0084394185729827": {
+            "name": "Synchronous Import Set Completer",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "a0c3a0ecf50c03100a22c0b3dfa15193": {
+            "name": "Insight - Cloud Servers",
+            "next_action": "2026-05-16 11:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "a0c3a0ecf50c03100a22c0b3dfa151ab": {
+            "name": "Insight - Non-cloud Storage Volume",
+            "next_action": "2026-05-16 17:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "a0e998e0f54403100a22c0b3dfa151a7": {
+            "name": "Synchronous Import Set Completer",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "a10554a4f54003100a22c0b3dfa151d8": {
+            "name": "Update Recorded At for Version",
+            "next_action": "2026-05-16 10:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "a11d90a0f50803100a22c0b3dfa151f3": {
+            "name": "PADatasnapshotThresholdCleanup",
+            "next_action": "2026-05-31 17:30:00",
+            "state": "0",
+            "trigger_type": "4"
+        },
+        "a1741036c3bcc710b4e13e1d0501318c": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 10:32:04",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "a1806ce0f5c803100a22c0b3dfa15193": {
+            "name": "GlideEncrypter Custom Key schedule",
+            "next_action": "2026-06-01 06:10:00",
+            "state": "0",
+            "trigger_type": "4"
+        },
+        "a1ba18ecf54403100a22c0b3dfa15167": {
+            "name": "Update Final Knowledge Search Terms",
+            "next_action": "2026-05-16 09:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "a1de683dc0a8010a008419cd3659cf8f": {
+            "name": "Table Cleaner",
+            "next_action": "2026-04-01 03:56:40",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "a1f33001c3110100f0d95b787dba8f44": {
+            "name": "UsageAnalytics App Persistor",
+            "next_action": "2026-04-01 04:01:53",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "a2821203bf1201003edbdd8c3f0739ef": {
+            "name": "UsageAnalytics Count Persistor",
+            "next_action": "2026-05-16 09:15:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "a2ac94e4f5c403100a22c0b3dfa15197": {
+            "name": "Poll LB For Certificate Status",
+            "next_action": "2026-05-15 18:45:13",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "a2cc6622c320020058bc3b251eba8feb": {
+            "name": "Notify Subscription Overuse",
+            "next_action": "2026-04-01 04:34:02",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "a342db62c3b4c710b4e13e1d050131b6": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 05:43:02",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "a3dedfd4c61122750164b2c0adf1021b": {
+            "name": "Check distribution for possible upgrade",
+            "next_action": "2026-05-15 18:18:37",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "a405dc64f54003100a22c0b3dfa151c4": {
+            "name": "Addresses User Has Role Errors",
+            "next_action": "2026-04-01 04:01:02",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "a40c97baa3100210f1565f87f31e6188": {
+            "name": "Clean expired Token Auth Credentials",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "a4255428f54003100a22c0b3dfa1512c": {
+            "name": "Generate federated Id for roles if empty",
+            "next_action": "2026-05-15 20:23:02",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "a42b522ac3fc8710b4e13e1d05013192": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 01:41:59",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "a4c3a0ecf50c03100a22c0b3dfa15171": {
+            "name": "CMDB Workspace Aggregates Monthly Collection",
+            "next_action": "2026-04-01 05:05:29",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "a4c3a0ecf50c03100a22c0b3dfa151a1": {
+            "name": "CMDB Workspace Cert Instance Aggregate Data Batch Job",
+            "next_action": "2026-05-15 18:16:19",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "a4c3a0ecf50c03100a22c0b3dfa151da": {
+            "name": "Insight - Cloud Service Accounts",
+            "next_action": "2026-05-16 15:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "a4c3a0ecf50c03100a22c0b3dfa151e6": {
+            "name": "CMDB Data Certification UI View Cleanup",
+            "next_action": "2026-05-16 10:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "a51441d1d70022004cd2a3b20e61039a": {
+            "name": "PA clean scores events process",
+            "next_action": "2026-05-15 18:16:00",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "a5ba18ecf54403100a22c0b3dfa15188": {
+            "name": "Notification for Article Expiry Warning",
+            "next_action": "2026-06-02 04:00:00",
+            "state": "0",
+            "trigger_type": "4"
+        },
+        "a6eb982cf58403100a22c0b3dfa1511c": {
+            "name": "Calculate Availability",
+            "next_action": "2026-05-16 09:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "a71998a8f50403100a22c0b3dfa151f4": {
+            "name": "CMDB Multisource Data Cleanup",
+            "next_action": "2026-05-15 18:22:56",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "a7ead8a0f58403100a22c0b3dfa15155": {
+            "name": "Clear UX Banner Announcement Cache",
+            "next_action": "2026-05-16 07:30:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "a7fc6978c3600310b4e13e1d05013162": {
+            "name": "events process sn_nb_action.ra_processor_queue_1",
+            "next_action": "2026-05-15 18:16:00",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "a812206cf5c803100a22c0b3dfa151e2": {
+            "name": "Optimize KMF root keys",
+            "next_action": "2026-05-16 02:46:52",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "a812606cf5c803100a22c0b3dfa1511e": {
+            "name": "Refresh crypto features support",
+            "next_action": "2026-05-15 19:36:45",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "a8556741c0a801040012eceba9b2b6db": {
+            "name": "Clean logs",
+            "next_action": "2026-04-01 03:55:34",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "a862bdaac3b88710b4e13e1d0501312d": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-15 22:43:57",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "a8948be6c334c710b4e13e1d050131aa": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 04:43:01",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "a8c3a0ecf50c03100a22c0b3dfa151b5": {
+            "name": "Insight - Non-cloud DB Instances",
+            "next_action": "2026-05-16 10:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "a8c3a0ecf50c03100a22c0b3dfa151c0": {
+            "name": "Multisource Dashboard Collection",
+            "next_action": "2026-04-01 05:05:29",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "a8c3a0ecf50c03100a22c0b3dfa151e4": {
+            "name": "CMDB Workspace Aggregates Daily Collection",
+            "next_action": "2026-04-01 05:05:29",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "a97839e4ff0132109371fffffffffff6": {
+            "name": "Migrate analytics center data",
+            "next_action": "2026-05-16 10:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "a99fd0a4f58803100a22c0b3dfa1518c": {
+            "name": "Calculate Application servers not in an application service",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "a9ae77460f120010e6d4fd820b767e94": {
+            "name": "communities fanout queue event process",
+            "next_action": "2026-05-15 18:16:18",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "aaaf6d66c3b88710b4e13e1d05013123": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-15 22:32:04",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "ab19d8a8f50403100a22c0b3dfa1510b": {
+            "name": "MAINT: Promote business_unit up to cmdb_ci table level",
+            "next_action": "2026-04-01 04:19:00",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "abe36b66c338c710b4e13e1d050131e7": {
+            "name": "Data Center Zone Consumption",
+            "next_action": "2026-06-15 07:00:00",
+            "state": "0",
+            "trigger_type": "4"
+        },
+        "acc3a0ecf50c03100a22c0b3dfa151f0": {
+            "name": "Multisource Dashboard Analytics Population",
+            "next_action": "2026-05-16 06:30:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "acc5248a4302021050bb6e702cb8f267": {
+            "name": "Check DC Supports TLS",
+            "next_action": "2026-05-15 23:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "acd7e024f50043100a22c0b3dfa151ac": {
+            "name": "Remove Orphaned Attachments",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "3"
+        },
+        "ad0554a4f54003100a22c0b3dfa151c1": {
+            "name": "Update Recorded At for Update XML",
+            "next_action": "2026-05-16 09:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "ad12646cf5c803100a22c0b3dfa1510a": {
+            "name": "EJBCA Asymmetric Cert Renewal Job",
+            "next_action": "2026-05-15 23:45:12",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "ad40ebaec3f4c710b4e13e1d05013133": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 06:44:04",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "ad5c09bec3340b10b4e13e1d050131ad": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 14:36:11",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "add97ceec3f08710b4e13e1d0501317e": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-15 18:36:53",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "ae068356ffa432108e6effffffffff71": {
+            "name": "Consolidate User Sensitive Data Records",
+            "next_action": "2026-05-17 07:00:00",
+            "state": "0",
+            "trigger_type": "3"
+        },
+        "ae20a4acf58803100a22c0b3dfa1515a": {
+            "name": "Process Automation Event Handler",
+            "next_action": "2026-04-01 04:49:48",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "ae834e807f330210e71bd5c31d866534": {
+            "name": "Flow Engine Presumed Interrupted Marker",
+            "next_action": "2026-04-01 04:39:36",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "ae89f619a002211018f98a7a32a103da": {
+            "name": "Sidebar notification events process",
+            "next_action": "2026-04-01 05:11:25",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "ae996ce0f54043100a22c0b3dfa15178": {
+            "name": "events process ais_suggestion_processing",
+            "next_action": "2026-05-15 18:16:02",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "ae996ce0f54043100a22c0b3dfa1517b": {
+            "name": "events process knowledge_view_queue",
+            "next_action": "2026-05-15 18:16:02",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "af1998a8f50403100a22c0b3dfa151fc": {
+            "name": "CIAffected Event Processor 0",
+            "next_action": "2026-05-15 18:15:58",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "af19d8a8f50403100a22c0b3dfa15100": {
+            "name": "De-Duplication: Template Scheduler",
+            "next_action": "2026-05-15 18:15:56",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "aff8b7eec3b8c710b4e13e1d050131f9": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 08:32:04",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "b0544d3dc611227b00f2f585f6e88e31": {
+            "name": "Run daily trends",
+            "next_action": "2026-05-16 03:55:34",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "b0549f63c611227b0152506e22ec42d8": {
+            "name": "Run hourly trends",
+            "next_action": "2026-05-15 18:55:34",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "b0869dab5bf15110d9a5ce1a8581c7ce": {
+            "name": "Process Queued Signals",
+            "next_action": "2026-05-15 18:17:14",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "b1b4602cf54c03100a22c0b3dfa1518c": {
+            "name": "Idle Chat Timer Task",
+            "next_action": "2026-05-15 18:16:09",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "b1df5868f58803100a22c0b3dfa151e1": {
+            "name": "Code Signing Telemetry Log Processor",
+            "next_action": "2026-05-15 18:16:53",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "b1eea972c3f80b10b4e13e1d0501314f": {
+            "name": "Chat work item time out",
+            "next_action": "2026-05-15 18:16:05",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "b24af822c3348710b4e13e1d0501314b": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-15 18:38:53",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "b277167aff1122106513ffffffffffc0": {
+            "name": "Update Users in Conditional Script Writer Group",
+            "next_action": "2026-05-18 10:00:00",
+            "state": "0",
+            "trigger_type": "3"
+        },
+        "b27c462ec37c8710b4e13e1d05013120": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 00:37:58",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "b3056cecf54c03100a22c0b3dfa151c1": {
+            "name": "Fix default provider settings",
+            "next_action": "2026-05-15 19:48:11",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "b35dadd037b03000158bbfc8bcbe5d5e": {
+            "name": "Calculate Depreciation",
+            "next_action": "2026-05-16 08:06:45",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "b3d8a49643100210026cbbd32fb8f2f1": {
+            "name": "Hermes Usage Metrics Aggregation Monthly",
+            "next_action": "2026-06-02 04:00:00",
+            "state": "0",
+            "trigger_type": "4"
+        },
+        "b5b4602cf54c03100a22c0b3dfa15151": {
+            "name": "Expire Guest Session Identifier",
+            "next_action": "2026-05-15 18:16:34",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "b5b4602cf54c03100a22c0b3dfa151cf": {
+            "name": "Cleanup URL Unfurl Cache",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "b615e420f58c03100a22c0b3dfa1517d": {
+            "name": "Timeout unprocessed CCIF Messages with message order true",
+            "next_action": "2026-05-15 18:16:00",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "b6556864f58c03100a22c0b3dfa151b5": {
+            "name": "Admin Center Daily Data Collection",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "b6616f22c338c710b4e13e1d050131cb": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 06:49:04",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "b686e8e0f5cc03100a22c0b3dfa15179": {
+            "name": "Clear sessions in Login History table for node failure ",
+            "next_action": "2026-05-16 17:30:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "b706e3e70a0001c8003eabddaaaa40f9": {
+            "name": "System - reduce resources",
+            "next_action": "2026-04-01 03:55:34",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "b716aed1ff10321016beffffffffff45": {
+            "name": "GC Version Divergence Trigger",
+            "next_action": "2026-05-16 12:01:14",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "b767ec60f50043100a22c0b3dfa151ea": {
+            "name": "Decision Table Multi Result Cleaner",
+            "next_action": "2026-05-25 07:24:52",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "b8284995ff56321024ecffffffffffb7": {
+            "name": "Revoke tokens for deactivated CIMD clients",
+            "next_action": "2026-05-16 04:00:16",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "b8702ca0f5c803100a22c0b3dfa15141": {
+            "name": "Machine Identity Daily Data Collector",
+            "next_action": "2026-05-16 07:01:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "b89e58a4f54803100a22c0b3dfa15181": {
+            "name": "Upload the benchmark scores",
+            "next_action": "2026-04-01 04:42:50",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "b8c58e54ef30321016afc06c7e97d784": {
+            "name": "Consolidate Node User Sensitive Data",
+            "next_action": "2026-05-15 19:48:20",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "b8dcc4520f923010e98311f8c4767e68": {
+            "name": "Aggregate AgentZero Metrics",
+            "next_action": "2026-05-20 04:03:29",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "b8ff94e8f58803100a22c0b3dfa151bb": {
+            "name": "App Status Count",
+            "next_action": "2026-05-16 07:48:49",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "b9223f50370311002d3500888e41f1a2": {
+            "name": "Clean Expired OAuth Credentials",
+            "next_action": "2026-05-16 04:00:16",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "ba1ed0acf50803100a22c0b3dfa1514a": {
+            "name": "Cleanup Attachment Scan History",
+            "next_action": "2026-06-05 16:00:00",
+            "state": "0",
+            "trigger_type": "4"
+        },
+        "bb05acecf54c03100a22c0b3dfa15134": {
+            "name": "[GlideOneExtend] Moving stuck one extend batch runs to terminal state",
+            "next_action": "2026-05-16 05:11:10",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "bb7fadbec3f80b10b4e13e1d050131d6": {
+            "name": "Time zone data migration for cases",
+            "next_action": "2026-05-15 17:09:49",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "bb7fadbec3f80b10b4e13e1d050131f7": {
+            "name": "CaseDataMigrationForCaseReports",
+            "next_action": "2026-05-15 17:09:49",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "bb84d46cf50003100a22c0b3dfa15122": {
+            "name": "Disable Email Address Internationalization",
+            "next_action": "2026-04-01 03:59:05",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "bc5039bec33c0b10b4e13e1d0501311d": {
+            "name": "Close all the outbound interactions created due to case emails",
+            "next_action": "2026-05-15 17:13:25",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "bc566c60f5cc03100a22c0b3dfa151f9": {
+            "name": "[GenAI Analytics] Historical Data Collection",
+            "next_action": "2026-04-01 05:16:42",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "bcb383b60b013200d109061437673a5a": {
+            "name": "Retry Failed Training Request",
+            "next_action": "2026-05-15 18:33:30",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "bd976a209f231000dada207c7f4bcc59": {
+            "name": "Archive",
+            "next_action": "2026-05-15 19:00:00",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "bdb4602cf54c03100a22c0b3dfa1515d": {
+            "name": "Disconnected Chat Timeout",
+            "next_action": "2026-05-15 18:16:27",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "bdb4602cf54c03100a22c0b3dfa15181": {
+            "name": "Reconcile Topic Control Usage for LUA",
+            "next_action": "2026-05-18 07:00:00",
+            "state": "0",
+            "trigger_type": "3"
+        },
+        "bdb4602cf54c03100a22c0b3dfa151db": {
+            "name": "Time Out Abandoned VA Conversations",
+            "next_action": "2026-05-15 18:52:00",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "bdc529fb0a0a0b2800ff79e7987303d6": {
+            "name": "LDAP Refresh",
+            "next_action": "2026-05-16 04:25:00",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "beceb01293310200288679b4f47ffbf5": {
+            "name": "Fix Default Roles on ACLs",
+            "next_action": "2026-05-16 10:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "beef5ca8f58803100a22c0b3dfa1513e": {
+            "name": "Populate Taxonomy Content Order",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "bf056cecf54c03100a22c0b3dfa151f9": {
+            "name": "Check Status Api And Push To Mosaic",
+            "next_action": "2026-05-15 18:16:42",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "bf28ae22c370c710b4e13e1d05013167": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 02:39:00",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "bf6f94a0f58803100a22c0b3dfa15153": {
+            "name": "Trigger Full Scan",
+            "next_action": "2026-04-01 04:46:36",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "c023144653333300416cddeeff7b12ad": {
+            "name": "onetime password notification scheduler",
+            "next_action": "2026-05-15 18:15:59",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "c09223e2c338c710b4e13e1d05013188": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 06:54:04",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "c09f580ac0a80a29007b0c1d910bc628": {
+            "name": "Check database for possible upgrade",
+            "next_action": "2026-04-01 04:25:03",
+            "state": "0",
+            "trigger_type": "9"
+        },
+        "c0fdff05ff0031109e5a751b03cb1422": {
+            "name": "sc_catalog_queue events process",
+            "next_action": "2026-05-15 18:16:02",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "c10d475e0a0y0b17660611b99ccdeeef": {
+            "name": "Clean Remote Table Temp Files",
+            "next_action": "2026-04-01 03:55:34",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "c10d485e0a0a0b170060611b99ccd00c": {
+            "name": "Clean Temp Files",
+            "next_action": "2026-04-01 03:55:34",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "c1219a111f0031006d691b220e8b7008": {
+            "name": "UA Usage Status Download",
+            "next_action": "2026-06-05 08:00:00",
+            "state": "0",
+            "trigger_type": "4"
+        },
+        "c17b6cacf5c443100a22c0b3dfa151ee": {
+            "name": "Download Customer Push Actions",
+            "next_action": "2026-04-01 05:39:06",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "c279445f1ba592105b3a54e3604bcb8d": {
+            "name": "email_as_an_interaction",
+            "next_action": "2026-05-15 18:16:25",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "c32939c053010210d20bddeeff7b122f": {
+            "name": "UACentralUploadAllowedAndCustomMetricDownload",
+            "next_action": "2026-05-17 04:20:00",
+            "state": "0",
+            "trigger_type": "3"
+        },
+        "c360e0a0f5c803100a22c0b3dfa151e8": {
+            "name": "Run PA Diagnostics",
+            "next_action": "2026-05-17 21:59:59",
+            "state": "0",
+            "trigger_type": "3"
+        },
+        "c361c031c3300310b4e13e1d050131c9": {
+            "name": "Return Waiting Events Job Trigger",
+            "next_action": "2026-05-15 18:15:58",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "c3df9c68f58803100a22c0b3dfa15149": {
+            "name": "PA - KPI Signals -  Formula Indicator Signals Calculation Job",
+            "next_action": "2026-05-15 21:30:00",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "c41a10a4f54403100a22c0b3dfa151d8": {
+            "name": "Asset - Delete Asset Job Logs",
+            "next_action": "2026-06-06 23:00:00",
+            "state": "0",
+            "trigger_type": "4"
+        },
+        "c44c9c20f5c403100a22c0b3dfa15138": {
+            "name": "Prune Search Signal Events",
+            "next_action": "2026-05-17 07:00:00",
+            "state": "0",
+            "trigger_type": "3"
+        },
+        "c45bd6ba0a0a0b8a006ec69b0ae216dc": {
+            "name": "Clean Update History",
+            "next_action": "2026-05-16 09:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "c4959cacf54003100a22c0b3dfa15179": {
+            "name": "ML Cluster Detail purge",
+            "next_action": "2026-05-16 04:03:29",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "c4a375b27f000001013bed88b0ef199a": {
+            "name": "Clean user tokens",
+            "next_action": "2026-05-15 18:53:43",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "c4e3a84353121110c9d4ddeeff7b120b": {
+            "name": "AIS Signals Migration Job",
+            "next_action": "2026-05-15 18:17:41",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "c4ee1ca8f54803100a22c0b3dfa15122": {
+            "name": "Update Query Based Services",
+            "next_action": "2026-05-15 18:25:44",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "c4eed8a8f54803100a22c0b3dfa151bc": {
+            "name": "Application Service Manual Ep Cleanup",
+            "next_action": "2026-05-15 18:21:50",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "c6461b51c3020100f0d95b787dba8f4c": {
+            "name": "UsageAnalytics Upload",
+            "next_action": "2026-05-16 12:29:58",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "c68dd76ac3f4c710b4e13e1d050131cd": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 06:32:04",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "c6f49c24f54003100a22c0b3dfa15198": {
+            "name": "RemoveConversationsforClosedRecords",
+            "next_action": "2026-05-16 17:30:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "c7631c1c0f3011105e78cde2ff767ed8": {
+            "name": "Populate Cache Metrics",
+            "next_action": "2026-04-01 04:49:24",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "c800602cf58803100a22c0b3dfa151a0": {
+            "name": "CMDB Cascade Retire Dependent CIs",
+            "next_action": "2026-05-15 21:26:02",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "c84f98ecf54803100a22c0b3dfa151de": {
+            "name": "ActSub - clean up activity stream",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "c8959cacf54003100a22c0b3dfa1519c": {
+            "name": "ML Update Inactive Solution Cleanup",
+            "next_action": "2026-05-17 17:30:00",
+            "state": "0",
+            "trigger_type": "3"
+        },
+        "c9b4e8e8f54c03100a22c0b3dfa15187": {
+            "name": "Trigger:196ad220ffb072104aebffffffffffc5",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "c9e977efc3f0301030419a038a40dd58": {
+            "name": "Clean Package Inventory Lists",
+            "next_action": "2026-05-20 04:31:54",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "ca394b2643202110247c927e8bb8f236": {
+            "name": "Aggregate Scheduled Job History",
+            "next_action": "2026-05-15 18:25:35",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "cb6d1464f50803100a22c0b3dfa15140": {
+            "name": "Job to fetch Historical Email Indicator Data",
+            "next_action": "2026-04-01 04:37:49",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "cba59c20f58003100a22c0b3dfa151db": {
+            "name": "Remove obsolete search suggestion BRs",
+            "next_action": "2026-05-16 03:30:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "cbe033e9530410100f16ddeeff7b1232": {
+            "name": "Manage Activity fanouts",
+            "next_action": "2026-06-01 07:00:00",
+            "state": "0",
+            "trigger_type": "4"
+        },
+        "cbe3bd12bf0121000ba9dc2ecf073901": {
+            "name": "Cache Metadata Tree",
+            "next_action": "2026-04-01 03:59:38",
+            "state": "0",
+            "trigger_type": "9"
+        },
+        "cc959cacf54003100a22c0b3dfa151a8": {
+            "name": "Clean ML Artifact Object Cache",
+            "next_action": "2026-05-16 02:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "ccb9ab720f3133005605539ac4767ef4": {
+            "name": "Notification Provider Event Handler",
+            "next_action": "2026-05-15 18:15:59",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "cd1610f6c3bcc710b4e13e1d0501317f": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 10:39:08",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "cda1ac68c7623010f02b23b881c26096": {
+            "name": "Regenerate CRL and Flush CRL Cache",
+            "next_action": "2026-05-16 04:58:06",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "cea5c51323c71010e9d4f4c947bf6538": {
+            "name": "Check Glide Service Status",
+            "next_action": "2026-05-15 18:15:35",
+            "state": "1",
+            "trigger_type": "1"
+        },
+        "cf160b82b71230109fed8481de11a960": {
+            "name": "Hermes Periodic Purge",
+            "next_action": "2026-05-15 18:21:48",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "cf610431c3300310b4e13e1d0501316f": {
+            "name": "Flow Engine Interactive Event Handler",
+            "next_action": "2026-05-12 06:34:58",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "cf8c69fcc3200310b4e13e1d0501316f": {
+            "name": "Service Mapping Fast Recomputation 2",
+            "next_action": "2026-04-27 01:33:23",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "cf962064f5cc03100a22c0b3dfa1510f": {
+            "name": "Trigger:259ca6d680da2210f87739045e445927",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "cf99d691532320100f16ddeeff7b1266": {
+            "name": "ActSub - clean up activity stream",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "d0251428f54003100a22c0b3dfa15106": {
+            "name": "Clear Impersonation Sessions for Node Failures",
+            "next_action": "2026-05-16 17:30:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "d02f1b2ec3f4c710b4e13e1d0501315e": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 06:39:03",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "d0a620a4f5cc03100a22c0b3dfa15184": {
+            "name": "Auditor Scheduled Scan",
+            "next_action": "2026-06-01 07:10:00",
+            "state": "0",
+            "trigger_type": "4"
+        },
+        "d0bdd468f50803100a22c0b3dfa151e7": {
+            "name": "Sync Password Reset Enrollment Snapshot Data Monthly",
+            "next_action": "2026-06-15 15:00:00",
+            "state": "0",
+            "trigger_type": "4"
+        },
+        "d1294870c733021002efa7ea1dc260a5": {
+            "name": "Collect Reliability Metrics for Data Management",
+            "next_action": "2026-04-01 04:49:42",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "d1d7afaec338c710b4e13e1d050131fb": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 07:17:05",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "d2fe3da2c33c8710b4e13e1d05013195": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-15 23:38:57",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "d3604593431012108896e1895fb8f2a3": {
+            "name": "Telemetry Trace Configuration Cleaner",
+            "next_action": "2026-05-15 18:59:21",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "d3614431c3300310b4e13e1d0501311d": {
+            "name": "Populate Cache Metrics",
+            "next_action": "2026-05-12 06:34:59",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "d3ab14a8f58403100a22c0b3dfa15151": {
+            "name": "Discovery Credentials Affinity Cleanup",
+            "next_action": "2026-05-17 07:00:00",
+            "state": "0",
+            "trigger_type": "3"
+        },
+        "d4ae20615302220075b6cbaac2dc34fb": {
+            "name": "UA Instance Info Download",
+            "next_action": "2026-05-15 19:17:25",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "d4bdd468f50803100a22c0b3dfa151a1": {
+            "name": "Password Reset Soft PIN Expiration",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "d504dce0f50003100a22c0b3dfa15158": {
+            "name": "Clean Expired Redacted Rollback Contexts",
+            "next_action": "2026-05-15 18:52:41",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "d56d1064f50803100a22c0b3dfa15155": {
+            "name": "Analyze PA scores and PA snapshot tables",
+            "next_action": "2026-05-15 22:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "d56ddc24f50803100a22c0b3dfa151f7": {
+            "name": "Check duplicated scores before migration",
+            "next_action": "2026-04-01 04:37:41",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "d585e7e1d7a10100fceaa6859e610335": {
+            "name": "Remove Old Assessment Data",
+            "next_action": "2013-05-26 07:00:00",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "d59f50a4f58803100a22c0b3dfa15152": {
+            "name": "Clean up compared documents genereated by Document Comparison",
+            "next_action": "2026-05-16 17:30:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "d67e98dac0a8011801393f5054790aa5": {
+            "name": "Autoclose Incidents",
+            "next_action": "2026-05-15 18:23:38",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "d6eddf8053030010c9e6ddeeff7b12e5": {
+            "name": "UsageAnalyticsContentPersistor",
+            "next_action": "2026-05-15 19:00:00",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "d6f16ce8f5c803100a22c0b3dfa151d4": {
+            "name": "Flush Record Event Logs",
+            "next_action": "2026-05-15 19:00:00",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "d6f16ce8f5c803100a22c0b3dfa151f8": {
+            "name": "Csrf Error Logger",
+            "next_action": "2026-04-01 04:57:41",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "d6f1ace8f5c803100a22c0b3dfa151bd": {
+            "name": "Flush Query Event Logs",
+            "next_action": "2026-05-15 19:00:00",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "d7610431c3300310b4e13e1d050131da": {
+            "name": "KafkaConsumerJob",
+            "next_action": "2026-05-15 18:16:19",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "d7bb1e977f0512107e0e93db5d866585": {
+            "name": "Inactive Users Login Data Cleaner job",
+            "next_action": "2026-05-16 17:30:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "d8a620a4f5cc03100a22c0b3dfa1518f": {
+            "name": "Clear comparison data",
+            "next_action": "2026-05-17 09:00:00",
+            "state": "0",
+            "trigger_type": "3"
+        },
+        "d8a620a4f5cc03100a22c0b3dfa15198": {
+            "name": "SC - Calculate Impact Score",
+            "next_action": "2026-04-01 05:18:02",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "d8e56792c0a80064007e86b882a6acc7": {
+            "name": "SMTP Sender",
+            "next_action": "2026-05-15 18:16:59",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "d904dce0f50003100a22c0b3dfa15147": {
+            "name": "Clean Expired Rollback Contexts",
+            "next_action": "2026-05-16 11:02:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "d962a820f50c03100a22c0b3dfa15103": {
+            "name": "Scripted Import Set Deleter",
+            "next_action": "2026-05-16 08:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "d96d1064f50803100a22c0b3dfa15140": {
+            "name": "PA Indicator Aggregated Metrics Table Refresh",
+            "next_action": "2026-05-16 01:30:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "d9a3ad9443512110247c927e8bb8f280": {
+            "name": "Reclassify Scheduled Jobs",
+            "next_action": "2026-05-16 06:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "d9aedef243302110ef14dc6f460d59d8": {
+            "name": "Evaluation Processing Job",
+            "next_action": "2026-05-16 04:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "d9c8b32b5b001200f1138d5511f91a09": {
+            "name": "Refresh source control repositories",
+            "next_action": "2026-05-15 20:00:00",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "da223f4e0b36220096fc4696a6673a81": {
+            "name": "Collect Column Stats",
+            "next_action": "2026-05-16 04:04:04",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "da7b1028f58403100a22c0b3dfa15174": {
+            "name": "MID Secure Audit Log Cleanup",
+            "next_action": "2026-05-15 19:20:53",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "daca1c20f58403100a22c0b3dfa15144": {
+            "name": "Activity Stream Reaper",
+            "next_action": "2026-05-15 18:39:28",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "db39c2301b222000054c91eebc071354": {
+            "name": "Clean DB Cache",
+            "next_action": "2026-05-15 18:53:32",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "db610431c3300310b4e13e1d050131bc": {
+            "name": "Flow Engine Event Handler",
+            "next_action": "2026-05-15 18:15:57",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "db610431c3300310b4e13e1d050131d3": {
+            "name": "Clear expiring KMF cache entries",
+            "next_action": "2026-05-15 18:34:59",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "db610431c3300310b4e13e1d050131f6": {
+            "name": "UsageAnalytics App Persistor",
+            "next_action": "2026-05-15 18:21:01",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "db8ebd597f661210d5c092a26c866526": {
+            "name": "AWA Skill Cleanup Job",
+            "next_action": "2026-05-20 17:06:56",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "dbdee932c3f80b10b4e13e1d05013147": {
+            "name": "AWA - Populate AWA Service Channel Metrics Report Fields",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "dc042754ffa222109b45ffffffffffe4": {
+            "name": "IAM Generate Federated ID for Table-sys_user_role",
+            "next_action": "2026-04-01 06:13:03",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "dca620a4f5cc03100a22c0b3dfa151e8": {
+            "name": "SC - Calculate Compliance",
+            "next_action": "2026-05-15 20:04:16",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "dcbc1ce4f5c403100a22c0b3dfa15103": {
+            "name": "Run SM post-activation tasks",
+            "next_action": "2026-04-01 04:34:37",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "dcff9634ff332210205affffffffffbb": {
+            "name": "Glide Telemetry Init",
+            "next_action": "2026-04-01 03:59:21",
+            "state": "0",
+            "trigger_type": "9"
+        },
+        "dd7f1ca0f58803100a22c0b3dfa151b1": {
+            "name": "Delete old Integration Hub debug files on MID servers.",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "ddabbfc70a0a0b1500d9ee9973fe0bc4": {
+            "name": "Count Software Licenses",
+            "next_action": "2026-05-16 06:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "ddb22ca0f50c03100a22c0b3dfa1517f": {
+            "name": "Change velocity daily data collection",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "ddb5ac114f5131101051853a91ce0b01": {
+            "name": "Proactive Analytics Trigger Definition Activation Job",
+            "next_action": "2026-05-15 22:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "dde1984a0f1330102841244ac4767e5a": {
+            "name": "Flow/Action Pre-Compiler",
+            "next_action": "2026-05-15 18:16:22",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "de8e90a4f54803100a22c0b3dfa1510d": {
+            "name": "Clean up converted documents generated by PDF Generation Utilities plugin",
+            "next_action": "2026-05-16 17:30:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "df55e864f58c03100a22c0b3dfa15161": {
+            "name": "Adoption Blueprint content refresh",
+            "next_action": "2026-05-22 14:00:45",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "df614431c3300310b4e13e1d05013100": {
+            "name": "Clean Remote Table Temp Files",
+            "next_action": "2026-05-15 18:24:59",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "df614431c3300310b4e13e1d05013123": {
+            "name": "persist_scores",
+            "next_action": "2026-05-12 06:34:59",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "dfdee932c3f80b10b4e13e1d05013168": {
+            "name": "AWA - Set Inactive Agents Offline",
+            "next_action": "2026-05-15 18:16:33",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "e01ed86cf50803100a22c0b3dfa151a1": {
+            "name": "GTD Analytics Tour Abandonment",
+            "next_action": "2026-05-16 17:30:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "e0628860c34201106bedccbfea40ddf6": {
+            "name": "Manage journal records",
+            "next_action": "2026-05-15 18:18:37",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "e0c3a0ecf50c03100a22c0b3dfa15196": {
+            "name": "PopulateDuplicate Task Group Daily",
+            "next_action": "2026-05-16 11:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "e112646cf5c803100a22c0b3dfa15116": {
+            "name": "Recurrent Generation of Auto Key Exchange Requests",
+            "next_action": "2026-05-16 07:05:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "e12e690a7f201210226793db5d86652g": {
+            "name": "User Property Change Sync Job",
+            "next_action": "2026-05-17 14:18:20",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "e18e5864f54803100a22c0b3dfa15174": {
+            "name": "Benchmark Historical Data Collection",
+            "next_action": "2026-04-01 04:42:37",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "e19fd0a4f58803100a22c0b3dfa15125": {
+            "name": "Calculate Application Service Types",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "e1c9ecc5b72531104c7d1575de11a9b5": {
+            "name": "UAHistoricalCountPersistor",
+            "next_action": "2026-05-15 20:02:43",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "e1e56d0473231010f20856f77bf6a768": {
+            "name": "Mobile Incremental Generation Event",
+            "next_action": "2026-05-15 18:16:02",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "e204e0e0f54c03100a22c0b3dfa151e3": {
+            "name": "Trigger:d3f6f71dc7033010408bc8d6f2c2606d",
+            "next_action": "2026-05-16 03:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "e241e8e4f5c803100a22c0b3dfa151fb": {
+            "name": "SMTP Sender 2",
+            "next_action": "2026-05-15 18:15:56",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "e286df64c722001072b9fe665cc26019": {
+            "name": "Initialize Core Automation Node Logging",
+            "next_action": "2026-04-01 04:30:10",
+            "state": "0",
+            "trigger_type": "9"
+        },
+        "e2b6cc7ac33cc710b4e13e1d050131d8": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 09:32:04",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "e319d8a8f50403100a22c0b3dfa1510a": {
+            "name": "Populate Internet Facing attribute on Hardware",
+            "next_action": "2026-04-01 04:19:00",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "e4a94fa537080210c81cf34c24924b62": {
+            "name": "Set VA Supported Flag on Catalog Client Script and Catalog UI Policy",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "e4c3a0ecf50c03100a22c0b3dfa151ef": {
+            "name": "CMDB Workspace App Svcs Cloud Classification Batch Job",
+            "next_action": "2026-05-15 18:16:10",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "e560ec60f5c803100a22c0b3dfa151ce": {
+            "name": "Processor access policy monthly report",
+            "next_action": "2026-06-01 07:00:00",
+            "state": "0",
+            "trigger_type": "4"
+        },
+        "e5806ce0f5c803100a22c0b3dfa15186": {
+            "name": "Deprecated APIs scheduled scan",
+            "next_action": "2026-06-01 08:10:00",
+            "state": "0",
+            "trigger_type": "4"
+        },
+        "e59fd0a4f58803100a22c0b3dfa15173": {
+            "name": "Calculate Hardware servers not in an application service",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "e5a264b443333110fb2883678fb8f29f": {
+            "name": "Hermes Kafka Client Metrics Collection",
+            "next_action": "2026-04-01 05:10:50",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "e5ba18ecf54403100a22c0b3dfa151a2": {
+            "name": "Populate Helpful Count on Knowledge",
+            "next_action": "2026-04-01 04:25:58",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "e5ba18ecf54403100a22c0b3dfa151cf": {
+            "name": "Populate Meta Description on KB Articles",
+            "next_action": "2026-04-01 04:25:58",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "e5e845e2c3ac8310b4e13e1d050131d6": {
+            "name": "API Monthly Stats",
+            "next_action": "2026-06-02 09:27:00",
+            "state": "0",
+            "trigger_type": "4"
+        },
+        "e600108d77c00010bf05d4082b106193": {
+            "name": "Update Custom DB Table from Store Apps",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "e6422f5677093110ec2af11d8c5a9981": {
+            "name": "DMScheduler-Hourly",
+            "next_action": "2026-05-15 19:05:40",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "e69b97f8733300106d3bff603ef6a7a1": {
+            "name": "Clean Dashboard Monitorable Items",
+            "next_action": "2026-05-20 04:57:30",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "e71998a8f50403100a22c0b3dfa151ff": {
+            "name": "CMDB Query Builder Suggested Relations Cleanup Job",
+            "next_action": "2026-05-18 19:00:00",
+            "state": "0",
+            "trigger_type": "3"
+        },
+        "e719d8a8f50403100a22c0b3dfa1513b": {
+            "name": "Delete Orphan CI Identifiers",
+            "next_action": "2026-05-18 07:00:00",
+            "state": "0",
+            "trigger_type": "3"
+        },
+        "e7261028f58003100a22c0b3dfa15196": {
+            "name": "[Reporting]  Import Tables expired",
+            "next_action": "2026-05-16 00:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "e80e9c2cf50803100a22c0b3dfa15141": {
+            "name": "Flow Designer Delete Old Preview Flows",
+            "next_action": "2026-05-15 19:00:00",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "e8522cecf5c803100a22c0b3dfa1518c": {
+            "name": "Flush expired entries in Scriptable Table data cache",
+            "next_action": "2026-05-16 07:10:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "e8785d109f233100736af84bc42e70ab": {
+            "name": "Cancel Expired Assessments",
+            "next_action": "2026-06-05 22:00:00",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "e90d4dfec3340b10b4e13e1d0501316c": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 14:39:11",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "e96912b353330010c722ddeeff7b12b7": {
+            "name": "Mobile Payload Generation Event #2",
+            "next_action": "2026-05-15 18:16:02",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "e99f9a62930003000e8470b8b47ffb7b": {
+            "name": "ClearMidCookies",
+            "next_action": "2026-04-01 04:29:17",
+            "state": "0",
+            "trigger_type": "9"
+        },
+        "e9c80aa1b70311102a95e181ce11a991": {
+            "name": "UpgradeManifestCleanerJob",
+            "next_action": "2026-04-01 04:25:03",
+            "state": "0",
+            "trigger_type": "9"
+        },
+        "e9f0efeec3f4c710b4e13e1d050131f2": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 06:47:04",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "ea20a4acf58803100a22c0b3dfa1515a": {
+            "name": "Process Automation Event Handler",
+            "next_action": "2026-04-01 04:49:48",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "ea7f6c7793321210794fef4c64891876": {
+            "name": "Sync analytics bucket and app table",
+            "next_action": "2026-05-16 17:30:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "eb1998a8f50403100a22c0b3dfa151f2": {
+            "name": "Copy Computer To Configuration Item For CMDB TCP",
+            "next_action": "2026-04-01 04:19:00",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "eb19d8a8f50403100a22c0b3dfa15121": {
+            "name": "CSDM Data Sync",
+            "next_action": "2026-05-16 10:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "eb19d8a8f50403100a22c0b3dfa1512f": {
+            "name": "CMDBCumulativeDistribution",
+            "next_action": "2026-04-01 04:19:00",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "ec1ed86cf50803100a22c0b3dfa1514d": {
+            "name": "GTD Analytics Data Cleanup",
+            "next_action": "2026-05-16 17:30:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "ec70a8a0f5c803100a22c0b3dfa151e2": {
+            "name": "UpdateMIUserLastUsedTime",
+            "next_action": "2026-05-16 07:01:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "ecc3a0ecf50c03100a22c0b3dfa1519f": {
+            "name": "De-duplication: Populate Template Suggested and Orphan Tasks",
+            "next_action": "2026-05-15 18:27:23",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "ecc3a0ecf50c03100a22c0b3dfa151c3": {
+            "name": "CMDB Workspace - Populate aggregates Monthly",
+            "next_action": "2026-06-01 07:00:00",
+            "state": "0",
+            "trigger_type": "4"
+        },
+        "ed70d326ff10321009dfffffffffffa8": {
+            "name": "Aggregate Scheduler DB Pressure Job Log",
+            "next_action": "2026-05-16 04:57:39",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "ed7660e0f5cc03100a22c0b3dfa151c2": {
+            "name": "Refresh access for all apps",
+            "next_action": "2026-05-19 07:00:00",
+            "state": "0",
+            "trigger_type": "3"
+        },
+        "ed7ad8e8f54403100a22c0b3dfa15169": {
+            "name": "Populate SC Popular Items",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "ed9f976ec3f4c710b4e13e1d0501318d": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 06:41:03",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "edabc2e10a0a0b6000c2d4f10e8e67e0": {
+            "name": "metric update events process",
+            "next_action": "2026-05-15 18:15:58",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "edb6a0e4f5cc03100a22c0b3dfa15197": {
+            "name": "[ICenter Analytics] Daily Data Collection",
+            "next_action": "2026-05-16 07:01:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "ef99697453e1111076bcddeeff7b12d7": {
+            "name": "Physical Table Stats Gatherer",
+            "next_action": "2026-05-16 15:49:42",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "f09e58a4f54803100a22c0b3dfa151ae": {
+            "name": "Download the benchmark scores",
+            "next_action": "2026-04-01 04:42:50",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "f1238a447fe11210d5c092a26c8665cb": {
+            "name": "AWA Responder Synchronization",
+            "next_action": "2026-05-15 18:16:56",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "f18d7232c3211100c409fd251eba8f87": {
+            "name": "localization events processor",
+            "next_action": "2026-05-15 18:16:26",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "f2165b72b72011109fed8481de11a914": {
+            "name": "Hermes Active Cluster Heartbeat",
+            "next_action": "2026-05-15 18:25:53",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "f254a971ff722210a43026fe9c3bf135": {
+            "name": "Instance Scan Queue Health Monitor",
+            "next_action": "2026-05-15 18:16:36",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "f2996ce0f54043100a22c0b3dfa151be": {
+            "name": "events process sn_nb_action.ra_processor_queue_1",
+            "next_action": "2026-05-15 18:15:57",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "f384d46cf50003100a22c0b3dfa15116": {
+            "name": "Enable Email Address Internationalization",
+            "next_action": "2026-04-01 03:59:05",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "f3cdf437a3cc121083259788341e6149": {
+            "name": "MIF Delete Invalid VTable Entries",
+            "next_action": "2026-05-15 21:03:16",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "f3f07d80ff222210f11bffffffffffb5": {
+            "name": "Clear stale pub-sub long lived subscriptions",
+            "next_action": "2026-05-15 18:25:23",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "f49e58a4f54803100a22c0b3dfa1515c": {
+            "name": "Validate parent child indicators active synced and activity dates are updated",
+            "next_action": "2026-06-01 12:45:00",
+            "state": "0",
+            "trigger_type": "4"
+        },
+        "f56cd8a0f5c403100a22c0b3dfa15158": {
+            "name": "Portal Analyzer",
+            "next_action": "2026-06-21 18:30:00",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "f61a63480a0a1468007e7226b7e64a2e": {
+            "name": "Clean Cache Flush",
+            "next_action": "2026-05-15 18:24:01",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "f643a468f50c03100a22c0b3dfa15147": {
+            "name": "Sync Instance Metadata to Central",
+            "next_action": "2026-05-16 10:58:23",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "f643a468f50c03100a22c0b3dfa151a2": {
+            "name": "Custom Table Inventory Cleanup",
+            "next_action": "2026-05-16 17:30:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "f6732f26c338c710b4e13e1d05013152": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 06:58:04",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "f6996ce0f54043100a22c0b3dfa151b6": {
+            "name": "events process platform_analytics_export",
+            "next_action": "2026-05-15 18:15:57",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "f6b26ce0f50c03100a22c0b3dfa15131": {
+            "name": "PasswordReset ",
+            "next_action": "2026-05-16 17:30:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "f7056cecf54c03100a22c0b3dfa151d8": {
+            "name": "Reseed Mosaic metadata via rebuild",
+            "next_action": "2026-04-01 05:11:10",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "f7056cecf54c03100a22c0b3dfa151da": {
+            "name": "Process pending Gen AI usage records",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "f74cc5df7302101061b79c0c6df6a723": {
+            "name": "Archive Event Handler",
+            "next_action": "2026-05-15 18:16:54",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "f75031b553103300d045ddeeff7b12bf": {
+            "name": "Recover stuck rollback contexts",
+            "next_action": "2026-04-01 03:56:43",
+            "state": "0",
+            "trigger_type": "9"
+        },
+        "f7642de37303330074df6fbc1bf6a7f2": {
+            "name": "UATrackCustomTables",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "f76f54a0f58803100a22c0b3dfa151d5": {
+            "name": "Scorecard Data Collection",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "f7b066fadf01300068c383f36bf26383": {
+            "name": "Update Data Certification Aging Levels",
+            "next_action": "2026-05-16 07:05:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "f7fc53eb73313010a68001d2c4f6a721": {
+            "name": "UACountPersistorMessageEnqueueJob",
+            "next_action": "2026-05-15 22:52:44",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "f8e07524bf3201007a6d257b3f07399f": {
+            "name": "Groups Assessment Creation",
+            "next_action": "2013-08-13 00:00:00",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "f9996ce0f54043100a22c0b3dfa15123": {
+            "name": "persist_scores",
+            "next_action": "2026-04-01 05:30:58",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "f9a110074ccb5210f877930aa92af0cb": {
+            "name": "AuditCleanerScheduleJob",
+            "next_action": "2026-05-15 23:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "f9b4602cf54c03100a22c0b3dfa15199": {
+            "name": "Update ServiceNow NLU Supported Languages",
+            "next_action": "2026-05-18 07:00:00",
+            "state": "0",
+            "trigger_type": "3"
+        },
+        "f9df5868f58803100a22c0b3dfa15182": {
+            "name": "Flush Code Signing Logs",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "fa37850d77213010be280d892c5a990d": {
+            "name": "AIS Index Purge Stale Document",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "fa43a468f50c03100a22c0b3dfa1516c": {
+            "name": "Recommended Subscriptions for Unmapped Global Custom Tables",
+            "next_action": "2026-05-16 11:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "fa43a468f50c03100a22c0b3dfa15183": {
+            "name": "Recommender V2: Recommender Subscriptions for Unmapped Custom Apps &  Unmapped G",
+            "next_action": "2026-05-16 09:30:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "fa556864f58c03100a22c0b3dfa15187": {
+            "name": "Admin Center Historic Data Collector",
+            "next_action": "2026-05-16 07:00:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "fa853972c3bc0b10b4e13e1d050131ad": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 17:36:14",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "fb7fadbec3f80b10b4e13e1d050131da": {
+            "name": "Update case task fields",
+            "next_action": "2026-05-15 17:09:49",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "fb7fadbec3f80b10b4e13e1d050131fb": {
+            "name": "Populate TTR Value",
+            "next_action": "2026-05-15 17:09:49",
+            "state": "0",
+            "trigger_type": "2"
+        },
+        "fb98a7979303021011710222f18918d4": {
+            "name": "UserHasRole  Patcher",
+            "next_action": "2026-05-15 18:16:02",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "fbd2b535c72313005cf3df627a97634f": {
+            "name": "Import Set Transformer",
+            "next_action": "2026-04-01 04:59:32",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "fc11876ac30211105e1a6333d840dd68": {
+            "name": "ApnsTokenRefresh",
+            "next_action": "2026-05-15 18:17:16",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "fc3991eac3f48710b4e13e1d05013131": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-15 20:53:55",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "fc702ca0f5c803100a22c0b3dfa15104": {
+            "name": "Machine Identity Score Computation",
+            "next_action": "2026-05-16 07:01:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "fd0d51e173231010f20856f77bf6a753": {
+            "name": "Mobile Incremental Generation Event #2",
+            "next_action": "2026-05-15 18:16:02",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "fd9479fec37c0b10b4e13e1d0501319e": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 17:32:04",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "fdb2e6df7fa10210998097b17d866549": {
+            "name": "UsageAnalyticsContentPersistorHourly",
+            "next_action": "2026-05-15 19:01:53",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "fdb4602cf54c03100a22c0b3dfa151ad": {
+            "name": "Timeout For FDIH Interactive Chats and Atlas Search",
+            "next_action": "2026-05-15 18:16:00",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "fdb4602cf54c03100a22c0b3dfa151b8": {
+            "name": "Generate Virtual Agent Email Notifications",
+            "next_action": "2026-05-15 18:24:33",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "fe8ce5fcc3200310b4e13e1d050131f7": {
+            "name": "Service Mapping Fast Recomputation 1",
+            "next_action": "2026-04-27 01:33:22",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "fec60f3253272010347cddeeff7b12ff": {
+            "name": "Process mid_server.down events",
+            "next_action": "2026-05-15 18:19:17",
+            "state": "0",
+            "trigger_type": "10"
+        },
+        "fed6a1f6c3380b10b4e13e1d0501312c": {
+            "name": "Online Alter Truncate Delayed Drop Table",
+            "next_action": "2026-05-16 16:32:04",
+            "state": "0",
+            "trigger_type": "0"
+        },
+        "fef420ecf54c03100a22c0b3dfa1519d": {
+            "name": "Hermes Diagnostics Check Ports",
+            "next_action": "2026-05-15 18:24:17",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "ff33ac28f50c03100a22c0b3dfa15131": {
+            "name": "MIF VTable Change Job",
+            "next_action": "2026-05-15 18:16:22",
+            "state": "0",
+            "trigger_type": "1"
+        },
+        "ffd96baab7010010e042e664de11a971": {
+            "name": "Reporting Dangling Temp Views Cleaner",
+            "next_action": "2026-05-15 23:01:00",
+            "state": "0",
+            "trigger_type": "11"
+        },
+        "ffdf10a8f58803100a22c0b3dfa15190": {
+            "name": "Sync business Process relationships",
+            "next_action": "2026-05-15 18:45:46",
+            "state": "0",
+            "trigger_type": "1"
+        }
+    }
+}

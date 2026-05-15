@@ -163,6 +163,14 @@
             "vendor": "",
             "active": true
         },
+        "sn_csm_portal_base": {
+            "sys_id": "0545df78ff89b21061e2ffffffffff1c",
+            "name": "Customer Service Portal Base",
+            "scope": "sn_csm_portal_base",
+            "version": "1.0.0",
+            "vendor": "ServiceNow",
+            "active": true
+        },
         "sn_doc_display": {
             "sys_id": "058c93360d47670836bcdf6e4c511aa8",
             "name": "Document display component",
@@ -320,6 +328,14 @@
             "name": "Webviews for mobile",
             "scope": "sn_me_webview",
             "version": "36.1.1",
+            "vendor": "ServiceNow",
+            "active": true
+        },
+        "sn_csm_portal": {
+            "sys_id": "0d4d033597cd5110269b728c1253affe",
+            "name": "Customer Service Portal",
+            "scope": "sn_csm_portal",
+            "version": "25.2.0",
             "vendor": "ServiceNow",
             "active": true
         },
@@ -523,6 +539,14 @@
             "vendor": "ServiceNow",
             "active": true
         },
+        "sn_casetypes_selec": {
+            "sys_id": "13d29a7835d6aa1b009fde30a80a413f",
+            "name": "sn-casetypes-selector",
+            "scope": "sn_casetypes_selec",
+            "version": "21.0.5",
+            "vendor": "",
+            "active": true
+        },
         "sn_cb_usage": {
             "sys_id": "13eaf17b4f5df8ce65417486f46b6c2f",
             "name": "@servicenow/sn-cb-usage",
@@ -568,6 +592,14 @@
             "name": "AES Application Object Wizard Components",
             "scope": "sn_wzd_components",
             "version": "29.1.1",
+            "vendor": "ServiceNow",
+            "active": true
+        },
+        "sn_assign_wb": {
+            "sys_id": "158766662b187a102684ff7cf291bf55",
+            "name": "Assignment Workbench",
+            "scope": "sn_assign_wb",
+            "version": "1.1.0",
             "vendor": "ServiceNow",
             "active": true
         },
@@ -779,6 +811,22 @@
             "vendor": "",
             "active": true
         },
+        "sn_eaai_csm": {
+            "sys_id": "1f97b7d0702fc210f87703d7c8bbaf2c",
+            "name": "Email Interaction for CSM",
+            "scope": "sn_eaai_csm",
+            "version": "1.5.0",
+            "vendor": "ServiceNow",
+            "active": true
+        },
+        "sn_csm_wrkspc": {
+            "sys_id": "1fadec2e771a10102c30945caa106130",
+            "name": "CSM Configurable Workspace",
+            "scope": "sn_csm_wrkspc",
+            "version": "26.0.2",
+            "vendor": "ServiceNow",
+            "active": true
+        },
         "sn_openframe_intg": {
             "sys_id": "1fce1c6473ab101021461f477bf6a771",
             "name": "Openframe Integration Store App",
@@ -955,6 +1003,14 @@
             "vendor": "",
             "active": true
         },
+        "sn_cwf_wrkspc": {
+            "sys_id": "27b568be53b11010d4f9ddeeff7b12c5",
+            "name": "CSM and FSM Configurable Workspace Foundation",
+            "scope": "sn_cwf_wrkspc",
+            "version": "26.0.8",
+            "vendor": "ServiceNow",
+            "active": true
+        },
         "sn-va-web-client": {
             "sys_id": "27cb8f3249733c04768836ad4e145cdf",
             "name": "sn-component-va-web-client",
@@ -1081,6 +1137,14 @@
             "scope": "sn_search_res_card",
             "version": "29.5.4",
             "vendor": "",
+            "active": true
+        },
+        "sn_eaai_core": {
+            "sys_id": "2d167480cd6d5210f877e03aac875521",
+            "name": "Email Interaction Core",
+            "scope": "sn_eaai_core",
+            "version": "1.0.3",
+            "vendor": "ServiceNow",
             "active": true
         },
         "sn_record_user_rol": {
@@ -1387,6 +1451,14 @@
             "vendor": "",
             "active": true
         },
+        "sn_csm_workspace_c": {
+            "sys_id": "379c8c04e204488e3e1bd12ac17d7522",
+            "name": "csm-workspace-components",
+            "scope": "sn_csm_workspace_c",
+            "version": "29.0.12",
+            "vendor": "",
+            "active": true
+        },
         "sn_uibtk_instance_": {
             "sys_id": "3863393357356967d849daf6485a6fff",
             "name": "@devsnc/sn-uibtk-instance-config-editor",
@@ -1417,6 +1489,14 @@
             "scope": "sn_devsnc_sn_docum",
             "version": "29.0.7",
             "vendor": "",
+            "active": true
+        },
+        "sn_ciwf_ui_cmpnt": {
+            "sys_id": "39ab7bf377c00110ac9cd0cb8d5a9968",
+            "name": "UI Components for Customer Portals",
+            "scope": "sn_ciwf_ui_cmpnt",
+            "version": "3.9.3",
+            "vendor": "ServiceNow",
             "active": true
         },
         "sn_itsm_bus_obj": {
@@ -1555,6 +1635,14 @@
             "vendor": "ServiceNow",
             "active": true
         },
+        "sn_openframe": {
+            "sys_id": "3d7925f9eb5002003e97afcef106fee6",
+            "name": "Openframe",
+            "scope": "sn_openframe",
+            "version": "29.1.3",
+            "vendor": "ServiceNow",
+            "active": true
+        },
         "sn_rec_list_menu_c": {
             "sys_id": "3db8027898a93973f08538e42f091589",
             "name": "@servicenow/now-record-list-menu-connected",
@@ -1627,6 +1715,14 @@
             "vendor": "",
             "active": true
         },
+        "sn_skill_cfg_page": {
+            "sys_id": "4208aef477331110045b526faa106102",
+            "name": "Manage Skills Configurable Page",
+            "scope": "sn_skill_cfg_page",
+            "version": "1.1.12",
+            "vendor": "ServiceNow",
+            "active": true
+        },
         "sn_ui_knowledge": {
             "sys_id": "4244ab065ff411e0727ab981cf2e2abe",
             "name": "sn-component-workspace-knowledge",
@@ -1680,6 +1776,14 @@
             "name": "Conversational Interfaces - Diagnostics",
             "scope": "sn_ci_diagnostics",
             "version": "2.2.1",
+            "vendor": "",
+            "active": true
+        },
+        "sn_lookup_verify": {
+            "sys_id": "439a24b4b320230001f34d43c6a8dc6b",
+            "name": "Lookup Verify",
+            "scope": "sn_lookup_verify",
+            "version": "1.0.0",
             "vendor": "",
             "active": true
         },
@@ -1763,6 +1867,14 @@
             "vendor": "",
             "active": true
         },
+        "sn_cs_nb_action": {
+            "sys_id": "469106e153231010df5dddeeff7b12a9",
+            "name": "Recommended Actions for Customer Service",
+            "scope": "sn_cs_nb_action",
+            "version": "30.0.1",
+            "vendor": "ServiceNow",
+            "active": true
+        },
         "sn_form_script_env": {
             "sys_id": "46b6c2a45fd3e366975360c2088c5043",
             "name": "@devsnc/sn-scripting-environment",
@@ -1801,6 +1913,14 @@
             "scope": "sn_mif",
             "version": "4.0.4",
             "vendor": "ServiceNow",
+            "active": true
+        },
+        "x_1111454_pcreq": {
+            "sys_id": "477baa9b26b949d7a9c7c6415e6709b6",
+            "name": "PC Auto Request",
+            "scope": "x_1111454_pcreq",
+            "version": "0.0.1",
+            "vendor": "",
             "active": true
         },
         "sn_ds_badge": {
@@ -1864,6 +1984,14 @@
             "name": "@devsnc/sn-record-code-editor",
             "scope": "sn_record_code_edi",
             "version": "29.1.2",
+            "vendor": "",
+            "active": true
+        },
+        "sn_cs_queryrules": {
+            "sys_id": "49a91021b3521010700b4d43c6a8dc52",
+            "name": "CSM Query rules",
+            "scope": "sn_cs_queryrules",
+            "version": "1.0.0",
             "vendor": "",
             "active": true
         },
@@ -2057,6 +2185,14 @@
             "scope": "sn_app_analytics_w",
             "version": "8.0.6",
             "vendor": "",
+            "active": true
+        },
+        "sn_customerservice": {
+            "sys_id": "51d811fad7223100b7490ee60e61034f",
+            "name": "Customer Service",
+            "scope": "sn_customerservice",
+            "version": "29.0.19",
+            "vendor": "ServiceNow",
             "active": true
         },
         "sn_uibtk_ff_ctrls": {
@@ -2659,6 +2795,14 @@
             "vendor": "",
             "active": true
         },
+        "sn_csm.awa": {
+            "sys_id": "6c0e389f739b13004a905ee515f6a75d",
+            "name": "Advanced Work Assignment for CSM",
+            "scope": "sn_csm.awa",
+            "version": "1.0.4",
+            "vendor": "ServiceNow",
+            "active": true
+        },
         "sn_sla_brkdwn": {
             "sys_id": "6c11c4f357201300ff01ac11ac94f982",
             "name": "Service Level Management - Breakdowns",
@@ -2811,6 +2955,14 @@
             "vendor": "",
             "active": true
         },
+        "sn_account_hier": {
+            "sys_id": "75104fabaaee549484b8ca2af9e80184",
+            "name": "sn-component-account-hierarchy",
+            "scope": "sn_account_hier",
+            "version": "29.0.7",
+            "vendor": "",
+            "active": true
+        },
         "sn_wwna": {
             "sys_id": "757c34719bf7f10c4a1f9fe81ba8bba3",
             "name": "Now Assist context menu",
@@ -2865,6 +3017,14 @@
             "scope": "sn_wdf_token",
             "version": "2.0.2",
             "vendor": "ServiceNow",
+            "active": true
+        },
+        "sn_openframe_uxb": {
+            "sys_id": "77e07c6c41e7578ab6a5574af76e6076",
+            "name": "Openframe UXB Component",
+            "scope": "sn_openframe_uxb",
+            "version": "29.1.2",
+            "vendor": "",
             "active": true
         },
         "sn_vis_pie": {
@@ -2929,6 +3089,14 @@
             "scope": "sn_nba_list",
             "version": "36.0.1",
             "vendor": "",
+            "active": true
+        },
+        "sn_customercentral": {
+            "sys_id": "7a9ab70373830010e37d71ef64f6a78b",
+            "name": "Customer Central",
+            "scope": "sn_customercentral",
+            "version": "30.2.2",
+            "vendor": "ServiceNow",
             "active": true
         },
         "sn_nowassist_diagn": {
@@ -3056,6 +3224,14 @@
             "name": "Record Watcher",
             "scope": "sn_record_watcher",
             "version": "25.0.0",
+            "vendor": "",
+            "active": true
+        },
+        "sn_csm_ah": {
+            "sys_id": "8281bf77e7b00300c4726188d2f6a919",
+            "name": "Customer Service Spoke",
+            "scope": "sn_csm_ah",
+            "version": "1.0.0",
             "vendor": "",
             "active": true
         },
@@ -3443,6 +3619,14 @@
             "vendor": "",
             "active": true
         },
+        "sn_csm_workspace": {
+            "sys_id": "8f8fa168735303001923054dfff6a799",
+            "name": "CSM Workspace",
+            "scope": "sn_csm_workspace",
+            "version": "1.0.0",
+            "vendor": "",
+            "active": true
+        },
         "sn_now_trigger_lib": {
             "sys_id": "8f9b2381e884d9eea3c52dfa30b9b2d6",
             "name": "@servicenow/now-trigger-library",
@@ -3464,6 +3648,14 @@
             "name": "@devsnc/sn-declarative-actions",
             "scope": "sn_declarative_act",
             "version": "29.0.5",
+            "vendor": "",
+            "active": true
+        },
+        "sn_customer_actvty": {
+            "sys_id": "90d3013e3ed040a03050e36ac5cbdd9c",
+            "name": "@devsnc/sn-customer-activity",
+            "scope": "sn_customer_actvty",
+            "version": "30.2.1",
             "vendor": "",
             "active": true
         },
@@ -3499,12 +3691,28 @@
             "vendor": "",
             "active": true
         },
+        "sn_sensitive_data": {
+            "sys_id": "91c0c191531b3010b6e8ddeeff7b127b",
+            "name": "Sensitive Data Handling",
+            "scope": "sn_sensitive_data",
+            "version": "1.0.0",
+            "vendor": "",
+            "active": true
+        },
         "sn_uibtk_style_pn": {
             "sys_id": "91e2f5661b7570670953946c9c72444a",
             "name": "@devsnc/sn-uibtk-style-pane",
             "scope": "sn_uibtk_style_pn",
             "version": "29.0.29",
             "vendor": "ServiceNow",
+            "active": true
+        },
+        "sn_app_shn": {
+            "sys_id": "91f830e1ffc17e102429fffffffffffb",
+            "name": "Special Handling Instruction",
+            "scope": "sn_app_shn",
+            "version": "26.0.1",
+            "vendor": "",
             "active": true
         },
         "sn_portal_starte_0": {
@@ -3624,6 +3832,14 @@
             "name": "@servicenow/now-link-interceptor-behavior",
             "scope": "now-link-intercept",
             "version": "28.0.2",
+            "vendor": "",
+            "active": true
+        },
+        "sn_query_rules": {
+            "sys_id": "991f69f1b3221010700b4d43c6a8dc6e",
+            "name": "Query rules",
+            "scope": "sn_query_rules",
+            "version": "1.0.0",
             "vendor": "",
             "active": true
         },
@@ -3947,11 +4163,27 @@
             "vendor": "",
             "active": true
         },
+        "sn_rec_relatedItem": {
+            "sys_id": "a7c4183143503110d26bcfedefb8f213",
+            "name": "Record Related Items Connected",
+            "scope": "sn_rec_relatedItem",
+            "version": "2.2.0",
+            "vendor": "ServiceNow",
+            "active": true
+        },
         "sn_workspace_sta_0": {
             "sys_id": "a7caf0e3731020104cb09434c4f6a741",
             "name": "AES Workspace UI Template",
             "scope": "sn_workspace_sta_0",
             "version": "29.1.1",
+            "vendor": "ServiceNow",
+            "active": true
+        },
+        "sn_app_cs_social": {
+            "sys_id": "a832f952d73022004f1e82285e610335",
+            "name": "Customer Service integration with Social Media Store",
+            "scope": "sn_app_cs_social",
+            "version": "1.0.2",
             "vendor": "ServiceNow",
             "active": true
         },
@@ -3961,6 +4193,14 @@
             "scope": "sn_shell_utils",
             "version": "29.0.0",
             "vendor": "",
+            "active": true
+        },
+        "sn_cwf_ws_int": {
+            "sys_id": "a9cd66d40fe71010036a83fa68767e4b",
+            "name": "CSM and FSM Configurable Workspace Integrations",
+            "scope": "sn_cwf_ws_int",
+            "version": "26.0.0",
+            "vendor": "ServiceNow",
             "active": true
         },
         "sn_catalog_wizard": {
@@ -4249,6 +4489,14 @@
             "scope": "sn_record_page",
             "version": "29.0.18-anowassist.0",
             "vendor": "",
+            "active": true
+        },
+        "sn_account_hierarc": {
+            "sys_id": "b63d5a7e77632300f9fe945caa1061c1",
+            "name": "CSM Account Hierarchy",
+            "scope": "sn_account_hierarc",
+            "version": "30.0.3",
+            "vendor": "ServiceNow",
             "active": true
         },
         "sn_secrets": {
@@ -4579,6 +4827,14 @@
             "vendor": "",
             "active": true
         },
+        "sn_b2b_portal": {
+            "sys_id": "c3f8858991324293ac0d43ca93253a57",
+            "name": "Business Portal",
+            "scope": "sn_b2b_portal",
+            "version": "2.2.0",
+            "vendor": "",
+            "active": true
+        },
         "sn_notif_dashboard": {
             "sys_id": "c43214c1fb101a1055d3f67465efdc21",
             "name": "Notification Dashboard",
@@ -4617,6 +4873,14 @@
             "scope": "sn_kmf",
             "version": "1.0.0",
             "vendor": "ServiceNow",
+            "active": true
+        },
+        "sn_csm_lv": {
+            "sys_id": "c568950cb360230001f34d43c6a8dc4b",
+            "name": "CSM Lookup Verify",
+            "scope": "sn_csm_lv",
+            "version": "1.0.0",
+            "vendor": "",
             "active": true
         },
         "sn_sow_admin": {
@@ -4907,6 +5171,14 @@
             "vendor": "ServiceNow",
             "active": true
         },
+        "sn_notes_template": {
+            "sys_id": "d5eec3bd37da99f36970cb234575d95f",
+            "name": "@devsnc/sn-template-modal-worknotes",
+            "scope": "sn_notes_template",
+            "version": "29.0.8",
+            "vendor": "",
+            "active": true
+        },
         "sn_sow_itsm_cont": {
             "sys_id": "d60ef8120c627010f877468eabd9762d",
             "name": "Service Operations Workspace ITSM Applications",
@@ -4961,6 +5233,14 @@
             "scope": "sn_themes",
             "version": "29.0.25",
             "vendor": "",
+            "active": true
+        },
+        "sn_uib_lookup": {
+            "sys_id": "d7a56d10772210102c30945caa1061f0",
+            "name": "CSM Configurable Workspace Lookup and Verify",
+            "scope": "sn_uib_lookup",
+            "version": "26.0.0",
+            "vendor": "ServiceNow",
             "active": true
         },
         "sn_sow_pwd_reset": {
@@ -5301,7 +5581,7 @@
         },
         "sn_record_timeline": {
             "sys_id": "e5d5662814272210f8777cde3125ea83",
-            "name": "Task activity timeline",
+            "name": "Task activity timeline ",
             "scope": "sn_record_timeline",
             "version": "25.4.0",
             "vendor": "ServiceNow",
@@ -5848,6 +6128,14 @@
             "name": "@devsnc/sn-customer-information",
             "scope": "sn_customer_info",
             "version": "25.2.0",
+            "vendor": "",
+            "active": true
+        },
+        "sn_csm_uni_theme": {
+            "sys_id": "fec7d1c753a032007a97e192d5dc343e",
+            "name": "Customer Service Management Unified Theme",
+            "scope": "sn_csm_uni_theme",
+            "version": "1.0.0",
             "vendor": "",
             "active": true
         },

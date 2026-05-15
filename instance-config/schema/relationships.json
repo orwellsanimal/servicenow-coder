@@ -1702,6 +1702,30 @@
             "type": "reference"
         },
         {
+            "source_table": "service_entitlement",
+            "source_field": "entitlement_process",
+            "target_table": "wf_workflow",
+            "type": "reference"
+        },
+        {
+            "source_table": "service_entitlement",
+            "source_field": "business_hour",
+            "target_table": "cmn_schedule",
+            "type": "reference"
+        },
+        {
+            "source_table": "service_entitlement",
+            "source_field": "consumer",
+            "target_table": "csm_consumer",
+            "type": "reference"
+        },
+        {
+            "source_table": "service_entitlement",
+            "source_field": "asset",
+            "target_table": "alm_asset",
+            "type": "reference"
+        },
+        {
             "source_table": "sys_audit_relation",
             "source_field": "audit",
             "target_table": "sys_audit",
@@ -1801,6 +1825,12 @@
             "source_table": "cmdb_ci_ucs_rack_unit",
             "source_field": "ucs_equipment",
             "target_table": "cmdb_ci",
+            "type": "reference"
+        },
+        {
+            "source_table": "var__m_sys_hub_flow_input_a206172a777516100239dbad6b5a99b8",
+            "source_field": "case",
+            "target_table": "sn_customerservice_case",
             "type": "reference"
         },
         {
@@ -1942,9 +1972,27 @@
             "type": "reference"
         },
         {
+            "source_table": "awa_queue_stats",
+            "source_field": "queue",
+            "target_table": "awa_queue",
+            "type": "reference"
+        },
+        {
             "source_table": "var__m_sys_hub_step_ext_input_7f8ff52eff120110456d766cf43bf193",
             "source_field": "task",
             "target_table": "cmdb_data_management_task",
+            "type": "reference"
+        },
+        {
+            "source_table": "var__m_ga_guidance_input_bad37dc577191110e07f2a647a5a991e",
+            "source_field": "assignment_group",
+            "target_table": "sys_user_group",
+            "type": "reference"
+        },
+        {
+            "source_table": "var__m_ga_guidance_input_bad37dc577191110e07f2a647a5a991e",
+            "source_field": "current_case",
+            "target_table": "sn_customerservice_case",
             "type": "reference"
         },
         {
@@ -2521,12 +2569,6 @@
             "source_table": "catalog_channel_analytics",
             "source_field": "task_id",
             "target_table": "task",
-            "type": "reference"
-        },
-        {
-            "source_table": "catalog_channel_analytics",
-            "source_field": "conversation",
-            "target_table": "sys_cs_conversation",
             "type": "reference"
         },
         {
@@ -3952,6 +3994,12 @@
             "type": "reference"
         },
         {
+            "source_table": "var__m_sys_hub_step_ext_output_ccf37bb7e7b00300c4726188d2f6a9a1",
+            "source_field": "case",
+            "target_table": "sn_customerservice_case",
+            "type": "reference"
+        },
+        {
             "source_table": "promin_process_arc",
             "source_field": "process_model",
             "target_table": "promin_process_model",
@@ -4016,6 +4064,12 @@
             "source_field": "business_service",
             "target_table": "cmdb_ci_service",
             "type": "reference"
+        },
+        {
+            "source_table": "task",
+            "source_field": "skills",
+            "target_table": "cmn_skill",
+            "type": "glide_list"
         },
         {
             "source_table": "task",
@@ -5932,6 +5986,72 @@
             "type": "reference"
         },
         {
+            "source_table": "sf_state_flow",
+            "source_field": "work_notes_rule",
+            "target_table": "sys_script",
+            "type": "reference"
+        },
+        {
+            "source_table": "sf_state_flow",
+            "source_field": "override",
+            "target_table": "sys_dictionary_override",
+            "type": "reference"
+        },
+        {
+            "source_table": "sf_state_flow",
+            "source_field": "change_client_script",
+            "target_table": "sys_script_client",
+            "type": "reference"
+        },
+        {
+            "source_table": "sf_state_flow",
+            "source_field": "visible_fields",
+            "target_table": "sys_dictionary",
+            "type": "glide_list"
+        },
+        {
+            "source_table": "sf_state_flow",
+            "source_field": "ending_state",
+            "target_table": "sys_choice",
+            "type": "reference"
+        },
+        {
+            "source_table": "sf_state_flow",
+            "source_field": "client_script",
+            "target_table": "sys_script_client",
+            "type": "reference"
+        },
+        {
+            "source_table": "sf_state_flow",
+            "source_field": "not_read_only",
+            "target_table": "sys_dictionary",
+            "type": "glide_list"
+        },
+        {
+            "source_table": "sf_state_flow",
+            "source_field": "event_rule",
+            "target_table": "sys_script",
+            "type": "reference"
+        },
+        {
+            "source_table": "sf_state_flow",
+            "source_field": "roles",
+            "target_table": "sys_user_role",
+            "type": "glide_list"
+        },
+        {
+            "source_table": "sf_state_flow",
+            "source_field": "event",
+            "target_table": "sysevent_register",
+            "type": "reference"
+        },
+        {
+            "source_table": "sf_state_flow",
+            "source_field": "not_visible",
+            "target_table": "sys_dictionary",
+            "type": "glide_list"
+        },
+        {
             "source_table": "sys_rest_message",
             "source_field": "basic_auth_profile",
             "target_table": "sys_auth_profile_basic",
@@ -5977,6 +6097,24 @@
             "source_table": "sys_alias_templates",
             "source_field": "test_action",
             "target_table": "sys_hub_action_type_definition",
+            "type": "reference"
+        },
+        {
+            "source_table": "sn_csm_account_access",
+            "source_field": "account",
+            "target_table": "customer_account",
+            "type": "reference"
+        },
+        {
+            "source_table": "account_address_relationship",
+            "source_field": "type",
+            "target_table": "cmn_location_type",
+            "type": "glide_list"
+        },
+        {
+            "source_table": "account_address_relationship",
+            "source_field": "location",
+            "target_table": "cmn_location",
             "type": "reference"
         },
         {
@@ -6289,6 +6427,12 @@
             "source_table": "sttrm_model_user_criteria_read_mtom",
             "source_field": "sttrm_model",
             "target_table": "sttrm_model",
+            "type": "reference"
+        },
+        {
+            "source_table": "syslog_awa",
+            "source_field": "channel",
+            "target_table": "awa_service_channel",
             "type": "reference"
         },
         {
@@ -8026,12 +8170,6 @@
             "type": "reference"
         },
         {
-            "source_table": "pa_widgets",
-            "source_field": "sys_overrides",
-            "target_table": "pa_widgets",
-            "type": "reference"
-        },
-        {
             "source_table": "sys_pd_lane_context",
             "source_field": "dependencies",
             "target_table": "sys_pd_lane",
@@ -8677,12 +8815,6 @@
             "source_table": "var__m_sys_hub_flow_input_cb18ceef1b230010affd0e55cc4bcbf2",
             "source_field": "assignment_group",
             "target_table": "sys_user_group",
-            "type": "reference"
-        },
-        {
-            "source_table": "sys_cs_branding_setup",
-            "source_field": "sys_overrides",
-            "target_table": "sys_cs_branding_setup",
             "type": "reference"
         },
         {
@@ -10078,6 +10210,12 @@
             "type": "reference"
         },
         {
+            "source_table": "task_m2m_skill",
+            "source_field": "skill_level",
+            "target_table": "cmn_skill_level",
+            "type": "reference"
+        },
+        {
             "source_table": "mtg_agenda_item",
             "source_field": "task",
             "target_table": "task",
@@ -10741,6 +10879,12 @@
             "source_table": "var__m_sys_flow_step_definition_input_2b64490073433300d70877186bf6a742",
             "source_field": "task_sla_record",
             "target_table": "task_sla",
+            "type": "reference"
+        },
+        {
+            "source_table": "sn_customerservice_m2m_asset_contact",
+            "source_field": "asset",
+            "target_table": "alm_asset",
             "type": "reference"
         },
         {
@@ -11693,6 +11837,12 @@
         },
         {
             "source_table": "interaction",
+            "source_field": "contact",
+            "target_table": "customer_contact",
+            "type": "reference"
+        },
+        {
+            "source_table": "interaction",
             "source_field": "channel_user_profile",
             "target_table": "sys_cs_channel_user_profile",
             "type": "reference"
@@ -12430,6 +12580,12 @@
             "type": "reference"
         },
         {
+            "source_table": "var__m_sys_hub_action_input_872b1cc4e7010300c4726188d2f6a9ff",
+            "source_field": "ah_task",
+            "target_table": "task",
+            "type": "reference"
+        },
+        {
             "source_table": "sys_atf_schedule_run",
             "source_field": "schedule",
             "target_table": "sys_atf_schedule",
@@ -12829,6 +12985,18 @@
             "source_table": "m2m_sp_portal_taxonomy",
             "source_field": "taxonomy",
             "target_table": "taxonomy",
+            "type": "reference"
+        },
+        {
+            "source_table": "var__m_ga_guidance_input_f0903570eba1111017642fd05d52286e",
+            "source_field": "assignment_group",
+            "target_table": "sys_user_group",
+            "type": "reference"
+        },
+        {
+            "source_table": "var__m_ga_guidance_input_f0903570eba1111017642fd05d52286e",
+            "source_field": "current_case",
+            "target_table": "sn_customerservice_case",
             "type": "reference"
         },
         {
@@ -13642,6 +13810,12 @@
             "type": "reference"
         },
         {
+            "source_table": "agent_schedule_task_config_rel_user_pref",
+            "source_field": "task_config",
+            "target_table": "agent_schedule_task_config",
+            "type": "reference"
+        },
+        {
             "source_table": "var__m_sys_hub_action_output_fe7f43ca732303001038234ffff6a732",
             "source_field": "Task",
             "target_table": "task",
@@ -13864,6 +14038,24 @@
             "type": "reference"
         },
         {
+            "source_table": "awa_group_queue_priority",
+            "source_field": "queue",
+            "target_table": "awa_queue",
+            "type": "reference"
+        },
+        {
+            "source_table": "awa_group_queue_priority",
+            "source_field": "group",
+            "target_table": "sys_user_group",
+            "type": "reference"
+        },
+        {
+            "source_table": "awa_assignment_rule",
+            "source_field": "after_timeout_presence",
+            "target_table": "awa_presence_state",
+            "type": "reference"
+        },
+        {
             "source_table": "sn_bm_client_score",
             "source_field": "breakdown_reference",
             "target_table": "sn_bm_client_breakdown",
@@ -14038,6 +14230,12 @@
             "type": "reference"
         },
         {
+            "source_table": "awa_agent_capacity",
+            "source_field": "user",
+            "target_table": "sys_user",
+            "type": "reference"
+        },
+        {
             "source_table": "pa_snapshots_duplicates",
             "source_field": "breakdown",
             "target_table": "pa_breakdowns",
@@ -14047,6 +14245,12 @@
             "source_table": "pa_snapshots_duplicates",
             "source_field": "breakdown_level2",
             "target_table": "pa_breakdowns",
+            "type": "reference"
+        },
+        {
+            "source_table": "awa_queue_trigger",
+            "source_field": "trigger_flow",
+            "target_table": "sys_hub_flow",
             "type": "reference"
         },
         {
@@ -14185,6 +14389,12 @@
             "source_table": "m2m_kb_feedback_likes",
             "source_field": "user",
             "target_table": "sys_user",
+            "type": "reference"
+        },
+        {
+            "source_table": "var__m_sys_hub_action_input_c7ae4bfbe701030000446188d2f6a963",
+            "source_field": "ah_account",
+            "target_table": "customer_account",
             "type": "reference"
         },
         {
@@ -15112,24 +15322,6 @@
             "type": "reference"
         },
         {
-            "source_table": "cmdb_ci_service_business",
-            "source_field": "sla",
-            "target_table": "sla",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_service_business",
-            "source_field": "cost_center",
-            "target_table": "cmn_cost_center",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_service_business",
-            "source_field": "managed_by",
-            "target_table": "sys_user",
-            "type": "reference"
-        },
-        {
             "source_table": "pa_indicators_definition",
             "source_field": "unit",
             "target_table": "pa_units",
@@ -15145,6 +15337,18 @@
             "source_table": "var__m_sys_hub_flow_input_080df135ff4412102235ffffffffffd1",
             "source_field": "credential_alias",
             "target_table": "sys_alias",
+            "type": "reference"
+        },
+        {
+            "source_table": "var__m_sys_hub_flow_input_d39bb5a90f0133008ca6dd1c5d767e38",
+            "source_field": "inbound_email",
+            "target_table": "sys_email",
+            "type": "reference"
+        },
+        {
+            "source_table": "var__m_sys_hub_flow_input_d39bb5a90f0133008ca6dd1c5d767e38",
+            "source_field": "user",
+            "target_table": "sys_user",
             "type": "reference"
         },
         {
@@ -15700,6 +15904,12 @@
             "type": "reference"
         },
         {
+            "source_table": "sn_customerservice_channel_config",
+            "source_field": "product",
+            "target_table": "cmdb_model",
+            "type": "reference"
+        },
+        {
             "source_table": "sc_wizard_action_config",
             "source_field": "declarative_action",
             "target_table": "sys_declarative_action_assignment",
@@ -15745,6 +15955,66 @@
             "source_table": "cmdb_ci_firewall_network",
             "source_field": "schedule",
             "target_table": "cmn_schedule",
+            "type": "reference"
+        },
+        {
+            "source_table": "var__m_sys_hub_action_input_48bd5c88e7010300c4726188d2f6a9b4",
+            "source_field": "ah_account",
+            "target_table": "customer_account",
+            "type": "reference"
+        },
+        {
+            "source_table": "var__m_sys_hub_action_input_48bd5c88e7010300c4726188d2f6a9b4",
+            "source_field": "ah_contact",
+            "target_table": "customer_contact",
+            "type": "reference"
+        },
+        {
+            "source_table": "var__m_sys_hub_action_input_48bd5c88e7010300c4726188d2f6a9b4",
+            "source_field": "ah_consumer",
+            "target_table": "csm_consumer",
+            "type": "reference"
+        },
+        {
+            "source_table": "sn_customerservice_case",
+            "source_field": "support_manager",
+            "target_table": "sys_user",
+            "type": "reference"
+        },
+        {
+            "source_table": "sn_customerservice_case",
+            "source_field": "account",
+            "target_table": "customer_account",
+            "type": "reference"
+        },
+        {
+            "source_table": "sn_customerservice_case",
+            "source_field": "product",
+            "target_table": "cmdb_model",
+            "type": "reference"
+        },
+        {
+            "source_table": "sn_customerservice_case",
+            "source_field": "asset",
+            "target_table": "alm_asset",
+            "type": "reference"
+        },
+        {
+            "source_table": "sn_customerservice_case",
+            "source_field": "related_party_consumers",
+            "target_table": "csm_consumer",
+            "type": "glide_list"
+        },
+        {
+            "source_table": "sn_customerservice_case",
+            "source_field": "contributor_groups",
+            "target_table": "sys_user_group",
+            "type": "glide_list"
+        },
+        {
+            "source_table": "sn_customerservice_case",
+            "source_field": "contact",
+            "target_table": "customer_contact",
             "type": "reference"
         },
         {
@@ -15943,12 +16213,6 @@
             "source_table": "cmdb_ci_endpoint_mq_queue",
             "source_field": "location",
             "target_table": "cmn_location",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_endpoint_mq_queue",
-            "source_field": "department",
-            "target_table": "cmn_department",
             "type": "reference"
         },
         {
@@ -16798,6 +17062,12 @@
             "type": "reference"
         },
         {
+            "source_table": "sn_app_cs_social_social_log",
+            "source_field": "social_profile",
+            "target_table": "sn_app_cs_social_social_profile",
+            "type": "reference"
+        },
+        {
             "source_table": "cmdb_ci_endpoint_iifp",
             "source_field": "maintenance_schedule",
             "target_table": "cmn_schedule",
@@ -16825,6 +17095,18 @@
             "source_table": "sys_aw_master_config",
             "source_field": "global_search",
             "target_table": "sys_aw_global_search_config",
+            "type": "reference"
+        },
+        {
+            "source_table": "sn_customerservice_escalation",
+            "source_field": "declined_by",
+            "target_table": "sys_user",
+            "type": "reference"
+        },
+        {
+            "source_table": "sn_customerservice_escalation",
+            "source_field": "type",
+            "target_table": "sn_customerservice_escalation_template",
             "type": "reference"
         },
         {
@@ -17266,6 +17548,12 @@
             "type": "reference"
         },
         {
+            "source_table": "var__m_sys_hub_flow_input_699557b1776302104ada557dcd5a99c6",
+            "source_field": "user",
+            "target_table": "sys_user",
+            "type": "reference"
+        },
+        {
             "source_table": "cmdb_ci_endpoint_itam",
             "source_field": "maintenance_schedule",
             "target_table": "cmn_schedule",
@@ -17686,6 +17974,12 @@
             "type": "reference"
         },
         {
+            "source_table": "agent_daily_schedule",
+            "source_field": "user",
+            "target_table": "sys_user",
+            "type": "reference"
+        },
+        {
             "source_table": "sys_cs_external_collab_member_map",
             "source_field": "provider",
             "target_table": "sys_cs_collab_provider",
@@ -17734,9 +18028,21 @@
             "type": "reference"
         },
         {
+            "source_table": "awa_service_channel_stats",
+            "source_field": "service_channel",
+            "target_table": "awa_service_channel",
+            "type": "reference"
+        },
+        {
             "source_table": "sys_term_config_synchronization",
             "source_field": "term_config",
             "target_table": "sys_term_config",
+            "type": "reference"
+        },
+        {
+            "source_table": "awa_work_item_rejection",
+            "source_field": "work_item",
+            "target_table": "awa_work_item",
             "type": "reference"
         },
         {
@@ -17752,9 +18058,69 @@
             "type": "reference"
         },
         {
+            "source_table": "ast_contract",
+            "source_field": "account",
+            "target_table": "customer_account",
+            "type": "reference"
+        },
+        {
+            "source_table": "ast_contract",
+            "source_field": "customer",
+            "target_table": "core_company",
+            "type": "reference"
+        },
+        {
+            "source_table": "ast_contract",
+            "source_field": "life_cycle_stage",
+            "target_table": "life_cycle_stage",
+            "type": "reference"
+        },
+        {
+            "source_table": "ast_contract",
+            "source_field": "application_model",
+            "target_table": "cmdb_application_product_model",
+            "type": "reference"
+        },
+        {
+            "source_table": "ast_contract",
+            "source_field": "parent_contract",
+            "target_table": "ast_contract",
+            "type": "reference"
+        },
+        {
+            "source_table": "ast_contract",
+            "source_field": "location",
+            "target_table": "cmn_location",
+            "type": "reference"
+        },
+        {
+            "source_table": "ast_contract",
+            "source_field": "renewal_contact",
+            "target_table": "sys_user",
+            "type": "reference"
+        },
+        {
+            "source_table": "ast_contract",
+            "source_field": "approver",
+            "target_table": "sys_user",
+            "type": "reference"
+        },
+        {
             "source_table": "var__m_sys_hub_step_ext_input_4fb7ca4e731310108ef62d2b04f6a755",
             "source_field": "change_request",
             "target_table": "change_request",
+            "type": "reference"
+        },
+        {
+            "source_table": "var__m_sys_hub_flow_input_feba35a90f0133008ca6dd1c5d767e06",
+            "source_field": "user",
+            "target_table": "sys_user",
+            "type": "reference"
+        },
+        {
+            "source_table": "var__m_sys_hub_flow_input_feba35a90f0133008ca6dd1c5d767e06",
+            "source_field": "inbound_email",
+            "target_table": "sys_email",
             "type": "reference"
         },
         {
@@ -17995,6 +18361,18 @@
             "source_table": "pwd_expiration",
             "source_field": "user",
             "target_table": "sys_user",
+            "type": "reference"
+        },
+        {
+            "source_table": "var__m_sys_hub_action_input_72f8373be7b00300c4726188d2f6a937",
+            "source_field": "ah_contact",
+            "target_table": "customer_contact",
+            "type": "reference"
+        },
+        {
+            "source_table": "var__m_sys_hub_action_input_72f8373be7b00300c4726188d2f6a937",
+            "source_field": "ah_consumer",
+            "target_table": "csm_consumer",
             "type": "reference"
         },
         {
@@ -18292,6 +18670,12 @@
             "type": "reference"
         },
         {
+            "source_table": "awa_queue_metrics",
+            "source_field": "service_channel",
+            "target_table": "awa_service_channel",
+            "type": "reference"
+        },
+        {
             "source_table": "sys_scope_script_access",
             "source_field": "source_scope",
             "target_table": "sys_scope",
@@ -18340,6 +18724,18 @@
             "type": "reference"
         },
         {
+            "source_table": "var__m_sys_hub_flow_input_402371c577191110e07f2a647a5a99a7",
+            "source_field": "assignment_group",
+            "target_table": "sys_user_group",
+            "type": "reference"
+        },
+        {
+            "source_table": "var__m_sys_hub_flow_input_402371c577191110e07f2a647a5a99a7",
+            "source_field": "current_case",
+            "target_table": "sn_customerservice_case",
+            "type": "reference"
+        },
+        {
             "source_table": "var__m_sys_hub_flow_input_2afd164687632300bdcf480688cb0b84",
             "source_field": "requested_item",
             "target_table": "sc_req_item",
@@ -18382,30 +18778,6 @@
             "type": "reference"
         },
         {
-            "source_table": "cmdb_ci_endpoint_jms_flow",
-            "source_field": "owned_by",
-            "target_table": "sys_user",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_endpoint_jms_flow",
-            "source_field": "attested_by",
-            "target_table": "sys_user",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_endpoint_jms_flow",
-            "source_field": "life_cycle_stage_status",
-            "target_table": "life_cycle_stage_status",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_endpoint_jms_flow",
-            "source_field": "duplicate_of",
-            "target_table": "cmdb_ci",
-            "type": "reference"
-        },
-        {
             "source_table": "cmdb_ci_endpoint_sap_bo_srv",
             "source_field": "schedule",
             "target_table": "cmn_schedule",
@@ -18433,6 +18805,12 @@
             "source_table": "promin_log",
             "source_field": "model_def_version",
             "target_table": "promin_model_def_version",
+            "type": "reference"
+        },
+        {
+            "source_table": "var__m_sys_hub_flow_input_08ff546a773031101e9e557dcd5a99ff",
+            "source_field": "user",
+            "target_table": "sys_user",
             "type": "reference"
         },
         {
@@ -18610,6 +18988,18 @@
             "type": "reference"
         },
         {
+            "source_table": "sn_customerservice_contact_relationship",
+            "source_field": "contact",
+            "target_table": "customer_contact",
+            "type": "reference"
+        },
+        {
+            "source_table": "sn_customerservice_contact_relationship",
+            "source_field": "company",
+            "target_table": "customer_account",
+            "type": "reference"
+        },
+        {
             "source_table": "st_sc_wizard_question",
             "source_field": "wizard",
             "target_table": "sc_wizard",
@@ -18625,6 +19015,12 @@
             "source_table": "var__m_sys_hub_flow_logic_ext_input_05c381aac75a3010408bc8d6f2c260d2",
             "source_field": "pipeline",
             "target_table": "sn_pipeline_pipeline",
+            "type": "reference"
+        },
+        {
+            "source_table": "var__m_sys_hub_action_input_cdf0173fe701030000446188d2f6a91c",
+            "source_field": "ah_case",
+            "target_table": "sn_customerservice_case",
             "type": "reference"
         },
         {
@@ -18700,6 +19096,12 @@
             "type": "reference"
         },
         {
+            "source_table": "var__m_sys_hub_flow_input_81e7b242777192100239dbad6b5a99d0",
+            "source_field": "case",
+            "target_table": "sn_customerservice_case",
+            "type": "reference"
+        },
+        {
             "source_table": "sn_cmdb_ws_insight_data",
             "source_field": "ci_category",
             "target_table": "sn_cmdb_ws_insight_query_category",
@@ -18727,6 +19129,30 @@
             "source_table": "sa_notification0001",
             "source_field": "ci",
             "target_table": "cmdb_ci",
+            "type": "reference"
+        },
+        {
+            "source_table": "task_activity",
+            "source_field": "template",
+            "target_table": "sysevent_email_template",
+            "type": "reference"
+        },
+        {
+            "source_table": "task_activity",
+            "source_field": "location",
+            "target_table": "cmn_location",
+            "type": "reference"
+        },
+        {
+            "source_table": "task_activity",
+            "source_field": "from_user",
+            "target_table": "sys_user",
+            "type": "reference"
+        },
+        {
+            "source_table": "var__m_ga_guidance_input_e18412852bfc5210f5eff9906e91bf44",
+            "source_field": "similar_case",
+            "target_table": "sn_customerservice_case",
             "type": "reference"
         },
         {
@@ -19426,6 +19852,12 @@
             "type": "reference"
         },
         {
+            "source_table": "var__m_sys_hub_step_ext_input_07e0a8aa773031101e9e557dcd5a9984",
+            "source_field": "case_record",
+            "target_table": "sn_customerservice_case",
+            "type": "reference"
+        },
+        {
             "source_table": "kb_feedback",
             "source_field": "article_summary",
             "target_table": "kb_knowledge_summary",
@@ -19930,6 +20362,12 @@
             "type": "reference"
         },
         {
+            "source_table": "sn_lookup_verify_search_on_table",
+            "source_field": "lookup_verify_config",
+            "target_table": "sn_lookup_verify_config",
+            "type": "reference"
+        },
+        {
             "source_table": "var__m_sys_hub_flow_output_a3b5c1981bd81010affd0e55cc4bcb78",
             "source_field": "record",
             "target_table": "task",
@@ -19957,6 +20395,18 @@
             "source_table": "cmdb_ci_endpoint_ssis_file",
             "source_field": "maintenance_schedule",
             "target_table": "cmn_schedule",
+            "type": "reference"
+        },
+        {
+            "source_table": "var__m_ga_guidance_output_f0903570eba1111017642fd05d52286e",
+            "source_field": "case_task",
+            "target_table": "sn_customerservice_task",
+            "type": "reference"
+        },
+        {
+            "source_table": "var__m_sys_hub_action_output_7bda58c4e7010300c4726188d2f6a9e5",
+            "source_field": "Case",
+            "target_table": "sn_customerservice_case",
             "type": "reference"
         },
         {
@@ -20620,6 +21070,12 @@
             "type": "reference"
         },
         {
+            "source_table": "var__m_sys_hub_action_input_062b1cc4e7010300c4726188d2f6a9a2",
+            "source_field": "ah_case",
+            "target_table": "sn_customerservice_case",
+            "type": "reference"
+        },
+        {
             "source_table": "cmdb_ci_endpoint_storefront_comp",
             "source_field": "maintenance_schedule",
             "target_table": "cmn_schedule",
@@ -21013,12 +21469,6 @@
             "source_table": "cmdb_ci_print_queue",
             "source_field": "location",
             "target_table": "cmn_location",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_print_queue",
-            "source_field": "department",
-            "target_table": "cmn_department",
             "type": "reference"
         },
         {
@@ -21532,6 +21982,24 @@
             "type": "reference"
         },
         {
+            "source_table": "cmdb_model",
+            "source_field": "depreciation",
+            "target_table": "cmdb_depreciation",
+            "type": "reference"
+        },
+        {
+            "source_table": "cmdb_model",
+            "source_field": "main_component",
+            "target_table": "cmdb_m2m_model_component",
+            "type": "reference"
+        },
+        {
+            "source_table": "cmdb_model",
+            "source_field": "asset_tracking_unit",
+            "target_table": "cmdb_model_unit",
+            "type": "reference"
+        },
+        {
             "source_table": "kb_assist_scan_definition_input",
             "source_field": "scan_definition",
             "target_table": "kb_assist_scan_definition",
@@ -21703,6 +22171,12 @@
             "source_table": "alm_asset",
             "source_field": "life_cycle_stage_status",
             "target_table": "life_cycle_stage_status",
+            "type": "reference"
+        },
+        {
+            "source_table": "alm_asset",
+            "source_field": "account",
+            "target_table": "customer_account",
             "type": "reference"
         },
         {
@@ -22153,6 +22627,12 @@
             "source_table": "pa_snapshots",
             "source_field": "indicator",
             "target_table": "pa_indicators",
+            "type": "reference"
+        },
+        {
+            "source_table": "var__m_sys_hub_action_input_102e47fbe701030000446188d2f6a93c",
+            "source_field": "ah_task",
+            "target_table": "sn_customerservice_task",
             "type": "reference"
         },
         {
@@ -23923,6 +24403,30 @@
             "source_table": "cmdb_ci_vserver_peer",
             "source_field": "change_control",
             "target_table": "sys_user_group",
+            "type": "reference"
+        },
+        {
+            "source_table": "sn_customerservice_related_party",
+            "source_field": "user",
+            "target_table": "sys_user",
+            "type": "reference"
+        },
+        {
+            "source_table": "sn_customerservice_related_party",
+            "source_field": "party_config",
+            "target_table": "sn_customerservice_related_party_configuration",
+            "type": "reference"
+        },
+        {
+            "source_table": "sn_customerservice_related_party",
+            "source_field": "consumer",
+            "target_table": "csm_consumer",
+            "type": "reference"
+        },
+        {
+            "source_table": "interaction_m2m_skill",
+            "source_field": "interaction",
+            "target_table": "interaction",
             "type": "reference"
         },
         {
@@ -25846,6 +26350,18 @@
             "type": "reference"
         },
         {
+            "source_table": "contract_rel_contact",
+            "source_field": "contract",
+            "target_table": "ast_contract",
+            "type": "reference"
+        },
+        {
+            "source_table": "contract_rel_contact",
+            "source_field": "contact",
+            "target_table": "customer_contact",
+            "type": "reference"
+        },
+        {
             "source_table": "sn_bm_common_indicator",
             "source_field": "aggregation",
             "target_table": "pa_aggregates",
@@ -25993,6 +26509,12 @@
             "source_table": "cmdb_ci_kvm_vm_instance",
             "source_field": "asset",
             "target_table": "alm_asset",
+            "type": "reference"
+        },
+        {
+            "source_table": "var__m_sys_hub_flow_input_1d969fea777516100239dbad6b5a9913",
+            "source_field": "case",
+            "target_table": "sn_customerservice_case",
             "type": "reference"
         },
         {
@@ -26266,6 +26788,12 @@
             "type": "reference"
         },
         {
+            "source_table": "sn_customerservice_task",
+            "source_field": "parent_case",
+            "target_table": "sn_customerservice_case",
+            "type": "reference"
+        },
+        {
             "source_table": "sc_service_fulfillment_task_step",
             "source_field": "assigned_group",
             "target_table": "sys_user_group",
@@ -26287,6 +26815,18 @@
             "source_table": "sn_diagram_builder_shape_template_m2m",
             "source_field": "shape_template",
             "target_table": "sn_diagram_builder_shape_template",
+            "type": "reference"
+        },
+        {
+            "source_table": "var__m_sys_hub_flow_input_877735290f0133008ca6dd1c5d767e9a",
+            "source_field": "user",
+            "target_table": "sys_user",
+            "type": "reference"
+        },
+        {
+            "source_table": "var__m_sys_hub_flow_input_877735290f0133008ca6dd1c5d767e9a",
+            "source_field": "inbound_email",
+            "target_table": "sys_email",
             "type": "reference"
         },
         {
@@ -26440,12 +26980,6 @@
             "type": "reference"
         },
         {
-            "source_table": "svc_security_object_ops",
-            "source_field": "object_type",
-            "target_table": "svc_security_object_def",
-            "type": "reference"
-        },
-        {
             "source_table": "svc_model_checkpoint_attr",
             "source_field": "context",
             "target_table": "svc_model_checkpoint",
@@ -26461,12 +26995,6 @@
             "source_table": "cmdb_ci_iscsi_export",
             "source_field": "schedule",
             "target_table": "cmn_schedule",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_query_based_service",
-            "source_field": "cmdb_group",
-            "target_table": "cmdb_group",
             "type": "reference"
         },
         {
@@ -26656,42 +27184,6 @@
             "type": "reference"
         },
         {
-            "source_table": "cmdb_ci_endpoint_listener_wmb",
-            "source_field": "asset",
-            "target_table": "alm_asset",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_endpoint_listener_wmb",
-            "source_field": "change_control",
-            "target_table": "sys_user_group",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_endpoint_listener_wmb",
-            "source_field": "business_unit",
-            "target_table": "business_unit",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_endpoint_listener_wmb",
-            "source_field": "managed_by_group",
-            "target_table": "sys_user_group",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_endpoint_listener_wmb",
-            "source_field": "manufacturer",
-            "target_table": "core_company",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_endpoint_listener_wmb",
-            "source_field": "vendor",
-            "target_table": "core_company",
-            "type": "reference"
-        },
-        {
             "source_table": "sc_cat_item_delivery_plan",
             "source_field": "calendar",
             "target_table": "sys_calendar",
@@ -26719,6 +27211,12 @@
             "source_table": "sys_table_rotation_deferred_schema",
             "source_field": "name",
             "target_table": "sys_table_rotation",
+            "type": "reference"
+        },
+        {
+            "source_table": "var__m_sys_hub_action_input_d205e3302f74ba50629cd43fafa4e3f8",
+            "source_field": "ah_task",
+            "target_table": "task",
             "type": "reference"
         },
         {
@@ -26878,6 +27376,12 @@
             "type": "reference"
         },
         {
+            "source_table": "var__m_sys_hub_action_input_4e0b7622e741130068da6188d2f6a922",
+            "source_field": "ah_consumer",
+            "target_table": "csm_consumer",
+            "type": "reference"
+        },
+        {
             "source_table": "par_dashboard_visibility",
             "source_field": "dashboard",
             "target_table": "par_dashboard",
@@ -26950,12 +27454,6 @@
             "type": "reference"
         },
         {
-            "source_table": "svc_recomputation_log0004",
-            "source_field": "layer",
-            "target_table": "svc_layer",
-            "type": "reference"
-        },
-        {
             "source_table": "sys_guided_tour_user_overrides",
             "source_field": "tour",
             "target_table": "sys_embedded_tour_guide",
@@ -27007,12 +27505,6 @@
             "source_table": "sys_ux_form_action",
             "source_field": "declarative_action",
             "target_table": "sys_declarative_action_assignment",
-            "type": "reference"
-        },
-        {
-            "source_table": "sys_ux_form_action",
-            "source_field": "ui_action",
-            "target_table": "sys_ui_action",
             "type": "reference"
         },
         {
@@ -27406,30 +27898,6 @@
             "type": "reference"
         },
         {
-            "source_table": "cmdb_ci_computer",
-            "source_field": "change_control",
-            "target_table": "sys_user_group",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_computer",
-            "source_field": "life_cycle_stage",
-            "target_table": "life_cycle_stage",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_computer",
-            "source_field": "assignment_group",
-            "target_table": "sys_user_group",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_computer",
-            "source_field": "department",
-            "target_table": "cmn_department",
-            "type": "reference"
-        },
-        {
             "source_table": "ua_user_role_ct",
             "source_field": "role_ref",
             "target_table": "sys_user_role",
@@ -27448,6 +27916,24 @@
             "type": "reference"
         },
         {
+            "source_table": "cmn_m2m_skill_model",
+            "source_field": "skill",
+            "target_table": "cmn_skill",
+            "type": "reference"
+        },
+        {
+            "source_table": "sys_user_skill_history",
+            "source_field": "skill",
+            "target_table": "cmn_skill",
+            "type": "reference"
+        },
+        {
+            "source_table": "sys_user_skill_history",
+            "source_field": "user",
+            "target_table": "sys_user",
+            "type": "reference"
+        },
+        {
             "source_table": "var__m_sys_hub_step_ext_input_9bcbb5a25325301026b0ddeeff7b12ec",
             "source_field": "passwordResetProcess",
             "target_table": "pwd_process",
@@ -27463,12 +27949,6 @@
             "source_table": "ssa_deflection_pattern",
             "source_field": "activity_pattern",
             "target_table": "ssa_activity_pattern",
-            "type": "reference"
-        },
-        {
-            "source_table": "ssa_deflection_pattern",
-            "source_field": "deflection_configuration",
-            "target_table": "ssa_deflection_configuration",
             "type": "reference"
         },
         {
@@ -27634,33 +28114,21 @@
             "type": "reference"
         },
         {
-            "source_table": "sa_notification0002",
-            "source_field": "service",
-            "target_table": "cmdb_ci_service_discovered",
-            "type": "reference"
-        },
-        {
             "source_table": "var__m_sys_hub_flow_input_9f33c7d553332300eb7c0a1806dc3480",
             "source_field": "inbound_email",
             "target_table": "sys_email",
             "type": "reference"
         },
         {
-            "source_table": "var__m_sys_hub_flow_input_9f33c7d553332300eb7c0a1806dc3480",
-            "source_field": "user",
-            "target_table": "sys_user",
+            "source_table": "sn_openframe_phone_log",
+            "source_field": "task",
+            "target_table": "task",
             "type": "reference"
         },
         {
             "source_table": "sys_update_xml",
             "source_field": "application",
             "target_table": "sys_scope",
-            "type": "reference"
-        },
-        {
-            "source_table": "sys_push_feedback",
-            "source_field": "sys_push_platform_id",
-            "target_table": "sys_push_platform",
             "type": "reference"
         },
         {
@@ -27688,21 +28156,9 @@
             "type": "reference"
         },
         {
-            "source_table": "sys_push_application",
-            "source_field": "certificate_id",
-            "target_table": "sys_certificate",
-            "type": "reference"
-        },
-        {
             "source_table": "ais_ingest_event_stats",
             "source_field": "datasource_stats",
             "target_table": "ais_ingest_datasource_stats",
-            "type": "reference"
-        },
-        {
-            "source_table": "ais_datasource_field_attribute",
-            "source_field": "attribute",
-            "target_table": "ais_configuration_attribute",
             "type": "reference"
         },
         {
@@ -27733,6 +28189,12 @@
             "source_table": "pipeline_has_command",
             "source_field": "pipeline",
             "target_table": "automation_pipeline",
+            "type": "reference"
+        },
+        {
+            "source_table": "syslog_awa0003",
+            "source_field": "channel",
+            "target_table": "awa_service_channel",
             "type": "reference"
         },
         {
@@ -27904,12 +28366,6 @@
             "type": "reference"
         },
         {
-            "source_table": "kb_uc_can_contribute_mtom",
-            "source_field": "user_criteria",
-            "target_table": "user_criteria",
-            "type": "reference"
-        },
-        {
             "source_table": "kb_2_kb",
             "source_field": "related_kb_knowledge",
             "target_table": "kb_knowledge",
@@ -27919,12 +28375,6 @@
             "source_table": "kb_2_sc",
             "source_field": "sc_cat_item",
             "target_table": "sc_cat_item",
-            "type": "reference"
-        },
-        {
-            "source_table": "kb_uc_cannot_contribute_mtom",
-            "source_field": "user_criteria",
-            "target_table": "user_criteria",
             "type": "reference"
         },
         {
@@ -28138,57 +28588,9 @@
             "type": "reference"
         },
         {
-            "source_table": "ast_contract",
-            "source_field": "customer",
-            "target_table": "core_company",
-            "type": "reference"
-        },
-        {
-            "source_table": "ast_contract",
-            "source_field": "life_cycle_stage",
-            "target_table": "life_cycle_stage",
-            "type": "reference"
-        },
-        {
-            "source_table": "ast_contract",
-            "source_field": "application_model",
-            "target_table": "cmdb_application_product_model",
-            "type": "reference"
-        },
-        {
-            "source_table": "ast_contract",
-            "source_field": "parent_contract",
-            "target_table": "ast_contract",
-            "type": "reference"
-        },
-        {
-            "source_table": "ast_contract",
-            "source_field": "location",
-            "target_table": "cmn_location",
-            "type": "reference"
-        },
-        {
-            "source_table": "ast_contract",
-            "source_field": "renewal_contact",
-            "target_table": "sys_user",
-            "type": "reference"
-        },
-        {
-            "source_table": "ast_contract",
-            "source_field": "approver",
-            "target_table": "sys_user",
-            "type": "reference"
-        },
-        {
             "source_table": "sys_ui_mobile_home_page_m2m_home_page_section",
             "source_field": "section",
             "target_table": "sys_ui_mobile_home_page_section",
-            "type": "reference"
-        },
-        {
-            "source_table": "sys_ui_mobile_home_page_m2m_home_page_section",
-            "source_field": "home_page",
-            "target_table": "sys_ui_mobile_home_page",
             "type": "reference"
         },
         {
@@ -28417,42 +28819,6 @@
             "source_table": "cmdb_ci_hyper_v_cluster",
             "source_field": "vendor",
             "target_table": "core_company",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_hyper_v_cluster",
-            "source_field": "location",
-            "target_table": "cmn_location",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_hyper_v_cluster",
-            "source_field": "managed_by",
-            "target_table": "sys_user",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_hyper_v_cluster",
-            "source_field": "company",
-            "target_table": "core_company",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_hyper_v_cluster",
-            "source_field": "assigned_to",
-            "target_table": "sys_user",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_hyper_v_cluster",
-            "source_field": "model_id",
-            "target_table": "cmdb_model",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_hyper_v_cluster",
-            "source_field": "support_group",
-            "target_table": "sys_user_group",
             "type": "reference"
         },
         {
@@ -30388,6 +30754,12 @@
             "type": "reference"
         },
         {
+            "source_table": "awa_reject_reason",
+            "source_field": "service_channel",
+            "target_table": "awa_service_channel",
+            "type": "reference"
+        },
+        {
             "source_table": "var__m_sys_decision_input_e49568a7b701230034d1da23ee11a913",
             "source_field": "change_request",
             "target_table": "change_request",
@@ -30397,6 +30769,18 @@
             "source_table": "sys_grid_canvas_pane",
             "source_field": "portal_widget",
             "target_table": "sys_portal",
+            "type": "reference"
+        },
+        {
+            "source_table": "awa_agent_presence_query_history",
+            "source_field": "agent",
+            "target_table": "sys_user",
+            "type": "reference"
+        },
+        {
+            "source_table": "var__m_sys_hub_action_input_9ba3af3c2f34ba50629cd43fafa4e3c1",
+            "source_field": "ah_task",
+            "target_table": "task",
             "type": "reference"
         },
         {
@@ -30955,24 +31339,6 @@
             "source_table": "cmdb_ci_iisdirectory",
             "source_field": "location",
             "target_table": "cmn_location",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_iisdirectory",
-            "source_field": "managed_by_group",
-            "target_table": "sys_user_group",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_iisdirectory",
-            "source_field": "manufacturer",
-            "target_table": "core_company",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_iisdirectory",
-            "source_field": "company",
-            "target_table": "core_company",
             "type": "reference"
         },
         {
@@ -31621,6 +31987,12 @@
             "source_table": "ts_table",
             "source_field": "group",
             "target_table": "ts_group",
+            "type": "reference"
+        },
+        {
+            "source_table": "awa_offer_details",
+            "source_field": "assigned_to",
+            "target_table": "sys_user",
             "type": "reference"
         },
         {
@@ -32296,15 +32668,21 @@
             "type": "reference"
         },
         {
-            "source_table": "sysrule_assignment",
-            "source_field": "user",
-            "target_table": "sys_user",
-            "type": "reference"
-        },
-        {
             "source_table": "sysauto_template",
             "source_field": "template",
             "target_table": "sys_template",
+            "type": "reference"
+        },
+        {
+            "source_table": "var__m_sys_hub_action_input_c1e8b33be7b00300c4726188d2f6a9ba",
+            "source_field": "ah_contact",
+            "target_table": "customer_contact",
+            "type": "reference"
+        },
+        {
+            "source_table": "var__m_sys_hub_action_input_c1e8b33be7b00300c4726188d2f6a9ba",
+            "source_field": "ah_consumer",
+            "target_table": "csm_consumer",
             "type": "reference"
         },
         {
@@ -32336,6 +32714,12 @@
             "source_field": "Incident",
             "target_table": "incident",
             "type": "document_id"
+        },
+        {
+            "source_table": "sn_publications_recipients_list",
+            "source_field": "additional_recipients_consumer",
+            "target_table": "csm_consumer",
+            "type": "glide_list"
         },
         {
             "source_table": "cmdb_ci_endpoint_sp_connection",
@@ -32500,6 +32884,12 @@
             "type": "reference"
         },
         {
+            "source_table": "var__m_sys_hub_flow_input_92d1027ceba1111017642fd05d522864",
+            "source_field": "assignment_group",
+            "target_table": "sys_user_group",
+            "type": "reference"
+        },
+        {
             "source_table": "cmdb_ci_cluster_vm_affinity_rule",
             "source_field": "maintenance_schedule",
             "target_table": "cmn_schedule",
@@ -32614,12 +33004,6 @@
             "type": "reference"
         },
         {
-            "source_table": "ticket_tab_configuration",
-            "source_field": "parent",
-            "target_table": "ticket_configuration",
-            "type": "reference"
-        },
-        {
             "source_table": "pwd_map_proc_to_group",
             "source_field": "user_group",
             "target_table": "sys_user_group",
@@ -32680,6 +33064,12 @@
             "type": "reference"
         },
         {
+            "source_table": "var__m_sys_hub_action_input_16d56024e711030000446188d2f6a98b",
+            "source_field": "ah_task",
+            "target_table": "task",
+            "type": "reference"
+        },
+        {
             "source_table": "imp_sn_gf_goal",
             "source_field": "u_company",
             "target_table": "core_company",
@@ -32708,6 +33098,12 @@
             "source_field": "assigned_to",
             "target_table": "sys_user",
             "type": "reference"
+        },
+        {
+            "source_table": "var__m_sys_hub_action_output_02ea98c4e7010300c4726188d2f6a994",
+            "source_field": "Task",
+            "target_table": "task",
+            "type": "document_id"
         },
         {
             "source_table": "var__m_sys_hub_step_ext_output_4aee1d160f2c7300c760001ea8767e4f",
@@ -32845,6 +33241,12 @@
             "source_table": "cmdb_ci_docker_container",
             "source_field": "duplicate_of",
             "target_table": "cmdb_ci",
+            "type": "reference"
+        },
+        {
+            "source_table": "var__m_sys_hub_flow_output_03621d1477211110e07f2a647a5a9910",
+            "source_field": "kb_article",
+            "target_table": "kb_knowledge",
             "type": "reference"
         },
         {
@@ -33160,6 +33562,12 @@
             "type": "reference"
         },
         {
+            "source_table": "var__m_sys_hub_flow_input_e936a8d177e22010d7159b71a91061ce",
+            "source_field": "task",
+            "target_table": "sn_customerservice_case",
+            "type": "reference"
+        },
+        {
             "source_table": "problem",
             "source_field": "prb_model",
             "target_table": "prb_model",
@@ -33394,54 +33802,6 @@
             "type": "reference"
         },
         {
-            "source_table": "cmdb_ci_endpoint_db2sql",
-            "source_field": "change_control",
-            "target_table": "sys_user_group",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_endpoint_db2sql",
-            "source_field": "business_unit",
-            "target_table": "business_unit",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_endpoint_db2sql",
-            "source_field": "life_cycle_stage",
-            "target_table": "life_cycle_stage",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_endpoint_db2sql",
-            "source_field": "managed_by_group",
-            "target_table": "sys_user_group",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_endpoint_db2sql",
-            "source_field": "manufacturer",
-            "target_table": "core_company",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_endpoint_db2sql",
-            "source_field": "vendor",
-            "target_table": "core_company",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_endpoint_db2sql",
-            "source_field": "support_group",
-            "target_table": "sys_user_group",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_endpoint_db2sql",
-            "source_field": "asset",
-            "target_table": "alm_asset",
-            "type": "reference"
-        },
-        {
             "source_table": "cmdb_ci_nic",
             "source_field": "schedule",
             "target_table": "cmn_schedule",
@@ -33562,6 +33922,12 @@
             "type": "reference"
         },
         {
+            "source_table": "var__m_sys_hub_flow_input_516834d64362121009ed363c3bb8f20a",
+            "source_field": "inbound_email",
+            "target_table": "sys_email",
+            "type": "reference"
+        },
+        {
             "source_table": "sys_auth_profile_oauth2",
             "source_field": "oauth_profile",
             "target_table": "oauth_entity_profile",
@@ -33610,12 +33976,6 @@
             "type": "reference"
         },
         {
-            "source_table": "sys_sg_grouped_input",
-            "source_field": "ui_parameters",
-            "target_table": "sys_sg_ui_parameter",
-            "type": "glide_list"
-        },
-        {
             "source_table": "cmdb_ci_db_ora_listener",
             "source_field": "supported_by",
             "target_table": "sys_user",
@@ -33658,30 +34018,6 @@
             "type": "reference"
         },
         {
-            "source_table": "cmdb_ci_db_ora_listener",
-            "source_field": "attested_by",
-            "target_table": "sys_user",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_db_ora_listener",
-            "source_field": "managed_by_group",
-            "target_table": "sys_user_group",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_db_ora_listener",
-            "source_field": "manufacturer",
-            "target_table": "core_company",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_db_ora_listener",
-            "source_field": "company",
-            "target_table": "core_company",
-            "type": "reference"
-        },
-        {
             "source_table": "sys_flow_step_definition_input",
             "source_field": "model",
             "target_table": "sys_flow_step_definition",
@@ -33691,12 +34027,6 @@
             "source_table": "promin_log0006",
             "source_field": "project",
             "target_table": "promin_project",
-            "type": "reference"
-        },
-        {
-            "source_table": "promin_log0006",
-            "source_field": "model_def_version",
-            "target_table": "promin_model_def_version",
             "type": "reference"
         },
         {
@@ -33727,36 +34057,6 @@
             "source_table": "cmdb_ci_lb_vlan",
             "source_field": "owned_by",
             "target_table": "sys_user",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_lb_vlan",
-            "source_field": "attested_by",
-            "target_table": "sys_user",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_lb_vlan",
-            "source_field": "life_cycle_stage_status",
-            "target_table": "life_cycle_stage_status",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_lb_vlan",
-            "source_field": "duplicate_of",
-            "target_table": "cmdb_ci",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_lb_vlan",
-            "source_field": "change_control",
-            "target_table": "sys_user_group",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_lb_vlan",
-            "source_field": "business_unit",
-            "target_table": "business_unit",
             "type": "reference"
         },
         {
@@ -33844,24 +34144,6 @@
             "type": "reference"
         },
         {
-            "source_table": "cmdb_ci_endpoint_dctm_job",
-            "source_field": "supported_by",
-            "target_table": "sys_user",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_endpoint_dctm_job",
-            "source_field": "assignment_group",
-            "target_table": "sys_user_group",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_endpoint_dctm_job",
-            "source_field": "department",
-            "target_table": "cmn_department",
-            "type": "reference"
-        },
-        {
             "source_table": "sn_nowassist_diagn_monitor_m2m_notification",
             "source_field": "notification_config",
             "target_table": "sn_nowassist_diagn_notification_config",
@@ -33910,30 +34192,6 @@
             "type": "reference"
         },
         {
-            "source_table": "cmdb_ci_netgear",
-            "source_field": "most_frequent_user",
-            "target_table": "sys_user",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_netgear",
-            "source_field": "supported_by",
-            "target_table": "sys_user",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_netgear",
-            "source_field": "life_cycle_stage_status",
-            "target_table": "life_cycle_stage_status",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_netgear",
-            "source_field": "duplicate_of",
-            "target_table": "cmdb_ci",
-            "type": "reference"
-        },
-        {
             "source_table": "pa_diagnostic_log",
             "source_field": "pa_diagnostic",
             "target_table": "pa_diagnostic",
@@ -33979,6 +34237,12 @@
             "source_table": "u_cmdb_qb_result_9a270798bac9295a427ea2f23828e832e265a7bb",
             "source_field": "u_server_1",
             "target_table": "cmdb_ci_server",
+            "type": "reference"
+        },
+        {
+            "source_table": "document_m2m_skill",
+            "source_field": "skill_level",
+            "target_table": "cmn_skill_level",
             "type": "reference"
         },
         {
@@ -34202,6 +34466,12 @@
             "source_field": "not_visible_applications",
             "target_table": "sys_app_application",
             "type": "glide_list"
+        },
+        {
+            "source_table": "var__m_sys_hub_flow_input_9753acd5432552108d82c8641ab8f225",
+            "source_field": "current_case",
+            "target_table": "sn_customerservice_case",
+            "type": "reference"
         },
         {
             "source_table": "cmdb_ci_kvm_object",
@@ -34432,6 +34702,12 @@
             "type": "document_id"
         },
         {
+            "source_table": "var__m_sys_hub_action_input_1427693fe781030000446188d2f6a924",
+            "source_field": "ah_account",
+            "target_table": "customer_account",
+            "type": "reference"
+        },
+        {
             "source_table": "sys_record_hierarchy_status",
             "source_field": "record_hierarchy",
             "target_table": "sys_record_hierarchy",
@@ -34660,24 +34936,6 @@
             "type": "reference"
         },
         {
-            "source_table": "cmdb_ci_endpoint_vnic",
-            "source_field": "owned_by",
-            "target_table": "sys_user",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_endpoint_vnic",
-            "source_field": "attested_by",
-            "target_table": "sys_user",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_endpoint_vnic",
-            "source_field": "life_cycle_stage_status",
-            "target_table": "life_cycle_stage_status",
-            "type": "reference"
-        },
-        {
             "source_table": "cmdb_ci_qualifier_hidden_conn",
             "source_field": "schedule",
             "target_table": "cmn_schedule",
@@ -34828,6 +35086,12 @@
             "type": "reference"
         },
         {
+            "source_table": "var__m_sys_hub_action_output_417f4ffbe701030000446188d2f6a9e1",
+            "source_field": "Task",
+            "target_table": "sn_customerservice_task",
+            "type": "document_id"
+        },
+        {
             "source_table": "ws_security_x509_profile_outbound",
             "source_field": "key_store",
             "target_table": "sys_certificate",
@@ -34963,24 +35227,6 @@
             "source_table": "cmdb_ci_spkg",
             "source_field": "managed_by",
             "target_table": "sys_user",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_spkg",
-            "source_field": "owned_by",
-            "target_table": "sys_user",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_spkg",
-            "source_field": "supported_by",
-            "target_table": "sys_user",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_spkg",
-            "source_field": "assignment_group",
-            "target_table": "sys_user_group",
             "type": "reference"
         },
         {
@@ -35146,24 +35392,6 @@
             "type": "reference"
         },
         {
-            "source_table": "cmdb_ci_endpoint_aq",
-            "source_field": "model_id",
-            "target_table": "cmdb_model",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_endpoint_aq",
-            "source_field": "support_group",
-            "target_table": "sys_user_group",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_endpoint_aq",
-            "source_field": "location",
-            "target_table": "cmn_location",
-            "type": "reference"
-        },
-        {
             "source_table": "cmdb_ci_lb_interface",
             "source_field": "load_balancer",
             "target_table": "cmdb_ci",
@@ -35179,24 +35407,6 @@
             "source_table": "cmdb_ci_lb_interface",
             "source_field": "managed_by",
             "target_table": "sys_user",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_lb_interface",
-            "source_field": "owned_by",
-            "target_table": "sys_user",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_lb_interface",
-            "source_field": "supported_by",
-            "target_table": "sys_user",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_lb_interface",
-            "source_field": "assignment_group",
-            "target_table": "sys_user_group",
             "type": "reference"
         },
         {
@@ -35222,6 +35432,12 @@
             "source_field": "publication_record",
             "target_table": "sn_publications_publication",
             "type": "reference"
+        },
+        {
+            "source_table": "var__m_sys_hub_action_output_3de66cfee791030097a26188d2f6a9af",
+            "source_field": "Account",
+            "target_table": "customer_account",
+            "type": "document_id"
         },
         {
             "source_table": "import_log0000",
@@ -35353,6 +35569,12 @@
             "source_table": "cmn_timeline_sub_item",
             "source_field": "parent",
             "target_table": "cmn_timeline_page",
+            "type": "reference"
+        },
+        {
+            "source_table": "var__m_sys_hub_flow_input_060ddccba352121015bd3e64b51e6198",
+            "source_field": "email_record",
+            "target_table": "sys_email",
             "type": "reference"
         },
         {
@@ -35677,24 +35899,6 @@
             "source_table": "sn_ex_sp_m2m_portal_navigation_item_quicklink",
             "source_field": "navigation_menu_item",
             "target_table": "sn_ex_sp_portal_extensible_navigation_item",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_model",
-            "source_field": "depreciation",
-            "target_table": "cmdb_depreciation",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_model",
-            "source_field": "main_component",
-            "target_table": "cmdb_m2m_model_component",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_model",
-            "source_field": "asset_tracking_unit",
-            "target_table": "cmdb_model_unit",
             "type": "reference"
         },
         {
@@ -36424,9 +36628,21 @@
             "type": "reference"
         },
         {
+            "source_table": "var__m_sys_hub_flow_input_43a91c9943e152108d82c8641ab8f2e3",
+            "source_field": "child_case",
+            "target_table": "sn_customerservice_case",
+            "type": "reference"
+        },
+        {
             "source_table": "var__m_sys_hub_action_input_1c81ecb353b333004733ddeeff7b12b8",
             "source_field": "credential_alias",
             "target_table": "sys_alias",
+            "type": "reference"
+        },
+        {
+            "source_table": "var__m_sys_hub_flow_input_e4843277b7a2001031cdfd8bee11a9f0",
+            "source_field": "case_task_record",
+            "target_table": "sn_customerservice_task",
             "type": "reference"
         },
         {
@@ -36454,9 +36670,33 @@
             "type": "reference"
         },
         {
+            "source_table": "awa_service_channel",
+            "source_field": "channel_group",
+            "target_table": "awa_service_channel_group",
+            "type": "reference"
+        },
+        {
+            "source_table": "awa_service_channel",
+            "source_field": "message_alert_audio",
+            "target_table": "db_audio",
+            "type": "reference"
+        },
+        {
+            "source_table": "awa_service_channel",
+            "source_field": "inbox_alert_audio",
+            "target_table": "db_audio",
+            "type": "reference"
+        },
+        {
             "source_table": "var__m_sys_hub_flow_input_1c9e54b7ff072210c419ffffffffff4a",
             "source_field": "source_environment",
             "target_table": "sn_pipeline_environment",
+            "type": "reference"
+        },
+        {
+            "source_table": "var__m_sys_hub_action_input_60a2df168bd712109666ad4fe1239565",
+            "source_field": "registration_record",
+            "target_table": "sn_customerservice_registration",
             "type": "reference"
         },
         {
@@ -36925,12 +37165,6 @@
             "source_table": "var__m_sys_hub_flow_input_f0cc82271b630010affd0e55cc4bcb49",
             "source_field": "assigned_to",
             "target_table": "sys_user",
-            "type": "reference"
-        },
-        {
-            "source_table": "sys_declarative_action_assignment",
-            "source_field": "design_icon",
-            "target_table": "st_sys_design_system_icon",
             "type": "reference"
         },
         {
@@ -39988,6 +40222,12 @@
             "type": "reference"
         },
         {
+            "source_table": "sn_shn_configuration",
+            "source_field": "sys_overrides",
+            "target_table": "sn_shn_configuration",
+            "type": "reference"
+        },
+        {
             "source_table": "sn_bm_client_recommendation_eval",
             "source_field": "recommendation",
             "target_table": "sn_bm_client_recommendation",
@@ -40045,6 +40285,12 @@
             "source_table": "automation_status_set",
             "source_field": "range_assign_status",
             "target_table": "discovery_status",
+            "type": "reference"
+        },
+        {
+            "source_table": "syslog_awa0005",
+            "source_field": "channel",
+            "target_table": "awa_service_channel",
             "type": "reference"
         },
         {
@@ -40711,42 +40957,6 @@
             "source_table": "cmdb_ci_appl_ca_dir_server",
             "source_field": "duplicate_of",
             "target_table": "cmdb_ci",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_appl_ca_dir_server",
-            "source_field": "owned_by",
-            "target_table": "sys_user",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_appl_ca_dir_server",
-            "source_field": "business_unit",
-            "target_table": "business_unit",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_appl_ca_dir_server",
-            "source_field": "cost_center",
-            "target_table": "cmn_cost_center",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_appl_ca_dir_server",
-            "source_field": "life_cycle_stage",
-            "target_table": "life_cycle_stage",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_appl_ca_dir_server",
-            "source_field": "managed_by",
-            "target_table": "sys_user",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_appl_ca_dir_server",
-            "source_field": "life_cycle_stage_status",
-            "target_table": "life_cycle_stage_status",
             "type": "reference"
         },
         {
@@ -41818,6 +42028,24 @@
             "type": "reference"
         },
         {
+            "source_table": "matching_dimension_for_assignment",
+            "source_field": "matching_rule",
+            "target_table": "matching_rule",
+            "type": "reference"
+        },
+        {
+            "source_table": "matching_dimension_for_assignment",
+            "source_field": "dimension",
+            "target_table": "matching_dimension",
+            "type": "reference"
+        },
+        {
+            "source_table": "matching_dimension_for_assignment",
+            "source_field": "user",
+            "target_table": "sys_user",
+            "type": "reference"
+        },
+        {
             "source_table": "sys_cs_collab_user_query",
             "source_field": "sys_overrides",
             "target_table": "sys_cs_collab_user_query",
@@ -41968,6 +42196,12 @@
             "type": "reference"
         },
         {
+            "source_table": "awa_work_item",
+            "source_field": "assigned_to",
+            "target_table": "sys_user",
+            "type": "reference"
+        },
+        {
             "source_table": "ais_async_genius_result",
             "source_field": "gr_config_id",
             "target_table": "ais_genius_result_configuration",
@@ -42068,6 +42302,12 @@
             "source_field": "managed_by_group",
             "target_table": "sys_user_group",
             "type": "reference"
+        },
+        {
+            "source_table": "cmn_location",
+            "source_field": "type",
+            "target_table": "cmn_location_type",
+            "type": "glide_list"
         },
         {
             "source_table": "cmn_location",
@@ -42604,6 +42844,12 @@
             "type": "reference"
         },
         {
+            "source_table": "var__m_sys_hub_action_input_6c661484e7010300c4726188d2f6a9a6",
+            "source_field": "ah_case",
+            "target_table": "sn_customerservice_case",
+            "type": "reference"
+        },
+        {
             "source_table": "ecc_agent_log",
             "source_field": "ecc_agent",
             "target_table": "ecc_agent",
@@ -42664,6 +42910,24 @@
             "type": "reference"
         },
         {
+            "source_table": "var__m_sys_hub_action_input_bfe33bb7e7b00300c4726188d2f6a9f4",
+            "source_field": "ah_case",
+            "target_table": "sn_customerservice_case",
+            "type": "reference"
+        },
+        {
+            "source_table": "sn_csm_consumer_profile_location",
+            "source_field": "location",
+            "target_table": "cmn_location",
+            "type": "reference"
+        },
+        {
+            "source_table": "sn_csm_consumer_profile",
+            "source_field": "consumer",
+            "target_table": "csm_consumer",
+            "type": "reference"
+        },
+        {
             "source_table": "cmdb_ci_vmware_template",
             "source_field": "schedule",
             "target_table": "cmn_schedule",
@@ -42700,6 +42964,12 @@
             "type": "reference"
         },
         {
+            "source_table": "var__m_sys_hub_flow_output_92d1027ceba1111017642fd05d522864",
+            "source_field": "case_task",
+            "target_table": "sn_customerservice_task",
+            "type": "reference"
+        },
+        {
             "source_table": "var__m_sys_pd_activity_type_prop_d4dde0875b00001070e4492c11f91a90",
             "source_field": "icon",
             "target_table": "st_sys_design_system_icon",
@@ -42715,6 +42985,12 @@
             "source_table": "cmdb_group_event_queue",
             "source_field": "group",
             "target_table": "cmdb_group",
+            "type": "reference"
+        },
+        {
+            "source_table": "var__m_sys_hub_flow_input_4807cc40a366121015bd3e64b51e6178",
+            "source_field": "email_record",
+            "target_table": "sys_email",
             "type": "reference"
         },
         {
@@ -42752,6 +43028,12 @@
             "source_field": "parent",
             "target_table": "cmdb_health_metric",
             "type": "reference"
+        },
+        {
+            "source_table": "var__m_sys_hub_action_output_10f7bbf7e7b00300c4726188d2f6a9db",
+            "source_field": "Task",
+            "target_table": "task",
+            "type": "document_id"
         },
         {
             "source_table": "cmdb_m2m_model_component",
@@ -42928,6 +43210,12 @@
             "type": "reference"
         },
         {
+            "source_table": "var__m_sys_hub_flow_input_ed64404ea322121015bd3e64b51e61ea",
+            "source_field": "interaction",
+            "target_table": "interaction",
+            "type": "reference"
+        },
+        {
             "source_table": "sys_cs_context_profile_message",
             "source_field": "context_profile",
             "target_table": "sys_cs_context_profile",
@@ -42943,6 +43231,18 @@
             "source_table": "var__m_sys_hub_action_input_d9814e25c3323010a9f5e548fa40dd8f",
             "source_field": "pipeline",
             "target_table": "sn_pipeline_pipeline",
+            "type": "reference"
+        },
+        {
+            "source_table": "sn_app_cs_social_social_profile",
+            "source_field": "account",
+            "target_table": "customer_account",
+            "type": "reference"
+        },
+        {
+            "source_table": "var__m_sys_hub_action_input_2da72d3fe781030000446188d2f6a934",
+            "source_field": "ah_case",
+            "target_table": "sn_customerservice_case",
             "type": "reference"
         },
         {
@@ -43000,6 +43300,12 @@
             "type": "document_id"
         },
         {
+            "source_table": "var__m_sys_hub_step_ext_output_6604bbb7e7b00300c4726188d2f6a974",
+            "source_field": "case",
+            "target_table": "sn_customerservice_case",
+            "type": "reference"
+        },
+        {
             "source_table": "sys_notification_execution_log",
             "source_field": "provider",
             "target_table": "sys_notification_provider",
@@ -43027,24 +43333,6 @@
             "source_table": "cmdb_ci_endpoint_tibco_file",
             "source_field": "department",
             "target_table": "cmn_department",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_endpoint_tibco_file",
-            "source_field": "owned_by",
-            "target_table": "sys_user",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_endpoint_tibco_file",
-            "source_field": "attested_by",
-            "target_table": "sys_user",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_endpoint_tibco_file",
-            "source_field": "life_cycle_stage_status",
-            "target_table": "life_cycle_stage_status",
             "type": "reference"
         },
         {
@@ -43312,6 +43600,12 @@
             "type": "reference"
         },
         {
+            "source_table": "var__m_sys_hub_flow_input_2ad0baee4388a2105c5641a16bb8f223",
+            "source_field": "escalation",
+            "target_table": "sn_customerservice_escalation",
+            "type": "reference"
+        },
+        {
             "source_table": "var__m_sys_hub_action_input_eed28a117353601026f6aa114df6a71a",
             "source_field": "task",
             "target_table": "cmdb_data_management_task",
@@ -43327,6 +43621,12 @@
             "source_table": "sn_deploy_pipeline_scheduled_deployment",
             "source_field": "target_environment",
             "target_table": "sn_pipeline_environment",
+            "type": "reference"
+        },
+        {
+            "source_table": "var__m_sys_hub_flow_input_2ef5ed8977d51110e07f2a647a5a992b",
+            "source_field": "existing_case",
+            "target_table": "sn_customerservice_case",
             "type": "reference"
         },
         {
@@ -43399,6 +43699,12 @@
             "source_table": "ml_advanced_solution_settings",
             "source_field": "solution_parameters",
             "target_table": "ml_solution_parameters",
+            "type": "reference"
+        },
+        {
+            "source_table": "var__m_sys_hub_action_input_af78bff7e7b00300c4726188d2f6a95d",
+            "source_field": "ah_case",
+            "target_table": "sn_customerservice_case",
             "type": "reference"
         },
         {
@@ -43573,6 +43879,12 @@
             "source_table": "var__m_sys_hub_flow_input_e0778a459f6312106548971b8a0a1cd9",
             "source_field": "generate_atf_tests",
             "target_table": "sn_um_upgrade_session_config",
+            "type": "reference"
+        },
+        {
+            "source_table": "var__m_sys_hub_action_input_6087f7f7e7b00300c4726188d2f6a9b8",
+            "source_field": "ah_case",
+            "target_table": "sn_customerservice_case",
             "type": "reference"
         },
         {
@@ -43774,6 +44086,12 @@
             "type": "reference"
         },
         {
+            "source_table": "account_relationship",
+            "source_field": "to_company",
+            "target_table": "customer_account",
+            "type": "reference"
+        },
+        {
             "source_table": "cmdb_ci_endpoint_mq_mem",
             "source_field": "schedule",
             "target_table": "cmn_schedule",
@@ -43837,12 +44155,6 @@
             "source_table": "cmdb_ci_endpoint_mq_mem",
             "source_field": "assignment_group",
             "target_table": "sys_user_group",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_endpoint_mq_mem",
-            "source_field": "department",
-            "target_table": "cmn_department",
             "type": "reference"
         },
         {
@@ -43924,6 +44236,12 @@
             "type": "reference"
         },
         {
+            "source_table": "var__m_sys_hub_flow_input_e4a6e1302bf81210f5eff9906e91bf8f",
+            "source_field": "similar_case",
+            "target_table": "sn_customerservice_case",
+            "type": "reference"
+        },
+        {
             "source_table": "sys_sg_applet_launcher_tab",
             "source_field": "applet_launcher",
             "target_table": "sys_sg_applet_launcher",
@@ -43948,6 +44266,12 @@
             "type": "reference"
         },
         {
+            "source_table": "var__m_sys_hub_action_output_16d56024e711030000446188d2f6a98b",
+            "source_field": "Task",
+            "target_table": "task",
+            "type": "document_id"
+        },
+        {
             "source_table": "life_cycle_control",
             "source_field": "life_cycle_stage_status",
             "target_table": "life_cycle_stage_status",
@@ -43969,6 +44293,12 @@
             "source_table": "st_dfc_performance_metric",
             "source_field": "sys_transaction_pattern",
             "target_table": "sys_transaction_pattern",
+            "type": "reference"
+        },
+        {
+            "source_table": "var__m_sys_hub_action_input_6b1fcbfbe701030000446188d2f6a9c1",
+            "source_field": "ah_contact",
+            "target_table": "customer_contact",
             "type": "reference"
         },
         {
@@ -44018,6 +44348,12 @@
             "source_field": "language",
             "target_table": "open_nlu_driver_language",
             "type": "reference"
+        },
+        {
+            "source_table": "var__m_sys_hub_action_output_9ba3af3c2f34ba50629cd43fafa4e3c1",
+            "source_field": "Task",
+            "target_table": "task",
+            "type": "document_id"
         },
         {
             "source_table": "var__m_sys_hub_flow_input_6fa6bfd9c7033010408bc8d6f2c260b7",
@@ -44077,12 +44413,6 @@
             "source_table": "cmdb_ci_appl_sap_bus_obj",
             "source_field": "schedule",
             "target_table": "cmn_schedule",
-            "type": "reference"
-        },
-        {
-            "source_table": "var__m_sys_hub_flow_logic_variable_e6edace2733203006715b45a4cf6a7b2",
-            "source_field": "context",
-            "target_table": "wf_context",
             "type": "reference"
         },
         {
@@ -44404,12 +44734,6 @@
             "type": "reference"
         },
         {
-            "source_table": "cmdb_ci_kvm_storage_pool",
-            "source_field": "change_control",
-            "target_table": "sys_user_group",
-            "type": "reference"
-        },
-        {
             "source_table": "cmdb_health_metric_pref",
             "source_field": "task_assignee_group",
             "target_table": "sys_user_group",
@@ -44437,6 +44761,12 @@
             "source_table": "var__m_sys_hub_flow_input_ae02eb611bf30010affd0e55cc4bcbec",
             "source_field": "assignment_group",
             "target_table": "sys_user_group",
+            "type": "reference"
+        },
+        {
+            "source_table": "var__m_sys_hub_action_output_de04bbb7e7b00300c4726188d2f6a963",
+            "source_field": "Case",
+            "target_table": "sn_customerservice_case",
             "type": "reference"
         },
         {
@@ -44605,6 +44935,12 @@
             "source_table": "http_hmac_auth",
             "source_field": "hmac_config",
             "target_table": "hmac_config",
+            "type": "reference"
+        },
+        {
+            "source_table": "user_task_stats",
+            "source_field": "user",
+            "target_table": "sys_user",
             "type": "reference"
         },
         {
@@ -45262,6 +45598,18 @@
             "type": "reference"
         },
         {
+            "source_table": "sn_customerservice_team_member",
+            "source_field": "type",
+            "target_table": "sn_customerservice_related_party_configuration",
+            "type": "reference"
+        },
+        {
+            "source_table": "sn_customerservice_customer_interaction",
+            "source_field": "product",
+            "target_table": "cmdb_model",
+            "type": "reference"
+        },
+        {
             "source_table": "sys_filter",
             "source_field": "user",
             "target_table": "sys_user",
@@ -45457,6 +45805,12 @@
             "source_table": "sys_flow_step_report",
             "source_field": "action_report",
             "target_table": "sys_flow_action_report",
+            "type": "reference"
+        },
+        {
+            "source_table": "var__m_sys_hub_flow_input_bd6e5aac77a742104ada557dcd5a99cb",
+            "source_field": "inbound_email",
+            "target_table": "sys_email",
             "type": "reference"
         },
         {
@@ -45796,6 +46150,12 @@
             "type": "reference"
         },
         {
+            "source_table": "cmn_skill",
+            "source_field": "level_type",
+            "target_table": "cmn_skill_level_type",
+            "type": "reference"
+        },
+        {
             "source_table": "open_nlu_predict_feedback",
             "source_field": "audit_log",
             "target_table": "open_nlu_predict_log",
@@ -45835,6 +46195,24 @@
             "source_table": "var__m_sys_hub_flow_input_f988ce5b9b6630100290af417ef04beb",
             "source_field": "subflow_environment",
             "target_table": "sn_pipeline_environment",
+            "type": "reference"
+        },
+        {
+            "source_table": "task_rel_kb",
+            "source_field": "type",
+            "target_table": "task_rel_kb_type",
+            "type": "reference"
+        },
+        {
+            "source_table": "task_rel_task",
+            "source_field": "parent",
+            "target_table": "task",
+            "type": "reference"
+        },
+        {
+            "source_table": "task_rel_task",
+            "source_field": "child",
+            "target_table": "task",
             "type": "reference"
         },
         {
@@ -46039,6 +46417,12 @@
             "source_table": "sla",
             "source_field": "maintenance",
             "target_table": "sys_calendar",
+            "type": "reference"
+        },
+        {
+            "source_table": "sn_customerservice_escalation_template",
+            "source_field": "approval_group",
+            "target_table": "sys_user_group",
             "type": "reference"
         },
         {
@@ -46552,6 +46936,12 @@
             "type": "reference"
         },
         {
+            "source_table": "var__m_sys_hub_flow_output_226a5804a3a6121015bd3e64b51e61f1",
+            "source_field": "case_record",
+            "target_table": "sn_customerservice_case",
+            "type": "reference"
+        },
+        {
             "source_table": "var__m_sys_hub_action_input_51b336b477433300d4bdaeca78106190",
             "source_field": "credential_alias",
             "target_table": "sys_alias",
@@ -46612,6 +47002,12 @@
             "type": "reference"
         },
         {
+            "source_table": "agent_schedule_user_pref",
+            "source_field": "user",
+            "target_table": "sys_user",
+            "type": "reference"
+        },
+        {
             "source_table": "sn_me_st_topic",
             "source_field": "taxonomy",
             "target_table": "taxonomy",
@@ -46633,6 +47029,24 @@
             "source_table": "ngbsm_ci_type_icon",
             "source_field": "icon",
             "target_table": "ngbsm_ci_icons",
+            "type": "reference"
+        },
+        {
+            "source_table": "awa_queue",
+            "source_field": "service_channel",
+            "target_table": "awa_service_channel",
+            "type": "reference"
+        },
+        {
+            "source_table": "awa_queue",
+            "source_field": "schedule",
+            "target_table": "cmn_schedule",
+            "type": "reference"
+        },
+        {
+            "source_table": "awa_work_item_sizing",
+            "source_field": "channel",
+            "target_table": "awa_service_channel",
             "type": "reference"
         },
         {
@@ -47350,6 +47764,12 @@
             "type": "reference"
         },
         {
+            "source_table": "sys_sensitive_data_handling_regex",
+            "source_field": "sys_overrides",
+            "target_table": "sys_sensitive_data_handling_regex",
+            "type": "reference"
+        },
+        {
             "source_table": "sc_wizard_question",
             "source_field": "set",
             "target_table": "item_option_new_set",
@@ -47800,6 +48220,12 @@
             "type": "reference"
         },
         {
+            "source_table": "sn_customerservice_account_relationship_access",
+            "source_field": "role",
+            "target_table": "sys_user_role",
+            "type": "reference"
+        },
+        {
             "source_table": "sn_instance_clone_mif_enabled_instance",
             "source_field": "user",
             "target_table": "sys_user",
@@ -48148,6 +48574,12 @@
             "type": "reference"
         },
         {
+            "source_table": "var__m_ga_guidance_input_a8728efb776912100239dbad6b5a9962",
+            "source_field": "case",
+            "target_table": "sn_customerservice_case",
+            "type": "reference"
+        },
+        {
             "source_table": "var__m_sys_hub_step_ext_output_7c726243eb910110d9b201c7c152285e",
             "source_field": "service_plan_invocation",
             "target_table": "one_api_service_plan_invocation",
@@ -48232,6 +48664,24 @@
             "type": "reference"
         },
         {
+            "source_table": "sys_user_has_skill",
+            "source_field": "included_in_skill",
+            "target_table": "sys_user_has_skill",
+            "type": "reference"
+        },
+        {
+            "source_table": "sys_user_has_skill",
+            "source_field": "inherited_from",
+            "target_table": "sys_user_group",
+            "type": "reference"
+        },
+        {
+            "source_table": "var__m_sys_hub_action_output_2da72d3fe781030000446188d2f6a934",
+            "source_field": "Case",
+            "target_table": "sn_customerservice_case",
+            "type": "reference"
+        },
+        {
             "source_table": "var__m_sys_hub_action_input_cd176080b74671105c9db5208e11a979",
             "source_field": "environment",
             "target_table": "sn_pipeline_environment",
@@ -48262,6 +48712,12 @@
             "type": "reference"
         },
         {
+            "source_table": "var__m_sys_hub_action_output_ee19b73be7b00300c4726188d2f6a9b6",
+            "source_field": "Case",
+            "target_table": "sn_customerservice_case",
+            "type": "document_id"
+        },
+        {
             "source_table": "var__m_sys_hub_flow_input_df593cd3c3c431107db578f9d00131d4",
             "source_field": "scheduled_deployment_request",
             "target_table": "sn_deploy_pipeline_scheduled_deployment",
@@ -48280,9 +48736,21 @@
             "type": "reference"
         },
         {
+            "source_table": "var__m_sys_hub_flow_input_bc6dbdcd77191110e07f2a647a5a9927",
+            "source_field": "existing_case",
+            "target_table": "sn_customerservice_case",
+            "type": "reference"
+        },
+        {
             "source_table": "var__m_sys_hub_action_input_8e8f1039c37f0110a9f5e548fa40dd21",
             "source_field": "controller_cred_ref",
             "target_table": "sys_alias",
+            "type": "reference"
+        },
+        {
+            "source_table": "var__m_sys_hub_step_ext_input_b67313968bd712109666ad4fe123950b",
+            "source_field": "registration_record",
+            "target_table": "sn_customerservice_registration",
             "type": "reference"
         },
         {
@@ -48296,6 +48764,18 @@
             "source_field": "category",
             "target_table": "sys_atf_step_config_category",
             "type": "reference"
+        },
+        {
+            "source_table": "var__m_sys_hub_flow_input_66eb509d43e152108d82c8641ab8f20d",
+            "source_field": "parent_case",
+            "target_table": "sn_customerservice_case",
+            "type": "reference"
+        },
+        {
+            "source_table": "var__m_sys_hub_action_output_ff141844e7010300c4726188d2f6a9c4",
+            "source_field": "Case",
+            "target_table": "sn_customerservice_case",
+            "type": "document_id"
         },
         {
             "source_table": "var__m_sys_hub_flow_input_f32b20f4e584a210f8770ce9c0d302e0",
@@ -48400,6 +48880,12 @@
             "type": "reference"
         },
         {
+            "source_table": "var__m_sys_hub_action_input_7bda58c4e7010300c4726188d2f6a9e5",
+            "source_field": "ah_case",
+            "target_table": "sn_customerservice_case",
+            "type": "reference"
+        },
+        {
             "source_table": "m2m_map_marker_map_marker_click_action",
             "source_field": "marker_click_action",
             "target_table": "cmn_map_marker_click_action",
@@ -48415,6 +48901,12 @@
             "source_table": "sys_ux_lib_component_attr",
             "source_field": "model",
             "target_table": "sys_ux_lib_component",
+            "type": "reference"
+        },
+        {
+            "source_table": "var__m_sys_hub_action_input_f041573fe701030000446188d2f6a9a6",
+            "source_field": "ah_case",
+            "target_table": "sn_customerservice_case",
             "type": "reference"
         },
         {
@@ -48496,6 +48988,12 @@
             "type": "reference"
         },
         {
+            "source_table": "var__m_sys_hub_action_input_f15ec7fbe701030000446188d2f6a92f",
+            "source_field": "ah_task",
+            "target_table": "sn_customerservice_task",
+            "type": "reference"
+        },
+        {
             "source_table": "cmdb_ci_solaris_server",
             "source_field": "change_control",
             "target_table": "sys_user_group",
@@ -48574,6 +49072,12 @@
             "type": "reference"
         },
         {
+            "source_table": "var__m_sys_hub_action_output_33a5ace0e711030000446188d2f6a995",
+            "source_field": "Task",
+            "target_table": "task",
+            "type": "document_id"
+        },
+        {
             "source_table": "var__m_sys_hub_action_input_b9ef52df73a2201026f6aa114df6a74a",
             "source_field": "task",
             "target_table": "cmdb_data_management_task",
@@ -48619,6 +49123,12 @@
             "source_table": "cmdb_ci_cluster_vip",
             "source_field": "node",
             "target_table": "cmdb_ci_cluster_node",
+            "type": "reference"
+        },
+        {
+            "source_table": "syslog_awa0007",
+            "source_field": "channel",
+            "target_table": "awa_service_channel",
             "type": "reference"
         },
         {
@@ -49000,36 +49510,6 @@
             "type": "reference"
         },
         {
-            "source_table": "cmdb_ci_app_server_java",
-            "source_field": "change_control",
-            "target_table": "sys_user_group",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_app_server_java",
-            "source_field": "life_cycle_stage",
-            "target_table": "life_cycle_stage",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_app_server_java",
-            "source_field": "managed_by",
-            "target_table": "sys_user",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_app_server_java",
-            "source_field": "life_cycle_stage_status",
-            "target_table": "life_cycle_stage_status",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_app_server_java",
-            "source_field": "asset",
-            "target_table": "alm_asset",
-            "type": "reference"
-        },
-        {
             "source_table": "sys_cs_session_binding",
             "source_field": "system_topic",
             "target_table": "sys_cs_conversation",
@@ -49354,6 +49834,12 @@
             "type": "reference"
         },
         {
+            "source_table": "sn_lookup_verify_config",
+            "source_field": "sys_overrides",
+            "target_table": "sn_lookup_verify_config",
+            "type": "reference"
+        },
+        {
             "source_table": "var__m_sys_hub_action_output_d928e614536102108645ddeeff7b1255",
             "source_field": "notification",
             "target_table": "sn_vsc_security_policy_notification",
@@ -49508,6 +49994,12 @@
             "source_field": "change_request_id",
             "target_table": "change_request",
             "type": "document_id"
+        },
+        {
+            "source_table": "var__m_sys_hub_flow_output_37d33a37b7a2001031cdfd8bee11a9a8",
+            "source_field": "email_sent",
+            "target_table": "sys_email",
+            "type": "reference"
         },
         {
             "source_table": "chat_queue",
@@ -50092,12 +50584,6 @@
             "type": "glide_list"
         },
         {
-            "source_table": "sys_email_account",
-            "source_field": "keystore",
-            "target_table": "sys_certificate",
-            "type": "reference"
-        },
-        {
             "source_table": "var__m_sys_hub_action_input_0079a430e584a210f8770ce9c0d302d2",
             "source_field": "knowledge",
             "target_table": "kb_knowledge",
@@ -50440,12 +50926,6 @@
             "type": "reference"
         },
         {
-            "source_table": "cmdb_ci_azure_datacenter",
-            "source_field": "location",
-            "target_table": "cmn_location",
-            "type": "reference"
-        },
-        {
             "source_table": "ts_index_synonym_dictionary",
             "source_field": "index",
             "target_table": "ts_index_name",
@@ -50728,22 +51208,16 @@
             "type": "reference"
         },
         {
-            "source_table": "cmdb_ci_dir_site_minder_server",
-            "source_field": "duplicate_of",
-            "target_table": "cmdb_ci",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_dir_site_minder_server",
-            "source_field": "department",
-            "target_table": "cmn_department",
-            "type": "reference"
-        },
-        {
             "source_table": "sys_phone_format",
             "source_field": "phone_territory",
             "target_table": "sys_phone_territory",
             "type": "reference"
+        },
+        {
+            "source_table": "var__m_sys_hub_action_output_b5bbdcc4e7010300c4726188d2f6a9f7",
+            "source_field": "Case",
+            "target_table": "sn_customerservice_case",
+            "type": "document_id"
         },
         {
             "source_table": "var__m_sys_hub_trigger_output_f5ce00a873723300d70877186bf6a759",
@@ -50863,6 +51337,12 @@
             "source_table": "service_availability",
             "source_field": "service_offering",
             "target_table": "service_offering",
+            "type": "reference"
+        },
+        {
+            "source_table": "var__m_sys_hub_flow_input_a335258977d51110e07f2a647a5a9900",
+            "source_field": "current_case",
+            "target_table": "sn_customerservice_case",
             "type": "reference"
         },
         {
@@ -51430,6 +51910,12 @@
             "type": "reference"
         },
         {
+            "source_table": "var__m_sys_hub_flow_input_33d20c8aa322121015bd3e64b51e6138",
+            "source_field": "interaction",
+            "target_table": "interaction",
+            "type": "reference"
+        },
+        {
             "source_table": "ecc_agent_thread",
             "source_field": "ecc_agent",
             "target_table": "ecc_agent",
@@ -51700,6 +52186,12 @@
             "type": "reference"
         },
         {
+            "source_table": "var__m_sys_hub_action_input_0fe0a8aa773031101e9e557dcd5a996c",
+            "source_field": "case_record",
+            "target_table": "sn_customerservice_case",
+            "type": "reference"
+        },
+        {
             "source_table": "var__m_sys_hub_flow_input_c7f21fcf73c073005ae12ea3c4f6a723",
             "source_field": "password_reset_request",
             "target_table": "pwd_reset_request",
@@ -51736,9 +52228,21 @@
             "type": "document_id"
         },
         {
+            "source_table": "var__m_sys_hub_action_output_33b39444e7010300c4726188d2f6a963",
+            "source_field": "Case",
+            "target_table": "sn_customerservice_case",
+            "type": "document_id"
+        },
+        {
             "source_table": "cmdb_ci_endpoint_mq_flow",
             "source_field": "schedule",
             "target_table": "cmn_schedule",
+            "type": "reference"
+        },
+        {
+            "source_table": "var__m_sys_hub_action_output_bfe33bb7e7b00300c4726188d2f6a9f4",
+            "source_field": "Case",
+            "target_table": "sn_customerservice_case",
             "type": "reference"
         },
         {
@@ -52132,6 +52636,12 @@
             "type": "reference"
         },
         {
+            "source_table": "customer_account",
+            "source_field": "primary_contact",
+            "target_table": "customer_contact",
+            "type": "reference"
+        },
+        {
             "source_table": "pwd_map_request_to_verification",
             "source_field": "request",
             "target_table": "pwd_reset_request",
@@ -52336,6 +52846,12 @@
             "type": "reference"
         },
         {
+            "source_table": "var__m_sys_hub_flow_input_597bd45d43e152108d82c8641ab8f28d",
+            "source_field": "current_case",
+            "target_table": "sn_customerservice_case",
+            "type": "reference"
+        },
+        {
             "source_table": "open_nlu_driver_http_connection",
             "source_field": "http_connection",
             "target_table": "http_connection",
@@ -52402,18 +52918,6 @@
             "type": "reference"
         },
         {
-            "source_table": "wf_transition_history",
-            "source_field": "transition",
-            "target_table": "wf_transition",
-            "type": "reference"
-        },
-        {
-            "source_table": "upgrade_preview_app",
-            "source_field": "upgrade_preview",
-            "target_table": "upgrade_preview",
-            "type": "reference"
-        },
-        {
             "source_table": "par_dashboard_permission",
             "source_field": "dashboard",
             "target_table": "par_dashboard",
@@ -52432,22 +52936,10 @@
             "type": "reference"
         },
         {
-            "source_table": "sn_sub_man_st_unconfirmed_user_group",
-            "source_field": "manager",
-            "target_table": "sys_user",
-            "type": "reference"
-        },
-        {
             "source_table": "sn_sub_man_st_unallocated_group_recommendation",
             "source_field": "role_types",
             "target_table": "license_role_type",
             "type": "glide_list"
-        },
-        {
-            "source_table": "sn_sub_man_st_unallocated_group_recommendation",
-            "source_field": "group",
-            "target_table": "sys_user_group",
-            "type": "reference"
         },
         {
             "source_table": "cmdb_ci_ups_power_eq",
@@ -52471,36 +52963,6 @@
             "source_table": "cmdb_ci_ups_power_eq",
             "source_field": "department",
             "target_table": "cmn_department",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_ups_power_eq",
-            "source_field": "change_control",
-            "target_table": "sys_user_group",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_ups_power_eq",
-            "source_field": "business_unit",
-            "target_table": "business_unit",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_ups_power_eq",
-            "source_field": "attested_by",
-            "target_table": "sys_user",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_ups_power_eq",
-            "source_field": "life_cycle_stage_status",
-            "target_table": "life_cycle_stage_status",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_ci_ups_power_eq",
-            "source_field": "duplicate_of",
-            "target_table": "cmdb_ci",
             "type": "reference"
         },
         {
@@ -52546,73 +53008,7 @@
             "type": "reference"
         },
         {
-            "source_table": "sys_cs_conversation_task",
-            "source_field": "consumer_account",
-            "target_table": "sys_cs_consumer_account",
-            "type": "reference"
-        },
-        {
-            "source_table": "sys_cs_conversation_task",
-            "source_field": "derived_scope",
-            "target_table": "sys_scope",
-            "type": "reference"
-        },
-        {
-            "source_table": "sys_cs_notification",
-            "source_field": "notification_execution",
-            "target_table": "sys_notification_execution",
-            "type": "reference"
-        },
-        {
-            "source_table": "mtg_attendee",
-            "source_field": "attending_for_tasks",
-            "target_table": "task",
-            "type": "glide_list"
-        },
-        {
-            "source_table": "bsm_map_icon",
-            "source_field": "type",
-            "target_table": "sys_db_object",
-            "type": "reference"
-        },
-        {
-            "source_table": "ais_ingest_datasource_stats",
-            "source_field": "datasource",
-            "target_table": "ais_datasource",
-            "type": "reference"
-        },
-        {
-            "source_table": "cmdb_os_user",
-            "source_field": "computer",
-            "target_table": "cmdb_ci_computer",
-            "type": "reference"
-        },
-        {
-            "source_table": "transaction_call_chain",
-            "source_field": "transaction_register",
-            "target_table": "transaction_call_chain_register",
-            "type": "reference"
-        },
-        {
-            "source_table": "sys_hub_trigger_type_subscription",
-            "source_field": "trigger_type",
-            "target_table": "sys_hub_trigger_type",
-            "type": "reference"
-        },
-        {
             "source_table": "wf_history",
-            "source_field": "workflow_version",
-            "target_table": "wf_workflow_version",
-            "type": "reference"
-        },
-        {
-            "source_table": "wf_history",
-            "source_field": "activity",
-            "target_table": "wf_activity",
-            "type": "reference"
-        },
-        {
-            "source_table": "wf_context",
             "source_field": "workflow_version",
             "target_table": "wf_workflow_version",
             "type": "reference"
@@ -52808,66 +53204,6 @@
             "source_field": "sttrm_model",
             "target_table": "sttrm_model",
             "type": "reference"
-        },
-        {
-            "source_table": "sys_mobile_analytics_video_settings",
-            "source_field": "settings",
-            "target_table": "sys_mobile_analytics_settings",
-            "type": "reference"
-        },
-        {
-            "source_table": "var__m_sys_hub_action_output_89e4a7e473210300e4fd234ffff6a7e7",
-            "source_field": "Task",
-            "target_table": "task",
-            "type": "document_id"
-        },
-        {
-            "source_table": "var__m_sys_hub_action_input_5b7b05e0871903005d90bba826cb0ba4",
-            "source_field": "ah_request_item",
-            "target_table": "sc_req_item",
-            "type": "reference"
-        },
-        {
-            "source_table": "ts_index_stop",
-            "source_field": "index",
-            "target_table": "ts_index_name",
-            "type": "reference"
-        },
-        {
-            "source_table": "sys_import_set_execution",
-            "source_field": "execution_context",
-            "target_table": "sys_execution_context",
-            "type": "reference"
-        },
-        {
-            "source_table": "sn_employee_widget_mapping_user_criteria_mtom",
-            "source_field": "user_criteria",
-            "target_table": "user_criteria",
-            "type": "reference"
-        },
-        {
-            "source_table": "sys_cs_notification_delivery_channel",
-            "source_field": "connection",
-            "target_table": "sys_cs_provider",
-            "type": "reference"
-        },
-        {
-            "source_table": "sys_phone_validate",
-            "source_field": "phone_territory",
-            "target_table": "sys_phone_territory",
-            "type": "reference"
-        },
-        {
-            "source_table": "var__m_sys_hub_action_input_1ecc24692fc00300e8f802d3c18c950d",
-            "source_field": "Lane",
-            "target_table": "vtb_lane",
-            "type": "reference"
-        },
-        {
-            "source_table": "var__m_atf_input_variable_d8fdf5e10b1022009cfdc71437673adc",
-            "source_field": "visible",
-            "target_table": "sys_ui_action",
-            "type": "glide_list"
         }
     ]
 }

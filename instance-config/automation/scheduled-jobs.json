@@ -1,0 +1,3671 @@
+{
+    "$schema": "../schemas/scheduled-jobs.schema.json",
+    "_source": "sysauto_script",
+    "_description": "Scheduled script jobs and their current state.",
+    "_exported_at": "2026-05-15T18:15:55.181947+00:00",
+    "jobs": {
+        "002c1e70eb11020079a62a7ac106fe26": {
+            "name": "Process Geocoding Request",
+            "active": false,
+            "run_type": "periodically",
+            "run_start": "2015-07-14 16:05:18",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "002d3bf3ff787110d185612a453bf15f": {
+            "name": "Sync Instance Metadata to Central",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2023-08-29 01:06:45",
+            "run_time": "1970-01-01 04:00:00",
+            "time_zone": "floating",
+            "scope": "bcadabf277f311109c62f5f3cb5a992a"
+        },
+        "004678e353301010a116ddeeff7b128f": {
+            "name": "Disconnected Chat Timeout",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2020-05-21 14:52:27",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "004eecc353333300c722ddeeff7b12a9": {
+            "name": "Mobile Analytics - Create settings for new NativeClients",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2019-09-14 11:46:36",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "0163c4a653101110456dddeeff7b1217": {
+            "name": "CMDB Update domain_directory Size",
+            "active": true,
+            "run_type": "on_demand",
+            "run_start": "2022-06-27 20:49:33",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "02019087530142106adfddeeff7b1262": {
+            "name": "CMDB Data Certification UI View Cleanup",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2024-03-24 06:26:39",
+            "run_time": "1970-01-01 11:00:00",
+            "time_zone": "",
+            "scope": "c8ab76825371201032b7ddeeff7b1280"
+        },
+        "026f4ac277131110ec2af11d8c5a99ef": {
+            "name": "Clean Expired Redacted Rollback Contexts",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2022-11-22 20:52:41",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "02ad3dfbebb312007c94efc9a206fef2": {
+            "name": "CI Lifecycle Management - Restore Internal State Management Tables",
+            "active": false,
+            "run_type": "daily",
+            "run_start": "2016-06-11 00:22:04",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "0366606fd700130039b8ef44de6103f0": {
+            "name": "Stuck Duplicate CI Remediations Cleaner",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2018-02-08 22:11:36",
+            "run_time": "1970-01-01 09:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "037d65c1737023008564b17afef6a7d3": {
+            "name": "VA-Adapter Update Profile",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2018-09-25 11:55:31",
+            "run_time": "1970-01-01 18:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "05226603b4ec1010fa9b5a04f86dbf10": {
+            "name": "SAM/CI - Populate Licensing Data",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2020-05-07 23:11:11",
+            "run_time": "1970-01-01 12:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "052a54a6ff310110456d766cf43bf182": {
+            "name": "CIAffected Event Processor 0",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2022-02-23 15:51:58",
+            "run_time": "1970-01-01 06:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "05737e64b7122010b0bea9a32e11a93f": {
+            "name": "Remove Orphaned Attachments",
+            "active": true,
+            "run_type": "weekly",
+            "run_start": "2021-02-10 02:03:03",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "0584d37f7347330061b79c0c6df6a746": {
+            "name": "Convert Services Progress Refresher",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2019-08-11 01:00:00",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "05b4adf253f700100f16ddeeff7b12fa": {
+            "name": "Manage Activity fanouts",
+            "active": true,
+            "run_type": "monthly",
+            "run_start": "2020-03-30 17:17:11",
+            "run_time": "1970-01-01 00:00:00",
+            "time_zone": "floating",
+            "scope": "global"
+        },
+        "065594e387103300f917e55936cb0b26": {
+            "name": "Prune Search Suggestions",
+            "active": true,
+            "run_type": "weekly",
+            "run_start": "2019-03-28 09:41:05",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "07543d3ec7313010b59949f988c260b5": {
+            "name": "FlowDesigner : Cleanup Record watcher",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2021-08-09 20:53:28",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "08074eca93f022102d2b05001389184c": {
+            "name": "CSRF Violation Cleanup",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2025-04-10 18:34:44",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "US/Pacific",
+            "scope": "global"
+        },
+        "082dbb5eff30221075f2ffffffffff86": {
+            "name": "Hermes Diagnostics Check Ports",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2024-05-09 21:17:56",
+            "run_time": "1970-01-01 01:00:00",
+            "time_zone": "floating",
+            "scope": "global"
+        },
+        "08745913f31131002e6bae4716612bf1": {
+            "name": "Update Query Based Services",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2015-01-06 09:05:44",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "0955ac4e0f987210f1b6147fffe1bf9d": {
+            "name": "Copy Computer To Configuration Item For CMDB TCP",
+            "active": true,
+            "run_type": "on_demand",
+            "run_start": "2025-10-01 11:07:47",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "09764d51c7132010f02b23b881c260ab": {
+            "name": "Clean Up all previous releases Codesigning OOB records",
+            "active": false,
+            "run_type": "monthly",
+            "run_start": "2021-04-02 19:05:03",
+            "run_time": "1970-01-01 03:00:00",
+            "time_zone": "floating",
+            "scope": "eae404d3c31320101109046f5e40dd41"
+        },
+        "0a1f2ae6c33610104c13cc57bb40dd9c": {
+            "name": "AWA - Populate AWA Queue Metrics Report Fields",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2020-08-26 07:12:05",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "0a3d4b2ceb22211043ad0d94d85228b4": {
+            "name": "AWA - Trigger Document Re-evaluation For Queued/Pending Accept Work  Items",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2023-04-28 22:55:56",
+            "run_time": "1970-01-01 00:00:00",
+            "time_zone": "floating",
+            "scope": "global"
+        },
+        "0a87e3c577830010d81e7811a91061f0": {
+            "name": "Portal Analyzer",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2024-04-02 18:30:00",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "0b10c9c2c3f48310b4e13e1d05013169": {
+            "name": "CICD adhoc schedule",
+            "active": true,
+            "run_type": "on_demand",
+            "run_start": "2026-05-13 05:47:20",
+            "run_time": "",
+            "time_zone": "",
+            "scope": "1e3ea402c3748310b4e13e1d050131de"
+        },
+        "0b5ca1e0eb13111007d5a1c628522893": {
+            "name": "Copy values for cmdb_datasource_last_update",
+            "active": false,
+            "run_type": "daily",
+            "run_start": "2022-11-18 02:28:41",
+            "run_time": "1970-01-01 06:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "0b6de217530010106c61ddeeff7b12bc": {
+            "name": "ML Clustering Model Update Cleanup",
+            "active": true,
+            "run_type": "weekly",
+            "run_start": "2020-04-13 22:07:33",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "0bae5772f32232008e31301e73612bff": {
+            "name": "Clean ML Artifact Object Cache",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2017-05-09 17:55:49",
+            "run_time": "1970-01-02 03:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "0c98a05b0fd233006e5140c1df767e19": {
+            "name": "Trigger Full Scan",
+            "active": true,
+            "run_type": "on_demand",
+            "run_start": "2019-10-01 11:00:00",
+            "run_time": "1970-01-02 02:02:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "0d718fc253210110b9d3ddeeff7b12b2": {
+            "name": "Update catalog items conversational render type",
+            "active": true,
+            "run_type": "weekly",
+            "run_start": "2022-02-10 04:30:19",
+            "run_time": "1970-01-01 00:00:00",
+            "time_zone": "floating",
+            "scope": "global"
+        },
+        "0dcd4f777397e010960c6039faf6a799": {
+            "name": "CMDB Workspace - Populate aggregates Daily",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2021-04-10 23:21:02",
+            "run_time": "1970-01-01 01:45:00",
+            "time_zone": "floating",
+            "scope": "c8ab76825371201032b7ddeeff7b1280"
+        },
+        "0de900f3433d421050bb6e702cb8f282": {
+            "name": "Remove Servicenow Performance Dashboard",
+            "active": false,
+            "run_type": "weekly",
+            "run_start": "2024-05-01 20:37:59",
+            "run_time": "1970-01-01 00:00:00",
+            "time_zone": "floating",
+            "scope": "global"
+        },
+        "0e27b960c332010016194ffe5bba8fbc": {
+            "name": "LDAP Connection Test",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2013-07-22 23:34:51",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "0f8c0e48b76a74102455f158ee11a967": {
+            "name": "CSDM Product Model Assignment",
+            "active": true,
+            "run_type": "on_demand",
+            "run_start": "2021-09-07 16:22:57",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "0ffc1cde0f8500103b68ff5eef767ea7": {
+            "name": "Re-register AWA Record Watcher",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2019-11-13 05:54:13",
+            "run_time": "1970-01-01 08:00:10",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "0fff6af6772320108043270bba10619b": {
+            "name": "Trigger Notifications for CMDB DM Stale Tasks",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2021-04-20 04:52:42",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "10bf5c71477261503fbe9e25126d43fa": {
+            "name": "Sidebar Discussion Reminder",
+            "active": false,
+            "run_type": "daily",
+            "run_start": "2023-05-14 17:45:52",
+            "run_time": "1970-01-01 00:00:00",
+            "time_zone": "GMT",
+            "scope": "fa27a0dd53423010bf68ddeeff7b12ac"
+        },
+        "1186e18f43013110e4aa4594bfb8f29a": {
+            "name": "Orphan ML Update Set Attachment Cleanup",
+            "active": true,
+            "run_type": "weekly",
+            "run_start": "2023-09-07 16:29:01",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "11d23849c3b42200467f10c422d3aea0": {
+            "name": "Remove Agent Work Schedule end date older than a month ",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2016-07-21 22:54:38",
+            "run_time": "1970-01-01 10:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "11eb7ad177d81210c2123a91fa5a9951": {
+            "name": "Set run as user for SC PA jobs",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2024-08-27 21:47:51",
+            "run_time": "1970-01-02 07:00:00",
+            "time_zone": "",
+            "scope": "a51d46e3f2014110366b10017c5ba675"
+        },
+        "12603f49c73130102f7d69467ec2605f": {
+            "name": "Delete old Integration Hub debug files on MID servers.",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2021-08-04 19:26:05",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "12884a71531130103296ddeeff7b12bf": {
+            "name": "Generate Virtual Agent Push Notifications",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2021-07-12 23:16:18",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "133bbcc3ff9332108805ffffffffff4d": {
+            "name": "Reseed Mosaic metadata via rebuild",
+            "active": true,
+            "run_type": "on_demand",
+            "run_start": "2026-03-02 18:25:47",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "1386c583d7010200c1ed0fbc5e61036c": {
+            "name": "Checkpoint Reaper",
+            "active": true,
+            "run_type": "weekly",
+            "run_start": "2015-07-08 23:22:02",
+            "run_time": "1970-01-01 09:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "15cc6a2d770e0210c2123a91fa5a990f": {
+            "name": "SC Capture MI data",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2024-05-08 18:59:00",
+            "run_time": "1970-01-01 18:00:00",
+            "time_zone": "",
+            "scope": "a51d46e3f2014110366b10017c5ba675"
+        },
+        "16915817d72322005aed4ebfae6103c4": {
+            "name": "[Reporting]  Import Tables expire non-active",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2016-12-02 14:30:02",
+            "run_time": "1970-01-01 01:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "1738989577423010b4b74b640d5a9903": {
+            "name": "Ecc Queue Usage Analytics - Aggregate all topics from ecc_queue to ecc_queue_usage_analytics",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2021-08-17 08:35:48",
+            "run_time": "1969-12-31 19:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "17ca97feff0312101471ffffffffffb5": {
+            "name": "PA Indicator Aggregated Metrics Table Refresh",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2025-01-16 08:46:26",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "floating",
+            "scope": "global"
+        },
+        "18d728610f2010105bc5e7b1d4767e9b": {
+            "name": "CSM-Data-Fix - Tag all external users with intentional internal role assignments",
+            "active": true,
+            "run_type": "on_demand",
+            "run_start": "2020-05-02 22:25:51",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "191fffeedf60010068c37a0d3df26351": {
+            "name": "Server Minimum Statistics",
+            "active": true,
+            "run_type": "on_demand",
+            "run_start": "2013-04-08 18:15:18",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "196323dd73231010a64ec3ed8ff6a7f1": {
+            "name": "CMDB Multisource Query Usage Analytics",
+            "active": true,
+            "run_type": "weekly",
+            "run_start": "2020-09-28 20:35:17",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "1cdd29b7c32013009cbbdccdf3d3ae88": {
+            "name": "Conversation Support Queue Timer Task",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2018-03-06 18:33:25",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "1da0ed27c32220102c5b4e483c40ddb7": {
+            "name": "Inactive User Credential CleanUp",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2021-03-03 13:58:43",
+            "run_time": "1970-01-01 17:00:00",
+            "time_zone": "floating",
+            "scope": "global"
+        },
+        "1e318661a00ec210f877d142267461f4": {
+            "name": "Process client push notifications",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2026-04-03 11:06:18",
+            "run_time": "1970-01-01 12:11:06",
+            "time_zone": "floating",
+            "scope": "a51d46e3f2014110366b10017c5ba675"
+        },
+        "1e70fdf453032010347cddeeff7b123c": {
+            "name": "Purge Orphaned Containerized MID Servers",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2021-03-19 22:35:59",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "1fbfd45a73d1011026f6aa114df6a797": {
+            "name": "Cleanup Orphan CIs",
+            "active": false,
+            "run_type": "periodically",
+            "run_start": "2022-01-29 01:06:33",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "1fdba0eefff3061086f6f3167c4fd97f": {
+            "name": "Close Inactive Email Interactions",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2024-08-06 11:59:35",
+            "run_time": "1970-01-01 02:00:00",
+            "time_zone": "floating",
+            "scope": "1f97b7d0702fc210f87703d7c8bbaf2c"
+        },
+        "206c86fcc32211100f24c87af040ddf1": {
+            "name": "Teams user auto syncing",
+            "active": false,
+            "run_type": "periodically",
+            "run_start": "2022-10-12 16:39:58",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "53b1b0e79761011018b2fa98c253afcc"
+        },
+        "21754255db2cf3404cef76231f961956": {
+            "name": "sm dedup tracker for specific discovery sources",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2019-03-31 18:14:13",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "22b6bb03d700310092610eca5e610393": {
+            "name": "Check Scoped App Author Config Changes",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2014-11-02 22:57:50",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "893ea311d71321004f6a0eca5e6103e6"
+        },
+        "22ed16f1a3310210514ea0d3041e619b": {
+            "name": "Code Signing Telemetry Log Processor",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2024-04-27 02:16:53",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "22f283f3cb001200cab07f1b734c9c12": {
+            "name": "CMDB Health Dashboard - Relationship Score Calculation",
+            "active": false,
+            "run_type": "daily",
+            "run_start": "2015-12-07 19:29:28",
+            "run_time": "1970-01-01 11:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "23491160c3010110acfce1018d40ddc5": {
+            "name": "Monthly Job",
+            "active": true,
+            "run_type": "monthly",
+            "run_start": "2022-01-11 08:33:00",
+            "run_time": "1970-01-01 00:01:00",
+            "time_zone": "floating",
+            "scope": "global"
+        },
+        "23c59485e72132002d5084f903f6a956": {
+            "name": "Embedded Help Trigger",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2017-03-14 23:46:04",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "23eb8c610fec10105bc5e7b1d4767e6b": {
+            "name": "CSM-Data-Fix - Tag all external users with possible intentional internal role assignments",
+            "active": true,
+            "run_type": "on_demand",
+            "run_start": "2020-05-02 20:24:01",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "25261d54ebf021100cd8d3e6475228e2": {
+            "name": "Enable search-based suggestions",
+            "active": true,
+            "run_type": "on_demand",
+            "run_start": "2023-01-30 19:47:20",
+            "run_time": "1970-01-01 05:00:00",
+            "time_zone": "",
+            "scope": "3c467b5f0bf130109e0fa4e6e9c4c946"
+        },
+        "25444c8aeb2602108038b5d5d852287e": {
+            "name": "CMDB Workspace App Svcs Cloud Classification Batch Job",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2024-06-03 16:31:10",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "c8ab76825371201032b7ddeeff7b1280"
+        },
+        "254dc2b1c31111104ef3c31b7940dd4d": {
+            "name": "CMDB DataSource History Cleanup",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2020-11-11 21:22:56",
+            "run_time": "1970-01-01 08:45:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "255edf1c2bc7a6504b5ff79eb891bf0c": {
+            "name": "Send email reminder for email interactions on hold",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "",
+            "run_time": "1970-01-01 00:00:00",
+            "time_zone": "floating",
+            "scope": "1f97b7d0702fc210f87703d7c8bbaf2c"
+        },
+        "2626d00a430202107e1e1daa5ab8f23c": {
+            "name": "Hermes Diagnostics Check",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2024-05-09 21:17:56",
+            "run_time": "1970-01-01 01:00:00",
+            "time_zone": "floating",
+            "scope": "global"
+        },
+        "265c09a17f13121008564e68bc8665a5": {
+            "name": "UpdateMIUserLastUsedTime",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2025-01-24 11:27:22",
+            "run_time": "1970-01-01 00:01:00",
+            "time_zone": "floating",
+            "scope": "global"
+        },
+        "27ad23880fa933005203cbb2ff767eab": {
+            "name": "Populate Suggestions to avoid Cold Start - Portals",
+            "active": false,
+            "run_type": "on_demand",
+            "run_start": "2019-05-15 17:59:05",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "2896d5af53d5b1109de5ddeeff7b1280": {
+            "name": "Sync Password Reset Soft PIN Expiration Time",
+            "active": true,
+            "run_type": "on_demand",
+            "run_start": "2023-09-21 14:51:59",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "29a8ae1f87320300b38c0f4c59cb0bc6": {
+            "name": "GTD Analytics Tour Abandonment",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2017-12-08 09:43:37",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "2a2b0150532310109686ddeeff7b121f": {
+            "name": "Expire Actionable Notifications",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2020-09-25 06:56:16",
+            "run_time": "1969-12-31 19:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "2a647867531320103296ddeeff7b1217": {
+            "name": "Expire Guest Session Identifier",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2021-04-09 17:32:34",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "2aa1b2de5f9ab110b0fd4b64fb731339": {
+            "name": "Populate navigator menu secondary caches",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2023-11-06 17:20:22",
+            "run_time": "1970-01-01 05:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "2aff3b3f772321106b84a81f7f5a99d0": {
+            "name": "Enable ServiceNow Root of Trust ",
+            "active": true,
+            "run_type": "once",
+            "run_start": "2023-06-27 22:00:44",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "eae404d3c31320101109046f5e40dd41"
+        },
+        "2d1f39f6c3df10104c13cc57bb40dd28": {
+            "name": "AWA - Populate AWA Service Channel Metrics Report Fields",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2020-09-20 18:52:12",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "2daff9e8eb9551103d6b2ff2a252289b": {
+            "name": "Surface New Unconnected Content of Categories",
+            "active": true,
+            "run_type": "weekly",
+            "run_start": "2022-08-10 17:47:22",
+            "run_time": "1970-01-01 00:00:00",
+            "time_zone": "floating",
+            "scope": "global"
+        },
+        "2dc12040670212007de1bcb532415ad3": {
+            "name": "Clean Expired Rollback Contexts",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2016-03-04 02:13:30",
+            "run_time": "1970-01-01 12:02:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "2e22b051cbbf3200cab07f1b734c9cb8": {
+            "name": "CMDB Query Builder query results clean up",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2016-06-21 19:30:00",
+            "run_time": "1970-01-01 08:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "2fade78d771931103bce067f5b5a99b3": {
+            "name": "De-duplication: Populate Template Suggested and Orphan Tasks",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2023-09-14 07:27:23",
+            "run_time": "1970-01-01 09:00:00",
+            "time_zone": "",
+            "scope": "c8ab76825371201032b7ddeeff7b1280"
+        },
+        "305bdd3b776131103b00d86bba5a9954": {
+            "name": "Purge Orphan Attachments",
+            "active": false,
+            "run_type": "periodically",
+            "run_start": "2023-10-04 20:06:56",
+            "run_time": "1970-01-01 05:00:03",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "30e7b69287132300f917e55936cb0bf4": {
+            "name": "Build Search Suggestions",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2019-01-31 21:09:57",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "314f3de4c33130109e777d127840dd63": {
+            "name": "Clear UX Banner Announcement Cache",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2021-08-02 21:54:51",
+            "run_time": "1970-01-01 08:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "31d52b94431102103ca9a661c9b8f212": {
+            "name": "Enable Email Address Internationalization",
+            "active": true,
+            "run_type": "on_demand",
+            "run_start": "2024-03-28 19:08:49",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "32e5b0444f3111103ff6502723ce0b49": {
+            "name": "Processor access policy monthly report",
+            "active": true,
+            "run_type": "monthly",
+            "run_start": "2022-09-02 19:39:40",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "US/Pacific",
+            "scope": "global"
+        },
+        "3517e93fa3210110e355f99246fcdaa4": {
+            "name": "Decision Table Multi Result Cleaner",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2022-02-15 08:24:52",
+            "run_time": "1970-01-01 00:00:00",
+            "time_zone": "floating",
+            "scope": "13aa96a16bcefa78b16cc99ed9e4f1f4"
+        },
+        "353770782f2032101a526aa3103f9ba2": {
+            "name": "Activity Stream Weekly Metrics",
+            "active": true,
+            "run_type": "weekly",
+            "run_start": "",
+            "run_time": "1970-01-01 01:05:00",
+            "time_zone": "floating",
+            "scope": "global"
+        },
+        "354edc12c32210102c5b4e483c40ddae": {
+            "name": "Poll LB For Certificate Status",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2020-08-12 15:45:13",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "3584c171dfa0010068c37a0d3df26379": {
+            "name": "Windows Computer Minimum Statistics",
+            "active": true,
+            "run_type": "on_demand",
+            "run_start": "2013-04-07 20:44:47",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "379058c677503010f088a0e89e5a9993": {
+            "name": "Populate Topic Popularity",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2021-05-24 16:08:05",
+            "run_time": "1970-01-01 01:00:00",
+            "time_zone": "floating",
+            "scope": "4249e63a28d54d61bb6fbf61fd86cccb"
+        },
+        "3824c9a04f030110c6e235e552ce0b59": {
+            "name": "Addresses User Has Role Errors",
+            "active": true,
+            "run_type": "on_demand",
+            "run_start": "2022-04-20 17:06:06",
+            "run_time": "1970-01-01 15:15:15",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "3903094e5362101061b7ddeeff7b12be": {
+            "name": "CSDM Data Sync",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2020-08-11 23:47:16",
+            "run_time": "1970-01-01 11:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "39099a5aff331210a358ffffffffffc7": {
+            "name": "Synchronize Extended Statistics",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2025-02-20 21:29:13",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "US/Pacific",
+            "scope": "global"
+        },
+        "391cb2f2b73033009d692fecde11a923": {
+            "name": "Add Identifier Fields In Recommended Rules",
+            "active": false,
+            "run_type": "on_demand",
+            "run_start": "2019-04-18 00:19:28",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "399d33b0db113200a042f278f0b8f56c": {
+            "name": "Populate Summary field on Knowledge Use",
+            "active": true,
+            "run_type": "on_demand",
+            "run_start": "2017-03-02 11:44:35",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "39b7334cc39210105553b740ad40dd28": {
+            "name": "Flow Designer Popular Actions Weekly",
+            "active": true,
+            "run_type": "weekly",
+            "run_start": "2020-07-24 21:33:10",
+            "run_time": "1970-01-02 07:59:50",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "39d5a1777323230070128f758bf6a78e": {
+            "name": "Clean up converted documents genereated by Document Viewer",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2019-02-17 17:18:05",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "3a1315cc77698210ee0d0cc2fa5a99a0": {
+            "name": "CMDB Workspace Partial Payload Item Batch Job",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2024-04-09 00:04:57",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "c8ab76825371201032b7ddeeff7b1280"
+        },
+        "3adc9b78c7f230108ad4010703c260d8": {
+            "name": "Populate Helpful Count on Knowledge",
+            "active": true,
+            "run_type": "on_demand",
+            "run_start": "2021-09-22 16:24:58",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "3b709a5353fe71104a61ddeeff7b129b": {
+            "name": "Adoption Blueprint content refresh",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2023-12-04 14:00:45",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "39eca3e2ff210110f416d018d53bf16e"
+        },
+        "3b9ef2ea43ffa110f3063fea8eb8f293": {
+            "name": "Recommended Subscriptions for Unmapped Global Custom Tables",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2023-07-06 06:18:28",
+            "run_time": "1970-01-01 12:00:00",
+            "time_zone": "",
+            "scope": "bcadabf277f311109c62f5f3cb5a992a"
+        },
+        "3cebb85277630210bf3589b28a5a9947": {
+            "name": "Process Mining Refresh activity recommendations job",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2024-07-24 08:15:25",
+            "run_time": "1970-01-01 01:00:00",
+            "time_zone": "floating",
+            "scope": "global"
+        },
+        "3d4dc33e1376330010b7754a6144b052": {
+            "name": "PA Interactive Analysis usage per application",
+            "active": true,
+            "run_type": "monthly",
+            "run_start": "2015-08-11 22:10:25",
+            "run_time": "1970-01-01 00:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "3df2617cc3132200782db348b1d3aed7": {
+            "name": "Check duplicated scores before migration",
+            "active": true,
+            "run_type": "on_demand",
+            "run_start": "2016-11-22 14:23:25",
+            "run_time": "1969-12-31 23:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "3e19f9fca3d0311011ecb18c26fcda53": {
+            "name": "Change project status to Retired due to inactivity",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2023-07-25 11:16:48",
+            "run_time": "1970-01-01 00:01:00",
+            "time_zone": "floating",
+            "scope": "global"
+        },
+        "3e71e3f1ff943210d088ffffffffff5f": {
+            "name": "Update Finding Status",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "",
+            "run_time": "1970-01-01 05:00:00",
+            "time_zone": "floating",
+            "scope": "21d5e77677171110638cfe21fe5a993c"
+        },
+        "3f3987b753312010069addeeff7b124f": {
+            "name": "Populate Taxonomy Content Order",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2021-01-26 09:27:07",
+            "run_time": "1970-01-01 00:00:00",
+            "time_zone": "floating",
+            "scope": "global"
+        },
+        "3f718548ff103210e861ffffffffff13": {
+            "name": "PADatasnapshotTargetsCleanup",
+            "active": true,
+            "run_type": "monthly",
+            "run_start": "2025-09-25 08:02:59",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "3facbd971c384210f877aec83f1c6b73": {
+            "name": "ROT - Scan Instance Signatures",
+            "active": true,
+            "run_type": "once",
+            "run_start": "2024-03-12 22:39:48",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "422862c1c32003001ca5b348b1d3aef4": {
+            "name": "Modify ID type to BIGINT for pa_scores_l1 and pa_scores_l2",
+            "active": true,
+            "run_type": "on_demand",
+            "run_start": "2017-08-11 13:33:50",
+            "run_time": "1969-12-31 23:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "42876a86ff133210dda4ffffffffffda": {
+            "name": "Update One Extend Capability Script Dependency Flag",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "",
+            "run_time": "1970-01-01 00:00:00",
+            "time_zone": "floating",
+            "scope": "global"
+        },
+        "42aaef8153133010b33bddeeff7b1225": {
+            "name": "Service Model Auto Remediation",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2021-10-18 08:32:49",
+            "run_time": "1970-01-01 00:00:00",
+            "time_zone": "floating",
+            "scope": "global"
+        },
+        "42e44b83c30320101109046f5e40dd5d": {
+            "name": "Turn on Code Signing Property",
+            "active": true,
+            "run_type": "once",
+            "run_start": "2021-03-26 17:05:07",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "eae404d3c31320101109046f5e40dd41"
+        },
+        "4387e6068b7b9210e5414e5bf12395d7": {
+            "name": "Automated Outdated Connected Content Cleanup",
+            "active": false,
+            "run_type": "monthly",
+            "run_start": "2025-02-20 03:54:11",
+            "run_time": "1970-01-01 00:10:00",
+            "time_zone": "floating",
+            "scope": "global"
+        },
+        "4404c6375b43611034d351a2ea81c7a6": {
+            "name": "Remove old first party scoped application deletes from sys_metadata_delete table",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2023-06-02 16:27:40",
+            "run_time": "1970-01-01 01:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "44c93a2dbf2111007c94c0647e07396b": {
+            "name": "UPS Audit (7 days)",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2013-12-09 23:52:25",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "44e7ec03c30320101109046f5e40ddbf": {
+            "name": "Turn off Code Signing Property",
+            "active": true,
+            "run_type": "once",
+            "run_start": "2021-03-26 17:05:07",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "eae404d3c31320101109046f5e40dd41"
+        },
+        "454284f873b30010ee4dd3c72bf6a77c": {
+            "name": "Calculate Hardware servers not in an application service",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2020-03-24 04:57:21",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "45f684d5c7301010a3d4e9e827c260af": {
+            "name": "Activity Stream Reaper",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2020-05-14 11:39:28",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "45fa94b51c92a910f877a567a129d63a": {
+            "name": "Discovery Credentials Affinity Cleanup",
+            "active": true,
+            "run_type": "weekly",
+            "run_start": "2023-04-19 20:53:47",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "461ca87f77d52110ee0d0cc2fa5a99bf": {
+            "name": "CMDB Workspace - Populate aggregates Monthly",
+            "active": true,
+            "run_type": "monthly",
+            "run_start": "2023-03-07 10:13:44",
+            "run_time": "1970-01-01 00:00:00",
+            "time_zone": "floating",
+            "scope": "c8ab76825371201032b7ddeeff7b1280"
+        },
+        "46c84b15b7031010c8c208fd7e11a9d2": {
+            "name": "cleanup_sys_json_chunks_missing_parent_sys_flow_report_doc",
+            "active": false,
+            "run_type": "daily",
+            "run_start": "2020-09-03 22:07:37",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "46ffbf0d50534110f877f51ae60a19a4": {
+            "name": "Populate View as allowed on Knowledge",
+            "active": true,
+            "run_type": "on_demand",
+            "run_start": "2021-09-22 16:24:58",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "4757bdf087313300a0807f9719cb0b52": {
+            "name": "Cleanup Attachment Scan History",
+            "active": true,
+            "run_type": "monthly",
+            "run_start": "2019-05-31 07:14:07",
+            "run_time": "1970-01-01 17:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "47da8cc9ffb13210c3fcffffffffff94": {
+            "name": "Check Status Api And Push To Mosaic",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2025-10-30 17:50:59",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "4800847c530db1109de5ddeeff7b1216": {
+            "name": "Password Reset Soft PIN Expiration",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2023-08-31 09:14:45",
+            "run_time": "1970-01-01 00:00:00",
+            "time_zone": "floating",
+            "scope": "global"
+        },
+        "4945197f33e2b2103cd8fba19e5c7b32": {
+            "name": "Push Metadata To Mosaic",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2025-10-30 17:50:59",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "494da85d7310001061b79c0c6df6a700": {
+            "name": "Populate Internet Facing attribute on Hardware",
+            "active": true,
+            "run_type": "on_demand",
+            "run_start": "2019-10-03 21:44:20",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "495f4ed15b22201007004d3ba881c7b0": {
+            "name": "Timeout For VA Chats Suspended on NLU Prediction",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2021-02-24 08:00:01",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "49bcce01ff120200d699ffffffffff97": {
+            "name": "Service Model's Blob Reaper",
+            "active": true,
+            "run_type": "weekly",
+            "run_start": "2015-09-03 02:39:10",
+            "run_time": "1970-01-01 09:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "4a2e2fa1c79710108ad4010703c2601a": {
+            "name": "Update Final Knowledge Search Terms",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2020-09-17 05:45:05",
+            "run_time": "1970-01-01 02:00:00",
+            "time_zone": "floating",
+            "scope": "global"
+        },
+        "4a63decb77ef111078521605bc5a99f2": {
+            "name": "Insight - Cloud vs Non-cloud Aggregates",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2022-12-08 09:59:47",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "c8ab76825371201032b7ddeeff7b1280"
+        },
+        "4af6a14a77b111105f2ea1b35b5a99d4": {
+            "name": "Application Service Manual Ep Cleanup",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2022-09-09 04:21:50",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "4b31823ba1ad2510f877e878436a2fbd": {
+            "name": "Upload And Download Roles",
+            "active": false,
+            "run_type": "daily",
+            "run_start": "2023-03-20 02:41:25",
+            "run_time": "1970-01-01 14:00:00",
+            "time_zone": "",
+            "scope": "bcadabf277f311109c62f5f3cb5a992a"
+        },
+        "4b72c152eb921110c27601c7c152282b": {
+            "name": "Timeout For VA-OneExtend Interactive Chats",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2022-10-04 16:52:18",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "4cc7f2a6cb3803008c061aeb034c9cc6": {
+            "name": "Validate parent child indicators active synced and activity dates are updated",
+            "active": true,
+            "run_type": "monthly",
+            "run_start": "2017-08-28 16:48:34",
+            "run_time": "1970-01-01 13:45:00",
+            "time_zone": "",
+            "scope": "3ad18693db92220004997878f0b8f516"
+        },
+        "4dd3e99a59d53510f877bf48b853ce6f": {
+            "name": "Send password reset process security score notification",
+            "active": true,
+            "run_type": "weekly",
+            "run_start": "2023-09-17 18:37:29",
+            "run_time": "1970-01-01 00:00:00",
+            "time_zone": "floating",
+            "scope": "global"
+        },
+        "4debada00b1213004752ce3ff6673a1a": {
+            "name": "Purge empty rollback contexts",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2018-05-22 15:54:37",
+            "run_time": "1970-01-01 06:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "4e31db4b73f0011026f6aa114df6a7b7": {
+            "name": "CMDB Cascade Retire Dependent CIs",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2022-01-07 01:26:02",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "4e996095773330108f64b2487b5a9976": {
+            "name": "Generate Employee Profiles from Users",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2021-11-12 09:41:31",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "1e95bac2738f001001b566b90ff6a7cd"
+        },
+        "4f3112170708c1108d6d78e99cd300bb": {
+            "name": "Generate Employee Profiles from HR Profiles",
+            "active": true,
+            "run_type": "on_demand",
+            "run_start": "2021-12-01 08:37:52",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "1e95bac2738f001001b566b90ff6a7cd"
+        },
+        "50204d8159e95300964f7b66b9c37d3f": {
+            "name": "ScheduleBenchmarkDownload",
+            "active": true,
+            "run_type": "monthly",
+            "run_start": "2016-11-18 23:11:01",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "3ad18693db92220004997878f0b8f516"
+        },
+        "5058b7f2c70230109d59fa49f4c26022": {
+            "name": "start key exchange when ready",
+            "active": false,
+            "run_type": "periodically",
+            "run_start": "2021-09-14 18:08:03",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "50e3f5b3ff1101100bd6ffb0653bf123": {
+            "name": "Run normalization job daily",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2022-02-02 23:05:03",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "514aa476ffc83210aa03ffffffffff7a": {
+            "name": "Usage Insights Event Downloader",
+            "active": true,
+            "run_type": "weekly",
+            "run_start": "",
+            "run_time": "1970-01-01 04:00:00",
+            "time_zone": "floating",
+            "scope": "b4048c109c7075a14eb853b12f61b5cd"
+        },
+        "51e91f91730c1010ee4dd3c72bf6a7fa": {
+            "name": "Calculate Application Service Types",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2020-03-24 04:57:21",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "524c4ba1d7001200c1ed0fbc5e610394": {
+            "name": "CMDB Health Dashboard - Compliance Score Calculation",
+            "active": false,
+            "run_type": "daily",
+            "run_start": "2015-11-30 20:21:24",
+            "run_time": "1970-01-01 11:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "528c78655b551300514d484c11f91aeb": {
+            "name": "Copy historical scores from PA to Benchmarks table",
+            "active": true,
+            "run_type": "on_demand",
+            "run_start": "2018-04-05 21:58:52",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "3ad18693db92220004997878f0b8f516"
+        },
+        "52a28136b54d5210f877f829dcce6bbd": {
+            "name": "Temporary Lists Auto Delete",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2024-10-08 11:36:09",
+            "run_time": "1970-01-01 00:00:00",
+            "time_zone": "floating",
+            "scope": "3db8027898a93973f08538e42f091589"
+        },
+        "53a48dfc97987d50a24c75b71153af06": {
+            "name": "Mark VM state as terminated",
+            "active": false,
+            "run_type": "periodically",
+            "run_start": "2023-07-25 07:27:43",
+            "run_time": "1970-01-01 08:02:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "545c344523b30300cc4bcb0a56bf6523": {
+            "name": "Populate Meta Description on KB Articles",
+            "active": true,
+            "run_type": "on_demand",
+            "run_start": "2017-03-02 11:44:35",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "546f4906c3788310b4e13e1d05013194": {
+            "name": "CICD adhoc schedule",
+            "active": true,
+            "run_type": "on_demand",
+            "run_start": "2026-05-13 06:54:03",
+            "run_time": "",
+            "time_zone": "",
+            "scope": "1e3ea402c3748310b4e13e1d050131de"
+        },
+        "54b1ee727380011007d56ad9af148b59": {
+            "name": "Compact IRE Mutex table",
+            "active": true,
+            "run_type": "weekly",
+            "run_start": "2021-11-29 20:32:48",
+            "run_time": "1970-01-01 06:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "54fc51db73c81010af8a1fd9fdf6a700": {
+            "name": "CMDB MultiSource Recompute Task Processor",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2020-04-13 16:15:56",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "55dd16d64f506210123b704a21ce0b66": {
+            "name": "Calculate NowAssists Job",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2025-03-17 18:21:35",
+            "run_time": "1970-01-01 02:00:00",
+            "time_zone": "",
+            "scope": "bcadabf277f311109c62f5f3cb5a992a"
+        },
+        "575294e85311021088a1ddeeff7b12cc": {
+            "name": "Check Glide Service Status V2",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2024-03-28 22:23:21",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "57a6684e77a433004d4eb5b2681061ba": {
+            "name": "Update Recorded At for Version",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2019-04-02 18:26:16",
+            "run_time": "1970-01-01 11:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "585113caffd876104ade90e0653bf1f6": {
+            "name": "Article Optimization - Scripted",
+            "active": true,
+            "run_type": "monthly",
+            "run_start": "2025-10-01 23:39:11",
+            "run_time": "1970-01-01 10:00:00",
+            "time_zone": "",
+            "scope": "48e5dbcb9f6f1210ecf142a4ba0a1c84"
+        },
+        "59375537b7131010c8c208fd7e11a972": {
+            "name": "cleanup_sys_json_chunks_missing_parent_sys_flow_context",
+            "active": false,
+            "run_type": "daily",
+            "run_start": "2020-09-23 18:00:00",
+            "run_time": "1970-01-01 08:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "59c7894e378b2210d9283a9be2924bb5": {
+            "name": "DeleteOrphanFavoritesForPicker",
+            "active": true,
+            "run_type": "day_and_month_in_year",
+            "run_start": "",
+            "run_time": "1970-01-01 00:00:00",
+            "time_zone": "floating",
+            "scope": "global"
+        },
+        "59d18cb873b30010ee4dd3c72bf6a7bb": {
+            "name": "Calculate Databases not in an application service",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2020-03-24 04:57:21",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "5dd751e0c32132004112b348b1d3ae9f": {
+            "name": "Clean PA scores",
+            "active": true,
+            "run_type": "on_demand",
+            "run_start": "2017-03-13 15:17:35",
+            "run_time": "1969-12-31 23:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "5df51be7cb2600101b6b1a2df8076def": {
+            "name": "Notification for Article Expiry Warning",
+            "active": true,
+            "run_type": "monthly",
+            "run_start": "2020-01-31 06:08:57",
+            "run_time": "1970-01-02 05:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "5e68b757c7d310100c2c770bf4c26081": {
+            "name": "AWA - Populate AWA Queue Capacity and Average Wait Time",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2020-09-22 16:59:15",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "5fa3ea6353502610129bddeeff7b12fe": {
+            "name": "CMDB WS Cert Task To Document Cleanup",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2025-03-21 15:59:32",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "c8ab76825371201032b7ddeeff7b1280"
+        },
+        "61c8d452ffc642107512fffffffffffc": {
+            "name": "Recommender V2: Recommender Subscriptions for Unmapped Custom Apps &  Unmapped Global Custom Tables ",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2024-05-10 16:07:50",
+            "run_time": "1970-01-01 10:30:00",
+            "time_zone": "",
+            "scope": "bcadabf277f311109c62f5f3cb5a992a"
+        },
+        "625c3df3739800109a1136366bf6a7d7": {
+            "name": "SAM - Calculate Asset Refresh Eligibility",
+            "active": true,
+            "run_type": "weekly",
+            "run_start": "2019-10-11 21:54:40",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "62783d62d4a92910f877ce4a4aac6985": {
+            "name": "Discover Custom Licensable Roles",
+            "active": false,
+            "run_type": "daily",
+            "run_start": "2023-03-16 04:50:44",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "bcadabf277f311109c62f5f3cb5a992a"
+        },
+        "6394619173031110dc50c3ed8ff6a7f4": {
+            "name": "CMDB Multisource Data Cleanup",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2020-11-11 21:22:56",
+            "run_time": "1970-01-01 08:45:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "63fcb052731320106dfdbd49faf6a7d4": {
+            "name": "Fallback Timeout for interactions in Wrap Up",
+            "active": false,
+            "run_type": "periodically",
+            "run_start": "2021-04-05 20:57:38",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "658f32c6b7dc6300883bca11ee11a97e": {
+            "name": "Collect ECC Queue Stats",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2018-09-03 23:56:29",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "66f6230bb72002102b695fef7e11a97a": {
+            "name": "CleanupListExportLimitTime",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2024-02-29 01:30:00",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "6714ddcec3788310b4e13e1d050131d6": {
+            "name": "CICD adhoc schedule",
+            "active": true,
+            "run_type": "on_demand",
+            "run_start": "2026-05-13 07:14:44",
+            "run_time": "",
+            "time_zone": "",
+            "scope": "1e3ea402c3748310b4e13e1d050131de"
+        },
+        "6784e4820f1010105bc5e7b1d4767e16": {
+            "name": "CSM-Data-Fix - Fix external users with possible non-intentional internal role assignment",
+            "active": true,
+            "run_type": "on_demand",
+            "run_start": "2020-04-22 01:12:52",
+            "run_time": "1970-01-01 00:00:00",
+            "time_zone": "floating",
+            "scope": "global"
+        },
+        "67930225a00ec210f877d14226746142": {
+            "name": "Clear expired client push notifications",
+            "active": true,
+            "run_type": "weekly",
+            "run_start": "2024-05-08 15:59:11",
+            "run_time": "1970-01-01 10:00:00",
+            "time_zone": "",
+            "scope": "a51d46e3f2014110366b10017c5ba675"
+        },
+        "6973ea0073430110491d235f04f6a709": {
+            "name": "SLA async queue health check",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2022-01-01 00:00:00",
+            "run_time": "1970-01-01 00:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "69ee44ce4354b110f30639a56cb8f283": {
+            "name": "Recommended Subscriptions for Unmapped Custom Apps",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2023-07-06 06:18:28",
+            "run_time": "1970-01-01 10:30:00",
+            "time_zone": "",
+            "scope": "bcadabf277f311109c62f5f3cb5a992a"
+        },
+        "6ba1f680e1c42e10f877a66f3e417c00": {
+            "name": "Advanced Portal Navigation : Delete invalid records",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2025-02-26 09:46:17",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "4249e63a28d54d61bb6fbf61fd86cccb"
+        },
+        "6bf8c8407f102200f936dd620efa9105": {
+            "name": "API Monthly Requestor Stats",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2015-12-30 06:44:01",
+            "run_time": "1970-01-01 10:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "6d992d8973c2601026f6aa114df6a729": {
+            "name": "CMDB Data Manager Archive/Delete Policy Processor",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2021-01-29 23:41:35",
+            "run_time": "1970-01-01 11:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "6f3ea65153611110dd8eddeeff7b1240": {
+            "name": "SC - Calculate Compliance Monthly",
+            "active": true,
+            "run_type": "monthly",
+            "run_start": "2022-08-25 15:22:05",
+            "run_time": "1970-01-01 08:02:00",
+            "time_zone": "",
+            "scope": "a51d46e3f2014110366b10017c5ba675"
+        },
+        "6fc1809cebf230103da4ee2c47522801": {
+            "name": "Active Learning",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "70672c89b31333003e5362ff86a8dc7d": {
+            "name": "PA Indicator usage per application",
+            "active": true,
+            "run_type": "monthly",
+            "run_start": "2019-08-14 09:37:22",
+            "run_time": "1969-12-31 23:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "70c6888473f7201053f9d11ee2f6a76c": {
+            "name": "Sync business Process relationships",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2021-04-23 13:45:46",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "711fff375347e0102455ddeeff7b12cb": {
+            "name": "Backfill records for CMDB CI <> Team relationships",
+            "active": false,
+            "run_type": "on_demand",
+            "run_start": "2021-03-29 16:40:51",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "717531a6777fd51007fffc6dbd5a99d3": {
+            "name": "Migrate goal relationships for assigned entities",
+            "active": true,
+            "run_type": "on_demand",
+            "run_start": "2022-12-19 04:47:43",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "11879041532030103913ddeeff7b12d8"
+        },
+        "71b656650f1133005203cbb2ff767e08": {
+            "name": "Populate Suggestions to avoid Cold Start - NowMobile App",
+            "active": false,
+            "run_type": "on_demand",
+            "run_start": "2019-05-08 20:55:10",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "721f483ac3853110ca68044599013102": {
+            "name": "Process pending Gen AI usage records",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2023-09-06 15:28:37",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "722d4a79b36b33003e5362ff86a8dc26": {
+            "name": "PA Breakdown Source usage per application",
+            "active": true,
+            "run_type": "monthly",
+            "run_start": "2019-08-29 11:13:12",
+            "run_time": "1969-12-31 23:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "73660eeeeb6112101e31e5b26b522865": {
+            "name": "Reconcile All Record Hierarchies",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2024-11-01 18:25:11",
+            "run_time": "1970-01-01 04:00:00",
+            "time_zone": "floating",
+            "scope": "global"
+        },
+        "74309e575b19211006447da52d81c70e": {
+            "name": "De-duplication: Populate Duplicate Task Data",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2023-03-06 04:14:08",
+            "run_time": "1970-01-01 08:45:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "745b9b7743dd2110a6dfaff3fab8f226": {
+            "name": "Calculate Availability",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2023-03-07 22:59:20",
+            "run_time": "1970-01-01 10:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "74738a0643131110a8ea143d9ab8f2c4": {
+            "name": "Issue Auto Resolution Custom Intent",
+            "active": false,
+            "run_type": "periodically",
+            "run_start": "",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "750b19389f1033000f51b7bda42e7088": {
+            "name": "Evaluate strategies on CI field changes",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2019-03-17 15:36:09",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "754a20de77401210e45dd86bba5a997f": {
+            "name": "MIF VTable Change Job",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2024-08-18 03:29:52",
+            "run_time": "1970-01-01 05:00:00",
+            "time_zone": "",
+            "scope": "47401582b7a6b9501e8f827b9e11a913"
+        },
+        "75655c9153210010a0bdddeeff7b125c": {
+            "name": "AWA - Set Inactive Agents Offline",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2019-12-04 23:18:33",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "75aec29073b32300c1dc32e954f6a731": {
+            "name": "RemoveConversationsforClosedRecords",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2019-02-19 09:33:21",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "761d1dae53002300abc8ddeeff7b1222": {
+            "name": "Clean Unused ATF Step Snapshots",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2018-08-23 07:00:00",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "76c69905532320100f16ddeeff7b12c4": {
+            "name": "ActSub - clean up activity stream",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2021-04-14 11:53:40",
+            "run_time": "1970-01-01 00:00:00",
+            "time_zone": "floating",
+            "scope": "global"
+        },
+        "77852acf73536010b5c7ed64fbf6a734": {
+            "name": "Knowledge Usage Metrics",
+            "active": false,
+            "run_type": "periodically",
+            "run_start": "2021-04-08 12:29:55",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "77af11089fa132106a53089c8a0a1cae": {
+            "name": "Remove obsolete search suggestion BRs",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2025-12-01 13:33:22",
+            "run_time": "1970-01-02 04:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "77c7793443330210b2d4c29835b8f29e": {
+            "name": "De-duplication: Populate Template Task Run Records (Scoped)",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2024-08-01 00:00:00",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "c8ab76825371201032b7ddeeff7b1280"
+        },
+        "797c36f2b73033009d692fecde11a9a5": {
+            "name": "Remove Identifier Fields In Recommended Rules",
+            "active": false,
+            "run_type": "on_demand",
+            "run_start": "2019-04-18 00:21:06",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "79f49cca77f131103b00d86bba5a9988": {
+            "name": "Delete Marked Attachments",
+            "active": false,
+            "run_type": "periodically",
+            "run_start": "2023-10-11 14:45:51",
+            "run_time": "1970-01-01 05:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "7a2c4ba1d7001200c1ed0fbc5e6103ac": {
+            "name": "CMDB Health Dashboard - Correctness Score Calculation",
+            "active": false,
+            "run_type": "daily",
+            "run_start": "2015-11-30 20:21:24",
+            "run_time": "1970-01-01 11:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "7ae92d8973c2601026f6aa114df6a74d": {
+            "name": "CMDB Data Manager Retire Policy Processor",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2021-01-29 23:43:02",
+            "run_time": "1970-01-01 11:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "7b50871b774130104b68b0fabe5a9964": {
+            "name": "Trigger:f350871b774130104b68b0fabe5a9964",
+            "active": true,
+            "run_type": "once",
+            "run_start": "2021-06-30 18:30:00",
+            "run_time": "",
+            "time_zone": "",
+            "scope": "dcb0e1e4db075300dd14596e5e9619ca"
+        },
+        "7ccf3322dfa0010068c37a0d3df26348": {
+            "name": "Data Center Zone Consumption",
+            "active": true,
+            "run_type": "monthly",
+            "run_start": "2013-04-08 18:18:17",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "7dbe9af077c630108043270bba1061cc": {
+            "name": "CMDB DependentCI Policy Processor",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2021-08-16 05:06:22",
+            "run_time": "1970-01-01 08:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "7f6144b873b30010ee4dd3c72bf6a7e6": {
+            "name": "Calculate Application servers not in an application service",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2020-03-24 04:55:37",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "80443ab667320300173fa0119585ef37": {
+            "name": "Discovery Status Cleanup",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2017-12-06 21:17:20",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "81e9e2a4c3311110c5ec4e483c40dd5c": {
+            "name": "DeleteUsedAndExpiredSecurityNonce",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2022-09-04 17:23:20",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "8256e6b653c4111095d2ddeeff7b120c": {
+            "name": "SC - Calculate Compliance",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2022-06-16 17:04:16",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "a51d46e3f2014110366b10017c5ba675"
+        },
+        "83b38a3273902010616ca9843cf6a765": {
+            "name": "Migrate IP Address Controls to Adaptive Authentication IP Filter",
+            "active": true,
+            "run_type": "on_demand",
+            "run_start": "2020-11-09 12:15:18",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "83cc34e2431331103b465dc36ab8f2e5": {
+            "name": "SC Best practices update activation",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2023-12-26 20:31:01",
+            "run_time": "1970-01-01 02:00:00",
+            "time_zone": "floating",
+            "scope": "a51d46e3f2014110366b10017c5ba675"
+        },
+        "840b086e93a510106b543511e57ffbdb": {
+            "name": "Refresh Latitude Longitude info of Records",
+            "active": false,
+            "run_type": "periodically",
+            "run_start": "2020-06-24 15:56:39",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "846e4f474f303210780dbd9f20ce0b9a": {
+            "name": "QueryCacheMetricsAggregator",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2025-10-29 22:31:41",
+            "run_time": "1970-01-01 06:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "848bbe2b55c20210f877414e3a6bb89d": {
+            "name": "SC set MI Job runtime ",
+            "active": false,
+            "run_type": "daily",
+            "run_start": "2024-05-15 01:11:11",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "a51d46e3f2014110366b10017c5ba675"
+        },
+        "84c08ca8436c2110fcbf9bf6cab8f2ff": {
+            "name": "Scheduled Deployment",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2023-01-18 21:57:00",
+            "run_time": "1970-01-01 05:00:00",
+            "time_zone": "",
+            "scope": "bb67ed7253e83010b846ddeeff7b1204"
+        },
+        "84cfb4417f23121000a454910d86653d": {
+            "name": "EJBCA Asymmetric Cert Renewal Job",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2025-02-04 07:31:03",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "84f660677f13121008564e68bc866508": {
+            "name": "Disable Machine Identity Feature If Threshold Exceeded",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2025-01-30 13:51:46",
+            "run_time": "1969-12-31 18:42:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "852733c5b73231104293ef10ce11a952": {
+            "name": "Get CI Counts and Populate DB",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2023-11-27 21:42:54",
+            "run_time": "1970-01-01 10:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "8601564d937003007152d5dbb67ffb7d": {
+            "name": "GTD Analytics Data Cleanup",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2017-08-23 22:08:31",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "87b44bf65f20001064301f9f2f7313d4": {
+            "name": "Update catalog ui policy action names for variables and sets",
+            "active": true,
+            "run_type": "on_demand",
+            "run_start": "2019-10-21 10:52:41",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "8a7240e74f122110660630e552ce0bca": {
+            "name": "Recurrent Generation of Auto Key Exchange Requests",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2023-04-25 05:36:11",
+            "run_time": "1970-01-01 08:05:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "8aad7e382fa83210693cb2a5b83f9b89": {
+            "name": "Calculate Change Template metrics",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2022-03-10 11:33:24",
+            "run_time": "1970-01-01 02:00:00",
+            "time_zone": "floating",
+            "scope": "global"
+        },
+        "8b736b4fffe83610a3aeffffffffff83": {
+            "name": "Fix default provider settings",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2025-10-17 13:48:11",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "8c265321d700310092610eca5e61036d": {
+            "name": "Check Scoped App Updates",
+            "active": false,
+            "run_type": "daily",
+            "run_start": "2014-10-29 04:44:30",
+            "run_time": "1970-01-01 10:00:00",
+            "time_zone": "",
+            "scope": "781f36a96fef21005be8883e6b3ee43d"
+        },
+        "8ccb5e740a0a0b9e00ea6d00e981f801": {
+            "name": "Summary Set Cleanup",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2009-05-29 15:34:46",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "8cf0bb7673a60010af8a1fd9fdf6a757": {
+            "name": "CMDBGroupEventGenerator",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2020-01-29 00:11:23",
+            "run_time": "1970-01-01 08:01:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "8e8864feb3203300fcfb6e5f26a8dc2f": {
+            "name": "Chat work item time out",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2019-04-05 03:19:05",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "8eebc1a3ff133110684fffffffffff26": {
+            "name": "MIF Sync Down Job",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2023-12-30 00:10:58",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "47401582b7a6b9501e8f827b9e11a913"
+        },
+        "8f5309b543201210459e391cf9b8f239": {
+            "name": "Clear stale MFA set up data and turn on MFA property",
+            "active": true,
+            "run_type": "on_demand",
+            "run_start": "2024-09-10 12:33:53",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "8f6f78175306021059d9ddeeff7b1278": {
+            "name": "SC - Calculate SC Notification Stats",
+            "active": true,
+            "run_type": "weekly",
+            "run_start": "2024-05-13 21:30:37",
+            "run_time": "1970-01-01 00:00:00",
+            "time_zone": "floating",
+            "scope": "a51d46e3f2014110366b10017c5ba675"
+        },
+        "90d53514ff103210e861ffffffffff4b": {
+            "name": "PADatasnapshotThresholdCleanup",
+            "active": true,
+            "run_type": "monthly",
+            "run_start": "2025-09-26 06:30:05",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "90e0b96e3b5000109cbbcea234efc42f": {
+            "name": "Idle Chat Timer Task",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2019-10-07 23:52:09",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "91ac82f777f20210f9db10ed9f5a998e": {
+            "name": "CMDB Query Builder Suggested Relations Cleanup Job",
+            "active": true,
+            "run_type": "weekly",
+            "run_start": "2024-06-21 18:52:16",
+            "run_time": "1970-01-01 20:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "91d8d2f993221210b01936279189186f": {
+            "name": "Daily clean up check security area records",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2024-12-19 04:52:55",
+            "run_time": "1970-01-01 02:00:00",
+            "time_zone": "floating",
+            "scope": "a51d46e3f2014110366b10017c5ba675"
+        },
+        "925cd1b9ffa502102a84ffffffffff4d": {
+            "name": "Multilingual Skills Sync Job",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2024-04-14 11:14:42",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "929dc5bc53e3e0102455ddeeff7b1258": {
+            "name": "MAINT: Promote business_unit up to cmdb_ci table level",
+            "active": true,
+            "run_type": "on_demand",
+            "run_start": "2021-04-13 16:35:00",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "93c92495ff503110d185612a453bf1a9": {
+            "name": "Subscription Detail Watcher",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2023-07-01 07:00:00",
+            "run_time": "1970-01-01 21:00:00",
+            "time_zone": "",
+            "scope": "bcadabf277f311109c62f5f3cb5a992a"
+        },
+        "950feca897320100d308124eda29756a": {
+            "name": "Team Development Update Push Status",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2013-07-22 18:19:41",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "9562fd32a30412106cdec213d51e616b": {
+            "name": "Slack Users Auto Syncing",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2024-08-19 22:01:55",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "53b1b0e79761011018b2fa98c253afcc"
+        },
+        "956ad220ffb072104aebffffffffffc6": {
+            "name": "Trigger:196ad220ffb072104aebffffffffffc5",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2025-10-22 00:19:45",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "95a9755a77f20110ff643a91fa5a9998": {
+            "name": "Sitemap Scheduler",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2022-04-13 22:15:00",
+            "run_time": "1970-01-01 00:00:00",
+            "time_zone": "floating",
+            "scope": "26329d35f52d4510f877c32d14052947"
+        },
+        "96b7979fff3032101771ffffffffffa3": {
+            "name": "Check Is Metadata Updated And Push To Mosaic",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2025-10-30 17:50:59",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "984496eb0f5020109bf1552dc4767e07": {
+            "name": "CMDB Sys Object Source Cleanup",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2020-11-11 21:22:56",
+            "run_time": "1970-01-01 08:45:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "988338ed4149f250f877bb6f1fc03df0": {
+            "name": "Close all the outbound interactions created due to case emails",
+            "active": true,
+            "run_type": "on_demand",
+            "run_start": "2025-11-06 05:39:51",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "1f97b7d0702fc210f87703d7c8bbaf2c"
+        },
+        "99c6f38b0f223010e28740c1df767efe": {
+            "name": "App Status Count",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2021-09-17 07:48:49",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "ead9fb5f8b27a051aa71b35163745b82"
+        },
+        "99e2075453201210d84cddeeff7b1257": {
+            "name": "Generate Now Assist Troubleshooting Notifications",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2024-09-06 06:00:13",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "7b67ecf7437042105947644c7ab8f21b"
+        },
+        "9a20ded05b43101034d351a2ea81c759": {
+            "name": "License Details History Trim and Collection",
+            "active": false,
+            "run_type": "daily",
+            "run_start": "2020-08-31 15:26:18",
+            "run_time": "1970-01-01 03:00:00",
+            "time_zone": "floating",
+            "scope": "global"
+        },
+        "9a2ba21373d31010ec95d11ee2f6a7ef": {
+            "name": "Notify business process review date",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2020-09-22 11:21:44",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "9a6ae648187a48bf9a8c79103ce01f1e": {
+            "name": "Nightly PC Request",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2026-01-01 02:00:00",
+            "run_time": "1970-01-01 02:00:00",
+            "time_zone": "UTC",
+            "scope": "477baa9b26b949d7a9c7c6415e6709b6"
+        },
+        "9a7902735b3310105b1eed35cc81c7e7": {
+            "name": "Prune Search Signal Events",
+            "active": true,
+            "run_type": "weekly",
+            "run_start": "2020-10-18 18:42:54",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "9b088db0c7912010d447c17cf4c2601b": {
+            "name": "AES User Sync",
+            "active": false,
+            "run_type": "periodically",
+            "run_start": "2020-12-22 19:49:29",
+            "run_time": "1970-01-01 06:20:08",
+            "time_zone": "",
+            "scope": "e046257545b47c84712b8779a9abd0cb"
+        },
+        "9bf6f71dc7033010408bc8d6f2c2606d": {
+            "name": "Trigger:d3f6f71dc7033010408bc8d6f2c2606d",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2021-10-06 17:51:48",
+            "run_time": "1970-01-02 04:00:00",
+            "time_zone": "",
+            "scope": "e78853e9c3222010b83971e54440dd26"
+        },
+        "9c3f6c6ab7842300616ceb67ee11a93e": {
+            "name": "JWT Key Expiry Notification",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2018-08-23 16:27:09",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "9c408b82730330107ef73bfcfef6a7f0": {
+            "name": "NowMQ Archiver",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2021-10-08 21:48:06",
+            "run_time": "1970-01-01 10:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "9c411d6d5b3100101cf74dc0ab81c71c": {
+            "name": "Process Mining Data Cleanup",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2019-12-18 08:34:14",
+            "run_time": "1970-01-01 00:00:00",
+            "time_zone": "floating",
+            "scope": "global"
+        },
+        "9cfa3714b08f2110f877a6ba15105858": {
+            "name": "Sync Password Reset Enrollment Snapshot Data Monthly",
+            "active": true,
+            "run_type": "monthly",
+            "run_start": "2023-05-23 04:08:36",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "floating",
+            "scope": "global"
+        },
+        "9d0988f8c77300100cbda02922c2603a": {
+            "name": "Item diagnostics job",
+            "active": true,
+            "run_type": "weekly",
+            "run_start": "2020-03-24 05:28:46",
+            "run_time": "1970-01-01 00:00:00",
+            "time_zone": "floating",
+            "scope": "global"
+        },
+        "9e4fc865eb311110bd1e0c73a252289c": {
+            "name": "Clear sessions in Login History table for node failure ",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2022-09-07 08:41:45",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "9f7f7b3b772321106b84a81f7f5a990b": {
+            "name": "Disable ServiceNow Root of Trust",
+            "active": true,
+            "run_type": "once",
+            "run_start": "2023-06-27 21:58:36",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "eae404d3c31320101109046f5e40dd41"
+        },
+        "a060c407c0a8006f0067fef2befb357d": {
+            "name": "Import Set Deleter",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2009-01-04 06:42:22",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "a09576d5c0a8006f0049f301c59f36b0": {
+            "name": "Synchronous Import Set Completer",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2009-01-04 06:42:22",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "a0b3475c73071010f14a063f34f6a78e": {
+            "name": "Auto Resolution ML Training Status Poller",
+            "active": false,
+            "run_type": "periodically",
+            "run_start": "2020-08-31 19:11:28",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "a21f3031dfa0010068c37a0d3df263fc": {
+            "name": "Database Audit",
+            "active": true,
+            "run_type": "monthly",
+            "run_start": "2013-04-07 20:21:04",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "a2ffeed998280610f87755c6b27843e2": {
+            "name": "Populate SC Popular Items",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2024-02-23 11:00:21",
+            "run_time": "1970-01-01 00:00:00",
+            "time_zone": "floating",
+            "scope": "global"
+        },
+        "a3501457ff523210c0f1ffffffffffa3": {
+            "name": "Build RAG Search Suggestions",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2026-01-12 16:58:56",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "a52dad525b621010f8f93eaa3d81c7ce": {
+            "name": "PA - KPI Signals -  Formula Indicator Signals Calculation Job",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2020-08-12 05:30:00",
+            "run_time": "1969-12-31 23:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "a5a3c77f5b131010d033d82d9681c76f": {
+            "name": "Timeout For FDIH Interactive Chats and Atlas Search",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2020-09-26 04:00:00",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "a7633024f5c483100a22c0b3dfa15119": {
+            "name": "Migrate homepages",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "1981-07-15 14:00:00",
+            "run_time": "",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "a7abd2a1ff133010570cffb0653bf163": {
+            "name": "Delete temporary sys_pattern table after upgrade",
+            "active": true,
+            "run_type": "once",
+            "run_start": "2021-10-19 16:07:02",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "a86a5d85ffb032106e26ffffffffff42": {
+            "name": "Usage Insights App Rename Migration",
+            "active": false,
+            "run_type": "periodically",
+            "run_start": "2025-11-01 17:00:00",
+            "run_time": "1969-12-31 22:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "a8824306730330107ef73bfcfef6a704": {
+            "name": "NowMQ Archive Reaper",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2021-10-08 21:57:57",
+            "run_time": "1970-01-01 11:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "a8f76abb7fb01210e5198b2cac86657f": {
+            "name": "UXAAppMigrationJob",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2024-09-29 11:16:55",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "a8f7d78d0bb840f9a77517d1e5cddc88": {
+            "name": "Hardening baseline download Job",
+            "active": false,
+            "run_type": "on_demand",
+            "run_start": "2025-03-23 08:41:32",
+            "run_time": "1970-01-01 12:11:06",
+            "time_zone": "floating",
+            "scope": "a51d46e3f2014110366b10017c5ba675"
+        },
+        "a93b3031dfa0010068c37a0d3df263ef": {
+            "name": "Unix Server Baseline",
+            "active": true,
+            "run_type": "on_demand",
+            "run_start": "2013-04-07 20:04:05",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "a99ca6d680da2210f87739045e445927": {
+            "name": "Trigger:259ca6d680da2210f87739045e445927",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2025-06-25 05:31:39",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "a51d46e3f2014110366b10017c5ba675"
+        },
+        "a9bcdb52b7230010f84dba95de11a96e": {
+            "name": "Scheduled Download of Offline Payload",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2020-03-16 10:00:00",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "a9fb352f7f901210547e39137d866528": {
+            "name": "UXAMigrationJob",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "b4048c109c7075a14eb853b12f61b5cd"
+        },
+        "aa68c404ffff2110d185612a453bf175": {
+            "name": "Licensing Engine",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2023-06-27 22:37:36",
+            "run_time": "1970-01-01 09:00:00",
+            "time_zone": "",
+            "scope": "bcadabf277f311109c62f5f3cb5a992a"
+        },
+        "ab0ca2d3cb3013008c061aeb034c9cc2": {
+            "name": "Upload the benchmark scores",
+            "active": true,
+            "run_type": "on_demand",
+            "run_start": "2018-03-17 20:04:04",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "3ad18693db92220004997878f0b8f516"
+        },
+        "abc8ef4febb52110f4e8dc7ab552284f": {
+            "name": "Populate Clustering stats",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "ada12c13c391311033e04e483c40dda8": {
+            "name": "Set Property for Active User login",
+            "active": true,
+            "run_type": "once",
+            "run_start": "2023-09-20 16:22:17",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "b160fd2953503110a8edddeeff7b1220": {
+            "name": "Customer action activation",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2023-07-27 18:34:12",
+            "run_time": "1970-01-01 02:00:00",
+            "time_zone": "floating",
+            "scope": "global"
+        },
+        "b2522ef0eb32010045e1a5115206fefa": {
+            "name": "Password Reset Enrollment Snapshot",
+            "active": false,
+            "run_type": "daily",
+            "run_start": "2013-07-23 21:22:05",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "b3219d7777720210f9db10ed9f5a997e": {
+            "name": "CMDB Query Builder Suggested Relations Computation Job",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2024-06-21 18:52:16",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "b3d2b1e2771121109650350bee5a99da": {
+            "name": "Subscription Entitlement Download",
+            "active": false,
+            "run_type": "daily",
+            "run_start": "2023-03-03 18:10:34",
+            "run_time": "1970-01-01 12:00:00",
+            "time_zone": "",
+            "scope": "bcadabf277f311109c62f5f3cb5a992a"
+        },
+        "b4ad6a247313330023658f758bf6a7e0": {
+            "name": "Clean up converted documents generated by PDF Generation Utilities plugin",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2019-08-13 06:06:58",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "b4fc1a4f7363601026f6aa114df6a796": {
+            "name": "CMDB Data Manager - Stale Task Cleaner",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2021-04-20 22:08:01",
+            "run_time": "1970-01-01 09:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "b7571b39ffe432106f9dffffffffff69": {
+            "name": "[GlideOneExtend] Moving stuck one extend batch runs to terminal state",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "b7a34f8153101010d69cddeeff7b1269": {
+            "name": "Analytics - Register Analytics Buckets with no Authentication Settings",
+            "active": false,
+            "run_type": "periodically",
+            "run_start": "2020-04-19 10:14:11",
+            "run_time": "1970-01-01 09:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "b7d4f0280f220010967863cda8767e7b": {
+            "name": "Asset - Create asset delayed sync",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2020-01-01 00:00:00",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "b9a317e9533130106b86ddeeff7b12cd": {
+            "name": "ITAM: Important Action Eval - Daily",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2020-12-31 18:30:00",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "4d8039d0533130106b86ddeeff7b128b"
+        },
+        "b9af85d2c37213009cbbdccdf3d3ae95": {
+            "name": "Time Out Abandoned VA Conversations",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2018-06-21 20:52:00",
+            "run_time": "1970-01-01 09:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "b9b0cfad2b243650364af79eb891bfb3": {
+            "name": "KB Open Prompt weekly report",
+            "active": true,
+            "run_type": "weekly",
+            "run_start": "2025-10-12 19:25:25",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "US/Pacific",
+            "scope": "48e5dbcb9f6f1210ecf142a4ba0a1c84"
+        },
+        "ba0871a6cb543200cab07f1b734c9c37": {
+            "name": "CMDB Health Dashboard - Relationship Compliance Processor",
+            "active": false,
+            "run_type": "daily",
+            "run_start": "2015-12-07 19:29:28",
+            "run_time": "1970-01-01 11:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "ba2b197dff00221086da063e823bf16d": {
+            "name": "Clean up compared documents genereated by Document Comparison",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2025-03-10 17:18:05",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "ba4e8a22c3c20110af4da585b140dd5c": {
+            "name": "Prevent access to  over-permissive KMF Password2 submodule",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2022-03-08 10:35:09",
+            "run_time": "1970-01-01 07:30:00",
+            "time_zone": "GMT",
+            "scope": "global"
+        },
+        "bd1071060b2003001e684ac3b6673ae7": {
+            "name": "Run PA Diagnostics",
+            "active": true,
+            "run_type": "weekly",
+            "run_start": "2017-08-14 12:02:49",
+            "run_time": "1970-01-01 22:59:59",
+            "time_zone": "",
+            "scope": "b2881e900b3003001e684ac3b6673a93"
+        },
+        "bd6b944a77a433004d4eb5b2681061f0": {
+            "name": "Update Recorded At for Update XML",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2019-04-02 18:26:16",
+            "run_time": "1970-01-01 10:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "be1ba3f5ff253210a853ffffffffff90": {
+            "name": "Download experiments on upgrade",
+            "active": false,
+            "run_type": "periodically",
+            "run_start": "2025-12-02 10:11:53",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "fa5da291ffb32210ff52ffffffffff42"
+        },
+        "bfebe2d3cb3013008c061aeb034c9c04": {
+            "name": "Download the benchmark scores",
+            "active": true,
+            "run_type": "on_demand",
+            "run_start": "2018-03-17 20:03:32",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "3ad18693db92220004997878f0b8f516"
+        },
+        "bff7b7629f3002008f97b89a442e70d3": {
+            "name": "Clear catalog top requested item cache",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2015-06-25 12:44:39",
+            "run_time": "1970-01-01 06:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "c0089a73ff532210f079ffffffffff47": {
+            "name": "Generate topic path translations",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2025-08-18 12:55:22",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "c08abe24ffac621002a7ffffffffff56": {
+            "name": "Revoke access for all apps",
+            "active": true,
+            "run_type": "weekly",
+            "run_start": "2022-08-19 18:28:01",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "1e95bac2738f001001b566b90ff6a7cd"
+        },
+        "c10ee45cffdc21108342c7d013cb146e": {
+            "name": "Update case task fields",
+            "active": true,
+            "run_type": "on_demand",
+            "run_start": "2023-01-05 20:20:36",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "51d811fad7223100b7490ee60e61034f"
+        },
+        "c201ab50431102103ca9a661c9b8f2b9": {
+            "name": "Disable Email Address Internationalization",
+            "active": true,
+            "run_type": "on_demand",
+            "run_start": "2024-03-28 18:47:50",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "c2507a0347201200c3dad7527c9a715d": {
+            "name": "API Monthly Stats",
+            "active": true,
+            "run_type": "monthly",
+            "run_start": "2015-12-30 06:44:01",
+            "run_time": "1970-01-01 10:27:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "c42c147477624210ee0d0cc2fa5a9919": {
+            "name": "CMDB Workspace CIs Processed Via IRE On Source Batch Job",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2024-05-30 21:02:58",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "c8ab76825371201032b7ddeeff7b1280"
+        },
+        "c46fb31eb3103300290ea943c6a8dc4b": {
+            "name": "Reset skill category code and path",
+            "active": true,
+            "run_type": "on_demand",
+            "run_start": "2019-03-22 19:25:05",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "c60b429c0f28411024b63ab1df767e00": {
+            "name": "Multisource Dashboard Analytics Population",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2021-12-16 21:00:23",
+            "run_time": "1970-01-01 23:30:00",
+            "time_zone": "floating",
+            "scope": "c8ab76825371201032b7ddeeff7b1280"
+        },
+        "c6d2c87d0f0410102841244ac4767eac": {
+            "name": "Clean Playbook Snapshot Table",
+            "active": false,
+            "run_type": "daily",
+            "run_start": "2020-04-08 17:51:25",
+            "run_time": "1970-01-01 02:00:00",
+            "time_zone": "floating",
+            "scope": "global"
+        },
+        "c7f55226b7a07210cf36f5108e11a96f": {
+            "name": "Activity timer heartbeat",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2025-10-15 19:00:00",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "53cb6facaf2b737ade697ea9cba6b6e0"
+        },
+        "c8640dccd72322005aed4ebfae610326": {
+            "name": "[Reporting]  Import Tables expired",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2016-12-02 14:30:02",
+            "run_time": "1970-01-01 01:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "c9b5eb2753d43210e86146e980f7b434": {
+            "name": "PADatasnapshotPersonalThresholdCleanup",
+            "active": true,
+            "run_type": "monthly",
+            "run_start": "",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "c9e1f226ef102210a6d9201c7e97d734": {
+            "name": "Update Currency Conversion Rates",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2025-03-01 05:00:00",
+            "run_time": "1970-01-01 17:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "c9ebf1c253223110a52fddeeff7b1265": {
+            "name": "ROT - Generate update set of records to migrate signatures using customer certificate",
+            "active": true,
+            "run_type": "once",
+            "run_start": "2023-11-18 05:02:39",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "ca371b5b731023005e4a73a24ff6a7ba": {
+            "name": "ScheduleBenchmarkUpload",
+            "active": true,
+            "run_type": "monthly",
+            "run_start": "2018-09-07 22:52:25",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "3ad18693db92220004997878f0b8f516"
+        },
+        "ca5b273aebb23010506f7558b5522889": {
+            "name": "Cleanup URL Unfurl Cache",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2021-09-28 22:36:06",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "cba0706db75011104eed4643ae11a916": {
+            "name": "SitemapPurgeScheduler",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2022-06-24 21:33:28",
+            "run_time": "1970-01-01 23:59:00",
+            "time_zone": "floating",
+            "scope": "26329d35f52d4510f877c32d14052947"
+        },
+        "cbba0f0a9f820200d3921a1cf67fcfda": {
+            "name": "Server services statistics",
+            "active": true,
+            "run_type": "on_demand",
+            "run_start": "2015-08-24 23:28:26",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "cbf325f3b73021109d592bc1de11a93d": {
+            "name": "Turn on Code Signing Certificate Validation Property",
+            "active": true,
+            "run_type": "once",
+            "run_start": "2023-02-10 17:46:31",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "eae404d3c31320101109046f5e40dd41"
+        },
+        "cc311fb3b73d1110ffe5ef54ce11a9c2": {
+            "name": "Subscribe Teams App",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2022-09-14 22:35:16",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "53b1b0e79761011018b2fa98c253afcc"
+        },
+        "cd42112e737210109cc5aa114df6a701": {
+            "name": "Backup bulk populate lifecycle fields",
+            "active": false,
+            "run_type": "daily",
+            "run_start": "2020-08-26 00:26:31",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "ce1be572733230107d804c9885f6a7ae": {
+            "name": "Analytics - Generate User Hashes",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2021-09-28 13:15:47",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "cf9916537f7012107629a6470d866529": {
+            "name": "Collab Chat - Notify Unread Messages",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2024-09-27 20:57:19",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "GMT",
+            "scope": "53b1b0e79761011018b2fa98c253afcc"
+        },
+        "cfbb4ba1d7001200c1ed0fbc5e6103a6": {
+            "name": "CMDB Health Dashboard - Completeness Score Calculation",
+            "active": false,
+            "run_type": "daily",
+            "run_start": "2015-11-30 20:21:24",
+            "run_time": "1970-01-01 11:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "d0228dc6c3f48310b4e13e1d05013105": {
+            "name": "CICD adhoc schedule",
+            "active": true,
+            "run_type": "on_demand",
+            "run_start": "2026-05-13 05:56:10",
+            "run_time": "",
+            "time_zone": "",
+            "scope": "1e3ea402c3748310b4e13e1d050131de"
+        },
+        "d1431642c31220102c5b4e483c40dde6": {
+            "name": "WebAuthenticationMetadataRefresh",
+            "active": false,
+            "run_type": "daily",
+            "run_start": "2021-02-14 15:33:19",
+            "run_time": "1970-01-01 11:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "d1bc736c0a0a0b2b002c3442345d6824": {
+            "name": "Asynchronous Import Set Transformer",
+            "active": false,
+            "run_type": "daily",
+            "run_start": "2009-01-04 06:42:22",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "d35616001b212000b8ee9e3bcc0713bd": {
+            "name": "Verify active instance clone status",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2012-04-17 16:54:15",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "d3d82b91d7302300a7cd4251ce6103cf": {
+            "name": "Analyze PA scores and PA snapshot tables",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2018-09-26 15:33:03",
+            "run_time": "1969-12-31 23:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "d4a14b7c935f12100a004c528489187a": {
+            "name": "Machine Identity Score Computation",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2025-01-22 12:04:19",
+            "run_time": "1970-01-01 00:01:00",
+            "time_zone": "floating",
+            "scope": "global"
+        },
+        "d516562c43ec1210e78f39603ab8f2b2": {
+            "name": "PopulateDuplicate Task Group Daily",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2024-09-06 21:22:54",
+            "run_time": "1970-01-01 12:00:00",
+            "time_zone": "",
+            "scope": "c8ab76825371201032b7ddeeff7b1280"
+        },
+        "d5dad6b8733111107d804c9885f6a738": {
+            "name": "Analytics - UX Metrics Apps Registration",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2022-09-05 10:56:00",
+            "run_time": "1969-12-31 18:33:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "d67d860377eb41105679bcc8ca5a99ba": {
+            "name": "Usage Insights - Events Processing Scheduled Job",
+            "active": false,
+            "run_type": "periodically",
+            "run_start": "2022-05-20 13:22:42",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "d811ead0c33003001ca5b348b1d3ae23": {
+            "name": "Remove scores and snapshots duplicates",
+            "active": true,
+            "run_type": "on_demand",
+            "run_start": "2017-08-21 15:23:07",
+            "run_time": "1969-12-31 23:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "d8698b183b34030037556b4ee3efc467": {
+            "name": "Targeted Communications Recepients Refresh",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2017-08-21 18:19:15",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "0fdd6483d72302004f1e82285e61033a"
+        },
+        "d9b0a18d53c32210d80addeeff7b1202": {
+            "name": "Clear Impersonation Sessions for Node Failures",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2025-07-28 09:34:48",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "d9e13920c30102000f511624a1d3aeb5": {
+            "name": "Service Mapping - check for changes in topologies",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2015-07-01 08:06:36",
+            "run_time": "1969-12-31 22:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "da2e5f47b3a13200715ca943c6a8dcdb": {
+            "name": "BenchmarkUserPasswordReset",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2017-03-21 19:29:17",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "3ad18693db92220004997878f0b8f516"
+        },
+        "dafaa231b7862210e1a480408e11a9b4": {
+            "name": "Remove CMDB Roles from ITIL roles and Add CUD access to sn_cmdb_admin/sn_cmdb_editor roles",
+            "active": true,
+            "run_type": "on_demand",
+            "run_start": "2025-06-11 05:51:56",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "dc406f118de15110f877187fb14735c5": {
+            "name": "SC - Calculate Impact Score",
+            "active": true,
+            "run_type": "on_demand",
+            "run_start": "2022-08-25 19:00:35",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "a51d46e3f2014110366b10017c5ba675"
+        },
+        "dc9ee55053213010c8d4ddeeff7b12cc": {
+            "name": "Migrate Goal, Strategy, and Work item data to the Goal Framework and related Planning item tables",
+            "active": true,
+            "run_type": "on_demand",
+            "run_start": "2021-07-20 15:47:39",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "11879041532030103913ddeeff7b12d8"
+        },
+        "dd3716460b3320101af90bdb35673a3a": {
+            "name": "Licensing Hardware Count",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2021-04-30 05:24:42",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "df323c72bf320100eae043fada07394b": {
+            "name": "Data Center Zone Usage",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2013-07-29 18:20:05",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "df6688b4535131100e67ddeeff7b12d1": {
+            "name": "Check For Instant Alter Capability",
+            "active": false,
+            "run_type": "daily",
+            "run_start": "2023-09-12 19:58:32",
+            "run_time": "1970-01-01 09:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "dfced6f7ff5122104278ffffffffffc0": {
+            "name": "Delete Orphan CI Identifiers",
+            "active": true,
+            "run_type": "weekly",
+            "run_start": "2025-05-11 03:19:30",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "dff063650f401010967863cda8767efd": {
+            "name": "Asset - Delete Asset Job Logs",
+            "active": true,
+            "run_type": "monthly",
+            "run_start": "2020-04-08 15:23:30",
+            "run_time": "1970-01-01 00:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "e00d64e3ffce2210418cffffffffff36": {
+            "name": "FixIdentityType",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2025-06-16 07:10:57",
+            "run_time": "1970-01-01 00:05:00",
+            "time_zone": "floating",
+            "scope": "global"
+        },
+        "e03713a4a3100210385a2780f31e61ce": {
+            "name": "Playbook Auto Archive Scheduler",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2024-02-08 19:00:00",
+            "run_time": "1970-01-01 00:00:00",
+            "time_zone": "floating",
+            "scope": "1293c996ad48c7d88400c13afef3cdff"
+        },
+        "e119e5b267131010526aecccb585efc7": {
+            "name": "API Access policy monthly report",
+            "active": true,
+            "run_type": "monthly",
+            "run_start": "2020-09-20 17:16:05",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "US/Pacific",
+            "scope": "global"
+        },
+        "e13b44733b140300c68fe9b534efc4a7": {
+            "name": "CaseDataMigrationForCaseReports",
+            "active": true,
+            "run_type": "on_demand",
+            "run_start": "2017-08-07 04:55:44",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "51d811fad7223100b7490ee60e61034f"
+        },
+        "e1790ff543ae0210d1e0fdb79fb8f2db": {
+            "name": "ML Cluster Detail purge",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "e1c334f67f7302105b8efab62d8665ff": {
+            "name": "CMDBCumulativeDistribution",
+            "active": true,
+            "run_type": "on_demand",
+            "run_start": "2024-08-07 07:12:38",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "e1cf7770d70322005aed4ebfae610364": {
+            "name": "[Reporting] Clean Invalid tables imported from external sources",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2016-11-10 15:32:50",
+            "run_time": "1970-01-01 00:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "e1dc6450772b1010d17e20089a10611a": {
+            "name": "Populate AWA  Stats",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2020-09-25 04:43:45",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "e1eb7f610f23101051e5721b68767e9d": {
+            "name": "Populate TTR Value",
+            "active": true,
+            "run_type": "on_demand",
+            "run_start": "2020-09-29 17:00:48",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "51d811fad7223100b7490ee60e61034f"
+        },
+        "e2cc44a10fec10105bc5e7b1d4767eab": {
+            "name": "CSM-Data-Fix - Tag external users with possible non-intentional internal role assignment",
+            "active": true,
+            "run_type": "on_demand",
+            "run_start": "2020-05-02 20:27:46",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "e34ba6abff53321054dfffffffffff0e": {
+            "name": "[GlideOneExtend] Rotate Instance Secrets",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2026-03-04 02:00:00",
+            "run_time": "1970-01-01 02:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "e39e09697f51021032d293f10d8665a9": {
+            "name": "Cleanup attachments created during NowLLM inference",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2024-04-01 05:20:33",
+            "run_time": "1970-01-01 00:00:00",
+            "time_zone": "floating",
+            "scope": "global"
+        },
+        "e3c5a28aefe20210cc48bba98d97d721": {
+            "name": "CMDB Data Manager - Cleanup Deleted Polices",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2024-06-04 04:16:55",
+            "run_time": "1970-01-01 09:00:00",
+            "time_zone": "",
+            "scope": "c8ab76825371201032b7ddeeff7b1280"
+        },
+        "e49f737bc7222010580d45ece8c260a8": {
+            "name": "Docker Service Cleanup Job",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2021-03-04 20:11:33",
+            "run_time": "1970-01-01 00:00:00",
+            "time_zone": "floating",
+            "scope": "global"
+        },
+        "e4a387f30f1010105bc5e7b1d4767e4a": {
+            "name": "CSM-Data-Fix - Fix external users with possible intentional internal role assignments",
+            "active": true,
+            "run_type": "on_demand",
+            "run_start": "2020-04-27 23:17:16",
+            "run_time": "1970-01-01 00:00:00",
+            "time_zone": "floating",
+            "scope": "global"
+        },
+        "e4f2dda2ff01021067864ee9453bf16f": {
+            "name": "Flow Designer Delete Old Preview Flows",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2024-03-22 07:00:00",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "e5895160c3010110acfce1018d40dd2c": {
+            "name": "On Demand Job",
+            "active": true,
+            "run_type": "on_demand",
+            "run_start": "2022-01-11 08:33:57",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "e6efc28753e11110dd8eddeeff7b12ae": {
+            "name": "Clear comparison data",
+            "active": true,
+            "run_type": "weekly",
+            "run_start": "2022-08-30 23:38:57",
+            "run_time": "1970-01-01 02:00:00",
+            "time_zone": "floating",
+            "scope": "a51d46e3f2014110366b10017c5ba675"
+        },
+        "e7627fae4f2111103ff6502723ce0b49": {
+            "name": "SOAP API access policy monthly report",
+            "active": true,
+            "run_type": "monthly",
+            "run_start": "2022-08-29 17:32:24",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "US/Pacific",
+            "scope": "global"
+        },
+        "e89812d177822110085c067f5b5a99b2": {
+            "name": "De-Duplication: Template Scheduler",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2023-04-06 06:29:56",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "ea804ac70b613110985f8a8db777b25f": {
+            "name": "What's new content weekly refresh",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2023-10-02 14:54:05",
+            "run_time": "1970-01-01 00:00:00",
+            "time_zone": "",
+            "scope": "cb08e377eb9071106fb3951ff15228b8"
+        },
+        "eb053c0c93102210ea5f01ba91891866": {
+            "name": "Populate ML Solution Alert Stats",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2025-03-10 10:57:29",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "ec6e0dd24302111016b23f28fab8f2c9": {
+            "name": "Delete inactive prediction feedback records ",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2022-09-22 07:28:35",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "ecf54419c32101102c5b4e483c40dd00": {
+            "name": "Delete Revoked and Unregistered Device Registration",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2022-02-07 06:55:38",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "eda94f3dc3401200ab8f9624a1d3ae2f": {
+            "name": "Update svc_ci_assoc and Error Counters",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2015-11-30 22:00:00",
+            "run_time": "1969-12-31 22:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "ee39631bff08321049cdffffffffff0e": {
+            "name": "Generate federated Id for roles if empty",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2025-09-28 12:23:02",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "floating",
+            "scope": "global"
+        },
+        "eeea423a3bc01300ce8a4d72f3efc4b3": {
+            "name": "Time zone data migration for cases",
+            "active": true,
+            "run_type": "on_demand",
+            "run_start": "2018-02-06 21:35:13",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "51d811fad7223100b7490ee60e61034f"
+        },
+        "efcee8db73020110491d235f04f6a76b": {
+            "name": "Calculate Standard Change Template and Template Version statistics",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2022-03-10 11:33:24",
+            "run_time": "1970-01-01 02:00:00",
+            "time_zone": "floating",
+            "scope": "global"
+        },
+        "efe37e67ff03321004e4ffffffffff39": {
+            "name": "ITSM License Control",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2026-02-20 06:14:22",
+            "run_time": "1970-01-01 23:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "f0f7019853152610129bddeeff7b1241": {
+            "name": "CMDB Workspace Cert Instance Aggregate Data Batch Job",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2025-04-30 00:01:19",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "c8ab76825371201032b7ddeeff7b1280"
+        },
+        "f399ee32bf1301008283b8045d0739a0": {
+            "name": "Outage Data Update",
+            "active": true,
+            "run_type": "on_demand",
+            "run_start": "2013-08-23 23:33:03",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "f4b3decd832616107b90db2e922bc0f6": {
+            "name": "Custom Table Inventory Cleanup",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2024-12-16 20:35:03",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "bcadabf277f311109c62f5f3cb5a992a"
+        },
+        "f66df211bf0211007c94c0647e0739e3": {
+            "name": "UPS Audit (3 days)",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2013-12-09 23:52:25",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "f6f7adf2537210107a1cddeeff7b12b1": {
+            "name": "Auto Resolution Scheduled Job",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2020-08-26 20:39:52",
+            "run_time": "1970-01-01 08:05:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "f7121cc55b531010d033d82d9681c746": {
+            "name": "Update ServiceNow NLU Supported Languages",
+            "active": true,
+            "run_type": "weekly",
+            "run_start": "2020-09-15 00:26:46",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "f713cfd2ff212110de37cd6bd53bf14e": {
+            "name": "IAMSync manage the message queue",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2018-10-04 22:48:38",
+            "run_time": "1970-01-01 10:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "f83f1af8c760320003fa9c569b97634b": {
+            "name": "MIDUserConnectivity",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2017-01-01 22:05:05",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "f8ee0c765b313010b0703a543381c7f5": {
+            "name": "PA HSQLFileTimeStampModifier",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2021-08-09 13:30:08",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "f96bfe9417743110b99cd70bad595140": {
+            "name": "MID Secure Audit Log Cleanup",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2023-08-17 23:20:53",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "fa6269575313130049d5ddeeff7b1280": {
+            "name": "Schema Validator - On Demand Validator",
+            "active": true,
+            "run_type": "on_demand",
+            "run_start": "2018-07-19 21:19:18",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "fb9d0d35ebd36110e4aaf288b552280f": {
+            "name": "ML Update Inactive Solution Cleanup",
+            "active": true,
+            "run_type": "weekly",
+            "run_start": "2023-06-08 17:37:55",
+            "run_time": "1969-12-31 18:30:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "fba0ad4073101010ee4dd3c72bf6a79c": {
+            "name": "Calculate App Services Missing Data",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2020-03-24 04:55:37",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "fc4f542b77d11110a956b9999a5a9938": {
+            "name": "Refresh access for all apps",
+            "active": true,
+            "run_type": "weekly",
+            "run_start": "2022-08-19 18:28:01",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "1e95bac2738f001001b566b90ff6a7cd"
+        },
+        "fcd3f74dff1b7110684fffffffffffb7": {
+            "name": "MIF Sync Up Job",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2023-12-22 17:59:48",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "47401582b7a6b9501e8f827b9e11a913"
+        },
+        "fd030171dfa0010068c37a0d3df263c7": {
+            "name": "Critical Business Services",
+            "active": true,
+            "run_type": "weekly",
+            "run_start": "2013-04-07 20:38:13",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "fd6de0d0c7111110967a34c91dc260b4": {
+            "name": "Generate Virtual Agent Email Notifications",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2022-08-09 17:09:33",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "fe6668f35baa01101e2bcf888581c739": {
+            "name": "Reconcile Topic Control Usage for LUA",
+            "active": true,
+            "run_type": "weekly",
+            "run_start": "2022-04-05 20:45:06",
+            "run_time": "1970-01-01 08:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "fe8fbdaf73300010952d31d7caf6a740": {
+            "name": "Scripted Import Set Deleter",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2009-01-04 06:42:22",
+            "run_time": "1970-01-01 09:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "ff1681dcd76322005aed4ebfae6103e4": {
+            "name": "[Reporting] Import Tables notification close to expire",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2016-12-02 14:30:02",
+            "run_time": "1970-01-01 02:00:00",
+            "time_zone": "",
+            "scope": "global"
+        },
+        "ff565be6773120105d7b3882a9106165": {
+            "name": "Timeout unprocessed CCIF Messages with message order true",
+            "active": true,
+            "run_type": "periodically",
+            "run_start": "2020-12-31 18:30:00",
+            "run_time": "1970-01-01 00:00:00",
+            "time_zone": "floating",
+            "scope": "global"
+        },
+        "ff57e13ac3380b10b4e13e1d050131b1": {
+            "name": "CICD adhoc schedule",
+            "active": true,
+            "run_type": "on_demand",
+            "run_start": "2026-05-15 16:34:19",
+            "run_time": "",
+            "time_zone": "",
+            "scope": "477baa9b26b949d7a9c7c6415e6709b6"
+        },
+        "ffaecf76ff960110456d766cf43bf13d": {
+            "name": "CMDB Data Manager Delete Related Entry Policy Processor",
+            "active": true,
+            "run_type": "daily",
+            "run_start": "2021-01-29 23:41:35",
+            "run_time": "1970-01-01 11:00:00",
+            "time_zone": "",
+            "scope": "global"
+        }
+    }
+}

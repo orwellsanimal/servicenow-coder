@@ -1,0 +1,1632 @@
+{
+    "$schema": "../schemas/catalog-items.schema.json",
+    "_source": "sc_cat_item",
+    "_description": "Service Catalog items on the instance.",
+    "_exported_at": "2026-05-15T18:15:54.094143+00:00",
+    "items": {
+        "00766c3c67271300dbfdbb2d07415ae8": {
+            "name": "Manage Knowledge Ownership Group",
+            "short_description": "Catalog item for managing knowledge ownership group",
+            "active": true,
+            "category": "",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "011f117a9f3002002920bde8132e7020": {
+            "name": "Retire a Standard Change Template",
+            "short_description": "",
+            "active": true,
+            "category": "00728916937002002dcef157b67ffb6d",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "01205b180a0a0b3000b6efd641d24b75": {
+            "name": "Grant role delegation rights within a group",
+            "short_description": "",
+            "active": true,
+            "category": "496a3a7e0a0a0bc00089b39df14eb56e",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "0317ba9d47120510f53d37d2846d43bb": {
+            "name": "Request email alias",
+            "short_description": "Request for email alias",
+            "active": true,
+            "category": "22555319db0150104327198d1396195c",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "039c516237b1300054b6a3549dbe5dfc": {
+            "name": "Access",
+            "short_description": "Microsoft Access",
+            "active": true,
+            "category": "2809952237b1300054b6a3549dbe5dd4",
+            "price": "139.99",
+            "recurring_price": "0"
+        },
+        "03e7c02c471e0950f53d37d2846d433c": {
+            "name": "Cisco jabber softphone",
+            "short_description": "Request for cisco jabber softphone",
+            "active": true,
+            "category": "109cdff8c6112276003b17991a09ad65",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "04b7e94b4f7b4200086eeed18110c7fd": {
+            "name": "Standard Laptop",
+            "short_description": "Lenovo - Carbon x1",
+            "active": true,
+            "category": "d258b953c611227a0146101fb1be7c31",
+            "price": "1100",
+            "recurring_price": "100"
+        },
+        "060f3afa3731300054b6a3549dbe5d3e": {
+            "name": "Apple iPad 3",
+            "short_description": "Apple iPad 3",
+            "active": false,
+            "category": "b06546f23731300054b6a3549dbe5dd8",
+            "price": "600",
+            "recurring_price": "0"
+        },
+        "07d8173e9756cd1021983d1e6253af1d": {
+            "name": "Pixel 4a",
+            "short_description": "Request for pixel 4a",
+            "active": true,
+            "category": "d68eb4d637b1300054b6a3549dbe5db2",
+            "price": "529",
+            "recurring_price": "0"
+        },
+        "0c56a1ea4fc3c2c0960f95bd0210c739": {
+            "name": "Cisco Jabber 10.5",
+            "short_description": "Collaborate Anywhere on Any Device with Cisco\n\t\t\tJabber\n\t\t",
+            "active": false,
+            "category": "2809952237b1300054b6a3549dbe5dd4",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "0c61f0c510247200964f77ffeec6c499": {
+            "name": "Samsung Galaxy S7 Edge",
+            "short_description": "Samsung Galaxy S7 Edge",
+            "active": false,
+            "category": "d68eb4d637b1300054b6a3549dbe5db2",
+            "price": "669.99",
+            "recurring_price": "0"
+        },
+        "0cf7477237153000158bbfc8bcbe5dec": {
+            "name": "Google Nexus 7",
+            "short_description": "Google Nexus 7",
+            "active": false,
+            "category": "b06546f23731300054b6a3549dbe5dd8",
+            "price": "199.99",
+            "recurring_price": "0"
+        },
+        "0d08837237153000158bbfc8bcbe5d02": {
+            "name": "Apple iPhone 5",
+            "short_description": "Apple iPhone 5",
+            "active": false,
+            "category": "d68eb4d637b1300054b6a3549dbe5db2",
+            "price": "599.99",
+            "recurring_price": "30"
+        },
+        "0e046da64fc3c2c0960f95bd0210c706": {
+            "name": "Adobe Acrobat Pro",
+            "short_description": "Create, edit or convert PDF files\n\t\t",
+            "active": true,
+            "category": "2809952237b1300054b6a3549dbe5dd4",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "10a146fbc611227600d300edec66b1c2": {
+            "name": "Finishing Services",
+            "short_description": "Professional binding and finishing for documents\n\t\t",
+            "active": true,
+            "category": "109f0438c6112276003ae8ac13e7009d",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "10a1b6e6c6112276010acf26cf16069a": {
+            "name": "Document Creation",
+            "short_description": "Document creation and design services\n\t\t",
+            "active": true,
+            "category": "109f0438c6112276003ae8ac13e7009d",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "10a2f5dfc6112276018db58138c7a1e0": {
+            "name": "Paper and Supplies",
+            "short_description": "Order office supplies such as paper, stationery and\n\t\t\tcomputer supplies\n\t\t",
+            "active": true,
+            "category": "109cdff8c6112276003b17991a09ad65",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "10a82f62c6112276004333593d03b11f": {
+            "name": "Videoconferencing",
+            "short_description": "Setup inter-office or external videoconferencing\n\t\t",
+            "active": false,
+            "category": "109cdff8c6112276003b17991a09ad65",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "10a99b62c6112276010cdf59bc6d2bd2": {
+            "name": "Conference Room Reservations",
+            "short_description": "Reserve conference rooms and notify participants\n\t\t",
+            "active": true,
+            "category": "d25201c8c611227a00667da13c6d33af",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "10b44eb6c6112276005acf13b5c13274": {
+            "name": "Packaging and Shipping",
+            "short_description": "Package and Ship inter-office or to external\n\t\t\taddresses\n\t\t",
+            "active": true,
+            "category": "109cdff8c6112276003b17991a09ad65",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "10cd3b7dc61122760086506a08b875ea": {
+            "name": "Cubicle Modifications",
+            "short_description": "Cubicle creation, modification, and repair services\n\t\t",
+            "active": true,
+            "category": "d2f716fcc611227a015a142fa0b262c1",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "10d156ecc6112276003e090fdc945083": {
+            "name": "Request for Backup",
+            "short_description": "Backup system, data files or database\n\t\t",
+            "active": true,
+            "category": "109f0438c6112276003ae8ac13e7009d",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "10d38a4fc611227601125facd251cad2": {
+            "name": "Office Keys",
+            "short_description": "Request to get a new one",
+            "active": true,
+            "category": "d2f7cae4c611227a018ddc481b34e099",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "10d3fcf8c61122760123e82b282c0c50": {
+            "name": "Request Security Escort",
+            "short_description": "Request a security escort",
+            "active": true,
+            "category": "d2f7cae4c611227a018ddc481b34e099",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "10d69689c611227600ffeba41c664824": {
+            "name": "Install Software",
+            "short_description": "Request for software installation service\n\t\t",
+            "active": true,
+            "category": "109f0438c6112276003ae8ac13e7009d",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "10d93c30c6112276016f9a31ec4575d6": {
+            "name": "Copy Service",
+            "short_description": "Request for repro-graphics services\n\t\t",
+            "active": false,
+            "category": "",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "10e0e1cfc611227600fe8153b084b5b9": {
+            "name": "Web Conferencing",
+            "short_description": "Request to setup web conferencing\n\t\t",
+            "active": false,
+            "category": "109f0438c6112276003ae8ac13e7009d",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "10ec16b3c61122760021a44ec7746bb3": {
+            "name": "Office Desktop",
+            "short_description": "Dell Desktop",
+            "active": false,
+            "category": "d258b953c611227a0146101fb1be7c31",
+            "price": "1200",
+            "recurring_price": "0"
+        },
+        "10ed012dc61122760128899a100f6ae9": {
+            "name": "Office Printer",
+            "short_description": "HP Laserjet 4240n",
+            "active": false,
+            "category": "5d643c6a3771300054b6a3549dbe5db0",
+            "price": "999",
+            "recurring_price": "0"
+        },
+        "10f110aec611227601fbe1841e7e417c": {
+            "name": "Loaner Laptop",
+            "short_description": "Short term, while computer is repaired/imaged. Waiting for computer order, special projects, etc. Training, special events, check-in process",
+            "active": true,
+            "category": "d258b953c611227a0146101fb1be7c31",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "125ce63ce4001410f877ce457cda6b55": {
+            "name": "Register a Business Application",
+            "short_description": "Register a new business application into Enterprise Architecture",
+            "active": true,
+            "category": "31bbeaf8e4001410f877ce457cda6be2",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "1451a27297c2019021983d1e6253af13": {
+            "name": "Sketch",
+            "short_description": "Request a sketch",
+            "active": true,
+            "category": "2809952237b1300054b6a3549dbe5dd4",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "173d429881df2500772e95d75e28626e": {
+            "name": "3M Privacy Filter - MacBook Pro",
+            "short_description": "Privacy Filter",
+            "active": true,
+            "category": "2c0b59874f7b4200086eeed18110c71f",
+            "price": "42.23",
+            "recurring_price": "0"
+        },
+        "186d917a6fab7980575967ddbb3ee4f2": {
+            "name": "New Email Account",
+            "short_description": "New Email Creation",
+            "active": true,
+            "category": "c3d3e02b0a0a0b12005063c7b2fa4f93",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "198336da4fff0200086eeed18110c7a8": {
+            "name": "Table Index",
+            "short_description": "Do you need to index a database table?\n\t\t",
+            "active": true,
+            "category": "109f0438c6112276003ae8ac13e7009d",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "198d4d380a0a0b27007da2fbd5ccf5c2": {
+            "name": "User Facade",
+            "short_description": "User Facade",
+            "active": false,
+            "category": "e15706fc0a0a0aa7007fc21e1ab70c2f",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "1bc632740a0a0b1f006acf4eae5fce32": {
+            "name": "Delegate roles to group member",
+            "short_description": "",
+            "active": true,
+            "category": "496a3a7e0a0a0bc00089b39df14eb56e",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "1d7e0b51186a1d001017ed13c02bccd6": {
+            "name": "Standard 24\" Monitor",
+            "short_description": "TUV-certified Monitor Has Flicker-free Screen With ComfortView Resolution - 1920 x 1080 pixels",
+            "active": true,
+            "category": "2c0b59874f7b4200086eeed18110c71f",
+            "price": "292.28",
+            "recurring_price": "0"
+        },
+        "1e01f08ac0a801070187b08d81c0845c": {
+            "name": "Sample Item",
+            "short_description": "Sample Variables",
+            "active": false,
+            "category": "",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "22089a2d53002300afffddeeff7b125f": {
+            "name": "Change Agent Capacity (Service Channel)",
+            "short_description": "",
+            "active": true,
+            "category": "",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "25110912372211003e7d40ed9dbe5dd6": {
+            "name": "Request Developer Project Equipment",
+            "short_description": "Request hardware and software to support a\n\t\t\tdevelopment project\n\t\t",
+            "active": true,
+            "category": "",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "26c5d7b29756cd1021983d1e6253af9e": {
+            "name": "Galaxy Note 20",
+            "short_description": "Request for Galaxy Note 20",
+            "active": true,
+            "category": "d68eb4d637b1300054b6a3549dbe5db2",
+            "price": "599",
+            "recurring_price": "0"
+        },
+        "29a39e830a0a0b27007d1e200ad52253": {
+            "name": "Password Reset",
+            "short_description": "Request a reset of a password for a service or an\n\t\t\tapplication.",
+            "active": true,
+            "category": "e15706fc0a0a0aa7007fc21e1ab70c2f",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "2ab7077237153000158bbfc8bcbe5da9": {
+            "name": "Apple MacBook Pro 15\"",
+            "short_description": "Apple MacBook Pro",
+            "active": true,
+            "category": "d258b953c611227a0146101fb1be7c31",
+            "price": "1099.99",
+            "recurring_price": "0"
+        },
+        "2bbb9bd7ffe82210a579ffffffffff1a": {
+            "name": "Catalog Client Script",
+            "short_description": "CRP to create catalog client script",
+            "active": true,
+            "category": "",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "2d685eba87022010c84e4561d5cb0b6d": {
+            "name": "Service Fulfillment Steps - Custom approval step",
+            "short_description": "Service Fulfillment Steps - Custom approval step",
+            "active": true,
+            "category": "",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "3022c182d52d3904c602d97466d5a6b1": {
+            "name": "Standard 22\" Monitor",
+            "short_description": "Full HD, IPS Panel with VGA, HDMI, DVI, Audio Out Ports",
+            "active": true,
+            "category": "2c0b59874f7b4200086eeed18110c71f",
+            "price": "200",
+            "recurring_price": "0"
+        },
+        "32b19f3b9fb002002920bde8132e7024": {
+            "name": "Modify a Standard Change Template",
+            "short_description": "",
+            "active": true,
+            "category": "00728916937002002dcef157b67ffb6d",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "32c8a96e4fcf42c0bde324af0210c757": {
+            "name": "Snagit",
+            "short_description": "Image capture software for Mac & PC\n\t\t",
+            "active": true,
+            "category": "2809952237b1300054b6a3549dbe5dd4",
+            "price": "25",
+            "recurring_price": "0"
+        },
+        "346f077643140210cf6f07dcc4b8f2df": {
+            "name": "Create a Standalone Schema",
+            "short_description": "Create an Avro Schema on the instance based on input from a string or a file",
+            "active": true,
+            "category": "",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "3558cf50c7321010159ca1e603c2605b": {
+            "name": "Record Producer Builder",
+            "short_description": "CRP to create Record Producer",
+            "active": true,
+            "category": "",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "369d1110b41fa100c97603649b15fef9": {
+            "name": "Lenovo Thinkpad Power Adapter - 90W",
+            "short_description": "For Lenovo Thinkpad, T-Series, 90W\n\t\t",
+            "active": true,
+            "category": "2c0b59874f7b4200086eeed18110c71f",
+            "price": "60",
+            "recurring_price": "0"
+        },
+        "37bf5990b41fa100c97603649b15fe42": {
+            "name": "Lenovo X1 Carbon Power Adapter",
+            "short_description": "For Lenovo X1 Carbon",
+            "active": true,
+            "category": "2c0b59874f7b4200086eeed18110c71f",
+            "price": "60",
+            "recurring_price": "0"
+        },
+        "381cc3dd182a1d001017ed13c02bccce": {
+            "name": "Plantronics Wideband Headset",
+            "short_description": "Wired, Over-the-head headset",
+            "active": true,
+            "category": "2c0b59874f7b4200086eeed18110c71f",
+            "price": "79.67",
+            "recurring_price": "0"
+        },
+        "382676790a0a0b27003223f15c84b1d2": {
+            "name": "Report Performance Problem",
+            "short_description": "Request assistance with a performance issue you are\n\t\t\thaving with a service or an application.",
+            "active": true,
+            "category": "e15706fc0a0a0aa7007fc21e1ab70c2f",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "38c1fc840a0a0b2700285921c2bf5fc8": {
+            "name": "Report Outage",
+            "short_description": "Report an outage of a service or an application.\n\t\t",
+            "active": true,
+            "category": "e15706fc0a0a0aa7007fc21e1ab70c2f",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "393193e6edd7d100ee518397ffc384fc": {
+            "name": "MacBook Air Power Adapter",
+            "short_description": "Power Adapter",
+            "active": true,
+            "category": "2c0b59874f7b4200086eeed18110c71f",
+            "price": "75.84",
+            "recurring_price": "0"
+        },
+        "3c72dc91eb00210045e1a5115206fec7": {
+            "name": "Change Password",
+            "short_description": "",
+            "active": true,
+            "category": "e15706fc0a0a0aa7007fc21e1ab70c2f",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "3cecd2350a0a0a6a013a3a35a5e41c07": {
+            "name": "Development Laptop (PC)",
+            "short_description": "Dell XPS 13",
+            "active": true,
+            "category": "d258b953c611227a0146101fb1be7c31",
+            "price": "1100",
+            "recurring_price": "0"
+        },
+        "3d18a2e20a0a0a6a011d8f65faee3481": {
+            "name": "Telephone Extension",
+            "short_description": "IP 560 Phone",
+            "active": true,
+            "category": "109cdff8c6112276003b17991a09ad65",
+            "price": "195",
+            "recurring_price": "0"
+        },
+        "3e91b7ec901b2100772e740ccdbe25c7": {
+            "name": "Lenovo ThinkPad Power Adapter - 135W",
+            "short_description": "For Lenovo Thinkpad, AC Adapter, 135W\n\t\t",
+            "active": true,
+            "category": "2c0b59874f7b4200086eeed18110c71f",
+            "price": "99.99",
+            "recurring_price": "0"
+        },
+        "3f1dd0320a0a0b99000a53f7604a2ef9": {
+            "name": "Create Incident",
+            "short_description": "Create an Incident record to report and request\n\t\t\tassistance with an issue you are having",
+            "active": true,
+            "category": "e15706fc0a0a0aa7007fc21e1ab70c2f",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "40c80b00ff9832102909ffffffffff48": {
+            "name": "Catalog UI Policy Actions",
+            "short_description": "Catalog UI Policy Action step inside Create UI Policy wizard",
+            "active": true,
+            "category": "",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "48bcec40eb0311003623666cd206fe24": {
+            "name": "Item Designer Category Request",
+            "short_description": "Request a category that you can use to create your own catalog items",
+            "active": true,
+            "category": "e15706fc0a0a0aa7007fc21e1ab70c2f",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "4a17d6a3ff133100ba13ffffffffffe7": {
+            "name": "Apple Watch",
+            "short_description": "Apple Watch - Their most personal device ever",
+            "active": true,
+            "category": "d258b953c611227a0146101fb1be7c31",
+            "price": "349.99",
+            "recurring_price": "0"
+        },
+        "4ab3477b0a0a0b99008c1fc344d3d44f": {
+            "name": "",
+            "short_description": "",
+            "active": false,
+            "category": "",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "50113326979e4d1021983d1e6253af5e": {
+            "name": "Apple USB-C charge cable",
+            "short_description": "Apple USB-C charge cable",
+            "active": true,
+            "category": "2945493ddbc590104327198d139619e9",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "508b6735c0a800050056c0334b734118": {
+            "name": "",
+            "short_description": "",
+            "active": false,
+            "category": "",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "508e02ec47410200e90d87e8dee49058": {
+            "name": "Add network switch to datacenter cabinet",
+            "short_description": "This standard change template describes adding a new network switch to a datacenter cabinet",
+            "active": true,
+            "category": "abbcbbbf47700200e90d87e8dee49041",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "51b5d9170a0a0b0c00b519afdeb51697": {
+            "name": "New LDAP Server",
+            "short_description": "Create a new LDAP server record",
+            "active": true,
+            "category": "",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "526b6328901b2100772e740ccdbe2516": {
+            "name": "Apple iPhone 4 Cable",
+            "short_description": "For Apple iPhone 4/4S",
+            "active": false,
+            "category": "2c0b59874f7b4200086eeed18110c71f",
+            "price": "19",
+            "recurring_price": "0"
+        },
+        "544625aa4fcf42c0bde324af0210c713": {
+            "name": "OS X Yosemite",
+            "short_description": "OS X Yosemite (version 10.10.x) is Apple's eleventh\n\t\t\tmajor release of OS X, for Macs\n\t\t",
+            "active": false,
+            "category": "2809952237b1300054b6a3549dbe5dd4",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "548b4f8053122010fca7ddeeff7b1254": {
+            "name": "Service Fulfillment Steps - Base step",
+            "short_description": "Service Fulfillment Steps - Base step",
+            "active": true,
+            "category": "",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "54c9ead947dec110f53d37d2846d43ea": {
+            "name": "Request zoom webinar",
+            "short_description": "Request to book a zoom webinar",
+            "active": true,
+            "category": "22555319db0150104327198d1396195c",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "563504cc47410200e90d87e8dee490e2": {
+            "name": "Reboot Windows Server",
+            "short_description": "Reboot a Windows Server (after patching or to clear a fault) making sure that it is removed from monitoring alerts, that network attached storage is unmounted and that it restarts cleanly",
+            "active": true,
+            "category": "b3ecbbbf47700200e90d87e8dee49081",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "56c62944c30102003d3b7bfaa2d3ae36": {
+            "name": "Create Contact",
+            "short_description": "Please provide details of the contact.",
+            "active": true,
+            "category": "4cb69d19c3921200b0449f2974d3ae69",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "573bfe8473122010ae42d31ee2f6a75b": {
+            "name": "Service Fulfillment Steps - Task step",
+            "short_description": "Service Fulfillment Steps - Task step",
+            "active": true,
+            "category": "",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "575274511d830010f8776f77b927f284": {
+            "name": "Parking Sticker Request",
+            "short_description": "Request stickers for parking your vehicle in the office premises",
+            "active": true,
+            "category": "e15706fc0a0a0aa7007fc21e1ab70c2f",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "57d6feda4fff0200086eeed18110c731": {
+            "name": "Server Tuning",
+            "short_description": "Request virtual server tuning",
+            "active": true,
+            "category": "109f0438c6112276003ae8ac13e7009d",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "5846021f9752815021983d1e6253afa5": {
+            "name": "Temporary group membership",
+            "short_description": "Request for temporary group membership",
+            "active": true,
+            "category": "22555319db0150104327198d1396195c",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "59e072da4fff0200086eeed18110c765": {
+            "name": "Consulting Request ",
+            "short_description": "Have a question for another engineering group?\n\t\t",
+            "active": false,
+            "category": "109f0438c6112276003ae8ac13e7009d",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "5a1efa5947520510f53d37d2846d439b": {
+            "name": "AWS account request",
+            "short_description": "Use this form to submit request for new amazon web services (AWS) account",
+            "active": true,
+            "category": "22555319db0150104327198d1396195c",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "5bd23ba6979e4d1021983d1e6253af96": {
+            "name": "USB-C power adapter",
+            "short_description": "Adapter for macbook pro",
+            "active": true,
+            "category": "2945493ddbc590104327198d139619e9",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "5c637ada4fff0200086eeed18110c7fd": {
+            "name": "Group Modifications",
+            "short_description": "Modify an Active Directory Group\n\t\t",
+            "active": true,
+            "category": "109f0438c6112276003ae8ac13e7009d",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "5c761ca173d4001022139a1ee2f6a722": {
+            "name": "Create Case for CSM Outlook",
+            "short_description": "",
+            "active": true,
+            "category": "",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "6336437eff2130106fc03efd793bf155": {
+            "name": "Set Universal Capacity",
+            "short_description": "",
+            "active": true,
+            "category": "",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "6370412e3771300054b6a3549dbe5d82": {
+            "name": "Canon imageCLASS Laser Printer",
+            "short_description": "Canon - imageCLASS LBP-6650DN Laser Printer - Monochrome - 2400 x 600dpi Print - Plain Paper Print -",
+            "active": false,
+            "category": "5d643c6a3771300054b6a3549dbe5db0",
+            "price": "499.99",
+            "recurring_price": "0"
+        },
+        "6690750f4f7b4200086eeed18110c761": {
+            "name": "New Hire",
+            "short_description": "New Hire Order Guide",
+            "active": true,
+            "category": "e15706fc0a0a0aa7007fc21e1ab70c2f",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "66c313e7c0a8016b008ebe1a8e3d97f5": {
+            "name": "Ask a Question",
+            "short_description": "Ask a Question",
+            "active": false,
+            "category": "e15706fc0a0a0aa7007fc21e1ab70c2f",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "67e2f2da4fff0200086eeed18110c7dd": {
+            "name": "Firewall Rule Change",
+            "short_description": "Cisco Firewall Appliance",
+            "active": true,
+            "category": "109f0438c6112276003ae8ac13e7009d",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "6a2cba5547520510f53d37d2846d4310": {
+            "name": "BeyondTrust",
+            "short_description": "Request for BeyondTrust",
+            "active": true,
+            "category": "22555319db0150104327198d1396195c",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "6c626eb297c2019021983d1e6253af48": {
+            "name": "Miro",
+            "short_description": "Create, collaborate, and centralize communication for cross-functional team work",
+            "active": true,
+            "category": "22555319db0150104327198d1396195c",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "6d0f8e1c81df2500772e95d75e286264": {
+            "name": "3M Privacy Filter - Lenovo X1 Carbon",
+            "short_description": "Privacy Filter - X1 Carbon",
+            "active": true,
+            "category": "2c0b59874f7b4200086eeed18110c71f",
+            "price": "43.19",
+            "recurring_price": "0"
+        },
+        "6d3f4ed79792815021983d1e6253af67": {
+            "name": "New virtual pc request",
+            "short_description": "New windows virtual desktop (WVD)",
+            "active": true,
+            "category": "22555319db0150104327198d1396195c",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "6d53a69147dec110f53d37d2846d4314": {
+            "name": "Camtasia",
+            "short_description": "Screen recording and editing",
+            "active": true,
+            "category": "2809952237b1300054b6a3549dbe5dd4",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "6fb8e66553402300afffddeeff7b1278": {
+            "name": "Change Agent Capacity (Group)",
+            "short_description": "",
+            "active": true,
+            "category": "",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "70baad71eb3281102b57e530695228c6": {
+            "name": "IAR Configuration CRP",
+            "short_description": "CRP for IAR Configuration",
+            "active": true,
+            "category": "",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "7198552237b1300054b6a3549dbe5dea": {
+            "name": "Acrobat",
+            "short_description": "Adobe Acrobat",
+            "active": true,
+            "category": "2809952237b1300054b6a3549dbe5dd4",
+            "price": "139.99",
+            "recurring_price": "0"
+        },
+        "729166dc47d20950f53d37d2846d434a": {
+            "name": "Wireless keyboard and  mouse",
+            "short_description": "Wireless keyboard and  mouse for windows and mac (Bluetooth available)",
+            "active": true,
+            "category": "2c0b59874f7b4200086eeed18110c71f",
+            "price": "40",
+            "recurring_price": "0"
+        },
+        "72d931e737913000158bbfc8bcbe5d51": {
+            "name": "Google Droid Razr Maxx",
+            "short_description": "Motorola Droid Razr Maxx 2",
+            "active": false,
+            "category": "d68eb4d637b1300054b6a3549dbe5db2",
+            "price": "99.99",
+            "recurring_price": "0"
+        },
+        "73237ada4fff0200086eeed18110c7fc": {
+            "name": "Endpoint Security",
+            "short_description": "Sophos endpoint security",
+            "active": true,
+            "category": "109f0438c6112276003ae8ac13e7009d",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "73393110b4dfa100c97603649b15fe6a": {
+            "name": "Planar 24\" LED Monitor",
+            "short_description": "24\" Widescreen LED",
+            "active": false,
+            "category": "2c0b59874f7b4200086eeed18110c71f",
+            "price": "140",
+            "recurring_price": "0"
+        },
+        "73b1bafa9752cd1021983d1e6253afb5": {
+            "name": "Apple iPhone 13 pro",
+            "short_description": "Request for Apple iPhone 13 pro",
+            "active": true,
+            "category": "d68eb4d637b1300054b6a3549dbe5db2",
+            "price": "999",
+            "recurring_price": "45"
+        },
+        "755cca98b413e100c97603649b15fe05": {
+            "name": "3M Privacy Filter - Macbook Pro Retina",
+            "short_description": "Privacy Filter",
+            "active": true,
+            "category": "2c0b59874f7b4200086eeed18110c71f",
+            "price": "40.31",
+            "recurring_price": "0"
+        },
+        "774906834fbb4200086eeed18110c737": {
+            "name": "Developer Laptop (Mac)",
+            "short_description": "Macbook Pro",
+            "active": true,
+            "category": "d258b953c611227a0146101fb1be7c31",
+            "price": "1499",
+            "recurring_price": "100"
+        },
+        "79c99042b7321010e54deb56ee11a907": {
+            "name": "Catalog Variable Creation",
+            "short_description": "A composite record producer to create a question",
+            "active": true,
+            "category": "",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "7bf8d10e533210101553ddeeff7b1200": {
+            "name": "Catalog UI Policy",
+            "short_description": "CRP to create catalog ui policy",
+            "active": true,
+            "category": "",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "7e87837237153000158bbfc8bcbe5df6": {
+            "name": "Asus G Series",
+            "short_description": "ASUS G Series",
+            "active": false,
+            "category": "d258b953c611227a0146101fb1be7c31",
+            "price": "839.99",
+            "recurring_price": "0"
+        },
+        "7ee6f61e4fff0200086eeed18110c784": {
+            "name": "Renew Certificate",
+            "short_description": "Do you need to update your SSL Certification?\n\t\t",
+            "active": true,
+            "category": "d2f7cae4c611227a018ddc481b34e099",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "81c887819f203100d8f8700c267fcfb5": {
+            "name": "Request Knowledge Base",
+            "short_description": "Request for a Knowledge Base",
+            "active": true,
+            "category": "e15706fc0a0a0aa7007fc21e1ab70c2f",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "84d4fcc510247200964f77ffeec6c4fc": {
+            "name": "Samsung Galaxy S7",
+            "short_description": "Samsung Galaxy S7",
+            "active": false,
+            "category": "d68eb4d637b1300054b6a3549dbe5db2",
+            "price": "569.99",
+            "recurring_price": "0"
+        },
+        "8b3ae7fedc1be1004ece5c08239e522b": {
+            "name": "Corp VPN",
+            "short_description": "Remote access to Internal Corporate Systems\n\t\t",
+            "active": true,
+            "category": "d2f7cae4c611227a018ddc481b34e099",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "8b6abec14f86c68085b73485f110c7fa": {
+            "name": "STM MacBook Air Sleeve",
+            "short_description": "STM Mac Sleeve \u2013 S\u00ad13\"",
+            "active": true,
+            "category": "2c0b59874f7b4200086eeed18110c71f",
+            "price": "24.26",
+            "recurring_price": "0"
+        },
+        "8bdb839d182a1d001017ed13c02bcc24": {
+            "name": "StarTech Mini Display Port to DVI Adapter",
+            "short_description": "PC / Mac Compatible",
+            "active": false,
+            "category": "2c0b59874f7b4200086eeed18110c71f",
+            "price": "17.23",
+            "recurring_price": "0"
+        },
+        "8c9b079d182a1d001017ed13c02bcc06": {
+            "name": "Apple USB Ethernet Adapter",
+            "short_description": "Macbook Air Ethernet Adapter",
+            "active": false,
+            "category": "2c0b59874f7b4200086eeed18110c71f",
+            "price": "28.13",
+            "recurring_price": "0"
+        },
+        "8ed3da9081136500772e95d75e2862fe": {
+            "name": "Logitech USB Headset for PC & Mac",
+            "short_description": "PC/Mac Compatible Headset",
+            "active": true,
+            "category": "2c0b59874f7b4200086eeed18110c71f",
+            "price": "29.99",
+            "recurring_price": "0"
+        },
+        "8fd1ee7297c2019021983d1e6253af28": {
+            "name": "Non-standard software request",
+            "short_description": "Request software not made available as part of the catalog",
+            "active": true,
+            "category": "2809952237b1300054b6a3549dbe5dd4",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "90af095bcd38798071a208d710d1b64f": {
+            "name": "Belkin iPad Mini Case",
+            "short_description": "Belkin iPad Mini 2 Case",
+            "active": true,
+            "category": "2c0b59874f7b4200086eeed18110c71f",
+            "price": "50",
+            "recurring_price": "0"
+        },
+        "90b0441d876651103f0f7e2526cb0bb1": {
+            "name": "Apply for Citizen Development - V2",
+            "short_description": "This is the first step to empower you to develop and drive the development of your application.",
+            "active": false,
+            "category": "e15706fc0a0a0aa7007fc21e1ab70c2f",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "91af400f0a0a3c74009c70d0e7c08977": {
+            "name": "Company portal",
+            "short_description": "",
+            "active": true,
+            "category": "91a9e0510a0a3c7401d20d86782fc9a0",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "91b257180a0a3c74012fb6b78e634614": {
+            "name": "Company policies",
+            "short_description": "",
+            "active": true,
+            "category": "91a9e0510a0a3c7401d20d86782fc9a0",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "91edb87273221010c84e2bb43cf6a7ae": {
+            "name": "Catalog Item Builder",
+            "short_description": "CRP to create Catalog Item",
+            "active": true,
+            "category": "",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "92b8544047810200e90d87e8dee490b0": {
+            "name": "Decommission local office Domain Controller",
+            "short_description": "Decommission a server from use including removal from backup, systems management and monitoring systems and disposal of hardware",
+            "active": true,
+            "category": "b3ecbbbf47700200e90d87e8dee49081",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "94296d6e4fc3c2c0960f95bd0210c756": {
+            "name": "VMware Fusion",
+            "short_description": "The Best Way to Run Windows on a Mac\n\t\t",
+            "active": true,
+            "category": "2809952237b1300054b6a3549dbe5dd4",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "9531047253230010fa75ddeeff7b1262": {
+            "name": "Create Incident using VA",
+            "short_description": "Create an Incident record to report and request assistance with an issue you are having",
+            "active": true,
+            "category": "",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "962967674ff38200086eeed18110c7e7": {
+            "name": "Desk Set Up",
+            "short_description": "Desk Set Up for New Hires or Employee Moves\n\t\t",
+            "active": true,
+            "category": "",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "96cbb6c7975e015021983d1e6253afc3": {
+            "name": "Zoom desk phone",
+            "short_description": "Zoom desk phone - Poly VVX 350 business IP phone",
+            "active": true,
+            "category": "109cdff8c6112276003b17991a09ad65",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "99c1de1081136500772e95d75e286273": {
+            "name": "StarTech USB to DVI Adapter",
+            "short_description": "Multi Monitor Adapter",
+            "active": true,
+            "category": "2c0b59874f7b4200086eeed18110c71f",
+            "price": "49.99",
+            "recurring_price": "0"
+        },
+        "9e0bd92237b1300054b6a3549dbe5dfc": {
+            "name": "QuickTime Pro",
+            "short_description": "Apple QuickTime Pro 7",
+            "active": true,
+            "category": "2809952237b1300054b6a3549dbe5dd4",
+            "price": "29.99",
+            "recurring_price": "0"
+        },
+        "9e2b4b9d182a1d001017ed13c02bcc5b": {
+            "name": "Microsoft Wired Keyboard",
+            "short_description": "PC / Mac Compatible",
+            "active": true,
+            "category": "2c0b59874f7b4200086eeed18110c71f",
+            "price": "11.92",
+            "recurring_price": "0"
+        },
+        "a25b1d2237b1300054b6a3549dbe5dc3": {
+            "name": "Lotus Notes",
+            "short_description": "IBM Lotus Notes",
+            "active": false,
+            "category": "2809952237b1300054b6a3549dbe5dd4",
+            "price": "50",
+            "recurring_price": "0"
+        },
+        "a678656e4fc3c2c0960f95bd0210c7e5": {
+            "name": "Visio Pro for Office 365",
+            "short_description": "Create beautiful, compelling flowcharts, graphs, and network diagrams in one easy\n\t\t",
+            "active": true,
+            "category": "2809952237b1300054b6a3549dbe5dd4",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "a84c0bdd182a1d001017ed13c02bccaa": {
+            "name": "StarTech USB Mini Hub",
+            "short_description": "4 Port, USB 2.0",
+            "active": true,
+            "category": "2c0b59874f7b4200086eeed18110c71f",
+            "price": "11.55",
+            "recurring_price": "0"
+        },
+        "a9a3ae4f0a0a0aa700a24a296c2ceac4": {
+            "name": "Application Server (Standard)",
+            "short_description": "Dell 1950 (1U) Rack Mount Server\n\t\t",
+            "active": true,
+            "category": "803e95e1c3732100fca206e939ba8f2a",
+            "price": "5600",
+            "recurring_price": "0"
+        },
+        "a9d7f3790a0a0aa700f68277bf62a054": {
+            "name": "Application Server (Large)",
+            "short_description": "Dell 2950 (2U) Rack Mount Server\n\t\t",
+            "active": true,
+            "category": "803e95e1c3732100fca206e939ba8f2a",
+            "price": "5600",
+            "recurring_price": "0"
+        },
+        "a9da93400a0a0aa70030fb3e7787e7a7": {
+            "name": "Database Server & Oracle License",
+            "short_description": "Dell 6850 (4U) Rack Mount Server\n\t\t",
+            "active": true,
+            "category": "803e95e1c3732100fca206e939ba8f2a",
+            "price": "27000",
+            "recurring_price": "0"
+        },
+        "aa9dd773774211105e3db2a07b5a998a": {
+            "name": "Samsung Galaxy S22 Ultra 5G",
+            "short_description": "Samsung Galaxy S22 Ultra 5G",
+            "active": true,
+            "category": "d68eb4d637b1300054b6a3549dbe5db2",
+            "price": "999.99",
+            "recurring_price": "0"
+        },
+        "aaa36fab432f31108df207dcc4b8f29c": {
+            "name": "Import Schema from Confluent Registry",
+            "short_description": "",
+            "active": true,
+            "category": "",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "abe6a1ea4fc3c2c0960f95bd0210c7d2": {
+            "name": "Project Pro for Office 365",
+            "short_description": "Manage projects, Organize tasks, Collaborate\n\t\t",
+            "active": true,
+            "category": "2809952237b1300054b6a3549dbe5dd4",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "acc73c0910247200964f77ffeec6c4af": {
+            "name": "Apple Watch Series 2",
+            "short_description": "Apple Watch Series 2",
+            "active": false,
+            "category": "d258b953c611227a0146101fb1be7c31",
+            "price": "369.99",
+            "recurring_price": "0"
+        },
+        "ad1a9598b4dba100c97603649b15fe8f": {
+            "name": "MacBook Pro Power Adapter",
+            "short_description": "MagSafe 2, for Macbook Pro ",
+            "active": true,
+            "category": "2c0b59874f7b4200086eeed18110c71f",
+            "price": "75.84",
+            "recurring_price": "0"
+        },
+        "ae44f5804f889200086eeed18110c73f": {
+            "name": "Windows Surface Pro 4",
+            "short_description": "Microsoft Surface Pro 4",
+            "active": false,
+            "category": "d258b953c611227a0146101fb1be7c31",
+            "price": "1699",
+            "recurring_price": "0"
+        },
+        "b1b9592237b1300054b6a3549dbe5d54": {
+            "name": "Fireworks",
+            "short_description": "Adobe Systems Fireworks",
+            "active": false,
+            "category": "2809952237b1300054b6a3549dbe5dd4",
+            "price": "20",
+            "recurring_price": "0"
+        },
+        "b1c8d15147810200e90d87e8dee490f7": {
+            "name": "Change VLAN on a Cisco switchport",
+            "short_description": "Change the port of a Cisco switch to a new VLAN. This would commonly occur when moving a server from one IP network to another.",
+            "active": true,
+            "category": "abbcbbbf47700200e90d87e8dee49041",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "b2168e1847520950f53d37d2846d434f": {
+            "name": "Request DocuSign access",
+            "short_description": "eSignature tool with document generation capabilities",
+            "active": true,
+            "category": "22555319db0150104327198d1396195c",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "b2aed29847d20950f53d37d2846d43d3": {
+            "name": "Multiport AV adapter",
+            "short_description": "Request for multiport AV adapter",
+            "active": true,
+            "category": "2945493ddbc590104327198d139619e9",
+            "price": "30",
+            "recurring_price": "0"
+        },
+        "b59db52cbf320100710071a7bf0739ba": {
+            "name": "Password Reset Enrollment",
+            "short_description": "",
+            "active": true,
+            "category": "e15706fc0a0a0aa7007fc21e1ab70c2f",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "b64f76856f0e0a80575967ddbb3ee432": {
+            "name": "STM MacBook Pro Sleeve ",
+            "short_description": "STM Mac Sleeve \u2013 S\u00ad15\"",
+            "active": true,
+            "category": "2c0b59874f7b4200086eeed18110c71f",
+            "price": "25.78",
+            "recurring_price": "0"
+        },
+        "b839d52237b1300054b6a3549dbe5dd4": {
+            "name": "Dreamweaver",
+            "short_description": "",
+            "active": false,
+            "category": "2809952237b1300054b6a3549dbe5dd4",
+            "price": "60",
+            "recurring_price": "0"
+        },
+        "ba5b8f9d182a1d001017ed13c02bcc29": {
+            "name": "Lenovo USB Ethernet Adapter",
+            "short_description": "For Lenovo X1 Carbon",
+            "active": false,
+            "category": "2c0b59874f7b4200086eeed18110c71f",
+            "price": "28.79",
+            "recurring_price": "0"
+        },
+        "bcbc0ce97394001022139a1ee2f6a7a3": {
+            "name": "Create Contact for CSM Outlook",
+            "short_description": "",
+            "active": true,
+            "category": "",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "bd6fa75a4f334200086eeed18110c79e": {
+            "name": "iPhone 6s",
+            "short_description": "iPhone 6s",
+            "active": false,
+            "category": "d68eb4d637b1300054b6a3549dbe5db2",
+            "price": "450",
+            "recurring_price": "50"
+        },
+        "bea4087297c2cd5021983d1e6253af6b": {
+            "name": "IntelliJ IDEA",
+            "short_description": "IntelliJ IDEA  is for java, Groovy and other programming languages",
+            "active": true,
+            "category": "2809952237b1300054b6a3549dbe5dd4",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "c0c5b2db4fbf4200086eeed18110c718": {
+            "name": "Provision a Database",
+            "short_description": "Request to provision a new database\n\t\t",
+            "active": true,
+            "category": "109f0438c6112276003ae8ac13e7009d",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "c3044f5147920510f53d37d2846d43d8": {
+            "name": "Azure account request",
+            "short_description": "Use this form to submit request for new azure account",
+            "active": true,
+            "category": "22555319db0150104327198d1396195c",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "c3b9cbf29716cd1021983d1e6253afad": {
+            "name": "iPad pro",
+            "short_description": "Request for iPad pro",
+            "active": true,
+            "category": "d258b953c611227a0146101fb1be7c31",
+            "price": "799",
+            "recurring_price": "30"
+        },
+        "c557e5ea4fcf42c0bde324af0210c79f": {
+            "name": "OmniGraffle Professional",
+            "short_description": "Diagramming and drawing application\n\t\t",
+            "active": true,
+            "category": "2809952237b1300054b6a3549dbe5dd4",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "c568d679471102003db6d7527c9a7129": {
+            "name": "Create a new Export Set",
+            "short_description": "Create a new Export Set to export data from ServiceNow instance to external locations.",
+            "active": true,
+            "category": "",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "c78b8ca197fa811021983d1e6253af85": {
+            "name": "Set a delegate for a direct report",
+            "short_description": "Request for delegation for a direct report",
+            "active": true,
+            "category": "496a3a7e0a0a0bc00089b39df14eb56e",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "c7eb778f97d2415021983d1e6253af7b": {
+            "name": "Clone group membership",
+            "short_description": "Request for clone group membership",
+            "active": true,
+            "category": "22555319db0150104327198d1396195c",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "ca0c40de0f9b210029fa348ce1050e9c": {
+            "name": "Belkin Neoprene Sleeve ",
+            "short_description": "For Notebooks up to 15.6\"",
+            "active": false,
+            "category": "2c0b59874f7b4200086eeed18110c71f",
+            "price": "29.48",
+            "recurring_price": "0"
+        },
+        "cb2a927f935002003b7a7a75e57ffb4c": {
+            "name": "Propose a new Standard Change Template",
+            "short_description": "",
+            "active": true,
+            "category": "00728916937002002dcef157b67ffb6d",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "cc4defa8901b2100772e740ccdbe2595": {
+            "name": "Apple iPhone 5 Cable ",
+            "short_description": "Apple iPhone 5 Cable",
+            "active": false,
+            "category": "2c0b59874f7b4200086eeed18110c71f",
+            "price": "19",
+            "recurring_price": "0"
+        },
+        "d0b15e33d7033100a9ad1e173e24d49e": {
+            "name": "Apple iPhone 6s",
+            "short_description": "Apple iPhone 6s",
+            "active": false,
+            "category": "d258b953c611227a0146101fb1be7c31",
+            "price": "799.99",
+            "recurring_price": "30"
+        },
+        "d130ad75d7620200a9ad1e173e24d43c": {
+            "name": "Microsoft Surface Pro 3",
+            "short_description": "Microsoft Surface Pro 3",
+            "active": false,
+            "category": "d258b953c611227a0146101fb1be7c31",
+            "price": "1399",
+            "recurring_price": "0"
+        },
+        "d30529bec611227a0161fcdd54056088": {
+            "name": "Event Planning",
+            "short_description": "Event planning for 50 people",
+            "active": true,
+            "category": "d25201c8c611227a00667da13c6d33af",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "d41ce5bac611227a0167f4bf8109bf70": {
+            "name": "Carpet Cleaning",
+            "short_description": "Spot removal to large areas, we do it all\n\t\t",
+            "active": false,
+            "category": "d2f83003c611227a01a81bd5bd54b1aa",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "d4254493c611227a0135f7f3b66f4bf5": {
+            "name": "Repair Office Equipment",
+            "short_description": "Report malfunctions with a shared piece of office\n\t\t\tequipment such as a copier or network printer\n\t\t",
+            "active": true,
+            "category": "d2f86388c611227a002209db6966d5ad",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "d625b9ffc0a80165010725b451ef7e4e": {
+            "name": "Assign Office Space",
+            "short_description": "Works in conjunction with the space planning area\n\t\t",
+            "active": true,
+            "category": "d2f797a5c611227a01ad68841dc3e7b5",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "d67a86b6c0a80165009386c752cd4a09": {
+            "name": "Email Account (old)",
+            "short_description": "Standard email service with Outlook and Outlook Web\n\t\t",
+            "active": false,
+            "category": "d67c446ec0a80165000335aa37eafbc1",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "d6c2273c47010200e90d87e8dee49004": {
+            "name": "Clear BGP sessions on a Cisco router",
+            "short_description": "Resend the complete BGP table to neighboring routers",
+            "active": true,
+            "category": "abbcbbbf47700200e90d87e8dee49041",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "d82ea08510247200964f77ffeec6c4ee": {
+            "name": "Apple iPhone 6s Plus",
+            "short_description": "Apple iPhone 6s Plus",
+            "active": false,
+            "category": "d68eb4d637b1300054b6a3549dbe5db2",
+            "price": "799.99",
+            "recurring_price": "30"
+        },
+        "da073a1e4fff0200086eeed18110c72b": {
+            "name": "Big Data Analysis",
+            "short_description": "Request big data analysis environment\n\t\t",
+            "active": true,
+            "category": "109f0438c6112276003ae8ac13e7009d",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "dad2f45de8803100ee5118d02d1a930a": {
+            "name": "Dell 24\" UltraSharp Monitor ",
+            "short_description": "24\" UltraSharp Monitor",
+            "active": false,
+            "category": "2c0b59874f7b4200086eeed18110c71f",
+            "price": "300",
+            "recurring_price": "0"
+        },
+        "dc5371aa6f9ab5006de0a4f44b3ee4fa": {
+            "name": "Spigen iPhone 6 Case",
+            "short_description": "For iPhone 6",
+            "active": false,
+            "category": "2c0b59874f7b4200086eeed18110c71f",
+            "price": "35",
+            "recurring_price": "0"
+        },
+        "dde81900b997250068d0b7af997f51c3": {
+            "name": "Ilyama 24\"",
+            "short_description": "ilyama ProLite 24\" Monitor",
+            "active": false,
+            "category": "2c0b59874f7b4200086eeed18110c71f",
+            "price": "139.84",
+            "recurring_price": "0"
+        },
+        "de45c412c312310015519f2974d3ae1b": {
+            "name": "Create case for a product",
+            "short_description": "Submit a case about your product and our support team will assist you.",
+            "active": true,
+            "category": "1b8611d5c3921200b0449f2974d3ae12",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "df7359bc53231300e321ddeeff7b12f9": {
+            "name": "Replace printer toner",
+            "short_description": "Replace printer toner",
+            "active": true,
+            "category": "651395bc53231300e321ddeeff7b1221",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "e13b71a66fdab5006de0a4f44b3ee42a": {
+            "name": "Spigen Samsung GS5 Case",
+            "short_description": "Samsung Galaxy S5",
+            "active": false,
+            "category": "2c0b59874f7b4200086eeed18110c71f",
+            "price": "35",
+            "recurring_price": "0"
+        },
+        "e159dd8c0a0a0aa7004a1618fbf78198": {
+            "name": "Report an Incident",
+            "short_description": "Report an Incident",
+            "active": false,
+            "category": "e15706fc0a0a0aa7007fc21e1ab70c2f",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "e1be6dcb4f7b4200086eeed18110c74c": {
+            "name": "Standard 27\" Monitor",
+            "short_description": "Size -  27\",  Resolution -  1920x1080,  Max Refresh Rate - 280 Hz,  Pixel Type - IPS Variable,  Refresh Rate - FreeSync\n\t\t",
+            "active": true,
+            "category": "2c0b59874f7b4200086eeed18110c71f",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "e212a942c0a80165008313c59764eea1": {
+            "name": "Sales Laptop",
+            "short_description": "Acer Aspire NX",
+            "active": true,
+            "category": "d258b953c611227a0146101fb1be7c31",
+            "price": "1100",
+            "recurring_price": "100"
+        },
+        "e2132865c0a8016500108d9cee411691": {
+            "name": "BlackBerry Z10",
+            "short_description": "A 4.2\" touch screen BlackBerry cell phone. 4G ready\n\t\t\tand contains 16GB internal storage.\n\t\t",
+            "active": false,
+            "category": "d258b953c611227a0146101fb1be7c31",
+            "price": "700",
+            "recurring_price": "40"
+        },
+        "e2132865c0a8016500108d9cee411699": {
+            "name": "Blackberry",
+            "short_description": "A Blackberry Wireless Device",
+            "active": false,
+            "category": "d258b953c611227a0146101fb1be7c31",
+            "price": "500",
+            "recurring_price": "0"
+        },
+        "e3bb43dd182a1d001017ed13c02bccbb": {
+            "name": "StarTech Mini Display Port to VGA Adapter",
+            "short_description": "PC / Mac Compatible",
+            "active": true,
+            "category": "2c0b59874f7b4200086eeed18110c71f",
+            "price": "24.5",
+            "recurring_price": "0"
+        },
+        "e46305bdc0a8010a00645e608031eb0f": {
+            "name": "Executive Desktop",
+            "short_description": "Dell Precision 690",
+            "active": false,
+            "category": "900682363731300054b6a3549dbe5d5f",
+            "price": "1875",
+            "recurring_price": "0"
+        },
+        "e56a7ffe41011300964ff05369414ebd": {
+            "name": "Corporate Mobile Devices - Bulk Orders",
+            "short_description": "Request for mobile devices for your department",
+            "active": true,
+            "category": "109f0438c6112276003ae8ac13e7009d",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "e60b8f5d182a1d001017ed13c02bccad": {
+            "name": "Logitech Wireless Mouse",
+            "short_description": "PC / Mac Compatible",
+            "active": true,
+            "category": "2c0b59874f7b4200086eeed18110c71f",
+            "price": "35.88",
+            "recurring_price": "0"
+        },
+        "e7a53d6e6f9ab5006de0a4f44b3ee463": {
+            "name": "Spigen iPhone 5/5s Case",
+            "short_description": "iPhone 5 and 5s",
+            "active": false,
+            "category": "2c0b59874f7b4200086eeed18110c71f",
+            "price": "35",
+            "recurring_price": "0"
+        },
+        "e8d5f2f29792cd1021983d1e6253af31": {
+            "name": "iPad mini",
+            "short_description": "Request for iPad mini",
+            "active": true,
+            "category": "d258b953c611227a0146101fb1be7c31",
+            "price": "499",
+            "recurring_price": "0"
+        },
+        "e90a0f7237153000158bbfc8bcbe5d7f": {
+            "name": "Brother Network-Ready Color Laser Printer",
+            "short_description": "Brother - Network-Ready Color Laser Printer",
+            "active": true,
+            "category": "5d643c6a3771300054b6a3549dbe5db0",
+            "price": "399.5",
+            "recurring_price": "0"
+        },
+        "e91336da4fff0200086eeed18110c7a3": {
+            "name": "Whitelist IP",
+            "short_description": "Need to whitelist an IP address?\n\t\t",
+            "active": true,
+            "category": "109f0438c6112276003ae8ac13e7009d",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "ec80c13297968d1021983d1e6253af32": {
+            "name": "Apple iPhone 13",
+            "short_description": "Request for Apple iPhone 13",
+            "active": true,
+            "category": "d68eb4d637b1300054b6a3549dbe5db2",
+            "price": "799",
+            "recurring_price": "0"
+        },
+        "efb4525c47920950f53d37d2846d43bc": {
+            "name": "Request dropbox account",
+            "short_description": "Store and share files",
+            "active": true,
+            "category": "22555319db0150104327198d1396195c",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "f0caa23e97c2019021983d1e6253af9a": {
+            "name": "Add/Remove users from group",
+            "short_description": "Add/Remove users from group",
+            "active": true,
+            "category": "109f0438c6112276003ae8ac13e7009d",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "f103cb4b4f2e0e00bde324af0210c7c5": {
+            "name": "Druva inSync, for Mac & PC",
+            "short_description": "High-speed, lightweight backups with Global\n\t\t\tdeduplication\n\t\t",
+            "active": true,
+            "category": "2809952237b1300054b6a3549dbe5dd4",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "f33ad6295311311074fdddeeff7b1250": {
+            "name": "Creator Studio - Variable Editor",
+            "short_description": "Composite record producer for editing catalog variables within Creator Studio's request builder",
+            "active": true,
+            "category": "",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "f3544017bf220100710071a7bf0739f8": {
+            "name": "Password Reset Extension Script",
+            "short_description": "Password Reset Extension Script",
+            "active": true,
+            "category": "",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "f3937ada4fff0200086eeed18110c7f2": {
+            "name": "VM Provisioning",
+            "short_description": "Do you need a Virtual Machine?",
+            "active": true,
+            "category": "d67c446ec0a80165000335aa37eafbc1",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "f514e9e64fcf42c0bde324af0210c766": {
+            "name": "OS X Mavericks",
+            "short_description": "OS X Mavericks (version 10.9.x) is Apple's tenth\n\t\t\tmajor release of OS X, for Macs\n\t\t",
+            "active": false,
+            "category": "2809952237b1300054b6a3549dbe5dd4",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "f5d8d3f6e8b721004ece55c82c089cc6": {
+            "name": "International Plan Request",
+            "short_description": "International Plan Request",
+            "active": true,
+            "category": "e15706fc0a0a0aa7007fc21e1ab70c2f",
+            "price": "0",
+            "recurring_price": "0"
+        },
+        "fee8ef24901b2100772e740ccdbe2545": {
+            "name": "Apple Thunderbolt to Ethernet Adapter",
+            "short_description": "For Macbook Air/Pro",
+            "active": true,
+            "category": "2c0b59874f7b4200086eeed18110c71f",
+            "price": "30.89",
+            "recurring_price": "0"
+        },
+        "ff15e92a4fc3c2c0960f95bd0210c7f1": {
+            "name": "Adobe Creative Cloud",
+            "short_description": "More connected ways of creating and sharing\n\t\t",
+            "active": true,
+            "category": "2809952237b1300054b6a3549dbe5dd4",
+            "price": "0",
+            "recurring_price": "0"
+        }
+    }
+}

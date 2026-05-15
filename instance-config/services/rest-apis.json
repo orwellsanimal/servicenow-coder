@@ -284,6 +284,16 @@
             "resources": []
         },
         {
+            "sys_id": "1f6c03737f420300daf61307adfa9157",
+            "name": "openframe",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/openframe",
+            "active": true,
+            "scope": "Openframe",
+            "resources": []
+        },
+        {
             "sys_id": "1fecd1c1c71131106766a7ea1dc2603d",
             "name": "Check Plugin Installation",
             "api_id": "",
@@ -471,6 +481,16 @@
             "base_uri": "/api/now/interactive_analysis",
             "active": true,
             "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "358ed92743b02110933bc6ecbab8f24e",
+            "name": "Manage Skills API",
+            "api_id": "",
+            "namespace": "sn_skill_cfg_page",
+            "base_uri": "/api/sn_skill_cfg_page/skill_cfg_page",
+            "active": true,
+            "scope": "Manage Skills Configurable Page",
             "resources": []
         },
         {
@@ -924,6 +944,16 @@
             "resources": []
         },
         {
+            "sys_id": "608df4675352030097a2ddeeff7b12f2",
+            "name": "Consumer",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/consumer",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
             "sys_id": "60c171d973c30010ee4dd3c72bf6a716",
             "name": "CSDM Application Service (Internal API)",
             "api_id": "",
@@ -961,6 +991,16 @@
             "base_uri": "/api/sn_publications/recipients_list_rest_api",
             "active": true,
             "scope": "Targeted Communications",
+            "resources": []
+        },
+        {
+            "sys_id": "6282eda4b3d203004d526e5f26a8dce7",
+            "name": "Special Handling Notes",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/special_handling_notes",
+            "active": true,
+            "scope": "Global",
             "resources": []
         },
         {
@@ -1144,6 +1184,16 @@
             "resources": []
         },
         {
+            "sys_id": "73bb9d3193c3030045a3f5be867ffbd3",
+            "name": "Assignment Workbench",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/assignment_workbench",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
             "sys_id": "75543606935e02108dbf85abd1891879",
             "name": "VA Designer Config",
             "api_id": "",
@@ -1151,6 +1201,16 @@
             "base_uri": "/api/sn_cs_builder/va_designer_config",
             "active": true,
             "scope": "Conversation Builder",
+            "resources": []
+        },
+        {
+            "sys_id": "771aaa2f5342030097a2ddeeff7b127d",
+            "name": "Case",
+            "api_id": "",
+            "namespace": "sn_customerservice",
+            "base_uri": "/api/sn_customerservice/case",
+            "active": true,
+            "scope": "Customer Service",
             "resources": []
         },
         {
@@ -1374,6 +1434,16 @@
             "resources": []
         },
         {
+            "sys_id": "8ce278635352030097a2ddeeff7b12e4",
+            "name": "Contact",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/contact",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
             "sys_id": "8f25234477703110878cd30e5b5a994c",
             "name": "Whats New",
             "api_id": "",
@@ -1564,6 +1634,16 @@
             "resources": []
         },
         {
+            "sys_id": "a258404be7333200f30d2188d2f6a95a",
+            "name": "Skill Management",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/skill_management",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
             "sys_id": "a3d5e8ba57530010a3933da73d94f9e3",
             "name": "SLA Timer Config API",
             "api_id": "",
@@ -1654,6 +1734,16 @@
             "resources": []
         },
         {
+            "sys_id": "aede610683c022109d5adbe4d12bc0ad",
+            "name": "AWA Resilient Interaction Service",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/awa_resiliency",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
             "sys_id": "af97fa0d432031106b5f90cfd7b8f2dd",
             "name": "Now Assist Admin Console API",
             "api_id": "",
@@ -1714,6 +1804,16 @@
             "resources": []
         },
         {
+            "sys_id": "b4b950567f332200c57212f44efa9147",
+            "name": "Manager Calendar",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/manager_calendar",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
             "sys_id": "b5617ef2b7620010ee0d3177ee11a9cc",
             "name": "Life Cycle API",
             "api_id": "",
@@ -1729,6 +1829,26 @@
             "api_id": "",
             "namespace": "now",
             "base_uri": "/api/now/splunk_token",
+            "active": true,
+            "scope": "Global",
+            "resources": []
+        },
+        {
+            "sys_id": "b90bf7320f170010e6d4fd820b767eaf",
+            "name": "Customer Central",
+            "api_id": "",
+            "namespace": "sn_customercentral",
+            "base_uri": "/api/sn_customercentral/cust_central",
+            "active": true,
+            "scope": "Customer Central",
+            "resources": []
+        },
+        {
+            "sys_id": "b97db8f75312030097a2ddeeff7b12c3",
+            "name": "Account",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/account",
             "active": true,
             "scope": "Global",
             "resources": []
@@ -1791,6 +1911,16 @@
             "base_uri": "/api/sn_ml_ui/ml_ui",
             "active": true,
             "scope": "ML UI",
+            "resources": []
+        },
+        {
+            "sys_id": "c83b8b61e7733200f30d2188d2f6a93b",
+            "name": "Agent Schedule",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/agent_schedule",
+            "active": true,
+            "scope": "Global",
             "resources": []
         },
         {
@@ -1981,6 +2111,16 @@
             "base_uri": "/api/sn_oe_sfs/bot_override",
             "active": true,
             "scope": "Omni-Experience Standard Feature Set",
+            "resources": []
+        },
+        {
+            "sys_id": "d8cad1857f232200c57212f44efa919c",
+            "name": "Calendar",
+            "api_id": "",
+            "namespace": "now",
+            "base_uri": "/api/now/calendar",
+            "active": true,
+            "scope": "Global",
             "resources": []
         },
         {
