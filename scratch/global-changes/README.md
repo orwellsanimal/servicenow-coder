@@ -1,9 +1,13 @@
-# servicenow-global-changes (template)
+# scratch/global-changes/ — staging for the global-changes repo
 
-> **Note:** This README is a **template** that lives in `scratch/` here. Once you create the
-> new GitHub repo, copy this file (and the structure described in it) into the root of that
-> repo. The pattern below is meant to be the long-term home for global-scope ServiceNow
-> changes — separate from the scoped-app workspace at `servicenow-coder/`.
+> **The real home for these artifacts is [`orwellsanimal/servicenow-coder-global`](https://github.com/orwellsanimal/servicenow-coder-global).**
+>
+> This `scratch/` directory is the local **staging area** in this repo while a change is
+> being authored. Once a change is ready to be reviewed, copy it to the global-changes
+> repo as `changes/<YYYY-MM>-<name>/` and open a PR there.
+>
+> The fsm-bridge sample below is preserved here as a working reference for testing the
+> generator without needing a checkout of the other repo.
 
 ---
 
