@@ -1,15 +1,15 @@
 import { gs, GlideRecord } from '@servicenow/glide'
-
-// Service Catalog Cart API (sn_sc) is a server-side global; no types ship with @servicenow/glide
-declare const sn_sc: { CartJS: new () => { empty: () => void; addToCart: (item: Record<string, string>) => unknown; submitOrder: (opts: Record<string, unknown>) => { request_id?: string; request_number?: string } } }
+// @ts-expect-error — CartHelper is a Script Include in our scope; type defs
+// are only available after deploy + `now-sdk dependencies`. Runtime resolution works.
+import { CartHelper } from '@servicenow/glide/x_1111454_pcreq'
 
 const PC_CATALOG_ITEM = '2ab7077237153000158bbfc8bcbe5da9'
 const HARDWARE_MODEL_CATEGORY = '81feb9c137101000deeabfc8bcbe5dc4'
 
 // install_status values to count as "user already has a PC":
-//   1 = In use, 2 = On order, 6 = In stock, 9 = Consumed
-// Excludes 7 (Retired), 8 (Missing), 3 (In maintenance), etc.
-const ACTIVE_INSTALL_STATUSES = '1,2,6,9'
+//   1 = In use, 2 = On order, 6 = In stock, 10 = Consumed
+// Excludes 7 (Retired), 8 (Missing), 3 (In maintenance), 9 (In transit), 11 (Build)
+const ACTIVE_INSTALL_STATUSES = '1,2,6,10'
 
 export const nightlyPcRequest = (): void => {
     const adminSysId = lookupAdminSysId()
@@ -19,8 +19,8 @@ export const nightlyPcRequest = (): void => {
     }
 
     const userGr = new GlideRecord('sys_user')
-    userGr.addQuery('identity_type', 'human')
     userGr.addQuery('active', true)
+    userGr.addQuery('identity_type', 'human')
     userGr.query()
 
     let ordered = 0
@@ -37,15 +37,15 @@ export const nightlyPcRequest = (): void => {
         }
 
         try {
-            const cart = new sn_sc.CartJS()
-            cart.empty()
-            cart.addToCart({
-                sysparm_id: PC_CATALOG_ITEM,
-                sysparm_quantity: '1',
-            })
-            const result = cart.submitOrder({})
-            gs.info('[pc-auto-request] Ordered PC for ' + userName + ' (request=' + (result.request_number || result.request_id) + ')')
-            ordered++
+            const helper = new CartHelper()
+            const result = helper.orderForUser(PC_CATALOG_ITEM, userSysId)
+            if (result) {
+                gs.info('[pc-auto-request] Ordered PC for ' + userName + ' (request=' + (result.request_number || result.request_id) + ')')
+                ordered++
+            } else {
+                gs.error('[pc-auto-request] Cart order returned null for ' + userName)
+                failed++
+            }
         } catch (e) {
             gs.error('[pc-auto-request] Failed for ' + userName + ': ' + e)
             failed++

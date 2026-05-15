@@ -100,6 +100,22 @@ while src_gr.next():
     dst_gr.insert()
 ```
 
+## API Differences from GlideRecord
+
+PySNC wraps the Table API with a GlideRecord-like interface, but some method names differ:
+
+| GlideRecord (server-side) | PySNC | Notes |
+|--------------------------|-------|-------|
+| `gr.setLimit(n)` | `gr.limit = n` | Property, not method |
+| `gr.addQuery('f', 'IN', '1,2,3')` | `gr.add_query('f', 'IN', '1,2,3')` | Same semantics, snake_case |
+| `GlideAggregate` | *(not supported)* | Use client-side `Counter`/loops instead |
+| `gr.getRowCount()` | `gr.get_row_count()` | Works but requires full query first |
+| `gr.getValue('field')` | `gr.get_value('field')` | Snake_case |
+
+PySNC only supports Table API operations (CRUD). Server-side APIs like `GlideAggregate`, `GlideEvaluator`, and `sn_sc.CartJS` are not available — those run on the platform, not via REST.
+
+Some system tables (`sys_plugins`, `sys_package_dependency_m2m`) are ACL-protected and will return 403 even with admin credentials.
+
 ## Conventions
 
 - **Place scripts in `scripts/python/`** (one file per operation, named after the verb: `seed-data.py`, `export-incidents.py`, `migrate-locations.py`)
