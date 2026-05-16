@@ -65,14 +65,16 @@ def parse_update_set(xml_path: Path) -> tuple[dict, list[dict]]:
 
         inner_table = None
         inner_sys_id = None
+        inner_fields: dict[str, str] = {}
         try:
             inner_root = ET.fromstring(payload_xml)
             inner_table = inner_root.get("table")
             child = list(inner_root)[0] if list(inner_root) else None
             if child is not None:
-                sys_id_el = child.find("sys_id")
-                if sys_id_el is not None:
-                    inner_sys_id = (sys_id_el.text or "").strip()
+                for el in child:
+                    text = (el.text or "").strip() if el.text else ""
+                    inner_fields[el.tag] = text
+                inner_sys_id = inner_fields.get("sys_id") or None
         except ET.ParseError as e:
             print(f"  WARN: could not parse payload for {target_name}: {e}", file=sys.stderr)
 
@@ -82,6 +84,7 @@ def parse_update_set(xml_path: Path) -> tuple[dict, list[dict]]:
             "sys_update_name": sys_update_name,
             "inner_table": inner_table,
             "inner_sys_id": inner_sys_id,
+            "inner_fields": inner_fields,
         })
 
     return manifest_summary, artifacts
@@ -157,6 +160,61 @@ def preview_business_rule(client: ServiceNowClient, art: dict) -> None:
         print(f"  +  BR `{target_name}` will be CREATED")
 
 
+def preview_by_sys_id(client: ServiceNowClient, table: str, art: dict, label: str) -> None:
+    """Generic preview for tables where we have a deterministic sys_id —
+    just check whether that sys_id is already present on the target."""
+    sys_id = art.get("inner_sys_id")
+    if not sys_id:
+        print(f"  ?  no inner sys_id parsed; cannot preview")
+        return
+    existing = check_target_exists(client, table, {"sys_id": sys_id})
+    if existing:
+        print(f"  ~  {label} (sys_id {sys_id}) ALREADY EXISTS — import will be an UPDATE")
+    else:
+        print(f"  +  {label} will be CREATED (sys_id {sys_id})")
+
+
+def preview_catalog_item(client: ServiceNowClient, art: dict) -> None:
+    """For sc_cat_item, also verify referenced category + sc_catalogs exist."""
+    f = art.get("inner_fields", {})
+    name = f.get("name", art["target_name"])
+    preview_by_sys_id(client, "sc_cat_item", art, f"catalog item `{name}`")
+
+    cat_sys_id = f.get("category")
+    if cat_sys_id:
+        cat = check_target_exists(client, "sc_category", {"sys_id": cat_sys_id})
+        if cat:
+            print(f"     OK  primary category sys_id {cat_sys_id} resolves on target")
+        else:
+            print(f"     !!  primary category sys_id {cat_sys_id} NOT FOUND on target")
+
+    catalogs_sys_id = f.get("sc_catalogs")
+    if catalogs_sys_id:
+        cat = check_target_exists(client, "sc_catalog", {"sys_id": catalogs_sys_id})
+        if cat:
+            print(f"     OK  parent catalog sys_id {catalogs_sys_id} resolves on target")
+        else:
+            print(f"     !!  parent catalog sys_id {catalogs_sys_id} NOT FOUND on target")
+
+
+def preview_variable(client: ServiceNowClient, art: dict) -> None:
+    f = art.get("inner_fields", {})
+    label = f"variable `{f.get('name', art['target_name'])}` on cat_item {f.get('cat_item', '?')[:8]}"
+    preview_by_sys_id(client, "item_option_new", art, label)
+
+
+def preview_question_choice(client: ServiceNowClient, art: dict) -> None:
+    f = art.get("inner_fields", {})
+    label = f"choice `{f.get('value', '?')}` ({f.get('text', '')}) on question {f.get('question', '?')[:8]}"
+    preview_by_sys_id(client, "question_choice", art, label)
+
+
+def preview_catalog_item_category(client: ServiceNowClient, art: dict) -> None:
+    f = art.get("inner_fields", {})
+    label = f"category mapping {f.get('sc_cat_item', '?')[:8]} -> {f.get('sc_category', '?')[:8]}"
+    preview_by_sys_id(client, "sc_cat_item_category", art, label)
+
+
 def preview_one(client: ServiceNowClient, art: dict) -> None:
     print(f"\n[{art['type']}] {art['target_name']}")
     print(f"  sys_update_name: {art['sys_update_name']}")
@@ -164,6 +222,14 @@ def preview_one(client: ServiceNowClient, art: dict) -> None:
         preview_dictionary_entry(client, art)
     elif art["inner_table"] == "sys_script":
         preview_business_rule(client, art)
+    elif art["inner_table"] == "sc_cat_item":
+        preview_catalog_item(client, art)
+    elif art["inner_table"] == "item_option_new":
+        preview_variable(client, art)
+    elif art["inner_table"] == "question_choice":
+        preview_question_choice(client, art)
+    elif art["inner_table"] == "sc_cat_item_category":
+        preview_catalog_item_category(client, art)
     else:
         print(f"  ?  no preview handler for inner table: {art['inner_table']}")
 
@@ -201,6 +267,14 @@ def main() -> int:
             elif art["inner_table"] == "sys_script":
                 existing = check_target_exists(client, "sys_script", {"name": art["target_name"]})
                 print(f"  {'OK' if existing else 'MISSING'}  BR {art['target_name']}")
+            elif art["inner_table"] in ("sc_cat_item", "item_option_new",
+                                        "question_choice", "sc_cat_item_category"):
+                sys_id = art.get("inner_sys_id")
+                if sys_id:
+                    existing = check_target_exists(client, art["inner_table"], {"sys_id": sys_id})
+                    print(f"  {'OK' if existing else 'MISSING'}  {art['inner_table']} sys_id {sys_id}")
+                else:
+                    print(f"  ?  no inner sys_id to verify")
         return 0
 
     print("\nPre-import preview — what the import will do on the target instance:")

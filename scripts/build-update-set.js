@@ -30,11 +30,18 @@
  * being committed on the protected instance. See:
  *   servicenow-docs/markdown/platform-security/sign-specific-records.md
  *
- * Supported artifact types (Phase 1):
- *   - dictionary_entry  (sys_dictionary) — adds a custom field to a table
- *   - business_rule     (sys_script)     — adds a server-side BR
+ * Supported artifact types:
+ *   - dictionary_entry  (sys_dictionary)         — adds a custom field to a table
+ *   - business_rule     (sys_script)             — adds a server-side BR
+ *   - catalog_item      (sc_cat_item + children) — creates a catalog item with
+ *                                                  nested item_option_new variables,
+ *                                                  question_choice values, and
+ *                                                  optional sc_cat_item_category
+ *                                                  mappings. One manifest entry
+ *                                                  emits multiple sys_update_xml
+ *                                                  records under the same parent.
  *
- * Phase 2 will add: sys_db_object (new tables), sys_choice (choice values),
+ * Phase 2 backlog: sys_db_object (new tables), sys_choice (choice values),
  * sys_ui_policy, sys_ui_action, sys_script_include (global scope).
  */
 
@@ -178,12 +185,187 @@ function buildBusinessRule(art, sourceDir, updateSetName) {
     }
 }
 
+// ---------------------------------------------------------------------------
+// catalog_item builder
+//
+// One manifest entry → multiple sys_update_xml records (item + variables +
+// choices + additional category mappings), all under the same parent
+// update set. Returns an array of artifact records.
+// ---------------------------------------------------------------------------
+
+function buildCatalogItem(art, updateSetName) {
+    if (!art.name) die('catalog_item: name is required')
+    const itemSysId = deterministicSysId(updateSetName, 'sc_cat_item', art.name)
+    const sysUpdateName = `sc_cat_item_${itemSysId}`
+
+    // sc_cat_item fields — minimal-but-sufficient set, matching the shape
+    // ServiceNow itself emits when exporting an item to XML. Booleans render
+    // as 'true' / 'false' to match the platform's serialization.
+    const itemLines = [
+        '<?xml version="1.0" encoding="UTF-8"?>',
+        '<record_update table="sc_cat_item">',
+        '  <sc_cat_item action="INSERT_OR_UPDATE">',
+        `    ${tag('sys_id', itemSysId)}`,
+        `    ${tag('name', art.name)}`,
+        `    ${tag('sys_name', art.name)}`,
+        `    ${tag('short_description', art.short_description)}`,
+        `    <description>${cdata(art.description || '')}</description>`,
+        `    ${tag('price', art.price ?? 0)}`,
+        `    ${tag('cost', art.cost ?? 0)}`,
+        `    ${tag('recurring_price', art.recurring_price ?? 0)}`,
+        `    ${tag('list_price', art.list_price ?? 0)}`,
+        `    ${tag('active', art.active !== false)}`,
+        `    ${tag('billable', art.billable === true)}`,
+        `    ${tag('availability', art.availability || 'on_desktop')}`,
+        `    ${tag('access_type', art.access_type || 'restricted')}`,
+        `    ${tag('roles', art.roles || '')}`,
+        `    ${tag('sc_catalogs', art.catalogs || art.sc_catalogs || '')}`,
+        `    ${tag('category', art.category || '')}`,
+        `    ${tag('delivery_time', art.delivery_time || '')}`,
+        `    ${tag('type', art.type_subtype || 'item')}`,
+        `    ${tag('use_sc_layout', art.use_sc_layout !== false)}`,
+        `    ${tag('visible_bundle', art.visible_bundle !== false)}`,
+        `    ${tag('visible_guide', art.visible_guide !== false)}`,
+        `    ${tag('visible_standalone', art.visible_standalone !== false)}`,
+        `    ${tag('mobile_picture_type', art.mobile_picture_type || 'use_desktop_picture')}`,
+        `    ${tag('display_price_property', art.display_price_property || 'non_zero')}`,
+        `    ${tag('fulfillment_automation_level', art.fulfillment_automation_level || 'semi_automated')}`,
+        `    ${tag('owner', art.owner || '')}`,
+        `    ${tag('flow_designer_flow', art.flow_designer_flow || '')}`,
+        `    ${tag('sys_scope', art.application || 'global')}`,
+        `    ${tag('sys_class_name', 'sc_cat_item')}`,
+        `    ${tag('sys_update_name', sysUpdateName)}`,
+        '  </sc_cat_item>',
+        '</record_update>',
+    ]
+    const results = [{
+        sysId: itemSysId,
+        targetName: art.name,
+        type: 'Catalog Item',
+        sysUpdateName,
+        payload: itemLines.join('\n'),
+    }]
+
+    // Variables (item_option_new) + their choices (question_choice)
+    const variables = Array.isArray(art.variables) ? art.variables : []
+    for (const v of variables) {
+        if (!v.name) die(`catalog_item "${art.name}": variable.name is required`)
+        const varSysId = deterministicSysId(updateSetName, 'item_option_new', art.name, v.name)
+        const varUpdateName = `item_option_new_${varSysId}`
+        const varLines = [
+            '<?xml version="1.0" encoding="UTF-8"?>',
+            '<record_update table="item_option_new">',
+            '  <item_option_new action="INSERT_OR_UPDATE">',
+            `    ${tag('sys_id', varSysId)}`,
+            `    ${tag('cat_item', itemSysId)}`,
+            `    ${tag('name', v.name)}`,
+            `    ${tag('sys_name', v.question_text || v.name)}`,
+            `    ${tag('question_text', v.question_text || v.name)}`,
+            `    ${tag('type', v.type ?? 3)}`,
+            `    ${tag('order', v.order ?? 100)}`,
+            `    ${tag('mandatory', v.mandatory === true)}`,
+            `    ${tag('active', v.active !== false)}`,
+            `    ${tag('read_only', v.read_only === true)}`,
+            `    ${tag('default_value', v.default_value || '')}`,
+            `    ${tag('layout', v.layout || 'normal')}`,
+            `    ${tag('visibility', v.visibility ?? 1)}`,
+            `    ${tag('do_not_select_first', v.do_not_select_first === true)}`,
+            `    ${tag('include_none', v.include_none === true)}`,
+            `    ${tag('visible_bundle', v.visible_bundle !== false)}`,
+            `    ${tag('visible_guide', v.visible_guide !== false)}`,
+            `    ${tag('visible_standalone', v.visible_standalone !== false)}`,
+            `    ${tag('sys_scope', art.application || 'global')}`,
+            `    ${tag('sys_class_name', 'item_option_new')}`,
+            `    ${tag('sys_update_name', varUpdateName)}`,
+            '  </item_option_new>',
+            '</record_update>',
+        ]
+        results.push({
+            sysId: varSysId,
+            targetName: `${art.name} :: ${v.name}`,
+            type: 'Variable',
+            sysUpdateName: varUpdateName,
+            payload: varLines.join('\n'),
+        })
+
+        const choices = Array.isArray(v.choices) ? v.choices : []
+        for (const c of choices) {
+            if (c.value === undefined || c.value === null) {
+                die(`catalog_item "${art.name}" variable "${v.name}": choice.value is required`)
+            }
+            const choiceSysId = deterministicSysId(
+                updateSetName, 'question_choice', art.name, v.name, String(c.value)
+            )
+            const choiceUpdateName = `question_choice_${choiceSysId}`
+            const choiceLines = [
+                '<?xml version="1.0" encoding="UTF-8"?>',
+                '<record_update table="question_choice">',
+                '  <question_choice action="INSERT_OR_UPDATE">',
+                `    ${tag('sys_id', choiceSysId)}`,
+                `    ${tag('question', varSysId)}`,
+                `    ${tag('text', c.text || String(c.value))}`,
+                `    ${tag('value', c.value)}`,
+                `    ${tag('order', c.order ?? 100)}`,
+                `    ${tag('misc', c.misc ?? 0)}`,
+                `    ${tag('inactive', c.inactive === true)}`,
+                `    ${tag('sys_name', c.text || String(c.value))}`,
+                `    ${tag('sys_scope', art.application || 'global')}`,
+                `    ${tag('sys_class_name', 'question_choice')}`,
+                `    ${tag('sys_update_name', choiceUpdateName)}`,
+                '  </question_choice>',
+                '</record_update>',
+            ]
+            results.push({
+                sysId: choiceSysId,
+                targetName: `${art.name} :: ${v.name} = ${c.value}`,
+                type: 'Question Choice',
+                sysUpdateName: choiceUpdateName,
+                payload: choiceLines.join('\n'),
+            })
+        }
+    }
+
+    // Additional categories (sc_cat_item_category m2m). The primary category
+    // already lives on sc_cat_item.category above; this list is for any extras.
+    const extraCats = Array.isArray(art.additional_categories) ? art.additional_categories : []
+    for (const catSysId of extraCats) {
+        const mapSysId = deterministicSysId(
+            updateSetName, 'sc_cat_item_category', art.name, catSysId
+        )
+        const mapUpdateName = `sc_cat_item_category_${mapSysId}`
+        const mapLines = [
+            '<?xml version="1.0" encoding="UTF-8"?>',
+            '<record_update table="sc_cat_item_category">',
+            '  <sc_cat_item_category action="INSERT_OR_UPDATE">',
+            `    ${tag('sys_id', mapSysId)}`,
+            `    ${tag('sc_cat_item', itemSysId)}`,
+            `    ${tag('sc_category', catSysId)}`,
+            `    ${tag('sys_scope', art.application || 'global')}`,
+            `    ${tag('sys_class_name', 'sc_cat_item_category')}`,
+            `    ${tag('sys_update_name', mapUpdateName)}`,
+            '  </sc_cat_item_category>',
+            '</record_update>',
+        ]
+        results.push({
+            sysId: mapSysId,
+            targetName: `${art.name} -> category ${catSysId}`,
+            type: 'Catalog Item Category',
+            sysUpdateName: mapUpdateName,
+            payload: mapLines.join('\n'),
+        })
+    }
+
+    return results
+}
+
 function buildArtifact(art, sourceDir, updateSetName) {
     switch (art.type) {
         case 'dictionary_entry':
-            return buildDictionaryEntry(art, updateSetName)
+            return [buildDictionaryEntry(art, updateSetName)]
         case 'business_rule':
-            return buildBusinessRule(art, sourceDir, updateSetName)
+            return [buildBusinessRule(art, sourceDir, updateSetName)]
+        case 'catalog_item':
+            return buildCatalogItem(art, updateSetName)
         default:
             die(`Unknown artifact type: ${art.type}`)
     }
@@ -355,7 +537,7 @@ function main() {
     console.log(`  Source:      ${sourceDir}`)
     console.log(`  Artifacts:   ${manifest.artifacts.length}`)
 
-    const builtArtifacts = manifest.artifacts.map((art) => buildArtifact(art, sourceDir, manifest.name))
+    const builtArtifacts = manifest.artifacts.flatMap((art) => buildArtifact(art, sourceDir, manifest.name))
     const xml = buildUpdateSetXml(manifest, builtArtifacts)
     const xmlHash = crypto.createHash('sha256').update(xml).digest('hex')
 
